@@ -1,0 +1,118 @@
+{
+  "artifact": "german-nord-west-dependencies",
+  "snapshot_date": "2026-09-12",
+  "season": "2026/27",
+  "status": "CONFIRMED",
+  "canonical_mutation": false,
+  "rows": 2,
+  "policy": "Exactly one selected official regional promotion and one existing Native08 lower-division promotion per GER3 boundary; no arbitrary cross-region club selection.",
+  "chains": [
+    {
+      "boundary": "NORD",
+      "regional_competition": "Regionalliga Nord",
+      "regional_competition_native_id": "352387075",
+      "regional_promoted_club": "SV Atlas Delmenhorst",
+      "regional_promoted_club_native_id": "1384964",
+      "regional_promoted_origin": "Oberliga Niedersachsen",
+      "regional_vacated_club": "SV Meppen",
+      "regional_vacated_club_native_id": "1376347",
+      "oberliga_competition": "Oberliga Niedersachsen",
+      "oberliga_competition_native_id": "352387083",
+      "boundary_promoted_club": "SV Vorwärts Nordhorn",
+      "boundary_promoted_club_native_id": "1389307",
+      "boundary_promoted_origin": "Landesliga Weser-Ems",
+      "source_keys": [
+        "north_promotion",
+        "north_boundary"
+      ],
+      "proof": "Atlas fills the selected Meppen Regionalliga Nord vacancy; Vorwärts Nordhorn is the existing Native08 club promoted from Landesliga Weser-Ems into the resulting Oberliga Niedersachsen boundary."
+    },
+    {
+      "boundary": "WEST",
+      "regional_competition": "Regionalliga West",
+      "regional_competition_native_id": "352387077",
+      "regional_promoted_club": "SV Westfalia Rhynern",
+      "regional_promoted_club_native_id": "1380503",
+      "regional_promoted_origin": "Oberliga Westfalen",
+      "regional_vacated_club": "SC Fortuna Köln",
+      "regional_vacated_club_native_id": "1376444",
+      "oberliga_competition": "Oberliga Westfalen",
+      "oberliga_competition_native_id": "352387086",
+      "boundary_promoted_club": "SC Westfalia Kinderhaus",
+      "boundary_promoted_club_native_id": "1376965",
+      "boundary_promoted_origin": "Westfalenliga Staffel 1",
+      "source_keys": [
+        "west_promotion",
+        "west_boundary"
+      ],
+      "proof": "Rhynern fills the selected Fortuna Köln Regionalliga West vacancy; Westfalia Kinderhaus is the existing Native08 club promoted from Westfalenliga Staffel 1 into the resulting Oberliga Westfalen boundary."
+    }
+  ],
+  "sources": {
+    "web": {
+      "north_promotion": {
+        "url": "https://www.nordfv.de/news/aufstieg-perfekt",
+        "sha256": "1bd11d9d79c6bcf0453a3cccd46adec56e48f25d335618cd907cad9df8136cef",
+        "claim": "NFV confirms Atlas Delmenhorst, Eimsbütteler TV and SV Todesfelde for the 2026/27 Regionalliga Nord; Atlas had already secured direct promotion as Oberliga Niedersachsen champion."
+      },
+      "north_boundary": {
+        "url": "https://www.vorwaertsnordhorn.de/news/mannschaftsfoto-oberliga-2026-2027/",
+        "sha256": "22497b74ea8ee3ddfe88cebc17999ad660f78edfb7e0c9f1267d041a7d35e429",
+        "claim": "SV Vorwärts Nordhorn states its first team enters the 2026/27 Oberliga Niedersachsen after winning the Landesliga."
+      },
+      "west_promotion": {
+        "url": "https://www.sportschau.de/regional/wdr/wdr-regionalliga-west-das-sind-die-vier-aufsteiger-100.html",
+        "sha256": "9208add2b7706ee9888e4200d3fb70bfc2f034997de95dcd3c497fb2d6ae06c3",
+        "claim": "Sportschau/WDR confirms Westfalia Rhynern, SG Wattenscheid 09, SV Bergisch Gladbach 09 and VfB 03 Hilden as the four 2026/27 Regionalliga West promotions; Rhynern is the Oberliga Westfalen champion."
+      },
+      "west_boundary": {
+        "url": "https://www.fupa.net/news/flvw-gibt-ueberkreisliche-staffeleinteilung-202627-bekannt-3199174",
+        "sha256": "848cbc7915a3fcd573767d1e8e91f8b13beef2eb811a25acc675b0b72760ae10",
+        "claim": "The FLVW 2026/27 overregional staff allocation lists SC Westf. Kinderhaus as an Oberliga Westfalen promotion from Westfalenliga Staffel 1."
+      }
+    },
+    "local_native": {
+      "data\\generated\\native10-base-competition-inspection-20260912-01\\competition_structure.csv": "353c0b636dec0f02b06df3ed880392d05dc40e600cba9dbad67d033ac215347e",
+      "data\\generated\\native10-base-competition-inspection-20260912-01\\competition_members.csv": "167cd82ffe1969e82a5349a07c16a44992165ebb96664b13b3fccade24d2221c",
+      "data\\generated\\combined-20260908-01-evidence\\data\\intermediate\\native-bound-baseline\\clubs.csv": "672abbcfdd2ccf24efb685b9ceddb13c2f8fb00864d4546e04e9370372c75986"
+    }
+  },
+  "native_identity_fields": {
+    "NORD": {
+      "regional_promoted": {
+        "club_id": "1384964",
+        "reference_id": "1376429",
+        "fifa_id": "0",
+        "club": "SV Atlas Delmenhorst",
+        "country_id": "21",
+        "league": ""
+      },
+      "boundary_promoted": {
+        "club_id": "1389307",
+        "reference_id": "1376660",
+        "fifa_id": "0",
+        "club": "SV Vorwärts Nordhorn",
+        "country_id": "21",
+        "league": ""
+      }
+    },
+    "WEST": {
+      "regional_promoted": {
+        "club_id": "1380503",
+        "reference_id": "1376476",
+        "fifa_id": "0",
+        "club": "SV Westfalia Rhynern",
+        "country_id": "21",
+        "league": ""
+      },
+      "boundary_promoted": {
+        "club_id": "1376965",
+        "reference_id": "1377129",
+        "fifa_id": "0",
+        "club": "SC Westfalia Kinderhaus",
+        "country_id": "21",
+        "league": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "artifact": "german-nord-west-dependencies",
+  "snapshot_date": "2026-09-12",
+  "season": "2026/27",
+  "status": "CONFIRMED",
+  "canonical_mutation": false,
+  "rows": 7,
+  "promoted_by_region": {
+    "NORD": 3,
+    "WEST": 4
+  },
+  "vacancy_closures": {
+    "NORD": {
+      "net_vacancies": 3,
+      "outgoing": [
+        {
+          "club_name": "SV Meppen",
+          "native_club_id": "1376347",
+          "reason": "promoted to 3. Liga"
+        },
+        {
+          "club_name": "Altonaer FC 1893",
+          "native_club_id": "1376340",
+          "reason": "no longer in the 2026/27 RL Nord field"
+        },
+        {
+          "club_name": "TuS Blau-Weiß Lohne",
+          "native_club_id": "1388585",
+          "reason": "no longer in the 2026/27 RL Nord field"
+        }
+      ],
+      "pairing_policy": "Promotion set closes the net vacancies; no one-to-one sporting pairing asserted."
+    },
+    "WEST": {
+      "net_vacancies": 4,
+      "outgoing": [
+        {
+          "club_name": "SC Fortuna Köln",
+          "native_club_id": "1376444",
+          "reason": "promoted to 3. Liga"
+        },
+        {
+          "club_name": "Fortuna Düsseldorf 1895",
+          "native_club_id": "1376429",
+          "reason": "forced relegation to Oberliga after parent-club relegation"
+        },
+        {
+          "club_name": "Wuppertaler SV",
+          "native_club_id": "1376424",
+          "reason": "relegated to Oberliga"
+        },
+        {
+          "club_name": "SSVg Velbert 02",
+          "native_club_id": "1376382",
+          "reason": "relegated to Oberliga"
+        }
+      ],
+      "pairing_policy": "Promotion set closes the net vacancies; no one-to-one sporting pairing asserted."
+    }
+  },
+  "sources": {
+    "web": {
+      "nordfv": {
+        "url": "https://www.nordfv.de/news/aufstieg-perfekt",
+        "sha256": "1bd11d9d79c6bcf0453a3cccd46adec56e48f25d335618cd907cad9df8136cef",
+        "published": "2026-06-10"
+      },
+      "sportschau": {
+        "url": "https://www.sportschau.de/regional/wdr/wdr-regionalliga-west-das-sind-die-vier-aufsteiger-100.html",
+        "sha256": "9208add2b7706ee9888e4200d3fb70bfc2f034997de95dcd3c497fb2d6ae06c3",
+        "published": "2026-06-13"
+      }
+    },
+    "local_native": {
+      "data\\generated\\native10-base-competition-inspection-20260912-01\\competition_structure.csv": "353c0b636dec0f02b06df3ed880392d05dc40e600cba9dbad67d033ac215347e",
+      "data\\generated\\native10-base-competition-inspection-20260912-01\\competition_members.csv": "167cd82ffe1969e82a5349a07c16a44992165ebb96664b13b3fccade24d2221c",
+      "data\\generated\\combined-20260908-01-evidence\\data\\intermediate\\native-bound-baseline\\clubs.csv": "672abbcfdd2ccf24efb685b9ceddb13c2f8fb00864d4546e04e9370372c75986"
+    }
+  },
+  "method": [
+    "Authoritative 2026/27 promotion outcomes were cross-checked against the fresh Native10 competition inspection.",
+    "Native IDs, reference IDs and FIFA IDs come from the rich Native08 club corpus; no new IDs were invented.",
+    "Net vacancy sets are reported without arbitrary one-to-one pairing between outgoing and incoming clubs."
+  ]
+}

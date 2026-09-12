@@ -3,30 +3,29 @@
   "snapshot_date": "2026-09-12",
   "clubs": 222,
   "overall": {
-    "PARTIAL": 199,
-    "GOOD_ENOUGH": 23
+    "PARTIAL": 170,
+    "GOOD_ENOUGH": 52
   },
   "creation_summary": {
-    "proposed": 71,
+    "proposed": 94,
     "unresolved": 0,
-    "rating_deferred": 71,
-    "sprint_eligible_except_rating": 71,
+    "rating_deferred": 94,
+    "sprint_eligible_except_rating": 94,
     "ready": 0,
     "duplicate_player_ids": []
   },
   "review_queue": {
-    "rows": 798,
-    "raw_blocking_rows": 711,
-    "sprint_blocking_rows": 640,
-    "rating_deferred_rows": 71,
+    "rows": 669,
+    "raw_blocking_rows": 489,
+    "sprint_blocking_rows": 489,
+    "rating_deferred_rows": 94,
     "sprint_blocking_counts": {
-      "CONTRACT_CHRONOLOGY": 208,
-      "DUPLICATE_AFFILIATION": 10,
-      "PLAYER_CREATION": 100,
+      "CONTRACT_CHRONOLOGY": 219,
+      "PLAYER_CREATION": 77,
       "PRIMARY_EXCEPTION": 1,
-      "PROFILE_CONFLICT": 59,
-      "TRANSFER_TIMELINE": 146,
-      "TYPED_CONDITION": 116
+      "TIMELINE_RESOLUTION": 13,
+      "TRANSFER_TIMELINE": 152,
+      "TYPED_CONDITION": 27
     }
   },
   "loan_counting": "confirmed_loans is the unique union of confirmed incoming and outgoing loan player IDs per club; a player is never counted twice.",
@@ -51,23 +50,23 @@
     ],
     "review_queue": {
       "path": "reports\\current\\integration\\review-queue.csv",
-      "rows": 798,
-      "sha256": "bfde0ad7457805b3faed19d8edb54faa2f40b13c5c85542ec1697c77aeb9e34b"
+      "rows": 669,
+      "sha256": "099221b5be6475d0f8d1b9777f2670d4cdefb5affed8aebf4498979f11d8a21d"
     },
     "resolved_observations": {
       "path": "data\\current\\integration\\resolved-observations.csv",
-      "rows": 6100,
-      "sha256": "4e973c96e73d50f341373b82320821c99cc9492205e4282f1de4be766b13e392"
+      "rows": 6133,
+      "sha256": "e0410957a81f369aca855fa30518e01317f3f56dbad55d9f4bc71cf4e5541b3f"
     },
     "candidate_squad_plan": {
       "path": "data\\current\\integration\\candidate-squad-plan.csv",
-      "rows": 123,
-      "sha256": "70da1af5b549823fda84ff46e563ef5b6e003c1aa08a8f000c9b172573b0bcf7"
+      "rows": 240,
+      "sha256": "db85c7249c849d329dd279b95b4e0c2d2b1f490deeb0175e4f94319c35651ec0"
     },
     "candidate_player_creation_plan": {
       "path": "data\\current\\integration\\candidate-player-creation-plan.csv",
-      "rows": 71,
-      "sha256": "4e816b53344aaa63131a987435a88783fb73b2fc7150aa33dfda6fe64d7d599c"
+      "rows": 94,
+      "sha256": "5c268add4d6dbd0858d33dff9f70670db2f13c7124c45c04f870e6917816d023"
     }
   }
 }

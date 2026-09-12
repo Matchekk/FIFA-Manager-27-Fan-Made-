@@ -1,0 +1,183 @@
+{
+  "schema": 1,
+  "status": "READY_NATIVE_HELPER_INPUT",
+  "season": "2026/27",
+  "snapshot_date": "2026-09-12",
+  "plan_csv": "data/current/belgium-native-plan.csv",
+  "plan_sha256": "c38530e288d17f74329c57a1ddb52fbc06812ba3b4febb5180e0e75f5965b560",
+  "input_sources": {
+    "top_target": {
+      "path": "data/current/belgium-membership-intake.csv",
+      "sha256": "e6d35497b5b2a80d73a2929a8691953489d6b8c6b2a56a6087986e67c5e28bea",
+      "competitions": {
+        "117506048": 18,
+        "117506049": 15
+      }
+    },
+    "lower_baseline": {
+      "path": "data/generated/native10-base-competition-inspection-20260912-01/competition_members.csv",
+      "sha256": "167cd82ffe1969e82a5349a07c16a44992165ebb96664b13b3fccade24d2221c"
+    },
+    "authority_manifest": {
+      "path": "data/current/belgium-membership-format-2026-27.manifest.json",
+      "sha256": "1a80f03d9046f433ed5c0ce52b5499421b2a3adb91c8f5359225f563e52409a1"
+    }
+  },
+  "included_competitions": [
+    "117506048",
+    "117506049",
+    "117506050",
+    "117506051",
+    "117506052",
+    "117506053",
+    "117506054"
+  ],
+  "fullchanges": [
+    {
+      "competition_id": 117506050,
+      "slot": 4,
+      "old_club_id": 471837,
+      "new_club_id": 471091,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506050,
+      "slot": 5,
+      "old_club_id": 458772,
+      "new_club_id": 462983,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506051,
+      "slot": 2,
+      "old_club_id": 462867,
+      "new_club_id": 462851,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506051,
+      "slot": 6,
+      "old_club_id": 471205,
+      "new_club_id": 458794,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506051,
+      "slot": 16,
+      "old_club_id": 462865,
+      "new_club_id": 471836,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506052,
+      "slot": 15,
+      "old_club_id": 471865,
+      "new_club_id": 471837,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506053,
+      "slot": 1,
+      "old_club_id": 458794,
+      "new_club_id": 471205,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506053,
+      "slot": 15,
+      "old_club_id": 471836,
+      "new_club_id": 471488,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 117506054,
+      "slot": 2,
+      "old_club_id": 462851,
+      "new_club_id": 462865,
+      "team_type": "FIRST",
+      "status": "CONFIRMED"
+    }
+  ],
+  "boundaryproof": [
+    {
+      "movement": "FC Flenu 471865 -> below modeled ACFF2; Royal Stockay Saint-Georges 471837 -> ACFF2",
+      "competition_id": 117506052,
+      "slot": 15,
+      "sources": [
+        {
+          "url": "https://fcflenu.be/",
+          "sha256": "7d647956abd9d2c8523b9639c1721bd0662dbeebb0f602347e905890d0c99a97"
+        },
+        {
+          "url": "https://www.ffa.be/competition/CHP_130626/calendrier",
+          "sha256": "86e7f3ff2708f7605e93587b516f1f9aaf9fd2bc7823f990599e055259348dbe"
+        }
+      ]
+    },
+    {
+      "movement": "Royal FC Mandel United 471836 -> KFC Voorde-Appelterre 471488, promoted from 3de Afdeling VV A",
+      "competition_id": 117506053,
+      "slot": 15,
+      "sources": [
+        {
+          "url": "https://www.voetbalvlaanderen.be/competitie/CHP_136062/kalender",
+          "sha256": "c7a1a920b379fc8c6517812a7e286a13f5798d02c5efc2708fd9cd9c5de88e7a"
+        },
+        {
+          "url": "https://www.kfcvoordeappelterre.com/a-kern",
+          "sha256": "abbc8854e0a7dd8658f697663c46892f515d27b7833b07b227ef505e1698e262"
+        }
+      ]
+    }
+  ],
+  "internal_chainproof": {
+    "movement": "KSK Heist 462851 -> 1ste Nationale VV; K Diegem Sport 462865 -> VV2-B",
+    "competition_id": 117506054,
+    "slot": 2,
+    "source_url": "https://www.voetbalvlaanderen.be/competitie/CHP_136063/kalender",
+    "source_sha256": "c7a1a920b379fc8c6517812a7e286a13f5798d02c5efc2708fd9cd9c5de88e7a"
+  },
+  "expectedcounts": {
+    "by_competition": {
+      "117506048": 18,
+      "117506049": 15,
+      "117506050": 12,
+      "117506051": 16,
+      "117506052": 18,
+      "117506053": 16,
+      "117506054": 16
+    },
+    "top_first": 18,
+    "top_second": 15,
+    "top_reserve": 4,
+    "boundary_markers": 2,
+    "total_rows": 113
+  },
+  "validation": {
+    "lower_baseline_rows": 78,
+    "confirmed_internal_changes": 9,
+    "unchanged_lower_rows": 69,
+    "changed_slots_exact_match": true,
+    "unique_plan_rows": true,
+    "lower_counts_conserved": true,
+    "top_18_15": true,
+    "top_jpl_all_first": true,
+    "boundary_markers_exact": true
+  },
+  "provenancepolicy": {
+    "ids": "club_id values are native base IDs from the accepted Native10 inspection; never treat serialized references as club IDs.",
+    "lower": "clone fresh Native10 lower memberships and alter only fullchanges; retain all unrelated rows without asserting their season authority.",
+    "top": "use confirmed 2026/27 target intake for 18-club JPL and 15-club CPL.",
+    "boundary": "competition_id 0 rows are explicit below-modeled boundary sentinels, not real competition memberships.",
+    "mutation": "input-only artifact; no production database or serialized competition membership was mutated.",
+    "apply": "resolver must re-read current native competition structures and derive serialized refs at apply time."
+  }
+}

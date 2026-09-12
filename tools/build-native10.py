@@ -44,6 +44,10 @@ def main():
   if evidence.is_file():
    shutil.copy2(evidence,inputs/(key+'.manifest.json'));plans[key]['manifest_sha256']=sha(evidence)
  shutil.copy2(gate_path,inputs/'integration.json')
+ # Exact native guard provenance accompanies the embedded per-player guards.
+ for name in ['native08-loan-preconditions.csv','native08-loan-preconditions.json']:
+  evidence=ROOT/'data/current/integration'/name
+  if evidence.is_file():shutil.copy2(evidence,inputs/name)
  binary=inputs/'native-probe.exe';shutil.copy2(a.binary,binary)
  validators={}
  for name in ['native10-semantic-diff.py','current-membership-audit.py']:

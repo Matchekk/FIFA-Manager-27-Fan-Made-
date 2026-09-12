@@ -8,11 +8,18 @@ SOURCES={
  'nordost-members': 'https://www.nofv-online.de/index.php/regionalliga-nordost.html',
  'bayern-format': 'https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag',
  'bayern-schedule': 'https://www.bfv.de/news/regionalliga-bayern/2026/07/rahmenspielplan-regionalliga-bayern-2026-27',
+ 'nordost-sued-members': 'https://www.nofv-online.de/index.php/oberliga-sued.html',
+ 'kinderhaus-dfb': 'https://www.fussball.de/mannschaft/sc-westfalia-kinderhaus-westfalia-kinderhaus-westfalen/-/saison/2627/team-id/011MIA35HC000000VTVG0001VTR8C1K7',
 }
 def main():
  OUT.mkdir(parents=True,exist_ok=True)
+ prior={e['label']:e for e in json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))} if (OUT/'manifest.json').exists() else {}
  evidence=[]
  for label,url in SOURCES.items():
+  if label in prior and prior[label].get('status')=='CAPTURED':
+   cached=OUT/(prior[label]['sha256']+'.html')
+   if cached.is_file() and hashlib.sha256(cached.read_bytes()).hexdigest()==prior[label]['sha256']:
+    evidence.append(prior[label]);continue
   try:
    req=urllib.request.Request(url,headers={'User-Agent':'FM27Research/0.1'})
    with urllib.request.urlopen(req,timeout=35) as response: body=response.read(5000000)

@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "status": "PARTIAL_REVIEW_REQUIRED",
+  "season": "2026/27",
+  "snapshot_date": "2026-09-12",
+  "plan_csv": "data/current/belgium-membership-format-2026-27.csv",
+  "plan_fields": [
+    "competition_id",
+    "slot",
+    "club_id",
+    "team_type",
+    "status",
+    "source",
+    "source_sha256",
+    "snapshot_date"
+  ],
+  "native_source": {
+    "runtime": "data/generated/native10-base-competition-inspection-20260912-01",
+    "script": "data/generated/native10-base-competition-inspection-20260912-01/competition_members.csv",
+    "sha256": "167cd82ffe1969e82a5349a07c16a44992165ebb96664b13b3fccade24d2221c",
+    "inspection": "data/generated/native10-base-competition-inspection-20260912-01/COMPETITION_INSPECTION.json",
+    "inspection_sha256": "929957d7ef6bc57bb4ef91297d075e8c7ac584285642dad0b5ceec8c4cc4c799"
+  },
+  "counts_by_competition": {
+    "117506048": {
+      "rows": 18,
+      "status": "CONFIRMED"
+    },
+    "117506049": {
+      "rows": 15,
+      "status": "CONFIRMED"
+    },
+    "117506050": {
+      "rows": 12,
+      "status": "CONFIRMED"
+    },
+    "117506051": {
+      "rows": 16,
+      "status": "CONFIRMED"
+    },
+    "117506052": {
+      "rows": 18,
+      "status": "REVIEW_REQUIRED"
+    },
+    "117506053": {
+      "rows": 16,
+      "status": "CONFIRMED"
+    },
+    "117506054": {
+      "rows": 16,
+      "status": "REVIEW_REQUIRED"
+    }
+  },
+  "known_closed_swaps": [
+    {
+      "competition_id": 117506048,
+      "old_slot": 10,
+      "old_club_id": 458795,
+      "new_club_id": 458781,
+      "reason": "Dender JPL to CPL; Kortrijk CPL to JPL"
+    },
+    {
+      "competition_id": 117506049,
+      "old_slot": 3,
+      "old_club_id": 471091,
+      "new_club_id": 458772,
+      "reason": "RWDM out; Virton promoted"
+    },
+    {
+      "competition_id": 117506049,
+      "old_slot": 4,
+      "old_club_id": 458788,
+      "new_club_id": 462867,
+      "reason": "Beveren out; Sporting Hasselt promoted"
+    },
+    {
+      "competition_id": 117506050,
+      "old_slot": 4,
+      "old_club_id": 471837,
+      "new_club_id": 471091,
+      "reason": "Stockay out; RWDM enters ACFF"
+    },
+    {
+      "competition_id": 117506050,
+      "old_slot": 5,
+      "old_club_id": 458772,
+      "new_club_id": 462983,
+      "reason": "Virton out; Olympic enters ACFF"
+    },
+    {
+      "competition_id": 117506051,
+      "old_slot": 2,
+      "old_club_id": 462867,
+      "new_club_id": 462851,
+      "reason": "Hasselt out; KSK Heist enters VV1"
+    },
+    {
+      "competition_id": 117506051,
+      "old_slot": 6,
+      "old_club_id": 471205,
+      "new_club_id": 458794,
+      "reason": "Ninove out; Harelbeke enters VV1"
+    },
+    {
+      "competition_id": 117506051,
+      "old_slot": 16,
+      "old_club_id": 462865,
+      "new_club_id": 471836,
+      "reason": "Diegem out; Mandel enters VV1"
+    },
+    {
+      "competition_id": 117506053,
+      "old_slot": 1,
+      "old_club_id": 458794,
+      "new_club_id": 471205,
+      "reason": "Harelbeke out; Ninove enters VV2"
+    },
+    {
+      "competition_id": 117506053,
+      "old_slot": 15,
+      "old_club_id": 471836,
+      "new_club_id": 471488,
+      "reason": "Mandel out; Voorde-Appelterre promoted from 3de Afdeling VV A into 2de Afdeling VV A"
+    },
+    {
+      "competition_id": 117506054,
+      "old_slot": 2,
+      "old_club_id": 462851,
+      "new_club_id": 462865,
+      "reason": "KSK Heist promoted to 1ste Nationale VV; Diegem promoted from VV2 A into VV2 B"
+    }
+  ],
+  "serialized_reference_policy": "CSV club_id values are native base IDs. Resolve serialized refs from the current CountryScript7.sav; they are not interchangeable with club_id.",
+  "authoritative_targets": {
+    "117506052": {
+      "competition": "ACFF2 / D2 FFA",
+      "source_url": "https://www.ffa.be/competition/CHP_130626/calendrier",
+      "clubs": [
+        {"name": "Stade Vervietois", "native_club_id": 471929},
+        {"name": "Union Namur", "native_club_id": 458792},
+        {"name": "RFC Union La Calamine", "native_club_id": 462875},
+        {"name": "RUS Binche", "native_club_id": 471635},
+        {"name": "Royale Union Hutoise", "native_club_id": 471934},
+        {"name": "RSD Jette", "native_club_id": 471156},
+        {"name": "Stade Mouscronnois", "native_club_id": null},
+        {"name": "Entente Acren Lessines", "native_club_id": 462899},
+        {"name": "FC Union Richelle", "native_club_id": 471827},
+        {"name": "CS Pays Vert Ostiches-Ath", "native_club_id": 471204},
+        {"name": "R Aywaille", "native_club_id": 471378},
+        {"name": "KAS Eupen B", "native_club_id": 458773},
+        {"name": "FC Ganshoren", "native_club_id": 471299},
+        {"name": "Crossing Schaerbeek", "native_club_id": 471807},
+        {"name": "CS Entite Manageoise", "native_club_id": 471656},
+        {"name": "Union St-Ghislain Tertre-Hautrage", "native_club_id": null},
+        {"name": "Royal Stockay St-Georges", "native_club_id": 471837},
+        {"name": "RCS Brainois", "native_club_id": 471274}
+      ]
+    },
+    "117506054": {
+      "competition": "VV2-B / 2de Afdeling Voetb Vl B",
+      "source_url": "https://www.voetbalvlaanderen.be/competitie/CHP_136063/kalender",
+      "clubs": [
+        {"name": "Sp. Rotselaar", "native_club_id": 471531},
+        {"name": "Bocholter V.V.", "native_club_id": 462864},
+        {"name": "RC Hades Kiewit", "native_club_id": 471258},
+        {"name": "R. Antwerp FC B", "native_club_id": 458785},
+        {"name": "KSK Tongeren", "native_club_id": 458800},
+        {"name": "R. Cappellen FC", "native_club_id": 462849},
+        {"name": "KFC De Kempen TL", "native_club_id": null},
+        {"name": "K. St.-Truidense V.V. B", "native_club_id": 458759},
+        {"name": "KFC Nijlen", "native_club_id": 471208},
+        {"name": "Tempo Overijse", "native_club_id": 462902},
+        {"name": "KVC Wilrijk", "native_club_id": null},
+        {"name": "KVK Wellen", "native_club_id": 471112},
+        {"name": "K. Diegem Sport", "native_club_id": 462865},
+        {"name": "Eendracht Termien", "native_club_id": 471309},
+        {"name": "Rupel-Boom", "native_club_id": 462855},
+        {"name": "K. RC Mechelen", "native_club_id": 458803}
+      ]
+    }
+  },
+  "boundary_movements": [
+    {
+      "competition_id": 117506052,
+      "slot": 15,
+      "old_club_id": 471865,
+      "old_club_name": "FC Flenu",
+      "new_club_id": 471837,
+      "new_club_name": "Royal Stockay Saint-Georges",
+      "status": "CONFIRMED",
+      "reason": "FC Flenu official club page identifies the first team as D3 ACFF; the official FFA 2026/27 D2 FFA calendar lists Stockay. This is the modeled boundary movement below ACFF2.",
+      "sources": [
+        {"url": "https://fcflenu.be/", "sha256": "7d647956abd9d2c8523b9639c1721bd0662dbeebb0f602347e905890d0c99a97"},
+        {"url": "https://www.ffa.be/competition/CHP_130626/calendrier", "sha256": "86e7f3ff2708f7605e93587b516f1f9aaf9fd2bc7823f990599e055259348dbe"}
+      ]
+    },
+    {
+      "competition_id": 117506053,
+      "slot": 15,
+      "old_club_id": 471836,
+      "old_club_name": "Royal FC Mandel United",
+      "new_club_id": 471488,
+      "new_club_name": "KFC Voorde-Appelterre",
+      "status": "CONFIRMED",
+      "reason": "Official Voetbal Vlaanderen 2026/27 2de Afdeling A calendar lists Voorde-Appelterre; the club's official 2025/26 first-team page identifies its prior division as 3e Afdeling VV."
+      ,"sources": [
+        {"url": "https://www.voetbalvlaanderen.be/competitie/CHP_136062/kalender", "sha256": "c7a1a920b379fc8c6517812a7e286a13f5798d02c5efc2708fd9cd9c5de88e7a"},
+        {"url": "https://www.kfcvoordeappelterre.com/a-kern", "sha256": "abbc8854e0a7dd8658f697663c46892f515d27b7833b07b227ef505e1698e262"}
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "competition_id": 117506052,
+      "reason": "Boundary movement FC Flenu 471865 -> below modeled ACFF2 and Stockay 471837 -> ACFF2 is confirmed. The remaining ACFF2 current-to-2026/27 differences (Tournai, Onhaye, Raeren-Eynatten, Sporting Bruxelles, Tilffois and several newly entered clubs) are outside this minimum boundary chain and remain REVIEW_REQUIRED; retain all unrelated memberships."
+    },
+    {
+      "competition_id": 117506054,
+      "reason": "Minimum boundary movement KSK Heist 462851 -> 1ste Nationale VV and Diegem 462865 -> VV2-B is confirmed. The remaining VV2-B 2026/27 changes (De Kempen, Wilrijk, Tempo Overijse and other format routing) are outside this minimum chain; retain unrelated memberships REVIEW_REQUIRED."
+    }
+  ],
+  "source_evidence": [
+    {
+      "url": "https://www.proleague.be/nieuws/geen-proflicentie-voor-rwdm-club-nxt-verzekert-behoud",
+      "sha256": "e66a19343c55ad0f884886cec62931c54419129fb72b1d6c870fc610d2c0968e",
+      "claim": "RWDM and Olympic Charleroi relegated"
+    },
+    {
+      "url": "https://www.proleague.be/nieuws/r-excelsior-virton-opnieuw-in-challenger-pro-league",
+      "sha256": "4563bb1a77e94fe02804371cb52baf04fa50c0c65d5e6f19da0dac6341815c7c",
+      "claim": "Virton and Sporting Hasselt promoted"
+    },
+    {
+      "url": "https://www.proleague.be/nieuws/kalender-2026-2027-nieuwkomers-treffen-elkaar-meteen-in-challenger-pro-league",
+      "sha256": "71822f607f818e067fa459ea4a3ee505729232457449dd496e0374af81aecc05",
+      "claim": "2026/27 CPL calendar has 15 clubs and includes Virton/Hasselt"
+    },
+    {
+      "url": "https://kvktienen.be/2026/07/01/kalender-seizoen-2026-2027/",
+      "sha256": "47107e5958cd63eaeb65ec7d3b91e869c2b134afb28923a81c5cb574bf4e648d",
+      "claim": "2026/27 VV first national calendar"
+    },
+    {
+      "url": "https://kskheist.be/nieuws/",
+      "sha256": "2f5274a3acd3b35b059dcc461f5159286eb4fcf098614663e2ec642c664071a9",
+      "claim": "KSK Heist 2026/27 first-team context"
+    },
+    {
+      "url": "https://krc-harelbeke.be/club/a-kern",
+      "sha256": "6be54b1c10243b4bbec69f6b5ee3672f5a33a12a2700ae50b49caff3ea54b4b4",
+      "claim": "Harelbeke first-team identity"
+    },
+    {
+      "url": "https://www.rfcmu.com/club",
+      "sha256": "ac74a07dfbdd00330b595322d2658e25c57d5b28864d540e047ef19bbb8d942f",
+      "claim": "Mandel first team in first national"
+    },
+    {
+      "url": "https://www.royalstockaysaintgeorges.be/actualites/",
+      "sha256": "3cbec85474fcce582b80686824762f55d3724c3e4c9c039892068599d8daf768",
+      "claim": "Stockay D2 FFA 2026/27"
+    },
+    {
+      "url": "https://www.ffa.be/competition/CHP_130626/calendrier",
+      "sha256": "86e7f3ff2708f7605e93587b516f1f9aaf9fd2bc7823f990599e055259348dbe",
+      "claim": "Official FFA D2 FFA 2026/27 calendar lists all 18 ACFF2 clubs"
+    },
+    {
+      "url": "https://www.voetbalvlaanderen.be/competitie/CHP_136063/kalender",
+      "sha256": "c7a1a920b379fc8c6517812a7e286a13f5798d02c5efc2708fd9cd9c5de88e7a",
+      "claim": "Official Voetbal Vlaanderen 2de Afdeling Voetb Vl B 2026/27 calendar lists all 16 VV2-B clubs"
+    },
+    {
+      "url": "https://fcflenu.be/",
+      "sha256": "7d647956abd9d2c8523b9639c1721bd0662dbeebb0f602347e905890d0c99a97",
+      "claim": "FC Flenu official site identifies its first team as D3 ACFF"
+    },
+    {
+      "url": "https://www.voetbalvlaanderen.be/competitie/CHP_136062/kalender",
+      "sha256": "c7a1a920b379fc8c6517812a7e286a13f5798d02c5efc2708fd9cd9c5de88e7a",
+      "claim": "Official Voetbal Vlaanderen 2de Afdeling A 2026/27 calendar lists Voorde-Appelterre"
+    },
+    {
+      "url": "https://www.kfcvoordeappelterre.com/a-kern",
+      "sha256": "abbc8854e0a7dd8658f697663c46892f515d27b7833b07b227ef505e1698e262",
+      "claim": "Voorde-Appelterre official first-team page identifies its 2025/26 division as 3e Afdeling Voetbal Vlaanderen"
+    }
+  ],
+  "preservation": "Only the explicit boundary swaps are eligible for the minimum chain: FC Flenu leaves modeled ACFF2 for below-scope D3, Stockay enters ACFF2, Heist leaves VV2-B, Diegem enters VV2-B, and Voorde-Appelterre enters VV2-A. Unrelated memberships and FIRST/RESERVE team types are retained."
+}

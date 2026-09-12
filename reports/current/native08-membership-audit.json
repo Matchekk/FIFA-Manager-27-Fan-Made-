@@ -1,0 +1,204 @@
+{
+  "inspection": "data\\generated\\native10-base-competition-inspection-20260912-01",
+  "status": "INCOMPLETE",
+  "leagues_pass": 10,
+  "leagues_total": 12,
+  "results": [
+    {
+      "league": "ENG1",
+      "competition_id": "234946560",
+      "expected_clubs": 20,
+      "source_clubs": 20,
+      "native_clubs": 20,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "ITA1",
+      "competition_id": "453050368",
+      "expected_clubs": 20,
+      "source_clubs": 20,
+      "native_clubs": 20,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "ESP1",
+      "competition_id": "755040256",
+      "expected_clubs": 20,
+      "source_clubs": 20,
+      "native_clubs": 20,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "GER1",
+      "competition_id": "352387072",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 18,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "FRA1",
+      "competition_id": "302055424",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 18,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "POR1",
+      "competition_id": "637599744",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 18,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "NED1",
+      "competition_id": "570490880",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 18,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "BEL1",
+      "competition_id": "117506048",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 16,
+      "source_unique": true,
+      "missing_promoted_or_required": [
+        [
+          "458781",
+          "FIRST"
+        ],
+        [
+          "458783",
+          "FIRST"
+        ],
+        [
+          "458788",
+          "FIRST"
+        ]
+      ],
+      "unexpected_relegated_or_other": [
+        [
+          "458795",
+          "FIRST"
+        ]
+      ],
+      "duplicate_domestic_assignments": [],
+      "status": "FAIL"
+    },
+    {
+      "league": "TUR1",
+      "competition_id": "805371904",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 18,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "CZE1",
+      "competition_id": "201392128",
+      "expected_clubs": 16,
+      "source_clubs": 16,
+      "native_clubs": 16,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "GER2",
+      "competition_id": "352387073",
+      "expected_clubs": 18,
+      "source_clubs": 18,
+      "native_clubs": 18,
+      "source_unique": true,
+      "missing_promoted_or_required": [],
+      "unexpected_relegated_or_other": [],
+      "duplicate_domestic_assignments": [],
+      "status": "PASS"
+    },
+    {
+      "league": "GER3",
+      "competition_id": "352387074",
+      "expected_clubs": 20,
+      "source_clubs": 20,
+      "native_clubs": 20,
+      "source_unique": true,
+      "missing_promoted_or_required": [
+        [
+          "1376306",
+          "FIRST"
+        ],
+        [
+          "1376347",
+          "FIRST"
+        ],
+        [
+          "1376444",
+          "FIRST"
+        ],
+        [
+          "1376540",
+          "FIRST"
+        ]
+      ],
+      "unexpected_relegated_or_other": [
+        [
+          "1376277",
+          "FIRST"
+        ],
+        [
+          "1376291",
+          "FIRST"
+        ],
+        [
+          "1376297",
+          "FIRST"
+        ],
+        [
+          "1376467",
+          "FIRST"
+        ]
+      ],
+      "duplicate_domestic_assignments": [],
+      "status": "FAIL"
+    }
+  ]
+}

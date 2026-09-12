@@ -1,0 +1,9 @@
+{
+  "snapshot_date": "2026-09-12",
+  "eligible_new_rows": 0,
+  "already_in_existing_create_ready": [
+    "811432"
+  ],
+  "reason": "No new eligible rows: the only zero-duplicate CREATE_READY audit row in scope is already present in the existing create-ready artifact.",
+  "production_mutation": false
+}

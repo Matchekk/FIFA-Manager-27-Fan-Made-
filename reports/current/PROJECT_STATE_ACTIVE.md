@@ -1,6 +1,7 @@
 # FM27 Community Overhaul — Project State
 
-Updated 2026-09-12. Active production sprint: complete the 2026/27 football database.
+Updated 2026-09-13; football evidence snapshot 2026-09-12. Active production sprint:
+complete the 2026/27 football database.
 
 ## Accepted foundation
 
@@ -57,10 +58,28 @@ Production freeze is refused while coverage is incomplete; draft builds are labe
 No Native10 release has passed and no new smoke has run. Draft01 failed safely on
 expired metadata contract dates. Draft02 failed before writing on acquisition fields
 attached to an unrelated action; Sol owns the focused correction and input preflight.
-Preserve both immutable failed build records. Next candidate must use a new name.
+Preserve all immutable failed build records. Draft03 failed before writing on13
+SQUAD loan rows with unproven intermediate ownership. Its completed before exports
+now support an offline all-row preflight, including creation inputs.
+Path: `data/generated/release-candidate/native10-data-draft-20260912-03`.
 
-Latest reconciliation:123 squad actions,66 club changes,71 creations;711 blocking
-review rows and390 essential wrong-state holds. These are incomplete draft inputs.
+Draft04 is running:240 squad actions and94 creations, full offline preflight PASS
+(0 errors/0 warnings), native self-tests PASS. Candidate path:
+`data/generated/release-candidate/native10-data-draft-20260913-04`.
+Executable snapshot SHA94f77cbe0f06c26ca16e042e90721abba287d2fd1c5a6976015100fe94b8da60.
+The13
+ownership-chain rows are held; five sourced same-owner early borrower switches use
+a narrow guard (prior loan expired by snapshot, unchanged owner, different borrower,
+joined after prior start, explicit current profile dates).
+Use latest `integration/integration.json` for current counts; no production freeze.
+Last matrix checkpoint52 GOOD_ENOUGH /170 PARTIAL. All59 profile employer conflicts were resolved
+with explicit parent/reserve aliases and passed onward through independent guards.
+Provisional creation ratings are retained but are not blockers for this data sprint.
+Twenty explicit departure resolutions and116 typed-condition evidence rows are
+available in worker artifacts; integration continues. All referenced cached bytes
+were hash-verified. Ten duplicate rows resolved as five parent/reserve identities.
+Creation triage100:20 prior existing identities,1 already create-ready,79 specific
+prerequisite holds after two source attempts. No further Luna search loops on these.
 `reports/current/UNDISCLOSED_CONTRACTS.csv` lists85 permanent moves with agreeing
 roster/profile and known join but unknown end and expired native end. No substitute
 dates have been generated. A bounded provisional-end policy question is pending;
@@ -68,8 +87,10 @@ do not apply any exception without the user's answer.
 
 ## Next actions
 
-1. Sol fixes draft02 action-field preflight, then continues typed-condition holds.
-2. Worker resolves22 explicit source-absence exceptions; another audits club coverage.
+1. Let immutable draft04 complete write/reread/semantic comparison. Never reuse
+   failed draft03. Native/integration checkpoint commit0f240d2.
+2. Sol integrates remaining explicit departure/typed-condition evidence; workers
+   isolate duplicate-affiliation and creation prerequisites without repeating searches.
 3. Build/test native changes; freeze canonical plan only when coverage passes.
 4. Generate Native10, exact diff and candidate membership validation.
 5. One representative smoke after data completion; final report with actual gates/counts.

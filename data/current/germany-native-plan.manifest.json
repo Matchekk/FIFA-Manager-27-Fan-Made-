@@ -1,0 +1,183 @@
+{
+  "status": "PASS_SCOPED_MEMBERSHIP_PLAN",
+  "plan_sha256": "ba3bf8530d9c22b9ba8b1761fd18897295e68a2e198cfa100c6760906bd2e6e9",
+  "changes": [
+    {
+      "competition_id": 352387074,
+      "slot": 1,
+      "old_club_id": 1376297,
+      "new_club_id": 1376306,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 11,
+      "old_club_id": 1376291,
+      "new_club_id": 1376540,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 13,
+      "old_club_id": 1376277,
+      "new_club_id": 1376347,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 19,
+      "old_club_id": 1376467,
+      "new_club_id": 1376444,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387078,
+      "slot": 15,
+      "old_club_id": 1376306,
+      "new_club_id": 1376297,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387079,
+      "slot": 6,
+      "old_club_id": 1376540,
+      "new_club_id": 1376291,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387079,
+      "slot": 19,
+      "old_club_id": 0,
+      "new_club_id": 1376467,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387075,
+      "slot": 6,
+      "old_club_id": 1376347,
+      "new_club_id": 1384964,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387083,
+      "slot": 1,
+      "old_club_id": 1384964,
+      "new_club_id": 1389307,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387077,
+      "slot": 6,
+      "old_club_id": 1376444,
+      "new_club_id": 1380503,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387086,
+      "slot": 3,
+      "old_club_id": 1380503,
+      "new_club_id": 1376965,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387076,
+      "slot": 11,
+      "old_club_id": 1376375,
+      "new_club_id": 1376277,
+      "team_type": "FIRST"
+    },
+    {
+      "competition_id": 352387085,
+      "slot": 12,
+      "old_club_id": 1376368,
+      "new_club_id": 1376375,
+      "team_type": "FIRST"
+    }
+  ],
+  "boundary": [
+    [
+      "1376368",
+      "FIRST"
+    ],
+    [
+      "1376965",
+      "FIRST"
+    ],
+    [
+      "1389307",
+      "FIRST"
+    ]
+  ],
+  "counts": {
+    "352387074": 20,
+    "352387075": 18,
+    "352387076": 18,
+    "352387077": 18,
+    "352387078": 18,
+    "352387079": 19,
+    "352387083": 16,
+    "352387085": 16,
+    "352387086": 19
+  },
+  "input_sha256": {
+    "data\\generated\\native10-base-competition-inspection-20260912-01\\competition_members.csv": "167cd82ffe1969e82a5349a07c16a44992165ebb96664b13b3fccade24d2221c",
+    "data\\current\\league-membership-2026-27.integration.csv": "eab78e33994e2f701bde41c219298823b0da89983df61ba68c963f6c7245d948",
+    "data\\current\\ger3-membership-plan.manifest.json": "5073bd294817f91b60a11072194ec698c73023e440248a61c0d560276b7164a5",
+    "data\\current\\german-nord-west-dependencies.csv": "b2ea2686308598c5939cb6c76f6c21c89de5991ab1efaa486915dc0307c69d38",
+    "data\\current\\german-nord-west-dependencies.json": "32a544c601bd82fcbc9d9f854aed981dc5df4c521b4b927a51eeb7d1c2e9dc93",
+    "data\\current\\evidence\\german-dependencies\\manifest.json": "37936b18a5f88baa8f6d4ee970409baba4ffa6990d29a08d14a5ac8bc5917fec"
+  },
+  "source_evidence": [
+    {
+      "label": "nordost-movements",
+      "url": "https://www.nofv-online.de/index.php/aktuelles-leser/loks-aus-fuehrt-zum-abstiegsdomino.html",
+      "sha256": "386105a06b2d7ae05010ea6eb160153af1078d9d5290f94a9beddaae1fc21988",
+      "retrieved_at": "2026-09-12T20:37:54.950232+00:00",
+      "status": "CAPTURED"
+    },
+    {
+      "label": "nordost-members",
+      "url": "https://www.nofv-online.de/index.php/regionalliga-nordost.html",
+      "sha256": "809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85",
+      "retrieved_at": "2026-09-12T20:37:55.957911+00:00",
+      "status": "CAPTURED"
+    },
+    {
+      "label": "bayern-format",
+      "url": "https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag",
+      "sha256": "58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2",
+      "retrieved_at": "2026-09-12T20:37:56.896544+00:00",
+      "status": "CAPTURED"
+    },
+    {
+      "label": "bayern-schedule",
+      "url": "https://www.bfv.de/news/regionalliga-bayern/2026/07/rahmenspielplan-regionalliga-bayern-2026-27",
+      "sha256": "85aca08ff6220800670b0cd96706f1cba9c656d723d3cd41c1664f5e96042572",
+      "retrieved_at": "2026-09-12T20:37:58.113068+00:00",
+      "status": "CAPTURED"
+    },
+    {
+      "label": "nordost-sued-members",
+      "url": "https://www.nofv-online.de/index.php/oberliga-sued.html",
+      "sha256": "bb73822ddb5b56e87025a56179162d234161339c87f128db58ac307459e73b4f",
+      "retrieved_at": "2026-09-12T21:12:12.224597+00:00",
+      "status": "CAPTURED"
+    },
+    {
+      "label": "kinderhaus-dfb",
+      "url": "https://www.fussball.de/mannschaft/sc-westfalia-kinderhaus-westfalia-kinderhaus-westfalen/-/saison/2627/team-id/011MIA35HC000000VTVG0001VTR8C1K7",
+      "sha256": "316b80ec7e21902b1e18cd8d39f5e34ff56415673fc6346c5501d1460e8e2d25",
+      "retrieved_at": "2026-09-12T21:12:13.586870+00:00",
+      "status": "CAPTURED"
+    }
+  ],
+  "policy": "Only required GER3 closure: unrelated lower memberships retained exactly, not asserted current. Grimma exits below the fifth modeled tier; Nordhorn/Kinderhaus enter from below it. All other club memberships conserved.",
+  "format": {
+    "league": "Bayern",
+    "teams": 19,
+    "rounds": 38,
+    "regional_pool": 91,
+    "calendar": "existing German19-team native donor",
+    "future_policy": "Balanced stable19-team modeled format; any official2027/28 transient size adaptation remains an explicit later script review, not a claimed historical fact."
+  }
+}

@@ -68,6 +68,7 @@ def main():
     blocking_reviews = [row for row in reviews
                         if row.get("blocking") == "YES" and row.get("queue") != RATING_QUEUE]
     raw_blocking_reviews = [row for row in reviews if row.get("blocking") == "YES"]
+    rating_reviews = [row for row in reviews if row.get("queue") == RATING_QUEUE]
     review_by_player = {}
     for row in blocking_reviews:
         review_by_player.setdefault(player_key(row), []).append(row)
@@ -91,8 +92,7 @@ def main():
                              if row["league"] == league and row["club_tm_id"] == external)
         holds = [row for row in reviews if row["league"] == league and row["club_tm_id"] == external
                  and row.get("blocking") == "YES" and row.get("queue") != RATING_QUEUE]
-        rating_holds = [row for row in reviews if row["league"] == league and row["club_tm_id"] == external
-                        and row.get("blocking") == "YES" and row.get("queue") == RATING_QUEUE]
+        rating_holds = [row for row in rating_reviews if row["league"] == league and row["club_tm_id"] == external]
         material = unique_rows(holds)
         queues = Counter(row["queue"] for row in holds)
         bad_people = {player_key(row) for row in material}
@@ -187,7 +187,7 @@ def main():
             "rows": len(reviews),
             "raw_blocking_rows": len(raw_blocking_reviews),
             "sprint_blocking_rows": len(blocking_reviews),
-            "rating_deferred_rows": sum(row.get("blocking") == "YES" and row.get("queue") == RATING_QUEUE for row in reviews),
+            "rating_deferred_rows": len(rating_reviews),
             "sprint_blocking_counts": dict(Counter(row["queue"] for row in blocking_reviews)),
         },
         "loan_counting": "confirmed_loans is the unique union of confirmed incoming and outgoing loan player IDs per club; a player is never counted twice.",

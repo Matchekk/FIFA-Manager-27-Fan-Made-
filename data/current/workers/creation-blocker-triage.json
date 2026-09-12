@@ -1,0 +1,56 @@
+{
+  "snapshot_date": "2026-09-12",
+  "scope": "blocking PLAYER_CREATION rows only",
+  "queue_rows": 100,
+  "all_player_creation_rows": 161,
+  "blocking_rows": 100,
+  "profile_match_count": 88,
+  "first_team_significance_counts": {
+    "CURRENT_ROSTER_SOURCE_OBSERVED": 85,
+    "PROFILE_RESERVE_MISMATCH": 3,
+    "EXPLICIT_FIRST_TEAM": 12
+  },
+  "prerequisite_category_counts": {
+    "PLAYER_CREATION_PREREQUISITE_MISSING": 79,
+    "EXISTING_NATIVE_IDENTITY_CONFIRMED": 20,
+    "ALREADY_CREATE_READY": 1
+  },
+  "missing_prerequisite_counts": {
+    "IDENTITY_AMBIGUITY_DUPLICATE_REVIEW_LEAD": 52,
+    "IDENTITY_AMBIGUITY_FUZZY_CANDIDATE": 62,
+    "NONE_CREATION_NOT_REQUIRED": 20,
+    "CONTRACT_UNTIL": 11,
+    "FIRST_TEAM_SIGNIFICANCE_UNCONFIRMED_RESERVE_PROFILE": 2,
+    "IDENTITY_AMBIGUITY_EXACT_NATIVE_CANDIDATE": 6,
+    "NONE_ALREADY_IN_EXISTING_CREATE_READY": 1,
+    "IDENTITY_AMBIGUITY_REVIEWED_ALIAS_NO_BRIDGE": 1
+  },
+  "prior_attempt_counts": {
+    "2": 100
+  },
+  "escalation_count": 79,
+  "additional_create_ready": {
+    "snapshot_date": "2026-09-12",
+    "eligible_new_rows": 0,
+    "already_in_existing_create_ready": [
+      "811432"
+    ],
+    "reason": "No new eligible rows: the only zero-duplicate CREATE_READY audit row in scope is already present in the existing create-ready artifact.",
+    "production_mutation": false
+  },
+  "source_files": [
+    "reports\\current\\integration\\review-queue.csv",
+    "data\\current\\evidence\\review-profiles.csv",
+    "data\\current\\workers\\south-west\\profiles.csv",
+    "data\\current\\workers\\eng-ger\\profiles.csv",
+    "data\\current\\workers\\south-west\\rosters.csv",
+    "data\\current\\workers\\eng-ger\\squad_observations.csv",
+    "data\\current\\workers\\south-west\\identity-resolutions.csv",
+    "data\\current\\workers\\south-west\\identity-confirmed.csv",
+    "data\\current\\workers\\south-west\\create-ready-review.csv",
+    "data\\current\\workers\\eng-ger\\create-ready-review.csv",
+    "data\\current\\workers\\south-west\\create-ready.csv",
+    "data\\current\\workers\\eng-ger\\create-ready.csv"
+  ],
+  "production_mutation": false
+}

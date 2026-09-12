@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "status": "IMPLEMENTATION_IN_PROGRESS",
+  "source_date": "2026-09-12",
+  "sources": [
+    "https://www.proleague.be/nieuws/qanda-wat-verandert-er-aan-het-competitieformat",
+    "https://www.proleague.be/nieuws/challenger-pro-league-heeft-nieuw-format-zonder-quota-voor-u23"
+  ],
+  "mechanism": "Native FIFAM competition structures and instruction objects; no Manager.exe changes",
+  "leagues": [
+    {"competition_id": 117506048, "old_count": 16, "new_count": 18, "rounds": 2, "matchdays": 34, "direct_relegations": 2},
+    {"competition_id": 117506049, "old_count": 17, "new_count": 15, "rounds": 2, "matchdays": 30, "direct_relegations": 2}
+  ],
+  "promotion_semi": {"competition_id": 117964800, "old_positions": [3, 4, 6, 5], "new_positions": [2, 3, 5, 4], "depends_only_on": 117506049},
+  "promotion_final": {"competition_id": 117964801, "winner_promotes_directly": true},
+  "remove_obsolete_barrage": 117964802,
+  "top_pool": {
+    "competition_id": 119013376, "new_count": 18,
+    "selection": [
+      {"type": "GET_TAB_X_TO_Y", "competition_id": 117506048, "start": 1, "count": 16},
+      {"type": "GET_TAB_X_TO_Y", "competition_id": 117506049, "start": 1, "count": 1},
+      {"type": "GET_WINNER", "competition_id": 117964801, "count": 1}
+    ]
+  },
+  "second_pool": {
+    "competition_id": 119013377, "new_count": 15,
+    "selection": [
+      {"type": "GET_LOSER", "competition_id": 117964800, "count": 2},
+      {"type": "GET_LOSER", "competition_id": 117964801, "count": 1},
+      {"type": "GET_TAB_X_TO_Y", "competition_id": 117506048, "start": 17, "count": 2},
+      {"type": "GET_TAB_X_TO_Y", "competition_id": 117506049, "start": 6, "count": 8},
+      {"type": "GET_TAB_X_TO_Y", "competition_id": 117506051, "start": 1, "count": 1},
+      {"type": "GET_TAB_X_TO_Y", "competition_id": 117964803, "start": 1, "count": 1}
+    ]
+  },
+  "third_pool_relegation_input": {"competition_id": 119013378, "source_league": 117506049, "old_start": 16, "new_start": 14, "count": 2},
+  "remaining_gates": [
+    "Authoritative second-tier15 membership and any necessary lower-league exchanges",
+    "Reserve-team promotion exclusion must remain correct in native selection semantics",
+    "Valid34/30-round calendars and fixtures",
+    "No residual edges or instructions to removed barrage",
+    "Native write/reread and exact semantic comparison"
+  ]
+}

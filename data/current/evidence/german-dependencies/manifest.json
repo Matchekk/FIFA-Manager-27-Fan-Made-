@@ -26,5 +26,19 @@
     "sha256": "85aca08ff6220800670b0cd96706f1cba9c656d723d3cd41c1664f5e96042572",
     "retrieved_at": "2026-09-12T20:37:58.113068+00:00",
     "status": "CAPTURED"
+  },
+  {
+    "label": "nordost-sued-members",
+    "url": "https://www.nofv-online.de/index.php/oberliga-sued.html",
+    "sha256": "bb73822ddb5b56e87025a56179162d234161339c87f128db58ac307459e73b4f",
+    "retrieved_at": "2026-09-12T21:12:12.224597+00:00",
+    "status": "CAPTURED"
+  },
+  {
+    "label": "kinderhaus-dfb",
+    "url": "https://www.fussball.de/mannschaft/sc-westfalia-kinderhaus-westfalia-kinderhaus-westfalen/-/saison/2627/team-id/011MIA35HC000000VTVG0001VTR8C1K7",
+    "sha256": "316b80ec7e21902b1e18cd8d39f5e34ff56415673fc6346c5501d1460e8e2d25",
+    "retrieved_at": "2026-09-12T21:12:13.586870+00:00",
+    "status": "CAPTURED"
   }
 ]
