@@ -1,0 +1,7 @@
+{
+  "status": "PASS_INDEPENDENT_FIELD_REREAD",
+  "positive_fields_checked": 103,
+  "stale_marker_removals_checked": 37,
+  "unique_clubs": 123,
+  "held_rows_not_applied": 2
+}

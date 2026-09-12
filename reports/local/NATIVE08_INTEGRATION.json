@@ -1,0 +1,1381 @@
+{
+  "status": "INTEGRATED_EDITOR_EXPORT_REQUIRED",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08",
+  "candidate": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native08-integrated-20260912-01",
+  "backup": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\before-combined-integration",
+  "changed": [
+    {
+      "path": "database/data/CountryData1.sav",
+      "sha256": "06b75ca46da80376b44e9f78588f45f3497c5bd73959831f8127e072c4e65955"
+    },
+    {
+      "path": "database/data/CountryData10.sav",
+      "sha256": "7f6e9a7dd4cac3f799d123978ab18466d7cf9bad611e454cf4406467bf340bee"
+    },
+    {
+      "path": "database/data/CountryData100.sav",
+      "sha256": "3c9374686f83443623586dd5b7a9d5d636fc213435e70b853e261a3ab27f24c3"
+    },
+    {
+      "path": "database/data/CountryData101.sav",
+      "sha256": "66869b678e4cef488853bcb9d37442ea7ae01043e7080ae66f1fcdc0aff49527"
+    },
+    {
+      "path": "database/data/CountryData102.sav",
+      "sha256": "99ad6c23e1a3f8ebd0af9edfe123be0eba86adb86a04839804b218887a0ba30b"
+    },
+    {
+      "path": "database/data/CountryData103.sav",
+      "sha256": "8f17ac74e66b1fddcd1e18c1e3194605c3d9d1e39c1c8f7f4407771803926689"
+    },
+    {
+      "path": "database/data/CountryData104.sav",
+      "sha256": "00eea24e51f4fc16bad4ddce3d9dfb33d5577c815ceafa2533917b898e356dc9"
+    },
+    {
+      "path": "database/data/CountryData105.sav",
+      "sha256": "af27699a3395af66e1b1269d2281db43ab452a4624b5707133fdde3ea385cf77"
+    },
+    {
+      "path": "database/data/CountryData106.sav",
+      "sha256": "3d251be6baf9d43395a26324314288ae07beb09304a54f107c92ae9908857299"
+    },
+    {
+      "path": "database/data/CountryData107.sav",
+      "sha256": "10ae4f4402df328c59a85e52551600af19bb4117869ff1d8f91e92d8e9d3e9a8"
+    },
+    {
+      "path": "database/data/CountryData108.sav",
+      "sha256": "58a5c96830872397f20d76c983ef4d68456f088543fb903b3cd053c7d23e1eca"
+    },
+    {
+      "path": "database/data/CountryData109.sav",
+      "sha256": "47ac10870f89f5af076a9ac0bad46be9d33b4c100345ceec16762afb75874701"
+    },
+    {
+      "path": "database/data/CountryData11.sav",
+      "sha256": "db685ae7ed289500c82b4cfb8a86493bddeead0c48a4a1010e059117ef78888e"
+    },
+    {
+      "path": "database/data/CountryData110.sav",
+      "sha256": "e8959e207910dba236ea3044bfa8860f7f5f84d00459c37d3747fdc1174bafb9"
+    },
+    {
+      "path": "database/data/CountryData111.sav",
+      "sha256": "74d8abd07add98979e0213aaf716f9bcf2a93587c2cee4f57415e5dc6b5e57cb"
+    },
+    {
+      "path": "database/data/CountryData112.sav",
+      "sha256": "fbefa995414fe028b495a51d68c4d044529ad8a4bb25c6d38e9623e030938288"
+    },
+    {
+      "path": "database/data/CountryData113.sav",
+      "sha256": "ca3963a5fd575f0420b21c16ee8e195295752b7c0735775dc6956e912e9c070d"
+    },
+    {
+      "path": "database/data/CountryData114.sav",
+      "sha256": "b7dc260c4b5f3fd0d21400bacedd6d487aa5248eafa5a53723ea55797b8a98b6"
+    },
+    {
+      "path": "database/data/CountryData115.sav",
+      "sha256": "1dbe8012eb8090d64ce869828c9b45286fe1a06e70eed67b1d76b58092f9357c"
+    },
+    {
+      "path": "database/data/CountryData116.sav",
+      "sha256": "aa208e9515524a450a3ce930022f651b07ad49c188b79d4141079f632fcff83a"
+    },
+    {
+      "path": "database/data/CountryData117.sav",
+      "sha256": "d6541d4972b9299f8c7c8b7e69c379feadab10611076ecfaf385e3e5a84144f7"
+    },
+    {
+      "path": "database/data/CountryData118.sav",
+      "sha256": "6bd6903b3da20cb45ba7b836d4e437640c400b4fe6cd220d6907c6afc91c84ae"
+    },
+    {
+      "path": "database/data/CountryData119.sav",
+      "sha256": "5856f0335f9fd8cfb444345ebab97dadc38e914f8d6ca15ddd77a3063a0bec32"
+    },
+    {
+      "path": "database/data/CountryData12.sav",
+      "sha256": "bfde3749f06d9e35dc2791316c01f2fbd2ad04443f01ba4705d64fef733766c8"
+    },
+    {
+      "path": "database/data/CountryData120.sav",
+      "sha256": "e567eee8d7423d26d036b985c0177ea9970231c35804cb2a0ba3521b8afafe6e"
+    },
+    {
+      "path": "database/data/CountryData121.sav",
+      "sha256": "281d7165f07a166d40f7dc13e95fc757f69def7fc37f5c4f20c4b67fbf2ffe8b"
+    },
+    {
+      "path": "database/data/CountryData122.sav",
+      "sha256": "53e145c871102bc6865b06fea8bd21067155d4d2db47a5c36c8c0a1b7dea3a39"
+    },
+    {
+      "path": "database/data/CountryData123.sav",
+      "sha256": "5c825f054334181de573f7b47f8ae379d910be159798a1147121cb958e9c9a2c"
+    },
+    {
+      "path": "database/data/CountryData124.sav",
+      "sha256": "3704c4af2bf6e801b34c2b436fce4f2fc781216b47380870c5e0825a60aa8eb1"
+    },
+    {
+      "path": "database/data/CountryData125.sav",
+      "sha256": "5764d5c17ae2ed17a7a37fe6353e7efcede7180f57916f3bea3a6640a224ead6"
+    },
+    {
+      "path": "database/data/CountryData126.sav",
+      "sha256": "27f0beb8fb8123e3625e681d7d8218dd9e836d1b8d4d096cc58a592a7118f6e2"
+    },
+    {
+      "path": "database/data/CountryData127.sav",
+      "sha256": "f9f7d2741fb8e9689adebcc440fdceaaff2707469e8a5997623822d0bed90412"
+    },
+    {
+      "path": "database/data/CountryData128.sav",
+      "sha256": "d5fb4ac0fb25f139214d4cc4411de4cff3446ee062379fa4db8873e7e88ffad2"
+    },
+    {
+      "path": "database/data/CountryData129.sav",
+      "sha256": "1695f72ae468d9e11c307e00f69938c3ff92ecf612da010f3b05e0b1b6800a94"
+    },
+    {
+      "path": "database/data/CountryData13.sav",
+      "sha256": "02a8cd6f33cfd74ba0dc0a079020b28cf585f9b6af3ccc55246b3c354b1db98b"
+    },
+    {
+      "path": "database/data/CountryData130.sav",
+      "sha256": "ef7b218f8590c9588f420c437f8d9a895e77caa5f65b6a34cfeba48fb421a239"
+    },
+    {
+      "path": "database/data/CountryData131.sav",
+      "sha256": "d5677fd653c6baf85eddaaa9ba294ef8f5a09e90b3214255ebfb7f8a53dac28d"
+    },
+    {
+      "path": "database/data/CountryData132.sav",
+      "sha256": "5bc102fe793a3fe4d09955bbde35f5a0bc43b512e9cc4f5a72bf80982c7ca2d9"
+    },
+    {
+      "path": "database/data/CountryData133.sav",
+      "sha256": "7b267d8eb7c2d72e00cc9037c421daeabc71f9f7513bb411199145c9d9106455"
+    },
+    {
+      "path": "database/data/CountryData134.sav",
+      "sha256": "c7ad1eb59d42c83254bcadf537eab3ea5067cf46a01e3ba92a46b3ec1544b2de"
+    },
+    {
+      "path": "database/data/CountryData135.sav",
+      "sha256": "a5819dd1bf8e4696256c38676f412162c3638cd9d1fc46537e21c4f8414a5ad8"
+    },
+    {
+      "path": "database/data/CountryData136.sav",
+      "sha256": "89060091998a44e1bee744618cdc62a93828547b452b03352cc69554829bfbce"
+    },
+    {
+      "path": "database/data/CountryData137.sav",
+      "sha256": "922975b6bf5d5fe5199a1d323d1db4813da371ac308782b6da5db0562b904827"
+    },
+    {
+      "path": "database/data/CountryData138.sav",
+      "sha256": "0882b542a158f14d33b2ae590b6246c18513392925dac5fb14245fad90ff68b7"
+    },
+    {
+      "path": "database/data/CountryData139.sav",
+      "sha256": "5200868ec408dbbc0a0b06f34c5601dfa4b800b8e4d55ced4c26712714cadf4a"
+    },
+    {
+      "path": "database/data/CountryData14.sav",
+      "sha256": "f4cc2f293669d9c375b8a060f0225bae223f8464cfca27116e927f58e503c26a"
+    },
+    {
+      "path": "database/data/CountryData140.sav",
+      "sha256": "49d51bd043806591cc373c34d523578add4102b2597ef8c67e2b7fdd0a9fa76b"
+    },
+    {
+      "path": "database/data/CountryData141.sav",
+      "sha256": "b64f337951c7b796677ae8f0f961c6172a5450bee2201a6518101210b6e96cea"
+    },
+    {
+      "path": "database/data/CountryData142.sav",
+      "sha256": "2a63e07b72ec70515c116d382cf294393a34b53ff5b3237d00ed28c422196c04"
+    },
+    {
+      "path": "database/data/CountryData143.sav",
+      "sha256": "7621d947c93d950d0d9a5b235b8ffbf038848b3932526540eef68e178db451e5"
+    },
+    {
+      "path": "database/data/CountryData144.sav",
+      "sha256": "12c8984cb8e218d33ea141632c48a8f4d266697bb18d204275bae1722f7ef85d"
+    },
+    {
+      "path": "database/data/CountryData145.sav",
+      "sha256": "492cfbd002953818798c23b7737c0902099a17e180fcfcc97ae1d7367a550052"
+    },
+    {
+      "path": "database/data/CountryData146.sav",
+      "sha256": "e63eee30b39a7e6c638f3dfe2ccee844d92fed05e731a0dd327b3af108486b6c"
+    },
+    {
+      "path": "database/data/CountryData147.sav",
+      "sha256": "61b11d87c3bf848d3024a8d4694b379cf2c59c8cae81063e2e3690bb0c544ffe"
+    },
+    {
+      "path": "database/data/CountryData148.sav",
+      "sha256": "f01ea730ac8f53a6b3efb7be04a5cc952c627311754aad47ef1a67fb4dd3c574"
+    },
+    {
+      "path": "database/data/CountryData149.sav",
+      "sha256": "743a99d2cb2f2c5f4f1536b127016f5f9a737ed13110db13593424234805f760"
+    },
+    {
+      "path": "database/data/CountryData15.sav",
+      "sha256": "33a7b0eca3e8e0614a86bd4125ca6633efa2dfee39c741637cfc56c5d0ffd737"
+    },
+    {
+      "path": "database/data/CountryData150.sav",
+      "sha256": "cc6e40541ba5b30a9fb2ace7cb5200fe7f843f82c302d43cde9139c6c66be9cf"
+    },
+    {
+      "path": "database/data/CountryData151.sav",
+      "sha256": "31472fd4e276654375e3b761aefa76aa2eb3be157d154cab54f14723985a4ef1"
+    },
+    {
+      "path": "database/data/CountryData152.sav",
+      "sha256": "a87a6b5c21734d2c56c921d9ec5a23ab5855f8a620b95104e26129fae7725483"
+    },
+    {
+      "path": "database/data/CountryData153.sav",
+      "sha256": "7bc883a3e21c7db4b649fc6271f2a5956a4ab84456ffb29b7c0103a5d7965034"
+    },
+    {
+      "path": "database/data/CountryData154.sav",
+      "sha256": "71bb8e44599d53f6bbca6319d7f6796424407a82c0b415815cece1f27d7b080d"
+    },
+    {
+      "path": "database/data/CountryData155.sav",
+      "sha256": "6aae00244de8d11cd15edb675360962a84e0ceb0bacdfe1e5bef5ba0dc69672d"
+    },
+    {
+      "path": "database/data/CountryData156.sav",
+      "sha256": "a917139ce0b4d8bebd472f88567d1263abe115c4e8bbee5c7f3e8ab9b32e40d6"
+    },
+    {
+      "path": "database/data/CountryData157.sav",
+      "sha256": "d9f0df4fa5354d3a11338caf244ce567bb0bfa437e48b733e9556452246760d7"
+    },
+    {
+      "path": "database/data/CountryData158.sav",
+      "sha256": "a339217e276679cb23826b0f27e1022d4da996a25efca46420c35e9ed30c2309"
+    },
+    {
+      "path": "database/data/CountryData159.sav",
+      "sha256": "ee9b066bcee79561b51366d2323d2dea661cdfd49a36047881e28e0b97307276"
+    },
+    {
+      "path": "database/data/CountryData16.sav",
+      "sha256": "809896c26343699d424e4124f1a5774e1382198af86f4b8434a0f85bbe7ed733"
+    },
+    {
+      "path": "database/data/CountryData160.sav",
+      "sha256": "bc1727689d2ff1f93bb0b85f76eaf82a5554d8cef7e6e61c4f2fa815d62cefa7"
+    },
+    {
+      "path": "database/data/CountryData161.sav",
+      "sha256": "94fcbaf63b93b266b7c02ce7c981a195b8a39d5fd1d41a1a8896cb67e7148b3a"
+    },
+    {
+      "path": "database/data/CountryData162.sav",
+      "sha256": "9af8b204c759110fee15dd08e4095f69fbb72e8c1f61085d2fc959536c325d84"
+    },
+    {
+      "path": "database/data/CountryData163.sav",
+      "sha256": "54156cd647b7d4df02b40ae0d35f30b6acbcf4e2b075fb8d2869dcd6b0dc0b40"
+    },
+    {
+      "path": "database/data/CountryData164.sav",
+      "sha256": "67088446866315ce7baeb4c13296179c1a1a33267245da3848ad65c48c22723f"
+    },
+    {
+      "path": "database/data/CountryData165.sav",
+      "sha256": "3d2a84526b26af681f1cfe634b2ce82f79adba11eb9ab5cdb042cd9990e7b9f0"
+    },
+    {
+      "path": "database/data/CountryData166.sav",
+      "sha256": "5506d85f964fce2ba5d29a92610df734462b5015063c92d1d1ab1b31dfdfacfb"
+    },
+    {
+      "path": "database/data/CountryData167.sav",
+      "sha256": "5b010f23d1a2ee524a38e89cb4ea04a63076eb7fbc6db86338672948c9044518"
+    },
+    {
+      "path": "database/data/CountryData168.sav",
+      "sha256": "1590512b92eaa4e27ee72b8ca070cb2a92e723302584cd6f4ea880554bb915b2"
+    },
+    {
+      "path": "database/data/CountryData169.sav",
+      "sha256": "09f50f4dd0644fd49dd1bfa85f6c56c7d17026751e6d0c53fb591ab2e2fda413"
+    },
+    {
+      "path": "database/data/CountryData17.sav",
+      "sha256": "11f8a520f5ec502279d399b572f76dcb9c96bde1c6a918507c9adc9fa34d3c05"
+    },
+    {
+      "path": "database/data/CountryData170.sav",
+      "sha256": "d4704e4d3999188d4900515014a02075a3050c4ad3df75e01fa54cfd90c5f7d2"
+    },
+    {
+      "path": "database/data/CountryData171.sav",
+      "sha256": "e183c6f945faa0355aee4aba8c1c985130b055fe770c5c4b130dbb0e5bc3eee8"
+    },
+    {
+      "path": "database/data/CountryData172.sav",
+      "sha256": "4de7ece97f237358b61a0aa0429fb704f71906936f7f22132d2a63d7c6518c7d"
+    },
+    {
+      "path": "database/data/CountryData173.sav",
+      "sha256": "6b22ab691e6b061c57ecf4ff465bc813c34aebd536b8d4aca2ef472bf904d6a6"
+    },
+    {
+      "path": "database/data/CountryData174.sav",
+      "sha256": "06f69641e3ec8cc738c080c79663c228a545ab43c7e4a19c9a448b2f98919597"
+    },
+    {
+      "path": "database/data/CountryData175.sav",
+      "sha256": "5ae263d21debc941a71db7c68f267c9e20a3c076a18880c06f5448bda3b9503d"
+    },
+    {
+      "path": "database/data/CountryData176.sav",
+      "sha256": "8d5e76c04df67a19864131de52f4e71c2a1320ac769ef9ebfc19508e29f9908b"
+    },
+    {
+      "path": "database/data/CountryData177.sav",
+      "sha256": "53d4e67fa393a1a56bf8e7eabf440815ad379087d80b1d30218a5ac909b55b27"
+    },
+    {
+      "path": "database/data/CountryData178.sav",
+      "sha256": "36c67f5a47b49ffbc0543415fc01321b017b5c0ddfa5a29ca246a25ea73e85f1"
+    },
+    {
+      "path": "database/data/CountryData179.sav",
+      "sha256": "071d5ea43c5e1a41126977163c9b10469ad12d9b42bbf97614302c76f4821404"
+    },
+    {
+      "path": "database/data/CountryData18.sav",
+      "sha256": "eaed5b88f2b312fc326913514551e07fe5969da82d48d9fd8868aad5286bd4a8"
+    },
+    {
+      "path": "database/data/CountryData180.sav",
+      "sha256": "b4e78993e4d89f278bb45c1ad6c0791ed909ac9f8bb8a1225df8f2f7f2c721d9"
+    },
+    {
+      "path": "database/data/CountryData181.sav",
+      "sha256": "2e740b8e7c4458cbf6f15f3aba49df931a3ffe7c9adbccef39a0620c4cf0b35d"
+    },
+    {
+      "path": "database/data/CountryData182.sav",
+      "sha256": "37bf60d05c057344682ad56ecf5f23951268ab3a9e370e3c9451ef39f2597734"
+    },
+    {
+      "path": "database/data/CountryData183.sav",
+      "sha256": "be80697f7cb3966389d1fab01974521d19952e11a6ed01a139fdabbfa0d7040d"
+    },
+    {
+      "path": "database/data/CountryData184.sav",
+      "sha256": "1ad32888bc82602ac1b9aaa4c11ccb91be7733dc1656b4e3cdd73d1e693d8778"
+    },
+    {
+      "path": "database/data/CountryData185.sav",
+      "sha256": "54e70a8b20f9d134e2c8d7394d21f83190c10b521ecb02751a4eaa6eac344585"
+    },
+    {
+      "path": "database/data/CountryData186.sav",
+      "sha256": "75ba2050e2c48213c6ccd05a0bc6e9ba7cbfd03386653f28a224c9ca26a9d30a"
+    },
+    {
+      "path": "database/data/CountryData187.sav",
+      "sha256": "ccaaae8999a5d690063a704e6c82ab3ee7ad8c3a79828b22db7d229ab5fc380e"
+    },
+    {
+      "path": "database/data/CountryData188.sav",
+      "sha256": "d217240226d0d5cd884aeee84ef5d9e6f4b1161b4b104dd7da66c85edfcbe87d"
+    },
+    {
+      "path": "database/data/CountryData189.sav",
+      "sha256": "d9fe5f53043264786dc23884c945e0fb798c921aa04f39c62fbcf1e1c698099b"
+    },
+    {
+      "path": "database/data/CountryData19.sav",
+      "sha256": "2d4b6a3fe0f28d3c8eead10934cd64aa9c9420461e4ad0b54ec349a98c19d3bb"
+    },
+    {
+      "path": "database/data/CountryData190.sav",
+      "sha256": "519ba911554d4efae7cb2411264d958d22a2498b16708f3bc43afb3bbd2e255e"
+    },
+    {
+      "path": "database/data/CountryData191.sav",
+      "sha256": "b30ce10fe05929c7e4d375e52cb2223f07b75364fea958dcc485bc59ba2ffb9d"
+    },
+    {
+      "path": "database/data/CountryData192.sav",
+      "sha256": "794dd52a068380dfa4b7acbc7a8735c27e3c15822c622969cc8bc1046f1d1588"
+    },
+    {
+      "path": "database/data/CountryData193.sav",
+      "sha256": "356614308297e413d8ac92c3c481aea76aae3c2c28bb4a71ad9f87cef4adcccd"
+    },
+    {
+      "path": "database/data/CountryData194.sav",
+      "sha256": "7a6835eaeb6166a320a7075ebd3d3391bdb0a4417de77f516ddc08cae2a93633"
+    },
+    {
+      "path": "database/data/CountryData195.sav",
+      "sha256": "7d6d5ab3385b91cea578dc201669c4b99d9e30ce2295cd9e8768c026079720ba"
+    },
+    {
+      "path": "database/data/CountryData196.sav",
+      "sha256": "6875bd6659e996e69dde4c13f6fc7e30c7175fcce77cb4d4ec86d9ef8c9a63cd"
+    },
+    {
+      "path": "database/data/CountryData197.sav",
+      "sha256": "37b3205a395546f0b94e613e36a6cbb2c918a8c38e0586832928f05813544c24"
+    },
+    {
+      "path": "database/data/CountryData198.sav",
+      "sha256": "d3cb4b1f7e6523b1a653184c42a60ea8a19c4f2cbd8b6b8196d5c42f4ad2f1dd"
+    },
+    {
+      "path": "database/data/CountryData199.sav",
+      "sha256": "52bf89b75f44af3dccc1e5bbb0bf495fe555801dfaf91d1bb8c03143a0bb16b2"
+    },
+    {
+      "path": "database/data/CountryData2.sav",
+      "sha256": "b447f7fb7d7af82410e1f5ac9f0afc0d8ff807ae85cd37dbfe4fadd7ed60b40f"
+    },
+    {
+      "path": "database/data/CountryData20.sav",
+      "sha256": "04f0da523198e8752bef5a82b7fe690eec4732498391a1339f9ab7b8d23f8294"
+    },
+    {
+      "path": "database/data/CountryData200.sav",
+      "sha256": "0f7b0e2ee8ca7b2f2da696c7b4803db262a03759cdb971f09b7c9eabcf24f4bc"
+    },
+    {
+      "path": "database/data/CountryData201.sav",
+      "sha256": "bc85b13749c8a4145855bd0617f4b4c1b875f8778cc655ca7b46f892f9cf1e00"
+    },
+    {
+      "path": "database/data/CountryData202.sav",
+      "sha256": "01a97c519e266ff0badfaf6953c7e5c95f1bf9ee39787a42bcbd59c3da4b6045"
+    },
+    {
+      "path": "database/data/CountryData203.sav",
+      "sha256": "13a91f0742d1c8fa0ea79064ddecf35c764211fca5b4ea4d72bd19ff4cc85812"
+    },
+    {
+      "path": "database/data/CountryData204.sav",
+      "sha256": "4bd5b886ace4df746250545a0d519b65074ce516aced5354c0faa1a397b1abf7"
+    },
+    {
+      "path": "database/data/CountryData205.sav",
+      "sha256": "cbb2e55f70ddf3ce238425ff98d7ecb69b647094043d7ccdce180cf749952270"
+    },
+    {
+      "path": "database/data/CountryData206.sav",
+      "sha256": "084509acc588630d5c799a6cfc2432e28eeae66cada7b158759ea0a5d5996b4f"
+    },
+    {
+      "path": "database/data/CountryData207.sav",
+      "sha256": "dc33a4cc658f428940487880d40a9c49c6db16d7b77947622a9a445fb7d0c530"
+    },
+    {
+      "path": "database/data/CountryData21.sav",
+      "sha256": "c1e93ee493ddaece04fca8da43a0ede635a42debd0e322c97aa2c8319a5970a0"
+    },
+    {
+      "path": "database/data/CountryData22.sav",
+      "sha256": "a4d244c283669ed0b5959837a73bbdcac2185a4253e74c6d7476198378898577"
+    },
+    {
+      "path": "database/data/CountryData23.sav",
+      "sha256": "a8b7bdfc74214f15aad97689ea73256ff8cb5fed9c48f89763f7fb667d1590ee"
+    },
+    {
+      "path": "database/data/CountryData24.sav",
+      "sha256": "6198a0eb78871f722ba10738f3f3bc9f80b90e737edf9649c0fa6263eef27297"
+    },
+    {
+      "path": "database/data/CountryData25.sav",
+      "sha256": "698f59addaf4b491fb78e32deb1eb5cac6fedfc0c251869b6a3bca5ab75faa5a"
+    },
+    {
+      "path": "database/data/CountryData26.sav",
+      "sha256": "855d363cc43910937bac799192aae64e5cba6946aca82cc46a4025df0c034318"
+    },
+    {
+      "path": "database/data/CountryData27.sav",
+      "sha256": "adc77cc637040157ae91f535e31cfaf1716e9748bda9dcdd0cf9040edc86a21f"
+    },
+    {
+      "path": "database/data/CountryData28.sav",
+      "sha256": "ba128fb178bfb4602a255d780a18dd82a7548abc7a44ed5006733508bfd8e338"
+    },
+    {
+      "path": "database/data/CountryData29.sav",
+      "sha256": "9903be9a993fe63e17e6be26d76f21af56809b8d785b5e602af2dea601df7d96"
+    },
+    {
+      "path": "database/data/CountryData3.sav",
+      "sha256": "7c4f5902d6505a88b6dae5cfd6affe8094a343e23ef482e59af00cfe9eafe3c0"
+    },
+    {
+      "path": "database/data/CountryData30.sav",
+      "sha256": "3b79f83a15516a007b5f922a5cb74e8e22935b3a5959bab573172ddafa631d25"
+    },
+    {
+      "path": "database/data/CountryData31.sav",
+      "sha256": "a3bd81d6dac748304ad90dbbfe4d7fece375f415f8553a9360cd7ef0fddefe4e"
+    },
+    {
+      "path": "database/data/CountryData32.sav",
+      "sha256": "3f61c2fa54623f4ba99f2e15685c50addefd47071ca1a18c294de166f28a4c89"
+    },
+    {
+      "path": "database/data/CountryData33.sav",
+      "sha256": "ecf617a153eb77f4febef475c27bc258c11101f92b26273f8c9bd78abb499e59"
+    },
+    {
+      "path": "database/data/CountryData34.sav",
+      "sha256": "2198564e6cc751c0daf4518f884872cbd7ae4c881b4f8a95e6785988eac77de5"
+    },
+    {
+      "path": "database/data/CountryData35.sav",
+      "sha256": "24c4149dba350273a488e9e4389e9fac1ef12312d25ac1051571c2d62b64c145"
+    },
+    {
+      "path": "database/data/CountryData36.sav",
+      "sha256": "b0f6a4d1ed49c5ab10fc2adfc1bbb75e77fcbb8692c06b76f0f016f0b04f9b75"
+    },
+    {
+      "path": "database/data/CountryData37.sav",
+      "sha256": "470c8c58a6bfba3b64d0cc8bff363bfb27fce72fd5ca86adbb7e2a871681c7ae"
+    },
+    {
+      "path": "database/data/CountryData38.sav",
+      "sha256": "8d93dce345bb2c834dc6a46d6f70bb53c45134029c82818bcd2fcc1fd148e79c"
+    },
+    {
+      "path": "database/data/CountryData39.sav",
+      "sha256": "c376552912d03051d3661f5860c34e28f6364a8f5c0e652e3fca464e9aade9ea"
+    },
+    {
+      "path": "database/data/CountryData4.sav",
+      "sha256": "e1558742c9beca7b22917b8a62d14bb867465e287ee9209537ed0f7f17a50728"
+    },
+    {
+      "path": "database/data/CountryData40.sav",
+      "sha256": "e492fe62997462494ecb7ae0ee7243b3dc1c4dd7ed7f348f86020781d468d4d4"
+    },
+    {
+      "path": "database/data/CountryData41.sav",
+      "sha256": "85064f643245ea44b46136332f55b0daadf8aa11ff556eadb1abb6ef78f29462"
+    },
+    {
+      "path": "database/data/CountryData42.sav",
+      "sha256": "aff01bbeb198b1a78bef19a9b58988735ed8d79ceda45d371fd0794b80de7bbd"
+    },
+    {
+      "path": "database/data/CountryData43.sav",
+      "sha256": "f9d4379903307443362dc3cdb02c9052263540deb718539c568820a00599d89c"
+    },
+    {
+      "path": "database/data/CountryData44.sav",
+      "sha256": "a49fad4c98c8a287cf11247d36cd5079dffcdb486895ef7d0ec6b360b29df885"
+    },
+    {
+      "path": "database/data/CountryData45.sav",
+      "sha256": "630abc9eb87447182a414680718f418349bcfb4b573335960630e28766f754d6"
+    },
+    {
+      "path": "database/data/CountryData46.sav",
+      "sha256": "a014eb1323bb30ff2e323e0effbdb020b8b218b8a1fca376990e6b0c4ba89d58"
+    },
+    {
+      "path": "database/data/CountryData47.sav",
+      "sha256": "424b0e4ce0664b02aac2b0f4ed300418f280fb369fb4ac2b6ba791f0f479b88b"
+    },
+    {
+      "path": "database/data/CountryData48.sav",
+      "sha256": "f001ee2a5aba96e2534e487da780f2c58c1fe1a064c8d7ed2da52b63009e02ad"
+    },
+    {
+      "path": "database/data/CountryData49.sav",
+      "sha256": "b1c96419ddbdc3d9e4459a465e224cec3cce103accdfc4cea1f26f594f602097"
+    },
+    {
+      "path": "database/data/CountryData5.sav",
+      "sha256": "cf05f41479834db90b397d893330412850320bdb68d5647e3eddc4ccf87c2952"
+    },
+    {
+      "path": "database/data/CountryData50.sav",
+      "sha256": "90ba3e401b94a980e0cb36cda50c667c50ba8f9a3d492ff70bdb020196a9b8b9"
+    },
+    {
+      "path": "database/data/CountryData51.sav",
+      "sha256": "90893ea5aaf75e26931ec0812fa7d7257ff923fef0ebc0dc76bb2db4dfccde40"
+    },
+    {
+      "path": "database/data/CountryData52.sav",
+      "sha256": "427eac5a87e4d02dc999f9f799d5b8ef393009fb5d57754ee020e8969140877b"
+    },
+    {
+      "path": "database/data/CountryData53.sav",
+      "sha256": "5d9b2776fd50415e89668fe59e116af00437601904fe53290abda76f540b794b"
+    },
+    {
+      "path": "database/data/CountryData54.sav",
+      "sha256": "3c9392584c363c35ed8cc01bbaea2bf873f98f55d558ea0d3cab5f5af589a102"
+    },
+    {
+      "path": "database/data/CountryData55.sav",
+      "sha256": "9989ff334125f8c0130728f4b27a9ed7d404b015a81a2250a525b03632fce4e1"
+    },
+    {
+      "path": "database/data/CountryData56.sav",
+      "sha256": "b4dc70be04859616e816b83359398b81619cbf4f0ad0f9371722f6f5a685da5e"
+    },
+    {
+      "path": "database/data/CountryData57.sav",
+      "sha256": "ead4397baa07c3f7de9df3f91f0843227d4276c4601a2cc40f00f9cd714bf0ad"
+    },
+    {
+      "path": "database/data/CountryData58.sav",
+      "sha256": "fa77a157f1a9097aca1a1efb2f291e442f53b3df03c03176441c9a920ce2c38e"
+    },
+    {
+      "path": "database/data/CountryData59.sav",
+      "sha256": "bb26f26267db1f36f6af5d61a2bfbd66d23e2652d72b34f27bcf81bc4584576a"
+    },
+    {
+      "path": "database/data/CountryData6.sav",
+      "sha256": "d65c30d1189968564267bce67d6f654f98de2e163ad9ea034d88d3f9ff9907c2"
+    },
+    {
+      "path": "database/data/CountryData60.sav",
+      "sha256": "1c21a74273dc1c2381891b412e8eb1f208778736a5598b3678422655d8cae768"
+    },
+    {
+      "path": "database/data/CountryData61.sav",
+      "sha256": "5bf3ea0b1d253ffae4128a98b384265d3abee92b5882712e9c0886393e6e0f73"
+    },
+    {
+      "path": "database/data/CountryData62.sav",
+      "sha256": "2e5d2b054af4b05bfcbf1ee9d99122587ec5cf618b1928e572b3479a774e0b2a"
+    },
+    {
+      "path": "database/data/CountryData63.sav",
+      "sha256": "d0fa8b86aeacb963b7635b295279282fa41b93a008a4236748d8bcd3767f899f"
+    },
+    {
+      "path": "database/data/CountryData64.sav",
+      "sha256": "fc467dfbb00fdb3a2470985639aa489532f724b447a214a697d1e9c1f224a255"
+    },
+    {
+      "path": "database/data/CountryData65.sav",
+      "sha256": "bf17f97eb0fd6e7fa53cc493c8eb55e0399ee5e876bf33da8feca2a34716205f"
+    },
+    {
+      "path": "database/data/CountryData66.sav",
+      "sha256": "9d15bd2747037e08f65124b9455419602626b6e16ad22be46ae5a69c58f0eaae"
+    },
+    {
+      "path": "database/data/CountryData67.sav",
+      "sha256": "48a052464893e4c49a29928382c34c87c81df496869007e9a06c72a6ddb69bc7"
+    },
+    {
+      "path": "database/data/CountryData68.sav",
+      "sha256": "3c76e523347fa9bff0336dcdaf844f218ec232390fe5498e593bcdd095e8a4b3"
+    },
+    {
+      "path": "database/data/CountryData69.sav",
+      "sha256": "e8ebe9d7ccde409a31468176cc81ec396eab6bb8cf20109f1ea539e4a4decb70"
+    },
+    {
+      "path": "database/data/CountryData7.sav",
+      "sha256": "9e2c510a82688c0b31b8c1df38e62ef6923863dd80d4a183d5c6b474459a073b"
+    },
+    {
+      "path": "database/data/CountryData70.sav",
+      "sha256": "6900360c4cf09c76e2351d2f31d4c2d16fda508f19a87847b3aedc1fca4ba5d7"
+    },
+    {
+      "path": "database/data/CountryData71.sav",
+      "sha256": "c185d0b7e0d000e244e1325357772423f8a6cf955aaae99712375d99cc3c2436"
+    },
+    {
+      "path": "database/data/CountryData72.sav",
+      "sha256": "52ccd0d3a7fd16c642e9d807e82adc44e1c0fb153474e5f22e9340f2de4103f3"
+    },
+    {
+      "path": "database/data/CountryData73.sav",
+      "sha256": "1bc08f50d49695d95cba49750ecba0392a1230ed7033ba0a13590080cfaba496"
+    },
+    {
+      "path": "database/data/CountryData74.sav",
+      "sha256": "96086b241777658bd33be180a5f3a220359e3c13dd04e6ffe65d423d5b142442"
+    },
+    {
+      "path": "database/data/CountryData75.sav",
+      "sha256": "656e9301a919f9b7574adc8a6d2431a12d2d022c4cc6b4707082e6a7b61f1e77"
+    },
+    {
+      "path": "database/data/CountryData76.sav",
+      "sha256": "fe06858bb69f0672488d1cd83c7dc96a01a35927cb4496059bb80cc979124493"
+    },
+    {
+      "path": "database/data/CountryData77.sav",
+      "sha256": "220ee48fdeff5e0f9c3a6ddda97c686b87cd55dbb9c0e4d7d36d848e5cafe18b"
+    },
+    {
+      "path": "database/data/CountryData78.sav",
+      "sha256": "5c352cb7110dbc2f1d22bf4cedc8504a045415455ca946b13197d951e7ea0bf0"
+    },
+    {
+      "path": "database/data/CountryData79.sav",
+      "sha256": "9fa53754314e81b5257b11f5d080ba01b3f91d7142956533d4b5d7042d68ebcf"
+    },
+    {
+      "path": "database/data/CountryData8.sav",
+      "sha256": "5f7728c4a7f8e4f65737fb12a8657251fa04f5bc9513c10540e96f9a9d3e7851"
+    },
+    {
+      "path": "database/data/CountryData80.sav",
+      "sha256": "5fd14a6427fd4d44c67293c425f15a529c328eebf82a143180015057f4de544b"
+    },
+    {
+      "path": "database/data/CountryData81.sav",
+      "sha256": "7eebc56b57055c67b94e419745c2f4c6c0df5141a6a38bbe5222c9e2ff6c5a43"
+    },
+    {
+      "path": "database/data/CountryData82.sav",
+      "sha256": "5867331cf0a824befba3ed67e505069fa575a6c1a8df00398d588583bb4d1ac3"
+    },
+    {
+      "path": "database/data/CountryData83.sav",
+      "sha256": "0908746656c821d0475c6584a977512952222cf67d329030dcdff8ad203f8053"
+    },
+    {
+      "path": "database/data/CountryData84.sav",
+      "sha256": "f2a22510beb8584ae05677ac4051391767acf9522d478dd1bb5b2c030d0b9abb"
+    },
+    {
+      "path": "database/data/CountryData85.sav",
+      "sha256": "7a802dcc2336a508817be7208f861ef871e3db65ac4549537a7b32d221d82991"
+    },
+    {
+      "path": "database/data/CountryData86.sav",
+      "sha256": "3c04548f2dfae3039654b11e5d78c8bc4ee05bd6826379552959effce1e1387e"
+    },
+    {
+      "path": "database/data/CountryData87.sav",
+      "sha256": "3693d0f6158e57353e78bfb4f18ed4119036aebed349e2754efb9b837e482adf"
+    },
+    {
+      "path": "database/data/CountryData88.sav",
+      "sha256": "79c8a21630baa3cc831f76abf632cf62cde10180fbdf9e3a3956f43ebd057cf9"
+    },
+    {
+      "path": "database/data/CountryData89.sav",
+      "sha256": "71e14892df4075606a728281b41025c4d5e92eddbce67234569cab399d29b58d"
+    },
+    {
+      "path": "database/data/CountryData9.sav",
+      "sha256": "621ed6d6d8da90e7c759d9d174932a53ee53ed1e64f228bfb53433f8254c1ef3"
+    },
+    {
+      "path": "database/data/CountryData90.sav",
+      "sha256": "22d87fbd1a8620436d0d66544da27087e28c7e239e2305a8e166c12b94e5e2a1"
+    },
+    {
+      "path": "database/data/CountryData91.sav",
+      "sha256": "3496ce38a44b9833bd008001d85726d309b926b5c7c200ad5421bc7fb11e05ce"
+    },
+    {
+      "path": "database/data/CountryData92.sav",
+      "sha256": "6b5672d02b5db03fd842c70bdca8b8a2aaa215753d7b7f36bf570b789204fbf6"
+    },
+    {
+      "path": "database/data/CountryData93.sav",
+      "sha256": "eccd9e8c9e3d30f480cefa58a99c50f6c0fd0d301ae75e8ed90303b714ce2be6"
+    },
+    {
+      "path": "database/data/CountryData94.sav",
+      "sha256": "49e368e08cd031b82a73e96a18bed5b7876ac957a99fac803b15c42905cf6bdb"
+    },
+    {
+      "path": "database/data/CountryData95.sav",
+      "sha256": "80de5e7568b4f866bf620454f89185393bb8e881d8f6bb0188ac8c0b14d1cee7"
+    },
+    {
+      "path": "database/data/CountryData96.sav",
+      "sha256": "88fe4013a71e13f6ba0dda4185a4c22fb5625acf2be5ffb2e36272fc039fef6d"
+    },
+    {
+      "path": "database/data/CountryData97.sav",
+      "sha256": "0f7fcf333e2222ef373e609e6ac39aed97bc3e69fe09c8cc2fb05d6167d93854"
+    },
+    {
+      "path": "database/data/CountryData98.sav",
+      "sha256": "9be08b4bcc4c9657c5c39eb59b6c29d03f81bbab0cc58a3c02146449f253f032"
+    },
+    {
+      "path": "database/data/CountryData99.sav",
+      "sha256": "9d991f28486bc81a64ad6d9e02356572cbbaf0a33c53c529819263aa4bfb4ecc"
+    },
+    {
+      "path": "database/script/CountryScript1.sav",
+      "sha256": "74c9c02df0682f1b0a8f4eb10423de0369d3ba9f4da1876ad87394e8bf45376d"
+    },
+    {
+      "path": "database/script/CountryScript10.sav",
+      "sha256": "aebecaebdd9204b322333e5b69ecb5c0c80c8771f82e68aa23c1b0f725bcda68"
+    },
+    {
+      "path": "database/script/CountryScript101.sav",
+      "sha256": "d1d14ad6b78e9df4ba4a757d38a31b258d2a4242016a14f15c24403af095503f"
+    },
+    {
+      "path": "database/script/CountryScript103.sav",
+      "sha256": "e2a7fe990bfe2353d350dbc2d154c28dbc0b88d46b81392aa171b47054c86a59"
+    },
+    {
+      "path": "database/script/CountryScript108.sav",
+      "sha256": "3288fc3ede29b00dc9bda614167fbff324da5a069588390226f752f9b2258446"
+    },
+    {
+      "path": "database/script/CountryScript11.sav",
+      "sha256": "37c74a08f88e864c92c74360b654f9555754352a68734901635fac4a165dae31"
+    },
+    {
+      "path": "database/script/CountryScript111.sav",
+      "sha256": "0ea547837ce730d85a2cf498d23a06837a53825b0db00e8377bcfb36b5114528"
+    },
+    {
+      "path": "database/script/CountryScript114.sav",
+      "sha256": "03638813c2c8c51704f42e06b73fa8556d3c286872e967bc86eb0501cb72cae4"
+    },
+    {
+      "path": "database/script/CountryScript117.sav",
+      "sha256": "1b28c276413a07dcccd7b1f7c0febdc0f989aff44670cef8ce06043d68e93abb"
+    },
+    {
+      "path": "database/script/CountryScript12.sav",
+      "sha256": "46d819d20c97edd4b970022b1ac8ca5c205ed4384d9029f37eb342ba696369da"
+    },
+    {
+      "path": "database/script/CountryScript120.sav",
+      "sha256": "fce41ea46abf39698feacd788f73c20e6636ea96e97a6b14539243776db39b16"
+    },
+    {
+      "path": "database/script/CountryScript123.sav",
+      "sha256": "0a2d0fba3e9a9066ec022cdb28ccc2ee358b28b5fe39077249a35e352bf76db2"
+    },
+    {
+      "path": "database/script/CountryScript129.sav",
+      "sha256": "cc5cce0452e4a24b58276186d8449cb975a19623af93809b0904693701123424"
+    },
+    {
+      "path": "database/script/CountryScript13.sav",
+      "sha256": "80feff9a9d993656f24252b6defb9fa634657ffa159af5a7502fb3657b66d95d"
+    },
+    {
+      "path": "database/script/CountryScript133.sav",
+      "sha256": "3d74db2da134f530aa8a6568fafd14b5cc85fd92954f651bfd6a5a1b4b8e12c6"
+    },
+    {
+      "path": "database/script/CountryScript136.sav",
+      "sha256": "b220173dc67964886e754ce05c34cd58ce6e5ef54a4fee5f60f8e3331e4eb62f"
+    },
+    {
+      "path": "database/script/CountryScript14.sav",
+      "sha256": "61c87656ccdd59e19aca1bdd910245c3559ff6df3c592f94fdc43aa6147ac73d"
+    },
+    {
+      "path": "database/script/CountryScript140.sav",
+      "sha256": "ea3b08fad6dc76dd162cd8f3eed3ffd9c9e79e509a8a59aded84cf34a77879e2"
+    },
+    {
+      "path": "database/script/CountryScript142.sav",
+      "sha256": "b04ac5bfef0432a01da8b2415c07382d38fdb4c65d764fd2234f777df5933906"
+    },
+    {
+      "path": "database/script/CountryScript143.sav",
+      "sha256": "eaffe0a53a67ff4336ffba1af3d62cc381430127a4511d9d853122aa6afa894f"
+    },
+    {
+      "path": "database/script/CountryScript145.sav",
+      "sha256": "df6817de50c5d35fd88f77d57b9d969d0947933305b2ce7e9efaf278c55ba2f6"
+    },
+    {
+      "path": "database/script/CountryScript146.sav",
+      "sha256": "2271f56ed884f000d8cd22c93bbcf5d927f2a98bc4fc63a942e6c5e475336df3"
+    },
+    {
+      "path": "database/script/CountryScript147.sav",
+      "sha256": "cd74d9c40f170bbc5b85aff18123c451fd6e4fec232b60c96d1353eaa6cd595f"
+    },
+    {
+      "path": "database/script/CountryScript148.sav",
+      "sha256": "75fed7c5f1877b843dbf80b26c121aaaab6f25a9a7b76d1527d8c3330bcdcb66"
+    },
+    {
+      "path": "database/script/CountryScript15.sav",
+      "sha256": "9cc5c92bb4479289b5b1a28482aa75be000ef908105abf6e8327f8b3b74598af"
+    },
+    {
+      "path": "database/script/CountryScript150.sav",
+      "sha256": "6b0bf77881ce7190d726ce137199473431fe80c3996a50730737081e6cfd76da"
+    },
+    {
+      "path": "database/script/CountryScript155.sav",
+      "sha256": "3399067e4faf5dc7c99aace4c741de4ce95f77faf61217d03bd8ff54e51fa10f"
+    },
+    {
+      "path": "database/script/CountryScript158.sav",
+      "sha256": "15f2487e4c7ded76398419f9de48f64c8ed195a2d0553593e26ad50cd506ba14"
+    },
+    {
+      "path": "database/script/CountryScript159.sav",
+      "sha256": "aa9df5ac49255d35a179a0dcbc6dd57effbd2c8b7b4cfa0d21dff5c4a218dfa3"
+    },
+    {
+      "path": "database/script/CountryScript16.sav",
+      "sha256": "9dd997e45b735f1c3d134a7cb88c0978d232909bd0d606328d10f9477538fea2"
+    },
+    {
+      "path": "database/script/CountryScript160.sav",
+      "sha256": "63781c404c328871f8ba478ee3afdc81da65e8981b3f11888f2c06017ded9db1"
+    },
+    {
+      "path": "database/script/CountryScript161.sav",
+      "sha256": "be598103dd20fefb834130e3779b9de82a87124cf3b182807eeb1d1019a33836"
+    },
+    {
+      "path": "database/script/CountryScript162.sav",
+      "sha256": "b79234e11399969e28697973229410d04e466af739a7250780ea07dc57352669"
+    },
+    {
+      "path": "database/script/CountryScript163.sav",
+      "sha256": "754dc1ea254e9c95bff1a7529014188fec535b51372dedfbe4f556772c2bcf06"
+    },
+    {
+      "path": "database/script/CountryScript164.sav",
+      "sha256": "e18a2bdbc3fde124496e816232b1709ba49708e099cc30fe26b783acf5e96e65"
+    },
+    {
+      "path": "database/script/CountryScript165.sav",
+      "sha256": "0b9549b460eea126341c724f228a1cd6e45853d6a34fcd9c6110038bb4fc88a0"
+    },
+    {
+      "path": "database/script/CountryScript167.sav",
+      "sha256": "036a3fa21721ca674f44447c7e5907afbb04f3ccb90c4e25dead3a6027f41e11"
+    },
+    {
+      "path": "database/script/CountryScript168.sav",
+      "sha256": "7f16e182a3f370ae175b00bfbb0795fe194bc2c89b18565dcba95f54c8a3997e"
+    },
+    {
+      "path": "database/script/CountryScript169.sav",
+      "sha256": "335a6a45a4a5aa55170f425ece09bc27ede1f991f8b1bf41dd418ea96da90bae"
+    },
+    {
+      "path": "database/script/CountryScript17.sav",
+      "sha256": "577e42d4537aa9e118593e6ed34b0edccf8f4d84e191349bc40e4c37ee84ed99"
+    },
+    {
+      "path": "database/script/CountryScript171.sav",
+      "sha256": "09dd92669639cf39a27586d2a3eed3ac1e1434dc538a4c4f147d9d7142a0f287"
+    },
+    {
+      "path": "database/script/CountryScript172.sav",
+      "sha256": "2d2113a0091288d5c8caa8b29f777d413619a2411e2b212969d837be99cecf25"
+    },
+    {
+      "path": "database/script/CountryScript173.sav",
+      "sha256": "1f7108f0aad07247409f69163da41d4951c4b0386ae21d93c5e01b56acd5d386"
+    },
+    {
+      "path": "database/script/CountryScript178.sav",
+      "sha256": "1fcc701d3c24b62b84dd4683e045ea1f9b129420e3af1097857507c5629d7784"
+    },
+    {
+      "path": "database/script/CountryScript18.sav",
+      "sha256": "47ac508e764234aa29bffa00b1f6bbf75aa9720f81097a6eefe74bcd0b34d523"
+    },
+    {
+      "path": "database/script/CountryScript182.sav",
+      "sha256": "a309727ae317143a214317e9f140a9c9a1581ded5700509f0d55dc053538334d"
+    },
+    {
+      "path": "database/script/CountryScript183.sav",
+      "sha256": "fa8439739a36f386cd6f9908a905822c063fd80c539447769695aa885f2b50e3"
+    },
+    {
+      "path": "database/script/CountryScript184.sav",
+      "sha256": "8586b5b3797ec15bbc439b677e86173f8056f1bee2c8e8d5ac89f2b14ca49951"
+    },
+    {
+      "path": "database/script/CountryScript186.sav",
+      "sha256": "0563f0b04e6b41ea5d09856b5ec6dc8fbb988d1f0f309dde8cef025dd78b3b4e"
+    },
+    {
+      "path": "database/script/CountryScript187.sav",
+      "sha256": "19598c37bc10c80f45529554c2a2b230c41b9994db739399f0cc26ed71772ce8"
+    },
+    {
+      "path": "database/script/CountryScript188.sav",
+      "sha256": "43866cd08130c768ee3595dab91f5b30e0977a6d1a90c1090fccf8cbe7aa8bfa"
+    },
+    {
+      "path": "database/script/CountryScript189.sav",
+      "sha256": "3a8b8a6e7df2c04c8d2dd7c87ab8613505467c51d80b400304811c42d4d4507b"
+    },
+    {
+      "path": "database/script/CountryScript19.sav",
+      "sha256": "306b2edaa53484289b6811ea714066c7f9bd29e048d91c3efaed177c3abc7183"
+    },
+    {
+      "path": "database/script/CountryScript190.sav",
+      "sha256": "f7fd3052e2c9460f748c3a3cbdfe24371c83b3cf31827f195141547d2fbb4f01"
+    },
+    {
+      "path": "database/script/CountryScript191.sav",
+      "sha256": "3eeb74dac2e2fba976c49d8d841543f35e90643ffa2312da986588270ebda130"
+    },
+    {
+      "path": "database/script/CountryScript192.sav",
+      "sha256": "066bb8630ae138150a4fad7a0dac873e188d7a1151ea79e8da33adc64ef876af"
+    },
+    {
+      "path": "database/script/CountryScript195.sav",
+      "sha256": "26946cb2f1427c0f7999fcf3d1adc2b5d9db391dbb4c5f9296416b566adb09ac"
+    },
+    {
+      "path": "database/script/CountryScript197.sav",
+      "sha256": "903274f13cb057a85164a90bed1e9b8422da1d03c9771c92f6682061dd2486f0"
+    },
+    {
+      "path": "database/script/CountryScript198.sav",
+      "sha256": "eb8756ec9dfca7d1f35c7d076ec84d3e16cda590d083f181f71e9dc06d11adbc"
+    },
+    {
+      "path": "database/script/CountryScript2.sav",
+      "sha256": "96b7fe8b9f69ff14663fcfe50d56f2823eec214ae213db14aa3c9010aae7bd79"
+    },
+    {
+      "path": "database/script/CountryScript20.sav",
+      "sha256": "993a90205d770e7bdbfd55d7b8fcacd72cdf264cc4d1d4e180002703f1fd8228"
+    },
+    {
+      "path": "database/script/CountryScript205.sav",
+      "sha256": "a5a788e21f9430aceec3e36377ee0461d3114a081b20470ad8eb5c98d1bbc60b"
+    },
+    {
+      "path": "database/script/CountryScript206.sav",
+      "sha256": "de7736d2cb54400cd373b3a9c1087bb5fcbc969c483ef1dac8f33ac486c9c488"
+    },
+    {
+      "path": "database/script/CountryScript207.sav",
+      "sha256": "481a09306f1b40d134976a0c98bf81d14984c6f45b31a2fc8af1390f1f62e626"
+    },
+    {
+      "path": "database/script/CountryScript21.sav",
+      "sha256": "3bbf8eaa75100e62cd738b481d5f2816a4b59ab1a698e7156b24625a667ce7df"
+    },
+    {
+      "path": "database/script/CountryScript22.sav",
+      "sha256": "3912d49f72342803365f2ad516ab19cb1940fba16e406e4f148ba99361a7a339"
+    },
+    {
+      "path": "database/script/CountryScript23.sav",
+      "sha256": "f8d529bac02447d720bd06fa977fd2b28d643e8dd388714533a9204c335305e0"
+    },
+    {
+      "path": "database/script/CountryScript24.sav",
+      "sha256": "f84771a6980c5c5487be7ff6791914ab0b63915f308522b89cc8d78d2fce8b58"
+    },
+    {
+      "path": "database/script/CountryScript25.sav",
+      "sha256": "c80d0bbe809218f717d758ef1531d691870f5a7d09ced8ba07b61f12fd7c5eee"
+    },
+    {
+      "path": "database/script/CountryScript26.sav",
+      "sha256": "2bb8f82097b9a440438599994a97121be438428e5a6816022cd928c3d4c3de21"
+    },
+    {
+      "path": "database/script/CountryScript27.sav",
+      "sha256": "cb3a0a4004649783afcddf362ba34e3767765b7d71be2981508cca3493f46cf8"
+    },
+    {
+      "path": "database/script/CountryScript28.sav",
+      "sha256": "4ec877f8ed9564e3bdf5a4e39a916e21f9d1c2f5e54c34abb328b5910c1dbdd9"
+    },
+    {
+      "path": "database/script/CountryScript3.sav",
+      "sha256": "f6702b06c71a6739117261c696188f98d9171e44df48094c085f9b1e5915cacf"
+    },
+    {
+      "path": "database/script/CountryScript30.sav",
+      "sha256": "57cb7899d8c20217f96681180d4cd8b9350316103276c04946654e4651e239fd"
+    },
+    {
+      "path": "database/script/CountryScript31.sav",
+      "sha256": "da722ee6e0a7ae40cbaaac513dfd9981ec10ec0d5146958264382e2f2216cb46"
+    },
+    {
+      "path": "database/script/CountryScript32.sav",
+      "sha256": "136cd6e0d22371e8abaeadee543a16914ae832fcdedf1264f6a7583b7504485c"
+    },
+    {
+      "path": "database/script/CountryScript33.sav",
+      "sha256": "9088c4a25a3833b6f83793220d67d570e6d0b9c06fa9b7bf1456ce3eb53be8f7"
+    },
+    {
+      "path": "database/script/CountryScript34.sav",
+      "sha256": "bd5d293c0af945e404f6e7d593ec571a11e22905caa127df75ab25f9dbce78c5"
+    },
+    {
+      "path": "database/script/CountryScript35.sav",
+      "sha256": "623fce1462328526751500d29f89a6b27d82e02cbc7fa6b3dac5819d889d50b5"
+    },
+    {
+      "path": "database/script/CountryScript36.sav",
+      "sha256": "801c8bf7837c5a558650f302224eece0f81ac99d67aa104c020270e4cd4bea10"
+    },
+    {
+      "path": "database/script/CountryScript37.sav",
+      "sha256": "c956cdc7e8bcae6783066cb4446007d24952cf000a43135de2658f7f34108aff"
+    },
+    {
+      "path": "database/script/CountryScript38.sav",
+      "sha256": "0550c2feedfedcb51cc552d453b527551962f50c90f889af3cc3bf8f5c47e26b"
+    },
+    {
+      "path": "database/script/CountryScript39.sav",
+      "sha256": "30bb989f18fc70f6e14a28296f05c669f1bb0c9bb396e639224958c89542a1c3"
+    },
+    {
+      "path": "database/script/CountryScript4.sav",
+      "sha256": "2003daed17bf85a4e795e0b7d6ab86d5b5b8dd4c125f8ff8f6baac9398f032fe"
+    },
+    {
+      "path": "database/script/CountryScript40.sav",
+      "sha256": "2770aac659684ce88435f4fc6ae864e2f7444da203fa485865fd6b5efea55b1c"
+    },
+    {
+      "path": "database/script/CountryScript41.sav",
+      "sha256": "f92a92f37d442e344aa2972b1c68a14c8976f7724aedcc0aff42e2b0446d6cfe"
+    },
+    {
+      "path": "database/script/CountryScript42.sav",
+      "sha256": "8713a3fdc140c135661a265020d83c1c2e131e5bf6c3517fde71063c06dc5ab1"
+    },
+    {
+      "path": "database/script/CountryScript43.sav",
+      "sha256": "806a2d53298bc30e42786bc4fae0528c406cf56ec23623c94f31193b0d8ce260"
+    },
+    {
+      "path": "database/script/CountryScript44.sav",
+      "sha256": "1509db6601981e287b5651f9b9c9e64fd905032826bd2882f35b0154071b3adc"
+    },
+    {
+      "path": "database/script/CountryScript45.sav",
+      "sha256": "8c2c117b38e85bd71b415943fd92d9a3163ddcf2dc36dd2d9293e7c4882b55a8"
+    },
+    {
+      "path": "database/script/CountryScript46.sav",
+      "sha256": "0b4fbaa663430c5edfc4d9d1f24ced03de9d1d3979acac8663a0f262b3d7a590"
+    },
+    {
+      "path": "database/script/CountryScript47.sav",
+      "sha256": "2c14fef39664132b9c0574e80d5c953e4646fdcf654facd1393d8e2155b8484a"
+    },
+    {
+      "path": "database/script/CountryScript48.sav",
+      "sha256": "00a084d95c88d39ceca09076d052c2d89c31b37ec0ab49de7a06b47a57dc2371"
+    },
+    {
+      "path": "database/script/CountryScript49.sav",
+      "sha256": "6bc91073089fec0878b9e0c6715977ca803c8f97dd5cc7a185832d56020594e3"
+    },
+    {
+      "path": "database/script/CountryScript5.sav",
+      "sha256": "7eafc7f35c4e5fab68b3c5a9929a2c5edcd4cf11ed17f9e6b35cba141f91cc5d"
+    },
+    {
+      "path": "database/script/CountryScript50.sav",
+      "sha256": "bb75ed8dbe9d8d5bc2d3b3aae939dd9a8ab4cdb1a402b8aacaf02614c09565fe"
+    },
+    {
+      "path": "database/script/CountryScript51.sav",
+      "sha256": "470601333f533776b8c6cad2f786f625d02c5323211a0258f2ee2ca8fc3b0845"
+    },
+    {
+      "path": "database/script/CountryScript52.sav",
+      "sha256": "2d24b22a3c8a72877417f7dfc90e425ac260653bb9c59cb457803b2542d5673d"
+    },
+    {
+      "path": "database/script/CountryScript53.sav",
+      "sha256": "125dc924321ad856fcddd893493e6d1df737096d03ba85235ae5a1ac525e5c5b"
+    },
+    {
+      "path": "database/script/CountryScript54.sav",
+      "sha256": "963885e740ae62da7cbbbb11c0f3006141a34c1392bf43961dd382b5daa155b7"
+    },
+    {
+      "path": "database/script/CountryScript55.sav",
+      "sha256": "0d378a5308e86ba5366e462cb478852a4de8b273e0cdc00e554e3f3c6b6522b8"
+    },
+    {
+      "path": "database/script/CountryScript56.sav",
+      "sha256": "0758f78ef60b127f7dac083c2667b73e8b5dc051d50188f4849edf65ff096402"
+    },
+    {
+      "path": "database/script/CountryScript57.sav",
+      "sha256": "d67bb27dea05bb34e5d8f13cf6533a91a641cb7f58b6fbe6d017167ace0c6c74"
+    },
+    {
+      "path": "database/script/CountryScript58.sav",
+      "sha256": "d10f7d2bd614ad1288753ca5a5af0339c8208d38dee9337ae90ae5e5f0d5ee28"
+    },
+    {
+      "path": "database/script/CountryScript59.sav",
+      "sha256": "9c32c9b0ecbf85a9e5f85c2af27124847bc6c4e010ded1641b1afb8cfbe87779"
+    },
+    {
+      "path": "database/script/CountryScript6.sav",
+      "sha256": "68db61fdca19438a15fe7363eeffd45cb0a3280f2e15fa684bba80fa79bc03c4"
+    },
+    {
+      "path": "database/script/CountryScript60.sav",
+      "sha256": "d757acc18a82342107c19b57a20407db5c2bc5bbbc24d8bebcc5efe4f24b4f2c"
+    },
+    {
+      "path": "database/script/CountryScript61.sav",
+      "sha256": "8029487283a6775cdf8b8f2ce12eb418af0b008301bfcda5bc8ff65373589368"
+    },
+    {
+      "path": "database/script/CountryScript62.sav",
+      "sha256": "1871dd34e1c1b9f976f83cc81ce2921e81e095d5d3ae352295e089d4b83378ce"
+    },
+    {
+      "path": "database/script/CountryScript7.sav",
+      "sha256": "c19384a01093a6e848919ed119b9b80146f75332b19e8e7103d54aed9d35417f"
+    },
+    {
+      "path": "database/script/CountryScript70.sav",
+      "sha256": "14faf5ba2b5ae13f89af5910fce25ae6a525d829daeb2676b3a1cb43eba09a50"
+    },
+    {
+      "path": "database/script/CountryScript72.sav",
+      "sha256": "a7c39a947c9293650e1b5f8f5ff24e0ab4737f79c0edec7f8a3e9d997bd941a8"
+    },
+    {
+      "path": "database/script/CountryScript76.sav",
+      "sha256": "de2552fa45828c790cbcfb9be511a46988b832c91f471760d6bdc101d7df0fab"
+    },
+    {
+      "path": "database/script/CountryScript78.sav",
+      "sha256": "7ce319902d09cef5d06dbb9e83664edc68118076382c51c5ed88a471bd2ac4df"
+    },
+    {
+      "path": "database/script/CountryScript8.sav",
+      "sha256": "3770e736f37ba535e3bf429d24ebe76123900f0012a3b71488beaed7cbe09994"
+    },
+    {
+      "path": "database/script/CountryScript81.sav",
+      "sha256": "1dfe334e2b8940d4c639a467a5d7b378c5284371ac43af5dca867edf3660d2fc"
+    },
+    {
+      "path": "database/script/CountryScript82.sav",
+      "sha256": "09f2921fa11229633c85496e324ab8c3d935cd98f6bd31da9198fb9122456fc9"
+    },
+    {
+      "path": "database/script/CountryScript83.sav",
+      "sha256": "58085a89dcfaf4c5be40de3a1652ab0499b944364ed2beb6396ef1bf91dbadbb"
+    },
+    {
+      "path": "database/script/CountryScript86.sav",
+      "sha256": "e9924691276980b5550e1e20bcc236a19701b438560dde74eb48ca6e02242b64"
+    },
+    {
+      "path": "database/script/CountryScript87.sav",
+      "sha256": "459bdd4dd6d5d2a82a47ee20f11d45dcebee1621ac89eb21211a6fbc58c76707"
+    },
+    {
+      "path": "database/script/CountryScript9.sav",
+      "sha256": "b3a6bbc86942fe02b716fb2379ede82366215627502ce2321123cccaaf15ac9a"
+    },
+    {
+      "path": "database/script/CountryScript93.sav",
+      "sha256": "52f3c5117c74efa5b80d9e60348fdab8d212d2253c3a76fd2a1dca7b4e646a72"
+    },
+    {
+      "path": "database/script/CountryScript95.sav",
+      "sha256": "c70e54222dadc54b6445cb880108de0aef10685af0368244a909c88cd0460bb6"
+    },
+    {
+      "path": "database/script/CountryScript97.sav",
+      "sha256": "8b1f99eaac9dbff273adcc9183c13527a5a7eece484524a537eac300a4bd71a1"
+    },
+    {
+      "path": "database/script/CountryScript98.sav",
+      "sha256": "e79cdefd4af96c27f6458a5dd8f5f69faeb54d550f6ec82883ccd52bb3d1e6b8"
+    },
+    {
+      "path": "fmdata/historic/12cf.txt",
+      "sha256": "32264a4378bbae5556e8a7902115aa4592c9b7950e663dd75c22c30cfc5eda9c"
+    },
+    {
+      "path": "fmdata/historic/14cf.txt",
+      "sha256": "feb1eb8149d9e58768294a5a3fe0e81fea158be8981bb25749d61b3600c40633"
+    },
+    {
+      "path": "fmdata/historic/18cf.txt",
+      "sha256": "f76d45559e9bfa7d51a47cdf266ebadb350f674fce7649ca8b7d3772039a7139"
+    },
+    {
+      "path": "fmdata/historic/21cf.txt",
+      "sha256": "39b2f038a9b74731f6127d4ab01a20bd698eaf682f8f7910d0365df840a1dfda"
+    },
+    {
+      "path": "fmdata/historic/27cf.txt",
+      "sha256": "7cbc11cad8d62844ea6c08021fbe1806cbd0be21e214aa1463cb9daf6dd66743"
+    },
+    {
+      "path": "fmdata/historic/34cf.txt",
+      "sha256": "4db7bf18c1d3655601911f31338849a0ade5534e1b93ecded66e5f105493afa9"
+    },
+    {
+      "path": "fmdata/historic/38cf.txt",
+      "sha256": "3cf7b4bed0d2fb4e4c60140b87ebd86f18f7b58be8f4083a7c58fdd3eb72c2e9"
+    },
+    {
+      "path": "fmdata/historic/45cf.txt",
+      "sha256": "ba08d563f7e62862bd87c3ac3f015d4d7261e46381e0028aa68361446ae0b91c"
+    },
+    {
+      "path": "fmdata/historic/48cf.txt",
+      "sha256": "4ae491bd5d119e1720aa325542c48672cd9346d039c4d928a0db04c04909b3ef"
+    },
+    {
+      "path": "fmdata/historic/7cf.txt",
+      "sha256": "b2a5f1310996c2ff17845b452679f55f892c7afe0874d93077f9e11ec59e823e"
+    }
+  ],
+  "compiled_master": "ABSENT_PENDING_EXPORT",
+  "original_install_modified": false,
+  "runtime07_modified": false,
+  "save_files_modified": false,
+  "timestamp": "2026-09-12T19:37:04.563609+00:00"
+}

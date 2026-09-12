@@ -37,10 +37,19 @@ The 2025/26 title/cup/movement-marker history package is offline complete at
 `data/generated/history-20260912-03/`: ten country files, 20 competition-history
 records, 103 intended fields and 37 obsolete-marker removals validated. Native
 reread and all 266,764 player/rating records match Native07. It is not installed
-or Editor-exported and excludes full match-result archives and later Czech
+or Editor-exported as a standalone package and excludes full match-result archives and later Czech
 administrative membership changes. See `reports/local/HISTORY_2025_26_REPORT.md`.
-Next: finish the existing Native08 loan-test save/cleanup handoff, then combine
-accepted changes into a fresh candidate; do not overwrite the diagnostic runtime.
+The combined candidate `native08-integrated-20260912-01` now includes this history
+and 744 current-loan start-date projections to 01.07.2026 (50 of 794 unchanged).
+Independent byte-delta validation and native reread PASS; all 266,764 player/rating
+values are preserved. Moore/Amissah return behavior was operator-confirmed in the
+two-player experiment; the full combined candidate is not yet game-tested.
+At the user's explicit request, it is reversibly integrated into the closed
+`runtime/loan-test-20260912-08`, with its previous database/Master backed up.
+Runtime07 and original executable/Master identities remain unchanged; all 16
+pre-existing saves match preflight after restoring four test-modified files.
+Next: Editor export of the combined candidate, followed by bounded in-game history
+and loan checks and final Native08 cleanup. See `reports/local/NATIVE08_INTEGRATION_REPORT.md`.
 
 ## Runtime and Data Work in Progress
 

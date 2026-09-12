@@ -1,0 +1,12 @@
+{
+  "status": "PASS_NATIVE_REREAD_HISTORY_AND_ALLOWED_LOAN_DELTA",
+  "database_files": 638,
+  "changed_loan_dates": 744,
+  "all_other_database_bytes_unchanged": true,
+  "history_overlays_unchanged": true,
+  "native_reread": "PASS",
+  "player_rating_records_preserved": 266764,
+  "changed_player_semantics": 744,
+  "unit_tests": "3 tests / 7 cases PASS",
+  "operator_return_test": "Moore/Tottenham and Amissah/Fulham confirmed; not 744 individual runtime checks"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "existing_saves_checked": 16,
+  "restored": [
+    {
+      "file": "Auto.ea",
+      "retained_test_version": "reports\\local\\native08-20260912-evidence\\before-integration-Auto.ea",
+      "restored_sha256": "216e163b510e197a2ad42b165945508def09386fed02efe9f81d850f1c88318b"
+    },
+    {
+      "file": "Auto1.ea",
+      "retained_test_version": "reports\\local\\native08-20260912-evidence\\before-integration-Auto1.ea",
+      "restored_sha256": "3f8d25589b2dd98bf777846f6e586e8c0509860b763ae5552df0949c6e4ad656"
+    },
+    {
+      "file": "Auto2.ea",
+      "retained_test_version": "reports\\local\\native08-20260912-evidence\\before-integration-Auto2.ea",
+      "restored_sha256": "30e48ff14a7e119bc933d2db5ddca57e4098b59c1743aefa055d81ec0453bc56"
+    },
+    {
+      "file": "quickstart.ea",
+      "retained_test_version": "reports\\local\\native08-20260912-evidence\\before-integration-quickstart.ea",
+      "restored_sha256": "748da0343b983c5b69d0eef25246951722b4f594de09be189b3bb4be3e692032"
+    }
+  ],
+  "original_runtime07_identity_files": "UNCHANGED",
+  "configs": "Not restored while integrated runtime work remains active"
+}
