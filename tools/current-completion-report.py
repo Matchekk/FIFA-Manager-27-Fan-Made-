@@ -16,6 +16,8 @@ def main():
     parser.add_argument('--candidate', type=Path, required=True)
     args = parser.parse_args()
     build = json.loads((args.candidate / 'BUILD.json').read_text(encoding='utf-8-sig'))
+    gate_path = args.candidate / 'RELEASE_GATES.json'
+    gates = json.loads(gate_path.read_text(encoding='utf-8-sig')) if gate_path.exists() else {}
     integration = json.loads((ROOT / 'reports/current/integration/integration.json').read_text(encoding='utf-8-sig'))
     coverage = json.loads((ROOT / 'reports/current/club-coverage-summary.json').read_text(encoding='utf-8-sig'))
     plan = rows(args.candidate / 'inputs/squad.csv')
@@ -26,6 +28,10 @@ def main():
     loans = [r for r in plan if r.get('loan_owner_club_id', '0') not in ('', '0')]
     totals = coverage['overall']
     reviews = integration['review_queue_counts']
+    terminal = json.loads((ROOT / 'reports/current/integration/terminal-data-queue.json').read_text(encoding='utf-8-sig'))
+    identity_states = terminal['terminal_state_counts']
+    identity_holds = sum(identity_states.get(k, 0) for k in ('HOLD_NATIVE08_IDENTITY_CANDIDATE', 'HOLD_IDENTITY_REVIEW'))
+    identity_search = identity_states.get('IDENTITY_SEARCH_REQUIRED', 0)
     native_membership_path = args.candidate / 'membership-validation.json'
     native_membership = json.loads(native_membership_path.read_text()) if native_membership_path.exists() else {}
     write = build['write']
@@ -62,14 +68,20 @@ counted as a football loan return.
 Latest reconciliation: {integration['resolved_observations']} matched roster observations
 out of {integration['roster_observations']} (observations, not unique player identities).
 Selected draft proposes {len(created)} creations; native creation success is unverified
-until write/reread/semantic comparison pass. Identity ambiguity queue:
-{reviews.get('IDENTITY_AMBIGUOUS', 0)}; player-creation review queue:
-{reviews.get('PLAYER_CREATION', 0)}. Exact unresolved records remain in
+until write/reread/semantic comparison pass. Identity candidate/review holds:
+{identity_holds}; additional identity searches required: {identity_search}.
+Blocking player-creation review rows: {terminal['queue_counts'].get('PLAYER_CREATION', 0)};
+nonblocking creation review rows: {reviews.get('PLAYER_CREATION', 0) - terminal['queue_counts'].get('PLAYER_CREATION', 0)}.
+Separately retained provisional rating records: {reviews.get('PROVISIONAL_CREATION_RATING', 0)}.
+Exact unresolved records remain in
 `integration/review-queue.csv`; provisional ratings are deferred, not silently discarded.
 
 ## Candidate
 
 Candidate: `{build['name']}`. Status: {build['status']}.
+
+Identity release gate: {gates.get('identity_gate', 'NOT_SEPARATELY_VERIFIED')}.
+{gates.get('identity_reason', '')}
 
 - Write: {write}
 - Reread: {build['reread']}

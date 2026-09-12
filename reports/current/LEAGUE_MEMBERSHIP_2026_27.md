@@ -17,9 +17,11 @@ Snapshot date: 2026-09-12. Scope is the 12 competitions in `config/scope.json`.
 | GER2 | Germany | 2 | 18 | 18 | CONFIRMED |
 | GER3 | Germany | 3 | 20 | 20 | CONFIRMED |
 
-Total rows: 222. All count checks pass. Identity matching uses the existing alias map and baseline club table; no production database files were changed. Seventeen `fifa_team_id` values remain `0` in the baseline identity map and are listed in the validation sidecar for follow-up.
+Total rows: 222. Native membership validation: **PASS, 12/12 leagues**, independently reread from `native10-data-draft-20260913-04` on 2026-09-13. Expected counts, exact club/team sets and unique domestic league assignments all pass. Every required club is present and every excluded club is absent. Unknown baseline FIFA team IDs remain 0; no EA IDs were invented.
 
-Native serialized-reference diff against `runtime/game-test-20260912-07/database`: ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, TUR1, CZE1, and GER2 match exactly. BEL1 is 16 installed versus 18 expected (add KV Kortrijk, SK Beveren, Lommel SK; remove FCV Dender EH). GER3 remains 20 teams but has four incoming and four outgoing references. Overall completion is `PARTIAL` pending these diffs and the movement evidence gaps.
+Belgium 18/15 and the German GER3/regional dependency chain are applied through typed native structures. Bayern 19 uses the documented stable modeled format; an exact transient 2027/28 size adjustment is not claimed. Unrelated lower-division squads remain outside scope.
+
+This proves current league membership, not full squad completion, full semantic-diff completion or game runtime. Full data release remains blocked separately. Machine evidence: `league-membership-validation.json` and candidate `membership-validation.json`.
 
 ## Sources
 
@@ -38,17 +40,4 @@ Native serialized-reference diff against `runtime/game-test-20260912-07/database
 
 ## Promotion and relegation checks
 
-The sidecar records source-supported movement and explicit gaps in `promotion_relegation_checks`. Names are left empty where the captured official source did not enumerate movement, so no membership is inferred.
-
-- ENG1 and CZE1 have confirmed movement evidence in the captured official sources.
-- ITA1, ESP1, FRA1, BEL1, GER2, and GER3 have source-supported incoming names but still require an outgoing/relegation notice to close the check.
-- GER1, NED1, and TUR1 require a movement notice; POR1 promotion/relegation is confirmed from official promotion, relegation, and first-matchday records.
-
-## Integration intake
-
-The compatibility file `data/current/league-membership-2026-27.integration.csv` uses the requested Native10 schema: `league,season,snapshot_date,club_name,external_club_id,native_club_id,team_type,status,source_url,source_sha256`.
-
-
-## BEL2 dependency
-
-The official [Pro League Challenger Pro League Clubs page](https://www.proleague.be/cpl-clubs) lists 15 clubs for 2026/27. The machine sidecar records all 15 native mappings, including reserve encodings for Club NXT, Jong Genk, Jong KAA Gent, and RSCA Futures.
+The independent native audit compares every target competition against its authoritative 2026/27 set, including required entrants and excluded clubs. Earlier per-club movement-notice research is preserved in the machine report's superseded checkpoint. Current membership is established from authoritative current competition evidence, not historical marker inference.
