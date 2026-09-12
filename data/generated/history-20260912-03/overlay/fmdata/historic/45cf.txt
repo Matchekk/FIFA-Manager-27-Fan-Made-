@@ -1,0 +1,358 @@
+//  ###  Spain ###  Primera División ###
+//  ###  Spain ###  Copa del Rey ###
+//  ###  Spain ###  Supercopa de España ###
+
+//-----------------------------------------------------------------------------
+// LIST OF TEAMS
+//-----------------------------------------------------------------------------
+
+//  A team entry has the following format:
+//  Local_ID, Unique_ID
+//  The Local_ID is used only in this file to identify a team.
+
+BEGIN(TEAMS)
+
+#TEAM = 1,002D000E // Real Madrid CF
+#TEAM = 2,002D0004 // FC Barcelona
+#TEAM = 3,002D0002 // Atlético Madrid
+#TEAM = 4,002D0001 // Athletic Bilbao
+#TEAM = 5,002D0013 // Valencia CF
+#TEAM = 6,002D000F // Real Sociedad
+#TEAM = 7,002D0007 // Deportivo La Coruña
+#TEAM = 8,002D0012 // Sevilla FC
+#TEAM = 9,002D000D // Real Betis Balompié
+#TEAM = 10,002D0011 // Racing Santander
+#TEAM = 11,002D002D // UD Las Palmas
+#TEAM = 12,002D0010 // Real Zaragoza
+#TEAM = 13,002D001D // Sporting Gijón
+#TEAM = 14,002D0014 // Villarreal CF
+#TEAM = 15,002D0005 // Espanyol Barcelona
+#TEAM = 16,002D003F // Real Unión Club de Irún
+#TEAM = 17,002D008B // Arenas Club de Getxo
+#TEAM = 18,002D000A // RCD Mallorca
+#TEAM = 19,002D301E // Club Español de Madrid (Dissolved 1913)
+#TEAM = 20,002D0027 // RC Celta de Vigo
+#TEAM = 21,002D0022 // Real Valladolid
+#TEAM = 22,002D0006 // Getafe CF
+#TEAM = 23,002D301B // Club Bizcaya Bilbao (Dissolved 1907)
+#TEAM = 24,002D301C // Real Vigo Sporting (Dissolved 1923)
+#TEAM = 25,002D3020 // Real Sociedad Gimnástica Española (Dissolved 1928)
+#TEAM = 26,002D3022 // FC Espanya de Barcelona (Dissolved 1931)
+#TEAM = 27,002D00D9 // CE Europa
+#TEAM = 28,002D0052 // CE Sabadell FC
+#TEAM = 29,002D0029 // Racing Club de Ferrol
+#TEAM = 30,002D007D // Granada CF
+#TEAM = 31,002D001C // Elche CF
+#TEAM = 32,002D004C // CD Castellón
+#TEAM = 33,012D000E // Real Madrid Castilla
+#TEAM = 34,002D001E // Recreativo de Huelva
+#TEAM = 35,002D000C // CA Osasuna
+#TEAM = 36,002D0015 // Deportivo Alavés
+#TEAM = 37,002D9999 // No Finalist
+
+END
+
+
+//-----------------------------------------------------------------------------
+// LIST OF COMPETITIONS
+//-----------------------------------------------------------------------------
+
+//  A competition entry has the following format:
+//  #COMP = SYMBOLIC_COMP_ID, COUNTRY_ID, COMP_TYPE, COMP_NO, ROUND_NAME
+//  The SYMBOLIC_COMP_ID is used throughout the file for identifying a competition.
+//  
+//  Possible values for ROUND_NAME are:
+//  ROUND_NONE (Unknown round, use for global competition ID)
+//  ROUND_QUALI, ROUND_QUALI1, ROUND_QUALI2, ROUND_QUALI3
+//  ROUND_PREROUND1
+//  ROUND_1, ROUND_2, ROUND_3, ROUND_4, ROUND_5
+//  ROUND_GROUP1, ROUND_GROUP2
+//  ROUND_LAST_16, ROUND_QUARTERFINAL, ROUND_SEMIFINAL
+//  ROUND_FINAL
+
+BEGIN(COMPETITIONS)
+
+#COMP = LG,45,1,0,ROUND_FINAL
+#COMP = DOM,45,3,0,ROUND_FINAL
+#COMP = Supercup,45,7,0,ROUND_FINAL // Aggregate Results
+
+END
+
+//  ------------------
+//  ||List of Rounds||
+//  ------------------
+
+//  Matches in historically order (old to most recent).
+//  Rounds in temporally order (first round to final).
+//  A competition entry have the following format:
+//  #MATCH = SYMBOLIC_COMP_ID, Year, Local_ID1, Local_ID2, Goals1, Goals2 (, X)
+//  The X-value may be 'E=extra time or 'p'=penalty.
+
+BEGIN(MATCHES)
+// NOTE: The match entries should be sorted historically starting with the oldest and ending with the most recent ones.
+//       Furthermore the rounds should also be ordered temporally starting with the very first round and ending with the final. 
+
+#MATCH = LG,1929,2,1
+#MATCH = LG,1930,4,2
+#MATCH = LG,1931,4,10
+#MATCH = LG,1932,1,4
+#MATCH = LG,1933,1,4
+#MATCH = LG,1934,4,1
+#MATCH = LG,1935,9,1
+#MATCH = LG,1936,4,1
+#MATCH = LG,1940,3,8
+#MATCH = LG,1941,3,4
+#MATCH = LG,1942,5,1
+#MATCH = LG,1943,4,8
+#MATCH = LG,1944,5,3
+#MATCH = LG,1945,2,1
+#MATCH = LG,1946,8,2
+#MATCH = LG,1947,5,4
+#MATCH = LG,1948,2,5
+#MATCH = LG,1949,2,5
+#MATCH = LG,1950,3,7
+#MATCH = LG,1951,3,8
+#MATCH = LG,1952,2,4
+#MATCH = LG,1953,2,5
+#MATCH = LG,1954,1,2
+#MATCH = LG,1955,1,2
+#MATCH = LG,1956,4,2
+#MATCH = LG,1957,1,8
+#MATCH = LG,1958,1,3
+#MATCH = LG,1959,2,1
+#MATCH = LG,1960,2,1
+#MATCH = LG,1961,1,3
+#MATCH = LG,1962,1,2
+#MATCH = LG,1963,1,3
+#MATCH = LG,1964,1,2
+#MATCH = LG,1965,1,3
+#MATCH = LG,1966,3,1
+#MATCH = LG,1967,1,2
+#MATCH = LG,1968,1,2
+#MATCH = LG,1969,1,11
+#MATCH = LG,1970,3,4
+#MATCH = LG,1971,5,2
+#MATCH = LG,1972,1,5
+#MATCH = LG,1973,3,2
+#MATCH = LG,1974,2,3
+#MATCH = LG,1975,1,12
+#MATCH = LG,1976,1,2
+#MATCH = LG,1977,3,2
+#MATCH = LG,1978,1,2
+#MATCH = LG,1979,1,13
+#MATCH = LG,1980,1,6
+#MATCH = LG,1981,6,1
+#MATCH = LG,1982,6,2
+#MATCH = LG,1983,4,1
+#MATCH = LG,1984,4,1
+#MATCH = LG,1985,2,3
+#MATCH = LG,1986,1,2
+#MATCH = LG,1987,1,2
+#MATCH = LG,1988,1,6
+#MATCH = LG,1989,1,2
+#MATCH = LG,1990,1,5
+#MATCH = LG,1991,2,3
+#MATCH = LG,1992,2,1
+#MATCH = LG,1993,2,1
+#MATCH = LG,1994,2,7
+#MATCH = LG,1995,1,7
+#MATCH = LG,1996,3,5
+#MATCH = LG,1997,1,2
+#MATCH = LG,1998,2,4
+#MATCH = LG,1999,2,1
+#MATCH = LG,2000,7,2
+#MATCH = LG,2001,1,7
+#MATCH = LG,2002,5,7
+#MATCH = LG,2003,1,6
+#MATCH = LG,2004,5,2
+#MATCH = LG,2005,2,1
+#MATCH = LG,2006,2,1
+#MATCH = LG,2007,1,2
+#MATCH = LG,2008,1,14
+#MATCH = LG,2009,2,1
+#MATCH = LG,2010,2,1
+#MATCH = LG,2011,2,1
+#MATCH = LG,2012,1,2
+#MATCH = LG,2013,2,1
+#MATCH = LG,2014,3,2
+#MATCH = LG,2015,2,1
+#MATCH = LG,2016,2,1
+#MATCH = LG,2017,1,2
+#MATCH = LG,2018,2,3
+#MATCH = LG,2019,2,3
+#MATCH = LG,2020,1,2
+#MATCH = LG,2021,3,1
+#MATCH = LG,2022,1,2
+#MATCH = LG,2023,2,1
+#MATCH = LG,2024,1,2
+#MATCH = LG,2025,2,1
+#MATCH = LG,2026,2,1
+
+#MATCH = DOM,1903,4,1,3,2
+#MATCH = DOM,1904,4,19
+#MATCH = DOM,1905,1,4,1,0
+#MATCH = DOM,1906,1,4,4,1
+#MATCH = DOM,1907,1,23,1,0
+#MATCH = DOM,1908,1,24,2,1
+#MATCH = DOM,1909,6,19,3,1
+#MATCH = DOM,1910,4,6,1,0
+#MATCH = DOM,1910,2,19,3,2
+#MATCH = DOM,1911,4,15,3,1
+#MATCH = DOM,1912,2,25,2,0
+#MATCH = DOM,1913,2,6,2,1
+#MATCH = DOM,1913,16,4,1,0
+#MATCH = DOM,1914,4,26,2,1
+#MATCH = DOM,1915,4,15,5,0
+#MATCH = DOM,1916,4,1,4,0
+#MATCH = DOM,1917,1,17,2,1
+#MATCH = DOM,1918,16,1,2,0
+#MATCH = DOM,1919,17,2,5,2,e
+#MATCH = DOM,1920,2,4,2,0
+#MATCH = DOM,1921,4,3,4,1
+#MATCH = DOM,1922,2,16,5,1
+#MATCH = DOM,1923,4,27,1,0
+#MATCH = DOM,1924,16,1,1,0
+#MATCH = DOM,1925,2,17,2,0
+#MATCH = DOM,1926,2,3,3,2,e
+#MATCH = DOM,1927,16,17,1,0,e
+#MATCH = DOM,1928,2,6,3,1
+#MATCH = DOM,1929,15,1,2,1
+#MATCH = DOM,1930,4,1,3,2,e
+#MATCH = DOM,1931,4,9,3,1
+#MATCH = DOM,1932,4,2,1,0
+#MATCH = DOM,1933,4,1,2,1
+#MATCH = DOM,1934,1,5,2,1
+#MATCH = DOM,1935,8,28,3,0
+#MATCH = DOM,1936,1,2,2,1
+#MATCH = DOM,1939,8,29,6,2
+#MATCH = DOM,1940,15,1,3,2,e
+#MATCH = DOM,1941,5,15,3,1
+#MATCH = DOM,1942,2,4,4,3,e
+#MATCH = DOM,1943,4,1,1,0,e
+#MATCH = DOM,1944,4,5,2,0
+#MATCH = DOM,1945,4,5,3,2
+#MATCH = DOM,1946,1,5,3,1
+#MATCH = DOM,1947,1,15,2,0,e
+#MATCH = DOM,1948,8,20,4,1
+#MATCH = DOM,1949,5,4,1,0
+#MATCH = DOM,1950,4,21,4,1,e
+#MATCH = DOM,1951,2,6,3,0
+#MATCH = DOM,1952,2,5,4,2,e
+#MATCH = DOM,1953,2,4,2,1
+#MATCH = DOM,1954,5,2,3,0
+#MATCH = DOM,1955,4,8,1,0
+#MATCH = DOM,1956,4,3,2,1
+#MATCH = DOM,1957,2,15,1,0
+#MATCH = DOM,1958,4,1,2,0
+#MATCH = DOM,1959,2,30,4,1
+#MATCH = DOM,1960,3,1,3,1
+#MATCH = DOM,1961,3,1,3,2
+#MATCH = DOM,1962,1,8,2,1
+#MATCH = DOM,1963,2,12,3,1
+#MATCH = DOM,1964,12,3,2,1
+#MATCH = DOM,1965,3,12,1,0
+#MATCH = DOM,1966,12,4,2,0
+#MATCH = DOM,1967,5,4,2,1
+#MATCH = DOM,1968,2,1,1,0
+#MATCH = DOM,1969,4,31,1,0
+#MATCH = DOM,1970,1,5,3,1
+#MATCH = DOM,1971,2,5,4,3,e
+#MATCH = DOM,1972,3,5,2,1
+#MATCH = DOM,1973,4,32,2,0
+#MATCH = DOM,1974,1,2,4,0
+#MATCH = DOM,1975,1,3,4,3,p
+#MATCH = DOM,1976,3,12,1,0
+#MATCH = DOM,1977,9,4,10,9,p
+#MATCH = DOM,1978,2,11,3,1
+#MATCH = DOM,1979,5,1,2,0
+#MATCH = DOM,1980,1,33,6,1
+#MATCH = DOM,1981,2,13,3,1
+#MATCH = DOM,1982,1,13,2,1
+#MATCH = DOM,1983,2,1,2,1
+#MATCH = DOM,1984,4,2,1,0
+#MATCH = DOM,1985,3,4,2,1
+#MATCH = DOM,1986,12,2,1,0
+#MATCH = DOM,1987,6,3,6,4,p
+#MATCH = DOM,1988,2,6,1,0
+#MATCH = DOM,1989,1,21,1,0
+#MATCH = DOM,1990,2,1,2,0
+#MATCH = DOM,1991,3,18,1,0,e
+#MATCH = DOM,1992,3,1,2,0
+#MATCH = DOM,1993,1,12,2,0
+#MATCH = DOM,1994,12,20,5,4,p
+#MATCH = DOM,1995,7,5,2,1
+#MATCH = DOM,1996,3,2,1,0,e
+#MATCH = DOM,1997,2,9,3,2,e
+#MATCH = DOM,1998,2,18,6,5,p
+#MATCH = DOM,1999,5,3,3,0
+#MATCH = DOM,2000,15,3,2,1
+#MATCH = DOM,2001,12,20,3,1
+#MATCH = DOM,2002,7,1,2,1
+#MATCH = DOM,2003,18,34,3,0
+#MATCH = DOM,2004,12,1,3,2,e
+#MATCH = DOM,2005,9,35,2,1,e
+#MATCH = DOM,2006,15,12,4,1
+#MATCH = DOM,2007,8,22,1,0
+#MATCH = DOM,2008,5,22,3,1
+#MATCH = DOM,2009,2,4,4,1
+#MATCH = DOM,2010,8,3,2,0
+#MATCH = DOM,2011,1,2,1,0,e
+#MATCH = DOM,2012,2,4,3,0
+#MATCH = DOM,2013,3,1,2,1,e
+#MATCH = DOM,2014,1,2,2,1
+#MATCH = DOM,2015,2,4,3,1
+#MATCH = DOM,2016,2,8,2,0,e
+#MATCH = DOM,2017,2,36,3,1
+#MATCH = DOM,2018,2,8,5,0
+#MATCH = DOM,2019,5,2,2,1
+#MATCH = DOM,2020,6,4,1,0
+#MATCH = DOM,2021,2,4,4,0
+#MATCH = DOM,2022,9,5,5,4,p
+#MATCH = DOM,2023,1,35,2,1
+#MATCH = DOM,2024,4,18,4,2,p
+#MATCH = DOM,2025,2,1,3,2,e
+#MATCH = DOM,2026,6,3,4,3,p
+
+#MATCH = Supercup,1982,6,1,4,1
+#MATCH = Supercup,1983,2,4,3,2
+#MATCH = Supercup,1984,4,37
+#MATCH = Supercup,1985,3,2,3,2
+#MATCH = Supercup,1988,1,2,3,2
+#MATCH = Supercup,1989,1,37
+#MATCH = Supercup,1990,1,2,5,1
+#MATCH = Supercup,1991,2,3,2,1
+#MATCH = Supercup,1992,2,3,5,2
+#MATCH = Supercup,1993,1,2,4,2
+#MATCH = Supercup,1994,2,12,6,5
+#MATCH = Supercup,1995,7,1,5,1
+#MATCH = Supercup,1996,2,3,6,5
+#MATCH = Supercup,1997,1,2,5,3
+#MATCH = Supercup,1998,18,2,3,1
+#MATCH = Supercup,1999,5,2,4,3
+#MATCH = Supercup,2000,7,15,2,0
+#MATCH = Supercup,2001,1,12,4,1
+#MATCH = Supercup,2002,7,5,4,0
+#MATCH = Supercup,2003,1,18,4,2
+#MATCH = Supercup,2004,12,5,3,2
+#MATCH = Supercup,2005,2,9,4,2
+#MATCH = Supercup,2006,2,15,4,0
+#MATCH = Supercup,2007,8,1,6,3
+#MATCH = Supercup,2008,1,5,6,5
+#MATCH = Supercup,2009,2,4,5,1
+#MATCH = Supercup,2010,2,8,5,3
+#MATCH = Supercup,2011,2,1,5,4
+#MATCH = Supercup,2012,1,2,4,4
+#MATCH = Supercup,2013,2,3,1,1
+#MATCH = Supercup,2014,3,1,2,1
+#MATCH = Supercup,2015,4,2,5,1
+#MATCH = Supercup,2016,2,8,5,0
+#MATCH = Supercup,2017,1,2,5,1
+#MATCH = Supercup,2018,2,8,2,1
+#MATCH = Supercup,2020,1,3,4,1,p		// format changed, played 2019-20
+#MATCH = Supercup,2021,4,2,3,2,e
+#MATCH = Supercup,2022,1,4,2,0
+#MATCH = Supercup,2023,2,1,3,1
+#MATCH = Supercup,2024,1,2,4,1
+#MATCH = Supercup,2025,2,1,5,2
+
+END

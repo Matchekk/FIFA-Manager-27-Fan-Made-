@@ -1,0 +1,339 @@
+//  ###  Belgien ###  Eerste klasse A ###
+//  ###  Belgien ###  Beker van België ###
+//  ###  Belgien ###  Supercup ###
+
+//  -----------------
+//  ||List of Clubs||
+//  -----------------
+
+//  A team entry has the following format:
+//  #TEAM = Local_ID, Unique_ID
+//  The Local_ID is used only in this file to identify a team.
+
+BEGIN(TEAMS)
+
+#TEAM = 1,000730B8 // Tubantia Borgerhout
+#TEAM = 2,0007328B // K Lyra (Dissolved 1972)
+#TEAM = 3,00073026 // KFC Diest
+#TEAM = 4,00070001 // KAA Gent
+#TEAM = 5,00070003 // Cercle Brügge
+#TEAM = 6,00070004 // FC Brügge/Club Brugge
+#TEAM = 7,00070005 // Lierse SK (Dissolved 2018)
+#TEAM = 8,00073309 // RWD Molenbeek (Dissolved 2002)
+#TEAM = 9,00070007 // Sint-Truidense VV
+#TEAM = 10,00070008 // Standard Lüttich
+#TEAM = 11,00070009 // Sporting Charleroi
+#TEAM = 12,0007000A // Royal Excel Mouscron
+#TEAM = 13,0007000B // KVC Westerlo
+#TEAM = 14,000730BC // Beerschot AC/FC Germinal Berschoot (Dissolved 2013)
+#TEAM = 15,0007000E // RSC Anderlecht
+#TEAM = 16,00070010 // KRC Genk
+#TEAM = 17,00070011 // Sporting Lokeren (Dissolved 2020)
+#TEAM = 18,00073037 // KSK Beveren (Dissolved 2010)
+#TEAM = 19,0007001C // Royal Union Saint-Gilloise
+#TEAM = 20,0007001D // KV Kortrijk
+#TEAM = 21,0007001E // SV Zulte Waregem
+#TEAM = 22,00073038 // KFC Lommel SK (Dissolved 2003)
+#TEAM = 23,00070021 // Royal Antwerp FC
+#TEAM = 24,00070023 // KV Mechelen
+#TEAM = 25,000732AA // RRC Tournaisien (Dissolved 2002)
+#TEAM = 26,0007303B // K Sportclub Tongeren / KSK Tongeren (Dissolved 2015)
+#TEAM = 27,00070031 // RFC Lüttich
+#TEAM = 28,00070033 // KRC Mechelen
+#TEAM = 29,00073001 // RAA La Louviéroise (Dissolved 2009)
+#TEAM = 30,00071017 // RCS Verviétois (Dissolved 2015)
+#TEAM = 31,00071044 // KRC Gent-Zeehaven
+#TEAM = 32,00070002 // KV Oostende
+#TEAM = 33,00079901 // Racing Club de Bruxelles (Dissolved 1963, DOES NOT EXIST!!!)
+#TEAM = 34,00073005 // K Beerschot VAC (Dissolved 1999)
+#TEAM = 35,000730E9 // Royal Léopold FC
+#TEAM = 36,0007304E // R. Daring Club Molenbeek (Dissolved 1973)
+#TEAM = 37,00070027 // ROC de Charleroi-Marchienne
+#TEAM = 38,0007102F // Koniklijk Berchem Sport
+#TEAM = 39,0007309F // K Beringen FC (Dissolved 2002)
+
+END
+
+//-----------------------------------------------------------------------------
+// LIST OF COMPETITIONS
+//-----------------------------------------------------------------------------
+
+//  A competition entry has the following format:
+//  #COMP = SYMBOLIC_COMP_ID, COUNTRY_ID, COMP_TYPE, COMP_NO, ROUND_NAME
+//  The SYMBOLIC_COMP_ID is used throughout the file for identifying a competition.
+//  
+//  Possible values for ROUND_NAME are:
+//  ROUND_NONE (Unknown round, use for global competition ID)
+//  ROUND_QUALI, ROUND_QUALI1, ROUND_QUALI2, ROUND_QUALI3
+//  ROUND_PREROUND1
+//  ROUND_1, ROUND_2, ROUND_3, ROUND_4, ROUND_5
+//  ROUND_GROUP1, ROUND_GROUP2
+//  ROUND_LAST_16, ROUND_QUARTERFINAL, ROUND_SEMIFINAL
+//  ROUND_FINAL
+
+BEGIN(COMPETITIONS)
+#COMP = LG,7,1,0,ROUND_FINAL
+#COMP = KO-Cup,7,3,0,ROUND_FINAL
+#COMP = Supercup,7,7,0,ROUND_FINAL
+END
+
+//  ------------------
+//  ||List of Rounds||
+//  ------------------
+
+//  Matches in historically order (old to most recent).
+//  Rounds in temporally order (first round to final).
+//  A competition entry have the following format:
+//  #MATCH = SYMBOLIC_COMP_ID, Year, Local_ID1, Local_ID2, Goals1, Goals2 (, X)
+//  The X-value may be 'E=extra time or 'p'=penalty.
+
+BEGIN(MATCHES)
+
+#MATCH = LG,1896,27,23
+#MATCH = LG,1897,33,27
+#MATCH = LG,1898,27,33
+#MATCH = LG,1899,27,6
+#MATCH = LG,1900,33,6
+#MATCH = LG,1901,33,34
+#MATCH = LG,1902,33,35
+#MATCH = LG,1903,33,19
+#MATCH = LG,1904,19,33
+#MATCH = LG,1905,19,33
+#MATCH = LG,1906,19,6
+#MATCH = LG,1907,19,33
+#MATCH = LG,1908,33,19
+#MATCH = LG,1909,19,36
+#MATCH = LG,1910,19,6
+#MATCH = LG,1911,5,6
+#MATCH = LG,1912,36,19
+#MATCH = LG,1913,19,36
+#MATCH = LG,1914,36,19
+#MATCH = LG,1920,6,19
+#MATCH = LG,1921,36,19
+#MATCH = LG,1922,34,19
+#MATCH = LG,1923,19,34
+#MATCH = LG,1924,34,19
+#MATCH = LG,1925,34,23
+#MATCH = LG,1926,34,10
+#MATCH = LG,1927,5,34
+#MATCH = LG,1928,34,10
+#MATCH = LG,1929,23,34
+#MATCH = LG,1930,5,23
+#MATCH = LG,1931,23,24
+#MATCH = LG,1932,7,23
+#MATCH = LG,1933,19,23
+#MATCH = LG,1934,19,36
+#MATCH = LG,1935,19,7
+#MATCH = LG,1936,36,10
+#MATCH = LG,1937,36,34
+#MATCH = LG,1938,34,36
+#MATCH = LG,1939,34,7
+#MATCH = LG,1942,7,34
+#MATCH = LG,1943,24,34
+#MATCH = LG,1944,23,15
+#MATCH = LG,1946,24,23
+#MATCH = LG,1947,15,37
+#MATCH = LG,1948,24,15
+#MATCH = LG,1949,15,38
+#MATCH = LG,1950,15,38
+#MATCH = LG,1951,15,38
+#MATCH = LG,1952,27,28
+#MATCH = LG,1953,27,15
+#MATCH = LG,1954,15,24
+#MATCH = LG,1955,15,4
+#MATCH = LG,1956,15,23
+#MATCH = LG,1957,23,15
+#MATCH = LG,1958,10,23
+#MATCH = LG,1959,15,27
+#MATCH = LG,1960,7,15
+#MATCH = LG,1961,10,27
+#MATCH = LG,1962,15,10
+#MATCH = LG,1963,10,23
+#MATCH = LG,1964,15,39
+#MATCH = LG,1965,15,10
+#MATCH = LG,1966,15,9
+#MATCH = LG,1967,15,6
+#MATCH = LG,1968,15,6
+#MATCH = LG,1969,10,11
+#MATCH = LG,1970,10,6
+#MATCH = LG,1971,10,6
+#MATCH = LG,1972,15,6
+#MATCH = LG,1973,6,10
+#MATCH = LG,1974,15,23
+#MATCH = LG,1975,8,23
+#MATCH = LG,1976,6,15
+#MATCH = LG,1977,6,15
+#MATCH = LG,1978,6,15
+#MATCH = LG,1979,18,15
+#MATCH = LG,1980,6,10
+#MATCH = LG,1981,15,17
+#MATCH = LG,1982,10,15
+#MATCH = LG,1983,10,15
+#MATCH = LG,1984,18,15
+#MATCH = LG,1985,15,6
+#MATCH = LG,1986,15,6
+#MATCH = LG,1987,15,24
+#MATCH = LG,1988,6,24
+#MATCH = LG,1989,24,15
+#MATCH = LG,1990,6,15
+#MATCH = LG,1991,15,24
+#MATCH = LG,1992,6,15
+#MATCH = LG,1993,15,10
+#MATCH = LG,1994,15,6
+#MATCH = LG,1995,15,10
+#MATCH = LG,1996,6,15
+#MATCH = LG,1997,7,6
+#MATCH = LG,1998,6,16
+#MATCH = LG,1999,16,6
+#MATCH = LG,2000,15,6
+#MATCH = LG,2001,15,6
+#MATCH = LG,2002,16,6
+#MATCH = LG,2003,6,15
+#MATCH = LG,2004,15,6
+#MATCH = LG,2005,6,15
+#MATCH = LG,2006,15,10
+#MATCH = LG,2007,15,16
+#MATCH = LG,2008,10,15
+#MATCH = LG,2009,10,15
+#MATCH = LG,2010,15,4
+#MATCH = LG,2011,16,10
+#MATCH = LG,2012,15,6
+#MATCH = LG,2013,15,21
+#MATCH = LG,2014,15,10
+#MATCH = LG,2015,4,6
+#MATCH = LG,2016,6,15
+#MATCH = LG,2017,15,6
+#MATCH = LG,2018,6,10
+#MATCH = LG,2019,16,6
+#MATCH = LG,2020,6,4
+#MATCH = LG,2021,6,23
+#MATCH = LG,2022,6,19
+#MATCH = LG,2023,16,19
+#MATCH = LG,2024,6,19
+#MATCH = LG,2025,19,6
+#MATCH = LG,2026,6,19
+
+
+#MATCH = KO-Cup,1912,33,31,1,0
+#MATCH = KO-Cup,1913,19,5,3,2
+#MATCH = KO-Cup,1914,19,6,2,1
+#MATCH = KO-Cup,1927,5,1,2,1
+#MATCH = KO-Cup,1935,36,2,3,2
+#MATCH = KO-Cup,1954,10,28,3,1
+#MATCH = KO-Cup,1955,23,16,4,0
+#MATCH = KO-Cup,1956,25,30,2,1
+#MATCH = KO-Cup,1964,4,3,4,2,e
+#MATCH = KO-Cup,1965,15,10,3,2,e
+#MATCH = KO-Cup,1966,10,15,1,0
+#MATCH = KO-Cup,1967,10,24,3,1,e
+#MATCH = KO-Cup,1968,6,34,8,7,p
+#MATCH = KO-Cup,1969,7,8,2,0
+#MATCH = KO-Cup,1970,6,36,6,1
+#MATCH = KO-Cup,1971,34,9,2,1
+#MATCH = KO-Cup,1972,15,10,1,0
+#MATCH = KO-Cup,1973,15,10,2,1
+#MATCH = KO-Cup,1974,21,26,4,1
+#MATCH = KO-Cup,1975,15,14,1,0
+#MATCH = KO-Cup,1976,15,7,4,0
+#MATCH = KO-Cup,1977,6,15,4,3
+#MATCH = KO-Cup,1978,18,11,2,0
+#MATCH = KO-Cup,1979,34,6,1,0
+#MATCH = KO-Cup,1980,16,18,2,1
+#MATCH = KO-Cup,1981,10,17,4,0
+#MATCH = KO-Cup,1982,16,21,2,0
+#MATCH = KO-Cup,1983,18,6,3,1
+#MATCH = KO-Cup,1984,4,10,2,0
+#MATCH = KO-Cup,1985,5,18,6,5,p
+#MATCH = KO-Cup,1986,6,5,3,0
+#MATCH = KO-Cup,1987,24,27,1,0
+#MATCH = KO-Cup,1988,15,10,2,0
+#MATCH = KO-Cup,1989,15,10,2,0
+#MATCH = KO-Cup,1990,27,14,2,1
+#MATCH = KO-Cup,1991,6,24,3,1
+#MATCH = KO-Cup,1992,23,24,11,10,p
+#MATCH = KO-Cup,1993,10,11,2,0
+#MATCH = KO-Cup,1994,15,6,2,0
+#MATCH = KO-Cup,1995,6,14,3,1
+#MATCH = KO-Cup,1996,6,5,2,1
+#MATCH = KO-Cup,1997,14,15,4,2,e
+#MATCH = KO-Cup,1998,16,6,4,0
+#MATCH = KO-Cup,1999,7,10,3,1
+#MATCH = KO-Cup,2000,16,10,4,1
+#MATCH = KO-Cup,2001,13,22,1,0
+#MATCH = KO-Cup,2002,6,12,3,1
+#MATCH = KO-Cup,2003,29,9,3,1
+#MATCH = KO-Cup,2004,6,18,4,2
+#MATCH = KO-Cup,2005,14,6,2,1
+#MATCH = KO-Cup,2006,21,12,2,1
+#MATCH = KO-Cup,2007,6,10,1,0
+#MATCH = KO-Cup,2008,15,4,3,2
+#MATCH = KO-Cup,2009,16,24,2,0
+#MATCH = KO-Cup,2010,4,5,3,0
+#MATCH = KO-Cup,2011,10,13,2,0
+#MATCH = KO-Cup,2012,17,20,1,0
+#MATCH = KO-Cup,2013,16,5,2,0
+#MATCH = KO-Cup,2014,17,21,1,0
+#MATCH = KO-Cup,2015,6,15,2,1
+#MATCH = KO-Cup,2016,10,6,2,1
+#MATCH = KO-Cup,2017,21,32,7,5,p
+#MATCH = KO-Cup,2018,10,16,1,0,e
+#MATCH = KO-Cup,2019,24,4,2,1
+#MATCH = KO-Cup,2020,23,6,1,0
+#MATCH = KO-Cup,2021,16,10,2,1
+#MATCH = KO-Cup,2022,4,15,4,3,p
+#MATCH = KO-Cup,2023,23,28,2,0
+#MATCH = KO-Cup,2024,19,23,1,0
+#MATCH = KO-Cup,2025,6,15,2,1
+#MATCH = KO-Cup,2026,19,15,3,1,e
+
+
+#MATCH = Supercup,1979,18,14,4,3,p
+#MATCH = Supercup,1980,6,18,5,4,p
+#MATCH = Supercup,1981,10,15,3,1,p
+#MATCH = Supercup,1982,21,10,3,2
+#MATCH = Supercup,1983,10,18,6,5,p
+#MATCH = Supercup,1984,18,4,5,1
+#MATCH = Supercup,1985,15,5,2,1
+#MATCH = Supercup,1986,6,15,1,0
+#MATCH = Supercup,1987,15,24,1,1
+#MATCH = Supercup,1987,15,24,2,0
+#MATCH = Supercup,1988,6,15,1,0
+#MATCH = Supercup,1990,6,27,9,8,p
+#MATCH = Supercup,1991,6,15,9,8,p
+#MATCH = Supercup,1992,6,23,5,2,p
+#MATCH = Supercup,1993,15,10,3,0
+#MATCH = Supercup,1994,6,15,3,1
+#MATCH = Supercup,1995,15,6,2,1
+#MATCH = Supercup,1996,6,5,5,2
+#MATCH = Supercup,1997,7,14,1,0
+#MATCH = Supercup,1998,6,16,2,1
+#MATCH = Supercup,1999,7,16,3,1
+#MATCH = Supercup,2000,15,16,3,1
+#MATCH = Supercup,2001,15,13,4,1
+#MATCH = Supercup,2002,6,16,2,0
+#MATCH = Supercup,2003,6,29,6,5,p
+#MATCH = Supercup,2004,6,15,2,0
+#MATCH = Supercup,2005,6,14,5,3,p
+#MATCH = Supercup,2006,15,21,3,1
+#MATCH = Supercup,2007,15,6,3,1
+#MATCH = Supercup,2008,10,15,3,1
+#MATCH = Supercup,2009,10,16,2,0
+#MATCH = Supercup,2010,15,4,1,0
+#MATCH = Supercup,2011,16,10,1,0
+#MATCH = Supercup,2012,15,17,3,2
+#MATCH = Supercup,2013,15,16,1,0
+#MATCH = Supercup,2014,15,17,2,1
+#MATCH = Supercup,2015,4,6,1,0
+#MATCH = Supercup,2016,6,10,2,1
+#MATCH = Supercup,2017,15,21,2,1
+#MATCH = Supercup,2018,6,10,2,1
+#MATCH = Supercup,2019,16,24,3,0
+// not played in 2020
+#MATCH = Supercup,2021,6,16,3,2
+#MATCH = Supercup,2022,6,4,1,0
+#MATCH = Supercup,2023,23,28,6,5,p
+#MATCH = Supercup,2024,19,6,2,1
+// für den FM27
+//#MATCH = Supercup,2025,6,19,2,1
+
+END

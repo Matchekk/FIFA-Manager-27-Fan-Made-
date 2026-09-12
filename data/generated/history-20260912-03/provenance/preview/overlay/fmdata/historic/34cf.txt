@@ -1,0 +1,413 @@
+//  ###  Niederlande ###  Eredivisie ###
+//  from 1898 till 2024
+//  ###  Niederlande ###  KNVB beker ###
+//  from 1899 till 2024
+//  ###  Niederlande ###  Johan Cruyff Schaal ###
+//  from 1991 till 2023
+//  Scripted by Raghetti 2016
+//  Seasons 2017-2020 added by Lukas
+//  Season 2021 added by koenigsegg806
+//  Season 2022 added by schrotii75
+//  2024 by GarrettStar
+
+//-----------------------------------------------------------------------------
+// LIST OF TEAMS
+//-----------------------------------------------------------------------------
+
+//  A team entry has the following format:
+//  #TEAM = Local_ID, Unique_ID
+//  The Local_ID is used only in this file to identify a team.
+
+BEGIN(TEAMS)
+
+#TEAM = 1,00223047 // WVV Wageningen
+#TEAM = 2,00229901 // AC & VV Volharding Amsterdam (Dissolved 1914, DOES NOT EXIST!!!)
+#TEAM = 3,00223037 // CVV Velocitas Breda (Dissolved 1932)
+#TEAM = 4,00223035 // HVV Den Haag
+#TEAM = 5,00223038 // VOC Rotterdam
+#TEAM = 6,00223039 // DSV Concordia Delft
+#TEAM = 7,00221109 // HV & CV Quick Den Haag
+#TEAM = 8,0022303C // RCH Heemstede
+#TEAM = 9,00229902 // CVV Rotterdam (Dissolved 2001, DOES NOT EXIST!!!)
+#TEAM = 10,002230CA // VV Schoten
+#TEAM = 11,00229903 // ZFC Zaandam (Dissolved 1990, DOES NOT EXIST!!!)
+#TEAM = 12,00223040 // VUC Den Haag
+#TEAM = 13,00223056 // Velocitas 1897 Groningen
+#TEAM = 14,00229904 // RFC Roermond (DOES NOT EXIST!!!)
+#TEAM = 15,00223048 // Quick 1888 Nijmegen
+#TEAM = 16,002231D7 // Ajax Sportman Combinatie
+#TEAM = 17,01223035 // HVV Den Haag II
+#TEAM = 18,00229905 // De Spartaan Amsterdam (Dissolved 1988, DOES NOT EXIST!!!)
+#TEAM = 19,002230CB // RFC Rotterdam (Dissolved 1997)
+#TEAM = 20,00229906 // HVV Helmond (DOES NOT EXIST!!!)
+#TEAM = 21,00223046 // KFC Koog aan de Zaan
+#TEAM = 22,00223075 // RKSV Groene Ster Heerlerheide
+#TEAM = 23,01223038 // VOC Rotterdam II
+#TEAM = 24,00220001 // ADO Den Haag
+#TEAM = 25,00220002 // AZ Alkmaar
+#TEAM = 26,00220003 // AFC Ajax Amsterdam
+#TEAM = 27,00220004 // Vitesse Arnhem
+#TEAM = 28,00220005 // NAC Breda
+#TEAM = 29,00220006 // FC Den Bosch
+#TEAM = 30,00220008 // Feyenoord Rotterdam
+#TEAM = 31,00220009 // FC Groningen
+#TEAM = 32,0022000A // SC Heerenveen
+#TEAM = 33,0022000B // NEC Nijmegen
+#TEAM = 34,0022000C // PSV Eindhoven
+#TEAM = 35,0022000D // Roda JC Kerkrade
+#TEAM = 36,0022000E // RBC Roosendaal
+#TEAM = 37,0022000F // Willem II Tilburg
+#TEAM = 38,00220010 // FC Twente Enschede
+#TEAM = 39,00220011 // FC Utrecht
+#TEAM = 40,00220013 // FC Dordrecht
+#TEAM = 41,00220014 // SBV Excelsior Rotterdam
+#TEAM = 42,00220016 // FC Eindhoven / EVV Eindhoven
+#TEAM = 43,00220017 // Fortuna Sittard
+#TEAM = 44,00220018 // Go Ahead Eagles
+#TEAM = 45,00220019 // Heracles Almelo
+#TEAM = 46,0022001B // Helmond Sport
+#TEAM = 47,0022001C // SC Telstar
+#TEAM = 48,00220020 // Sparta Rotterdam
+#TEAM = 49,00220022 // VVV-Venlo
+#TEAM = 50,00220023 // FC Volendam
+#TEAM = 51,00220024 // PEC Zwolle
+#TEAM = 52,00220025 // AGOVV Apeldoorn
+#TEAM = 53,0022101A // HBS Craeyenhout
+#TEAM = 54,00229907 // RFC Xerxes Rotterdam (Dissolved 2000, DOES NOT EXIST!!!)
+#TEAM = 55,00229908 // ASV DWV Amsterdam (Dissolved 2013, DOES NOT EXIST!!!)
+#TEAM = 56,00229909 // TSV Longa (Dissolved 2017, DOES NOT EXIST!!!)
+#TEAM = 57,00221096 // Koninklijke HFC
+#TEAM = 58,0022339D // HFC Haarlem (Dissolved 2010)
+#TEAM = 59,01221109 // HV & CV Quick Den Haag II
+#TEAM = 60,0122101A // HBS Craeyenhout II
+#TEAM = 61,00223034 // RAP Amsterdam (Dissolved 1914)
+#TEAM = 62,0022304B // Victoria Wageningen (Dissolved 1903)
+#TEAM = 63,0022304A // EFC PW 1885 Enschede
+#TEAM = 64,0022304C // Konimklijke UD Deventer
+#TEAM = 65,00229910 // RKVV Wilhelmina (DOES NOT EXIST!!!)
+#TEAM = 66,002230B7 // GVC Wageningen
+#TEAM = 67,0022304D // UVV Utrecht
+#TEAM = 68,00221051 // GSV Be Quick 1887
+#TEAM = 69,00223052 // Blauw-Wit Amsterdam (Dissolved 2015)
+#TEAM = 70,00223026 // SC Enschede
+#TEAM = 71,0022001E // MVV Maastricht
+#TEAM = 72,00223053 // AFC DWS Amsterdam
+#TEAM = 73,0022304E // AVV De Volewijckers (Dissolved 2013)
+#TEAM = 74,0022304F // BVV 's-Hertogenbosch
+#TEAM = 75,00223062 // SV SVV Schiedam
+#TEAM = 76,00223073 // SV Limburgia
+#TEAM = 77,00223054 // Hermes DVS
+#TEAM = 78,002233B7 // VV DOS Utrecht (Dissolved 2004)
+#TEAM = 79,00223051 // Rapid JC Heerlen (Dissolved 1962)
+
+END
+
+//-----------------------------------------------------------------------------
+// LIST OF COMPETITIONS
+//-----------------------------------------------------------------------------
+
+//  A competition entry has the following format:
+//  #COMP = SYMBOLIC_COMP_ID, COUNTRY_ID, COMP_TYPE, COMP_NO, ROUND_NAME
+//  The SYMBOLIC_COMP_ID is used throughout the file for identifying a competition.
+//  
+//  Possible values for ROUND_NAME are:
+//  ROUND_NONE (Unknown round, use for global competition ID)
+//  ROUND_QUALI, ROUND_QUALI1, ROUND_QUALI2, ROUND_QUALI3
+//  ROUND_PREROUND1
+//  ROUND_1, ROUND_2, ROUND_3, ROUND_4, ROUND_5
+//  ROUND_GROUP1, ROUND_GROUP2
+//  ROUND_LAST_16, ROUND_QUARTERFINAL, ROUND_SEMIFINAL
+//  ROUND_FINAL
+
+BEGIN(COMPETITIONS)
+#COMP = LG,34,1,0,ROUND_FINAL
+#COMP = KO-Cup,34,3,0,ROUND_FINAL
+#COMP = Supercup,34,7,0,ROUND_FINAL
+END
+
+//  ------------------
+//  ||List of Rounds||
+//  ------------------
+
+//  Matches in historically order (old to most recent).
+//  Rounds in temporally order (first round to final).
+//  A competition entry have the following format:
+//  #MATCH = SYMBOLIC_COMP_ID, Year, Local_ID1, Local_ID2, Goals1, Goals2 (, X)
+//  The X-value may be 'E=extra time or 'p'=penalty.
+
+BEGIN(MATCHES)
+
+#MATCH = LG,1898,61,27
+#MATCH = LG,1899,61,27
+#MATCH = LG,1900,4,62
+#MATCH = LG,1901,4,62
+#MATCH = LG,1902,4,62
+#MATCH = LG,1903,4,27
+#MATCH = LG,1904,53,3
+#MATCH = LG,1905,4,63
+#MATCH = LG,1906,53,63
+#MATCH = LG,1907,4,63
+#MATCH = LG,1908,7,64
+#MATCH = LG,1909,48,65
+#MATCH = LG,1910,4,15
+#MATCH = LG,1911,48,66
+#MATCH = LG,1912,48,66
+#MATCH = LG,1913,48,27
+#MATCH = LG,1914,4,27
+#MATCH = LG,1915,48,27
+#MATCH = LG,1916,37,44
+#MATCH = LG,1917,44,67
+#MATCH = LG,1918,26,44
+#MATCH = LG,1919,26,44
+#MATCH = LG,1920,68,5
+#MATCH = LG,1921,28,68
+#MATCH = LG,1922,44,69
+#MATCH = LG,1923,8,68
+#MATCH = LG,1924,30,47
+#MATCH = LG,1925,53,28
+#MATCH = LG,1926,70,71
+#MATCH = LG,1927,45,28
+#MATCH = LG,1928,30,26
+#MATCH = LG,1929,34,44
+#MATCH = LG,1930,44,26
+#MATCH = LG,1931,26,30
+#MATCH = LG,1932,26,30
+#MATCH = LG,1933,44,30
+#MATCH = LG,1934,26,21
+#MATCH = LG,1935,34,44
+#MATCH = LG,1936,30,26
+#MATCH = LG,1937,26,30
+#MATCH = LG,1938,30,45
+#MATCH = LG,1939,26,72
+#MATCH = LG,1940,30,69
+#MATCH = LG,1941,45,34
+#MATCH = LG,1942,24,42
+#MATCH = LG,1943,24,30
+#MATCH = LG,1944,73,12
+#MATCH = LG,1946,58,26
+#MATCH = LG,1947,26,32
+#MATCH = LG,1948,74,32
+#MATCH = LG,1949,75,74
+#MATCH = LG,1950,76,69
+#MATCH = LG,1951,34,72
+#MATCH = LG,1952,37,77
+#MATCH = LG,1953,8,42
+#MATCH = LG,1954,42,78
+#MATCH = LG,1955,37,28
+#MATCH = LG,1956,79,28
+#MATCH = LG,1957,26,43
+#MATCH = LG,1958,78,70
+#MATCH = LG,1959,48,35
+#MATCH = LG,1960,26,30
+#MATCH = LG,1961,30,26
+#MATCH = LG,1962,30,34
+#MATCH = LG,1963,34,26
+#MATCH = LG,1964,72,34
+#MATCH = LG,1965,30,72
+#MATCH = LG,1966,26,30
+#MATCH = LG,1967,26,30
+#MATCH = LG,1968,26,30
+#MATCH = LG,1969,30,26
+#MATCH = LG,1970,26,30
+#MATCH = LG,1971,30,26
+#MATCH = LG,1972,26,30
+#MATCH = LG,1973,26,30
+#MATCH = LG,1974,30,38
+#MATCH = LG,1975,34,30
+#MATCH = LG,1976,34,30
+#MATCH = LG,1977,26,34
+#MATCH = LG,1978,34,26
+#MATCH = LG,1979,26,30
+#MATCH = LG,1980,26,25
+#MATCH = LG,1981,25,26
+#MATCH = LG,1982,26,34
+#MATCH = LG,1983,26,30
+#MATCH = LG,1984,30,34
+#MATCH = LG,1985,26,34
+#MATCH = LG,1986,34,26
+#MATCH = LG,1987,34,26
+#MATCH = LG,1988,34,26
+#MATCH = LG,1989,34,26
+#MATCH = LG,1990,26,34
+#MATCH = LG,1991,34,26
+#MATCH = LG,1992,34,26
+#MATCH = LG,1993,30,34
+#MATCH = LG,1994,26,30
+#MATCH = LG,1995,26,35
+#MATCH = LG,1996,26,34
+#MATCH = LG,1997,34,30
+#MATCH = LG,1998,26,34
+#MATCH = LG,1999,30,37
+#MATCH = LG,2000,34,32
+#MATCH = LG,2001,34,30
+#MATCH = LG,2002,26,34
+#MATCH = LG,2003,34,26
+#MATCH = LG,2004,26,34
+#MATCH = LG,2005,34,26
+#MATCH = LG,2006,34,25
+#MATCH = LG,2007,34,26
+#MATCH = LG,2008,34,26
+#MATCH = LG,2009,25,38
+#MATCH = LG,2010,38,26
+#MATCH = LG,2011,26,38
+#MATCH = LG,2012,26,30
+#MATCH = LG,2013,26,34
+#MATCH = LG,2014,26,30
+#MATCH = LG,2015,34,26
+#MATCH = LG,2016,34,26
+#MATCH = LG,2017,30,26
+#MATCH = LG,2018,34,26
+#MATCH = LG,2019,26,34
+// League 2020 abandoned and no title awarded
+#MATCH = LG,2021,26,34
+#MATCH = LG,2022,26,34
+#MATCH = LG,2023,30,34
+#MATCH = LG,2024,34,30
+#MATCH = LG,2025,34,26
+#MATCH = LG,2026,34,30
+
+#MATCH = KO-Cup,1899,61,4,1,0,e
+#MATCH = KO-Cup,1900,3,16,3,1
+#MATCH = KO-Cup,1901,53,61,4,3
+#MATCH = KO-Cup,1902,58,53,2,1
+#MATCH = KO-Cup,1903,4,53,6,1
+#MATCH = KO-Cup,1904,57,4,3,1
+#MATCH = KO-Cup,1905,5,60,3,0
+#MATCH = KO-Cup,1906,6,2,3,2
+#MATCH = KO-Cup,1907,5,12,4,3,e
+#MATCH = KO-Cup,1908,60,23,3,1
+#MATCH = KO-Cup,1909,59,5,2,0
+#MATCH = KO-Cup,1910,59,17,2,0
+#MATCH = KO-Cup,1911,7,58,1,0
+#MATCH = KO-Cup,1912,58,27,4,1
+#MATCH = KO-Cup,1913,57,40,4,1
+#MATCH = KO-Cup,1914,40,58,3,2
+#MATCH = KO-Cup,1915,57,53,1,0
+#MATCH = KO-Cup,1916,7,53,2,1,e
+#MATCH = KO-Cup,1917,26,47,5,0
+#MATCH = KO-Cup,1918,8,18,2,1
+#MATCH = KO-Cup,1920,9,12,2,1
+#MATCH = KO-Cup,1921,10,19,2,1
+#MATCH = KO-Cup,1925,11,54,5,1
+#MATCH = KO-Cup,1926,56,18,5,2
+#MATCH = KO-Cup,1927,12,27,3,1
+#MATCH = KO-Cup,1928,8,51,2,0
+#MATCH = KO-Cup,1930,30,41,1,0
+#MATCH = KO-Cup,1932,40,34,5,4,e
+#MATCH = KO-Cup,1934,13,30,3,2
+#MATCH = KO-Cup,1935,30,20,5,2
+#MATCH = KO-Cup,1936,14,21,4,2
+#MATCH = KO-Cup,1937,42,18,1,0
+#MATCH = KO-Cup,1938,47,52,4,1
+#MATCH = KO-Cup,1939,1,34,2,1 ,e
+#MATCH = KO-Cup,1943,26,40,3,2
+#MATCH = KO-Cup,1944,37,22,9,2
+#MATCH = KO-Cup,1948,1,55,2,1 ,p
+#MATCH = KO-Cup,1949,15,46,2,1,p
+#MATCH = KO-Cup,1950,34,58,4,3,e
+#MATCH = KO-Cup,1957,43,30,4,2
+#MATCH = KO-Cup,1958,48,50,4,3
+#MATCH = KO-Cup,1959,49,24,4,1
+#MATCH = KO-Cup,1961,26,28,3,0
+#MATCH = KO-Cup,1962,48,6,1,0,e
+#MATCH = KO-Cup,1963,37,24,3,0
+#MATCH = KO-Cup,1964,43,24,4,3,p
+#MATCH = KO-Cup,1965,30,44,1,0
+#MATCH = KO-Cup,1966,48,24,1,0
+#MATCH = KO-Cup,1967,26,28,2,1,e
+#MATCH = KO-Cup,1968,24,26,2,1
+#MATCH = KO-Cup,1969,30,34,3,1,e
+#MATCH = KO-Cup,1970,26,34,2,0
+#MATCH = KO-Cup,1971,26,48,2,1
+#MATCH = KO-Cup,1972,26,24,3,2
+#MATCH = KO-Cup,1973,28,33,2,0
+#MATCH = KO-Cup,1974,34,28,6,0
+#MATCH = KO-Cup,1975,24,38,1,0
+#MATCH = KO-Cup,1976,34,35,1,0,e
+#MATCH = KO-Cup,1977,38,51,3,0,e
+#MATCH = KO-Cup,1978,25,26,1,0
+#MATCH = KO-Cup,1979,26,38,4,1
+#MATCH = KO-Cup,1980,30,26,3,1
+#MATCH = KO-Cup,1981,25,26,3,1
+#MATCH = KO-Cup,1982,25,39,5,2
+#MATCH = KO-Cup,1983,26,33,6,2
+#MATCH = KO-Cup,1984,30,43,1,0
+#MATCH = KO-Cup,1985,39,46,1,0
+#MATCH = KO-Cup,1986,26,36,3,0
+#MATCH = KO-Cup,1987,26,24,4,2,e
+#MATCH = KO-Cup,1988,34,35,3,2,e
+#MATCH = KO-Cup,1989,34,31,4,1
+#MATCH = KO-Cup,1990,34,27,1,0
+#MATCH = KO-Cup,1991,30,29,1,0
+#MATCH = KO-Cup,1992,30,35,3,0
+#MATCH = KO-Cup,1993,26,32,6,2
+#MATCH = KO-Cup,1994,30,33,2,1
+#MATCH = KO-Cup,1995,30,50,2,1
+#MATCH = KO-Cup,1996,34,48,5,2
+#MATCH = KO-Cup,1997,35,32,4,2
+#MATCH = KO-Cup,1998,26,34,5,0
+#MATCH = KO-Cup,1999,26,43,2,0
+#MATCH = KO-Cup,2000,35,33,2,0
+#MATCH = KO-Cup,2001,38,34,4,3,p
+#MATCH = KO-Cup,2002,26,39,3,2,e
+#MATCH = KO-Cup,2003,39,30,4,1
+#MATCH = KO-Cup,2004,39,38,1,0
+#MATCH = KO-Cup,2005,34,37,4,0
+#MATCH = KO-Cup,2006,26,34,2,1
+#MATCH = KO-Cup,2007,26,25,8,7,p
+#MATCH = KO-Cup,2008,30,35,2,0
+#MATCH = KO-Cup,2009,32,38,5,4,p
+#MATCH = KO-Cup,2010,26,30,6,1
+#MATCH = KO-Cup,2011,38,26,3,2,e
+#MATCH = KO-Cup,2012,34,45,3,0
+#MATCH = KO-Cup,2013,25,34,2,1
+#MATCH = KO-Cup,2014,51,26,5,1
+#MATCH = KO-Cup,2015,31,51,2,0
+#MATCH = KO-Cup,2016,30,39,2,1
+#MATCH = KO-Cup,2017,27,25,2,0
+#MATCH = KO-Cup,2018,30,25,3,0
+#MATCH = KO-Cup,2019,26,37,4,0
+// Cup 2020 abandoned and no title awarded
+#MATCH = KO-Cup,2021,26,27,2,1
+#MATCH = KO-Cup,2022,34,26,2,1
+#MATCH = KO-Cup,2023,34,26,3,2,p
+#MATCH = KO-Cup,2024,30,33,1,0
+#MATCH = KO-Cup,2025,44,25,4,2,p
+#MATCH = KO-Cup,2026,25,33,5,1
+
+#MATCH = Supercup,1991,30,34,1,0
+#MATCH = Supercup,1992,34,30,1,0
+#MATCH = Supercup,1993,26,30,4,0
+#MATCH = Supercup,1994,26,30,3,0
+#MATCH = Supercup,1995,26,30,2,1,p
+#MATCH = Supercup,1996,34,26,3,0
+#MATCH = Supercup,1997,34,35,3,1
+#MATCH = Supercup,1998,34,26,2,0
+#MATCH = Supercup,1999,30,26,3,2
+#MATCH = Supercup,2000,34,35,2,0
+#MATCH = Supercup,2001,34,38,3,2
+#MATCH = Supercup,2002,26,34,3,1
+#MATCH = Supercup,2003,34,39,3,1
+#MATCH = Supercup,2004,39,26,4,2
+#MATCH = Supercup,2005,26,34,2,1
+#MATCH = Supercup,2006,26,34,3,1
+#MATCH = Supercup,2007,26,34,1,0
+#MATCH = Supercup,2008,34,30,2,0
+#MATCH = Supercup,2009,25,32,5,1
+#MATCH = Supercup,2010,38,26,1,0
+#MATCH = Supercup,2011,38,26,2,1
+#MATCH = Supercup,2012,34,26,4,2
+#MATCH = Supercup,2013,26,25,3,2
+#MATCH = Supercup,2014,51,26,1,0
+#MATCH = Supercup,2015,34,31,3,0
+#MATCH = Supercup,2016,34,30,1,0
+#MATCH = Supercup,2017,30,27,5,3,p
+#MATCH = Supercup,2018,30,34,6,5,p
+#MATCH = Supercup,2019,26,34,2,0
+// Cup 2020 abandoned and no title awarded
+#MATCH = Supercup,2021,34,26,4,0
+#MATCH = Supercup,2022,34,26,5,3
+#MATCH = Supercup,2023,34,30,1,0
+#MATCH = Supercup,2024,30,34,8,6,p
+
+END

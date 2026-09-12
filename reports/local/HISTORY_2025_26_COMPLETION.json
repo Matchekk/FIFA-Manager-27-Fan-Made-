@@ -1,0 +1,38 @@
+{
+  "status": "PASS_OFFLINE_HISTORY_PACKAGE_NATIVE_REREAD_AND_PRESERVATION",
+  "package": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03",
+  "native_preservation": {
+    "native_players.csv": {
+      "status": "PASS",
+      "data_rows": 266764,
+      "sha256": "64edc475c2c2ea99600134952ead6472b62010f83e6176e394b9f4504eeb9762"
+    },
+    "native_ratings.csv": {
+      "status": "PASS",
+      "data_rows": 266764,
+      "sha256": "797bcf60c5f00f10afdf20f04b15a9af30ec23da0fe4a95159caf397daec9594"
+    },
+    "native_player_semantics.csv": {
+      "status": "PASS",
+      "data_rows": 266764,
+      "sha256": "72e3d553b867c3b6c74b0feb5a88bc6bb19b7ff9c48fb96e244da1b2faad368c"
+    }
+  },
+  "fields": {
+    "status": "PASS_INDEPENDENT_FIELD_REREAD",
+    "positive_fields_checked": 103,
+    "stale_marker_removals_checked": 37,
+    "unique_clubs": 123,
+    "held_rows_not_applied": 2
+  },
+  "countries": 10,
+  "winner_records_added": 20,
+  "installed": false,
+  "excluded": [
+    "Full match-by-match league history",
+    "Supercups/league cups/continental history",
+    "Czech July 3 administrative membership replacement",
+    "League membership fixes including 1860"
+  ],
+  "main_native08_gate": "Not superseded; loan experiment remains separate"
+}

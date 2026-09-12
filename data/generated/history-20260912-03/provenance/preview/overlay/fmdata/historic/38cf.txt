@@ -1,0 +1,366 @@
+//  ###  Portugal ###  Primeira Liga ###
+//  from 1935 till 2024
+//  ###  Portugal ###  Taça de Portugal ###
+//  from 1939 till 2024
+//  ###  Portugal ###  Taça da Liga ###
+//  from 2007 till 2024
+//  ###  Portugal ###  Supertaça Cândido de Oliveira ###
+//  from 1979 till 2023
+//  Scripted by Lukas 2018 / Updated 2019, 2020, 2021
+//  2024 by GarrettStar
+
+//-----------------------------------------------------------------------------
+// LIST OF TEAMS
+//-----------------------------------------------------------------------------
+// A team entry has the following format: 
+// #TEAM = LOCAL_FILE_ID, UNIQUE_TEAM_ID
+//
+// The LOCAL_FILE_ID is used throughout the file for identifying a team.
+//-----------------------------------------------------------------------------
+
+BEGIN(TEAMS)
+
+#TEAM = 1,00260001 // Académica Coimbra
+#TEAM = 2,00260004 // Sport Lisboa e Benfica (Benfica Lisbon)
+#TEAM = 3,00260003 // CF Os Belenenses Lissabon (1919 Club)
+#TEAM = 4,0026000E // SC de Portugal (Sporting Lisbon)
+#TEAM = 5,0026001D // Vitória SC Guimarães
+#TEAM = 6,00260011 // Vitória FC Setúbal
+#TEAM = 7,00260012 // Estoril Praia
+#TEAM = 8,00260023 // SC Olhanense
+#TEAM = 9,0026002C // Atlético CP Lisbon
+#TEAM = 10,0026000C // FC Porto
+#TEAM = 11,0026100D // SC União Torreense
+#TEAM = 12,00260029 // SC Covilhã
+#TEAM = 13,0026001C // Leixões SC
+#TEAM = 14,00260006 // Sporting Braga
+#TEAM = 15,00260005 // Boavista FC Porto
+#TEAM = 16,0026000D // Rio Ave FC
+#TEAM = 17,0026001A // Estrela da Amadora
+#TEAM = 18,00260020 // SC Farense
+#TEAM = 19,00260002 // SC Beira-Mar
+#TEAM = 20,00260008 // CS Maritimo Funchal
+#TEAM = 21,0026001F // SC Campomaiorense
+#TEAM = 22,0026000F // União Leiria
+#TEAM = 23,00260018 // FC Paços de Ferreira
+#TEAM = 24,00260015 // GD Chaves
+#TEAM = 25,00260009 // Moreirense FC
+#TEAM = 26,00260007 // Gil Vicente FC
+#TEAM = 27,0026001B // CD Aves
+#TEAM = 28,00261003 // CD Tondela
+
+END
+
+//-----------------------------------------------------------------------------
+// LIST OF COMPETITIONS
+//-----------------------------------------------------------------------------
+// A competition entry has the following format:
+//
+// #COMP = SYMBOLIC_COMP_ID, COUNTRY_ID, COMP_TYPE, COMP_NO, ROUND_NAME
+//
+// The SYMBOLIC_COMP_ID is used throughout the file for identifying a 
+// competition.
+//
+// Possible values for ROUND_NAME are:
+// ROUND_NONE             Unknown round, use for global competition id 
+// ROUND_QUALI
+// ROUND_QUALI1
+// ROUND_QUALI2
+// ROUND_QUALI3
+// ROUND_PREROUND1
+// ROUND_1
+// ROUND_2
+// ROUND_3
+// ROUND_4
+// ROUND_5
+// ROUND_GROUP1
+// ROUND_GROUP2
+// ROUND_LAST_16
+// ROUND_QUARTERFINAL
+// ROUND_SEMIFINAL
+// ROUND_FINAL     
+//-----------------------------------------------------------------------------
+
+BEGIN(COMPETITIONS)
+
+#COMP = LG,38,1,0,ROUND_FINAL
+#COMP = DOM,38,3,0,ROUND_FINAL
+#COMP = LCUP,38,4,0,ROUND_FINAL
+#COMP = SCUP,38,7,0,ROUND_FINAL
+
+END
+
+//-----------------------------------------------------------------------------
+// LIST OF MATCHES AND RESULTS
+//-----------------------------------------------------------------------------
+// A match entry, has the following format:
+//
+// #MATCH = SYMBOLIC_COMP_ID, YEAR, WINNER_TEAM, SECOND_TEAM, [ SCORE_WINNER_TEAM, SCORE_SECOND_TEAM, [CAUSE] ]
+//
+// SYMBOLIC_COMP_ID must be one of the values defined in the COMPETITIONS section. 
+// The values of WINNER_TEAM and SECOND_TEAM must be a local team file id as 
+// defined in the TEAMS section.
+//
+// CAUSE is optional and can be:
+// e : Match decided by extra time
+// p : Match decided by penalty shoot out
+//
+// The score can be ommited if the match was a 2nd leg match.
+//
+// NOTE: The match entries should be sorted historically starting with the 
+//       oldest and ending with the most recent ones. 
+//       Furthermore the rounds should also be ordered temporally starting with 
+//       the very first round and ending with the final. 
+//-----------------------------------------------------------------------------
+
+BEGIN(MATCHES)
+// NOTE: The match entries should be sorted historically starting with the oldest and ending with the most recent ones.
+//       Furthermore the rounds should also be ordered temporally starting with the very first round and ending with the final. 
+
+#MATCH = LG,1935,10,4
+#MATCH = LG,1936,2,10
+#MATCH = LG,1937,2,3
+#MATCH = LG,1938,2,10
+#MATCH = LG,1939,10,4
+#MATCH = LG,1940,10,4
+#MATCH = LG,1941,4,10
+#MATCH = LG,1942,2,4
+#MATCH = LG,1943,2,4
+#MATCH = LG,1944,4,2
+#MATCH = LG,1945,2,4
+#MATCH = LG,1946,3,2
+#MATCH = LG,1947,4,2
+#MATCH = LG,1948,4,2
+#MATCH = LG,1949,4,2
+#MATCH = LG,1950,2,4
+#MATCH = LG,1951,4,10
+#MATCH = LG,1952,4,2
+#MATCH = LG,1953,4,2
+#MATCH = LG,1954,4,10
+#MATCH = LG,1955,2,3
+#MATCH = LG,1956,10,2
+#MATCH = LG,1957,2,10
+#MATCH = LG,1958,4,10
+#MATCH = LG,1959,10,2
+#MATCH = LG,1960,2,4
+#MATCH = LG,1961,2,4
+#MATCH = LG,1962,4,10
+#MATCH = LG,1963,2,10
+#MATCH = LG,1964,2,10
+#MATCH = LG,1965,2,10
+#MATCH = LG,1966,4,2
+#MATCH = LG,1967,2,1
+#MATCH = LG,1968,2,4
+#MATCH = LG,1969,2,10
+#MATCH = LG,1970,4,2
+#MATCH = LG,1971,2,4
+#MATCH = LG,1972,2,6
+#MATCH = LG,1973,2,3
+#MATCH = LG,1974,4,2
+#MATCH = LG,1975,2,10
+#MATCH = LG,1976,2,15
+#MATCH = LG,1977,2,4
+#MATCH = LG,1978,10,2
+#MATCH = LG,1979,10,2
+#MATCH = LG,1980,4,10
+#MATCH = LG,1981,2,10
+#MATCH = LG,1982,4,2
+#MATCH = LG,1983,2,10
+#MATCH = LG,1984,2,10
+#MATCH = LG,1985,10,4
+#MATCH = LG,1986,10,2
+#MATCH = LG,1987,2,10
+#MATCH = LG,1988,10,2
+#MATCH = LG,1989,2,10
+#MATCH = LG,1990,10,2
+#MATCH = LG,1991,2,10
+#MATCH = LG,1992,10,2
+#MATCH = LG,1993,10,2
+#MATCH = LG,1994,2,10
+#MATCH = LG,1995,10,4
+#MATCH = LG,1996,10,2
+#MATCH = LG,1997,10,4
+#MATCH = LG,1998,10,2
+#MATCH = LG,1999,10,15
+#MATCH = LG,2000,4,10
+#MATCH = LG,2001,15,10
+#MATCH = LG,2002,4,15
+#MATCH = LG,2003,10,2
+#MATCH = LG,2004,10,2
+#MATCH = LG,2005,2,10
+#MATCH = LG,2006,10,4
+#MATCH = LG,2007,10,4
+#MATCH = LG,2008,10,4
+#MATCH = LG,2009,10,4
+#MATCH = LG,2010,2,14
+#MATCH = LG,2011,10,2
+#MATCH = LG,2012,10,2
+#MATCH = LG,2013,10,2
+#MATCH = LG,2014,2,4
+#MATCH = LG,2015,2,10
+#MATCH = LG,2016,2,4
+#MATCH = LG,2017,2,10
+#MATCH = LG,2018,10,2
+#MATCH = LG,2019,2,10
+#MATCH = LG,2020,10,2
+#MATCH = LG,2021,4,10
+#MATCH = LG,2022,10,4
+#MATCH = LG,2023,2,10
+#MATCH = LG,2024,4,2
+#MATCH = LG,2025,4,2
+#MATCH = LG,2026,10,4
+
+#MATCH = DOM,1939,1,2,4,3
+#MATCH = DOM,1940,2,3,3,1
+#MATCH = DOM,1941,4,3,4,1
+#MATCH = DOM,1942,3,5,2,0
+#MATCH = DOM,1943,2,6,5,1
+#MATCH = DOM,1944,2,7,8,0
+#MATCH = DOM,1945,4,8,1,0
+#MATCH = DOM,1946,4,9,4,2
+#MATCH = DOM,1948,4,3,3,1
+#MATCH = DOM,1949,2,9,2,1
+#MATCH = DOM,1951,2,1,5,1
+#MATCH = DOM,1952,2,4,5,4
+#MATCH = DOM,1953,2,10,5,0
+#MATCH = DOM,1954,4,6,3,2
+#MATCH = DOM,1955,2,4,2,1
+#MATCH = DOM,1956,10,11,2,0
+#MATCH = DOM,1957,2,12,3,1
+#MATCH = DOM,1958,10,2,1,0
+#MATCH = DOM,1959,2,10,1,0
+#MATCH = DOM,1960,3,4,2,1
+#MATCH = DOM,1961,13,10,2,0
+#MATCH = DOM,1962,2,6,3,0
+#MATCH = DOM,1963,4,5,4,0
+#MATCH = DOM,1964,2,10,6,2
+#MATCH = DOM,1965,6,2,3,1
+#MATCH = DOM,1966,14,6,1,0
+#MATCH = DOM,1967,6,1,3,2,e
+#MATCH = DOM,1968,10,6,2,1
+#MATCH = DOM,1969,2,1,2,1,e
+#MATCH = DOM,1970,2,4,3,1
+#MATCH = DOM,1971,4,2,4,1
+#MATCH = DOM,1972,2,4,3,2,e
+#MATCH = DOM,1973,4,6,3,2
+#MATCH = DOM,1974,4,2,2,1,e
+#MATCH = DOM,1975,15,2,2,1
+#MATCH = DOM,1976,15,5,2,1
+#MATCH = DOM,1977,10,14,1,0
+#MATCH = DOM,1978,4,10,2,1
+#MATCH = DOM,1979,15,4,1,0
+#MATCH = DOM,1980,2,10,1,0
+#MATCH = DOM,1981,2,10,3,1
+#MATCH = DOM,1982,4,14,4,0
+#MATCH = DOM,1983,2,10,1,0
+#MATCH = DOM,1984,10,16,4,1
+#MATCH = DOM,1985,2,10,3,1
+#MATCH = DOM,1986,2,3,2,0
+#MATCH = DOM,1987,2,4,2,1
+#MATCH = DOM,1988,10,5,1,0
+#MATCH = DOM,1989,3,2,2,1
+#MATCH = DOM,1990,17,18,2,0
+#MATCH = DOM,1991,10,19,3,1,e
+#MATCH = DOM,1992,15,10,2,1
+#MATCH = DOM,1993,2,15,5,2
+#MATCH = DOM,1994,10,4,2,1,e
+#MATCH = DOM,1995,4,20,2,0
+#MATCH = DOM,1996,2,4,3,1
+#MATCH = DOM,1997,15,2,3,2
+#MATCH = DOM,1998,10,14,3,1
+#MATCH = DOM,1999,19,21,1,0
+#MATCH = DOM,2000,10,4,2,0
+#MATCH = DOM,2001,10,20,1,0
+#MATCH = DOM,2002,4,13,1,0
+#MATCH = DOM,2003,10,22,1,0
+#MATCH = DOM,2004,2,10,2,1,e
+#MATCH = DOM,2005,6,2,2,1
+#MATCH = DOM,2006,10,6,1,0
+#MATCH = DOM,2007,4,3,1,0
+#MATCH = DOM,2008,4,10,2,0,e
+#MATCH = DOM,2009,10,23,1,0
+#MATCH = DOM,2010,10,24,2,1
+#MATCH = DOM,2011,10,5,6,2
+#MATCH = DOM,2012,1,4,1,0
+#MATCH = DOM,2013,5,2,2,1
+#MATCH = DOM,2014,2,16,1,0
+#MATCH = DOM,2015,4,14,5,3,p
+#MATCH = DOM,2016,14,10,6,4,p
+#MATCH = DOM,2017,2,5,2,1
+#MATCH = DOM,2018,27,4,2,1
+#MATCH = DOM,2019,4,10,7,6,p
+#MATCH = DOM,2020,10,2,2,1
+#MATCH = DOM,2021,14,2,2,0
+#MATCH = DOM,2022,10,28,3,1
+#MATCH = DOM,2023,10,14,2,0
+#MATCH = DOM,2024,10,4,2,1,e
+#MATCH = DOM,2025,4,2,3,1,e
+#MATCH = DOM,2026,11,4,2,1,e
+
+#MATCH = LCUP,2008,6,4,3,2,p
+#MATCH = LCUP,2009,2,4,4,3,p
+#MATCH = LCUP,2010,2,10,3,0
+#MATCH = LCUP,2011,2,23,2,1
+#MATCH = LCUP,2012,2,26,2,1
+#MATCH = LCUP,2013,14,10,1,0
+#MATCH = LCUP,2014,2,16,2,0
+#MATCH = LCUP,2015,2,20,2,1
+#MATCH = LCUP,2016,2,20,6,2
+#MATCH = LCUP,2017,25,14,1,0
+#MATCH = LCUP,2018,4,6,6,5,p
+#MATCH = LCUP,2019,4,10,4,2,p
+#MATCH = LCUP,2020,14,10,1,0
+#MATCH = LCUP,2021,4,14,1,0
+#MATCH = LCUP,2022,4,2,2,1
+#MATCH = LCUP,2023,10,4,2,0
+#MATCH = LCUP,2024,14,7,5,4,p
+#MATCH = LCUP,2025,2,4,8,7,p
+
+#MATCH = SCUP,1979,15,10,2,1
+#MATCH = SCUP,1980,2,4,4,3   // from here aggregate results
+#MATCH = SCUP,1981,10,2,4,3
+#MATCH = SCUP,1982,4,14,7,3
+#MATCH = SCUP,1983,10,2,2,1
+#MATCH = SCUP,1984,10,2,4,0
+#MATCH = SCUP,1985,2,10,1,0
+#MATCH = SCUP,1986,10,2,5,3
+#MATCH = SCUP,1987,4,2,4,0
+#MATCH = SCUP,1988,5,10,2,0
+#MATCH = SCUP,1989,2,3,4,0
+#MATCH = SCUP,1990,10,17,4,2
+#MATCH = SCUP,1991,10,2,5,4,p
+#MATCH = SCUP,1992,15,10,4,3
+#MATCH = SCUP,1993,10,2,6,5,p
+#MATCH = SCUP,1994,10,2,1,0
+#MATCH = SCUP,1995,4,10,3,0
+#MATCH = SCUP,1996,10,2,6,0
+#MATCH = SCUP,1997,15,10,2,1
+#MATCH = SCUP,1998,10,14,2,1
+#MATCH = SCUP,1999,10,19,5,2
+#MATCH = SCUP,2000,4,10,1,0 // last aggregate result
+#MATCH = SCUP,2001,10,15,1,0
+#MATCH = SCUP,2002,4,13,5,1
+#MATCH = SCUP,2003,10,22,1,0
+#MATCH = SCUP,2004,10,2,1,0
+#MATCH = SCUP,2005,2,6,1,0
+#MATCH = SCUP,2006,10,6,3,0
+#MATCH = SCUP,2007,4,10,1,0
+#MATCH = SCUP,2008,4,10,2,0
+#MATCH = SCUP,2009,10,23,2,0
+#MATCH = SCUP,2010,10,2,2,0
+#MATCH = SCUP,2011,10,5,2,1
+#MATCH = SCUP,2012,10,1,1,0
+#MATCH = SCUP,2013,10,5,3,0
+#MATCH = SCUP,2014,2,16,3,2,p
+#MATCH = SCUP,2015,4,2,1,0
+#MATCH = SCUP,2016,2,14,3,0
+#MATCH = SCUP,2017,2,5,3,1
+#MATCH = SCUP,2018,10,27,3,1
+#MATCH = SCUP,2019,2,4,5,0
+#MATCH = SCUP,2020,10,2,2,0
+#MATCH = SCUP,2021,4,14,2,1
+#MATCH = SCUP,2022,10,28,3,0
+#MATCH = SCUP,2023,2,10,2,0
+#MATCH = SCUP,2024,10,4,4,3,e
+
+END

@@ -1,0 +1,147 @@
+{
+  "status": "PASS_OFFLINE_HISTORY_PACKAGE_NATIVE_REREAD_AND_PRESERVATION",
+  "base": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\transfer-increment-20260909-07\\database",
+  "changed_database_files": {
+    "data/CountryData7.sav": {
+      "before": "7fb7331075414c6fb4533333fc52a5bbc51b3cde3efe330b11a265e594b3351a",
+      "after": "a5d8507cf88f3d71eadfa144e5f9be32a02c8510a1fd5361c85bad72bf854280",
+      "changed_lines": 10
+    },
+    "data/CountryData12.sav": {
+      "before": "0c9e66f1f00df5aa50928b4cc133b055e9e3341a68364c2793247830d9415c2e",
+      "after": "ccacb947ce60a233c80d4263f99d14d2f24ff415cdc26495282e5764b1a08721",
+      "changed_lines": 9
+    },
+    "data/CountryData14.sav": {
+      "before": "7b1fdf1d9d828ede38c32315cd053befac3e51c265ef4cb775eca797c41b8c29",
+      "after": "f2d8106a819c5cb5d5fab050bf4760e7b182fdc53ba47832750d72f3ed8d0129",
+      "changed_lines": 13
+    },
+    "data/CountryData18.sav": {
+      "before": "ec8c894d0ceffb92164db78c4ae06a326e949246fb2efaf843d0655ed240b508",
+      "after": "45c60e590e2357309d9aed2ff633f4150e25ba67521ac8d9a88058a5eeeef77a",
+      "changed_lines": 11
+    },
+    "data/CountryData21.sav": {
+      "before": "b675c5b785e01ee1c2cf1da738e98111d1e037eff1ba94968662de4d448a1f43",
+      "after": "27d3e6f7ec26d20b58a638ebdfad8e4c617418b358d22177de065b5491efb459",
+      "changed_lines": 29
+    },
+    "data/CountryData27.sav": {
+      "before": "c91b0e1bb488ce48ff28915b38c8ab7dd76a1f8ef330d66cbe7ec267022df656",
+      "after": "c09c2bfccd9302287c5d208475781bf01f1e6657063263f65a5e5fba5675bc22",
+      "changed_lines": 13
+    },
+    "data/CountryData34.sav": {
+      "before": "99f85f4c655d9a80192b4ae20572e84cb39267bb049fb123e595bd0f41d1fc71",
+      "after": "bb03820c91eb3116bbf56ab34cf5f85f339db9fee041abefca05c56c19c52f31",
+      "changed_lines": 13
+    },
+    "data/CountryData38.sav": {
+      "before": "82da8c139df9b9a3f6ac01311e2ca8edfc1739a0893dd65589af79ca6975d590",
+      "after": "0f0f1af9521596aa6e106fe1195a7f9a56e6ff6ecc4835e6e638e021357d9279",
+      "changed_lines": 10
+    },
+    "data/CountryData45.sav": {
+      "before": "604d88ef7cab4e0c48cdf504a957ed38870f146084f798e0f2b9c540aedfcdf2",
+      "after": "68a4f9168701f8499fa7570806bc7610a74d99c1b9208d8a8573c0cf623e754a",
+      "changed_lines": 14
+    },
+    "data/CountryData48.sav": {
+      "before": "9961aff7f3677abe1972d3620a0724c48f3494879f7e19d1ad76811b9f19e3ef",
+      "after": "1cfbde941807a76da1f627649a5ddf288132c97579b8d7f7dd303762480e1322",
+      "changed_lines": 13
+    }
+  },
+  "unchanged_database_files": 628,
+  "player_staff_blocks": "BYTE_IDENTICAL",
+  "winner_overlays": [
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\21cf.txt",
+      "sha256": "39b2f038a9b74731f6127d4ab01a20bd698eaf682f8f7910d0365df840a1dfda",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\14cf.txt",
+      "sha256": "feb1eb8149d9e58768294a5a3fe0e81fea158be8981bb25749d61b3600c40633",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\27cf.txt",
+      "sha256": "7cbc11cad8d62844ea6c08021fbe1806cbd0be21e214aa1463cb9daf6dd66743",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\45cf.txt",
+      "sha256": "ba08d563f7e62862bd87c3ac3f015d4d7261e46381e0028aa68361446ae0b91c",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\18cf.txt",
+      "sha256": "f76d45559e9bfa7d51a47cdf266ebadb350f674fce7649ca8b7d3772039a7139",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\38cf.txt",
+      "sha256": "3cf7b4bed0d2fb4e4c60140b87ebd86f18f7b58be8f4083a7c58fdd3eb72c2e9",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\34cf.txt",
+      "sha256": "4db7bf18c1d3655601911f31338849a0ade5534e1b93ecded66e5f105493afa9",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\7cf.txt",
+      "sha256": "b2a5f1310996c2ff17845b452679f55f892c7afe0874d93077f9e11ec59e823e",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\48cf.txt",
+      "sha256": "4ae491bd5d119e1720aa325542c48672cd9346d039c4d928a0db04c04909b3ef",
+      "added_records": 2
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-03\\overlay\\fmdata\\historic\\12cf.txt",
+      "sha256": "32264a4378bbae5556e8a7902115aa4592c9b7950e663dd75c22c30cfc5eda9c",
+      "added_records": 2
+    }
+  ],
+  "source_unchanged": true,
+  "runtime_modified": false,
+  "scope": "2025/26 top-flight champions, main domestic cup winners/runners and scoped movement markers for ten countries",
+  "exclusions": [
+    "Full match-by-match league history",
+    "Supercups/league cups/continental history",
+    "Czech July 3 administrative membership replacement",
+    "League membership fixes including 1860"
+  ],
+  "provenance": "C:\\FM27CommunityOverhaul\\data\\generated\\history-20260912-01\\HISTORY_DRAFT.json",
+  "native_preservation": {
+    "native_players.csv": {
+      "status": "PASS",
+      "data_rows": 266764,
+      "sha256": "64edc475c2c2ea99600134952ead6472b62010f83e6176e394b9f4504eeb9762"
+    },
+    "native_ratings.csv": {
+      "status": "PASS",
+      "data_rows": 266764,
+      "sha256": "797bcf60c5f00f10afdf20f04b15a9af30ec23da0fe4a95159caf397daec9594"
+    },
+    "native_player_semantics.csv": {
+      "status": "PASS",
+      "data_rows": 266764,
+      "sha256": "72e3d553b867c3b6c74b0feb5a88bc6bb19b7ff9c48fb96e244da1b2faad368c"
+    }
+  },
+  "field_validation": {
+    "status": "PASS_INDEPENDENT_FIELD_REREAD",
+    "positive_fields_checked": 103,
+    "stale_marker_removals_checked": 37,
+    "unique_clubs": 123,
+    "held_rows_not_applied": 2
+  },
+  "installed": false,
+  "editor_export": "NOT_EXPORTED",
+  "note": "Complete for the declared title/cup/movement-marker scope; not a complete match-results archive or release candidate."
+}

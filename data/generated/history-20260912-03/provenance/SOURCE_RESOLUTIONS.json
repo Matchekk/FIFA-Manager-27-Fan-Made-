@@ -1,0 +1,26 @@
+{
+  "review_date": "2026-09-12",
+  "method": "Primary pages read through web tool; these are paraphrased findings, not raw source snapshots.",
+  "resolutions": [
+    {
+      "topic": "Belgian main cup finalist",
+      "source": "https://www.rsca.be/nl/fixture/view/4014",
+      "finding": "14 May 2026 final: Union Saint-Gilloise 3-1 Anderlecht.",
+      "action": "Release held Anderlecht cup runner-up history marker."
+    },
+    {
+      "topic": "German administrative division movement",
+      "source": "https://www.dfb.de/news/teilnehmerfeld-der-3-liga-steht-fest-havelse-rueckt-fuer-1860-nach",
+      "event_date": "2026-06-11",
+      "finding": "1860 did not receive admission; Havelse retained the vacated place. Four Regionalliga entrants confirmed.",
+      "action": "Record administrative departure and Havelse retention without rewriting sporting table. Candidate membership is a separate unresolved input."
+    },
+    {
+      "topic": "Czech administrative replacement",
+      "source": "https://www.lfafotbal.cz/clanek/958-artis-brno-doplni-ucastniky-chance-ligy-pro-sezonu-2026-27",
+      "event_date": "2026-07-03",
+      "finding": "Artis replaces Karvina after the completed 2025/26 season; Dukla's sporting relegation remains valid.",
+      "action": "Hold Artis/Karvina prior-season sporting-marker changes; retain as distinct later administrative evidence."
+    }
+  ]
+}

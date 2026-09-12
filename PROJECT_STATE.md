@@ -26,6 +26,22 @@ independently reread and verified. The authoritative summary is
 `reports/local/NATIVE_CUMULATIVE_VALIDATION_07.json` and the local archive manifest is
 `data/generated/transfer-increment-20260909-07-evidence-v2/EVIDENCE.json`.
 
+## Native08 Runtime and History Update
+
+Native07 payload was directly observed in the career. Day7/Day30 and the first
+2027 transition/save-reload were operator-confirmed; the separate Day1 gate was
+explicitly waived. Loan-return discrepancies led to a separate two-player date
+experiment; this does not yet supersede the Native08 gate or complete cleanup.
+
+The 2025/26 title/cup/movement-marker history package is offline complete at
+`data/generated/history-20260912-03/`: ten country files, 20 competition-history
+records, 103 intended fields and 37 obsolete-marker removals validated. Native
+reread and all 266,764 player/rating records match Native07. It is not installed
+or Editor-exported and excludes full match-result archives and later Czech
+administrative membership changes. See `reports/local/HISTORY_2025_26_REPORT.md`.
+Next: finish the existing Native08 loan-test save/cleanup handoff, then combine
+accepted changes into a fresh candidate; do not overwrite the diagnostic runtime.
+
 ## Runtime and Data Work in Progress
 
 Runtime07 Editor export was observed on 12 September 2026. Its exact isolated process

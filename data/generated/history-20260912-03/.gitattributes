@@ -1,0 +1,4 @@
+# Retain the original game file encoding and newline bytes bound by PACKAGE.json.
+overlay/** -text
+provenance/preview/overlay/** -text
+provenance/preview/*.sav.patch -text

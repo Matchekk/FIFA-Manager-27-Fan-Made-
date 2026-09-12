@@ -1,0 +1,339 @@
+//  ###  Italien ###  Serie A ###
+//  from 1898 till 2024
+//  ###  Italien ###  Coppa Italia ###
+//  from 1922 till 2024
+//  ###  Italien ###  Supercoppa ###
+//  from 1988 till 2023
+//  Scripted by Raghetti 2016
+//  Seasons from 2017 - 2020 added by Lukas
+//  2024 by GarrettStar
+
+//-----------------------------------------------------------------------------
+// LIST OF TEAMS
+//-----------------------------------------------------------------------------
+
+//  A team entry has the following format:
+//  #TEAM = Local_ID, Unique_ID
+//  The Local_ID is used only in this file to identify a team.
+
+BEGIN(TEAMS)
+
+#TEAM = 1,001B0002 // AC Milan
+#TEAM = 2,001B0003 // Parma Calcio 1913/Parma FC/AC Parma
+#TEAM = 3,001B0004 // AS Rom
+#TEAM = 4,001B0005 // Atalanta Bergamo
+#TEAM = 5,001B0006 // Bologna FC
+#TEAM = 6,001B0009 // Inter Mailand
+#TEAM = 7,001B000A // Juventus Turin
+#TEAM = 8,001B000D // Sampdoria Genua
+#TEAM = 9,001B000F // Lazio Rom
+#TEAM = 10,001B0010 // Udinese Calcio
+#TEAM = 11,001B0013 // Palermo FC/US Palermo
+#TEAM = 12,001B0014 // ACF Fiorentina
+#TEAM = 13,001B0018 // Hellas Verona
+#TEAM = 14,001B001B // Torino FC
+#TEAM = 15,001B001C // Venezia FC
+#TEAM = 16,001B001D // LR Vicenza Virtus/Vicenza Calcio
+#TEAM = 17,001B0026 // Genoa CFC
+#TEAM = 18,001B0029 // US Catanzaro
+#TEAM = 19,001B9901 // AC Ancona (Dissolved 2010; DOES NOT EXIST!!!)
+#TEAM = 20,001B002D // SSC Napoli
+#TEAM = 21,001B0033 // Calcio Padova
+#TEAM = 22,001B003E // Novara Calcio
+#TEAM = 23,001B0054 // FC Vado
+#TEAM = 24,001B0056 // SPAL 2013 Ferrara
+#TEAM = 25,001B0069 // US Alessandria Calcio
+#TEAM = 26,001B30D8 // Internazionale FC Torino (Dissolved 1900)
+#TEAM = 27,001B30D7 // FBC Torinese (Dissolved 1906)
+#TEAM = 28,001B0053 // FC Pro Vercelli 1892
+#TEAM = 29,001B3020 // US Milanese (Dissolved 1928)
+#TEAM = 30,001B0055 // Casale FBC/AS Casale Calcio
+#TEAM = 31,001B0011 // AS Livorno
+#TEAM = 32,001B0030 // AC Pisa
+#TEAM = 33,001B0057 // USD Novese
+#TEAM = 34,001B3021 // Fortitudo Roma (Dissolved 1927)
+#TEAM = 35,001B300F // AC Savoia 1908
+#TEAM = 36,001B3C14 // SS Alba Trastevere Roma (Dissolved 1927)
+#TEAM = 37,001B9901 // unassigned (no title awarded 1927, 2005)
+#TEAM = 38,001B0008 // Cagliari Calcio
+#TEAM = 39,001B0015 // AC Perugia
+
+END
+
+//-----------------------------------------------------------------------------
+// LIST OF COMPETITIONS
+//-----------------------------------------------------------------------------
+
+//  A competition entry has the following format:
+//  #COMP = SYMBOLIC_COMP_ID, COUNTRY_ID, COMP_TYPE, COMP_NO, ROUND_NAME
+//  The SYMBOLIC_COMP_ID is used throughout the file for identifying a competition.
+//  
+//  Possible values for ROUND_NAME are:
+//  ROUND_NONE (Unknown round, use for global competition ID)
+//  ROUND_QUALI, ROUND_QUALI1, ROUND_QUALI2, ROUND_QUALI3
+//  ROUND_PREROUND1
+//  ROUND_1, ROUND_2, ROUND_3, ROUND_4, ROUND_5
+//  ROUND_GROUP1, ROUND_GROUP2
+//  ROUND_LAST_16, ROUND_QUARTERFINAL, ROUND_SEMIFINAL
+//  ROUND_FINAL
+
+BEGIN(COMPETITIONS)
+#COMP = LG,27,1,0,ROUND_FINAL
+#COMP = KO-Cup,27,3,0,ROUND_FINAL
+#COMP = Supercup,27,7,0,ROUND_FINAL
+END
+
+//  ------------------
+//  ||List of Rounds||
+//  ------------------
+
+//  Matches in historically order (old to most recent).
+//  Rounds in temporally order (first round to final).
+//  A competition entry have the following format:
+//  #MATCH = SYMBOLIC_COMP_ID, Year, Local_ID1, Local_ID2, Goals1, Goals2 (, X)
+//  The X-value may be 'E=extra time or 'p'=penalty.
+
+BEGIN(MATCHES)
+
+#MATCH = LG,1898,17,26
+#MATCH = LG,1899,17,26
+#MATCH = LG,1900,17,27
+#MATCH = LG,1901,1,17
+#MATCH = LG,1902,17,1
+#MATCH = LG,1903,17,7
+#MATCH = LG,1904,17,7
+#MATCH = LG,1905,7,17
+#MATCH = LG,1906,1,7
+#MATCH = LG,1907,1,14
+#MATCH = LG,1908,28,29
+#MATCH = LG,1909,28,29
+#MATCH = LG,1910,6,28
+#MATCH = LG,1911,28,16
+#MATCH = LG,1912,28,15
+#MATCH = LG,1913,28,9
+#MATCH = LG,1914,30,9
+#MATCH = LG,1920,6,31
+#MATCH = LG,1921,28,32
+#MATCH = LG,1922,33,8
+#MATCH = LG,1922,28,34
+#MATCH = LG,1923,17,9
+#MATCH = LG,1924,17,35
+#MATCH = LG,1925,5,36
+#MATCH = LG,1926,7,36
+#MATCH = LG,1927,37,5
+#MATCH = LG,1928,14,17
+#MATCH = LG,1929,5,14
+#MATCH = LG,1930,6,17
+#MATCH = LG,1931,7,3
+#MATCH = LG,1932,7,5
+#MATCH = LG,1933,7,6
+#MATCH = LG,1934,7,6
+#MATCH = LG,1935,7,6
+#MATCH = LG,1936,5,3
+#MATCH = LG,1937,5,9
+#MATCH = LG,1938,6,7
+#MATCH = LG,1939,5,14
+#MATCH = LG,1940,6,5
+#MATCH = LG,1941,5,6
+#MATCH = LG,1942,3,14
+#MATCH = LG,1943,14,31
+#MATCH = LG,1946,14,7
+#MATCH = LG,1947,14,7
+#MATCH = LG,1948,14,1
+#MATCH = LG,1949,14,6
+#MATCH = LG,1950,7,1
+#MATCH = LG,1951,1,6
+#MATCH = LG,1952,7,1
+#MATCH = LG,1953,6,7
+#MATCH = LG,1954,6,7
+#MATCH = LG,1955,1,10
+#MATCH = LG,1956,12,1
+#MATCH = LG,1957,1,12
+#MATCH = LG,1958,7,12
+#MATCH = LG,1959,1,12
+#MATCH = LG,1960,7,12
+#MATCH = LG,1961,7,1
+#MATCH = LG,1962,1,6
+#MATCH = LG,1963,6,7
+#MATCH = LG,1964,5,6
+#MATCH = LG,1965,6,1
+#MATCH = LG,1966,6,5
+#MATCH = LG,1967,7,6
+#MATCH = LG,1968,1,20
+#MATCH = LG,1969,12,38
+#MATCH = LG,1970,38,6
+#MATCH = LG,1971,6,1
+#MATCH = LG,1972,7,1
+#MATCH = LG,1973,7,1
+#MATCH = LG,1974,9,7
+#MATCH = LG,1975,7,20
+#MATCH = LG,1976,14,7
+#MATCH = LG,1977,7,14
+#MATCH = LG,1978,7,16
+#MATCH = LG,1979,1,39
+#MATCH = LG,1980,6,7
+#MATCH = LG,1981,7,3
+#MATCH = LG,1982,7,12
+#MATCH = LG,1983,3,7
+#MATCH = LG,1984,7,3
+#MATCH = LG,1985,13,14
+#MATCH = LG,1986,7,3
+#MATCH = LG,1987,20,7
+#MATCH = LG,1988,1,20
+#MATCH = LG,1989,6,20
+#MATCH = LG,1990,20,1
+#MATCH = LG,1991,8,1
+#MATCH = LG,1992,1,7
+#MATCH = LG,1993,1,6
+#MATCH = LG,1994,1,7
+#MATCH = LG,1995,7,9
+#MATCH = LG,1996,1,7
+#MATCH = LG,1997,7,2
+#MATCH = LG,1998,7,6
+#MATCH = LG,1999,1,9
+#MATCH = LG,2000,9,7
+#MATCH = LG,2001,3,7
+#MATCH = LG,2002,7,3
+#MATCH = LG,2003,7,6
+#MATCH = LG,2004,1,3
+#MATCH = LG,2005,37,1
+#MATCH = LG,2006,6,3
+#MATCH = LG,2007,6,3
+#MATCH = LG,2008,6,3
+#MATCH = LG,2009,6,7
+#MATCH = LG,2010,6,3
+#MATCH = LG,2011,1,6
+#MATCH = LG,2012,7,1
+#MATCH = LG,2013,7,20
+#MATCH = LG,2014,7,3
+#MATCH = LG,2015,7,3
+#MATCH = LG,2016,7,20
+#MATCH = LG,2017,7,3
+#MATCH = LG,2018,7,20
+#MATCH = LG,2019,7,20
+#MATCH = LG,2020,7,6
+#MATCH = LG,2021,6,1
+#MATCH = LG,2022,1,6
+#MATCH = LG,2023,20,9
+#MATCH = LG,2024,6,1
+#MATCH = LG,2025,20,6
+#MATCH = LG,2026,6,20
+
+#MATCH = KO-Cup,1922,23,10,1,0,e
+#MATCH = KO-Cup,1936,14,25,5,1
+#MATCH = KO-Cup,1937,17,3,1,0
+#MATCH = KO-Cup,1938,7,14,5,2
+#MATCH = KO-Cup,1939,6,22,2,1
+#MATCH = KO-Cup,1940,12,17,1,0
+#MATCH = KO-Cup,1941,15,3,4,3
+#MATCH = KO-Cup,1942,7,1,5,2
+#MATCH = KO-Cup,1943,14,15,4,0
+#MATCH = KO-Cup,1958,9,12,1,0
+#MATCH = KO-Cup,1959,7,6,4,1
+#MATCH = KO-Cup,1960,7,12,3,2,e
+#MATCH = KO-Cup,1961,12,9,2,0
+#MATCH = KO-Cup,1962,20,24,2,1
+#MATCH = KO-Cup,1963,4,14,3,1
+#MATCH = KO-Cup,1964,3,14,1,0
+#MATCH = KO-Cup,1965,7,6,1,0
+#MATCH = KO-Cup,1966,12,18,2,1,e
+#MATCH = KO-Cup,1967,1,21,1,0
+#MATCH = KO-Cup,1968,14,1
+#MATCH = KO-Cup,1969,3,38
+#MATCH = KO-Cup,1970,5,14
+#MATCH = KO-Cup,1971,14,1,5,3,p
+#MATCH = KO-Cup,1972,1,20,2,0
+#MATCH = KO-Cup,1973,1,7,6,3,p
+#MATCH = KO-Cup,1974,5,11,5,4,p
+#MATCH = KO-Cup,1975,12,1,3,2
+#MATCH = KO-Cup,1976,20,13,4,0
+#MATCH = KO-Cup,1977,1,6,2,0
+#MATCH = KO-Cup,1978,6,20,2,1
+#MATCH = KO-Cup,1979,7,11,2,1,e
+#MATCH = KO-Cup,1980,3,14,3,2,p
+#MATCH = KO-Cup,1981,3,14,6,4,p
+#MATCH = KO-Cup,1982,6,14,2,1
+#MATCH = KO-Cup,1983,7,13,3,2
+#MATCH = KO-Cup,1984,3,13,2,1
+#MATCH = KO-Cup,1985,8,1,3,1
+#MATCH = KO-Cup,1986,3,8,3,2
+#MATCH = KO-Cup,1987,20,4,4,0
+#MATCH = KO-Cup,1988,8,14,3,2
+#MATCH = KO-Cup,1989,8,20,4,1
+#MATCH = KO-Cup,1990,7,1,1,0
+#MATCH = KO-Cup,1991,3,8,4,2
+#MATCH = KO-Cup,1992,2,7,2,1
+#MATCH = KO-Cup,1993,14,3,5,5
+#MATCH = KO-Cup,1994,8,19,6,1
+#MATCH = KO-Cup,1995,7,2,3,0
+#MATCH = KO-Cup,1996,12,4,3,0
+#MATCH = KO-Cup,1997,16,20,3,1
+#MATCH = KO-Cup,1998,9,1,3,2
+#MATCH = KO-Cup,1999,2,12,3,3
+#MATCH = KO-Cup,2000,9,6,2,1
+#MATCH = KO-Cup,2001,12,2,2,1
+#MATCH = KO-Cup,2002,2,7,2,2
+#MATCH = KO-Cup,2003,1,3,6,3
+#MATCH = KO-Cup,2004,9,7,4,2
+#MATCH = KO-Cup,2005,6,3,3,0
+#MATCH = KO-Cup,2006,6,3,4,2
+#MATCH = KO-Cup,2007,3,6,7,4
+#MATCH = KO-Cup,2008,3,6,2,1
+#MATCH = KO-Cup,2009,9,8,7,6,p
+#MATCH = KO-Cup,2010,6,3,1,0
+#MATCH = KO-Cup,2011,6,11,3,1
+#MATCH = KO-Cup,2012,20,7,2,0
+#MATCH = KO-Cup,2013,9,3,1,0
+#MATCH = KO-Cup,2014,20,12,3,1
+#MATCH = KO-Cup,2015,7,9,2,1,e
+#MATCH = KO-Cup,2016,7,1,1,0,e
+#MATCH = KO-Cup,2017,7,9,2,0
+#MATCH = KO-Cup,2018,7,1,4,0
+#MATCH = KO-Cup,2019,9,4,2,0
+#MATCH = KO-Cup,2020,20,7,4,2,p
+#MATCH = KO-Cup,2021,7,4,2,1
+#MATCH = KO-Cup,2022,6,7,4,2,e
+#MATCH = KO-Cup,2023,6,12,2,1
+#MATCH = KO-Cup,2024,7,4,1,0
+#MATCH = KO-Cup,2025,5,1,1,0
+#MATCH = KO-Cup,2026,6,9,2,0
+
+#MATCH = Supercup,1988,1,8,3,1
+#MATCH = Supercup,1989,6,8,2,0
+#MATCH = Supercup,1990,20,7,5,1
+#MATCH = Supercup,1991,8,2,1,0
+#MATCH = Supercup,1992,1,2,2,1
+#MATCH = Supercup,1993,1,14,1,0
+#MATCH = Supercup,1994,1,8,5,4,p
+#MATCH = Supercup,1995,7,2,1,0
+#MATCH = Supercup,1996,12,1,2,1
+#MATCH = Supercup,1997,7,16,3,0
+#MATCH = Supercup,1998,9,7,2,1
+#MATCH = Supercup,1999,2,1,2,1
+#MATCH = Supercup,2000,9,6,4,3
+#MATCH = Supercup,2001,3,12,3,0
+#MATCH = Supercup,2002,7,2,2,1
+#MATCH = Supercup,2003,7,1,6,4,p
+#MATCH = Supercup,2004,1,9,3,0
+#MATCH = Supercup,2005,6,7,1,0,e
+#MATCH = Supercup,2006,6,3,4,3,e
+#MATCH = Supercup,2007,3,6,1,0
+#MATCH = Supercup,2008,6,3,8,7,p
+#MATCH = Supercup,2009,9,6,2,1
+#MATCH = Supercup,2010,6,3,3,1
+#MATCH = Supercup,2011,1,6,2,1
+#MATCH = Supercup,2012,7,20,4,2,e
+#MATCH = Supercup,2013,7,9,4,0
+#MATCH = Supercup,2014,20,7,8,7,p
+#MATCH = Supercup,2015,7,9,2,0
+#MATCH = Supercup,2016,1,7,5,4,p
+#MATCH = Supercup,2017,9,7,3,2
+#MATCH = Supercup,2018,7,1,1,0
+#MATCH = Supercup,2019,9,7,3,1
+#MATCH = Supercup,2020,7,20,2,0
+#MATCH = Supercup,2021,6,7,2,1,e
+#MATCH = Supercup,2022,6,1,3,0
+#MATCH = Supercup,2023,6,20,1,0
+#MATCH = Supercup,2024,1,6,3,2
+
+END
