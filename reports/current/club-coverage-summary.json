@@ -1,0 +1,73 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "snapshot_date": "2026-09-12",
+  "clubs": 222,
+  "overall": {
+    "PARTIAL": 199,
+    "GOOD_ENOUGH": 23
+  },
+  "creation_summary": {
+    "proposed": 71,
+    "unresolved": 0,
+    "rating_deferred": 71,
+    "sprint_eligible_except_rating": 71,
+    "ready": 0,
+    "duplicate_player_ids": []
+  },
+  "review_queue": {
+    "rows": 798,
+    "raw_blocking_rows": 711,
+    "sprint_blocking_rows": 640,
+    "rating_deferred_rows": 71,
+    "sprint_blocking_counts": {
+      "CONTRACT_CHRONOLOGY": 208,
+      "DUPLICATE_AFFILIATION": 10,
+      "PLAYER_CREATION": 100,
+      "PRIMARY_EXCEPTION": 1,
+      "PROFILE_CONFLICT": 59,
+      "TRANSFER_TIMELINE": 146,
+      "TYPED_CONDITION": 116
+    }
+  },
+  "loan_counting": "confirmed_loans is the unique union of confirmed incoming and outgoing loan player IDs per club; a player is never counted twice.",
+  "interpretation": "Evidence and proposed-action coverage, not proof of native application. Proposed player creations remain unresolved when required native fields or non-rating review holds are outstanding. PROVISIONAL_CREATION_RATING is retained as provenance but deferred from this sprint gate. GOOD_ENOUGH requires a full roster, no sprint-blocking review holds, no unresolved creation candidates, and at least 18 resolved players.",
+  "sources": {
+    "membership": {
+      "path": "data\\current\\league-membership-2026-27.integration.csv",
+      "rows": 222,
+      "sha256": "eab78e33994e2f701bde41c219298823b0da89983df61ba68c963f6c7245d948"
+    },
+    "observations": [
+      {
+        "path": "data\\current\\workers\\eng-ger\\tm-squads.csv",
+        "rows": 2129,
+        "sha256": "2753b2cb119a3dee3c15353893677c2a523b66852e2ff5c03004018e1105edfc"
+      },
+      {
+        "path": "data\\current\\workers\\south-west\\rosters.csv",
+        "rows": 4143,
+        "sha256": "601db03ccf056c4ec7e1400aa6eb459621d442fb9d40f13fffb7c40cc91b4956"
+      }
+    ],
+    "review_queue": {
+      "path": "reports\\current\\integration\\review-queue.csv",
+      "rows": 798,
+      "sha256": "bfde0ad7457805b3faed19d8edb54faa2f40b13c5c85542ec1697c77aeb9e34b"
+    },
+    "resolved_observations": {
+      "path": "data\\current\\integration\\resolved-observations.csv",
+      "rows": 6100,
+      "sha256": "4e973c96e73d50f341373b82320821c99cc9492205e4282f1de4be766b13e392"
+    },
+    "candidate_squad_plan": {
+      "path": "data\\current\\integration\\candidate-squad-plan.csv",
+      "rows": 123,
+      "sha256": "70da1af5b549823fda84ff46e563ef5b6e003c1aa08a8f000c9b172573b0bcf7"
+    },
+    "candidate_player_creation_plan": {
+      "path": "data\\current\\integration\\candidate-player-creation-plan.csv",
+      "rows": 71,
+      "sha256": "4e816b53344aaa63131a987435a88783fb73b2fc7150aa33dfda6fe64d7d599c"
+    }
+  }
+}

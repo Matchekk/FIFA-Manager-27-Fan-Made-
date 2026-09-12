@@ -1,0 +1,195 @@
+{
+  "snapshot_date": "2026-09-12",
+  "scope": "SOURCE_ABSENCE queue only",
+  "queue_rows": 22,
+  "status_counts": {
+    "REVIEW_REQUIRED": 2,
+    "CONFIRMED": 20
+  },
+  "evidence_class_counts": {
+    "INVALID_DESTINATION_RECORD": 1,
+    "EXPLICIT_TRANSFER_EVENT+CURRENT_PROFILE": 16,
+    "EXPLICIT_TRANSFER_EVENT": 4,
+    "CURRENT_PROFILE_RESERVE_ONLY": 1
+  },
+  "confirmed_player_tm_ids": [
+    "518471",
+    "1200278",
+    "898137",
+    "671542",
+    "751681",
+    "1238634",
+    "353775",
+    "371436",
+    "763182",
+    "374954",
+    "1235583",
+    "460245",
+    "936684",
+    "1041169",
+    "428954",
+    "383014",
+    "741650",
+    "927714",
+    "1061378",
+    "410158"
+  ],
+  "review_player_tm_ids": [
+    "812010",
+    "1081906"
+  ],
+  "review_queue": [
+    {
+      "player_tm_id": "812010",
+      "player": "David Latal",
+      "reason": "Transfer event points to synthetic suspension record (Sperre), not an identifiable destination club; absence alone cannot establish departure.",
+      "attempts": 2
+    },
+    {
+      "player_tm_id": "1081906",
+      "player": "Jamie Schuldes",
+      "reason": "Current profile shows a reserve/internal club entry but no departure event from the queued first-team club; absence is insufficient.",
+      "attempts": 2
+    }
+  ],
+  "source_failures": [],
+  "source_hash_validation": {
+    "matched": 39,
+    "unavailable": 0,
+    "mismatch": 0,
+    "hashes": {
+      "4eb600e7a8e262f0b3e2e95a268a14ae8f515e096d539a31c9981af247ff5f63": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\4eb600e7a8e262f0b3e2e95a268a14ae8f515e096d539a31c9981af247ff5f63.html"
+      },
+      "fabe5fc6adc993710fdc050086351ee222df1204271be7dae03dd9be19cedcd6": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\fabe5fc6adc993710fdc050086351ee222df1204271be7dae03dd9be19cedcd6.html"
+      },
+      "e4838e42e111c6875ce29bc0c4b3931d3148ed4295cb5e8a908c897dedea399c": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\e4838e42e111c6875ce29bc0c4b3931d3148ed4295cb5e8a908c897dedea399c.html"
+      },
+      "fe270cfeb1c89dff9e643a9efe470ee566682fe8025d4e83f2adc9094a61ce94": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\fe270cfeb1c89dff9e643a9efe470ee566682fe8025d4e83f2adc9094a61ce94.html"
+      },
+      "80ead02db7b08e731fcfa9337150892749c1c71bc46c06fa04f3bf70301c878b": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\80ead02db7b08e731fcfa9337150892749c1c71bc46c06fa04f3bf70301c878b.html"
+      },
+      "28d535430884b7954d2792ee36dbd33ff792927865973e020d273a98b8a602a8": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\28d535430884b7954d2792ee36dbd33ff792927865973e020d273a98b8a602a8.html"
+      },
+      "e1e1f431a328521040ee307d97b826e844f9708e9392b9dda9b277019bfcecb0": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\e1e1f431a328521040ee307d97b826e844f9708e9392b9dda9b277019bfcecb0.html"
+      },
+      "56607b29e8b1a55316020c2917a88f14c25af1aa8ac15bcbb10ce75b02b75682": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\56607b29e8b1a55316020c2917a88f14c25af1aa8ac15bcbb10ce75b02b75682.html"
+      },
+      "dea85796083e3a3c441b9d8a4a6bb63799d6b5db6581c82fc0743e65e1042ee3": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\dea85796083e3a3c441b9d8a4a6bb63799d6b5db6581c82fc0743e65e1042ee3.html"
+      },
+      "d0bdedb0ffa3ae6d9bd09c12fb5a85d4118138f6388ab0440cf2ba38e857b62b": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\d0bdedb0ffa3ae6d9bd09c12fb5a85d4118138f6388ab0440cf2ba38e857b62b.html"
+      },
+      "1561ac014322aea31d8b93f984cb86c8d1f2f53a8efaef8cbc0020e3d0ba4eff": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\1561ac014322aea31d8b93f984cb86c8d1f2f53a8efaef8cbc0020e3d0ba4eff.html"
+      },
+      "1e233e11251c55a1e5360f02486aa46a827b821759cdf9cea9196301af3b1047": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\1e233e11251c55a1e5360f02486aa46a827b821759cdf9cea9196301af3b1047.html"
+      },
+      "c08e4b3a81f4ba445c4d8343c0dd6f9cfb1b5e5f12689978c0e5485f5030360a": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\c08e4b3a81f4ba445c4d8343c0dd6f9cfb1b5e5f12689978c0e5485f5030360a.html"
+      },
+      "8357bb69c9755552ffad93325dd5d33bb6454a33e2c694a86ffd0059b934029a": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\8357bb69c9755552ffad93325dd5d33bb6454a33e2c694a86ffd0059b934029a.html"
+      },
+      "64d949311be0dad09b95e57c83f70b538dd5848993bcd3dae3a084b20792d8c0": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\64d949311be0dad09b95e57c83f70b538dd5848993bcd3dae3a084b20792d8c0.html"
+      },
+      "f12b0e943f8c2e9cebf9524d50754cd10e4a5235ce7b0935d65a98e51d31c703": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\f12b0e943f8c2e9cebf9524d50754cd10e4a5235ce7b0935d65a98e51d31c703.html"
+      },
+      "4b5d06e17a367782b9ccf16fea9574500ca0dfd3e51ca43072d4796b7e72bec7": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\4b5d06e17a367782b9ccf16fea9574500ca0dfd3e51ca43072d4796b7e72bec7.html"
+      },
+      "387b98c14254a71a96aa32f796d043aff999893be0ea4725ee83d7b986855445": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\387b98c14254a71a96aa32f796d043aff999893be0ea4725ee83d7b986855445.html"
+      },
+      "f8c22229c4ce339ad3fb946aa848480640fd58e541b618e92ce964941f0c642f": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\f8c22229c4ce339ad3fb946aa848480640fd58e541b618e92ce964941f0c642f.html"
+      },
+      "847959f752daa43fc0b9a02f466e2ec9f57b19794780a41ec1229554efcbb025": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\847959f752daa43fc0b9a02f466e2ec9f57b19794780a41ec1229554efcbb025.html"
+      },
+      "5a4033d4faa24443fb96e747460211a03826124a89ccd487a7e36a6c51d22bc3": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\5a4033d4faa24443fb96e747460211a03826124a89ccd487a7e36a6c51d22bc3.html"
+      },
+      "49ed93308745e21a9a6604d3879338a0d21c9162d6123d4a9ea00f948dd29b85": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\49ed93308745e21a9a6604d3879338a0d21c9162d6123d4a9ea00f948dd29b85.html"
+      },
+      "5fea76b272e4c34e96e11dd5a501de7739ae74d16e93d146f31540a635881309": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\5fea76b272e4c34e96e11dd5a501de7739ae74d16e93d146f31540a635881309.html"
+      },
+      "dc9f79a795afe3c22b5c4e9141018c74f78f6ee4e88123b9e287e45a2264b16f": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\dc9f79a795afe3c22b5c4e9141018c74f78f6ee4e88123b9e287e45a2264b16f.html"
+      },
+      "673f7a4eee1e2dc5a16d0727bf4f4c45015c921cc092e8d3b7b759b5db06f4be": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\673f7a4eee1e2dc5a16d0727bf4f4c45015c921cc092e8d3b7b759b5db06f4be.html"
+      },
+      "15e370d7c7d59196f0b86a51bebd4ebcad4f99e0549a401b37008903b733945f": {
+        "status": "CACHED_BYTES_MATCH",
+        "path": "data\\raw\\transfermarkt\\15e370d7c7d59196f0b86a51bebd4ebcad4f99e0549a401b37008903b733945f.html"
+      }
+    }
+  },
+  "targeted_profile_attempts": [
+    {
+      "player_tm_id": "353775",
+      "player": "David Akintola",
+      "result": "DIRECT_PROFILE_URL:403_FORBIDDEN"
+    },
+    {
+      "player_tm_id": "374954",
+      "player": "Kristijan Jakic",
+      "result": "DIRECT_PROFILE_URL:403_FORBIDDEN"
+    },
+    {
+      "player_tm_id": "1235583",
+      "player": "Suleman Sani",
+      "result": "DIRECT_PROFILE_URL:403_FORBIDDEN"
+    },
+    {
+      "player_tm_id": "460245",
+      "player": "Moritz Jenz",
+      "result": "DIRECT_PROFILE_URL:403_FORBIDDEN"
+    }
+  ],
+  "source_files": [
+    "data\\current\\evidence\\transfer-events.csv",
+    "data\\current\\evidence\\review-profiles.csv",
+    "data\\current\\workers\\south-west\\profiles.csv"
+  ],
+  "production_mutation": false
+}
