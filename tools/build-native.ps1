@@ -1,4 +1,4 @@
-param([switch]$Resume,[switch]$OptimizeOffline)
+param([switch]$Resume,[switch]$OptimizeOffline,[string]$OutputName)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer\vswhere.exe'
@@ -52,7 +52,10 @@ $env:LIB = @("$($compiler.FullName)\lib\x86", "$sdkRoot\Lib\$($sdk.Name)\ucrt\x8
 $cl = Join-Path $compiler.FullName 'bin\Hostx64\x86\cl.exe'
 Push-Location (Join-Path $root 'build')
 try {
-    $binaryName = if ($OptimizeOffline) { 'fm27-db-probe-optimized.exe' } else { 'fm27-db-probe.exe' }
+    $binaryName = if ($OutputName) { $OutputName } elseif ($OptimizeOffline) { 'fm27-db-probe-optimized.exe' } else { 'fm27-db-probe.exe' }
+    if ([IO.Path]::GetFileName($binaryName) -ne $binaryName -or [IO.Path]::GetExtension($binaryName) -ne '.exe') {
+        throw 'OutputName must be a leaf .exe filename.'
+    }
     & $cl /nologo /std:c++latest /EHsc /W4 /WX /MT /D_CRT_SECURE_NO_WARNINGS /DWIN32_LEAN_AND_MEAN /external:W0 "/external:I$shadow\generic" "/external:I$shadow\fmapi" "/external:I$shadow\shared" (Join-Path $root 'src\native\db_probe.cpp') "/Fe:$binaryName" /link "/LIBPATH:$shadow\output\libs" fmapi.lib generic.lib user32.lib bcrypt.lib /LARGEADDRESSAWARE > (Join-Path $root '.agent_tmp\build-probe.log') 2>&1
     if ($LASTEXITCODE -ne 0) { Get-Content (Join-Path $root '.agent_tmp\build-probe.log') -Tail 15; throw 'Bridge compilation failed.' }
 } finally { Pop-Location }
