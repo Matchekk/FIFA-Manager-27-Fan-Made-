@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "https://github.com/FIFAM-Mods/fifam",
+    "commit": "1b5bd2863e12773e26781e8da21f23d3b0286b5d"
+  },
+  {
+    "repository": "https://github.com/FIFAM-Mods/TheSeason",
+    "commit": "cd6c2d121436292b4e647d4b92d315ab1a685a66"
+  },
+  {
+    "repository": "https://github.com/FIFAM-Mods/scripts",
+    "commit": "9e5fdf7530e887025ba40b119387130b6732dae7"
+  },
+  {
+    "repository": "https://github.com/FIFAM-Mods/FIFA-Manager-Patch",
+    "commit": "6fb069eeabe86f4b32740b7ab37538bc22f07b14"
+  },
+  {
+    "repository": "https://github.com/FIFAM-Mods/UniversalConverterProjectInstaller",
+    "commit": "0518a9bc035ebe88d380c7788fd75b14b1a37d2b"
+  }
+]

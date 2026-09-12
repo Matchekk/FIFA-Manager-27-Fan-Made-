@@ -1,0 +1,79 @@
+{
+  "status": "GAME_RUNNING_CONTROLLED_BASELINE_PENDING",
+  "executable_sha256": "8ebe1291fbcc1291bfee182995a165194156a0b4b8e0d6c80994cadb087a857c",
+  "large_address_aware": true,
+  "system": {
+    "executables": [
+      {
+        "name": "EdManager.exe",
+        "product": "FIFA Manager 26 - Database Editor",
+        "file_version": "1, 0, 0, 0"
+      },
+      {
+        "name": "LanguageSelector.exe",
+        "product": "LanguageSelector",
+        "file_version": "1.1.0.2"
+      },
+      {
+        "name": "Manager.exe",
+        "product": "FIFA Manager 26",
+        "file_version": "26, 0, 0, 0"
+      },
+      {
+        "name": "Resolutool.exe",
+        "product": "Resolutool",
+        "file_version": "1.0.0.0"
+      }
+    ],
+    "storage": [
+      {
+        "FriendlyName": "SAMSUNG MZVL8512HFLU-00BH1",
+        "MediaType": "SSD",
+        "BusType": "NVMe",
+        "Size": 512110190592
+      }
+    ],
+    "cpu": [
+      {
+        "Name": "AMD Ryzen 5 7530U with Radeon Graphics         ",
+        "NumberOfCores": 6,
+        "NumberOfLogicalProcessors": 12,
+        "MaxClockSpeed": 2000
+      }
+    ],
+    "os": [
+      {
+        "Caption": "Microsoft Windows 10 Home",
+        "Version": "10.0.19045",
+        "BuildNumber": "19045",
+        "OSArchitecture": "64-Bit",
+        "TotalVisibleMemorySize": 16088724
+      }
+    ],
+    "errors": [],
+    "gpu": [
+      {
+        "Name": "AMD Radeon (TM) Graphics",
+        "AdapterRAM": 536870912,
+        "DriverVersion": "31.0.21910.4002"
+      }
+    ],
+    "gpu_memory_caveat": "AdapterRAM is driver-reported uint32; not a reliable dedicated/shared VRAM budget, especially on integrated GPUs."
+  },
+  "launch_attempt": {
+    "process_creation_seconds": 0.0463703,
+    "main_menu_seconds": null,
+    "executable_sha256": "8EBE1291FBCC1291BFEE182995A165194156A0B4B8E0D6C80994CADB087A857C",
+    "exit_code": 0,
+    "process_id": 11024,
+    "note": "Process creation is not main-menu readiness. Use Measure-Run for manual scenario timings.",
+    "early_exit": true
+  },
+  "main_menu_seconds": null,
+  "scenario_runs": [],
+  "medians": null,
+  "reason": "User confirms resolution selector then normal game. Exact-path process/window observed. Capture fails with E_NOINTERFACE; no controlled scenario boundaries.",
+  "synthetic_counter_test": "PASS; not a game benchmark",
+  "live_observation": "benchmarks/runs/live-observation-20260908-01.json",
+  "live_attach": "reports/local/live-attach.json"
+}

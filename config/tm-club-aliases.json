@@ -1,0 +1,1556 @@
+{
+  "405": {
+    "club_id": "917506",
+    "team_type": "FIRST",
+    "tm_name": "Aston Villa",
+    "fm_name": "Aston Villa",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "989": {
+    "club_id": "917553",
+    "team_type": "FIRST",
+    "tm_name": "AFC Bournemouth",
+    "fm_name": "AFC Bournemouth",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1237": {
+    "club_id": "917529",
+    "team_type": "FIRST",
+    "tm_name": "Brighton & Hove Albion",
+    "fm_name": "Brighton & Hove Albion",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "990": {
+    "club_id": "917530",
+    "team_type": "FIRST",
+    "tm_name": "Coventry City",
+    "fm_name": "Coventry City",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "873": {
+    "club_id": "917535",
+    "team_type": "FIRST",
+    "tm_name": "Crystal Palace",
+    "fm_name": "Crystal Palace",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "3008": {
+    "club_id": "917532",
+    "team_type": "FIRST",
+    "tm_name": "Hull City",
+    "fm_name": "Hull City",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "677": {
+    "club_id": "917538",
+    "team_type": "FIRST",
+    "tm_name": "Ipswich Town",
+    "fm_name": "Ipswich Town",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "399": {
+    "club_id": "917545",
+    "team_type": "FIRST",
+    "tm_name": "Leeds United",
+    "fm_name": "Leeds United",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "281": {
+    "club_id": "917518",
+    "team_type": "FIRST",
+    "tm_name": "Manchester City",
+    "fm_name": "Manchester City",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "985": {
+    "club_id": "917519",
+    "team_type": "FIRST",
+    "tm_name": "Manchester United",
+    "fm_name": "Manchester United",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "762": {
+    "club_id": "917523",
+    "team_type": "FIRST",
+    "tm_name": "Newcastle United",
+    "fm_name": "Newcastle United",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "703": {
+    "club_id": "917549",
+    "team_type": "FIRST",
+    "tm_name": "Nottingham Forest",
+    "fm_name": "Nottingham Forest",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "148": {
+    "club_id": "917514",
+    "team_type": "FIRST",
+    "tm_name": "Tottenham Hotspur",
+    "fm_name": "Tottenham Hotspur",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1047": {
+    "club_id": "1769516",
+    "team_type": "FIRST",
+    "tm_name": "Como 1907",
+    "fm_name": "Como 1907",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "410": {
+    "club_id": "1769488",
+    "team_type": "FIRST",
+    "tm_name": "Udinese Calcio",
+    "fm_name": "Udinese Calcio",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "130": {
+    "club_id": "1769475",
+    "team_type": "FIRST",
+    "tm_name": "Parma Calcio 1913",
+    "fm_name": "Parma Calcio 1913",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1390": {
+    "club_id": "1769480",
+    "team_type": "FIRST",
+    "tm_name": "Cagliari Calcio",
+    "fm_name": "Cagliari Calcio",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1005": {
+    "club_id": "1769483",
+    "team_type": "FIRST",
+    "tm_name": "US Lecce",
+    "fm_name": "U.S. Lecce",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "607": {
+    "club_id": "1769500",
+    "team_type": "FIRST",
+    "tm_name": "Venezia FC",
+    "fm_name": "Venezia F.C.",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "8970": {
+    "club_id": "1769528",
+    "team_type": "FIRST",
+    "tm_name": "Frosinone Calcio",
+    "fm_name": "Frosinone Calcio",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "2919": {
+    "club_id": "1769533",
+    "team_type": "FIRST",
+    "tm_name": "AC Monza",
+    "fm_name": "A.C. Monza",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "131": {
+    "club_id": "2949124",
+    "team_type": "FIRST",
+    "tm_name": "FC Barcelona",
+    "fm_name": "F.C. Barcelona",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1108": {
+    "club_id": "2949141",
+    "team_type": "FIRST",
+    "tm_name": "Deportivo Alavés",
+    "fm_name": "Deportivo Alavés",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "27": {
+    "club_id": "1376264",
+    "team_type": "FIRST",
+    "tm_name": "FC Bayern München",
+    "fm_name": "FC Bayern München",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "16": {
+    "club_id": "1376262",
+    "team_type": "FIRST",
+    "tm_name": "Borussia Dortmund",
+    "fm_name": "Borussia Dortmund",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "79": {
+    "club_id": "1376272",
+    "team_type": "FIRST",
+    "tm_name": "VfB Stuttgart",
+    "fm_name": "VfB Stuttgart",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "533": {
+    "club_id": "1376433",
+    "team_type": "FIRST",
+    "tm_name": "TSG 1899 Hoffenheim",
+    "fm_name": "TSG 1899 Hoffenheim",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "15": {
+    "club_id": "1376261",
+    "team_type": "FIRST",
+    "tm_name": "Bayer 04 Leverkusen",
+    "fm_name": "Bayer 04 Leverkusen",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "24": {
+    "club_id": "1376279",
+    "team_type": "FIRST",
+    "tm_name": "Eintracht Frankfurt",
+    "fm_name": "Eintracht Frankfurt",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "167": {
+    "club_id": "1376431",
+    "team_type": "FIRST",
+    "tm_name": "FC Augsburg",
+    "fm_name": "FC Augsburg",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "39": {
+    "club_id": "1376259",
+    "team_type": "FIRST",
+    "tm_name": "1.FSV Mainz 05",
+    "fm_name": "1. FSV Mainz 05",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "89": {
+    "club_id": "1376348",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Union Berlin",
+    "fm_name": "1. FC Union Berlin",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "18": {
+    "club_id": "1376263",
+    "team_type": "FIRST",
+    "tm_name": "Borussia Mönchengladbach",
+    "fm_name": "Borussia Mönchengladbach",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "41": {
+    "club_id": "1376267",
+    "team_type": "FIRST",
+    "tm_name": "Hamburger SV",
+    "fm_name": "Hamburger SV",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "3": {
+    "club_id": "1376275",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Köln",
+    "fm_name": "1. FC Köln",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "86": {
+    "club_id": "1376271",
+    "team_type": "FIRST",
+    "tm_name": "SV Werder Bremen",
+    "fm_name": "SV Werder Bremen",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "33": {
+    "club_id": "1376266",
+    "team_type": "FIRST",
+    "tm_name": "FC Schalke 04",
+    "fm_name": "FC Schalke 04",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "127": {
+    "club_id": "1376421",
+    "team_type": "FIRST",
+    "tm_name": "SC Paderborn 07",
+    "fm_name": "SC Paderborn 07",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "583": {
+    "club_id": "1179663",
+    "team_type": "FIRST",
+    "tm_name": "Paris Saint-Germain",
+    "fm_name": "Paris Saint-Germain",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "826": {
+    "club_id": "1179664",
+    "team_type": "FIRST",
+    "tm_name": "RC Lens",
+    "fm_name": "RC Lens",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1082": {
+    "club_id": "1179665",
+    "team_type": "FIRST",
+    "tm_name": "LOSC Lille",
+    "fm_name": "LOSC Lille",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "162": {
+    "club_id": "1179655",
+    "team_type": "FIRST",
+    "tm_name": "AS Monaco",
+    "fm_name": "AS Monaco",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1158": {
+    "club_id": "1179673",
+    "team_type": "FIRST",
+    "tm_name": "FC Lorient",
+    "fm_name": "FC Lorient",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "10004": {
+    "club_id": "1179855",
+    "team_type": "FIRST",
+    "tm_name": "Paris FC",
+    "fm_name": "Paris FC",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1420": {
+    "club_id": "1179782",
+    "team_type": "FIRST",
+    "tm_name": "Angers SCO",
+    "fm_name": "Angers SCO",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "290": {
+    "club_id": "1179654",
+    "team_type": "FIRST",
+    "tm_name": "AJ Auxerre",
+    "fm_name": "AJ Auxerre",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1095": {
+    "club_id": "1179683",
+    "team_type": "FIRST",
+    "tm_name": "ESTAC Troyes",
+    "fm_name": "ESTAC Troyes",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "2431": {
+    "club_id": "2490394",
+    "team_type": "FIRST",
+    "tm_name": "CF Estrela Amadora",
+    "fm_name": "CF Estrela Amadora",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1268": {
+    "club_id": "2228225",
+    "team_type": "FIRST",
+    "tm_name": "ADO Den Haag",
+    "fm_name": "ADO Den Haag",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1090": {
+    "club_id": "2228226",
+    "team_type": "FIRST",
+    "tm_name": "AZ Alkmaar",
+    "fm_name": "AZ Alkmaar",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "798": {
+    "club_id": "2228244",
+    "team_type": "FIRST",
+    "tm_name": "Excelsior Rotterdam",
+    "fm_name": "Excelsior Rotterdam",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "202": {
+    "club_id": "2228233",
+    "team_type": "FIRST",
+    "tm_name": "FC Groningen",
+    "fm_name": "FC Groningen",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "200": {
+    "club_id": "2228241",
+    "team_type": "FIRST",
+    "tm_name": "FC Utrecht",
+    "fm_name": "FC Utrecht",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "234": {
+    "club_id": "2228232",
+    "team_type": "FIRST",
+    "tm_name": "Feyenoord Rotterdam",
+    "fm_name": "Feyenoord Rotterdam",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "385": {
+    "club_id": "2228247",
+    "team_type": "FIRST",
+    "tm_name": "Fortuna Sittard",
+    "fm_name": "Fortuna Sittard",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "467": {
+    "club_id": "2228235",
+    "team_type": "FIRST",
+    "tm_name": "NEC Nijmegen",
+    "fm_name": "N.E.C. Nijmegen",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1269": {
+    "club_id": "2228260",
+    "team_type": "FIRST",
+    "tm_name": "PEC Zwolle",
+    "fm_name": "PEC Zwolle",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "306": {
+    "club_id": "2228234",
+    "team_type": "FIRST",
+    "tm_name": "SC Heerenveen",
+    "fm_name": "sc Heerenveen",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "468": {
+    "club_id": "2228256",
+    "team_type": "FIRST",
+    "tm_name": "Sparta Rotterdam",
+    "fm_name": "Sparta Rotterdam",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1434": {
+    "club_id": "2228252",
+    "team_type": "FIRST",
+    "tm_name": "SC Telstar",
+    "fm_name": "SC Telstar",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "28643": {
+    "club_id": "458788",
+    "team_type": "FIRST",
+    "tm_name": "SK Beveren",
+    "fm_name": "SK Beveren",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "157": {
+    "club_id": "458753",
+    "team_type": "FIRST",
+    "tm_name": "KAA Gent",
+    "fm_name": "KAA Gent",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "601": {
+    "club_id": "458781",
+    "team_type": "FIRST",
+    "tm_name": "KV Kortrijk",
+    "fm_name": "KV Kortrijk",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "3901": {
+    "club_id": "471041",
+    "team_type": "FIRST",
+    "tm_name": "RAAL La Louvière",
+    "fm_name": "RAAL La Louvière",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "5026": {
+    "club_id": "458783",
+    "team_type": "FIRST",
+    "tm_name": "Lommel SK",
+    "fm_name": "Lommel SK",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "2727": {
+    "club_id": "458775",
+    "team_type": "FIRST",
+    "tm_name": "Oud-Heverlee Leuven",
+    "fm_name": "Oud-Heverlee Leuven",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "968": {
+    "club_id": "458763",
+    "team_type": "FIRST",
+    "tm_name": "KVC Westerlo",
+    "fm_name": "KVC Westerlo",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "120": {
+    "club_id": "3145754",
+    "team_type": "FIRST",
+    "tm_name": "Kocaelispor",
+    "fm_name": "Kocaelispor",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "7160": {
+    "club_id": "3145777",
+    "team_type": "FIRST",
+    "tm_name": "Eyüpspor",
+    "fm_name": "Eyüpspor",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1897": {
+    "club_id": "790530",
+    "team_type": "FIRST",
+    "tm_name": "FC Hradec Kralove",
+    "fm_name": "FC Hradec Králové",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1322": {
+    "club_id": "786437",
+    "team_type": "FIRST",
+    "tm_name": "FK Jablonec",
+    "fm_name": "FK Jablonec",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "697": {
+    "club_id": "786438",
+    "team_type": "FIRST",
+    "tm_name": "FC Slovan Liberec",
+    "fm_name": "FC Slovan Liberec",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1496": {
+    "club_id": "790538",
+    "team_type": "FIRST",
+    "tm_name": "FK Pardubice",
+    "fm_name": "FK Pardubice",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "814": {
+    "club_id": "786443",
+    "team_type": "FIRST",
+    "tm_name": "FK Teplice",
+    "fm_name": "FK Teplice",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "5545": {
+    "club_id": "786445",
+    "team_type": "FIRST",
+    "tm_name": "FC Zlin",
+    "fm_name": "FC Zlín",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "5546": {
+    "club_id": "786434",
+    "team_type": "FIRST",
+    "tm_name": "FK Mlada Boleslav",
+    "fm_name": "FK Mladá Boleslav",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "5544": {
+    "club_id": "786461",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Slovacko",
+    "fm_name": "1. FC Slovácko",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "82": {
+    "club_id": "1376274",
+    "team_type": "FIRST",
+    "tm_name": "VfL Wolfsburg",
+    "fm_name": "VfL Wolfsburg",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "2036": {
+    "club_id": "1376302",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Heidenheim 1846",
+    "fm_name": "1. FC Heidenheim 1846",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "35": {
+    "club_id": "1376425",
+    "team_type": "FIRST",
+    "tm_name": "FC St. Pauli",
+    "fm_name": "FC St. Pauli",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "42": {
+    "club_id": "1376268",
+    "team_type": "FIRST",
+    "tm_name": "Hannover 96",
+    "fm_name": "Hannover 96",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "105": {
+    "club_id": "1376442",
+    "team_type": "FIRST",
+    "tm_name": "SV Darmstadt 98",
+    "fm_name": "SV Darmstadt 98",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "2": {
+    "club_id": "1376257",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Kaiserslautern",
+    "fm_name": "1. FC Kaiserslautern",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "44": {
+    "club_id": "1376269",
+    "team_type": "FIRST",
+    "tm_name": "Hertha BSC",
+    "fm_name": "Hertha BSC",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "4": {
+    "club_id": "1376258",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Nürnberg",
+    "fm_name": "1. FC Nürnberg",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "48": {
+    "club_id": "1376283",
+    "team_type": "FIRST",
+    "tm_name": "Karlsruher SC",
+    "fm_name": "Karlsruher SC",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "129": {
+    "club_id": "1376278",
+    "team_type": "FIRST",
+    "tm_name": "SG Dynamo Dresden",
+    "fm_name": "SG Dynamo Dresden",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "269": {
+    "club_id": "1376418",
+    "team_type": "FIRST",
+    "tm_name": "Holstein Kiel",
+    "fm_name": "Holstein Kiel",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "187": {
+    "club_id": "1376373",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Magdeburg",
+    "fm_name": "1. FC Magdeburg",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "65": {
+    "club_id": "1376288",
+    "team_type": "FIRST",
+    "tm_name": "SpVgg Greuther Fürth",
+    "fm_name": "SpVgg Greuther Fürth",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "81": {
+    "club_id": "1376420",
+    "team_type": "FIRST",
+    "tm_name": "VfL Osnabrück",
+    "fm_name": "VfL Osnabrück",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "25": {
+    "club_id": "1376280",
+    "team_type": "FIRST",
+    "tm_name": "FC Energie Cottbus",
+    "fm_name": "FC Energie Cottbus",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "52": {
+    "club_id": "1376285",
+    "team_type": "FIRST",
+    "tm_name": "MSV Duisburg",
+    "fm_name": "MSV Duisburg",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "30": {
+    "club_id": "1376265",
+    "team_type": "FIRST",
+    "tm_name": "FC Hansa Rostock",
+    "fm_name": "FC Hansa Rostock",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "93": {
+    "club_id": "1376406",
+    "team_type": "FIRST",
+    "tm_name": "SC Verl",
+    "fm_name": "SC Verl",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "108": {
+    "club_id": "1376439",
+    "team_type": "FIRST",
+    "tm_name": "SV Wehen Wiesbaden",
+    "fm_name": "SV Wehen Wiesbaden",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "4795": {
+    "club_id": "1376315",
+    "team_type": "FIRST",
+    "tm_name": "FC Ingolstadt 04",
+    "fm_name": "FC Ingolstadt 04",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "109": {
+    "club_id": "1376436",
+    "team_type": "FIRST",
+    "tm_name": "SSV Jahn Regensburg",
+    "fm_name": "SSV Jahn Regensburg",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "102": {
+    "club_id": "1376272",
+    "team_type": "RESERVE",
+    "tm_name": "VfB Stuttgart II",
+    "fm_name": "VfB Stuttgart",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "1": {
+    "club_id": "1376287",
+    "team_type": "FIRST",
+    "tm_name": "1.FC Saarbrücken",
+    "fm_name": "1. FC Saarbrücken",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "983": {
+    "club_id": "1376433",
+    "team_type": "RESERVE",
+    "tm_name": "TSG 1899 Hoffenheim II",
+    "fm_name": "TSG 1899 Hoffenheim",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "247": {
+    "club_id": "1376347",
+    "team_type": "FIRST",
+    "tm_name": "SV Meppen",
+    "fm_name": "SV Meppen",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "92": {
+    "club_id": "1376444",
+    "team_type": "FIRST",
+    "tm_name": "SC Fortuna Köln",
+    "fm_name": "SC Fortuna Köln",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "2589": {
+    "club_id": "1376306",
+    "team_type": "FIRST",
+    "tm_name": "SG Sonnenhof Großaspach",
+    "fm_name": "SG Sonnenhof Großaspach",
+    "method": "EXACT_NORMALIZED_CLUB_NAME_COUNTRY"
+  },
+  "11": {
+    "club_id": "917505",
+    "team_type": "FIRST",
+    "tm_name": "FC Arsenal",
+    "fm_name": "Arsenal",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1148": {
+    "club_id": "917569",
+    "team_type": "FIRST",
+    "tm_name": "FC Brentford",
+    "fm_name": "Brentford",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "631": {
+    "club_id": "917513",
+    "team_type": "FIRST",
+    "tm_name": "FC Chelsea",
+    "fm_name": "Chelsea",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "29": {
+    "club_id": "917517",
+    "team_type": "FIRST",
+    "tm_name": "FC Everton",
+    "fm_name": "Everton",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "931": {
+    "club_id": "917521",
+    "team_type": "FIRST",
+    "tm_name": "FC Fulham",
+    "fm_name": "Fulham",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "31": {
+    "club_id": "917509",
+    "team_type": "FIRST",
+    "tm_name": "FC Liverpool",
+    "fm_name": "Liverpool",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "289": {
+    "club_id": "917524",
+    "team_type": "FIRST",
+    "tm_name": "AFC Sunderland",
+    "fm_name": "Sunderland",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "46": {
+    "club_id": "1769481",
+    "team_type": "FIRST",
+    "tm_name": "Inter Mailand",
+    "fm_name": "F.C. Internazionale Milano",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "6195": {
+    "club_id": "1769517",
+    "team_type": "FIRST",
+    "tm_name": "SSC Neapel",
+    "fm_name": "S.S.C. Napoli",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "12": {
+    "club_id": "1769476",
+    "team_type": "FIRST",
+    "tm_name": "AS Rom",
+    "fm_name": "A.S. Roma",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "5": {
+    "club_id": "1769474",
+    "team_type": "FIRST",
+    "tm_name": "AC Mailand",
+    "fm_name": "A.C. Milan",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "506": {
+    "club_id": "1769482",
+    "team_type": "FIRST",
+    "tm_name": "Juventus Turin",
+    "fm_name": "Juventus F.C.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "800": {
+    "club_id": "1769477",
+    "team_type": "FIRST",
+    "tm_name": "Atalanta Bergamo",
+    "fm_name": "Atalanta Bergamasca Calcio",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1025": {
+    "club_id": "1769478",
+    "team_type": "FIRST",
+    "tm_name": "FC Bologna",
+    "fm_name": "Bologna F.C. 1909",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "398": {
+    "club_id": "1769487",
+    "team_type": "FIRST",
+    "tm_name": "Lazio Rom",
+    "fm_name": "S.S. Lazio",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "6574": {
+    "club_id": "1769542",
+    "team_type": "FIRST",
+    "tm_name": "US Sassuolo",
+    "fm_name": "U.S. Sassuolo Calcio",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "416": {
+    "club_id": "1769499",
+    "team_type": "FIRST",
+    "tm_name": "FC Turin",
+    "fm_name": "Torino F.C.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "430": {
+    "club_id": "1769492",
+    "team_type": "FIRST",
+    "tm_name": "AC Florenz",
+    "fm_name": "A.C.F. Fiorentina",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "252": {
+    "club_id": "1769510",
+    "team_type": "FIRST",
+    "tm_name": "Genua CFC",
+    "fm_name": "Genoa C.F.C.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "418": {
+    "club_id": "2949134",
+    "team_type": "FIRST",
+    "tm_name": "Real Madrid",
+    "fm_name": "Real Madrid C.F.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1050": {
+    "club_id": "2949140",
+    "team_type": "FIRST",
+    "tm_name": "FC Villarreal",
+    "fm_name": "Villarreal C.F.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "13": {
+    "club_id": "2949122",
+    "team_type": "FIRST",
+    "tm_name": "Atlético Madrid",
+    "fm_name": "Club Atlético de Madrid",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "150": {
+    "club_id": "2949133",
+    "team_type": "FIRST",
+    "tm_name": "Real Betis Sevilla",
+    "fm_name": "Real Betis Balompié",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "940": {
+    "club_id": "2949159",
+    "team_type": "FIRST",
+    "tm_name": "Celta Vigo",
+    "fm_name": "R.C. Celta de Vigo",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3709": {
+    "club_id": "2949126",
+    "team_type": "FIRST",
+    "tm_name": "FC Getafe",
+    "fm_name": "Getafe C.F.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "367": {
+    "club_id": "2949171",
+    "team_type": "FIRST",
+    "tm_name": "Rayo Vallecano",
+    "fm_name": "Rayo Vallecano de Madrid",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1049": {
+    "club_id": "2949139",
+    "team_type": "FIRST",
+    "tm_name": "FC Valencia",
+    "fm_name": "Valencia C.F.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "681": {
+    "club_id": "2949135",
+    "team_type": "FIRST",
+    "tm_name": "Real Sociedad San Sebastián",
+    "fm_name": "Real Sociedad de Fútbol",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "714": {
+    "club_id": "2949125",
+    "team_type": "FIRST",
+    "tm_name": "Espanyol Barcelona",
+    "fm_name": "R.C.D. Espanyol de Barcelona",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "621": {
+    "club_id": "2949121",
+    "team_type": "FIRST",
+    "tm_name": "Athletic Bilbao",
+    "fm_name": "Athletic Club",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "368": {
+    "club_id": "2949138",
+    "team_type": "FIRST",
+    "tm_name": "FC Sevilla",
+    "fm_name": "Sevilla F.C.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1531": {
+    "club_id": "2949148",
+    "team_type": "FIRST",
+    "tm_name": "FC Elche",
+    "fm_name": "Elche C.F.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3368": {
+    "club_id": "2949128",
+    "team_type": "FIRST",
+    "tm_name": "UD Levante",
+    "fm_name": "Levante U.D.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "331": {
+    "club_id": "2949132",
+    "team_type": "FIRST",
+    "tm_name": "CA Osasuna",
+    "fm_name": "Club Atlético Osasuna",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "630": {
+    "club_id": "2949137",
+    "team_type": "FIRST",
+    "tm_name": "Racing Santander",
+    "fm_name": "Real Racing Club de Santander",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "897": {
+    "club_id": "2949127",
+    "team_type": "FIRST",
+    "tm_name": "Deportivo A Coruña",
+    "fm_name": "R.C. Deportivo de La Coruña",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1084": {
+    "club_id": "2949129",
+    "team_type": "FIRST",
+    "tm_name": "FC Málaga",
+    "fm_name": "Málaga C.F.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "23826": {
+    "club_id": "1376555",
+    "team_type": "FIRST",
+    "tm_name": "RB Leipzig",
+    "fm_name": "RasenBallsport Leipzig",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "60": {
+    "club_id": "1376270",
+    "team_type": "FIRST",
+    "tm_name": "SC Freiburg",
+    "fm_name": "Sport-Club Freiburg",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "64": {
+    "club_id": "1376432",
+    "team_type": "FIRST",
+    "tm_name": "SV 07 Elversberg",
+    "fm_name": "SV Elversberg",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1041": {
+    "club_id": "1179661",
+    "team_type": "FIRST",
+    "tm_name": "Olympique Lyon",
+    "fm_name": "Olympique Lyonnais",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "244": {
+    "club_id": "1179662",
+    "team_type": "FIRST",
+    "tm_name": "Olympique Marseille",
+    "fm_name": "Olympique de Marseille",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "273": {
+    "club_id": "1179656",
+    "team_type": "FIRST",
+    "tm_name": "FC Stade Rennes",
+    "fm_name": "Stade Rennais FC",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "667": {
+    "club_id": "1179667",
+    "team_type": "FIRST",
+    "tm_name": "Racing Straßburg",
+    "fm_name": "RC Strasbourg Alsace",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "415": {
+    "club_id": "1179657",
+    "team_type": "FIRST",
+    "tm_name": "FC Toulouse",
+    "fm_name": "Toulouse FC",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3911": {
+    "club_id": "1179685",
+    "team_type": "FIRST",
+    "tm_name": "Stade Brest 29",
+    "fm_name": "Stade Brestois 29",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "738": {
+    "club_id": "1179681",
+    "team_type": "FIRST",
+    "tm_name": "Le Havre AC",
+    "fm_name": "Havre AC",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "417": {
+    "club_id": "1179666",
+    "team_type": "FIRST",
+    "tm_name": "OGC Nizza",
+    "fm_name": "OGC Nice",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1164": {
+    "club_id": "1179682",
+    "team_type": "FIRST",
+    "tm_name": "FC Le Mans",
+    "fm_name": "Le Mans FC",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "720": {
+    "club_id": "2490380",
+    "team_type": "FIRST",
+    "tm_name": "FC Porto",
+    "fm_name": "Futebol Clube do Porto",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "336": {
+    "club_id": "2490382",
+    "team_type": "FIRST",
+    "tm_name": "Sporting Lissabon",
+    "fm_name": "Sporting Clube de Portugal",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "294": {
+    "club_id": "2490372",
+    "team_type": "FIRST",
+    "tm_name": "Benfica Lissabon",
+    "fm_name": "Sport Lisboa e Benfica",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1075": {
+    "club_id": "2490374",
+    "team_type": "FIRST",
+    "tm_name": "SC Braga",
+    "fm_name": "Sporting Clube de Braga",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3329": {
+    "club_id": "2490398",
+    "team_type": "FIRST",
+    "tm_name": "FC Famalicão",
+    "fm_name": "Futebol Clube Famalicão",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2424": {
+    "club_id": "2490375",
+    "team_type": "FIRST",
+    "tm_name": "Gil Vicente FC",
+    "fm_name": "Gil Vicente Futebol Clube",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "979": {
+    "club_id": "2490377",
+    "team_type": "FIRST",
+    "tm_name": "Moreirense FC",
+    "fm_name": "Moreirense Futebol Clube",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "8024": {
+    "club_id": "2494470",
+    "team_type": "FIRST",
+    "tm_name": "FC Arouca",
+    "fm_name": "Futebol Clube de Arouca",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2420": {
+    "club_id": "2490397",
+    "team_type": "FIRST",
+    "tm_name": "Vitória Guimarães SC",
+    "fm_name": "Vitória Sport Club",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1465": {
+    "club_id": "2490386",
+    "team_type": "FIRST",
+    "tm_name": "GD Estoril Praia",
+    "fm_name": "Estoril Praia Futebol",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2521": {
+    "club_id": "2490393",
+    "team_type": "FIRST",
+    "tm_name": "FC Alverca",
+    "fm_name": "Futebol Clube de Alverca",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2425": {
+    "club_id": "2490381",
+    "team_type": "FIRST",
+    "tm_name": "Rio Ave FC",
+    "fm_name": "Rio Ave Futebol Clube",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2423": {
+    "club_id": "2490388",
+    "team_type": "FIRST",
+    "tm_name": "CD Santa Clara",
+    "fm_name": "Clube Desportivo Santa Clara",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "982": {
+    "club_id": "2490378",
+    "team_type": "FIRST",
+    "tm_name": "CD Nacional",
+    "fm_name": "Clube Desportivo Nacional",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3268": {
+    "club_id": "2494469",
+    "team_type": "FIRST",
+    "tm_name": "Casa Pia AC",
+    "fm_name": "Casa Pia Atlético Clube",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1301": {
+    "club_id": "2490376",
+    "team_type": "FIRST",
+    "tm_name": "CS Marítimo",
+    "fm_name": "Clube Sport Marítimo",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "7788": {
+    "club_id": "2494468",
+    "team_type": "FIRST",
+    "tm_name": "Académico Viseu FC",
+    "fm_name": "Ac. Viseu",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "610": {
+    "club_id": "2228227",
+    "team_type": "FIRST",
+    "tm_name": "Ajax Amsterdam",
+    "fm_name": "AFC Ajax",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "317": {
+    "club_id": "2228240",
+    "team_type": "FIRST",
+    "tm_name": "FC Twente Enschede",
+    "fm_name": "FC Twente",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1435": {
+    "club_id": "2228248",
+    "team_type": "FIRST",
+    "tm_name": "Go Ahead Eagles Deventer",
+    "fm_name": "Go Ahead Eagles",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "383": {
+    "club_id": "2228236",
+    "team_type": "FIRST",
+    "tm_name": "PSV Eindhoven",
+    "fm_name": "PSV",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "133": {
+    "club_id": "2228253",
+    "team_type": "FIRST",
+    "tm_name": "SC Cambuur Leeuwarden",
+    "fm_name": "SC Cambuur",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "403": {
+    "club_id": "2228239",
+    "team_type": "FIRST",
+    "tm_name": "Willem II Tilburg",
+    "fm_name": "Willem II",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "58": {
+    "club_id": "458766",
+    "team_type": "FIRST",
+    "tm_name": "RSC Anderlecht",
+    "fm_name": "Anderlecht",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1096": {
+    "club_id": "458785",
+    "team_type": "FIRST",
+    "tm_name": "Royal Antwerpen FC",
+    "fm_name": "Royal Antwerp FC",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "520": {
+    "club_id": "458755",
+    "team_type": "FIRST",
+    "tm_name": "Cercle Brügge",
+    "fm_name": "KSV Cercle Brugge",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "172": {
+    "club_id": "458761",
+    "team_type": "FIRST",
+    "tm_name": "Royal Charleroi SC",
+    "fm_name": "Royal Charleroi Sporting Club",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2282": {
+    "club_id": "458756",
+    "team_type": "FIRST",
+    "tm_name": "Club Brügge",
+    "fm_name": "Club Brugge KV",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1184": {
+    "club_id": "458768",
+    "team_type": "FIRST",
+    "tm_name": "KRC Genk",
+    "fm_name": "K Racing Club Genk",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "354": {
+    "club_id": "458787",
+    "team_type": "FIRST",
+    "tm_name": "KV Mechelen",
+    "fm_name": "Yellow Red KV Mechelen",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "475": {
+    "club_id": "458759",
+    "team_type": "FIRST",
+    "tm_name": "VV St. Truiden",
+    "fm_name": "Koninklijke Sint-Truidense VV",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3057": {
+    "club_id": "458760",
+    "team_type": "FIRST",
+    "tm_name": "Standard Lüttich",
+    "fm_name": "Royal Standard de Liège",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3948": {
+    "club_id": "458780",
+    "team_type": "FIRST",
+    "tm_name": "Union Saint-Gilloise",
+    "fm_name": "Royale Union Saint-Gilloise",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "3508": {
+    "club_id": "458782",
+    "team_type": "FIRST",
+    "tm_name": "Zulte Waregem",
+    "fm_name": "SV Zulte-Waregem",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "141": {
+    "club_id": "3145825",
+    "team_type": "FIRST",
+    "tm_name": "Galatasaray",
+    "fm_name": "Galatasaray A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "36": {
+    "club_id": "3145823",
+    "team_type": "FIRST",
+    "tm_name": "Fenerbahce",
+    "fm_name": "Fenerbahçe A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "449": {
+    "club_id": "3145826",
+    "team_type": "FIRST",
+    "tm_name": "Trabzonspor",
+    "fm_name": "Trabzonspor A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "114": {
+    "club_id": "3145824",
+    "team_type": "FIRST",
+    "tm_name": "Besiktas JK",
+    "fm_name": "Beşiktaş A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "6890": {
+    "club_id": "3145841",
+    "team_type": "FIRST",
+    "tm_name": "Basaksehir FK",
+    "fm_name": "Rams Başakşehir Futbol Kulübü",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1467": {
+    "club_id": "3145820",
+    "team_type": "FIRST",
+    "tm_name": "Göztepe",
+    "fm_name": "Göztepe A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "152": {
+    "club_id": "3145745",
+    "team_type": "FIRST",
+    "tm_name": "Samsunspor",
+    "fm_name": "Yılport Samsunspor",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "126": {
+    "club_id": "3145837",
+    "team_type": "FIRST",
+    "tm_name": "Caykur Rizespor",
+    "fm_name": "Çaykur Rizespor A.Ş",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2293": {
+    "club_id": "3145839",
+    "team_type": "FIRST",
+    "tm_name": "Konyaspor",
+    "fm_name": "Tümosan Konyaspor",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "11282": {
+    "club_id": "3145783",
+    "team_type": "FIRST",
+    "tm_name": "Alanyaspor",
+    "fm_name": "Corendon Alanyaspor",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2832": {
+    "club_id": "3145773",
+    "team_type": "FIRST",
+    "tm_name": "Gaziantep FK",
+    "fm_name": "Gaziantep Futbol Kulübü A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "10484": {
+    "club_id": "3145843",
+    "team_type": "FIRST",
+    "tm_name": "Kasimpasa",
+    "fm_name": "Kasımpaşa A.Ş.",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "820": {
+    "club_id": "3145836",
+    "team_type": "FIRST",
+    "tm_name": "Genclerbirligi Ankara",
+    "fm_name": "Gençlerbirliği",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "39722": {
+    "club_id": "3145765",
+    "team_type": "FIRST",
+    "tm_name": "Erzurumspor FK",
+    "fm_name": "Erzurumspor Futbol Kulübü",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "12382": {
+    "club_id": "3145856",
+    "team_type": "FIRST",
+    "tm_name": "Amed SK",
+    "fm_name": "Amed Sportif Faaliyetler",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "37951": {
+    "club_id": "3149867",
+    "team_type": "FIRST",
+    "tm_name": "Corum FK",
+    "fm_name": "Ahlatcı Çorum Futbol Kulübü",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "62": {
+    "club_id": "786441",
+    "team_type": "FIRST",
+    "tm_name": "SK Slavia Prag",
+    "fm_name": "SK Slavia Praha",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "197": {
+    "club_id": "786442",
+    "team_type": "FIRST",
+    "tm_name": "AC Sparta Prag",
+    "fm_name": "AC Sparta Praha",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "941": {
+    "club_id": "786450",
+    "team_type": "FIRST",
+    "tm_name": "FC Viktoria Pilsen",
+    "fm_name": "FC Viktoria Plzeň",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "2311": {
+    "club_id": "786439",
+    "team_type": "FIRST",
+    "tm_name": "SK Sigma Olmütz",
+    "fm_name": "SK Sigma Olomouc",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "715": {
+    "club_id": "786453",
+    "team_type": "FIRST",
+    "tm_name": "Bohemians Prag 1905",
+    "fm_name": "Bohemians Praha 1905",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "377": {
+    "club_id": "786446",
+    "team_type": "FIRST",
+    "tm_name": "FC Banik Ostrau",
+    "fm_name": "FC Baník Ostrava",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "5225": {
+    "club_id": "786447",
+    "team_type": "FIRST",
+    "tm_name": "FC Zbrojovka Brünn",
+    "fm_name": "FC Zbrojovka Brno",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "24325": {
+    "club_id": "790564",
+    "team_type": "FIRST",
+    "tm_name": "SK Artis Brünn",
+    "fm_name": "SK Artis Brno",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "80": {
+    "club_id": "1376273",
+    "team_type": "FIRST",
+    "tm_name": "VfL Bochum",
+    "fm_name": "VfL Bochum 1848",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "10": {
+    "club_id": "1376260",
+    "team_type": "FIRST",
+    "tm_name": "Arminia Bielefeld",
+    "fm_name": "DSC Arminia Bielefeld",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "23": {
+    "club_id": "1376426",
+    "team_type": "FIRST",
+    "tm_name": "Eintracht Braunschweig",
+    "fm_name": "Braunschweig TSV Eintracht",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "38": {
+    "club_id": "1376429",
+    "team_type": "FIRST",
+    "tm_name": "Fortuna Düsseldorf",
+    "fm_name": "Fortuna Düsseldorf 1895",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "91": {
+    "club_id": "1376419",
+    "team_type": "FIRST",
+    "tm_name": "Preußen Münster",
+    "fm_name": "SC Preußen Münster",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "56": {
+    "club_id": "1376282",
+    "team_type": "FIRST",
+    "tm_name": "Rot-Weiss Essen",
+    "fm_name": "Rot-Weiss Essen 1907",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "8": {
+    "club_id": "1376276",
+    "team_type": "FIRST",
+    "tm_name": "Alemannia Aachen",
+    "fm_name": "TSV Alemannia Aachen",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "85": {
+    "club_id": "1376301",
+    "team_type": "FIRST",
+    "tm_name": "SV Waldhof Mannheim",
+    "fm_name": "SV Waldhof Mannheim 07",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1622": {
+    "club_id": "1376446",
+    "team_type": "FIRST",
+    "tm_name": "FC Viktoria Köln",
+    "fm_name": "FC Viktoria Köln 1904",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "476": {
+    "club_id": "1376539",
+    "team_type": "FIRST",
+    "tm_name": "TSV Havelse",
+    "fm_name": "TSV Havelse 1912",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  },
+  "1557": {
+    "club_id": "1376540",
+    "team_type": "FIRST",
+    "tm_name": "Würzburger Kickers",
+    "fm_name": "FC Würzburger Kickers",
+    "method": "REVIEWED_CLUB_NAME_ALIAS"
+  }
+}

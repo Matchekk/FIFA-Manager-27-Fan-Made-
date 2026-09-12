@@ -1,0 +1,18 @@
+{
+  "minimum_snapshot_date": "2026-09-08",
+  "excluded": ["3D", "XXL portraits"],
+  "competitions": [
+    {"key": "ENG1", "country_id": 14, "division": 0, "name": "Premier League"},
+    {"key": "ITA1", "country_id": 27, "division": 0, "name": "Serie A"},
+    {"key": "ESP1", "country_id": 45, "division": 0, "name": "LaLiga"},
+    {"key": "GER1", "country_id": 21, "division": 0, "name": "Bundesliga"},
+    {"key": "FRA1", "country_id": 18, "division": 0, "name": "Ligue 1"},
+    {"key": "POR1", "country_id": 38, "division": 0, "name": "Liga Portugal"},
+    {"key": "NED1", "country_id": 34, "division": 0, "name": "Eredivisie"},
+    {"key": "BEL1", "country_id": 7, "division": 0, "name": "Belgian Pro League"},
+    {"key": "TUR1", "country_id": 48, "division": 0, "name": "Süper Lig"},
+    {"key": "CZE1", "country_id": 12, "division": 0, "name": "Czech First League"},
+    {"key": "GER2", "country_id": 21, "division": 1, "name": "2. Bundesliga"},
+    {"key": "GER3", "country_id": 21, "division": 2, "name": "3. Liga"}
+  ]
+}

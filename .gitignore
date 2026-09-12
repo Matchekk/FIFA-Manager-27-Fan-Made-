@@ -1,0 +1,14 @@
+upstream/
+.agent_tmp/
+build/
+dist/
+data/raw/
+data/intermediate/
+data/generated/
+benchmarks/runs/
+reports/local/
+reports/*.csv
+reports/TRANSFER_COVERAGE.json
+__pycache__/
+*.pyc
+.venv/
