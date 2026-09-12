@@ -1,0 +1,522 @@
+{
+  "status": "FAIL",
+  "before": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\write\\before",
+  "after": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\reread",
+  "squad_plan": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\inputs\\squad.csv",
+  "squad_plan_sha256": "db85c7249c849d329dd279b95b4e0c2d2b1f490deeb0175e4f94319c35651ec0",
+  "membership_plan": null,
+  "membership_plan_sha256": null,
+  "belgium_plan": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\inputs\\belgium.csv",
+  "belgium_plan_sha256": "c38530e288d17f74329c57a1ddb52fbc06812ba3b4febb5180e0e75f5965b560",
+  "creation_plan": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\inputs\\creation.csv",
+  "creation_plan_sha256": "5c268add4d6dbd0858d33dff9f70670db2f13c7124c45c04f870e6917816d023",
+  "germany_plan": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\inputs\\germany.csv",
+  "germany_plan_sha256": "ba3bf8530d9c22b9ba8b1761fd18897295e68a2e198cfa100c6760906bd2e6e9",
+  "serialization_allowlist": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\revalidation\\semantic-v3\\serialization-normalization.csv",
+  "serialization_allowlist_sha256": "42cf7d903b16da006b2ae8c9b07a171c424bd6670076e590b0ec84483e60c770",
+  "checks": {
+    "player_identity_inventory": {
+      "status": "PASS",
+      "before": 266764,
+      "created": 94,
+      "after": 266858,
+      "multiplicity_errors": []
+    },
+    "existing_player_mapping": {
+      "status": "PASS",
+      "planned": 240,
+      "mapped": 240,
+      "preexisting_duplicate_identity_groups": 9,
+      "mapping_errors": [],
+      "unchanged_errors": [],
+      "method": "explicit before FM id; unchanged full-row multiset; unique residual changed row"
+    },
+    "unplanned_stable_semantics": {
+      "status": "PASS",
+      "opaque_serialization_rewrites": 11,
+      "rewrites": [
+        {
+          "identity": [
+            "258911",
+            "23.11.2000",
+            "Toluwalase Arokodare"
+          ],
+          "before_fm_id": "23757",
+          "after_fm_id": "23757",
+          "before_serialized_sha256": "7d0ae7cbe803988c53b03b9b601bafe3fe3768a56a7f9d9ea39f8b06a61182a9",
+          "after_serialized_sha256": "076850e3fa792de8e27c7934b64a65e99b7f62b6458b5e8d42f97f9eb496af5e"
+        },
+        {
+          "identity": [
+            "270077",
+            "28.11.2003",
+            "Kostas Koulierakis"
+          ],
+          "before_fm_id": "99998",
+          "after_fm_id": "99998",
+          "before_serialized_sha256": "065a8d9ce786963a21236f4fd545a7043af0fd2fa4e28a7683a61c8322366044",
+          "after_serialized_sha256": "d6ca3f2fa65b1362f747f84e2c5a973ccc8485bb3f45fa813de3cb699584da37"
+        },
+        {
+          "identity": [
+            "263555",
+            "23.03.2001",
+            "Nikos Michelis"
+          ],
+          "before_fm_id": "153244",
+          "after_fm_id": "153244",
+          "before_serialized_sha256": "c70899addfecaa382d94b22dadc0c3a5472bfa35414c1565d358c32fd2a81301",
+          "after_serialized_sha256": "0849af3e0d8cafed0664a548c7879a435de0c10089a411ee8413cd8758bb8020"
+        },
+        {
+          "identity": [
+            "229703",
+            "04.04.1994",
+            "Dimitris Goutas"
+          ],
+          "before_fm_id": "200401",
+          "after_fm_id": "200401",
+          "before_serialized_sha256": "4c680395c8c2b2add4b88d29cb11f6f52dccd9d49d47351496b55304a6af7acc",
+          "after_serialized_sha256": "2ba3b7945f6e67193ef0f4e64512da3efa1cf23415e947c7edaaf7c617c273a4"
+        },
+        {
+          "identity": [
+            "0",
+            "25.03.2003",
+            "Yevhen Skyba"
+          ],
+          "before_fm_id": "206551",
+          "after_fm_id": "206551",
+          "before_serialized_sha256": "673b474d91e2b66c97ac8ef7c8be9452d32644734a12fd53821adce947e336a7",
+          "after_serialized_sha256": "b413e6793298651b760fd2d8883718fee1f4c2667f4f714a26f12b195fc221a9"
+        },
+        {
+          "identity": [
+            "275647",
+            "10.10.2005",
+            "Juan David Arizala"
+          ],
+          "before_fm_id": "231683",
+          "after_fm_id": "231683",
+          "before_serialized_sha256": "5c8f85869285c48e1a0625f27bc89941d35aa6d760fd8bc34004bb3015f71d4f",
+          "after_serialized_sha256": "dfdda11f5b9a6ec0fbb8973d82a3b98a0b6a4ed5bbfcaad5663eea5a3e32dabd"
+        },
+        {
+          "identity": [
+            "71972",
+            "30.01.2005",
+            "Rafael Bauzà"
+          ],
+          "before_fm_id": "284428",
+          "after_fm_id": "284428",
+          "before_serialized_sha256": "5cb2527707d78b48383547bb43b8e1836af5b0f8e0989f8b0fada2f541767a98",
+          "after_serialized_sha256": "db792ffda671f20727f29bfedf2ba029b07e07e37305da45a7f5d9fd1306ad89"
+        },
+        {
+          "identity": [
+            "240690",
+            "06.04.1998",
+            "Nicolás González"
+          ],
+          "before_fm_id": "284973",
+          "after_fm_id": "284973",
+          "before_serialized_sha256": "3eece8f9b894a3712ea182247c864a66abda7d7175e7f90830c11a559dff527e",
+          "after_serialized_sha256": "f630c547d3fc4c633db7676bd10e36dc53b43d56925b3d78e4a6eb52f693590a"
+        },
+        {
+          "identity": [
+            "262744",
+            "27.11.1995",
+            "Mohammed Bouldini"
+          ],
+          "before_fm_id": "285154",
+          "after_fm_id": "285154",
+          "before_serialized_sha256": "18177a45dbc5e704db3e68474c63b6dc0120b71901bd25db61e15631e4107436",
+          "after_serialized_sha256": "179b6ccf8d52640de690c51261429c1fb616cca310ca9dc0929e4699723805e4"
+        },
+        {
+          "identity": [
+            "250753",
+            "01.08.2001",
+            "Anatolii Trubin"
+          ],
+          "before_fm_id": "288116",
+          "after_fm_id": "288116",
+          "before_serialized_sha256": "8a4cafa8155de483f79b2716ee6cacde0de1cbd533c119a9a7c31e1981a0ad7e",
+          "after_serialized_sha256": "e6c01725a91d353ba473460efa3e67f82d44383ee0c358b607d61f053370e317"
+        },
+        {
+          "identity": [
+            "78193",
+            "10.07.2003",
+            "Rafael Rodríguez"
+          ],
+          "before_fm_id": "289780",
+          "after_fm_id": "289780",
+          "before_serialized_sha256": "4fbd72f66a9776a5b910088fc58bc7ca84e6af0ac22b74742b9bcb29f96ba250",
+          "after_serialized_sha256": "b8658790168d0501ba5a52fac1d69963af111ef1460a1b98b0ebd2de14d1514d"
+        }
+      ],
+      "method": "all exported state/history/condition fields compared as multisets; read/write ids excluded"
+    },
+    "serialization_normalization_allowlist": {
+      "status": "FAIL",
+      "actual": 11,
+      "allowed": 11,
+      "missing_allowlist_rows": [],
+      "unused_allowlist_rows": [],
+      "malformed_allowlist_rows": [
+        {
+          "before_fm_id": "23757",
+          "after_fm_id": "23757",
+          "fifa_id": "258911",
+          "dob": "23.11.2000",
+          "name": "Toluwalase Arokodare",
+          "before_file": "data/CountryData14.sav",
+          "after_file": "data/CountryData14.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "47102376",
+          "before_block_sha256": "479a6c15233974d4a89cfc67afe0253bd8bc0bb52cca3d1bc099d7f704d01b63",
+          "after_block_sha256": "170c486e7ca2b7a97d9166aa0a5f374e1924810cfef426784ffd5150ac51d291",
+          "before_serialized_sha256": "7d0ae7cbe803988c53b03b9b601bafe3fe3768a56a7f9d9ea39f8b06a61182a9",
+          "after_serialized_sha256": "076850e3fa792de8e27c7934b64a65e99b7f62b6458b5e8d42f97f9eb496af5e",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "99998",
+          "after_fm_id": "99998",
+          "fifa_id": "270077",
+          "dob": "28.11.2003",
+          "name": "Kostas Koulierakis",
+          "before_file": "data/CountryData27.sav",
+          "after_file": "data/CountryData27.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "36159445",
+          "before_block_sha256": "15a3d5a983c7575b6d866ee11c3018faf8d0d0e05422a6e662f1065fb82d1c4d",
+          "after_block_sha256": "013fafaf4396b6bfc9d7b75cf17bc7c51d1aec842d21b982a3b30e61dd831aa1",
+          "before_serialized_sha256": "065a8d9ce786963a21236f4fd545a7043af0fd2fa4e28a7683a61c8322366044",
+          "after_serialized_sha256": "d6ca3f2fa65b1362f747f84e2c5a973ccc8485bb3f45fa813de3cb699584da37",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "153244",
+          "after_fm_id": "153244",
+          "fifa_id": "263555",
+          "dob": "23.03.2001",
+          "name": "Nikos Michelis",
+          "before_file": "data/CountryData38.sav",
+          "after_file": "data/CountryData38.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "36146763",
+          "before_block_sha256": "80736b0dfa2e65662cc3f259fb37de2638211504f739662404318a36447e106a",
+          "after_block_sha256": "c152bc1542cbca7435c46f84e4a56566510d2ae3037ad4e688cc702490eedb59",
+          "before_serialized_sha256": "c70899addfecaa382d94b22dadc0c3a5472bfa35414c1565d358c32fd2a81301",
+          "after_serialized_sha256": "0849af3e0d8cafed0664a548c7879a435de0c10089a411ee8413cd8758bb8020",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "200401",
+          "after_fm_id": "200401",
+          "fifa_id": "229703",
+          "dob": "04.04.1994",
+          "name": "Dimitris Goutas",
+          "before_file": "data/CountryData48.sav",
+          "after_file": "data/CountryData48.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "36057480",
+          "before_block_sha256": "ddd089f0f07d1b9fb69d7be33b90e29a5c1694aec04308384f8053acb51619f5",
+          "after_block_sha256": "97fdc8a37b15ae2e9b493bc8dd91fe37faf1acd44b4c2234d2d26dcb74a6ea01",
+          "before_serialized_sha256": "4c680395c8c2b2add4b88d29cb11f6f52dccd9d49d47351496b55304a6af7acc",
+          "after_serialized_sha256": "2ba3b7945f6e67193ef0f4e64512da3efa1cf23415e947c7edaaf7c617c273a4",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "206551",
+          "after_fm_id": "206551",
+          "fifa_id": "0",
+          "dob": "25.03.2003",
+          "name": "Yevhen Skyba",
+          "before_file": "data/CountryData49.sav",
+          "after_file": "data/CountryData49.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "2000055039",
+          "before_block_sha256": "4250988231e087bb7021795684c46733cb3e2bb665bbecdccd07c5999e6c6073",
+          "after_block_sha256": "94f13dd4092c3a634228559ac675eb0ccfed8ef0b7337b1155e7113afd0d89b6",
+          "before_serialized_sha256": "673b474d91e2b66c97ac8ef7c8be9452d32644734a12fd53821adce947e336a7",
+          "after_serialized_sha256": "b413e6793298651b760fd2d8883718fee1f4c2667f4f714a26f12b195fc221a9",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "231683",
+          "after_fm_id": "231683",
+          "fifa_id": "275647",
+          "dob": "10.10.2005",
+          "name": "Juan David Arizala",
+          "before_file": "data/CountryData56.sav",
+          "after_file": "data/CountryData56.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "2000241471",
+          "before_block_sha256": "8dbefa22d8837b6af4e96f71237936a8896b84078e846125b726fc969b026400",
+          "after_block_sha256": "91e3cd9fb099fd5e79704203c9e7210fe0d0e67f2478d687911ea4aab5e5c9db",
+          "before_serialized_sha256": "5c8f85869285c48e1a0625f27bc89941d35aa6d760fd8bc34004bb3015f71d4f",
+          "after_serialized_sha256": "dfdda11f5b9a6ec0fbb8973d82a3b98a0b6a4ed5bbfcaad5663eea5a3e32dabd",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "284428",
+          "after_fm_id": "284428",
+          "fifa_id": "71972",
+          "dob": "30.01.2005",
+          "name": "Rafael Bauzà",
+          "before_file": "data/CountryData45.sav",
+          "after_file": "data/CountryData45.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "2000303558",
+          "before_block_sha256": "8ca5d1d0de5d2f00a22a454700bf725728538a684be257505a50d514c3e87f33",
+          "after_block_sha256": "170b8e723d3519c35d504dfa4778ef42ed0ba42dd0053563ca1172565405f896",
+          "before_serialized_sha256": "5cb2527707d78b48383547bb43b8e1836af5b0f8e0989f8b0fada2f541767a98",
+          "after_serialized_sha256": "db792ffda671f20727f29bfedf2ba029b07e07e37305da45a7f5d9fd1306ad89",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "284973",
+          "after_fm_id": "284973",
+          "fifa_id": "240690",
+          "dob": "06.04.1998",
+          "name": "Nicolás González",
+          "before_file": "data/CountryData45.sav",
+          "after_file": "data/CountryData45.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "14181375",
+          "before_block_sha256": "5914809bbc1c00af23b16bb3e1870175169ad4425456abe961bfd72db654cdf6",
+          "after_block_sha256": "e1801e862194ec4b43d6ecc2635f71c33b3f4933ec66ea79a4efff2585adc180",
+          "before_serialized_sha256": "3eece8f9b894a3712ea182247c864a66abda7d7175e7f90830c11a559dff527e",
+          "after_serialized_sha256": "f630c547d3fc4c633db7676bd10e36dc53b43d56925b3d78e4a6eb52f693590a",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "285154",
+          "after_fm_id": "285154",
+          "fifa_id": "262744",
+          "dob": "27.11.1995",
+          "name": "Mohammed Bouldini",
+          "before_file": "data/CountryData45.sav",
+          "after_file": "data/CountryData45.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "13164765",
+          "before_block_sha256": "fc7b1cf269016841fcb49e691bae8a8f06f7fed6f437051b5f18b1afcd8fad9a",
+          "after_block_sha256": "83a7f737f04a2737d2216f84e07054239519b10acd32f94703343a0b9e29fa25",
+          "before_serialized_sha256": "18177a45dbc5e704db3e68474c63b6dc0120b71901bd25db61e15631e4107436",
+          "after_serialized_sha256": "179b6ccf8d52640de690c51261429c1fb616cca310ca9dc0929e4699723805e4",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "288116",
+          "after_fm_id": "288116",
+          "fifa_id": "250753",
+          "dob": "01.08.2001",
+          "name": "Anatolii Trubin",
+          "before_file": "data/CountryData38.sav",
+          "after_file": "data/CountryData38.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "71101334",
+          "before_block_sha256": "2bfbf68b69167c1a653f8a3b3a0b6b4ddf59335b30d7cd136968cfe056fa0b18",
+          "after_block_sha256": "b8813354b08501f76881460b7d85a32134166a825d04d17c1c4079e102046606",
+          "before_serialized_sha256": "8a4cafa8155de483f79b2716ee6cacde0de1cbd533c119a9a7c31e1981a0ad7e",
+          "after_serialized_sha256": "e6c01725a91d353ba473460efa3e67f82d44383ee0c358b607d61f053370e317",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        },
+        {
+          "before_fm_id": "289780",
+          "after_fm_id": "289780",
+          "fifa_id": "78193",
+          "dob": "10.07.2003",
+          "name": "Rafael Rodríguez",
+          "before_file": "data/CountryData45.sav",
+          "after_file": "data/CountryData45.sav",
+          "raw_block_line": "15",
+          "raw_field_index": "1",
+          "raw_field_name": "mEmpicsId",
+          "old_value": "0",
+          "new_value": "2000138547",
+          "before_block_sha256": "f27106972058b4bca50ca3a670392d5e2549fa443194f51fd78637a5adc90df1",
+          "after_block_sha256": "427f25e5e5027782e1c1ac8d1a408a5ad3cee1dc2364899e673f2bb8f170b457",
+          "before_serialized_sha256": "4fbd72f66a9776a5b910088fc58bc7ca84e6af0ac22b74742b9bcb29f96ba250",
+          "after_serialized_sha256": "b8658790168d0501ba5a52fac1d69963af111ef1460a1b98b0ebd2de14d1514d",
+          "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
+          "status": "VERIFIED"
+        }
+      ],
+      "policy": "Every opaque rewrite must be exact-bound to a raw mEmpicsId normalization row and must not collide with a planned creation identity."
+    },
+    "exact_changed_players": {
+      "status": "PASS",
+      "expected": 240,
+      "actual": 240,
+      "missing": [],
+      "unexpected": []
+    },
+    "planned_player_results": {
+      "status": "PASS",
+      "players": 240,
+      "errors": []
+    },
+    "created_players": {
+      "status": "PASS",
+      "expected": 94,
+      "actual": 94,
+      "errors": []
+    },
+    "history_delta": {
+      "status": "PASS",
+      "expected": 2,
+      "actual": 2
+    },
+    "starting_condition_delta": {
+      "status": "PASS",
+      "expected": 129,
+      "actual": 129,
+      "preserved_unplanned_and_future_conditions": true
+    },
+    "protected_conditions_preserved": {
+      "status": "PASS",
+      "changed": []
+    },
+    "future_conditions_preserved": {
+      "status": "PASS",
+      "changed": []
+    },
+    "ratings_preserved": {
+      "status": "PASS",
+      "players": 266764,
+      "errors": [],
+      "preexisting_duplicate_identity_groups": 9
+    },
+    "created_player_rating_seed": {
+      "status": "PASS",
+      "players": 94,
+      "seed_policy": "explicit bounded provisional seed",
+      "errors": []
+    },
+    "competition_delta": {
+      "status": "PASS",
+      "expected": [
+        "117506048",
+        "117506049",
+        "117506050",
+        "117506051",
+        "117506052",
+        "117506053",
+        "117506054",
+        "117964800",
+        "117964801",
+        "117964802",
+        "119013376",
+        "119013377",
+        "119013378",
+        "352387074",
+        "352387075",
+        "352387076",
+        "352387077",
+        "352387078",
+        "352387079",
+        "352387083",
+        "352387085",
+        "352387086",
+        "352845829",
+        "353894403",
+        "353894404"
+      ],
+      "actual": [
+        "117506048",
+        "117506049",
+        "117506050",
+        "117506051",
+        "117506052",
+        "117506053",
+        "117506054",
+        "117964800",
+        "117964801",
+        "117964802",
+        "119013376",
+        "119013377",
+        "119013378",
+        "352387074",
+        "352387075",
+        "352387076",
+        "352387077",
+        "352387078",
+        "352387079",
+        "352387083",
+        "352387085",
+        "352387086",
+        "352845829",
+        "353894403",
+        "353894404"
+      ]
+    },
+    "staff_semantics_preserved": {
+      "status": "PASS",
+      "before": 68028,
+      "after": 68028,
+      "method": "full exported staff-row multiset excluding read-assigned fm_id"
+    },
+    "world_country_semantics": {
+      "status": "PASS",
+      "actual": [
+        "7"
+      ],
+      "allowed_by_structural_plans": [
+        "21",
+        "7"
+      ],
+      "unexpected": []
+    },
+    "unrelated_global_semantics": {
+      "status": "PASS",
+      "exact_file": "native_global_semantics.csv"
+    }
+  },
+  "release_ready": false,
+  "limitations": "Native semantic write/reread only. Exact raw-audited mEmpicsId collision normalization is reported separately; editor export and gameplay remain separate gates."
+}

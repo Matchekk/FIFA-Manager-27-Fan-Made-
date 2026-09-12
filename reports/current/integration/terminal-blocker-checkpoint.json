@@ -1,0 +1,130 @@
+{
+  "status": "NO_SAFE_EXISTING_EVIDENCE_DELTA_REMAINS",
+  "blocking_rows": 488,
+  "largest_actionable_categories": [
+    {
+      "queue": "TRANSFER_TIMELINE",
+      "rows": 155,
+      "need": "new explicit transaction or owner/end evidence"
+    },
+    {
+      "queue": "CONTRACT_CHRONOLOGY",
+      "rows": 220,
+      "need": "new reliable chronology or user policy for 85 listed contracts"
+    },
+    {
+      "queue": "PLAYER_CREATION",
+      "rows": 72,
+      "need": "identity adjudication or typed loan creation evidence"
+    },
+    {
+      "queue": "TYPED_CONDITION",
+      "rows": 26,
+      "need": "owner evidence or exact native condition subtype"
+    }
+  ],
+  "terminal_state_counts": {
+    "CURRENT_OWNER_OR_TERMINAL_EVENT_UNPROVEN": 14,
+    "DESTINATION_UNPROVEN_AFTER_TARGETED_SEARCH": 1,
+    "EMPLOYER_AFFILIATION_UNPROVEN": 1,
+    "HOLD_CURRENT_LOAN_SEMANTICS": 3,
+    "HOLD_IDENTITY_REVIEW": 22,
+    "HOLD_NATIVE08_IDENTITY_CANDIDATE": 26,
+    "IDENTITY_SEARCH_REQUIRED": 21,
+    "NATIVE_CONDITION_TYPE_NOT_EXPORTED": 9,
+    "OWNERSHIP_CHAIN_UNPROVEN": 13,
+    "OWNER_CONTRACT_END_UNPROVEN": 2,
+    "OWNER_NATIVE_MAPPING_UNPROVEN": 1,
+    "POLICY_DECISION_PENDING": 85,
+    "SOURCE_CHRONOLOGY_UNRESOLVED": 135,
+    "TARGETED_SOURCE_ATTEMPTS_EXHAUSTED": 155
+  },
+  "identity_reporting": {
+    "confirmed_native_candidate_holds": 48,
+    "unsearched_identity_rows": 21,
+    "unresolved_identity_rows_total": 69,
+    "player_tm_ids_by_state": {
+      "HOLD_NATIVE08_IDENTITY_CANDIDATE": [
+        "175446",
+        "546186",
+        "567516",
+        "631404",
+        "634430",
+        "639733",
+        "662332",
+        "704456",
+        "724039",
+        "726014",
+        "754037",
+        "763090",
+        "858324",
+        "865793",
+        "872171",
+        "952093",
+        "957822",
+        "1047424",
+        "1048119",
+        "1083604",
+        "1091608",
+        "1161013",
+        "1175619",
+        "1237999",
+        "1315482",
+        "1318352"
+      ],
+      "HOLD_IDENTITY_REVIEW": [
+        "122268",
+        "137313",
+        "182201",
+        "250478",
+        "431190",
+        "433181",
+        "551505",
+        "572675",
+        "656316",
+        "656409",
+        "743591",
+        "811432",
+        "836441",
+        "941029",
+        "943864",
+        "1005583",
+        "1048442",
+        "1063475",
+        "1111589",
+        "1111684",
+        "1143628",
+        "1166018"
+      ],
+      "IDENTITY_SEARCH_REQUIRED": [
+        "127573",
+        "154819",
+        "191426",
+        "240692",
+        "335721",
+        "381753",
+        "406556",
+        "456929",
+        "467250",
+        "477578",
+        "528856",
+        "559328",
+        "565118",
+        "623570",
+        "639414",
+        "664708",
+        "676042",
+        "696026",
+        "735354",
+        "955357",
+        "1014942"
+      ]
+    },
+    "completion_report_correction": "identity ambiguity must count the 26 HOLD_NATIVE08_IDENTITY_CANDIDATE plus 22 HOLD_IDENTITY_REVIEW rows; PLAYER_CREATION must split 72 blocking from 58 nonblocking rows and keep 54 PROVISIONAL_CREATION_RATING rows separate."
+  },
+  "current_loan_creation_holds": 3,
+  "safe_integration_work_from_existing_evidence": false,
+  "reason": "Existing unique alias evidence has already been integrated. Remaining rows explicitly require new evidence, a user contract policy decision, or exact protected-condition export.",
+  "terminal_queue_sha256": "7e91a296c8dd4ce97bd72b2e86453ba3b529b02e592d4a8483a8770d67e365fa",
+  "draft05_inputs_mutated": false
+}

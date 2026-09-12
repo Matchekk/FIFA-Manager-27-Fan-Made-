@@ -26,6 +26,8 @@ def main() -> int:
     parser.add_argument("--undisclosed-contracts", type=Path, required=True)
     parser.add_argument("--typed-review", type=Path, required=True)
     parser.add_argument("--creation-review", type=Path, required=True)
+    parser.add_argument("--creation-identity-audit", type=Path)
+    parser.add_argument("--terminal-creation-alias-audit", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--summary", type=Path, required=True)
     args = parser.parse_args()
@@ -34,6 +36,13 @@ def main() -> int:
     policy_contracts = {row["fm_id"] for row in read_rows(args.undisclosed_contracts)}
     typed = {row["fm_id"]: row for row in read_rows(args.typed_review)}
     creations = {row["player_tm_id"]: row for row in read_rows(args.creation_review)}
+    creation_identity = {}
+    if args.creation_identity_audit:
+        for item in read_rows(args.creation_identity_audit):
+            creation_identity.setdefault(item.get("player_tm_id", ""), item)
+    terminal_aliases = ({item.get("player_tm_id", ""): item
+                         for item in read_rows(args.terminal_creation_alias_audit)}
+                        if args.terminal_creation_alias_audit else {})
 
     annotated: list[dict[str, str]] = []
     for row in review:
@@ -64,8 +73,18 @@ def main() -> int:
             }.get(category, "Typed preserving evidence")
         elif queue == "PLAYER_CREATION":
             detail = creations.get(player_tm_id, {})
-            state = detail.get("disposition", "PLAYER_CREATION_PREREQUISITE_MISSING")
-            prerequisite = detail.get("reason", row.get("reason", "Creation prerequisite"))
+            identity_detail = creation_identity.get(player_tm_id, {})
+            alias_detail = terminal_aliases.get(player_tm_id, {})
+            if identity_detail.get("decision") in {
+                    "HOLD_NATIVE08_IDENTITY_CANDIDATE", "HOLD_CURRENT_LOAN_SEMANTICS"}:
+                state = identity_detail["decision"]
+                prerequisite = identity_detail.get("reason", "Creation identity/loan adjudication")
+            elif alias_detail.get("decision") == "HOLD_IDENTITY_REVIEW":
+                state = "HOLD_IDENTITY_REVIEW"
+                prerequisite = alias_detail.get("reason", "No unique fully bound Native08 alias")
+            else:
+                state = detail.get("disposition", "PLAYER_CREATION_PREREQUISITE_MISSING")
+                prerequisite = detail.get("reason", row.get("reason", "Creation prerequisite"))
         elif queue == "PRIMARY_EXCEPTION":
             state = "DESTINATION_UNPROVEN_AFTER_TARGETED_SEARCH"
             prerequisite = "Current destination or explicit retirement/release fact"
@@ -104,6 +123,10 @@ def main() -> int:
         "undisclosed_contracts_sha256": sha256(args.undisclosed_contracts),
         "typed_review_sha256": sha256(args.typed_review),
         "creation_review_sha256": sha256(args.creation_review),
+        "creation_identity_audit_sha256": (sha256(args.creation_identity_audit)
+                                             if args.creation_identity_audit else None),
+        "terminal_creation_alias_audit_sha256": (sha256(args.terminal_creation_alias_audit)
+                                                   if args.terminal_creation_alias_audit else None),
         "output_sha256": sha256(args.output),
         "research_policy": "Do not repeat exhausted searches without a new source lead or user policy decision.",
     }

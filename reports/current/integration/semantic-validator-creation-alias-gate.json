@@ -1,0 +1,14 @@
+{
+  "status": "PASS_STRICT_CREATION_ALIAS_NEGATIVE_GATE",
+  "negative_candidate": "native10-data-draft-20260913-04",
+  "negative_result": "FAIL",
+  "failed_check": "serialization_normalization_allowlist",
+  "malformed_alias_rows": 11,
+  "current_validator_sha256": "72d14df1af64b88df9982480e9d92f0e8d9955deef2bc78dadeb2fec17f9e899",
+  "current_rewrite_auditor_sha256": "37b71ba4c041e16bce8fdef736119c6b4afdd066fbd18b4a0fa22aafdb160760",
+  "current_revalidator_sha256": "2aab5ebbbaaeca2588c9a6b21f272498e850ff1c25543361c88feca8efbfa5b6",
+  "negative_report_sha256": "aed8f5001290ea6605e213a2bc5c0ddabe45217ae4e0272db2ba79c819f5c393",
+  "strict_auditor_report_sha256": "c9727e4cbfcb731a876e262580507ffebb2df87f9cc1a3d4efa364dcddaad9cf",
+  "automatic_exception_carry_forward": false,
+  "evidence": "Current comparator independently rejects all 11 Draft04 semantic-v3 normalization rows when the frozen creation plan is supplied. Revalidator generates a fresh exclusive allowlist through the creation-aware raw auditor."
+}

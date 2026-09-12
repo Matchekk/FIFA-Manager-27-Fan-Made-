@@ -5,7 +5,9 @@ import argparse
 import csv
 import datetime as dt
 import json
+import re
 import sys
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -16,6 +18,30 @@ from fm27.common import read_csv, sha256, write_json
 
 def identity(row: dict) -> tuple[str, str, str]:
     return row["fifa_id"], row["dob"], row["name"]
+
+
+def normalized_name(value: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", value).casefold()
+                   if c.isalnum())
+
+
+def allowlist_hits_creation_alias(allow: dict, creation: list[dict]) -> bool:
+    dob = allow.get("dob", "")
+    if re.fullmatch(r"\d{2}\.\d{2}\.\d{4}", dob):
+        day, month, year = dob.split(".")
+        dob = f"{year}-{month}-{day}"
+    old_name = allow.get("name", "")
+    old_last = normalized_name(old_name.split()[-1]) if old_name.split() else ""
+    for row in creation:
+        if row.get("dob") != dob:
+            continue
+        display = row.get("pseudonym") or " ".join(
+            filter(None, (row.get("first_name"), row.get("last_name"))))
+        new_last = normalized_name(row.get("last_name") or display.split()[-1])
+        old, new = normalized_name(old_name), normalized_name(display)
+        if old and new and (old_last == new_last or old in new or new in old):
+            return True
+    return False
 
 
 def unique(rows: list[dict], key) -> dict:
@@ -196,7 +222,9 @@ def main() -> int:
         row.get("status") != "VERIFIED" or
         row.get("classification") != "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR" or
         row.get("raw_field_name") != "mEmpicsId" or row.get("old_value") != "0" or
-        not row.get("new_value", "").isdigit() or int(row.get("new_value", "0")) <= 0]
+        not row.get("new_value", "").isdigit() or int(row.get("new_value", "0")) <= 0 or
+        row.get("creation_collision_tm_ids", "") != "" or
+        allowlist_hits_creation_alias(row, creation)]
     allowed_rewrite_keys = {
         tuple(row.get(field, "") for field in rewrite_key_fields) for row in allowlist_rows
     }
@@ -208,7 +236,7 @@ def main() -> int:
         "missing_allowlist_rows": [list(key) for key in sorted(actual_rewrite_keys - allowed_rewrite_keys)[:25]],
         "unused_allowlist_rows": [list(key) for key in sorted(allowed_rewrite_keys - actual_rewrite_keys)[:25]],
         "malformed_allowlist_rows": malformed_allowlist[:25],
-        "policy": "Every opaque serialization hash rewrite must be exact-bound to a verified raw mEmpicsId normalization row.",
+        "policy": "Every opaque rewrite must be exact-bound to a raw mEmpicsId normalization row and must not collide with a planned creation identity.",
     }
     actual_player_changes = {key for key, (_, baseline, actual) in planned_pairs.items()
                              if baseline["serialized_sha256"] != actual["serialized_sha256"]}
