@@ -1,0 +1,20 @@
+{
+  "old_rows": 4132,
+  "current_rows": 4143,
+  "changed_rows": 151,
+  "categories": {
+    "SOURCE_FIELDS_CHANGED": 74,
+    "NEW_SOURCE_ROW": 44,
+    "ABSENT_FROM_NEW_SOURCE": 33
+  },
+  "by_league": {
+    "ITA1": 15,
+    "ESP1": 9,
+    "POR1": 28,
+    "FRA1": 13,
+    "NED1": 12,
+    "BEL1": 33,
+    "TUR1": 16,
+    "CZE1": 25
+  }
+}

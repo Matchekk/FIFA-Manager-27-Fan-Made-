@@ -1,0 +1,615 @@
+{
+  "schema_version": 1,
+  "season": "2026/27",
+  "snapshot_date": "2026-09-12",
+  "scope_leagues": [
+    "ENG1",
+    "ITA1",
+    "ESP1",
+    "GER1",
+    "FRA1",
+    "POR1",
+    "NED1",
+    "BEL1",
+    "TUR1",
+    "CZE1",
+    "GER2",
+    "GER3"
+  ],
+  "expected_clubs_by_league": {
+    "ENG1": 20,
+    "ITA1": 20,
+    "ESP1": 20,
+    "GER1": 18,
+    "FRA1": 18,
+    "POR1": 18,
+    "NED1": 18,
+    "BEL1": 18,
+    "TUR1": 18,
+    "CZE1": 16,
+    "GER2": 18,
+    "GER3": 20
+  },
+  "actual_clubs_by_league": {
+    "ENG1": 20,
+    "ITA1": 20,
+    "ESP1": 20,
+    "GER1": 18,
+    "FRA1": 18,
+    "POR1": 18,
+    "NED1": 18,
+    "BEL1": 18,
+    "TUR1": 18,
+    "CZE1": 16,
+    "GER2": 18,
+    "GER3": 20
+  },
+  "total_rows": 222,
+  "count_checks": {
+    "ENG1": {
+      "expected": 20,
+      "actual": 20,
+      "status": "PASS"
+    },
+    "ITA1": {
+      "expected": 20,
+      "actual": 20,
+      "status": "PASS"
+    },
+    "ESP1": {
+      "expected": 20,
+      "actual": 20,
+      "status": "PASS"
+    },
+    "GER1": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "FRA1": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "POR1": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "NED1": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "BEL1": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "TUR1": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "CZE1": {
+      "expected": 16,
+      "actual": 16,
+      "status": "PASS"
+    },
+    "GER2": {
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS"
+    },
+    "GER3": {
+      "expected": 20,
+      "actual": 20,
+      "status": "PASS"
+    }
+  },
+  "status_by_league": {
+    "ENG1": "CONFIRMED",
+    "ITA1": "CONFIRMED",
+    "ESP1": "CONFIRMED",
+    "GER1": "CONFIRMED",
+    "FRA1": "CONFIRMED",
+    "POR1": "CONFIRMED",
+    "NED1": "CONFIRMED",
+    "BEL1": "CONFIRMED",
+    "TUR1": "CONFIRMED",
+    "CZE1": "CONFIRMED",
+    "GER2": "CONFIRMED",
+    "GER3": "CONFIRMED"
+  },
+  "source_hashes": {
+    "ENG1": "27455262c832f50308fd7fc027d942cd4027c6db94f8f77a03153b36cf097867",
+    "ITA1": "0395f45310e6fd7abde7558dd76ba589fd764ddb5be1df9d44e97a1a3b4e151a",
+    "ESP1": "7dc21d905da42305ef7100901e7bda02619b96c2e8826d91ed8b94979b7e7456",
+    "GER1": "412ffdeb06c1d77fcf37c1f21e59412b59a0f519c7fa61732fffcb7d5fb5b8e5",
+    "FRA1": "9405a33e7f9c2435db67bfbc806ca4eac7cd73463ba2032bc589f13d442f0685",
+    "POR1": "61d16d815700a558bb7a99a47462ccd09b2ce17b92eb65eade6f52eba9359077",
+    "NED1": "5b02ea39f1324dcd660e19e3aa06b7dd12368b2f0ca7351f5f004214391bbbb7",
+    "BEL1": "0a77b79bd718cfbbe545d18334177e3c460c15dd5a98a53a59430147320f25a1",
+    "TUR1": "a0423b95de5880b4b95bf009b18d42f5fa5927b59f7bb735eca4ae265266fa2f",
+    "CZE1": "dbad9f08f35c7ce79a4a69e97ba9d9ff48d817d45c65fe327512f7902067603a",
+    "GER2": "b4947004f58f5c89e12823d3842288cd274c7c9ab4faee8d750fa35ff077a966",
+    "GER3": "952520fbfcc60f1802def3ec1bf2248f8c565db74cf4e27d9ac47e73b969186c"
+  },
+  "source_failures": [],
+  "gaps": [],
+  "promotion_relegation_checks": {
+    "ENG1": {
+      "promoted": [
+        "Coventry City",
+        "Hull City",
+        "Ipswich Town"
+      ],
+      "relegated": [
+        "Wolverhampton Wanderers",
+        "Burnley",
+        "West Ham United"
+      ],
+      "status": "CONFIRMED",
+      "source": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season"
+    },
+    "ITA1": {
+      "promoted": [
+        "Venezia",
+        "Frosinone",
+        "Monza"
+      ],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official fixture source confirms three promoted clubs; outgoing relegation names were not present in the captured source."
+    },
+    "ESP1": {
+      "promoted": [
+        "RC Deportivo",
+        "Racing Club",
+        "Málaga"
+      ],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official club page confirms the 20-team 2026/27 roster and official news confirms three promoted clubs; outgoing relegation names were not present in the captured source."
+    },
+    "GER1": {
+      "promoted": [],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official Bundesliga 2026/27 club page confirms 18 clubs; no single captured source enumerated all incoming and outgoing movement."
+    },
+    "FRA1": {
+      "promoted": [
+        "Le Mans",
+        "Paris FC",
+        "Troyes"
+      ],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official opening-round source confirms the 18-team roster and three incoming clubs; outgoing relegation names were not present in the captured source."
+    },
+    "POR1": {
+      "promoted": [
+        "Académico Viseu",
+        "Marítimo M."
+      ],
+      "relegated": [
+        "AFS",
+        "CD Tondela"
+      ],
+      "status": "CONFIRMED",
+      "sources": [
+        "https://www.ligaportugal.pt/news/27892/academico-garante-promocao",
+        "https://www.ligaportugal.pt/news/27658/maritimo-m.-vence-e-garante-promocao-a-liga-portugal-betclic",
+        "https://www.ligaportugal.pt/news/27920/vitoria-arouquense-confirma-despromocao-do-cd-tondela",
+        "https://www.ligaportugal.pt/noticias?tags=_team_AFS_id_322"
+      ]
+    },
+    "NED1": {
+      "promoted": [],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official programme source confirms all 18 clubs; no captured official movement notice enumerated both directions."
+    },
+    "BEL1": {
+      "promoted": [
+        "KV Kortrijk",
+        "Lommel SK",
+        "SK Beveren"
+      ],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official 2026/27 league announcement confirms three newcomers; outgoing relegation names were not present in the captured source."
+    },
+    "TUR1": {
+      "promoted": [],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official TFF 2026/27 table confirms 18 clubs; no captured official movement notice enumerated both directions."
+    },
+    "CZE1": {
+      "promoted": [
+        "SK Artis Brno"
+      ],
+      "relegated": [
+        "MFK Karviná"
+      ],
+      "status": "CONFIRMED",
+      "source": "https://www.chanceliga.cz/clanek/18906-artis-brno-doplni-ucastniky-chance-ligy-pro-sezonu-2026-27"
+    },
+    "GER2": {
+      "promoted": [
+        "Arminia Bielefeld",
+        "Dynamo Dresden",
+        "Energie Cottbus",
+        "VfL Osnabrück"
+      ],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official 2. Bundesliga club page confirms 18 clubs; outgoing movement names were not all present in the captured source."
+    },
+    "GER3": {
+      "promoted": [
+        "Fortuna Köln",
+        "SG Sonnenhof Großaspach",
+        "SV Meppen",
+        "Würzburger Kickers"
+      ],
+      "relegated": [],
+      "status": "REVIEW_REQUIRED",
+      "gap": "Official DFB source confirms four 2026/27 newcomers; outgoing movement names were not present in the captured source."
+    }
+  },
+  "identity_checks": {
+    "rows_have_native_id": true,
+    "native_id_team_type_unique": true,
+    "serialized_external_ids_present": true,
+    "serialized_external_ids_unique": true,
+    "fifa_team_id_unresolved_count": 17,
+    "fifa_team_id_unresolved": [
+      "POR1:Ac. Viseu",
+      "BEL1:Lommel SK",
+      "TUR1:Amed Sportif Faaliyetler",
+      "TUR1:Ahlatcı Çorum Futbol Kulübü",
+      "CZE1:1. FC Slovácko",
+      "CZE1:Bohemians Praha 1905",
+      "CZE1:FC Baník Ostrava",
+      "CZE1:FC Hradec Králové",
+      "CZE1:FC Slovan Liberec",
+      "CZE1:FC Zbrojovka Brno",
+      "CZE1:FC Zlín",
+      "CZE1:FK Jablonec",
+      "CZE1:FK Mladá Boleslav",
+      "CZE1:FK Pardubice",
+      "CZE1:FK Teplice",
+      "CZE1:SK Artis Brno",
+      "CZE1:SK Sigma Olomouc"
+    ],
+    "production_db_mutated": false
+  },
+  "integration_csv": "data/current/league-membership-2026-27.integration.csv",
+  "release_ready": false,
+  "completion_status": "PARTIAL",
+  "completion_reason": "Native membership matches current serialized references for 10 leagues. BEL1 format/membership and GER3 incoming/outgoing references differ; promotion/relegation movement checks remain REVIEW_REQUIRED where source evidence is incomplete.",
+  "native_membership_diff_source": "runtime/game-test-20260912-07/database/script/CountryScript*.sav",
+  "native_membership_diff": {
+    "ENG1": {
+      "installed_count": 20,
+      "expected_count": 20,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "ITA1": {
+      "installed_count": 20,
+      "expected_count": 20,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "ESP1": {
+      "installed_count": 20,
+      "expected_count": 20,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "GER1": {
+      "installed_count": 18,
+      "expected_count": 18,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "FRA1": {
+      "installed_count": 18,
+      "expected_count": 18,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "POR1": {
+      "installed_count": 18,
+      "expected_count": 18,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "NED1": {
+      "installed_count": 18,
+      "expected_count": 18,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "BEL1": {
+      "installed_count": 16,
+      "expected_count": 18,
+      "added_count": 3,
+      "removed_count": 1,
+      "format_change": true,
+      "added": [
+        {
+          "reference": 458769,
+          "club_name": "KV Kortrijk",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 458772,
+          "club_name": "SK Beveren",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 458778,
+          "club_name": "Lommel SK",
+          "team_type": "FIRST"
+        }
+      ],
+      "removed": [
+        {
+          "reference": 458762,
+          "club_name": "FCV Dender EH",
+          "team_type": "FIRST"
+        }
+      ],
+      "status": "DIFF"
+    },
+    "TUR1": {
+      "installed_count": 18,
+      "expected_count": 18,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "CZE1": {
+      "installed_count": 16,
+      "expected_count": 16,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "GER2": {
+      "installed_count": 18,
+      "expected_count": 18,
+      "added_count": 0,
+      "removed_count": 0,
+      "format_change": false,
+      "added": [],
+      "removed": [],
+      "status": "MATCH"
+    },
+    "GER3": {
+      "installed_count": 20,
+      "expected_count": 20,
+      "added_count": 4,
+      "removed_count": 4,
+      "format_change": false,
+      "added": [
+        {
+          "reference": 1376314,
+          "club_name": "SV Meppen",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 1376345,
+          "club_name": "SC Fortuna Köln",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 1376364,
+          "club_name": "SG Sonnenhof Großaspach",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 1376371,
+          "club_name": "FC Würzburger Kickers",
+          "team_type": "FIRST"
+        }
+      ],
+      "removed": [
+        {
+          "reference": 1376293,
+          "club_name": "SSV Ulm 1846 Fussball",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 1376303,
+          "club_name": "TSV 1860 München",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 1376305,
+          "club_name": "FC Erzgebirge Aue",
+          "team_type": "FIRST"
+        },
+        {
+          "reference": 1376309,
+          "club_name": "1. FC Schweinfurt 1905",
+          "team_type": "FIRST"
+        }
+      ],
+      "status": "DIFF"
+    }
+  },
+  "machine_report_path": "reports/current/league-membership-validation.json",
+  "bel2_dependency": {
+    "source_url": "https://www.proleague.be/cpl-clubs",
+    "source_sha256": "169d04231a13782d7628bfd0e84f76276a6e96436827e2a2a8985a34ce82b3c6",
+    "season_source_url": "https://www.proleague.be/nieuws/kalender-2026-2027-nieuwkomers-treffen-elkaar-meteen-in-challenger-pro-league",
+    "season_source_sha256": "71822f607f818e067fa459ea4a3ee505729232457449dd496e0374af81aecc05",
+    "season": "2026/27",
+    "expected_count": 15,
+    "actual_count": 15,
+    "status": "CONFIRMED",
+    "clubs": [
+      {
+        "club_name": "Club NXT",
+        "native_club_id": "458756",
+        "reference_id": "458754",
+        "team_type": "RESERVE",
+        "serialized_reference": 17235970,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "FCV Dender EH",
+        "native_club_id": "458795",
+        "reference_id": "458762",
+        "team_type": "FIRST",
+        "serialized_reference": 458762,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "Jong Genk",
+        "native_club_id": "458768",
+        "reference_id": "458755",
+        "team_type": "RESERVE",
+        "serialized_reference": 17235971,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "Jong KAA Gent",
+        "native_club_id": "458753",
+        "reference_id": "458758",
+        "team_type": "RESERVE",
+        "serialized_reference": 17235974,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "K. Beerschot VA",
+        "native_club_id": "458802",
+        "reference_id": "458770",
+        "team_type": "FIRST",
+        "serialized_reference": 458770,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "K. Lierse S.K.",
+        "native_club_id": "462931",
+        "reference_id": "458775",
+        "team_type": "FIRST",
+        "serialized_reference": 458775,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "KAS Eupen",
+        "native_club_id": "458773",
+        "reference_id": "458777",
+        "team_type": "FIRST",
+        "serialized_reference": 458777,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "KSC Lokeren",
+        "native_club_id": "462858",
+        "reference_id": "458774",
+        "team_type": "FIRST",
+        "serialized_reference": 458774,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "Patro Eisden Maasmechelen",
+        "native_club_id": "458793",
+        "reference_id": "458773",
+        "team_type": "FIRST",
+        "serialized_reference": 458773,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "RFC Liège",
+        "native_club_id": "458801",
+        "reference_id": "458776",
+        "team_type": "FIRST",
+        "serialized_reference": 458776,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "RFC Seraing",
+        "native_club_id": "458822",
+        "reference_id": "458780",
+        "team_type": "FIRST",
+        "serialized_reference": 458780,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "Royal Excelsior Virton",
+        "native_club_id": "458772",
+        "reference_id": "458798",
+        "team_type": "FIRST",
+        "serialized_reference": 458798,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "Royal Francs Borains",
+        "native_club_id": "462979",
+        "reference_id": "458779",
+        "team_type": "FIRST",
+        "serialized_reference": 458779,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "RSCA Futures",
+        "native_club_id": "458766",
+        "reference_id": "458756",
+        "team_type": "RESERVE",
+        "serialized_reference": 17235972,
+        "status": "MAPPED"
+      },
+      {
+        "club_name": "Sporting Hasselt",
+        "native_club_id": "462867",
+        "reference_id": "458783",
+        "team_type": "FIRST",
+        "serialized_reference": 458783,
+        "status": "MAPPED"
+      }
+    ],
+    "notes": "Official Pro League Challenger Pro League Clubs page lists 15 clubs for 2026/27. Four U23 entries are represented with existing native reserve encodings: Club NXT, Jong Genk, Jong KAA Gent, and RSCA Futures."
+  }
+}

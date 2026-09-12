@@ -2,6 +2,26 @@
 
 Updated: 2026-09-12 UTC
 
+## Active sprint: 2026/27 football data completion (supersedes next actions below)
+
+The user confirmed the integrated corrected current-loan behavior in a NEW career:
+representative integrated current-loan runtime test PASS. Native08's 794 active loans,
+744 corrected starts and 50 intentionally unchanged starts are accepted foundation.
+Do not repeat Native07/08 or general loan diagnosis. Historical observations below are
+retained as evidence history; their pending loan-verification instructions are superseded.
+
+Current production scope: ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1,
+CZE1, GER2, GER3. Complete authoritative 2026/27 membership, club-level squad and
+transfer coverage, explicit exceptions, then freeze and build deterministic Native10
+from `data/generated/release-candidate/native08-integrated-20260912-01`.
+Preserve ratings, history, ownership, loan ends, contracts and future conditions except
+source-supported explicit deltas. No rating calibration or extended simulation this sprint.
+
+Work products: `data/current/`, `reports/current/`. Membership and bounded squad workers
+produce staging evidence; Sol owns canonical integration. Never treat inherited applied
+counts as current coverage. Freeze requires acceptable coverage; candidate release
+requires native reread, exact semantic diff and one representative new-career smoke.
+
 ## Release Goal
 
 Deliver a playable FM27 season update for FIFA Manager 13. Native/database proof is

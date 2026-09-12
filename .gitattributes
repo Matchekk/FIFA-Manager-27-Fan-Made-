@@ -1,0 +1,3 @@
+# Source-bound current-data manifests require identical bytes across checkouts.
+/data/current/** -text whitespace=cr-at-eol
+/reports/current/** -text whitespace=cr-at-eol

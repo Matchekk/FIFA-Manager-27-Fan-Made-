@@ -1,0 +1,147 @@
+league,club,club_tm_id,players,status,source
+BEL1,RSC Anderlecht,58,33,CAPTURED,https://www.transfermarkt.de/rsc-anderlecht/kader/verein/58/saison_id/2026/plus/1
+BEL1,Royal Antwerpen FC,1096,31,CAPTURED,https://www.transfermarkt.de/royal-antwerpen-fc/kader/verein/1096/saison_id/2026/plus/1
+BEL1,SK Beveren,28643,29,CAPTURED,https://www.transfermarkt.de/sk-beveren/kader/verein/28643/saison_id/2026/plus/1
+BEL1,Cercle Brügge,520,29,CAPTURED,https://www.transfermarkt.de/cercle-brugge/kader/verein/520/saison_id/2026/plus/1
+BEL1,Royal Charleroi SC,172,25,CAPTURED,https://www.transfermarkt.de/royal-charleroi-sc/kader/verein/172/saison_id/2026/plus/1
+BEL1,Club Brügge,2282,28,CAPTURED,https://www.transfermarkt.de/club-brugge/kader/verein/2282/saison_id/2026/plus/1
+BEL1,KRC Genk,1184,31,CAPTURED,https://www.transfermarkt.de/krc-genk/kader/verein/1184/saison_id/2026/plus/1
+BEL1,KAA Gent,157,33,CAPTURED,https://www.transfermarkt.de/kaa-gent/kader/verein/157/saison_id/2026/plus/1
+BEL1,KV Kortrijk,601,30,CAPTURED,https://www.transfermarkt.de/kv-kortrijk/kader/verein/601/saison_id/2026/plus/1
+BEL1,RAAL La Louvière,3901,28,CAPTURED,https://www.transfermarkt.de/raal-la-louviere/kader/verein/3901/saison_id/2026/plus/1
+BEL1,Lommel SK,5026,29,CAPTURED,https://www.transfermarkt.de/lommel-sk/kader/verein/5026/saison_id/2026/plus/1
+BEL1,KV Mechelen,354,34,CAPTURED,https://www.transfermarkt.de/kv-mechelen/kader/verein/354/saison_id/2026/plus/1
+BEL1,Oud-Heverlee Leuven,2727,34,CAPTURED,https://www.transfermarkt.de/oud-heverlee-leuven/kader/verein/2727/saison_id/2026/plus/1
+BEL1,VV St. Truiden,475,27,CAPTURED,https://www.transfermarkt.de/vv-st-truiden/kader/verein/475/saison_id/2026/plus/1
+BEL1,Standard Lüttich,3057,27,CAPTURED,https://www.transfermarkt.de/standard-luttich/kader/verein/3057/saison_id/2026/plus/1
+BEL1,Union Saint-Gilloise,3948,26,CAPTURED,https://www.transfermarkt.de/union-saint-gilloise/kader/verein/3948/saison_id/2026/plus/1
+BEL1,KVC Westerlo,968,31,CAPTURED,https://www.transfermarkt.de/kvc-westerlo/kader/verein/968/saison_id/2026/plus/1
+BEL1,Zulte Waregem,3508,27,CAPTURED,https://www.transfermarkt.de/zulte-waregem/kader/verein/3508/saison_id/2026/plus/1
+CZE1,SK Slavia Prag,62,29,CAPTURED,https://www.transfermarkt.de/sk-slavia-prag/kader/verein/62/saison_id/2026/plus/1
+CZE1,AC Sparta Prag,197,30,CAPTURED,https://www.transfermarkt.de/ac-sparta-prag/kader/verein/197/saison_id/2026/plus/1
+CZE1,FC Viktoria Pilsen,941,29,CAPTURED,https://www.transfermarkt.de/fc-viktoria-pilsen/kader/verein/941/saison_id/2026/plus/1
+CZE1,FC Hradec Kralove,1897,27,CAPTURED,https://www.transfermarkt.de/fc-hradec-kralove/kader/verein/1897/saison_id/2026/plus/1
+CZE1,FK Jablonec,1322,29,CAPTURED,https://www.transfermarkt.de/fk-jablonec/kader/verein/1322/saison_id/2026/plus/1
+CZE1,FC Slovan Liberec,697,31,CAPTURED,https://www.transfermarkt.de/fc-slovan-liberec/kader/verein/697/saison_id/2026/plus/1
+CZE1,SK Sigma Olmütz,2311,32,CAPTURED,https://www.transfermarkt.de/sk-sigma-olmutz/kader/verein/2311/saison_id/2026/plus/1
+CZE1,FK Pardubice,1496,32,CAPTURED,https://www.transfermarkt.de/fk-pardubice/kader/verein/1496/saison_id/2026/plus/1
+CZE1,Bohemians Prag 1905,715,30,CAPTURED,https://www.transfermarkt.de/bohemians-prag-1905/kader/verein/715/saison_id/2026/plus/1
+CZE1,FK Teplice,814,32,CAPTURED,https://www.transfermarkt.de/fk-teplice/kader/verein/814/saison_id/2026/plus/1
+CZE1,FC Zlin,5545,33,CAPTURED,https://www.transfermarkt.de/fc-zlin/kader/verein/5545/saison_id/2026/plus/1
+CZE1,FK Mlada Boleslav,5546,30,CAPTURED,https://www.transfermarkt.de/fk-mlada-boleslav/kader/verein/5546/saison_id/2026/plus/1
+CZE1,1.FC Slovacko,5544,30,CAPTURED,https://www.transfermarkt.de/1-fc-slovacko/kader/verein/5544/saison_id/2026/plus/1
+CZE1,FC Banik Ostrau,377,26,CAPTURED,https://www.transfermarkt.de/fc-banik-ostrau/kader/verein/377/saison_id/2026/plus/1
+CZE1,FC Zbrojovka Brünn,5225,31,CAPTURED,https://www.transfermarkt.de/fc-zbrojovka-brunn/kader/verein/5225/saison_id/2026/plus/1
+CZE1,SK Artis Brünn,24325,34,CAPTURED,https://www.transfermarkt.de/sk-artis-brunn/kader/verein/24325/saison_id/2026/plus/1
+ESP1,FC Barcelona,131,27,CAPTURED,https://www.transfermarkt.de/fc-barcelona/kader/verein/131/saison_id/2026/plus/1
+ESP1,Real Madrid,418,27,CAPTURED,https://www.transfermarkt.de/real-madrid/kader/verein/418/saison_id/2026/plus/1
+ESP1,FC Villarreal,1050,24,CAPTURED,https://www.transfermarkt.de/fc-villarreal/kader/verein/1050/saison_id/2026/plus/1
+ESP1,Atlético Madrid,13,25,CAPTURED,https://www.transfermarkt.de/atletico-madrid/kader/verein/13/saison_id/2026/plus/1
+ESP1,Real Betis Sevilla,150,25,CAPTURED,https://www.transfermarkt.de/real-betis-sevilla/kader/verein/150/saison_id/2026/plus/1
+ESP1,Celta Vigo,940,25,CAPTURED,https://www.transfermarkt.de/celta-vigo/kader/verein/940/saison_id/2026/plus/1
+ESP1,FC Getafe,3709,23,CAPTURED,https://www.transfermarkt.de/fc-getafe/kader/verein/3709/saison_id/2026/plus/1
+ESP1,Rayo Vallecano,367,27,CAPTURED,https://www.transfermarkt.de/rayo-vallecano/kader/verein/367/saison_id/2026/plus/1
+ESP1,FC Valencia,1049,27,CAPTURED,https://www.transfermarkt.de/fc-valencia/kader/verein/1049/saison_id/2026/plus/1
+ESP1,Real Sociedad San Sebastián,681,24,CAPTURED,https://www.transfermarkt.de/real-sociedad-san-sebastian/kader/verein/681/saison_id/2026/plus/1
+ESP1,Espanyol Barcelona,714,25,CAPTURED,https://www.transfermarkt.de/espanyol-barcelona/kader/verein/714/saison_id/2026/plus/1
+ESP1,Athletic Bilbao,621,26,CAPTURED,https://www.transfermarkt.de/athletic-bilbao/kader/verein/621/saison_id/2026/plus/1
+ESP1,FC Sevilla,368,26,CAPTURED,https://www.transfermarkt.de/fc-sevilla/kader/verein/368/saison_id/2026/plus/1
+ESP1,Deportivo Alavés,1108,24,CAPTURED,https://www.transfermarkt.de/deportivo-alaves/kader/verein/1108/saison_id/2026/plus/1
+ESP1,FC Elche,1531,28,CAPTURED,https://www.transfermarkt.de/fc-elche/kader/verein/1531/saison_id/2026/plus/1
+ESP1,UD Levante,3368,25,CAPTURED,https://www.transfermarkt.de/ud-levante/kader/verein/3368/saison_id/2026/plus/1
+ESP1,CA Osasuna,331,23,CAPTURED,https://www.transfermarkt.de/ca-osasuna/kader/verein/331/saison_id/2026/plus/1
+ESP1,Racing Santander,630,24,CAPTURED,https://www.transfermarkt.de/racing-santander/kader/verein/630/saison_id/2026/plus/1
+ESP1,Deportivo A Coruña,897,28,CAPTURED,https://www.transfermarkt.de/deportivo-a-coruna/kader/verein/897/saison_id/2026/plus/1
+ESP1,FC Málaga,1084,28,CAPTURED,https://www.transfermarkt.de/fc-malaga/kader/verein/1084/saison_id/2026/plus/1
+FRA1,Paris Saint-Germain,583,24,CAPTURED,https://www.transfermarkt.de/paris-saint-germain/kader/verein/583/saison_id/2026/plus/1
+FRA1,RC Lens,826,29,CAPTURED,https://www.transfermarkt.de/rc-lens/kader/verein/826/saison_id/2026/plus/1
+FRA1,LOSC Lille,1082,27,CAPTURED,https://www.transfermarkt.de/losc-lille/kader/verein/1082/saison_id/2026/plus/1
+FRA1,Olympique Lyon,1041,29,CAPTURED,https://www.transfermarkt.de/olympique-lyon/kader/verein/1041/saison_id/2026/plus/1
+FRA1,Olympique Marseille,244,22,CAPTURED,https://www.transfermarkt.de/olympique-marseille/kader/verein/244/saison_id/2026/plus/1
+FRA1,FC Stade Rennes,273,26,CAPTURED,https://www.transfermarkt.de/fc-stade-rennes/kader/verein/273/saison_id/2026/plus/1
+FRA1,AS Monaco,162,26,CAPTURED,https://www.transfermarkt.de/as-monaco/kader/verein/162/saison_id/2026/plus/1
+FRA1,Racing Straßburg,667,29,CAPTURED,https://www.transfermarkt.de/racing-strassburg/kader/verein/667/saison_id/2026/plus/1
+FRA1,FC Lorient,1158,25,CAPTURED,https://www.transfermarkt.de/fc-lorient/kader/verein/1158/saison_id/2026/plus/1
+FRA1,FC Toulouse,415,24,CAPTURED,https://www.transfermarkt.de/fc-toulouse/kader/verein/415/saison_id/2026/plus/1
+FRA1,Paris FC,10004,25,CAPTURED,https://www.transfermarkt.de/paris-fc/kader/verein/10004/saison_id/2026/plus/1
+FRA1,Stade Brest 29,3911,23,CAPTURED,https://www.transfermarkt.de/stade-brest-29/kader/verein/3911/saison_id/2026/plus/1
+FRA1,Angers SCO,1420,22,CAPTURED,https://www.transfermarkt.de/angers-sco/kader/verein/1420/saison_id/2026/plus/1
+FRA1,Le Havre AC,738,26,CAPTURED,https://www.transfermarkt.de/le-havre-ac/kader/verein/738/saison_id/2026/plus/1
+FRA1,AJ Auxerre,290,32,CAPTURED,https://www.transfermarkt.de/aj-auxerre/kader/verein/290/saison_id/2026/plus/1
+FRA1,OGC Nizza,417,28,CAPTURED,https://www.transfermarkt.de/ogc-nizza/kader/verein/417/saison_id/2026/plus/1
+FRA1,ESTAC Troyes,1095,28,CAPTURED,https://www.transfermarkt.de/estac-troyes/kader/verein/1095/saison_id/2026/plus/1
+FRA1,FC Le Mans,1164,29,CAPTURED,https://www.transfermarkt.de/fc-le-mans/kader/verein/1164/saison_id/2026/plus/1
+ITA1,Inter Mailand,46,24,CAPTURED,https://www.transfermarkt.de/inter-mailand/kader/verein/46/saison_id/2026/plus/1
+ITA1,SSC Neapel,6195,27,CAPTURED,https://www.transfermarkt.de/ssc-neapel/kader/verein/6195/saison_id/2026/plus/1
+ITA1,AS Rom,12,25,CAPTURED,https://www.transfermarkt.de/as-rom/kader/verein/12/saison_id/2026/plus/1
+ITA1,Como 1907,1047,27,CAPTURED,https://www.transfermarkt.de/como-1907/kader/verein/1047/saison_id/2026/plus/1
+ITA1,AC Mailand,5,28,CAPTURED,https://www.transfermarkt.de/ac-mailand/kader/verein/5/saison_id/2026/plus/1
+ITA1,Juventus Turin,506,29,CAPTURED,https://www.transfermarkt.de/juventus-turin/kader/verein/506/saison_id/2026/plus/1
+ITA1,Atalanta Bergamo,800,24,CAPTURED,https://www.transfermarkt.de/atalanta-bergamo/kader/verein/800/saison_id/2026/plus/1
+ITA1,FC Bologna,1025,27,CAPTURED,https://www.transfermarkt.de/fc-bologna/kader/verein/1025/saison_id/2026/plus/1
+ITA1,Lazio Rom,398,34,CAPTURED,https://www.transfermarkt.de/lazio-rom/kader/verein/398/saison_id/2026/plus/1
+ITA1,Udinese Calcio,410,27,CAPTURED,https://www.transfermarkt.de/udinese-calcio/kader/verein/410/saison_id/2026/plus/1
+ITA1,US Sassuolo,6574,34,CAPTURED,https://www.transfermarkt.de/us-sassuolo/kader/verein/6574/saison_id/2026/plus/1
+ITA1,FC Turin,416,29,CAPTURED,https://www.transfermarkt.de/fc-turin/kader/verein/416/saison_id/2026/plus/1
+ITA1,Parma Calcio 1913,130,28,CAPTURED,https://www.transfermarkt.de/parma-calcio-1913/kader/verein/130/saison_id/2026/plus/1
+ITA1,Cagliari Calcio,1390,30,CAPTURED,https://www.transfermarkt.de/cagliari-calcio/kader/verein/1390/saison_id/2026/plus/1
+ITA1,AC Florenz,430,25,CAPTURED,https://www.transfermarkt.de/ac-florenz/kader/verein/430/saison_id/2026/plus/1
+ITA1,Genua CFC,252,31,CAPTURED,https://www.transfermarkt.de/genua-cfc/kader/verein/252/saison_id/2026/plus/1
+ITA1,US Lecce,1005,34,CAPTURED,https://www.transfermarkt.de/us-lecce/kader/verein/1005/saison_id/2026/plus/1
+ITA1,Venezia FC,607,36,CAPTURED,https://www.transfermarkt.de/venezia-fc/kader/verein/607/saison_id/2026/plus/1
+ITA1,Frosinone Calcio,8970,30,CAPTURED,https://www.transfermarkt.de/frosinone-calcio/kader/verein/8970/saison_id/2026/plus/1
+ITA1,AC Monza,2919,31,CAPTURED,https://www.transfermarkt.de/ac-monza/kader/verein/2919/saison_id/2026/plus/1
+NED1,ADO Den Haag,1268,28,CAPTURED,https://www.transfermarkt.de/ado-den-haag/kader/verein/1268/saison_id/2026/plus/1
+NED1,Ajax Amsterdam,610,27,CAPTURED,https://www.transfermarkt.de/ajax-amsterdam/kader/verein/610/saison_id/2026/plus/1
+NED1,AZ Alkmaar,1090,29,CAPTURED,https://www.transfermarkt.de/az-alkmaar/kader/verein/1090/saison_id/2026/plus/1
+NED1,Excelsior Rotterdam,798,25,CAPTURED,https://www.transfermarkt.de/excelsior-rotterdam/kader/verein/798/saison_id/2026/plus/1
+NED1,FC Groningen,202,28,CAPTURED,https://www.transfermarkt.de/fc-groningen/kader/verein/202/saison_id/2026/plus/1
+NED1,FC Twente Enschede,317,27,CAPTURED,https://www.transfermarkt.de/fc-twente-enschede/kader/verein/317/saison_id/2026/plus/1
+NED1,FC Utrecht,200,31,CAPTURED,https://www.transfermarkt.de/fc-utrecht/kader/verein/200/saison_id/2026/plus/1
+NED1,Feyenoord Rotterdam,234,31,CAPTURED,https://www.transfermarkt.de/feyenoord-rotterdam/kader/verein/234/saison_id/2026/plus/1
+NED1,Fortuna Sittard,385,23,CAPTURED,https://www.transfermarkt.de/fortuna-sittard/kader/verein/385/saison_id/2026/plus/1
+NED1,Go Ahead Eagles Deventer,1435,29,CAPTURED,https://www.transfermarkt.de/go-ahead-eagles-deventer/kader/verein/1435/saison_id/2026/plus/1
+NED1,NEC Nijmegen,467,30,CAPTURED,https://www.transfermarkt.de/nec-nijmegen/kader/verein/467/saison_id/2026/plus/1
+NED1,PEC Zwolle,1269,26,CAPTURED,https://www.transfermarkt.de/pec-zwolle/kader/verein/1269/saison_id/2026/plus/1
+NED1,PSV Eindhoven,383,31,CAPTURED,https://www.transfermarkt.de/psv-eindhoven/kader/verein/383/saison_id/2026/plus/1
+NED1,SC Cambuur Leeuwarden,133,28,CAPTURED,https://www.transfermarkt.de/sc-cambuur-leeuwarden/kader/verein/133/saison_id/2026/plus/1
+NED1,SC Heerenveen,306,25,CAPTURED,https://www.transfermarkt.de/sc-heerenveen/kader/verein/306/saison_id/2026/plus/1
+NED1,Sparta Rotterdam,468,25,CAPTURED,https://www.transfermarkt.de/sparta-rotterdam/kader/verein/468/saison_id/2026/plus/1
+NED1,SC Telstar,1434,27,CAPTURED,https://www.transfermarkt.de/sc-telstar/kader/verein/1434/saison_id/2026/plus/1
+NED1,Willem II Tilburg,403,29,CAPTURED,https://www.transfermarkt.de/willem-ii-tilburg/kader/verein/403/saison_id/2026/plus/1
+POR1,FC Porto,720,28,CAPTURED,https://www.transfermarkt.de/fc-porto/kader/verein/720/saison_id/2026/plus/1
+POR1,Sporting Lissabon,336,29,CAPTURED,https://www.transfermarkt.de/sporting-lissabon/kader/verein/336/saison_id/2026/plus/1
+POR1,Benfica Lissabon,294,27,CAPTURED,https://www.transfermarkt.de/benfica-lissabon/kader/verein/294/saison_id/2026/plus/1
+POR1,SC Braga,1075,27,CAPTURED,https://www.transfermarkt.de/sc-braga/kader/verein/1075/saison_id/2026/plus/1
+POR1,FC Famalicão,3329,26,CAPTURED,https://www.transfermarkt.de/fc-famalicao/kader/verein/3329/saison_id/2026/plus/1
+POR1,Gil Vicente FC,2424,30,CAPTURED,https://www.transfermarkt.de/gil-vicente-fc/kader/verein/2424/saison_id/2026/plus/1
+POR1,Moreirense FC,979,30,CAPTURED,https://www.transfermarkt.de/moreirense-fc/kader/verein/979/saison_id/2026/plus/1
+POR1,FC Arouca,8024,27,CAPTURED,https://www.transfermarkt.de/fc-arouca/kader/verein/8024/saison_id/2026/plus/1
+POR1,Vitória Guimarães SC,2420,30,CAPTURED,https://www.transfermarkt.de/vitoria-guimaraes-sc/kader/verein/2420/saison_id/2026/plus/1
+POR1,GD Estoril Praia,1465,29,CAPTURED,https://www.transfermarkt.de/gd-estoril-praia/kader/verein/1465/saison_id/2026/plus/1
+POR1,FC Alverca,2521,34,CAPTURED,https://www.transfermarkt.de/fc-alverca/kader/verein/2521/saison_id/2026/plus/1
+POR1,Rio Ave FC,2425,36,CAPTURED,https://www.transfermarkt.de/rio-ave-fc/kader/verein/2425/saison_id/2026/plus/1
+POR1,CD Santa Clara,2423,27,CAPTURED,https://www.transfermarkt.de/cd-santa-clara/kader/verein/2423/saison_id/2026/plus/1
+POR1,CD Nacional,982,33,CAPTURED,https://www.transfermarkt.de/cd-nacional/kader/verein/982/saison_id/2026/plus/1
+POR1,CF Estrela Amadora,2431,30,CAPTURED,https://www.transfermarkt.de/cf-estrela-amadora/kader/verein/2431/saison_id/2026/plus/1
+POR1,Casa Pia AC,3268,29,CAPTURED,https://www.transfermarkt.de/casa-pia-ac/kader/verein/3268/saison_id/2026/plus/1
+POR1,CS Marítimo,1301,31,CAPTURED,https://www.transfermarkt.de/cs-maritimo/kader/verein/1301/saison_id/2026/plus/1
+POR1,Académico Viseu FC,7788,30,CAPTURED,https://www.transfermarkt.de/academico-viseu-fc/kader/verein/7788/saison_id/2026/plus/1
+TUR1,Galatasaray,141,32,CAPTURED,https://www.transfermarkt.de/galatasaray/kader/verein/141/saison_id/2026/plus/1
+TUR1,Fenerbahce,36,28,CAPTURED,https://www.transfermarkt.de/fenerbahce/kader/verein/36/saison_id/2026/plus/1
+TUR1,Trabzonspor,449,30,CAPTURED,https://www.transfermarkt.de/trabzonspor/kader/verein/449/saison_id/2026/plus/1
+TUR1,Besiktas JK,114,31,CAPTURED,https://www.transfermarkt.de/besiktas-jk/kader/verein/114/saison_id/2026/plus/1
+TUR1,Basaksehir FK,6890,32,CAPTURED,https://www.transfermarkt.de/basaksehir-fk/kader/verein/6890/saison_id/2026/plus/1
+TUR1,Göztepe,1467,26,CAPTURED,https://www.transfermarkt.de/goztepe/kader/verein/1467/saison_id/2026/plus/1
+TUR1,Samsunspor,152,29,CAPTURED,https://www.transfermarkt.de/samsunspor/kader/verein/152/saison_id/2026/plus/1
+TUR1,Caykur Rizespor,126,29,CAPTURED,https://www.transfermarkt.de/caykur-rizespor/kader/verein/126/saison_id/2026/plus/1
+TUR1,Konyaspor,2293,28,CAPTURED,https://www.transfermarkt.de/konyaspor/kader/verein/2293/saison_id/2026/plus/1
+TUR1,Kocaelispor,120,29,CAPTURED,https://www.transfermarkt.de/kocaelispor/kader/verein/120/saison_id/2026/plus/1
+TUR1,Alanyaspor,11282,27,CAPTURED,https://www.transfermarkt.de/alanyaspor/kader/verein/11282/saison_id/2026/plus/1
+TUR1,Gaziantep FK,2832,33,CAPTURED,https://www.transfermarkt.de/gaziantep-fk/kader/verein/2832/saison_id/2026/plus/1
+TUR1,Kasimpasa,10484,32,CAPTURED,https://www.transfermarkt.de/kasimpasa/kader/verein/10484/saison_id/2026/plus/1
+TUR1,Genclerbirligi Ankara,820,30,CAPTURED,https://www.transfermarkt.de/genclerbirligi-ankara/kader/verein/820/saison_id/2026/plus/1
+TUR1,Eyüpspor,7160,28,CAPTURED,https://www.transfermarkt.de/eyupspor/kader/verein/7160/saison_id/2026/plus/1
+TUR1,Erzurumspor FK,39722,28,CAPTURED,https://www.transfermarkt.de/erzurumspor-fk/kader/verein/39722/saison_id/2026/plus/1
+TUR1,Amed SK,12382,28,CAPTURED,https://www.transfermarkt.de/amed-sk/kader/verein/12382/saison_id/2026/plus/1
+TUR1,Corum FK,37951,29,CAPTURED,https://www.transfermarkt.de/corum-fk/kader/verein/37951/saison_id/2026/plus/1

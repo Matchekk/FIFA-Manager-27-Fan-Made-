@@ -1,0 +1,363 @@
+{
+  "snapshot_date": "2026-09-12",
+  "sources": [
+    {
+      "url": "https://www.transfermarkt.de/premier-league/transfers/wettbewerb/GB1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:58:49.331174+00:00",
+      "sha256": "dea85796083e3a3c441b9d8a4a6bb63799d6b5db6581c82fc0743e65e1042ee3",
+      "file": "dea85796083e3a3c441b9d8a4a6bb63799d6b5db6581c82fc0743e65e1042ee3.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/serie-a/transfers/wettbewerb/IT1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:58:52.843523+00:00",
+      "sha256": "64d949311be0dad09b95e57c83f70b538dd5848993bcd3dae3a084b20792d8c0",
+      "file": "64d949311be0dad09b95e57c83f70b538dd5848993bcd3dae3a084b20792d8c0.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/laliga/transfers/wettbewerb/ES1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:58:55.327813+00:00",
+      "sha256": "6a528989c7bb78680fac9ebd978e8569f74adc549afa1e6b1259c53ff8c8e047",
+      "file": "6a528989c7bb78680fac9ebd978e8569f74adc549afa1e6b1259c53ff8c8e047.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/bundesliga/transfers/wettbewerb/L1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:58:58.167852+00:00",
+      "sha256": "c08e4b3a81f4ba445c4d8343c0dd6f9cfb1b5e5f12689978c0e5485f5030360a",
+      "file": "c08e4b3a81f4ba445c4d8343c0dd6f9cfb1b5e5f12689978c0e5485f5030360a.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/ligue-1/transfers/wettbewerb/FR1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:01.035327+00:00",
+      "sha256": "d0bdedb0ffa3ae6d9bd09c12fb5a85d4118138f6388ab0440cf2ba38e857b62b",
+      "file": "d0bdedb0ffa3ae6d9bd09c12fb5a85d4118138f6388ab0440cf2ba38e857b62b.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/liga-portugal/transfers/wettbewerb/PO1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:05.660931+00:00",
+      "sha256": "387b98c14254a71a96aa32f796d043aff999893be0ea4725ee83d7b986855445",
+      "file": "387b98c14254a71a96aa32f796d043aff999893be0ea4725ee83d7b986855445.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/eredivisie/transfers/wettbewerb/NL1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:08.559081+00:00",
+      "sha256": "11dc5cade25e44ad6fb6a4fa951faaf3fb97825e83aa2704c9ddc2f99499f336",
+      "file": "11dc5cade25e44ad6fb6a4fa951faaf3fb97825e83aa2704c9ddc2f99499f336.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/jupiler-pro-league/transfers/wettbewerb/BE1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:11.058025+00:00",
+      "sha256": "b7bb2a6732c6fd36f5bc04c1a381201e6b000a9931eb01f1c8cd74786f19bd7c",
+      "file": "b7bb2a6732c6fd36f5bc04c1a381201e6b000a9931eb01f1c8cd74786f19bd7c.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/super-lig/transfers/wettbewerb/TR1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:15.028959+00:00",
+      "sha256": "673f7a4eee1e2dc5a16d0727bf4f4c45015c921cc092e8d3b7b759b5db06f4be",
+      "file": "673f7a4eee1e2dc5a16d0727bf4f4c45015c921cc092e8d3b7b759b5db06f4be.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/chance-liga/transfers/wettbewerb/TS1/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:23.798060+00:00",
+      "sha256": "4eb600e7a8e262f0b3e2e95a268a14ae8f515e096d539a31c9981af247ff5f63",
+      "file": "4eb600e7a8e262f0b3e2e95a268a14ae8f515e096d539a31c9981af247ff5f63.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/2-bundesliga/transfers/wettbewerb/L2/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:27.048038+00:00",
+      "sha256": "8357bb69c9755552ffad93325dd5d33bb6454a33e2c694a86ffd0059b934029a",
+      "file": "8357bb69c9755552ffad93325dd5d33bb6454a33e2c694a86ffd0059b934029a.html"
+    },
+    {
+      "url": "https://www.transfermarkt.de/3-liga/transfers/wettbewerb/L3/saison_id/2026",
+      "retrieved_at": "2026-09-12T19:59:30.665644+00:00",
+      "sha256": "0b3a14cd36b69cd911f6821d5912f845846febfb82537a542ea2dba4cf9dcd3d",
+      "file": "0b3a14cd36b69cd911f6821d5912f845846febfb82537a542ea2dba4cf9dcd3d.html"
+    }
+  ],
+  "failures": [],
+  "coverage": {
+    "ENG1": {
+      "clubs": {
+        "11": "FC Arsenal",
+        "405": "Aston Villa",
+        "989": "AFC Bournemouth",
+        "1148": "FC Brentford",
+        "1237": "Brighton & Hove Albion",
+        "631": "FC Chelsea",
+        "990": "Coventry City",
+        "873": "Crystal Palace",
+        "29": "FC Everton",
+        "931": "FC Fulham",
+        "3008": "Hull City",
+        "677": "Ipswich Town",
+        "399": "Leeds United",
+        "31": "FC Liverpool",
+        "281": "Manchester City",
+        "985": "Manchester United",
+        "762": "Newcastle United",
+        "703": "Nottingham Forest",
+        "289": "AFC Sunderland",
+        "148": "Tottenham Hotspur"
+      },
+      "records": 607
+    },
+    "ITA1": {
+      "clubs": {
+        "46": "Inter Mailand",
+        "6195": "SSC Neapel",
+        "12": "AS Rom",
+        "1047": "Como 1907",
+        "5": "AC Mailand",
+        "506": "Juventus Turin",
+        "800": "Atalanta Bergamo",
+        "1025": "FC Bologna",
+        "398": "Lazio Rom",
+        "410": "Udinese Calcio",
+        "6574": "US Sassuolo",
+        "416": "FC Turin",
+        "130": "Parma Calcio 1913",
+        "1390": "Cagliari Calcio",
+        "430": "AC Florenz",
+        "252": "Genua CFC",
+        "1005": "US Lecce",
+        "607": "Venezia FC",
+        "8970": "Frosinone Calcio",
+        "2919": "AC Monza"
+      },
+      "records": 745
+    },
+    "ESP1": {
+      "clubs": {
+        "131": "FC Barcelona",
+        "418": "Real Madrid",
+        "1050": "FC Villarreal",
+        "13": "Atl\u00e9tico Madrid",
+        "150": "Real Betis Sevilla",
+        "940": "Celta Vigo",
+        "3709": "FC Getafe",
+        "367": "Rayo Vallecano",
+        "1049": "FC Valencia",
+        "681": "Real Sociedad San Sebasti\u00e1n",
+        "714": "Espanyol Barcelona",
+        "621": "Athletic Bilbao",
+        "368": "FC Sevilla",
+        "1108": "Deportivo Alav\u00e9s",
+        "1531": "FC Elche",
+        "3368": "UD Levante",
+        "331": "CA Osasuna",
+        "630": "Racing Santander",
+        "897": "Deportivo A Coru\u00f1a",
+        "1084": "FC M\u00e1laga"
+      },
+      "records": 532
+    },
+    "GER1": {
+      "clubs": {
+        "27": "FC Bayern M\u00fcnchen",
+        "16": "Borussia Dortmund",
+        "23826": "RB Leipzig",
+        "79": "VfB Stuttgart",
+        "533": "TSG 1899 Hoffenheim",
+        "15": "Bayer 04 Leverkusen",
+        "60": "SC Freiburg",
+        "24": "Eintracht Frankfurt",
+        "167": "FC Augsburg",
+        "39": "1.FSV Mainz 05",
+        "89": "1.FC Union Berlin",
+        "18": "Borussia M\u00f6nchengladbach",
+        "41": "Hamburger SV",
+        "3": "1.FC K\u00f6ln",
+        "86": "SV Werder Bremen",
+        "33": "FC Schalke 04",
+        "64": "SV 07 Elversberg",
+        "127": "SC Paderborn 07"
+      },
+      "records": 591
+    },
+    "FRA1": {
+      "clubs": {
+        "583": "Paris Saint-Germain",
+        "826": "RC Lens",
+        "1082": "LOSC Lille",
+        "1041": "Olympique Lyon",
+        "244": "Olympique Marseille",
+        "273": "FC Stade Rennes",
+        "162": "AS Monaco",
+        "667": "Racing Stra\u00dfburg",
+        "1158": "FC Lorient",
+        "415": "FC Toulouse",
+        "10004": "Paris FC",
+        "3911": "Stade Brest 29",
+        "1420": "Angers SCO",
+        "738": "Le Havre AC",
+        "290": "AJ Auxerre",
+        "417": "OGC Nizza",
+        "1095": "ESTAC Troyes",
+        "1164": "FC Le Mans"
+      },
+      "records": 577
+    },
+    "POR1": {
+      "clubs": {
+        "720": "FC Porto",
+        "336": "Sporting Lissabon",
+        "294": "Benfica Lissabon",
+        "1075": "SC Braga",
+        "3329": "FC Famalic\u00e3o",
+        "2424": "Gil Vicente FC",
+        "979": "Moreirense FC",
+        "8024": "FC Arouca",
+        "2420": "Vit\u00f3ria Guimar\u00e3es SC",
+        "1465": "GD Estoril Praia",
+        "2521": "FC Alverca",
+        "2425": "Rio Ave FC",
+        "2423": "CD Santa Clara",
+        "982": "CD Nacional",
+        "2431": "CF Estrela Amadora",
+        "3268": "Casa Pia AC",
+        "1301": "CS Mar\u00edtimo",
+        "7788": "Acad\u00e9mico Viseu FC"
+      },
+      "records": 576
+    },
+    "NED1": {
+      "clubs": {
+        "1268": "ADO Den Haag",
+        "610": "Ajax Amsterdam",
+        "1090": "AZ Alkmaar",
+        "798": "Excelsior Rotterdam",
+        "202": "FC Groningen",
+        "317": "FC Twente Enschede",
+        "200": "FC Utrecht",
+        "234": "Feyenoord Rotterdam",
+        "385": "Fortuna Sittard",
+        "1435": "Go Ahead Eagles Deventer",
+        "467": "NEC Nijmegen",
+        "1269": "PEC Zwolle",
+        "383": "PSV Eindhoven",
+        "133": "SC Cambuur Leeuwarden",
+        "306": "SC Heerenveen",
+        "468": "Sparta Rotterdam",
+        "1434": "SC Telstar",
+        "403": "Willem II Tilburg"
+      },
+      "records": 544
+    },
+    "BEL1": {
+      "clubs": {
+        "58": "RSC Anderlecht",
+        "1096": "Royal Antwerpen FC",
+        "28643": "SK Beveren",
+        "520": "Cercle Br\u00fcgge",
+        "172": "Royal Charleroi SC",
+        "2282": "Club Br\u00fcgge",
+        "1184": "KRC Genk",
+        "157": "KAA Gent",
+        "601": "KV Kortrijk",
+        "3901": "RAAL La Louvi\u00e8re",
+        "5026": "Lommel SK",
+        "354": "KV Mechelen",
+        "2727": "Oud-Heverlee Leuven",
+        "475": "VV St. Truiden",
+        "3057": "Standard L\u00fcttich",
+        "3948": "Union Saint-Gilloise",
+        "968": "KVC Westerlo",
+        "3508": "Zulte Waregem"
+      },
+      "records": 543
+    },
+    "TUR1": {
+      "clubs": {
+        "141": "Galatasaray",
+        "36": "Fenerbahce",
+        "449": "Trabzonspor",
+        "114": "Besiktas JK",
+        "6890": "Basaksehir FK",
+        "1467": "G\u00f6ztepe",
+        "152": "Samsunspor",
+        "126": "Caykur Rizespor",
+        "2293": "Konyaspor",
+        "120": "Kocaelispor",
+        "11282": "Alanyaspor",
+        "2832": "Gaziantep FK",
+        "10484": "Kasimpasa",
+        "820": "Genclerbirligi Ankara",
+        "7160": "Ey\u00fcpspor",
+        "39722": "Erzurumspor FK",
+        "12382": "Amed SK",
+        "37951": "Corum FK"
+      },
+      "records": 844
+    },
+    "CZE1": {
+      "clubs": {
+        "62": "SK Slavia Prag",
+        "197": "AC Sparta Prag",
+        "941": "FC Viktoria Pilsen",
+        "1897": "FC Hradec Kralove",
+        "1322": "FK Jablonec",
+        "697": "FC Slovan Liberec",
+        "2311": "SK Sigma Olm\u00fctz",
+        "1496": "FK Pardubice",
+        "715": "Bohemians Prag 1905",
+        "814": "FK Teplice",
+        "5545": "FC Zlin",
+        "5546": "FK Mlada Boleslav",
+        "5544": "1.FC Slovacko",
+        "377": "FC Banik Ostrau",
+        "5225": "FC Zbrojovka Br\u00fcnn",
+        "24325": "SK Artis Br\u00fcnn"
+      },
+      "records": 452
+    },
+    "GER2": {
+      "clubs": {
+        "82": "VfL Wolfsburg",
+        "2036": "1.FC Heidenheim 1846",
+        "35": "FC St. Pauli",
+        "42": "Hannover 96",
+        "105": "SV Darmstadt 98",
+        "2": "1.FC Kaiserslautern",
+        "44": "Hertha BSC",
+        "4": "1.FC N\u00fcrnberg",
+        "80": "VfL Bochum",
+        "48": "Karlsruher SC",
+        "129": "SG Dynamo Dresden",
+        "269": "Holstein Kiel",
+        "10": "Arminia Bielefeld",
+        "187": "1.FC Magdeburg",
+        "23": "Eintracht Braunschweig",
+        "65": "SpVgg Greuther F\u00fcrth",
+        "81": "VfL Osnabr\u00fcck",
+        "25": "FC Energie Cottbus"
+      },
+      "records": 635
+    },
+    "GER3": {
+      "clubs": {
+        "38": "Fortuna D\u00fcsseldorf",
+        "91": "Preu\u00dfen M\u00fcnster",
+        "56": "Rot-Weiss Essen",
+        "52": "MSV Duisburg",
+        "30": "FC Hansa Rostock",
+        "93": "SC Verl",
+        "8": "Alemannia Aachen",
+        "108": "SV Wehen Wiesbaden",
+        "85": "SV Waldhof Mannheim",
+        "1622": "FC Viktoria K\u00f6ln",
+        "4795": "FC Ingolstadt 04",
+        "109": "SSV Jahn Regensburg",
+        "102": "VfB Stuttgart II",
+        "1": "1.FC Saarbr\u00fccken",
+        "983": "TSG 1899 Hoffenheim II",
+        "476": "TSV Havelse",
+        "247": "SV Meppen",
+        "92": "SC Fortuna K\u00f6ln",
+        "2589": "SG Sonnenhof Gro\u00dfaspach",
+        "1557": "W\u00fcrzburger Kickers"
+      },
+      "records": 609
+    }
+  },
+  "records": 7255
+}

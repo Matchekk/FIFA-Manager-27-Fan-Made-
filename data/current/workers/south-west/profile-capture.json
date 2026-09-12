@@ -1,0 +1,11 @@
+{
+  "snapshot_date": "2026-09-12",
+  "requested": 316,
+  "captured": 315,
+  "failures": [
+    {
+      "player_tm_id": "1069459",
+      "error": "No scoped source profile URL"
+    }
+  ]
+}
