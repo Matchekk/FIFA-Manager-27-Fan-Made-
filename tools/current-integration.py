@@ -359,9 +359,13 @@ def main() -> int:
                                                    row.get("prior_native_fifa_id", "")))
         supplied_dob = row.get("dob", row.get("prior_native_dob", ""))
         if row.get("creation_action") == "DO_NOT_CREATE_USE_NATIVE_BRIDGE":
+            profile_evidence_ok = (source_evidence_ok(row.get("profile_source_url", ""),
+                                                      row.get("profile_source_sha256", ""))
+                if row.get("profile_present") == "YES" else
+                row.get("prior_identity_status") == "CONFIRMED" and
+                row.get("prior_identity_method", "").startswith("EXISTING_OVERRIDE_"))
             evidence_ok = (row.get("snapshot_date") == snapshot
-                and source_evidence_ok(row.get("profile_source_url", ""),
-                                       row.get("profile_source_sha256", ""))
+                and profile_evidence_ok
                 and source_evidence_ok(row.get("current_significance_source_url", ""),
                                        row.get("current_significance_source_sha256", ""))
                 and row.get("prior_native_club_id") == row.get("target_club_id"))
@@ -378,6 +382,8 @@ def main() -> int:
                 and (not supplied_fifa or supplied_fifa == full[ident]["fifa_id"])):
             bridge[tm_id].add(ident)
         elif tm_id and status == "REVIEW_REQUIRED":
+            identity_review_rows[tm_id] = row
+        elif tm_id and row.get("creation_action") == "HOLD_REVIEW_AFTER_PRIOR_ATTEMPTS":
             identity_review_rows[tm_id] = row
 
     events: dict[tuple[str, str], list[dict]] = defaultdict(list)
@@ -502,7 +508,15 @@ def main() -> int:
                                 "Native creation is identity/source complete; neutral rating seed remains provisional",
                                 target=target, method="ZERO_DUPLICATE_CREATE_PLAN"))
                             continue
-                    reviews.append(make_review(row, queue, "No unique Native08 identity by exact DOB and normalized full name", target=target, method=method))
+                    triage = identity_review_rows.get(tm_id, {})
+                    reason = "No unique Native08 identity by exact DOB and normalized full name"
+                    review_method = method
+                    if (queue == "PLAYER_CREATION"
+                            and triage.get("creation_action") == "HOLD_REVIEW_AFTER_PRIOR_ATTEMPTS"):
+                        reason = ("Two-attempt creation triage remains blocked: " +
+                                  triage.get("missing_prerequisites", "UNRESOLVED_IDENTITY_OR_PROFILE"))
+                        review_method = "TWO_ATTEMPT_CREATION_TRIAGE"
+                    reviews.append(make_review(row, queue, reason, target=target, method=review_method))
                     continue
             person = candidates[0]
         seen_fm[person["fm_id"]].add(tm_id)
@@ -613,7 +627,11 @@ def main() -> int:
                 profile_owner = profile.get("loan_owner_tm_id", "")
                 owner_info = resolve_club(profile_owner, profile.get("loan_owner", "")) if profile_owner else None
                 permanent = [e for e in matching_events if e.get("transfer_type") == "PERMANENT"]
-                event_ids = {e.get("event_id", "") for e in permanent}
+                loan_returns = [e for e in matching_events if e.get("transfer_type") == "LOAN_RETURN"
+                                and e.get("explicit_event_date")
+                                and e.get("explicit_event_date") <= snapshot]
+                terminal_events = permanent + loan_returns
+                event_ids = {e.get("event_id", "") for e in terminal_events}
                 plan_source = profile if profile else row
                 plan_joined = profile.get("joined", joined) if profile else joined
                 plan_loan_end = profile.get("contract_until", "") if profile else ""
@@ -655,12 +673,13 @@ def main() -> int:
                             person=person, target=target, method=method))
                     continue
                 if (not profile_owner and len(event_ids) == 1 and valid_contract and valid_previous):
-                    event = permanent[0]
+                    event = terminal_events[0]
                     plans.append({**typed_base, "joined": joined, "contract_until": until,
                         "loan_owner_club_id": "0", "loan_end": "",
                         "action": "RESOLVE_EXPIRED_LOAN" if is_expired else "RESOLVE_ACTIVE_LOAN",
                         "acquisition_event_key": event.get("event_id", ""),
-                        "acquisition_date": event.get("explicit_event_date", "")})
+                        "acquisition_date": (event.get("explicit_event_date", "")
+                            if event.get("explicit_event_date", "") <= joined else "")})
                     continue
                 if (is_expired and profile and not profile_owner and valid_contract and valid_previous
                         and target == previous["previous_loan_owner_club_id"]):
@@ -1077,6 +1096,10 @@ def main() -> int:
         if review["player_tm_id"] in create_ready_tm_ids:
             disposition = "CREATE_READY_NATIVE_ACTION_REQUIRED"
             reason = "Global zero-duplicate proof and source fields are complete; native creation action remains required"
+        elif identity_review.get("creation_action") == "HOLD_REVIEW_AFTER_PRIOR_ATTEMPTS":
+            disposition = "EXPLICIT_PREREQUISITE_BLOCKER"
+            reason = ("Two prior identity/profile attempts completed; unresolved prerequisite: " +
+                      identity_review.get("missing_prerequisites", "UNRESOLVED_IDENTITY_OR_PROFILE"))
         elif age < 20:
             disposition = "ACADEMY_EDGE_CASE_GOOD_ENOUGH"
             reason = "Under-20 source roster entry; retain as explicit coverage edge case unless promoted to creation scope"

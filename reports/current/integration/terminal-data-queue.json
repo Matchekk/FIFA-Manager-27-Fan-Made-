@@ -1,0 +1,36 @@
+{
+  "status": "BLOCKED_ON_EXPLICIT_EVIDENCE_OR_POLICY",
+  "rows": 469,
+  "queue_counts": {
+    "CONTRACT_CHRONOLOGY": 219,
+    "PLAYER_CREATION": 57,
+    "PRIMARY_EXCEPTION": 1,
+    "PROFILE_CONFLICT": 1,
+    "TIMELINE_RESOLUTION": 13,
+    "TRANSFER_TIMELINE": 152,
+    "TYPED_CONDITION": 26
+  },
+  "terminal_state_counts": {
+    "CREATE_PROFILE_FIELDS_REQUIRED": 7,
+    "CREATE_READY_NATIVE_ACTION_REQUIRED": 1,
+    "CURRENT_OWNER_OR_TERMINAL_EVENT_UNPROVEN": 14,
+    "DESTINATION_UNPROVEN_AFTER_TARGETED_SEARCH": 1,
+    "EMPLOYER_AFFILIATION_UNPROVEN": 1,
+    "EXPLICIT_PREREQUISITE_BLOCKER": 12,
+    "IDENTITY_CANDIDATE_REVIEW": 37,
+    "NATIVE_CONDITION_TYPE_NOT_EXPORTED": 9,
+    "OWNERSHIP_CHAIN_UNPROVEN": 13,
+    "OWNER_CONTRACT_END_UNPROVEN": 2,
+    "OWNER_NATIVE_MAPPING_UNPROVEN": 1,
+    "POLICY_DECISION_PENDING": 85,
+    "SOURCE_CHRONOLOGY_UNRESOLVED": 134,
+    "TARGETED_SOURCE_ATTEMPTS_EXHAUSTED": 152
+  },
+  "policy_pending_contracts": 85,
+  "review_source_sha256": "ac01630a1a0008d26f8d45350935c980aae8a1eb2b8999ac20390ba254312600",
+  "undisclosed_contracts_sha256": "4049fc4fefb136d0549d21860ce0554814a7bbadcfa079bd1e04f1aca091d9ca",
+  "typed_review_sha256": "7e7001ac90725eec88595151ff2defb1c4ff623ec0c77ffd387671b3a75b8986",
+  "creation_review_sha256": "eca3b69245f9c7788b302ce39d70c5e53de9de2fab13f00e48307f84b59abc61",
+  "output_sha256": "6821d39955057ce2bb00987ed28cccfcd1037b60dc0b0c24d18fa82d5c353e76",
+  "research_policy": "Do not repeat exhausted searches without a new source lead or user policy decision."
+}

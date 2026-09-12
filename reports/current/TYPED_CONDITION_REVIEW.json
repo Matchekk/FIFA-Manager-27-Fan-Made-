@@ -1,0 +1,15 @@
+{
+  "status": "EXPLICIT_EVIDENCE_BLOCKERS",
+  "rows": 26,
+  "counts": {
+    "CURRENT_OWNER_OR_TERMINAL_EVENT_UNPROVEN": 14,
+    "NATIVE_CONDITION_TYPE_NOT_EXPORTED": 9,
+    "OWNER_CONTRACT_END_UNPROVEN": 2,
+    "OWNER_NATIVE_MAPPING_UNPROVEN": 1
+  },
+  "review_sha256": "ac01630a1a0008d26f8d45350935c980aae8a1eb2b8999ac20390ba254312600",
+  "evidence_sha256": "006576dd9d3720e0b0edfcaed73decec9e631ed54873d764ee589b41d3cbc9ce",
+  "native_before_sha256": "a5dff2a4b4ef72fe785b048b3d4edd8e7f6dc93c72f67fd97f92b55f28655ab0",
+  "output_sha256": "7e7001ac90725eec88595151ff2defb1c4ff623ec0c77ffd387671b3a75b8986",
+  "policy": "No current owner, contract end, destination mapping, or protected condition type is invented."
+}

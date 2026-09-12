@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "policy": "ADDITIONS_ONLY_NO_REPLAY",
+  "base_plan": "data\\generated\\release-candidate\\native10-data-draft-20260913-04\\inputs\\squad.csv",
+  "base_plan_sha256": "db85c7249c849d329dd279b95b4e0c2d2b1f490deeb0175e4f94319c35651ec0",
+  "base_rows": 240,
+  "current_plan": "data\\current\\integration\\candidate-squad-plan.csv",
+  "current_plan_sha256": "674903a07ff6a39ec5070178c24736ac46df9ec5ad36034f39126d3e825ff3bc",
+  "current_rows": 246,
+  "output": "data\\current\\integration\\native10-post-draft04-additions.csv",
+  "output_sha256": "4f9924c7dbbeb38328380efdda59d4b8e2c690db8ff2d6c136588f6be48f5a6a",
+  "addition_count": 6,
+  "addition_fm_ids": [
+    "11915",
+    "200299",
+    "286838",
+    "288050",
+    "291078",
+    "297175"
+  ],
+  "removal_count": 0,
+  "removal_fm_ids": [],
+  "common_changed_count": 30,
+  "common_changes": [
+    {
+      "fm_id": "23491",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "24352",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "70291",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "70441",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "76026",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "76268",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "78065",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "100374",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "148162",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "202320",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "203017",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "203086",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "204315",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "204570",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "257500",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "265834",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "266196",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "269516",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "269565",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "272837",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "274307",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "277407",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "280435",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "280940",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "282198",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "285730",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "289961",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "289969",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "289970",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    },
+    {
+      "fm_id": "297317",
+      "changed_fields": [
+        "acquisition_event_key"
+      ]
+    }
+  ],
+  "common_native_change_count": 0,
+  "common_native_changes": [],
+  "note": "Common rows are not emitted because their guards bind the pre-draft state. Changes limited to passive acquisition evidence have no native database effect."
+}
