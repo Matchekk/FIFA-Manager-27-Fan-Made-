@@ -1,0 +1,8 @@
+{
+  "status": "USER_POLICY_DECISION_REQUIRED",
+  "rows": 85,
+  "snapshot_date": "2026-09-12",
+  "primary_confirmed_rows": 2,
+  "provisional_end_dates_generated": 0,
+  "limitation": "No contract end is inferred. These rows remain blocked until an evidenced end or explicit bounded exception policy is approved."
+}
