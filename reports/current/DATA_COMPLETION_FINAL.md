@@ -6,7 +6,7 @@ draft, not a successful release or a frozen production plan.
 ## League coverage
 
 Authoritative source coverage: 12 / 12 leagues, 222 clubs.
-Selected candidate native membership: 0 / 12 verified; status NOT_RUN.
+Selected candidate native membership: 12 / 12 verified; status PASS.
 Source coverage alone does not establish native application.
 
 ## Club coverage
@@ -23,13 +23,17 @@ These counts describe input actions, not successfully applied transfers. Arrival
 departures by covered club are recorded in the coverage matrix; they count new plan
 deltas only, not cumulative Native08 work. A loan resolution is not automatically
 counted as a football loan return.
+Verified field changes: 93 contract ends,
+148 first-team shirt numbers,
+25 competition records,
+2 planned history records.
 
 ## Players
 
 Latest reconciliation: 6142 matched roster observations
 out of 6272 (observations, not unique player identities).
-Selected draft proposes 54 creations; native creation success is unverified
-until write/reread/semantic comparison pass. Identity candidate/review holds:
+Selected draft: 54 creations, native validation PASS.
+Identity candidate/review holds:
 48; additional identity searches required: 21.
 Blocking player-creation review rows: 72;
 nonblocking creation review rows: 58.
@@ -39,14 +43,14 @@ Exact unresolved records remain in
 
 ## Candidate
 
-Candidate: `native10-data-draft-20260913-05`. Status: DRAFT_INPUT_SNAPSHOT.
+Candidate: `native10-data-draft-20260913-05`. Status: DRAFT_VALIDATED_DATA_INCOMPLETE.
 
-Identity release gate: NOT_SEPARATELY_VERIFIED.
+Identity release gate: PASS_SCOPED_CREATION_AUDIT_AND_NATIVE_COMPARE.
+Only identity-audited CREATE_CLEAR rows applied; held aliases and loan creations excluded. Zero new opaque serialization rewrites.
 
-
-- Write: NOT_RUN
-- Reread: NOT_RUN
-- Semantic diff: NOT_RUN
+- Write: PASS
+- Reread: PASS
+- Semantic diff: PASS
 - Production freeze: NO
 
 ## Runtime smoke
@@ -58,7 +62,7 @@ The user's accepted Native08 new-career loan result remains PASS and is not reop
 
 - Current coverage has 488 sprint-blocking review rows;
   exact reasons and club assignments are in the review queue and coverage matrix.
-- The selected draft has not passed all native release gates.
+- Selected draft native gates: PASS; complete squad coverage and runtime gates remain open.
 - Undisclosed-contract exceptions may be applied only after an explicit user decision;
   `UNDISCLOSED_CONTRACTS.csv` preserves the individually documented cases.
 - A single completed-data new-career smoke remains required after the data gates pass.

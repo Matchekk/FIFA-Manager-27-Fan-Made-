@@ -103,14 +103,24 @@ do not apply any exception without the user's answer.
 
 ## Next actions
 
-1. Draft05 is running from corrected immutable250/54 inputs:
+1. Draft05 completed from corrected immutable250/54 inputs:
    `data/generated/release-candidate/native10-data-draft-20260913-05`.
-   Native process session96967; executable preflight2. Complete write/reread/diff
-   and membership audit. Draft04 cannot be released. Preserve all failed evidence.
+   WRITE/REREAD/EXACT SEMANTIC DIFF PASS; membership12/12 PASS. Total266818
+   players; zero new opaque serialization rewrites. All250 planned changes and54
+   creations match. Existing ratings and future conditions preserved. Exact report:
+   candidate `EXACT_PLAYER_FIELD_DIFF.csv`, `EXACT_CHANGE_SUMMARY.json`,
+   `DELTA_PROVENANCE.csv` and `RELEASE_GATES.json`. Session96967 completed.
+   Draft04 cannot be released. Preserve all failed evidence. Post-build delta remains
+   separate: `data/current/integration-staged/native10-post-draft05-condition-delta.csv`
+   has6 guarded actions preserving exact raw injury/ban parameters. Proof recovered
+   all9 missing condition types;3 ownership cases remain held. Commitb5b5557.
+   Protected-condition binary exists for a future delta build; Draft05 keeps its
+   immutable preflight2 binary and does not contain these6 actions.
 2. Preserve the six-row post-Draft04 delta for the next explicitly recorded data
    build. Await the pending85-contract policy decision; do not invent dates.
 3. Build/test native changes; freeze canonical plan only when coverage passes.
-4. Generate Native10, exact diff and candidate membership validation.
+4. Draft05 is a validated incomplete data checkpoint, not a production release.
+   Resolve documented source/policy holds before another integrated data build.
 5. One representative smoke after data completion; final report with actual gates/counts.
 
 Historical state: `reports/current/PROJECT_STATE_PRE_DATA_SPRINT.md`. Its pending loan

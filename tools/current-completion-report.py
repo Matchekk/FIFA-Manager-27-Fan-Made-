@@ -35,6 +35,10 @@ def main():
     native_membership_path = args.candidate / 'membership-validation.json'
     native_membership = json.loads(native_membership_path.read_text()) if native_membership_path.exists() else {}
     write = build['write']
+    native_pass = all(build.get(k) == 'PASS' for k in ('write', 'reread', 'semantic_diff', 'membership'))
+    detail_path = args.candidate / 'EXACT_CHANGE_SUMMARY.json'
+    detail = json.loads(detail_path.read_text()) if detail_path.exists() else {}
+    fields = detail.get('field_counts', {})
     if build['status'] == 'FAILED' and write == 'NOT_RUN':
         write = 'FAIL (aborted before a completed write)'
     text = f'''# FM27 2026/27 data completion — current gate report
@@ -62,13 +66,17 @@ These counts describe input actions, not successfully applied transfers. Arrival
 departures by covered club are recorded in the coverage matrix; they count new plan
 deltas only, not cumulative Native08 work. A loan resolution is not automatically
 counted as a football loan return.
+Verified field changes: {fields.get('contract_until', 'NOT_RUN')} contract ends,
+{fields.get('shirt_number_first', 'NOT_RUN')} first-team shirt numbers,
+{detail.get('competitions_changed', 'NOT_RUN')} competition records,
+{fields.get('history_sha256', 'NOT_RUN')} planned history records.
 
 ## Players
 
 Latest reconciliation: {integration['resolved_observations']} matched roster observations
 out of {integration['roster_observations']} (observations, not unique player identities).
-Selected draft proposes {len(created)} creations; native creation success is unverified
-until write/reread/semantic comparison pass. Identity candidate/review holds:
+Selected draft: {len(created)} creations, native validation {'PASS' if native_pass else 'PENDING'}.
+Identity candidate/review holds:
 {identity_holds}; additional identity searches required: {identity_search}.
 Blocking player-creation review rows: {terminal['queue_counts'].get('PLAYER_CREATION', 0)};
 nonblocking creation review rows: {reviews.get('PLAYER_CREATION', 0) - terminal['queue_counts'].get('PLAYER_CREATION', 0)}.
@@ -97,7 +105,7 @@ The user's accepted Native08 new-career loan result remains PASS and is not reop
 
 - Current coverage has {coverage['review_queue']['sprint_blocking_rows']} sprint-blocking review rows;
   exact reasons and club assignments are in the review queue and coverage matrix.
-- The selected draft has not passed all native release gates.
+- Selected draft native gates: {'PASS; complete squad coverage and runtime gates remain open' if native_pass else 'NOT YET PASSED'}.
 - Undisclosed-contract exceptions may be applied only after an explicit user decision;
   `UNDISCLOSED_CONTRACTS.csv` preserves the individually documented cases.
 - A single completed-data new-career smoke remains required after the data gates pass.

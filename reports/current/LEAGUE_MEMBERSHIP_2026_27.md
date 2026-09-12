@@ -17,7 +17,7 @@ Snapshot date: 2026-09-12. Scope is the 12 competitions in `config/scope.json`.
 | GER2 | Germany | 2 | 18 | 18 | CONFIRMED |
 | GER3 | Germany | 3 | 20 | 20 | CONFIRMED |
 
-Total rows: 222. Native membership validation: **PASS, 12/12 leagues**, independently reread from `native10-data-draft-20260913-04` on 2026-09-13. Expected counts, exact club/team sets and unique domestic league assignments all pass. Every required club is present and every excluded club is absent. Unknown baseline FIFA team IDs remain 0; no EA IDs were invented.
+Total rows: 222. Native membership validation: **PASS, 12/12 leagues**, independently reread from `native10-data-draft-20260913-05` on 2026-09-13. Expected counts, exact club/team sets and unique domestic league assignments all pass. Every required club is present and every excluded club is absent. Unknown baseline FIFA team IDs remain 0; no EA IDs were invented.
 
 Belgium 18/15 and the German GER3/regional dependency chain are applied through typed native structures. Bayern 19 uses the documented stable modeled format; an exact transient 2027/28 size adjustment is not claimed. Unrelated lower-division squads remain outside scope.
 
