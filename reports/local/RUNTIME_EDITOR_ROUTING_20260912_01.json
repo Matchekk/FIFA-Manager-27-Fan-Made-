@@ -1,0 +1,53 @@
+{
+  "status": "PASS_STATIC_EDITOR_EXPORT_ROUTE_BOUND_TO_WORKING_DIRECTORY",
+  "observed_at": "2026-09-12T09:07:28Z",
+  "editor": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\EdManager.exe",
+  "editor_sha256": "f31acd86a011d974014b6e988928ee996244da2b5597692b62ffa5c0ecb7c9bb",
+  "architecture": "PE32 x86",
+  "manifest_requested_execution_level": "requireAdministrator",
+  "targeted_disassembly": {
+    "startup_current_directory": {
+      "get_current_directory_call_va": "0x004c1359",
+      "path_initialization_call_va": "0x004c1369",
+      "observation": "The startup routine passes the GetCurrentDirectoryW buffer directly to editor path initialization."
+    },
+    "database_root": {
+      "path_initialization_va": "0x004be1e0",
+      "format_literal_va": "0x0066865c",
+      "format_literal": "%s\\Database",
+      "stored_field_accessor_va": "0x004bd1e0",
+      "observation": "The database-root field is derived from the supplied startup working directory."
+    },
+    "master_export": {
+      "export_path_sequence_va": "0x004d983a",
+      "database_root_accessor_call_va": "0x004d9841",
+      "format_literal_va": "0x0066a930",
+      "format_literal": "%s\\Master.dat",
+      "observation": "The export routine formats Master.dat beneath the stored database-root field."
+    },
+    "fm13_registry_read": {
+      "registry_open_va": "0x004bd7f1",
+      "root": "HKEY_LOCAL_MACHINE",
+      "key_literal_va": "0x00668458",
+      "key_literal": "SOFTWARE\\EA SPORTS\\FIFA MANAGER 13",
+      "queried_value_literal_va": "0x00668444",
+      "queried_value_literal": "Locale",
+      "observation": "This Editor startup registry path reads Locale; the export-root sequence uses the working-directory-derived database field."
+    }
+  },
+  "launcher": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\launch-isolated-editor.exe",
+    "sha256": "aca0bb3bc7f83fd1461a4ed0512d745a9ff4dbc75fe59d0d2c6f8e6284942981",
+    "constraints": [
+      "The runtime must be a direct child of C:\\FM27CommunityOverhaul\\runtime.",
+      "EdManager.exe must be a direct child of that runtime.",
+      "Manager.exe and database must exist in that runtime.",
+      "database\\Master.dat must be absent before launch.",
+      "SetCurrentDirectoryW and ShellExecuteExW lpDirectory both bind the child to the same runtime."
+    ]
+  },
+  "registry_install_dir_observed": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\",
+  "registry_modified": false,
+  "original_files_modified": false,
+  "conclusion": "With this launcher and the verified empty runtime export target, the Editor's computed Master.dat destination is C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\database\\Master.dat. No export was attempted because the requireAdministrator consent surface was not targetable."
+}

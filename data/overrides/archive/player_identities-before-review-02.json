@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-08",
+  "status": "REVIEWED_EXISTING_IDENTITIES",
+  "baseline_sha256": "a02de4fdfee919081ba8c6665c79cc3d292a3ca31e74e9dddbd510ae9ad5a2d0",
+  "rows": [
+    {
+      "player_tm_id": "639414",
+      "source_name": "Young-woo Seol",
+      "fm_id": "282553",
+      "native_fifa_id": "254980",
+      "native_name": "Yung-Woo Seol",
+      "dob": "1998-12-05",
+      "native_nationality": "167",
+      "native_club_id": "3342354",
+      "target_club_id": "1376431",
+      "profile_source": "https://www.transfermarkt.de/young-woo-seol/profil/spieler/639414",
+      "profile_sha256": "9726f4807ae7d40bb8de5d79b30c7beec3fd1ad9bae12c4477777190f7794d02",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Young-woo/Youngwoo/Yung-Woo are reviewed spellings for this Korean right-back. Official FCA profile gives exact DOB, nationality, height183cm and weight72kg; official announcement confirms arrival from FK Crvena zvezda and contract until30Jun2030, matching existing native club and current TM profile. Preserve native FIFA254980; no external FIFA ID is invented.",
+      "public_sources": [
+        {
+          "url": "https://www.fcaugsburg.de/en/team/player/young-woo-seol-1-311",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Young-Woo/Youngwoo Seol, DOB05Dec1998, Korea Republic, height183cm, weight72kg"
+        },
+        {
+          "url": "https://www.fcaugsburg.de/en/article/fca-sign-youngwoo-seol-23383",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "27Aug2026 arrival from FK Crvena zvezda; contract30Jun2030"
+        },
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefachampionsleague/2025/match/2042051/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Crvena zvezda Youngwoo Seol, Korea Republic, DOB05Dec1998"
+        }
+      ],
+      "ea_corroboration": [],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "current_club_tm_id": "167"
+    },
+    {
+      "player_tm_id": "467250",
+      "source_name": "Yukhym Konoplya",
+      "fm_id": "214471",
+      "native_fifa_id": "263804",
+      "native_name": "Yukhym Konoplia",
+      "dob": "1999-08-26",
+      "native_nationality": "49",
+      "native_club_id": "3211276",
+      "target_club_id": "1376263",
+      "profile_source": "https://www.transfermarkt.de/yukhym-konoplya/profil/spieler/467250",
+      "profile_sha256": "121d223f0257dd59c5b5c0aa3f6862cfb617dc50068a2d3fc398125e30bfc834",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Konoplya/Konoplia are individually reviewed spellings for the Ukrainian right-back. Current stored EA row has the exact native name, DOB and FIFA263804 at Mgladbach; UEFA independently gives the same name/DOB at Shakhtar, matching native club. Official Borussia announcement title confirms signing; its body was a loading shell and is not claimed read.",
+      "public_sources": [
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2026/match/2048099/printmatchpresskits/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Shakhtar Yukhym Konoplia, Ukraine, DOB26Aug1999"
+        },
+        {
+          "url": "https://www.borussia.com/news/konoplia-joins-borussia-2627",
+          "access": "OFFICIAL_TITLE_BODY_LOADING_SHELL",
+          "supports": "Official page title Yukhym Konoplia joins Borussia; body not readable"
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "GER1",
+          "fifa_id": "263804",
+          "club_fifa_id": "23",
+          "club": "M'gladbach",
+          "player": "Yukhym Konoplia",
+          "common_name": "",
+          "dob": "1999-08-26",
+          "position": "RB",
+          "ea_overall": "73",
+          "attributes": "{\"acceleration\": 85, \"aggression\": 80, \"agility\": 75, \"balance\": 67, \"ballControl\": 67, \"composure\": 65, \"crossing\": 75, \"curve\": 70, \"def\": 66, \"defensiveAwareness\": 62, \"dri\": 69, \"dribbling\": 69, \"finishing\": 41, \"freeKickAccuracy\": 42, \"gkDiving\": 8, \"gkHandling\": 6, \"gkKicking\": 12, \"gkPositioning\": 7, \"gkReflexes\": 10, \"headingAccuracy\": 65, \"interceptions\": 70, \"jumping\": 79, \"longPassing\": 74, \"longShots\": 46, \"pac\": 82, \"pas\": 71, \"penalties\": 39, \"phy\": 71, \"positioning\": 67, \"reactions\": 66, \"sho\": 47, \"shortPassing\": 75, \"shotPower\": 61, \"slidingTackle\": 70, \"sprintSpeed\": 80, \"stamina\": 72, \"standingTackle\": 67, \"strength\": 67, \"vision\": 67, \"volleys\": 38}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/bundesliga/19?page=3",
+          "source_sha256": "aaf06ff4fc44320f4ccf5dcc92416042c2412c5822793c32461760e2a2a5b889",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "current_club_tm_id": "18"
+    }
+  ],
+  "limitations": "Identity evidence only; all contract, ownership, transfer event, source-conflict and native staging gates still apply."
+}

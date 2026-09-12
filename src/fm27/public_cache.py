@@ -14,7 +14,7 @@ from .common import write_json
 
 class DfbCache:
     def __init__(self, root: Path, host: str = "datencenter.dfb.de"):
-        if host not in {"datencenter.dfb.de", "www.ea.com", "www.transfermarkt.de"}:
+        if host not in {"datencenter.dfb.de", "www.ea.com", "www.transfermarkt.de", "www.fcn.de", "www.juventus.com"}:
             raise ValueError("Unsupported public source host")
         self.host = host
         self.root = root

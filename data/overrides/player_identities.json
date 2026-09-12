@@ -1,0 +1,1224 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-08",
+  "status": "REVIEWED_EXISTING_IDENTITIES",
+  "baseline_sha256": "a02de4fdfee919081ba8c6665c79cc3d292a3ca31e74e9dddbd510ae9ad5a2d0",
+  "rows": [
+    {
+      "player_tm_id": "639414",
+      "source_name": "Young-woo Seol",
+      "fm_id": "282553",
+      "native_fifa_id": "254980",
+      "native_name": "Yung-Woo Seol",
+      "dob": "1998-12-05",
+      "native_nationality": "167",
+      "native_club_id": "3342354",
+      "target_club_id": "1376431",
+      "profile_source": "https://www.transfermarkt.de/young-woo-seol/profil/spieler/639414",
+      "profile_sha256": "9726f4807ae7d40bb8de5d79b30c7beec3fd1ad9bae12c4477777190f7794d02",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Young-woo/Youngwoo/Yung-Woo are reviewed spellings for this Korean right-back. Official FCA profile gives exact DOB, nationality, height183cm and weight72kg; official announcement confirms arrival from FK Crvena zvezda and contract until30Jun2030, matching existing native club and current TM profile. Preserve native FIFA254980; no external FIFA ID is invented.",
+      "public_sources": [
+        {
+          "url": "https://www.fcaugsburg.de/en/team/player/young-woo-seol-1-311",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Young-Woo/Youngwoo Seol, DOB05Dec1998, Korea Republic, height183cm, weight72kg"
+        },
+        {
+          "url": "https://www.fcaugsburg.de/en/article/fca-sign-youngwoo-seol-23383",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "27Aug2026 arrival from FK Crvena zvezda; contract30Jun2030"
+        },
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefachampionsleague/2025/match/2042051/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Crvena zvezda Youngwoo Seol, Korea Republic, DOB05Dec1998"
+        }
+      ],
+      "ea_corroboration": [],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "current_club_tm_id": "167"
+    },
+    {
+      "player_tm_id": "467250",
+      "source_name": "Yukhym Konoplya",
+      "fm_id": "214471",
+      "native_fifa_id": "263804",
+      "native_name": "Yukhym Konoplia",
+      "dob": "1999-08-26",
+      "native_nationality": "49",
+      "native_club_id": "3211276",
+      "target_club_id": "1376263",
+      "profile_source": "https://www.transfermarkt.de/yukhym-konoplya/profil/spieler/467250",
+      "profile_sha256": "121d223f0257dd59c5b5c0aa3f6862cfb617dc50068a2d3fc398125e30bfc834",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Konoplya/Konoplia are individually reviewed spellings for the Ukrainian right-back. Current stored EA row has the exact native name, DOB and FIFA263804 at Mgladbach; UEFA independently gives the same name/DOB at Shakhtar, matching native club. Official Borussia announcement title confirms signing; its body was a loading shell and is not claimed read.",
+      "public_sources": [
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2026/match/2048099/printmatchpresskits/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Shakhtar Yukhym Konoplia, Ukraine, DOB26Aug1999"
+        },
+        {
+          "url": "https://www.borussia.com/news/konoplia-joins-borussia-2627",
+          "access": "OFFICIAL_TITLE_BODY_LOADING_SHELL",
+          "supports": "Official page title Yukhym Konoplia joins Borussia; body not readable"
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "GER1",
+          "fifa_id": "263804",
+          "club_fifa_id": "23",
+          "club": "M'gladbach",
+          "player": "Yukhym Konoplia",
+          "common_name": "",
+          "dob": "1999-08-26",
+          "position": "RB",
+          "ea_overall": "73",
+          "attributes": "{\"acceleration\": 85, \"aggression\": 80, \"agility\": 75, \"balance\": 67, \"ballControl\": 67, \"composure\": 65, \"crossing\": 75, \"curve\": 70, \"def\": 66, \"defensiveAwareness\": 62, \"dri\": 69, \"dribbling\": 69, \"finishing\": 41, \"freeKickAccuracy\": 42, \"gkDiving\": 8, \"gkHandling\": 6, \"gkKicking\": 12, \"gkPositioning\": 7, \"gkReflexes\": 10, \"headingAccuracy\": 65, \"interceptions\": 70, \"jumping\": 79, \"longPassing\": 74, \"longShots\": 46, \"pac\": 82, \"pas\": 71, \"penalties\": 39, \"phy\": 71, \"positioning\": 67, \"reactions\": 66, \"sho\": 47, \"shortPassing\": 75, \"shotPower\": 61, \"slidingTackle\": 70, \"sprintSpeed\": 80, \"stamina\": 72, \"standingTackle\": 67, \"strength\": 67, \"vision\": 67, \"volleys\": 38}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/bundesliga/19?page=3",
+          "source_sha256": "aaf06ff4fc44320f4ccf5dcc92416042c2412c5822793c32461760e2a2a5b889",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "current_club_tm_id": "18"
+    },
+    {
+      "player_tm_id": "559328",
+      "source_name": "Emmanuel Emegha",
+      "fm_id": "302046",
+      "native_fifa_id": "258437",
+      "native_name": "Emanuel Emegha",
+      "dob": "2003-02-03",
+      "native_nationality": "34",
+      "native_club_id": "1179667",
+      "current_club_tm_id": "631",
+      "target_club_id": "917513",
+      "profile_source": "https://www.transfermarkt.de/emmanuel-emegha/profil/spieler/559328",
+      "profile_sha256": "147075c0de97e1c822c04500ea6ec21cf5c41d3c602cbf7b31e72043b8bd1a7d",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Emmanuel/Emanuel individually corroborated by Chelsea, league index, exact stored EA FIFA/name/DOB and native Strasbourg origin.",
+      "public_sources": [
+        {
+          "url": "https://www.chelseafc.com/en/news/article/chelsea-agree-deal-to-sign-emanuel-emegha",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Emmanuel Emegha arrives from Strasbourg in2026; URL retains Emanuel spelling."
+        },
+        {
+          "url": "https://www.premierleague.com/en/players/503037/emanuel-emegha/stats",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ_BODY_SHELL",
+          "supports": "Emmanuel Emegha, DOB03Feb2003; URL retains Emanuel spelling. DOB readable in index, not body."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ENG1",
+          "fifa_id": "258437",
+          "club_fifa_id": "5",
+          "club": "Chelsea",
+          "player": "Emanuel Emegha",
+          "common_name": "",
+          "dob": "2003-02-03",
+          "position": "ST",
+          "ea_overall": "78",
+          "attributes": "{\"acceleration\": 80, \"aggression\": 64, \"agility\": 69, \"balance\": 42, \"ballControl\": 76, \"composure\": 73, \"crossing\": 47, \"curve\": 63, \"def\": 31, \"defensiveAwareness\": 26, \"dri\": 69, \"dribbling\": 66, \"finishing\": 79, \"freeKickAccuracy\": 53, \"gkDiving\": 11, \"gkHandling\": 10, \"gkKicking\": 12, \"gkPositioning\": 10, \"gkReflexes\": 6, \"headingAccuracy\": 77, \"interceptions\": 35, \"jumping\": 91, \"longPassing\": 52, \"longShots\": 69, \"pac\": 88, \"pas\": 60, \"penalties\": 68, \"phy\": 78, \"positioning\": 82, \"reactions\": 77, \"sho\": 76, \"shortPassing\": 68, \"shotPower\": 78, \"slidingTackle\": 23, \"sprintSpeed\": 94, \"stamina\": 79, \"standingTackle\": 21, \"strength\": 82, \"vision\": 64, \"volleys\": 74}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/premier-league/13?page=3",
+          "source_sha256": "25ff6091d9d64aa42e9459ec040d7d7fd44282a5d8e67a15b6bba263e3055818",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "354361",
+      "source_name": "Frank Anguissa",
+      "fm_id": "294301",
+      "native_fifa_id": "227236",
+      "native_name": "André-Franck Anguissa",
+      "dob": "1995-11-16",
+      "native_nationality": "103",
+      "native_club_id": "1769517",
+      "current_club_tm_id": "6195",
+      "target_club_id": "1769517",
+      "profile_source": "https://www.transfermarkt.de/frank-anguissa/profil/spieler/354361",
+      "profile_sha256": "9af496f58d98055ac5d93f02f0999e51acc9a3e96a669bb69a6133d0fddeb573",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Frank/Franck and omitted Andre/Zambo individually corroborated. Stored EA Andre-Franck Zambo Anguissa shares native FIFA227236, DOB and Napoli affiliation.",
+      "public_sources": [
+        {
+          "url": "https://sscnapoli.it/en/auguri-ad-anguissa-4/",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Frank Anguissa, Napoli midfielder, born16Nov1995 in Cameroon."
+        },
+        {
+          "url": "https://images.legaseriea.it/raw/private/fl_attachment/prd/lfpfiqkrwhf198zoajjt.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Napoli report names Andre Frank Zambo Anguissa with DOB16Nov1995."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ITA1",
+          "fifa_id": "227236",
+          "club_fifa_id": "48",
+          "club": "SSC Napoli",
+          "player": "André-Franck Zambo Anguissa",
+          "common_name": "",
+          "dob": "1995-11-16",
+          "position": "CM",
+          "ea_overall": "82",
+          "attributes": "{\"acceleration\": 71, \"aggression\": 85, \"agility\": 74, \"balance\": 72, \"ballControl\": 84, \"composure\": 80, \"crossing\": 64, \"curve\": 62, \"def\": 79, \"defensiveAwareness\": 79, \"dri\": 81, \"dribbling\": 81, \"finishing\": 78, \"freeKickAccuracy\": 56, \"gkDiving\": 11, \"gkHandling\": 11, \"gkKicking\": 9, \"gkPositioning\": 8, \"gkReflexes\": 11, \"headingAccuracy\": 78, \"interceptions\": 80, \"jumping\": 86, \"longPassing\": 80, \"longShots\": 79, \"pac\": 72, \"pas\": 76, \"penalties\": 60, \"phy\": 81, \"positioning\": 84, \"reactions\": 86, \"sho\": 77, \"shortPassing\": 82, \"shotPower\": 82, \"slidingTackle\": 76, \"sprintSpeed\": 72, \"stamina\": 76, \"standingTackle\": 80, \"strength\": 81, \"vision\": 81, \"volleys\": 58}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/serie-a-enilive/31?page=1",
+          "source_sha256": "c5f7528f33e1d20a805595fb83272074ec82c65dd8c8e618b0ff2194e2e108d2",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "659089",
+      "source_name": "Ilya Zabarnyi",
+      "fm_id": "295885",
+      "native_fifa_id": "258781",
+      "native_name": "Illia Zabarnyi",
+      "dob": "2002-09-01",
+      "native_nationality": "49",
+      "native_club_id": "1179663",
+      "current_club_tm_id": "583",
+      "target_club_id": "1179663",
+      "profile_source": "https://www.transfermarkt.de/ilya-zabarnyi/profil/spieler/659089",
+      "profile_sha256": "dd782adc5f5886841580b61dec484070fcb6846c2304b2373fb41ec33e86b024",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Ilya/Illia individually corroborated against official PSG biography and exact native/EA FIFA258781 and DOB. No general Cyrillic transliteration.",
+      "public_sources": [
+        {
+          "url": "https://www.psg.fr/en/players/illia-zabarnyi",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Illia Zabarnyi, born01Sep2002, Ukraine, PSG since2025,189cm80kg."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "FRA1",
+          "fifa_id": "258781",
+          "club_fifa_id": "73",
+          "club": "Paris SG",
+          "player": "Illia Zabarnyi",
+          "common_name": "",
+          "dob": "2002-09-01",
+          "position": "CB",
+          "ea_overall": "80",
+          "attributes": "{\"acceleration\": 68, \"aggression\": 77, \"agility\": 63, \"balance\": 55, \"ballControl\": 68, \"composure\": 74, \"crossing\": 55, \"curve\": 36, \"def\": 81, \"defensiveAwareness\": 82, \"dri\": 64, \"dribbling\": 60, \"finishing\": 33, \"freeKickAccuracy\": 40, \"gkDiving\": 14, \"gkHandling\": 11, \"gkKicking\": 10, \"gkPositioning\": 11, \"gkReflexes\": 13, \"headingAccuracy\": 77, \"interceptions\": 79, \"jumping\": 86, \"longPassing\": 76, \"longShots\": 34, \"pac\": 77, \"pas\": 65, \"penalties\": 41, \"phy\": 80, \"positioning\": 37, \"reactions\": 80, \"sho\": 37, \"shortPassing\": 77, \"shotPower\": 50, \"slidingTackle\": 79, \"sprintSpeed\": 84, \"stamina\": 72, \"standingTackle\": 82, \"strength\": 85, \"vision\": 57, \"volleys\": 28}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/ligue-1-mc-donald-s/16?page=1",
+          "source_sha256": "24ba2fea517b6833c2c9a893b4f865bea9802def3cca18bf98997e1aebad5dc0",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "263918",
+      "source_name": "Aleksandr Golovin",
+      "fm_id": "296903",
+      "native_fifa_id": "225663",
+      "native_name": "Alexandr Golovin",
+      "dob": "1996-05-30",
+      "native_nationality": "40",
+      "native_club_id": "1179655",
+      "current_club_tm_id": "162",
+      "target_club_id": "1179655",
+      "profile_source": "https://www.transfermarkt.de/aleksandr-golovin/profil/spieler/263918",
+      "profile_sha256": "21e5278d681e3983c591ac61a436f49029d542ba13ac9f753ec45cb56bc99dd7",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Aleksandr/Alexandr individually corroborated by Monaco profile and native/EA FIFA225663, DOB and existing Monaco affiliation.",
+      "public_sources": [
+        {
+          "url": "https://www.asmonaco.com/fr/joueurs/aleksandr-golovin",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Aleksandr Golovin, born30May1996 inRussia, Monaco since27Jul2018."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "FRA1",
+          "fifa_id": "225663",
+          "club_fifa_id": "69",
+          "club": "AS Monaco",
+          "player": "Alexandr Golovin",
+          "common_name": "",
+          "dob": "1996-05-30",
+          "position": "CAM",
+          "ea_overall": "78",
+          "attributes": "{\"acceleration\": 73, \"aggression\": 78, \"agility\": 83, \"balance\": 77, \"ballControl\": 83, \"composure\": 80, \"crossing\": 76, \"curve\": 82, \"def\": 59, \"defensiveAwareness\": 45, \"dri\": 82, \"dribbling\": 82, \"finishing\": 73, \"freeKickAccuracy\": 81, \"gkDiving\": 12, \"gkHandling\": 14, \"gkKicking\": 14, \"gkPositioning\": 10, \"gkReflexes\": 16, \"headingAccuracy\": 46, \"interceptions\": 71, \"jumping\": 61, \"longPassing\": 73, \"longShots\": 82, \"pac\": 72, \"pas\": 78, \"penalties\": 60, \"phy\": 66, \"positioning\": 76, \"reactions\": 75, \"sho\": 75, \"shortPassing\": 79, \"shotPower\": 78, \"slidingTackle\": 64, \"sprintSpeed\": 72, \"stamina\": 76, \"standingTackle\": 68, \"strength\": 56, \"vision\": 78, \"volleys\": 68}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/ligue-1-mc-donald-s/16?page=1",
+          "source_sha256": "24ba2fea517b6833c2c9a893b4f865bea9802def3cca18bf98997e1aebad5dc0",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "430310",
+      "source_name": "Andrew Irving",
+      "fm_id": "275665",
+      "native_fifa_id": "242271",
+      "native_name": "Andy Irving",
+      "dob": "2000-05-13",
+      "native_nationality": "42",
+      "native_club_id": "917511",
+      "current_club_tm_id": "197",
+      "target_club_id": "786442",
+      "profile_source": "https://www.transfermarkt.de/andrew-irving/profil/spieler/430310",
+      "profile_sha256": "0f93a702253caef6b4ae28dcc27574bb617b109aab5c8f16199494cb4e73231a",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Andrew/Andy explicitly linked by Sparta article; stored EA FIFA242271 and DOB corroborate native WestHam midfielder.",
+      "public_sources": [
+        {
+          "url": "https://sparta.cz/en/novinky/44572-andrew-irving-joins-sparta",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Andrew and Andy used in same article; born13May2000 inEdinburgh, arrives fromWestHam."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "CZE1",
+          "fifa_id": "242271",
+          "club_fifa_id": "267",
+          "club": "Sparta Praha",
+          "player": "Andy Irving",
+          "common_name": "",
+          "dob": "2000-05-13",
+          "position": "CM",
+          "ea_overall": "72",
+          "attributes": "{\"acceleration\": 60, \"aggression\": 67, \"agility\": 67, \"balance\": 65, \"ballControl\": 75, \"composure\": 70, \"crossing\": 68, \"curve\": 66, \"def\": 65, \"defensiveAwareness\": 65, \"dri\": 72, \"dribbling\": 73, \"finishing\": 65, \"freeKickAccuracy\": 71, \"gkDiving\": 10, \"gkHandling\": 15, \"gkKicking\": 12, \"gkPositioning\": 10, \"gkReflexes\": 13, \"headingAccuracy\": 63, \"interceptions\": 68, \"jumping\": 74, \"longPassing\": 72, \"longShots\": 66, \"pac\": 57, \"pas\": 73, \"penalties\": 70, \"phy\": 73, \"positioning\": 68, \"reactions\": 67, \"sho\": 67, \"shortPassing\": 75, \"shotPower\": 70, \"slidingTackle\": 61, \"sprintSpeed\": 55, \"stamina\": 69, \"standingTackle\": 65, \"strength\": 77, \"vision\": 76, \"volleys\": 64}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/ceska-liga/319?page=1",
+          "source_sha256": "86d84f1c9497aaa72f12cbfbcc2949c2113d3d08dbbbcacfb9566b89b61f7dd3",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "559979",
+      "source_name": "Abdel Abqar",
+      "fm_id": "295276",
+      "native_fifa_id": "245628",
+      "native_name": "Abdelkabir Abqar",
+      "dob": "1999-03-10",
+      "native_nationality": "129",
+      "native_club_id": "2949126",
+      "current_club_tm_id": "3709",
+      "target_club_id": "2949126",
+      "profile_source": "https://www.transfermarkt.de/abdel-abqar/profil/spieler/559979",
+      "profile_sha256": "5c5494e3e2cd87c09cac1a039838bb0dc87fd97e7543d40ba74e611dfdc087d0",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Abdel/Abdelkabir reviewed using club/league profile and exact stored EA FIFA245628/DOB matching native Getafe defender.",
+      "public_sources": [
+        {
+          "url": "https://www.getafecf.com/jugadores/abdel-abqar",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Abdel Abqar is Getafe Moroccan defender; date field empty, no DOB claim from this page."
+        },
+        {
+          "url": "https://www.laliga.com/en-GB/player/abqar",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Abdel Abqar, Getafe, Morocco, born10Mar1999,188cm80kg."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ESP1",
+          "fifa_id": "245628",
+          "club_fifa_id": "1860",
+          "club": "Getafe CF",
+          "player": "Abdelkabir Abqar",
+          "common_name": "",
+          "dob": "1999-03-10",
+          "position": "CB",
+          "ea_overall": "74",
+          "attributes": "{\"acceleration\": 52, \"aggression\": 83, \"agility\": 40, \"balance\": 33, \"ballControl\": 65, \"composure\": 58, \"crossing\": 35, \"curve\": 33, \"def\": 74, \"defensiveAwareness\": 73, \"dri\": 59, \"dribbling\": 62, \"finishing\": 27, \"freeKickAccuracy\": 31, \"gkDiving\": 9, \"gkHandling\": 10, \"gkKicking\": 11, \"gkPositioning\": 12, \"gkReflexes\": 9, \"headingAccuracy\": 77, \"interceptions\": 74, \"jumping\": 80, \"longPassing\": 65, \"longShots\": 28, \"pac\": 53, \"pas\": 53, \"penalties\": 38, \"phy\": 76, \"positioning\": 24, \"reactions\": 68, \"sho\": 31, \"shortPassing\": 69, \"shotPower\": 42, \"slidingTackle\": 73, \"sprintSpeed\": 54, \"stamina\": 65, \"standingTackle\": 74, \"strength\": 79, \"vision\": 43, \"volleys\": 32}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/laliga-ea-sports/53?page=3",
+          "source_sha256": "05c772f8e37364c5445066a590ec80a2eae94de8914fa2c477f61a1e41110dd6",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "666539",
+      "source_name": "Beni Mukendi",
+      "fm_id": "299067",
+      "native_fifa_id": "273840",
+      "native_name": "Benedito Mukendi",
+      "dob": "2002-05-21",
+      "native_nationality": "98",
+      "native_club_id": "2490397",
+      "current_club_tm_id": "2420",
+      "target_club_id": "2490397",
+      "profile_source": "https://www.transfermarkt.de/beni-mukendi/profil/spieler/666539",
+      "profile_sha256": "2af1a70d4257929c27316391678c13a76fbaf27c0774a4aaafcd97422fca2d7f",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Beni/Benedito explicitly linked in official club report; league DOB, native and stored EA FIFA273840 corroborate.",
+      "public_sources": [
+        {
+          "url": "https://vitoriasc.pt/wp-content/uploads/2025/10/ReC_SAD.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Club report explicitly links Benedito Mukendi and Beni."
+        },
+        {
+          "url": "https://ligaportugalstorage.blob.core.windows.net/backoffice/assets/Sporting_CP_Vitoria_SC_Jornada_32_8d5aa489ac.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "League squad document lists Vitoria Beni Mukendi ANG born21May2002."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "POR1",
+          "fifa_id": "273840",
+          "club_fifa_id": "1887",
+          "club": "Vitória SC",
+          "player": "Benedito Mukendi",
+          "common_name": "Beni",
+          "dob": "2002-05-21",
+          "position": "CDM",
+          "ea_overall": "72",
+          "attributes": "{\"acceleration\": 67, \"aggression\": 74, \"agility\": 73, \"balance\": 61, \"ballControl\": 70, \"composure\": 62, \"crossing\": 51, \"curve\": 55, \"def\": 70, \"defensiveAwareness\": 73, \"dri\": 70, \"dribbling\": 71, \"finishing\": 55, \"freeKickAccuracy\": 48, \"gkDiving\": 9, \"gkHandling\": 7, \"gkKicking\": 11, \"gkPositioning\": 12, \"gkReflexes\": 11, \"headingAccuracy\": 55, \"interceptions\": 72, \"jumping\": 68, \"longPassing\": 67, \"longShots\": 66, \"pac\": 67, \"pas\": 64, \"penalties\": 55, \"phy\": 74, \"positioning\": 72, \"reactions\": 71, \"sho\": 60, \"shortPassing\": 70, \"shotPower\": 65, \"slidingTackle\": 70, \"sprintSpeed\": 67, \"stamina\": 84, \"standingTackle\": 71, \"strength\": 70, \"vision\": 70, \"volleys\": 59}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/liga-portugal/308?page=2",
+          "source_sha256": "41c0c0cbbaeea92094795ecd4df0b83fa24bacb1648fc6b93c6cebe01e354bac",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "997646",
+      "source_name": "Lucas Vennegoor of Hesselink",
+      "fm_id": "307474",
+      "native_fifa_id": "70539",
+      "native_name": "Lucas V. of Hesselink",
+      "dob": "2006-03-14",
+      "native_nationality": "34",
+      "native_club_id": "2228240",
+      "current_club_tm_id": "317",
+      "target_club_id": "2228240",
+      "profile_source": "https://www.transfermarkt.de/lucas-vennegoor-of-hesselink/profil/spieler/997646",
+      "profile_sha256": "bfb3afb8d5db89e520ee66079f23e01282842723b30b53eba351ebccfae689a9",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Native V. and EA Vennegoor of Hess. are individually reviewed abbreviations; exact DOB, native/EA FIFA70539 and Twente affiliation corroborate.",
+      "public_sources": [
+        {
+          "url": "https://fctwente.nl/teams/eerste-selectie/spelers",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Lucas Vennegoor of Hesselink attacker, born14Mar2006, Twente youth graduate."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "NED1",
+          "fifa_id": "70539",
+          "club_fifa_id": "1908",
+          "club": "FC Twente",
+          "player": "Lucas Vennegoor of Hess.",
+          "common_name": "",
+          "dob": "2006-03-14",
+          "position": "ST",
+          "ea_overall": "61",
+          "attributes": "{\"acceleration\": 52, \"aggression\": 55, \"agility\": 49, \"balance\": 53, \"ballControl\": 61, \"composure\": 51, \"crossing\": 32, \"curve\": 32, \"def\": 24, \"defensiveAwareness\": 22, \"dri\": 58, \"dribbling\": 58, \"finishing\": 61, \"freeKickAccuracy\": 33, \"gkDiving\": 10, \"gkHandling\": 10, \"gkKicking\": 11, \"gkPositioning\": 9, \"gkReflexes\": 13, \"headingAccuracy\": 66, \"interceptions\": 16, \"jumping\": 67, \"longPassing\": 28, \"longShots\": 57, \"pac\": 58, \"pas\": 42, \"penalties\": 60, \"phy\": 66, \"positioning\": 64, \"reactions\": 60, \"sho\": 59, \"shortPassing\": 52, \"shotPower\": 59, \"slidingTackle\": 19, \"sprintSpeed\": 62, \"stamina\": 67, \"standingTackle\": 20, \"strength\": 70, \"vision\": 49, \"volleys\": 48}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/eredivisie/10?page=5",
+          "source_sha256": "8d957e8b06217a126578a9576caea4b78ac12f2c57a05686112972c94e4b077d",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "124182",
+      "source_name": "Sergiy Sydorchuk",
+      "fm_id": "247181",
+      "native_fifa_id": "220948",
+      "native_name": "Serhiy Sydorchuk",
+      "dob": "1991-05-02",
+      "native_nationality": "49",
+      "native_club_id": "458763",
+      "current_club_tm_id": "968",
+      "target_club_id": "458763",
+      "profile_source": "https://www.transfermarkt.de/sergiy-sydorchuk/profil/spieler/124182",
+      "profile_sha256": "25c262ed0f35ff0b4d7a14c09436ea19beedd0bd09c5d2f85b8e8bbcb6779a08",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Sergiy/Serhiy individually corroborated against UEFA listing and exact native/EA FIFA220948,DOB,Westerlo affiliation.",
+      "public_sources": [
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/european-qualifiers/2024/match/2036432/officials/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Serhiy Sydorchuk, Westerlo, born02May1991 in Ukraine squad."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "BEL1",
+          "fifa_id": "220948",
+          "club_fifa_id": "681",
+          "club": "KVC Westerlo",
+          "player": "Serhiy Sydorchuk",
+          "common_name": "",
+          "dob": "1991-05-02",
+          "position": "CDM",
+          "ea_overall": "68",
+          "attributes": "{\"acceleration\": 63, \"aggression\": 65, \"agility\": 62, \"balance\": 40, \"ballControl\": 65, \"composure\": 70, \"crossing\": 46, \"curve\": 63, \"def\": 68, \"defensiveAwareness\": 70, \"dri\": 63, \"dribbling\": 65, \"finishing\": 60, \"freeKickAccuracy\": 50, \"gkDiving\": 8, \"gkHandling\": 14, \"gkKicking\": 16, \"gkPositioning\": 13, \"gkReflexes\": 12, \"headingAccuracy\": 70, \"interceptions\": 69, \"jumping\": 75, \"longPassing\": 65, \"longShots\": 71, \"pac\": 58, \"pas\": 61, \"penalties\": 60, \"phy\": 74, \"positioning\": 57, \"reactions\": 60, \"sho\": 65, \"shortPassing\": 70, \"shotPower\": 73, \"slidingTackle\": 65, \"sprintSpeed\": 54, \"stamina\": 79, \"standingTackle\": 65, \"strength\": 75, \"vision\": 60, \"volleys\": 67}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/1a-pro-league/4?page=2",
+          "source_sha256": "20bdf19c6c306f6c03dc2666497fdcef927fa72ad9e5cb712522a929a11dd61b",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "1143375",
+      "source_name": "Foe Ondoa",
+      "fm_id": "159521",
+      "native_fifa_id": "279018",
+      "native_name": "Manga Foé Ondoa",
+      "dob": "2005-12-12",
+      "native_nationality": "18",
+      "native_club_id": "2490405",
+      "current_club_tm_id": "2919",
+      "target_club_id": "1769533",
+      "profile_source": "https://www.transfermarkt.de/foe-ondoa/profil/spieler/1143375",
+      "profile_sha256": "a5ea5f92a64ee7c920c81576b54d34ea45dbace6edc04d4f3f8e964f4e068bb8",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Short Foe Ondoa individually linked to native Manga Foe Ondoa by Monza biography, origin and exact stored EA FIFA279018/DOB.",
+      "public_sources": [
+        {
+          "url": "https://www.acmonza.com/en/news/manga-foe-ondoa-joins-ac-monza/",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Manga Foe Ondoa, born12Dec2005 inParis, arrives fromEstoril; contract30Jun2030; previous Oliveirense loan."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ITA1",
+          "fifa_id": "279018",
+          "club_fifa_id": "111811",
+          "club": "Monza",
+          "player": "Manga Foe Ondoa",
+          "common_name": "",
+          "dob": "2005-12-12",
+          "position": "CM",
+          "ea_overall": "59",
+          "attributes": "{\"acceleration\": 74, \"aggression\": 61, \"agility\": 73, \"balance\": 72, \"ballControl\": 62, \"composure\": 53, \"crossing\": 39, \"curve\": 45, \"def\": 51, \"defensiveAwareness\": 41, \"dri\": 64, \"dribbling\": 64, \"finishing\": 51, \"freeKickAccuracy\": 39, \"gkDiving\": 7, \"gkHandling\": 11, \"gkKicking\": 10, \"gkPositioning\": 13, \"gkReflexes\": 11, \"headingAccuracy\": 57, \"interceptions\": 57, \"jumping\": 71, \"longPassing\": 58, \"longShots\": 56, \"pac\": 70, \"pas\": 54, \"penalties\": 38, \"phy\": 66, \"positioning\": 54, \"reactions\": 56, \"sho\": 55, \"shortPassing\": 66, \"shotPower\": 70, \"slidingTackle\": 44, \"sprintSpeed\": 67, \"stamina\": 68, \"standingTackle\": 58, \"strength\": 67, \"vision\": 52, \"volleys\": 38}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/serie-a-enilive/31?page=7",
+          "source_sha256": "c97bfc376fb66cc02cac6f5540e0cdbf808de222346fa1786e31845dc8d8c6f4",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "799993",
+      "source_name": "Ayoube Amaimouni-Echghouyab",
+      "fm_id": "292422",
+      "native_fifa_id": "0",
+      "native_name": "Ayoube Amaimouni-Echgh.",
+      "dob": "2004-11-30",
+      "native_nationality": "129",
+      "native_club_id": "1376433",
+      "current_club_tm_id": "24",
+      "target_club_id": "1376279",
+      "profile_source": "https://www.transfermarkt.de/ayoube-amaimouni-echghouyab/profil/spieler/799993",
+      "profile_sha256": "bf1372cacc9b4852cfdf3894ceb516399d557eb211d70fefd615e0ccc209392e",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Truncated native surname Amaimouni-Echgh. individually corroborated by native Hoffenheim origin, full official Eintracht name and exactDOB/nation. Native FIFA0 stays0.",
+      "public_sources": [
+        {
+          "url": "https://epaper.eintracht.de/Eintracht-vom-main_100/epaper/ausgabe.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Eintracht club magazine lists A. Amaimouni-Echghouyab,DOB30Nov2004,Morocco."
+        },
+        {
+          "url": "https://profis.eintracht.de/news/der-stufenspringer-ayoube-amaimouni-echghouyab-174604/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Eintracht presents new signing Ayoube Amaimouni-Echghouyab."
+        }
+      ],
+      "dfb_corroboration": [],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "685484",
+      "source_name": "Luka Duric",
+      "fm_id": "292423",
+      "native_fifa_id": "0",
+      "native_name": "Luka Djuric",
+      "dob": "2003-06-18",
+      "native_nationality": "8",
+      "native_club_id": "1376433",
+      "current_club_tm_id": "127",
+      "target_club_id": "1376421",
+      "profile_source": "https://www.transfermarkt.de/luka-duric/profil/spieler/685484",
+      "profile_sha256": "eee19551729e90d2d7ad67651eda60aa8fad0dcaf495623c76ef10f22a77eda7",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Duric/Djuric individually corroborated with official DOB,nation and Hoffenheim origin; no broad dj/d replacement. Native FIFA0 stays0. Missing source contract still requires separate hold.",
+      "public_sources": [
+        {
+          "url": "https://www.scp07.de/Newsarchiv/SCP07-holt-Duric.html",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Paderborn signs Luka Duric from Hoffenheim; born18Jun2003 inSinsheim."
+        },
+        {
+          "url": "https://datencenter.dfb.de/en/data-center/people/389705/player",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Luka Duric, DOB18Jun2003, Bosnia andHerzegovina, Paderborn; previousHoffenheim."
+        },
+        {
+          "url": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2026-2027/teams/sc-paderborn-07",
+          "access": "HASH_VERIFIED_CACHED_DFB_ROSTER",
+          "supports": "Current official DFB roster: Luka Duric, DOB2003-06-18, SC Paderborn 07"
+        }
+      ],
+      "dfb_corroboration": [
+        {
+          "league": "GER1",
+          "club": "SC Paderborn 07",
+          "player": "Luka Duric",
+          "fifa_id": "",
+          "fm_id": "",
+          "old_club": "",
+          "new_club": "SC Paderborn 07",
+          "transfer_type": "UNVERIFIED",
+          "contract_until": "",
+          "shirt_number": "8",
+          "source": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2026-2027/teams/sc-paderborn-07",
+          "source_date": "2026-09-08",
+          "confidence": "MISSING_FROM_FM",
+          "database_action": "REVIEW_REQUIRED",
+          "classification": "MISSING_FROM_FM",
+          "dob": "2003-06-18",
+          "status": "REVIEW_REQUIRED",
+          "reason": "Squad evidence only: verify ownership, loans, dates, team status and installed conditions",
+          "team_type": "FIRST",
+          "source_person_id": "389705",
+          "source_sha256": "07862bdfe015c4d27799184ba7f3d6e6855f9cb7771c0e2207e37a15c38ed4a8",
+          "source_status": "CONFIRMED"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "76924",
+        "league": "GER1",
+        "player": "Luka Đurić",
+        "dob": "2003-06-18",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/bundesliga/19?page=5",
+        "source_sha256": "444f12bc4e44d3d180acaf24fa959aefa6f9c45289c6326c6608b3791906babd",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "790434",
+      "source_name": "Thierry Tazemeta",
+      "fm_id": "289659",
+      "native_fifa_id": "0",
+      "native_name": "Thierry Fidjeu-Tazemeta",
+      "dob": "2007-07-27",
+      "native_nationality": "4",
+      "native_club_id": "1376262",
+      "current_club_tm_id": "2",
+      "target_club_id": "1376257",
+      "profile_source": "https://www.transfermarkt.de/thierry-tazemeta/profil/spieler/790434",
+      "profile_sha256": "e818e7539ee564efa12b009024a789dfe5bd9c837019124a67aae09077939760",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Short Tazemeta individually linked to native Fidjeu-Tazemeta by exactDOB,nation,origin and cached DFB Fidjeu-Tazemeta Junior. Native FIFA0 stays0.",
+      "public_sources": [
+        {
+          "url": "https://fck.de/kader/thierry-tazemeta/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Thierry Tazemeta born27Jul2007 inKlagenfurt, Austria; FCK since01Jul2026, previousDortmund."
+        },
+        {
+          "url": "https://fck.de/blog/thierry-tazemeta-wird-ein-roter-teufel/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "FCK signing from Borussia Dortmund academy announced12Jun2026."
+        },
+        {
+          "url": "https://datencenter.dfb.de/competitions/2-bundesliga/seasons/2026-2027/teams/1-fc-kaiserslautern",
+          "access": "HASH_VERIFIED_CACHED_DFB_ROSTER",
+          "supports": "Current official DFB roster: Thierry Fidjeu-Tazemeta Junior, DOB2007-07-27, 1. FC Kaiserslautern"
+        }
+      ],
+      "dfb_corroboration": [
+        {
+          "league": "GER2",
+          "club": "1. FC Kaiserslautern",
+          "player": "Thierry Fidjeu-Tazemeta Junior",
+          "fifa_id": "",
+          "fm_id": "",
+          "old_club": "",
+          "new_club": "1. FC Kaiserslautern",
+          "transfer_type": "UNVERIFIED",
+          "contract_until": "",
+          "shirt_number": "39",
+          "source": "https://datencenter.dfb.de/competitions/2-bundesliga/seasons/2026-2027/teams/1-fc-kaiserslautern",
+          "source_date": "2026-09-08",
+          "confidence": "MISSING_FROM_FM",
+          "database_action": "REVIEW_REQUIRED",
+          "classification": "MISSING_FROM_FM",
+          "dob": "2007-07-27",
+          "status": "REVIEW_REQUIRED",
+          "reason": "Squad evidence only: verify ownership, loans, dates, team status and installed conditions",
+          "team_type": "FIRST",
+          "source_person_id": "422967",
+          "source_sha256": "daed17904fc912fd4f66bf80b3649e45c867160d31aab191f0a1f5c4e23fbae3",
+          "source_status": "CONFIRMED"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "86968",
+        "league": "GER2",
+        "player": "Thierry Tazemeta",
+        "dob": "2007-07-27",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/bundesliga-2/20?page=5",
+        "source_sha256": "821632b37376213e73735456c6024eac2abe58f962acaae8a667f2197f109c2d",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "1058036",
+      "source_name": "Maxime Ndong-Penda",
+      "fm_id": "292455",
+      "native_fifa_id": "0",
+      "native_name": "Maxim Ndong Penda",
+      "dob": "2007-03-01",
+      "native_nationality": "21",
+      "native_club_id": "1376433",
+      "current_club_tm_id": "983",
+      "target_club_id": "1376433",
+      "profile_source": "https://www.transfermarkt.de/maxime-ndong-penda/profil/spieler/1058036",
+      "profile_sha256": "80d58d27c841563774417fddc81c9aaeae5918e26ce50bcd1ba137000910432f",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Maxime/Maxim and surname punctuation individually corroborated by cached DFB full name/exactDOB/current Hoffenheim reserve affiliation and official academy guide. Native FIFA0 stays0.",
+      "public_sources": [
+        {
+          "url": "https://s3.tsg-hoffenheim.de/public/Uploads/Web_13617_2025_TSG_Akademie_Guide_A4_2025_26.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Official Hoffenheim academy guide lists Ndong Penda,Maxime."
+        },
+        {
+          "url": "https://datencenter.dfb.de/competitions/3-liga/seasons/2026-2027/teams/tsg-hoffenheim-ii",
+          "access": "HASH_VERIFIED_CACHED_DFB_ROSTER",
+          "supports": "Current official DFB roster: Maxime Ndong Penda, DOB2007-03-01, TSG Hoffenheim II"
+        }
+      ],
+      "dfb_corroboration": [
+        {
+          "league": "GER3",
+          "club": "TSG Hoffenheim II",
+          "player": "Maxime Ndong Penda",
+          "fifa_id": "",
+          "fm_id": "",
+          "old_club": "",
+          "new_club": "TSG 1899 Hoffenheim",
+          "transfer_type": "UNVERIFIED",
+          "contract_until": "",
+          "shirt_number": "44",
+          "source": "https://datencenter.dfb.de/competitions/3-liga/seasons/2026-2027/teams/tsg-hoffenheim-ii",
+          "source_date": "2026-09-08",
+          "confidence": "MISSING_FROM_FM",
+          "database_action": "REVIEW_REQUIRED",
+          "classification": "MISSING_FROM_FM",
+          "dob": "2007-03-01",
+          "status": "REVIEW_REQUIRED",
+          "reason": "Squad evidence only: verify ownership, loans, dates, team status and installed conditions",
+          "team_type": "RESERVE",
+          "source_person_id": "408886",
+          "source_sha256": "341975dd309fe24b2819e8f0a7d7c2adadc4b0fba5af22e1d2768b68cd7328bd",
+          "source_status": "CONFIRMED"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "82198",
+        "league": "GER3",
+        "player": "Maxime Ndong Penda",
+        "dob": "2007-03-01",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/3-liga/2076?page=6",
+        "source_sha256": "0f4d781c0a7b32f5f419ad17d328261defcb545ae8954d839455a92625bf84ea",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "1005583",
+      "source_name": "Alysson",
+      "fm_id": "232997",
+      "native_fifa_id": "0",
+      "native_name": "Alysson Edward Franco da Rocha",
+      "dob": "2006-05-05",
+      "native_nationality": "54",
+      "native_club_id": "3538956",
+      "target_club_id": "917506",
+      "current_club_tm_id": "405",
+      "profile_source": "https://www.transfermarkt.de/alysson/profil/spieler/1005583",
+      "profile_sha256": "8530d05386eef98b6c30ce3a4ad1f1c10fd8cbdad1ca106fd1bc8201127cc34f",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Alysson is the existing native Alysson Edward Franco da Rocha, common name Alysson Edward. Official LaLiga biography ties the longer full name ending dos Santos to the exact DOB, Brazil and Aston Villa. Native person has the same first/full-name stem, DOB, Brazilian nationality, right-wing position and former club Gremio. Official Villa indexed biography corroborates the January2026 arrival from Gremio; its direct fetched body is empty. Use the existing person, preserve native FIFA0 and all native name fields. EA82968 corroborates identity only.",
+      "public_sources": [
+        {
+          "url": "https://www.laliga.com/en-GB/player/alysson-edward",
+          "access": "OFFICIAL_BODY_HASHED",
+          "sha256": "81e3c0a3401a1522b0eabea8e3949b9d6aaafceb4ac99f0cf495e1ee42912c17",
+          "supports": "Alysson Edward Franco da Rocha dos Santos, DOB05May2006, Brazil, Aston Villa,184cm79kg"
+        },
+        {
+          "url": "https://www.avfc.co.uk/players/alyssonedward",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ_DIRECT_BODY_EMPTY",
+          "supports": "Alysson joined Villa from Gremio in January2026; predominantly right wing, favoured left foot. Direct cached body did not contain this biography."
+        }
+      ],
+      "unassigned_fifa_evidence": {
+        "fifa_id": "82968",
+        "league": "ENG1",
+        "player": "Alysson Edward F. da R. dos Santos",
+        "dob": "2006-05-05",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/premier-league/13?page=5",
+        "source_sha256": "29825b17bf3fe84dda739bbc9faa6d3845f994db557e39c238313b7920831964",
+        "snapshot_date": "2026-09-08",
+        "common_name": "Alysson",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      },
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "477578",
+      "source_name": "Leon Sommer-Deiss",
+      "fm_id": "280655",
+      "native_fifa_id": "276430",
+      "native_name": "Leon Sommer",
+      "dob": "2001-03-10",
+      "native_nationality": "21",
+      "native_club_id": "1376539",
+      "target_club_id": "1376539",
+      "current_club_tm_id": "476",
+      "profile_source": "https://www.transfermarkt.de/leon-sommer-deiss/profil/spieler/477578",
+      "profile_sha256": "8dd840b09dd33b675c2bb64daa3b7f852cad4a646d6dc93d7c04862462cd893c",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-08T23:38:59.928120+00:00",
+      "reason": "The official Havelse squad lists Leon Sommer-Deiss and its corresponding Leon Sommer biography with DOB10Mar2001. Official June2026 renewal confirms continued Havelse membership. Existing native person shares exact DOB, German nationality, right-back position and club. Preserve native FIFA276430 and native name.",
+      "public_sources": [
+        {
+          "url": "https://tsv-havelse.de/1-herren/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "7da019f70a924eb73cd9193b0de63ab718e5ee49ab86b28cc3f20637b0eadcf8",
+          "supports": "Leon Sommer-Deiss; Leon Sommer; 10.03.2001"
+        },
+        {
+          "url": "https://tsv-havelse.de/leon-sommer-verlaengert-beim-tsv-havelse/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "683e0abf6f628216081e84959bd66d89a11307c36c4ca30229c260d84069d146",
+          "supports": "Leon Sommer; 30.06.2026; Vertrag verlängert"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "856330",
+      "source_name": "Seung-joon Lee",
+      "fm_id": "88698",
+      "native_fifa_id": "0",
+      "native_name": "Seung-Jun Lee",
+      "dob": "2004-08-11",
+      "native_nationality": "167",
+      "native_club_id": "12455946",
+      "target_club_id": "1376287",
+      "current_club_tm_id": "1",
+      "profile_source": "https://www.transfermarkt.de/seung-joon-lee/profil/spieler/856330",
+      "profile_sha256": "b04d0bd451e8baa8cd8246cca813a83c03b8795799db3a7f9cf0082ea2a39597",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-08T23:38:59.929120+00:00",
+      "reason": "Seung-joon/Seung-Jun are individually reviewed romanizations. Official Saarbruecken announcement and biography identify the Korean winger arriving from Yongin after Khor Fakkan and Seoul; DFB roster gives exact DOB11Aug2004. Existing native Khorfakkan winger has exact DOB and Korean nationality. EA273789 corroborates identity only; preserve native FIFA0.",
+      "public_sources": [
+        {
+          "url": "https://www.fc-saarbruecken.de/fcs-verpflichtet-den-suedkoreaner-seung-joon-lee/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "dc845c32c3ab90e017410fb997ad091c1b46fb8afd8ccfc3f59c9e7480a14167",
+          "supports": "Seung-Joon Lee; 02.07.2026; Yongin FC"
+        },
+        {
+          "url": "https://www.fc-saarbruecken.de/?hdw_team_tax=profis",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "a59521c85762c57a4ef4a1eab39401909008751a8b5ae8296f27bbc404ba3a04",
+          "supports": "Seung-Joon Lee; Khor Fakkan; FC Seoul"
+        },
+        {
+          "url": "https://datencenter.dfb.de/competitions/3-liga/seasons/2026-2027/teams/1-fc-saarbruecken?datacenter_name=datencenter%3Fhistorize_title%3D3.+Liga+2026%2F27%2C+1.+Spieltag&historize_url=",
+          "access": "OFFICIAL_INDEXED_BODY_READ",
+          "supports": "2026/27 Saarbruecken roster: Seung-joon Lee, DOB11Aug2004, shirt16"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "273789",
+        "league": "GER3",
+        "player": "Seung Joon Lee",
+        "dob": "2004-08-11",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/3-liga/2076?page=5",
+        "source_sha256": "321358f1f87e62dce2b4d28306504c4d1d5b2c051e94ca0aaadcc520addfd2f9",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "1218658",
+      "source_name": "Samy Jr. Merheg",
+      "fm_id": "242899",
+      "native_fifa_id": "0",
+      "native_name": "Samy Merheg",
+      "dob": "2006-12-06",
+      "native_nationality": "171",
+      "native_club_id": "3670031",
+      "target_club_id": "2490393",
+      "current_club_tm_id": "2521",
+      "profile_source": "https://www.transfermarkt.de/samy-jr-merheg/profil/spieler/1218658",
+      "profile_sha256": "0961004043053c61e398926533ce23dc0252462b50e80ec9d2ce9a4708ef66e2",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-08T23:38:59.934121+00:00",
+      "reason": "Samy Jr. Merheg is the existing native Samy Merheg. Official Alverca announcement connects Colombian/Lebanese striker, Braga and Deportivo Pereira. Liga-hosted February2026 media kit identifies Samy Merheg, Lebanese nationality, DOB06Dec2006 and prior Deportivo Pereira. Native striker shares name, DOB, Lebanese nationality and original club. Preserve FIFA0; do not create a duplicate.",
+      "public_sources": [
+        {
+          "url": "https://fcalvercafutebolsad.pt/samy-merheg-reforca-o-ataque/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "379ea484f6e5178f6a47f5e77d9c9d05cd41bf648335cbbb7c74f25e2047a09c",
+          "supports": "Samy Merheg; 18 Jul 2026; SC Braga; Deportivo Pereira"
+        },
+        {
+          "url": "https://www.ligaportugal.pt/backoffice/assets/SC_Braga_Rio_Ave_FC_Jornada_21_b0359ff1b1.pdf",
+          "access": "LEAGUE_HOSTED_EDITORIAL_MEDIA_KIT_BODY_READ_PAGE_3",
+          "supports": "Samy Merheg, LIB, Deportivo Pereira, DOB2006-12-06. The media kit credits zerozero editorial data; it is corroboration, not a registration authority."
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "1371198",
+      "source_name": "Ale Gomes",
+      "fm_id": "302180",
+      "native_fifa_id": "0",
+      "native_name": "Alejandro Gomes",
+      "dob": "2008-02-14",
+      "native_nationality": "45",
+      "native_club_id": "2949136",
+      "target_club_id": "1769500",
+      "current_club_tm_id": "607",
+      "profile_source": "https://www.transfermarkt.de/ale-gomes/profil/spieler/1371198",
+      "profile_sha256": "ead39eb014f10bdfae7352026f498c66f6b8c0aba74ceb009e1750770504b1a9",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T00:35:59.814438+00:00",
+      "reason": "Individually reviewed Ale Gomes / Alejandro Gomes Furtado is the existing native Alejandro Gomes. Official Venezia announcement identifies Spanish defender born2008 arriving permanently from Real Zaragoza. Cached TM and EA81491 agree on full name, exact DOB14Feb2008 and current Venezia; native player has same DOB, Spanish nationality and Zaragoza club. EA ID corroborates only; preserve native FIFA0. CONTRACT HOLD remains: official exact30Jun2032 conflicts with TM30Jun2031. Do not stage the old end; a separately guarded contract correction is required.",
+      "public_sources": [
+        {
+          "url": "https://en.veneziafc.it/news/alejandro-gomes-furtado-joins-venezia-fc",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "4be141275067b044af7e8ee8012c181e2a27340e34690b386b0e9451b23c76b7",
+          "supports": "Alejandro Gomes Furtado; 09/07/2026; 30 June 2032"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "81491",
+        "league": "ITA1",
+        "player": "Alejandro Gomes Furtado",
+        "dob": "2008-02-14",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/serie-a-enilive/31?page=6",
+        "source_sha256": "238aabf703780214a936336f29160ce180dce52c8fd4885dabbca8e7d7d2ef2c",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "720286",
+      "source_name": "Aleksey Batrakov",
+      "fm_id": "177680",
+      "native_fifa_id": "0",
+      "native_name": "Alexey Batrakov",
+      "dob": "2005-06-09",
+      "native_nationality": "40",
+      "native_club_id": "2621510",
+      "target_club_id": "3145825",
+      "current_club_tm_id": "141",
+      "profile_source": "https://www.transfermarkt.de/aleksey-batrakov/profil/spieler/720286",
+      "profile_sha256": "9a90d99057eef48c23cb16cc0c3f9c4207cb2710f709eef35489bb0a117f80bf",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T00:53:37.602068+00:00",
+      "reason": "Aleksey/Alexey Batrakov are individually reviewed transliterations. Official Galatasaray welcome biography gives exact9June2005DOB, Russian nationality and Lokomotiv history, matching the existing native attacking midfielder. Official20Aug2026 signing confirms permanent Lokomotiv arrival and five seasons from2026/27. Preserve nativeFIFA0; no new player. Official bodies were web-read; localTLS capture failed and is explicitly documented in BATRAKOV_PRIMARY_REVIEW_01.json.",
+      "public_sources": [
+        {
+          "url": "https://www.galatasaray.org/haber/futbol/galatasaraya-hos-geldin-batrakov/60793",
+          "access": "OFFICIAL_WEB_BODY_READ_LOCAL_CAPTURE_UNAVAILABLE",
+          "review_sha256": "57b044e0c9698252ac319917820a87c3b7643c2ce0ad0097a0c2fcfb022ce06a",
+          "supports": "Official20Aug2026 welcome biography: Aleksey Andreyevich Batrakov, DOB9June2005, Russian, Lokomotiv academy and first team, attacking midfielder."
+        },
+        {
+          "url": "https://www.galatasaray.org/haber/gs-sportif-a-s/aleksey-batrakov-galatasarayda/60792",
+          "access": "OFFICIAL_WEB_BODY_READ_LOCAL_CAPTURE_UNAVAILABLE",
+          "review_sha256": "57b044e0c9698252ac319917820a87c3b7643c2ce0ad0097a0c2fcfb022ce06a",
+          "supports": "Official20Aug2026 signing announcement: permanent arrival from FC Lokomotiv Moscow, five-year agreement effective2026/27."
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "938156",
+      "source_name": "Tommy Marqués",
+      "fm_id": "295797",
+      "native_fifa_id": "0",
+      "native_name": "Tomàs Marqués",
+      "dob": "2006-10-30",
+      "native_nationality": "45",
+      "native_club_id": "2949124",
+      "target_club_id": "2490374",
+      "current_club_tm_id": "1075",
+      "profile_source": "https://www.transfermarkt.de/tommy-marques/profil/spieler/938156",
+      "profile_sha256": "2a69db483292a155b94e6f2aab2cda6677dde655ba95ef96aa0c1cca80f0d6e5",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T00:53:37.603068+00:00",
+      "reason": "Official Barcelona debut biography explicitly identifies Tomas Marques known as Tommy, born30October2006. Native Tomas Marques/commonTommy sharesDOB, Spanish nationality and Barcelona club. Official21Aug2026 transfer announcement confirms permanent Braga arrival. CachedEA82439 corroborates full name/DOB only; its Barcelona affiliation is stale and is not used for the destination. Preserve nativeFIFA0.",
+      "public_sources": [
+        {
+          "url": "https://www.fcbarcelona.com/en/football/first-team/news/4446334/tommy-marques-makes-official-fc-barcelona-debut/featured",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "642c63f81eca550f9a576f757e16806994eddcc79956a024bc08b7579ecdf996",
+          "supports": "Tomàs Marqués; 30 October 2006; Tommy"
+        },
+        {
+          "url": "https://www.fcbarcelona.com/en/football/first-team/news/4563908/tommy-marques-moves-to-sc-braga",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "56c567379201df4a4d75ea8e6a4ddd67a639b1a97230a0536471dedf834c44e1",
+          "supports": "Tommy Marqués; SC Braga; 21 Aug 26"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "82439",
+        "league": "ESP1",
+        "player": "Tomás Noël Marqués Morera",
+        "dob": "2006-10-30",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/laliga-ea-sports/53?page=6",
+        "source_sha256": "8d08ccc59d973911e208ad6866cd292cc26c4e7bceb353b0f5be3015f112abc8",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "739442",
+      "source_name": "Guilherme Liberato",
+      "fm_id": "158836",
+      "native_fifa_id": "0",
+      "native_name": "Guilherme Tomas de Aquino",
+      "dob": "2001-06-16",
+      "native_nationality": "54",
+      "native_club_id": "2494477",
+      "target_club_id": "2490377",
+      "current_club_tm_id": "979",
+      "profile_source": "https://www.transfermarkt.de/guilherme-liberato/profil/spieler/739442",
+      "profile_sha256": "d73f8929ca5fd043649f8c1f5403eb71656a31ac7839cc99b114cdd8a49950e3",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T01:30:33.700353+00:00",
+      "reason": "Individually reviewed Guilherme Liberato Tomas de Aquino matches native Guilherme Tomas de Aquino/commonLiberato with exact16June2001DOB, Brazilian nationality and Moreirense owner in expired Torreense loan condition. CachedEA73195 uses abbreviated Guilherme L. T. de Aquino and exact common name Guilherme Liberato with matchingDOB; both CSV and rawHTML are checked by the existing common-name evidence guard. Official Moreirense first-team roster includes Liberato65. Preserve nativeFIFA0 and existing person; remove obsolete loan only through separate typed expired-loan validation.",
+      "public_sources": [
+        {
+          "url": "https://moreirensefc.pt/equipa-principal/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "c28481b5e98771bbeaff285547ac4c3e2ba68f81b7b02688858f9a04c4a29062",
+          "supports": "Liberato; 65"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "unassigned_fifa_evidence": {
+        "fifa_id": "73195",
+        "league": "POR1",
+        "player": "Guilherme L. T. de Aquino",
+        "common_name": "Guilherme Liberato",
+        "dob": "2001-06-16",
+        "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/liga-portugal/308?page=4",
+        "source_sha256": "617f2686b4dfd6bf9ae9dbea8cfeff9a26950f34d0bba1b5adca120b5ad802ed",
+        "snapshot_date": "2026-09-08",
+        "ea_csv_sha256": "84449b36dec6c67ee7000d4554489f9cb8a4d2f9c73c817b976eada97d3d9051"
+      }
+    },
+    {
+      "player_tm_id": "1026524",
+      "source_name": "Sam Amissah",
+      "fm_id": "24301",
+      "native_fifa_id": "0",
+      "native_name": "Samuel Amissah",
+      "dob": "2007-03-07",
+      "native_nationality": "14",
+      "native_club_id": "917521",
+      "target_club_id": "2490386",
+      "current_club_tm_id": "1465",
+      "profile_source": "https://www.transfermarkt.de/sam-amissah/profil/spieler/1026524",
+      "profile_sha256": "055b09a2d1d5b032e704382ad81993cfd0c2590ffea9a9e524debc6aa0cf049e",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T01:30:33.705355+00:00",
+      "reason": "Sam is the reviewed short form of Samuel Kweku Sarsah Amissah. Exact7March2007DOB and existing Fulham English defender match the verified full profile; official Fulham biography names Samuel Amissah and official30Aug2026 article names the Estoril loan. NativeFIFA0 retained. New owner contract2029 and loan2027 require typed loan reconciliation. Official July article body was incomplete locally and is not claimed as exact end-date authority.",
+      "public_sources": [
+        {
+          "url": "https://www.fulhamfc.com/players/under-21s/samuel-amissah/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "72b1c26821c46b55b9c055915ff4f3f37f14d933bcba09be3bb9d5b73c9c05fa",
+          "supports": "Samuel; Amissah; 2026"
+        },
+        {
+          "url": "https://www.fulhamfc.com/news/2026/august/30/amissah-joins-estoril-on-loan/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "507ad4e0b5eaa3cdf06d49624e8a79afaf509b23accccbe504c8495d096a0ce5",
+          "supports": "Amissah; Estoril"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "763948",
+      "source_name": "Dele Thomas",
+      "fm_id": "303999",
+      "native_fifa_id": "0",
+      "native_name": "Ayodele Thomas",
+      "dob": "2007-07-23",
+      "native_nationality": "34",
+      "native_club_id": "2228236",
+      "target_club_id": "2228235",
+      "current_club_tm_id": "467",
+      "profile_source": "https://www.transfermarkt.de/dele-thomas/profil/spieler/763948",
+      "profile_sha256": "19553620d01878a6322bd13afc6d59e4ed178e711254f7d8b19e7d4303c923db",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T01:30:33.705355+00:00",
+      "reason": "Dele/Ayodele Thomas is individually reviewed against full Reuben Ayodele-Olu Thomas, exact23July2007DOB, Dutch nationality and existing PSV player. Official NEC1Sep2026 announcement explicitly traces PSV youth to Leipzig and then permanent NEC contract until2030. NativeFIFA0 retained; no new person.",
+      "public_sources": [
+        {
+          "url": "https://www.nec-nijmegen.nl/nieuws/nieuws/dele-thomas-verruilt-rb-leipzig-voor-n.e.c..htm",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "23bafe86d6107ec368182973f4de74a0a121917434016848cac337bbdab4bd15",
+          "supports": "Thomas; 2030; 01-09-2026"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "922792",
+      "source_name": "Mouhamed Ngom",
+      "fm_id": "133542",
+      "native_fifa_id": "0",
+      "native_name": "Bachir Ngom",
+      "dob": "2000-05-12",
+      "native_nationality": "136",
+      "native_club_id": "1847353",
+      "target_club_id": "458753",
+      "current_club_tm_id": "157",
+      "profile_source": "https://www.transfermarkt.de/mouhamed-ngom/profil/spieler/922792",
+      "profile_sha256": "b9fff681c8bb13860602a87b624befda9bcee0c3cf7535b66ca1176664176813",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T01:30:33.706354+00:00",
+      "reason": "Mouhamed El Bachir Ngom is the individually reviewed full name of native Bachir Ngom, exact12May2000DOB and Senegalese nationality. Official Gent13July2026 article names full identity and prior Auda/Riga/Grasshoppers history, welcoming Bachir under contract to2031. This corroborates the existing Riga native person. Preserve nativeFIFA0.",
+      "public_sources": [
+        {
+          "url": "https://www.kaagent.be/nl/nieuws/13-07-2026/mouhamed-el-bachir-ngom-is-een-buffalo",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "246103f870b8cda8578feb8f8f1793a404d8951bdbd0c377a84182091846fac8",
+          "supports": "Mouhamed El Bachir Ngom; 2031; Grasshoppers"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "646747",
+      "source_name": "Rafa Obrador",
+      "fm_id": "300581",
+      "native_fifa_id": "258507",
+      "native_name": "Rafael Obrador",
+      "dob": "2004-02-24",
+      "native_nationality": "45",
+      "native_club_id": "2490372",
+      "target_club_id": "1769542",
+      "current_club_tm_id": "6574",
+      "profile_source": "https://www.transfermarkt.de/rafa-obrador/profil/spieler/646747",
+      "profile_sha256": "9c5601247840f733b2ae3830abd99283c4b9c90a99f0b08f2daf54e62acf59fe",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-09T01:30:33.706354+00:00",
+      "reason": "Rafa/Rafael/Rafel Obrador Burguera individually reviewed with exact24February2004DOB, Spanish nationality and existing Benfica left-back. Official Sassuolo14Aug2026 confirms Benfica loan until30June2027 with purchase option. Preserve nativeFIFA258507; no source FIFA assignment. Typed loan and separately evidenced option terms remain required before native staging.",
+      "public_sources": [
+        {
+          "url": "https://www.sassuolocalcio.it/en/featured/rafel-obrador-welcome-to-the-neroverdi/",
+          "access": "OFFICIAL_BODY_READ_HASHED",
+          "sha256": "dd99b17fb6b17053caea17a37189213f21e2304db41243570f2261bc196fe494",
+          "supports": "Rafel Obrador; SL Benfica; June 30 2027"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    }
+  ],
+  "limitations": "Identity evidence only; all contract, ownership, transfer event, source-conflict and native staging gates still apply."
+}

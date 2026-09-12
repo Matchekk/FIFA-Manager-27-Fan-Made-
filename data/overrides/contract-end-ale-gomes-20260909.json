@@ -1,0 +1,40 @@
+{
+  "status": "REVIEWED_PERMANENT_CONTRACT_END",
+  "snapshot_date": "2026-09-08",
+  "reviewed_at": "2026-09-09T00:53:33.734197+00:00",
+  "player_tm_id": "1371198",
+  "expected_plan_row": {
+    "contract_until": "2031-06-30",
+    "dob": "2008-02-14",
+    "fifa_id": "0",
+    "fm_id": "302180",
+    "joined": "2026-07-09",
+    "new_club_id": "1769500",
+    "old_club_id": "2949136",
+    "shirt_number": "95",
+    "snapshot_date": "2026-09-08",
+    "source": "https://www.transfermarkt.de/venezia-fc/kader/verein/607/saison_id/2026/plus/1",
+    "source_sha256": "4b1b50e033e4d06b3a9d56ee3fdf4254b02648599b88b37e81369da7a84aecd7",
+    "status": "CONFIRMED",
+    "team_type": "FIRST"
+  },
+  "contract_until": "2032-06-30",
+  "reason": "Official Venezia permanent-signing announcement on 9 July 2026 gives signed end 30 June 2032. The individually identified existing Zaragoza player is retained; only the conflicting TM end2031 is superseded.",
+  "evidence": [
+    {
+      "player_tm_id": "1371198",
+      "url": "https://en.veneziafc.it/news/alejandro-gomes-furtado-joins-venezia-fc",
+      "required": [
+        "Alejandro Gomes Furtado",
+        "09/07/2026",
+        "30 June 2032"
+      ],
+      "status": "REQUIRED_FACTS_PRESENT",
+      "sha256": "4be141275067b044af7e8ee8012c181e2a27340e34690b386b0e9451b23c76b7",
+      "file": "C:\\FM27CommunityOverhaul\\data\\raw\\player-biographies\\4be141275067b044af7e8ee8012c181e2a27340e34690b386b0e9451b23c76b7.html",
+      "missing": [],
+      "role": "OFFICIAL_CLUB",
+      "contract_end_literal": "30 June 2032"
+    }
+  ]
+}

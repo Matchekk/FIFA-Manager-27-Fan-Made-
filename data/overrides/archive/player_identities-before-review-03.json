@@ -1,0 +1,565 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-08",
+  "status": "REVIEWED_EXISTING_IDENTITIES",
+  "baseline_sha256": "a02de4fdfee919081ba8c6665c79cc3d292a3ca31e74e9dddbd510ae9ad5a2d0",
+  "rows": [
+    {
+      "player_tm_id": "639414",
+      "source_name": "Young-woo Seol",
+      "fm_id": "282553",
+      "native_fifa_id": "254980",
+      "native_name": "Yung-Woo Seol",
+      "dob": "1998-12-05",
+      "native_nationality": "167",
+      "native_club_id": "3342354",
+      "target_club_id": "1376431",
+      "profile_source": "https://www.transfermarkt.de/young-woo-seol/profil/spieler/639414",
+      "profile_sha256": "9726f4807ae7d40bb8de5d79b30c7beec3fd1ad9bae12c4477777190f7794d02",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Young-woo/Youngwoo/Yung-Woo are reviewed spellings for this Korean right-back. Official FCA profile gives exact DOB, nationality, height183cm and weight72kg; official announcement confirms arrival from FK Crvena zvezda and contract until30Jun2030, matching existing native club and current TM profile. Preserve native FIFA254980; no external FIFA ID is invented.",
+      "public_sources": [
+        {
+          "url": "https://www.fcaugsburg.de/en/team/player/young-woo-seol-1-311",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Young-Woo/Youngwoo Seol, DOB05Dec1998, Korea Republic, height183cm, weight72kg"
+        },
+        {
+          "url": "https://www.fcaugsburg.de/en/article/fca-sign-youngwoo-seol-23383",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "27Aug2026 arrival from FK Crvena zvezda; contract30Jun2030"
+        },
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefachampionsleague/2025/match/2042051/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Crvena zvezda Youngwoo Seol, Korea Republic, DOB05Dec1998"
+        }
+      ],
+      "ea_corroboration": [],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "current_club_tm_id": "167"
+    },
+    {
+      "player_tm_id": "467250",
+      "source_name": "Yukhym Konoplya",
+      "fm_id": "214471",
+      "native_fifa_id": "263804",
+      "native_name": "Yukhym Konoplia",
+      "dob": "1999-08-26",
+      "native_nationality": "49",
+      "native_club_id": "3211276",
+      "target_club_id": "1376263",
+      "profile_source": "https://www.transfermarkt.de/yukhym-konoplya/profil/spieler/467250",
+      "profile_sha256": "121d223f0257dd59c5b5c0aa3f6862cfb617dc50068a2d3fc398125e30bfc834",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Konoplya/Konoplia are individually reviewed spellings for the Ukrainian right-back. Current stored EA row has the exact native name, DOB and FIFA263804 at Mgladbach; UEFA independently gives the same name/DOB at Shakhtar, matching native club. Official Borussia announcement title confirms signing; its body was a loading shell and is not claimed read.",
+      "public_sources": [
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2026/match/2048099/printmatchpresskits/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Shakhtar Yukhym Konoplia, Ukraine, DOB26Aug1999"
+        },
+        {
+          "url": "https://www.borussia.com/news/konoplia-joins-borussia-2627",
+          "access": "OFFICIAL_TITLE_BODY_LOADING_SHELL",
+          "supports": "Official page title Yukhym Konoplia joins Borussia; body not readable"
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "GER1",
+          "fifa_id": "263804",
+          "club_fifa_id": "23",
+          "club": "M'gladbach",
+          "player": "Yukhym Konoplia",
+          "common_name": "",
+          "dob": "1999-08-26",
+          "position": "RB",
+          "ea_overall": "73",
+          "attributes": "{\"acceleration\": 85, \"aggression\": 80, \"agility\": 75, \"balance\": 67, \"ballControl\": 67, \"composure\": 65, \"crossing\": 75, \"curve\": 70, \"def\": 66, \"defensiveAwareness\": 62, \"dri\": 69, \"dribbling\": 69, \"finishing\": 41, \"freeKickAccuracy\": 42, \"gkDiving\": 8, \"gkHandling\": 6, \"gkKicking\": 12, \"gkPositioning\": 7, \"gkReflexes\": 10, \"headingAccuracy\": 65, \"interceptions\": 70, \"jumping\": 79, \"longPassing\": 74, \"longShots\": 46, \"pac\": 82, \"pas\": 71, \"penalties\": 39, \"phy\": 71, \"positioning\": 67, \"reactions\": 66, \"sho\": 47, \"shortPassing\": 75, \"shotPower\": 61, \"slidingTackle\": 70, \"sprintSpeed\": 80, \"stamina\": 72, \"standingTackle\": 67, \"strength\": 67, \"vision\": 67, \"volleys\": 38}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/bundesliga/19?page=3",
+          "source_sha256": "aaf06ff4fc44320f4ccf5dcc92416042c2412c5822793c32461760e2a2a5b889",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON",
+      "current_club_tm_id": "18"
+    },
+    {
+      "player_tm_id": "559328",
+      "source_name": "Emmanuel Emegha",
+      "fm_id": "302046",
+      "native_fifa_id": "258437",
+      "native_name": "Emanuel Emegha",
+      "dob": "2003-02-03",
+      "native_nationality": "34",
+      "native_club_id": "1179667",
+      "current_club_tm_id": "631",
+      "target_club_id": "917513",
+      "profile_source": "https://www.transfermarkt.de/emmanuel-emegha/profil/spieler/559328",
+      "profile_sha256": "147075c0de97e1c822c04500ea6ec21cf5c41d3c602cbf7b31e72043b8bd1a7d",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Emmanuel/Emanuel individually corroborated by Chelsea, league index, exact stored EA FIFA/name/DOB and native Strasbourg origin.",
+      "public_sources": [
+        {
+          "url": "https://www.chelseafc.com/en/news/article/chelsea-agree-deal-to-sign-emanuel-emegha",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Emmanuel Emegha arrives from Strasbourg in2026; URL retains Emanuel spelling."
+        },
+        {
+          "url": "https://www.premierleague.com/en/players/503037/emanuel-emegha/stats",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ_BODY_SHELL",
+          "supports": "Emmanuel Emegha, DOB03Feb2003; URL retains Emanuel spelling. DOB readable in index, not body."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ENG1",
+          "fifa_id": "258437",
+          "club_fifa_id": "5",
+          "club": "Chelsea",
+          "player": "Emanuel Emegha",
+          "common_name": "",
+          "dob": "2003-02-03",
+          "position": "ST",
+          "ea_overall": "78",
+          "attributes": "{\"acceleration\": 80, \"aggression\": 64, \"agility\": 69, \"balance\": 42, \"ballControl\": 76, \"composure\": 73, \"crossing\": 47, \"curve\": 63, \"def\": 31, \"defensiveAwareness\": 26, \"dri\": 69, \"dribbling\": 66, \"finishing\": 79, \"freeKickAccuracy\": 53, \"gkDiving\": 11, \"gkHandling\": 10, \"gkKicking\": 12, \"gkPositioning\": 10, \"gkReflexes\": 6, \"headingAccuracy\": 77, \"interceptions\": 35, \"jumping\": 91, \"longPassing\": 52, \"longShots\": 69, \"pac\": 88, \"pas\": 60, \"penalties\": 68, \"phy\": 78, \"positioning\": 82, \"reactions\": 77, \"sho\": 76, \"shortPassing\": 68, \"shotPower\": 78, \"slidingTackle\": 23, \"sprintSpeed\": 94, \"stamina\": 79, \"standingTackle\": 21, \"strength\": 82, \"vision\": 64, \"volleys\": 74}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/premier-league/13?page=3",
+          "source_sha256": "25ff6091d9d64aa42e9459ec040d7d7fd44282a5d8e67a15b6bba263e3055818",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "354361",
+      "source_name": "Frank Anguissa",
+      "fm_id": "294301",
+      "native_fifa_id": "227236",
+      "native_name": "André-Franck Anguissa",
+      "dob": "1995-11-16",
+      "native_nationality": "103",
+      "native_club_id": "1769517",
+      "current_club_tm_id": "6195",
+      "target_club_id": "1769517",
+      "profile_source": "https://www.transfermarkt.de/frank-anguissa/profil/spieler/354361",
+      "profile_sha256": "9af496f58d98055ac5d93f02f0999e51acc9a3e96a669bb69a6133d0fddeb573",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Frank/Franck and omitted Andre/Zambo individually corroborated. Stored EA Andre-Franck Zambo Anguissa shares native FIFA227236, DOB and Napoli affiliation.",
+      "public_sources": [
+        {
+          "url": "https://sscnapoli.it/en/auguri-ad-anguissa-4/",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Frank Anguissa, Napoli midfielder, born16Nov1995 in Cameroon."
+        },
+        {
+          "url": "https://images.legaseriea.it/raw/private/fl_attachment/prd/lfpfiqkrwhf198zoajjt.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Napoli report names Andre Frank Zambo Anguissa with DOB16Nov1995."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ITA1",
+          "fifa_id": "227236",
+          "club_fifa_id": "48",
+          "club": "SSC Napoli",
+          "player": "André-Franck Zambo Anguissa",
+          "common_name": "",
+          "dob": "1995-11-16",
+          "position": "CM",
+          "ea_overall": "82",
+          "attributes": "{\"acceleration\": 71, \"aggression\": 85, \"agility\": 74, \"balance\": 72, \"ballControl\": 84, \"composure\": 80, \"crossing\": 64, \"curve\": 62, \"def\": 79, \"defensiveAwareness\": 79, \"dri\": 81, \"dribbling\": 81, \"finishing\": 78, \"freeKickAccuracy\": 56, \"gkDiving\": 11, \"gkHandling\": 11, \"gkKicking\": 9, \"gkPositioning\": 8, \"gkReflexes\": 11, \"headingAccuracy\": 78, \"interceptions\": 80, \"jumping\": 86, \"longPassing\": 80, \"longShots\": 79, \"pac\": 72, \"pas\": 76, \"penalties\": 60, \"phy\": 81, \"positioning\": 84, \"reactions\": 86, \"sho\": 77, \"shortPassing\": 82, \"shotPower\": 82, \"slidingTackle\": 76, \"sprintSpeed\": 72, \"stamina\": 76, \"standingTackle\": 80, \"strength\": 81, \"vision\": 81, \"volleys\": 58}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/serie-a-enilive/31?page=1",
+          "source_sha256": "c5f7528f33e1d20a805595fb83272074ec82c65dd8c8e618b0ff2194e2e108d2",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "659089",
+      "source_name": "Ilya Zabarnyi",
+      "fm_id": "295885",
+      "native_fifa_id": "258781",
+      "native_name": "Illia Zabarnyi",
+      "dob": "2002-09-01",
+      "native_nationality": "49",
+      "native_club_id": "1179663",
+      "current_club_tm_id": "583",
+      "target_club_id": "1179663",
+      "profile_source": "https://www.transfermarkt.de/ilya-zabarnyi/profil/spieler/659089",
+      "profile_sha256": "dd782adc5f5886841580b61dec484070fcb6846c2304b2373fb41ec33e86b024",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Ilya/Illia individually corroborated against official PSG biography and exact native/EA FIFA258781 and DOB. No general Cyrillic transliteration.",
+      "public_sources": [
+        {
+          "url": "https://www.psg.fr/en/players/illia-zabarnyi",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Illia Zabarnyi, born01Sep2002, Ukraine, PSG since2025,189cm80kg."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "FRA1",
+          "fifa_id": "258781",
+          "club_fifa_id": "73",
+          "club": "Paris SG",
+          "player": "Illia Zabarnyi",
+          "common_name": "",
+          "dob": "2002-09-01",
+          "position": "CB",
+          "ea_overall": "80",
+          "attributes": "{\"acceleration\": 68, \"aggression\": 77, \"agility\": 63, \"balance\": 55, \"ballControl\": 68, \"composure\": 74, \"crossing\": 55, \"curve\": 36, \"def\": 81, \"defensiveAwareness\": 82, \"dri\": 64, \"dribbling\": 60, \"finishing\": 33, \"freeKickAccuracy\": 40, \"gkDiving\": 14, \"gkHandling\": 11, \"gkKicking\": 10, \"gkPositioning\": 11, \"gkReflexes\": 13, \"headingAccuracy\": 77, \"interceptions\": 79, \"jumping\": 86, \"longPassing\": 76, \"longShots\": 34, \"pac\": 77, \"pas\": 65, \"penalties\": 41, \"phy\": 80, \"positioning\": 37, \"reactions\": 80, \"sho\": 37, \"shortPassing\": 77, \"shotPower\": 50, \"slidingTackle\": 79, \"sprintSpeed\": 84, \"stamina\": 72, \"standingTackle\": 82, \"strength\": 85, \"vision\": 57, \"volleys\": 28}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/ligue-1-mc-donald-s/16?page=1",
+          "source_sha256": "24ba2fea517b6833c2c9a893b4f865bea9802def3cca18bf98997e1aebad5dc0",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "263918",
+      "source_name": "Aleksandr Golovin",
+      "fm_id": "296903",
+      "native_fifa_id": "225663",
+      "native_name": "Alexandr Golovin",
+      "dob": "1996-05-30",
+      "native_nationality": "40",
+      "native_club_id": "1179655",
+      "current_club_tm_id": "162",
+      "target_club_id": "1179655",
+      "profile_source": "https://www.transfermarkt.de/aleksandr-golovin/profil/spieler/263918",
+      "profile_sha256": "21e5278d681e3983c591ac61a436f49029d542ba13ac9f753ec45cb56bc99dd7",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Aleksandr/Alexandr individually corroborated by Monaco profile and native/EA FIFA225663, DOB and existing Monaco affiliation.",
+      "public_sources": [
+        {
+          "url": "https://www.asmonaco.com/fr/joueurs/aleksandr-golovin",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Aleksandr Golovin, born30May1996 inRussia, Monaco since27Jul2018."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "FRA1",
+          "fifa_id": "225663",
+          "club_fifa_id": "69",
+          "club": "AS Monaco",
+          "player": "Alexandr Golovin",
+          "common_name": "",
+          "dob": "1996-05-30",
+          "position": "CAM",
+          "ea_overall": "78",
+          "attributes": "{\"acceleration\": 73, \"aggression\": 78, \"agility\": 83, \"balance\": 77, \"ballControl\": 83, \"composure\": 80, \"crossing\": 76, \"curve\": 82, \"def\": 59, \"defensiveAwareness\": 45, \"dri\": 82, \"dribbling\": 82, \"finishing\": 73, \"freeKickAccuracy\": 81, \"gkDiving\": 12, \"gkHandling\": 14, \"gkKicking\": 14, \"gkPositioning\": 10, \"gkReflexes\": 16, \"headingAccuracy\": 46, \"interceptions\": 71, \"jumping\": 61, \"longPassing\": 73, \"longShots\": 82, \"pac\": 72, \"pas\": 78, \"penalties\": 60, \"phy\": 66, \"positioning\": 76, \"reactions\": 75, \"sho\": 75, \"shortPassing\": 79, \"shotPower\": 78, \"slidingTackle\": 64, \"sprintSpeed\": 72, \"stamina\": 76, \"standingTackle\": 68, \"strength\": 56, \"vision\": 78, \"volleys\": 68}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/ligue-1-mc-donald-s/16?page=1",
+          "source_sha256": "24ba2fea517b6833c2c9a893b4f865bea9802def3cca18bf98997e1aebad5dc0",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "430310",
+      "source_name": "Andrew Irving",
+      "fm_id": "275665",
+      "native_fifa_id": "242271",
+      "native_name": "Andy Irving",
+      "dob": "2000-05-13",
+      "native_nationality": "42",
+      "native_club_id": "917511",
+      "current_club_tm_id": "197",
+      "target_club_id": "786442",
+      "profile_source": "https://www.transfermarkt.de/andrew-irving/profil/spieler/430310",
+      "profile_sha256": "0f93a702253caef6b4ae28dcc27574bb617b109aab5c8f16199494cb4e73231a",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Andrew/Andy explicitly linked by Sparta article; stored EA FIFA242271 and DOB corroborate native WestHam midfielder.",
+      "public_sources": [
+        {
+          "url": "https://sparta.cz/en/novinky/44572-andrew-irving-joins-sparta",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Andrew and Andy used in same article; born13May2000 inEdinburgh, arrives fromWestHam."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "CZE1",
+          "fifa_id": "242271",
+          "club_fifa_id": "267",
+          "club": "Sparta Praha",
+          "player": "Andy Irving",
+          "common_name": "",
+          "dob": "2000-05-13",
+          "position": "CM",
+          "ea_overall": "72",
+          "attributes": "{\"acceleration\": 60, \"aggression\": 67, \"agility\": 67, \"balance\": 65, \"ballControl\": 75, \"composure\": 70, \"crossing\": 68, \"curve\": 66, \"def\": 65, \"defensiveAwareness\": 65, \"dri\": 72, \"dribbling\": 73, \"finishing\": 65, \"freeKickAccuracy\": 71, \"gkDiving\": 10, \"gkHandling\": 15, \"gkKicking\": 12, \"gkPositioning\": 10, \"gkReflexes\": 13, \"headingAccuracy\": 63, \"interceptions\": 68, \"jumping\": 74, \"longPassing\": 72, \"longShots\": 66, \"pac\": 57, \"pas\": 73, \"penalties\": 70, \"phy\": 73, \"positioning\": 68, \"reactions\": 67, \"sho\": 67, \"shortPassing\": 75, \"shotPower\": 70, \"slidingTackle\": 61, \"sprintSpeed\": 55, \"stamina\": 69, \"standingTackle\": 65, \"strength\": 77, \"vision\": 76, \"volleys\": 64}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/ceska-liga/319?page=1",
+          "source_sha256": "86d84f1c9497aaa72f12cbfbcc2949c2113d3d08dbbbcacfb9566b89b61f7dd3",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "559979",
+      "source_name": "Abdel Abqar",
+      "fm_id": "295276",
+      "native_fifa_id": "245628",
+      "native_name": "Abdelkabir Abqar",
+      "dob": "1999-03-10",
+      "native_nationality": "129",
+      "native_club_id": "2949126",
+      "current_club_tm_id": "3709",
+      "target_club_id": "2949126",
+      "profile_source": "https://www.transfermarkt.de/abdel-abqar/profil/spieler/559979",
+      "profile_sha256": "5c5494e3e2cd87c09cac1a039838bb0dc87fd97e7543d40ba74e611dfdc087d0",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Abdel/Abdelkabir reviewed using club/league profile and exact stored EA FIFA245628/DOB matching native Getafe defender.",
+      "public_sources": [
+        {
+          "url": "https://www.getafecf.com/jugadores/abdel-abqar",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Abdel Abqar is Getafe Moroccan defender; date field empty, no DOB claim from this page."
+        },
+        {
+          "url": "https://www.laliga.com/en-GB/player/abqar",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Abdel Abqar, Getafe, Morocco, born10Mar1999,188cm80kg."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ESP1",
+          "fifa_id": "245628",
+          "club_fifa_id": "1860",
+          "club": "Getafe CF",
+          "player": "Abdelkabir Abqar",
+          "common_name": "",
+          "dob": "1999-03-10",
+          "position": "CB",
+          "ea_overall": "74",
+          "attributes": "{\"acceleration\": 52, \"aggression\": 83, \"agility\": 40, \"balance\": 33, \"ballControl\": 65, \"composure\": 58, \"crossing\": 35, \"curve\": 33, \"def\": 74, \"defensiveAwareness\": 73, \"dri\": 59, \"dribbling\": 62, \"finishing\": 27, \"freeKickAccuracy\": 31, \"gkDiving\": 9, \"gkHandling\": 10, \"gkKicking\": 11, \"gkPositioning\": 12, \"gkReflexes\": 9, \"headingAccuracy\": 77, \"interceptions\": 74, \"jumping\": 80, \"longPassing\": 65, \"longShots\": 28, \"pac\": 53, \"pas\": 53, \"penalties\": 38, \"phy\": 76, \"positioning\": 24, \"reactions\": 68, \"sho\": 31, \"shortPassing\": 69, \"shotPower\": 42, \"slidingTackle\": 73, \"sprintSpeed\": 54, \"stamina\": 65, \"standingTackle\": 74, \"strength\": 79, \"vision\": 43, \"volleys\": 32}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/laliga-ea-sports/53?page=3",
+          "source_sha256": "05c772f8e37364c5445066a590ec80a2eae94de8914fa2c477f61a1e41110dd6",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "666539",
+      "source_name": "Beni Mukendi",
+      "fm_id": "299067",
+      "native_fifa_id": "273840",
+      "native_name": "Benedito Mukendi",
+      "dob": "2002-05-21",
+      "native_nationality": "98",
+      "native_club_id": "2490397",
+      "current_club_tm_id": "2420",
+      "target_club_id": "2490397",
+      "profile_source": "https://www.transfermarkt.de/beni-mukendi/profil/spieler/666539",
+      "profile_sha256": "2af1a70d4257929c27316391678c13a76fbaf27c0774a4aaafcd97422fca2d7f",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Beni/Benedito explicitly linked in official club report; league DOB, native and stored EA FIFA273840 corroborate.",
+      "public_sources": [
+        {
+          "url": "https://vitoriasc.pt/wp-content/uploads/2025/10/ReC_SAD.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Club report explicitly links Benedito Mukendi and Beni."
+        },
+        {
+          "url": "https://ligaportugalstorage.blob.core.windows.net/backoffice/assets/Sporting_CP_Vitoria_SC_Jornada_32_8d5aa489ac.pdf",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "League squad document lists Vitoria Beni Mukendi ANG born21May2002."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "POR1",
+          "fifa_id": "273840",
+          "club_fifa_id": "1887",
+          "club": "Vitória SC",
+          "player": "Benedito Mukendi",
+          "common_name": "Beni",
+          "dob": "2002-05-21",
+          "position": "CDM",
+          "ea_overall": "72",
+          "attributes": "{\"acceleration\": 67, \"aggression\": 74, \"agility\": 73, \"balance\": 61, \"ballControl\": 70, \"composure\": 62, \"crossing\": 51, \"curve\": 55, \"def\": 70, \"defensiveAwareness\": 73, \"dri\": 70, \"dribbling\": 71, \"finishing\": 55, \"freeKickAccuracy\": 48, \"gkDiving\": 9, \"gkHandling\": 7, \"gkKicking\": 11, \"gkPositioning\": 12, \"gkReflexes\": 11, \"headingAccuracy\": 55, \"interceptions\": 72, \"jumping\": 68, \"longPassing\": 67, \"longShots\": 66, \"pac\": 67, \"pas\": 64, \"penalties\": 55, \"phy\": 74, \"positioning\": 72, \"reactions\": 71, \"sho\": 60, \"shortPassing\": 70, \"shotPower\": 65, \"slidingTackle\": 70, \"sprintSpeed\": 67, \"stamina\": 84, \"standingTackle\": 71, \"strength\": 70, \"vision\": 70, \"volleys\": 59}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/liga-portugal/308?page=2",
+          "source_sha256": "41c0c0cbbaeea92094795ecd4df0b83fa24bacb1648fc6b93c6cebe01e354bac",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "997646",
+      "source_name": "Lucas Vennegoor of Hesselink",
+      "fm_id": "307474",
+      "native_fifa_id": "70539",
+      "native_name": "Lucas V. of Hesselink",
+      "dob": "2006-03-14",
+      "native_nationality": "34",
+      "native_club_id": "2228240",
+      "current_club_tm_id": "317",
+      "target_club_id": "2228240",
+      "profile_source": "https://www.transfermarkt.de/lucas-vennegoor-of-hesselink/profil/spieler/997646",
+      "profile_sha256": "bfb3afb8d5db89e520ee66079f23e01282842723b30b53eba351ebccfae689a9",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Native V. and EA Vennegoor of Hess. are individually reviewed abbreviations; exact DOB, native/EA FIFA70539 and Twente affiliation corroborate.",
+      "public_sources": [
+        {
+          "url": "https://fctwente.nl/teams/eerste-selectie/spelers",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Lucas Vennegoor of Hesselink attacker, born14Mar2006, Twente youth graduate."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "NED1",
+          "fifa_id": "70539",
+          "club_fifa_id": "1908",
+          "club": "FC Twente",
+          "player": "Lucas Vennegoor of Hess.",
+          "common_name": "",
+          "dob": "2006-03-14",
+          "position": "ST",
+          "ea_overall": "61",
+          "attributes": "{\"acceleration\": 52, \"aggression\": 55, \"agility\": 49, \"balance\": 53, \"ballControl\": 61, \"composure\": 51, \"crossing\": 32, \"curve\": 32, \"def\": 24, \"defensiveAwareness\": 22, \"dri\": 58, \"dribbling\": 58, \"finishing\": 61, \"freeKickAccuracy\": 33, \"gkDiving\": 10, \"gkHandling\": 10, \"gkKicking\": 11, \"gkPositioning\": 9, \"gkReflexes\": 13, \"headingAccuracy\": 66, \"interceptions\": 16, \"jumping\": 67, \"longPassing\": 28, \"longShots\": 57, \"pac\": 58, \"pas\": 42, \"penalties\": 60, \"phy\": 66, \"positioning\": 64, \"reactions\": 60, \"sho\": 59, \"shortPassing\": 52, \"shotPower\": 59, \"slidingTackle\": 19, \"sprintSpeed\": 62, \"stamina\": 67, \"standingTackle\": 20, \"strength\": 70, \"vision\": 49, \"volleys\": 48}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/eredivisie/10?page=5",
+          "source_sha256": "8d957e8b06217a126578a9576caea4b78ac12f2c57a05686112972c94e4b077d",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "124182",
+      "source_name": "Sergiy Sydorchuk",
+      "fm_id": "247181",
+      "native_fifa_id": "220948",
+      "native_name": "Serhiy Sydorchuk",
+      "dob": "1991-05-02",
+      "native_nationality": "49",
+      "native_club_id": "458763",
+      "current_club_tm_id": "968",
+      "target_club_id": "458763",
+      "profile_source": "https://www.transfermarkt.de/sergiy-sydorchuk/profil/spieler/124182",
+      "profile_sha256": "25c262ed0f35ff0b4d7a14c09436ea19beedd0bd09c5d2f85b8e8bbcb6779a08",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Sergiy/Serhiy individually corroborated against UEFA listing and exact native/EA FIFA220948,DOB,Westerlo affiliation.",
+      "public_sources": [
+        {
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/european-qualifiers/2024/match/2036432/officials/",
+          "access": "OFFICIAL_INDEXED_EXCERPT_READ",
+          "supports": "Serhiy Sydorchuk, Westerlo, born02May1991 in Ukraine squad."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "BEL1",
+          "fifa_id": "220948",
+          "club_fifa_id": "681",
+          "club": "KVC Westerlo",
+          "player": "Serhiy Sydorchuk",
+          "common_name": "",
+          "dob": "1991-05-02",
+          "position": "CDM",
+          "ea_overall": "68",
+          "attributes": "{\"acceleration\": 63, \"aggression\": 65, \"agility\": 62, \"balance\": 40, \"ballControl\": 65, \"composure\": 70, \"crossing\": 46, \"curve\": 63, \"def\": 68, \"defensiveAwareness\": 70, \"dri\": 63, \"dribbling\": 65, \"finishing\": 60, \"freeKickAccuracy\": 50, \"gkDiving\": 8, \"gkHandling\": 14, \"gkKicking\": 16, \"gkPositioning\": 13, \"gkReflexes\": 12, \"headingAccuracy\": 70, \"interceptions\": 69, \"jumping\": 75, \"longPassing\": 65, \"longShots\": 71, \"pac\": 58, \"pas\": 61, \"penalties\": 60, \"phy\": 74, \"positioning\": 57, \"reactions\": 60, \"sho\": 65, \"shortPassing\": 70, \"shotPower\": 73, \"slidingTackle\": 65, \"sprintSpeed\": 54, \"stamina\": 79, \"standingTackle\": 65, \"strength\": 75, \"vision\": 60, \"volleys\": 67}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/1a-pro-league/4?page=2",
+          "source_sha256": "20bdf19c6c306f6c03dc2666497fdcef927fa72ad9e5cb712522a929a11dd61b",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    },
+    {
+      "player_tm_id": "1143375",
+      "source_name": "Foe Ondoa",
+      "fm_id": "159521",
+      "native_fifa_id": "279018",
+      "native_name": "Manga Foé Ondoa",
+      "dob": "2005-12-12",
+      "native_nationality": "18",
+      "native_club_id": "2490405",
+      "current_club_tm_id": "2919",
+      "target_club_id": "1769533",
+      "profile_source": "https://www.transfermarkt.de/foe-ondoa/profil/spieler/1143375",
+      "profile_sha256": "a5ea5f92a64ee7c920c81576b54d34ea45dbace6edc04d4f3f8e964f4e068bb8",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "reason": "Short Foe Ondoa individually linked to native Manga Foe Ondoa by Monza biography, origin and exact stored EA FIFA279018/DOB.",
+      "public_sources": [
+        {
+          "url": "https://www.acmonza.com/en/news/manga-foe-ondoa-joins-ac-monza/",
+          "access": "OFFICIAL_BODY_READ",
+          "supports": "Manga Foe Ondoa, born12Dec2005 inParis, arrives fromEstoril; contract30Jun2030; previous Oliveirense loan."
+        }
+      ],
+      "ea_corroboration": [
+        {
+          "league": "ITA1",
+          "fifa_id": "279018",
+          "club_fifa_id": "111811",
+          "club": "Monza",
+          "player": "Manga Foe Ondoa",
+          "common_name": "",
+          "dob": "2005-12-12",
+          "position": "CM",
+          "ea_overall": "59",
+          "attributes": "{\"acceleration\": 74, \"aggression\": 61, \"agility\": 73, \"balance\": 72, \"ballControl\": 62, \"composure\": 53, \"crossing\": 39, \"curve\": 45, \"def\": 51, \"defensiveAwareness\": 41, \"dri\": 64, \"dribbling\": 64, \"finishing\": 51, \"freeKickAccuracy\": 39, \"gkDiving\": 7, \"gkHandling\": 11, \"gkKicking\": 10, \"gkPositioning\": 13, \"gkReflexes\": 11, \"headingAccuracy\": 57, \"interceptions\": 57, \"jumping\": 71, \"longPassing\": 58, \"longShots\": 56, \"pac\": 70, \"pas\": 54, \"penalties\": 38, \"phy\": 66, \"positioning\": 54, \"reactions\": 56, \"sho\": 55, \"shortPassing\": 66, \"shotPower\": 70, \"slidingTackle\": 44, \"sprintSpeed\": 67, \"stamina\": 68, \"standingTackle\": 58, \"strength\": 67, \"vision\": 52, \"volleys\": 38}",
+          "affiliation_status": "REVIEW_REQUIRED",
+          "rating_evidence_status": "CONFIRMED",
+          "source_phase": "PRE_ANNOUNCED_SEPTEMBER_10_UPDATE",
+          "source": "https://www.ea.com/games/ea-sports-fc/ratings/leagues-ratings/serie-a-enilive/31?page=7",
+          "source_sha256": "c97bfc376fb66cc02cac6f5540e0cdbf808de222346fa1786e31845dc8d8c6f4",
+          "snapshot_date": "2026-09-08"
+        }
+      ],
+      "status": "REVIEWED_EXISTING_PERSON"
+    }
+  ],
+  "limitations": "Identity evidence only; all contract, ownership, transfer event, source-conflict and native staging gates still apply."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "schema": 2,
+  "archive": "C:\\FM27CommunityOverhaul\\data\\generated\\transfer-increment-20260909-07-evidence-v2",
+  "manifest_sha256": "a0c953b318eee149f74df8981972bfd568b2531bed7981396656769986538ddf",
+  "original_inputs": 5373,
+  "stored_files": 2454,
+  "all_object_bytes_reread": true,
+  "source_mapping_complete": true,
+  "verifier_sha256": "2f30c562c61dc22742c7dcc81712514281b5728d6125427da61120bdace5413f"
+}

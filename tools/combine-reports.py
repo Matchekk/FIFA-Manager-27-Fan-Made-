@@ -9,6 +9,24 @@ from fm27.squad_compare import FIELDS
 
 root = Path(__file__).resolve().parents[1]
 reports = root / "reports"
+current = reports / "local/current"
+if (current / "RECONCILIATION.json").exists():
+    current_meta=json.loads((current / "RECONCILIATION.json").read_text(encoding="utf-8"))
+    for name in ("TRANSFER_DIFF.csv", "UNMATCHED_PLAYERS.csv", "AMBIGUOUS_MATCHES.csv"):
+        rows=read_csv(current / name)
+        with (current / name).open(encoding="utf-8-sig",newline="") as stream:
+            fields=next(__import__('csv').reader(stream))
+        if any(r["source_date"]!=current_meta["DATABASE_SNAPSHOT_DATE"] for r in rows):
+            raise ValueError("Mixed current reconciliation snapshot")
+        write_csv(reports / name,fields,rows)
+    write_json(reports / "TRANSFER_COVERAGE.json",{
+        "DATABASE_SNAPSHOT_DATE":current_meta["DATABASE_SNAPSHOT_DATE"],
+        "coverage":current_meta["coverage"],"source_failures":current_meta["source_failures"],
+        "status":"12_LEAGUE_CAPTURE_RECONCILIATION_INCOMPLETE","production_writes":0,
+        "departure_report":"DEPARTURE_RECONCILIATION.csv","coverage_matrix":"TRANSFER_COVERAGE_MATRIX.csv",
+        "limitations":"Fetched squads are not completed transfer coverage. See separate departure, loan and identity holds."})
+    print("Published current twelve-league reconciliation; no production write")
+    sys.exit(0)
 sources = [reports / "local/premier-league", reports / "local/germany"]
 metadata = [json.loads((p / "SQUAD_COMPARISON.json").read_text(encoding="utf-8")) for p in sources]
 dates = {m["DATABASE_SNAPSHOT_DATE"] for m in metadata}

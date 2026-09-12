@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "actual_changed_players": 195,
+  "planned_players": 195,
+  "actual_club_changes": 194,
+  "unexpected_identity_changes": [],
+  "before_sha256": "047780a284d1c5e4907cd2933d599133fabeb17fd48c3734b506cd3b6701fe2d",
+  "expected_sha256": "1b585536a1e5c1243f04636f3dca81c73928dd79e3ff43919f1862c091b1564f",
+  "plan_sha256": "7afecc64c01059edda6be05077c2dd30bd793938a7fcb6a42363a0c5a4fdb8e1",
+  "production_ready": false,
+  "limitations": "Player mutation scope only. Requires projected field comparison and native semantic reread; staff, competitions and engine gates are separate."
+}

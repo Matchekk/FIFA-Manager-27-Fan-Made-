@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-08",
+  "loans": [
+    {
+      "player_tm_id": "937952",
+      "profile_sha256": "496324d0546187c61bab298d391cb2bca91217a196c2a67bceca0cf1a047efca",
+      "dob": "2006-11-28",
+      "owner_tm_id": "27",
+      "owner_name": "FC Bayern München",
+      "borrower_tm_id": "4",
+      "borrower_name": "1. FC Nürnberg",
+      "source": "https://www.fcn.de/news/artikel/club-leiht-javier-fernandez-aus/",
+      "source_sha256": "6cd09fedc5863a5a006a66d8973a169e39dff0bfe92656ea839f7b6ef4f99141",
+      "announcement_date": "2026-01-31",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "evidence_fragments": [
+        "Javier Fernandez",
+        "vom FC Bayern München",
+        "zum 1. FC Nürnberg",
+        "31.01.2026"
+      ],
+      "reason": "Original winter loan explicitly announced by borrower. Source names the legal parent Bayern; reviewed reserve alias binds current profile owner Bayern II to that same native club. Announcement date is not copied into effective contract date."
+    },
+    {
+      "player_tm_id": "937952",
+      "profile_sha256": "496324d0546187c61bab298d391cb2bca91217a196c2a67bceca0cf1a047efca",
+      "dob": "2006-11-28",
+      "owner_tm_id": "27",
+      "owner_name": "FC Bayern München",
+      "borrower_tm_id": "4",
+      "borrower_name": "1. FC Nürnberg",
+      "source": "https://www.fcn.de/news/artikel/erneute-leihe-javier-fernandez-bleibt-beim-fcn/",
+      "source_sha256": "c99299900f3fa0761a99f999f8c1a09ad4b4750219e829d58b0bbc01a467e92f",
+      "announcement_date": "2026-06-13",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "evidence_fragments": [
+        "Javier Fernandez",
+        "erneut vom FC Bayern München ausgeliehen",
+        "kommenden Saison",
+        "13.06.2026"
+      ],
+      "reason": "Borrower confirms continuation for the coming season after the winter loan. Current profile supplies retained joined date and 2027 end; no new June start is fabricated."
+    },
+    {
+      "player_tm_id": "651002",
+      "profile_sha256": "2178cbf5b90ea4e8b945c525065620c630be1da508002b75b823435c28aab7b5",
+      "dob": "2004-07-31",
+      "owner_tm_id": "506",
+      "owner_name": "Juventus",
+      "borrower_tm_id": "2331",
+      "borrower_name": "US Avellino",
+      "source": "https://www.juventus.com/it/news/articoli/ufficiale-faticanti-in-prestito-all-avellino",
+      "source_sha256": "919a833309dfa333d8434185002d9e99e48fb59ba4694b68964df102a6374436",
+      "announcement_date": "2026-07-10",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "evidence_fragments": [
+        "Giacomo Faticanti",
+        "in prestito all'Avellino",
+        "2026/2027",
+        "10 luglio 2026"
+      ],
+      "reason": "Owning club explicitly confirms the 2026/27 loan to Avellino after the Lecce acquisition. Existing TM event6368825 already records that purchase and is not duplicated; native owner is Juventus for both parent and reviewed Next Gen alias."
+    },
+    {
+      "player_tm_id": "704122",
+      "profile_sha256": "714fa835789cf80d8b61a02b69576108f6ddac8064dbb568b3583397ed4ca64c",
+      "dob": "2003-01-05",
+      "owner_tm_id": "506",
+      "owner_name": "Juventus",
+      "borrower_tm_id": "2655",
+      "borrower_name": "LR Vicenza",
+      "source": "https://www.juventus.com/it/news/articoli/next-gen-pietrelli-in-prestito-al-vicenza",
+      "source_sha256": "e3c7ff20a904257be8186f38aacfc76766a8d652fe1e492e686b1da3028c8849",
+      "announcement_date": "2026-07-08",
+      "reviewed_on": "2026-09-08",
+      "reviewed_by": "Codex",
+      "evidence_fragments": [
+        "Alessandro Pietrelli",
+        "Vicenza",
+        "cessione a titolo temporaneo",
+        "08 luglio 2026"
+      ],
+      "reason": "Official Juventus Next Gen article confirms temporary transfer to Vicenza for 2026/27; current exact profile supplies dates and owner contract. Parent and reserve club IDs are explicitly mapped to the same native legal owner."
+    }
+  ],
+  "corroborating_existing_purchase": {
+    "event_key": "6368825",
+    "player_tm_id": "651002",
+    "source": {
+      "url": "https://www.juventus.com/it/news/articoli/ufficiale-giacomo-faticanti-a-titolo-definitivo-alla-juventus",
+      "retrieved_at": "2026-09-08T17:58:56.736784+00:00",
+      "sha256": "8a51822c5a7152a90257cdce2bbafcfd265af4d884d0f589bab911c2a1f21cfa",
+      "file": "8a51822c5a7152a90257cdce2bbafcfd265af4d884d0f589bab911c2a1f21cfa.html"
+    },
+    "reason": "Independent official confirmation; does not create a second ambiguous acquisition event."
+  }
+}

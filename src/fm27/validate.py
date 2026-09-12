@@ -39,7 +39,11 @@ def validate(players: list[dict], clubs: list[dict], snapshot: dt.date) -> list[
         try:
             start = dt.date.fromisoformat(joined) if joined not in (None, "", "0000-00-00") else None
             end = dt.date.fromisoformat(until) if until not in (None, "", "0000-00-00") else None
-            if start and end and end < start:
+            # Native converter encodes clubless players with an expired interval
+            # (e.g. joined 1 July, until 30 June). This is not an active contract.
+            native_clubless_interval = (str(p["club_id"]) == "0" and p.get("contract_loan_flag") not in (True, "True")
+                                        and start and end and end + dt.timedelta(days=1) == start)
+            if start and end and end < start and not native_clubless_interval:
                 add("ERROR", "CONTRACT_ORDER", identity, "End before start")
         except ValueError:
             add("ERROR", "CONTRACT_DATE", identity, "Malformed contract date")

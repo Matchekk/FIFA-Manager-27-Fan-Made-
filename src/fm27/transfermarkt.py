@@ -25,12 +25,27 @@ def club_link(anchor):
     return match[1], name
 
 
-def parse_page(html, league):
+def endpoint_kind(kind, other_id, other, direction):
+    """TM links its clubless pseudo-club (515), sometimes with duplicate text."""
+    if other_id == "515" or other in {"Vereinslos", "Without Club"}:
+        return "FREE_AGENT" if direction == "Abgang" else "FREE_TRANSFER"
+    if other in {"Karriereende", "Retired"}:
+        return "RETIRED"
+    return kind
+
+
+def parse_page(html, league, *, expected_season=2026, selected_event_ids=None):
+    if type(expected_season) is not int or not 1900 <= expected_season <= 2099:
+        raise ValueError("Invalid explicit transfer season")
+    if selected_event_ids is not None and (not isinstance(selected_event_ids, (set, frozenset))
+            or not selected_event_ids or any(not isinstance(k, str) or not re.fullmatch(r'[1-9][0-9]*', k) for k in selected_event_ids)):
+        raise ValueError("Explicit event selection must contain positive source IDs")
     soup = BeautifulSoup(html, "html.parser")
     selected = soup.select_one('select[name="saison_id"] option[selected]')
-    if not selected or selected.get("value") != "2026":
-        raise ValueError("Source season is not 2026/27")
-    if "Transfers 26/27" not in soup.title.get_text():
+    if not selected or selected.get("value") != str(expected_season):
+        raise ValueError("Source season does not match the requested season")
+    title = f"Transfers {expected_season % 100:02d}/{(expected_season + 1) % 100:02d}"
+    if not soup.title or title not in soup.title.get_text():
         raise ValueError("Not a confirmed-transfer season page")
     rows, clubs = [], {}
     for box in soup.select("div.box"):
@@ -48,6 +63,10 @@ def parse_page(html, league):
                 cells = tr.find_all("td", recursive=False)
                 if len(cells) != 9:
                     raise ValueError("Unexpected transfer row shape")
+                event_link = cells[8].find("a", href=True)
+                event_match = re.search(r"/transfer_id/(\d+)", event_link["href"]) if event_link else None
+                if selected_event_ids is not None and (not event_match or event_match[1] not in selected_event_ids):
+                    continue
                 anchor = cells[0].find("a", href=re.compile(r"/profil/spieler/\d+"))
                 if not anchor:
                     raise ValueError("Transfer player identity missing")
@@ -63,10 +82,7 @@ def parse_page(html, league):
                 event_link = cells[8].find("a", href=True)
                 event_match = re.search(r"/transfer_id/(\d+)", event_link["href"]) if event_link else None
                 kind = "LOAN_RETURN" if "Leih-Ende" in fee else "LOAN" if "Leih" in fee else "PERMANENT"
-                if other in {"Karriereende", "Retired"}:
-                    kind = "RETIRED"
-                elif other in {"Vereinslos", "Without Club"}:
-                    kind = "FREE_AGENT" if direction == "Abgang" else "FREE_TRANSFER"
+                kind = endpoint_kind(kind, other_id, other, direction)
                 date = re.search(r"\d{2}\.\d{2}\.\d{4}", fee)
                 rows.append({"league":league,"club":owner,"club_tm_id":owner_id,"direction":direction,
                              "player":anchor.get("title") or anchor.get_text(strip=True),"player_tm_id":player_id,
@@ -81,6 +97,8 @@ def parse_page(html, league):
                              "fee_text":fee,"source_status":"REVIEW_REQUIRED" if other in {"unbekannt","Unknown"} else "CONFIRMED","database_action":"REVIEW_REQUIRED"})
     if not rows or not clubs:
         raise ValueError("No transfer tables")
+    if selected_event_ids is not None and {r['event_id'] for r in rows} != selected_event_ids:
+        raise ValueError("An explicitly selected source event is absent")
     return rows, clubs
 
 
@@ -126,3 +144,50 @@ def parse_squad(html, league, club_id):
     if not rows:
         raise ValueError("Empty current squad")
     return rows
+
+
+def parse_profile(html, player_id):
+    """Current profile evidence for a scoped person's identity and destination.
+
+    Missing dates stay missing. A profile alone never establishes loan ownership.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    canonical = soup.find("link", rel="canonical")
+    if not canonical or not re.search(r"/profil/spieler/" + re.escape(str(player_id)) + r"(?:[/?]|$)", canonical.get("href", "")):
+        raise ValueError("Profile identity URL mismatch")
+    table = soup.select_one("div.info-table")
+    heading = soup.find("h1")
+    if not table or not heading:
+        raise ValueError("Profile fields missing")
+    fields = {}
+    for label in table.select("span.info-table__content--regular"):
+        value = label.find_next_sibling("span", class_="info-table__content--bold")
+        if value:
+            key = label.get_text(" ", strip=True).rstrip(":")
+            if key in fields:
+                raise ValueError("Duplicate profile field")
+            fields[key] = value
+    def text(key):
+        return fields[key].get_text(" ", strip=True) if key in fields else ""
+    def date(key):
+        match = re.search(r"\d{2}\.\d{2}\.\d{4}", text(key))
+        return dt.datetime.strptime(match[0], "%d.%m.%Y").date().isoformat() if match else ""
+    club_node = fields.get("Aktueller Verein")
+    club_anchor = club_node.find("a", href=re.compile(r"/verein/\d+")) if club_node else None
+    club_id, club = club_link(club_anchor) if club_anchor else ("", text("Aktueller Verein"))
+    owner_node = fields.get("Ausgeliehen von")
+    owner_anchor = owner_node.find("a", href=re.compile(r"/verein/\d+")) if owner_node else None
+    owner_id, owner = club_link(owner_anchor) if owner_anchor else ("", "")
+    headline = heading.get_text(" ", strip=True)
+    number = re.match(r"^#(\d+)\s*", headline)
+    shirt = number[1] if number and 1 <= int(number[1]) <= 99 else ""
+    player = re.sub(r"^#\d+\s*", "", headline)
+    dob = date("Geb./Alter")
+    if not dob or not player or not club:
+        raise ValueError("Profile identity/current affiliation incomplete")
+    return {"player_tm_id": str(player_id), "player": player, "full_name": text("Name im Heimatland"),
+            "dob": dob, "club_tm_id": club_id, "club": club, "shirt_number": shirt, "joined": date("Im Team seit"),
+            "contract_until": date("Vertrag bis"), "position": text("Position"),
+            "foot": text("Fuß"), "height": text("Größe"), "nationality_text": text("Staatsbürgerschaft"),
+            "loan_owner_tm_id": owner_id, "loan_owner": owner, "owner_contract_until": date("Vertrag dort bis"),
+            "profile_notes": table.get_text(" ", strip=True), "source_status": "CONFIRMED"}

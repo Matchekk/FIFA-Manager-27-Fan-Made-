@@ -1,0 +1,54 @@
+{
+  "status": "REVIEWED_PERMANENT_CONTRACT_END",
+  "snapshot_date": "2026-09-08",
+  "reviewed_at": "2026-09-09T00:29:35.185710+00:00",
+  "player_tm_id": "721666",
+  "expected_plan_row": {
+    "contract_until": "2027-06-30",
+    "dob": "2004-10-27",
+    "fifa_id": "269047",
+    "fm_id": "248584",
+    "joined": "2026-08-30",
+    "new_club_id": "3018762",
+    "old_club_id": "458783",
+    "shirt_number": "30",
+    "snapshot_date": "2026-09-08",
+    "source": "https://www.transfermarkt.de/zalan-vancsa/profil/spieler/721666",
+    "source_sha256": "e40ef4b97c401ccd6be2754382fecf3e9f9c09dca40622816d7a2db020db73bc",
+    "status": "CONFIRMED",
+    "team_type": "FIRST"
+  },
+  "contract_until": "2031-06-30",
+  "evidence": [
+    {
+      "role": "OFFICIAL_CLUB",
+      "url": "https://www.siriusfotboll.se/nyheter/zalan-vancsa-klar-for-sirius-fotboll/",
+      "required": [
+        "Zalán Vancsa",
+        "Lommel SK",
+        "sommaren 2031"
+      ],
+      "status": "REQUIRED_FACTS_PRESENT",
+      "file": "data/raw/player-biographies/caf414fd18b1ddb5b39a90dc6ccaea81c25d729dd4ae3abf287378d671f670b6.html",
+      "sha256": "caf414fd18b1ddb5b39a90dc6ccaea81c25d729dd4ae3abf287378d671f670b6",
+      "missing": []
+    },
+    {
+      "role": "SECONDARY_EXACT_DATE",
+      "url": "https://fotbolltransfers.com/spelare/zalan-vancsa/15471",
+      "required": [
+        "2004-10-27",
+        "2031-06-30",
+        "2026-08-30",
+        "IK Sirius"
+      ],
+      "status": "REQUIRED_FACTS_PRESENT",
+      "file": "data/raw/player-biographies/7804dd612655f3bf1e96062b58b855a0d5fd3f32c7444d8e0d6301c6de33ab78.html",
+      "sha256": "7804dd612655f3bf1e96062b58b855a0d5fd3f32c7444d8e0d6301c6de33ab78",
+      "missing": []
+    }
+  ],
+  "reason": "Official Sirius announcement identifies permanent Lommel arrival and signed contract through summer 2031. Fotbolltransfers independently identifies DOB 2004-10-27, Sirius, transfer 2026-08-30 and exact end 2031-06-30. This supersedes retained native end 2027-06-30; frozen TM profile has no end. No option is exercised and no start is changed.",
+  "attribution": "Transfer identity/club/start/shirt retain the cached TM source; only the contract end derives from this explicit review.",
+  "capture_sha256": "6513699e67eeb2da6dca95a98b0024759ccbab14aba1e718cd702d8d709fe27b"
+}

@@ -2,6 +2,8 @@
 import csv
 import hashlib
 import json
+import os
+import tempfile
 from pathlib import Path
 from typing import Iterable
 
@@ -25,10 +27,19 @@ def write_json(path: Path, value: object) -> None:
 
 def write_csv(path: Path, fields: list[str], rows: Iterable[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(rows)
+    # Readers must see a complete checkpoint while profile collection continues.
+    name = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8-sig", newline="", dir=path.parent,
+                                         prefix=path.name + ".", suffix=".tmp", delete=False) as stream:
+            name = stream.name
+            writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="ignore")
+            writer.writeheader()
+            writer.writerows(rows)
+        os.replace(name, path)
+    finally:
+        if name is not None and os.path.exists(name):
+            os.unlink(name)
 
 
 def read_csv(path: Path) -> list[dict]:

@@ -1,0 +1,53 @@
+{
+  "phase": "blocked-launch",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07",
+  "candidate": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\transfer-increment-20260909-07",
+  "copy_report": "C:\\FM27CommunityOverhaul\\reports\\local\\RUNTIME_COPY_NATIVE07_20260912_01.json",
+  "copy_report_sha256": "33fcef18417350f7b750000568805c7ff85ff4a30ee1db4af83af780466339b1",
+  "season_report": "C:\\FM27CommunityOverhaul\\reports\\local\\RUNTIME_SEASON_NATIVE07_20260912_01.json",
+  "season_report_sha256": "1ed2f1e021f8d1f5605473b7632e6289d0e56eb421c976c4f802f511a6cdfc57",
+  "registry_install_dir": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\",
+  "original_master": {
+    "path": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\database\\Master.dat",
+    "bytes": 72159865,
+    "sha256": "ebd4d4bde97b6c29c19bae11b56ffab0040f50e86e4e452ba671b964de4981b8",
+    "creation_time_utc": "2026-05-19T14:24:36.351785+00:00",
+    "last_write_time_utc": "2026-06-15T09:21:19.336347+00:00"
+  },
+  "runtime_editor": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\EdManager.exe",
+    "bytes": 12949504,
+    "sha256": "f31acd86a011d974014b6e988928ee996244da2b5597692b62ffa5c0ecb7c9bb",
+    "creation_time_utc": "2026-09-12T08:57:44.949172+00:00",
+    "last_write_time_utc": "2026-09-12T08:57:44.963174+00:00"
+  },
+  "launcher": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\launch-isolated-editor.exe",
+    "bytes": 229376,
+    "sha256": "aca0bb3bc7f83fd1461a4ed0512d745a9ff4dbc75fe59d0d2c6f8e6284942981",
+    "creation_time_utc": "2026-09-12T08:52:49.563334+00:00",
+    "last_write_time_utc": "2026-09-12T08:53:04.376218+00:00"
+  },
+  "observed_at": "2026-09-12T09:09:51.686062+00:00",
+  "original_installation_changed_by_check": false,
+  "release_ready": false,
+  "status": "BLOCKED_SECURE_UAC_NOT_TARGETABLE_NO_EDITOR_STARTED",
+  "preflight_report": "C:\\FM27CommunityOverhaul\\reports\\local\\RUNTIME_SMOKE_NATIVE07_PREFLIGHT_20260912_01.json",
+  "preflight_report_sha256": "80abd803f20f53a9e1e451d97ecd13b3848bdd0afd99aecd2ff426f44492ee4e",
+  "launch_attempt": {
+    "attempt_count": 1,
+    "attempt_started": "2026-09-12T09:07:45Z",
+    "launcher_pid": 1796,
+    "consent_pid": 11152,
+    "supported_ui_inventory": "No Editor or consent window returned by sky.list_apps/list_windows",
+    "editor_process_observed": false,
+    "consent_process_observed": true,
+    "launcher_stopped_after_unreachable_prompt": true
+  },
+  "runtime_master": "ABSENT",
+  "original_master_unchanged": true,
+  "editor_input_performed": false,
+  "export_performed": false,
+  "game_started": false,
+  "next_action": "An operator must approve the single constrained launcher UAC prompt; then automation can bind the copied Editor window and continue export/new-career/save-reload observations."
+}

@@ -1,0 +1,138 @@
+{
+  "snapshot_date": "2026-09-08",
+  "rows": [
+    {
+      "status": "REVIEWED_PERMANENT_PRIMARY_ROSTER_SUPERSESSION",
+      "snapshot_date": "2026-09-08",
+      "reviewed_at": "2026-09-09T01:46:09.816355+00:00",
+      "player_tm_id": "763948",
+      "native_fm_id": "303999",
+      "native_fifa_id": "0",
+      "dob": "2007-07-23",
+      "destination_club_id": "2228235",
+      "effective_date": "2026-09-01",
+      "contract_until": "2030-06-30",
+      "native_identity": {
+        "fm_id": "303999",
+        "fifa_id": "0",
+        "name": "Ayodele Thomas",
+        "common_name": "",
+        "dob": "2007-07-23",
+        "club_id": "2228236",
+        "nationality": "34"
+      },
+      "expected_current_conflict": {
+        "league": "NED1",
+        "club": "NEC Nijmegen",
+        "player": "Dele Thomas",
+        "fifa_id": "0",
+        "fm_id": "303999",
+        "old_club": "PSV",
+        "new_club": "N.E.C. Nijmegen",
+        "transfer_type": "PERMANENT",
+        "contract_until": "2030-06-30",
+        "shirt_number": "77",
+        "source": "https://www.transfermarkt.de/nec-nijmegen/kader/verein/467/saison_id/2026/plus/1",
+        "source_date": "2026-09-08",
+        "confidence": "REVIEWED_IDENTITY",
+        "database_action": "REVIEW_REQUIRED",
+        "classification": "AMBIGUOUS",
+        "dob": "2007-07-23",
+        "status": "CONFLICT",
+        "reason": "DFB roster contradicts current Transfermarkt affiliation",
+        "player_tm_id": "763948",
+        "club_tm_id": "467",
+        "source_sha256": "9ebb088d115e724a8474a3b397fc8a2c92834521ff52a42a423007f77da0960c",
+        "old_club_id": "2228236",
+        "new_club_id": "2228235",
+        "team_type": "FIRST",
+        "joined": "2026-09-01",
+        "change_notes": "[\"Neuzugang von: RB Leipzig; Datum: 01.09.2026; Ablöse: 1,00 Mio. €\"]",
+        "source_fifa_id": "",
+        "profile_source": "https://www.transfermarkt.de/dele-thomas/profil/spieler/763948",
+        "profile_sha256": "19553620d01878a6322bd13afc6d59e4ed178e711254f7d8b19e7d4303c923db",
+        "contract_evidence": "UNCHANGED",
+        "source_contract_until": "2030-06-30"
+      },
+      "expected_dfb_observations": [
+        {
+          "league": "GER1",
+          "club": "RB Leipzig",
+          "player": "Ayodele Thomas",
+          "fifa_id": "0",
+          "fm_id": "303999",
+          "old_club": "PSV",
+          "new_club": "RasenBallsport Leipzig",
+          "transfer_type": "UNVERIFIED",
+          "contract_until": "",
+          "shirt_number": "21",
+          "source": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2026-2027/teams/rb-leipzig",
+          "source_date": "2026-09-08",
+          "confidence": "DOB_NAME",
+          "database_action": "REVIEW_REQUIRED",
+          "classification": "TRANSFER_IN",
+          "dob": "2007-07-23",
+          "status": "REVIEW_REQUIRED",
+          "reason": "Squad evidence only: verify ownership, loans, dates, team status and installed conditions",
+          "team_type": "FIRST",
+          "source_person_id": "422433",
+          "source_sha256": "7d1d40b51159afbdbe210ca8811e42f064ae1c4efe916417b81f191bcf4e77a5",
+          "source_status": "CONFIRMED"
+        }
+      ],
+      "official_evidence": [
+        {
+          "player_tm_id": "763948",
+          "url": "https://www.nec-nijmegen.nl/teams/speler/dele-thomas.htm",
+          "required": [
+            "23-07-2007",
+            "30-06-2030",
+            "RB Leipzig",
+            "N.E.C."
+          ],
+          "status": "REQUIRED_FACTS_PRESENT",
+          "sha256": "16246549e3242ab9d21ebcce635dc2c752fc95d2f6ad51d8f7381d02338460e5",
+          "file": "C:\\FM27CommunityOverhaul\\data\\raw\\player-biographies\\16246549e3242ab9d21ebcce635dc2c752fc95d2f6ad51d8f7381d02338460e5.html",
+          "missing": [],
+          "role": "DESTINATION_PROFILE"
+        },
+        {
+          "player_tm_id": "763948",
+          "url": "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051",
+          "required": [
+            "Ayodele Thomas (N.E.C. Nijmegen)",
+            "RB Leipzig"
+          ],
+          "status": "REQUIRED_FACTS_PRESENT",
+          "sha256": "117265aaf9b80abba9e48372701a014e60364d05512a218f87c92b17976f7d32",
+          "file": "C:\\FM27CommunityOverhaul\\data\\raw\\player-biographies\\117265aaf9b80abba9e48372701a014e60364d05512a218f87c92b17976f7d32.html",
+          "missing": [],
+          "role": "LEAGUE_DEPARTURES"
+        },
+        {
+          "player_tm_id": "763948",
+          "url": "https://www.nec-nijmegen.nl/nieuws/nieuws/dele-thomas-verruilt-rb-leipzig-voor-n.e.c..htm",
+          "required": [
+            "Thomas",
+            "2030",
+            "01-09-2026"
+          ],
+          "status": "REQUIRED_FACTS_PRESENT",
+          "sha256": "23bafe86d6107ec368182973f4de74a0a121917434016848cac337bbdab4bd15",
+          "file": "C:\\FM27CommunityOverhaul\\data\\raw\\player-biographies\\23bafe86d6107ec368182973f4de74a0a121917434016848cac337bbdab4bd15.html",
+          "missing": [],
+          "role": "DESTINATION_ANNOUNCEMENT"
+        }
+      ],
+      "baseline_sha256": "a02de4fdfee919081ba8c6665c79cc3d292a3ca31e74e9dddbd510ae9ad5a2d0",
+      "reason": "The dated NEC permanent-signing announcement and current NEC profile explicitly identify the same23July2007 player and2030 contract. The official Bundesliga summer2026 transfer centre independently lists Ayodele Thomas among RB Leipzig departures toNEC. These affirmative transfer records resolve this individual old Leipzig roster observation. No general conclusion about all DFB rosters is used.",
+      "implementation_required": "Guarded loader must bind exact original DFB observation, TM/current/native identity and all official source hashes. Both current and departure reconciliation must consume only this exact destination resolution; preserve all other primary holds, raw sources and nativeFIFA0.",
+      "created_players": 0,
+      "native_mutations": 0,
+      "release_ready": false,
+      "author": "Codex",
+      "original_review_sha256": "0f3ab46a8315aef8954947a379630bc7cbb1bd892ad49e35bf5b1b08b720b76a",
+      "applied_at": "2026-09-09T02:03:57.288827+00:00"
+    }
+  ]
+}

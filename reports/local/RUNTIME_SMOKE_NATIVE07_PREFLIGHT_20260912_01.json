@@ -1,0 +1,52 @@
+{
+  "phase": "preflight",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07",
+  "candidate": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\transfer-increment-20260909-07",
+  "copy_report": "C:\\FM27CommunityOverhaul\\reports\\local\\RUNTIME_COPY_NATIVE07_20260912_01.json",
+  "copy_report_sha256": "33fcef18417350f7b750000568805c7ff85ff4a30ee1db4af83af780466339b1",
+  "season_report": "C:\\FM27CommunityOverhaul\\reports\\local\\RUNTIME_SEASON_NATIVE07_20260912_01.json",
+  "season_report_sha256": "1ed2f1e021f8d1f5605473b7632e6289d0e56eb421c976c4f802f511a6cdfc57",
+  "registry_install_dir": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\",
+  "original_master": {
+    "path": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\database\\Master.dat",
+    "bytes": 72159865,
+    "sha256": "ebd4d4bde97b6c29c19bae11b56ffab0040f50e86e4e452ba671b964de4981b8",
+    "creation_time_utc": "2026-05-19T14:24:36.351785+00:00",
+    "last_write_time_utc": "2026-06-15T09:21:19.336347+00:00"
+  },
+  "runtime_editor": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\EdManager.exe",
+    "bytes": 12949504,
+    "sha256": "f31acd86a011d974014b6e988928ee996244da2b5597692b62ffa5c0ecb7c9bb",
+    "creation_time_utc": "2026-09-12T08:57:44.949172+00:00",
+    "last_write_time_utc": "2026-09-12T08:57:44.963174+00:00"
+  },
+  "launcher": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\launch-isolated-editor.exe",
+    "bytes": 229376,
+    "sha256": "aca0bb3bc7f83fd1461a4ed0512d745a9ff4dbc75fe59d0d2c6f8e6284942981",
+    "creation_time_utc": "2026-09-12T08:52:49.563334+00:00",
+    "last_write_time_utc": "2026-09-12T08:53:04.376218+00:00"
+  },
+  "observed_at": "2026-09-12T09:07:28.338192+00:00",
+  "original_installation_changed_by_check": false,
+  "release_ready": false,
+  "status": "PASS_ISOLATED_EDITOR_EXPORT_PREFLIGHT",
+  "candidate_build_inputs": {
+    "path": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\transfer-increment-20260909-07\\NATIVE_BUILD_INPUTS.json",
+    "bytes": 759543,
+    "sha256": "cb09a1fe072f1286a01af36b131d1cf411a6c9a6c91bc47dfa76132c29045755",
+    "creation_time_utc": "2026-09-12T08:40:34.647219+00:00",
+    "last_write_time_utc": "2026-09-12T08:40:34.648890+00:00"
+  },
+  "runtime_master": "ABSENT_REQUIRED",
+  "editor_routing_evidence": {
+    "binary_sha256": "f31acd86a011d974014b6e988928ee996244da2b5597692b62ffa5c0ecb7c9bb",
+    "startup": "GetCurrentDirectoryW result is passed to editor path initialization",
+    "database_root": "path initialization formats <cwd>\\Database",
+    "master_export": "export formats %s\\Master.dat from the stored Database path",
+    "registry_scope": "the FIFA MANAGER 13 HKLM key code queries the literal Locale value",
+    "launch_constraint": "launcher sets both process CWD and ShellExecuteEx lpDirectory to this runtime"
+  },
+  "next_action": "Launch the copied Editor once through the bound launcher; export only after the unique copied-editor window is observed."
+}

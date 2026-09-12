@@ -1,5 +1,35 @@
 # Bug matrix — 2026-09-08
 
+## Additional staging gaps found by complete source-file inventory
+
+`reports/local/NATIVE_FILE_COVERAGE_07.json` inventories 1068 database/external/history
+files. Candidate07 omits six UCP/editor auxiliary files: `AssessmentAFC.sav`,
+`AssessmentCAF.sav`, `CountryNames.txt`, `picture.tga`, `PriorityClubs.txt`,
+`TownDataUniques.txt`. Native preservation and its verifier now include all six;
+the fixture checks exact binary contents. A new candidate is required to validate
+the repair. The historical 638-file support PASS covered only its declared subset.
+
+The inventory also exposes `Master.dat` as an unfulfilled game-export step.
+The installed EdManager binary contains `Database.CompleteWorld.WriteDatabase`
+and `database\\Master.dat`; Manager contains a Master.dat path. This is static
+evidence of the export/runtime boundary, not proof that the candidate was exported.
+Do not copy the original compiled database and claim updated squads are playable.
+`database/data/CountryData21.zip` contains one `CountryData21.sav` archive member;
+its intended backup/runtime role remains to be resolved separately.
+
+## Proven offline database-tool defects fixed in candidate 05
+
+| Defect | Cause and repair | Evidence |
+|---|---|---|
+| 819 international competitions absent after reread | Upstream writes `script_converted`, while its reader loads `script`. Staging now preserves the original external scripts, including mod-specific sections, alongside historical data and omitted name tables. | All 2380 competition serializations agree; 638 support files are byte-identical. `reports/local/NATIVE_EXTENDED_ROUNDTRIP_05.json`, `reports/local/NATIVE_SUPPORT_05.json`. |
+| Four directed relationships lost, eight added by the old writer | The upstream brother writer groups neighbours as a clique and skips some edges by pointer ordering. Exact pair rows now preserve the original symmetric graph, with full validation before writing. | All 11226 directed edges agree after native reread. A non-clique fixture passes; asymmetric or ambiguous graphs fail before replacement. |
+
+These repairs affect the isolated offline staging tool. They do not prove game
+runtime stability, saves or season transitions. Candidate 04 retains its FAIL
+evidence; candidate 05 contains the corrected and validated write.
+
+## Runtime and historical candidates
+
 No runtime fix is claimed. The following are candidates, not proven causes.
 3D/XXL issues are excluded by the user's scope override.
 

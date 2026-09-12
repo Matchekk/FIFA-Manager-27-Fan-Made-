@@ -1,0 +1,63 @@
+{
+  "status": "PASS_CONDITIONAL_ISOLATION_EVIDENCE_RUNTIME_IDENTITY_CHECK_REQUIRED_BEFORE_EXPORT",
+  "observed_at": "2026-09-12T12:35:00+02:00",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07",
+  "editor": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\EdManager.exe",
+    "sha256": "f31acd86a011d974014b6e988928ee996244da2b5597692b62ffa5c0ecb7c9bb",
+    "proven_behavior": "Startup derives the database root as <cwd>\\Database and the native export sequence formats %s\\Master.dat beneath that field."
+  },
+  "loaded_editor_patch_candidate": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\plugins\\UniversalConverterProject.Editor.asi",
+    "bytes": 2492928,
+    "sha256": "30a2ae82a85afc32c963776bb5c4a490f28f4c0831a96a0cbab3055bec643cb7",
+    "copy_report_source": "installation",
+    "byte_equal_to_original_installation_component": true,
+    "pe": {
+      "architecture": "x86",
+      "timestamp_raw": 1781506882,
+      "imports_present": [
+        "GetModuleFileNameW",
+        "CreateFileW",
+        "ReadFile",
+        "WriteFile",
+        "DeleteFileW",
+        "GetPrivateProfileStringW",
+        "SHGetSpecialFolderPathW"
+      ],
+      "imports_absent": [
+        "GetCurrentDirectoryA",
+        "GetCurrentDirectoryW",
+        "SetCurrentDirectoryA",
+        "SetCurrentDirectoryW",
+        "ADVAPI32 registry APIs"
+      ]
+    },
+    "path_literals": [
+      "plugins\\ucp\\database_options.txt",
+      "\\Master.dat",
+      "database\\Master.dat",
+      "database\\data\\CountryData*.sav",
+      "database\\script\\CountryScript*.sav"
+    ],
+    "absolute_original_install_path_literal_found": false,
+    "install_dir_literal_found": false,
+    "configuration": {
+      "path": "plugins\\ucp\\database_options.txt",
+      "content": "ID\\tIsWomen\\tParent\\tDescription; update\\t0\\tdefault",
+      "absolute_export_path_setting_found": false
+    },
+    "source_evidence": "The local UniversalConverterProjectInstaller checkout is pinned at 0518a9bc035ebe88d380c7788fd75b14b1a37d2b but does not contain the Editor ASI implementation source. The installed binary therefore remains the exact behavior authority."
+  },
+  "evidence_scope": "The EdManager control flow and ASI imports/literals exclude the known HKLM Install Dir route and any embedded absolute path to the original installation. The ASI can perform file writes and exact implementation source is unavailable, so static evidence alone does not prove every patched branch.",
+  "required_pre_export_runtime_indication": {
+    "process_identity": "sky must return exactly process:C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\EdManager.exe for the single target Editor window.",
+    "candidate_identity": "Before export, the Editor UI must show a Native07-only changed record, for example Jovane Cabral (FM ID 287889), shirt 77, joined 23.07.2026, contract through 31.12.2027, bound to club ID 3538956 in the Native07 semantic export.",
+    "target_state": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\database\\Master.dat must still be absent immediately before export.",
+    "decision": "Proceed only when all three indications agree. Otherwise do not invoke Save/export."
+  },
+  "reason_current_route_is_sufficient_conditionally": "The constrained launcher pins both CWD and ShellExecute lpDirectory to the runtime. The ASI has only relative database/Master paths or module-derived paths, and the exact runtime process identity plus a Native07-only UI record proves the patched Editor loaded the isolated candidate. This avoids using post-write equality of the original as the safety boundary.",
+  "registry_modified": false,
+  "export_performed": false,
+  "release_ready": false
+}

@@ -1,0 +1,237 @@
+{
+  "status": "NATIVE_CUMULATIVE_VALIDATIONS_COMPLETED_GAME_GATES_OPEN",
+  "started_at": "2026-09-12T08:45:42.082464+00:00",
+  "plan_sha256": "7afecc64c01059edda6be05077c2dd30bd793938a7fcb6a42363a0c5a4fdb8e1",
+  "source_candidate": "data/generated/release-candidate/ratings-20260909-02",
+  "candidate": "data/generated/release-candidate/transfer-increment-20260909-07",
+  "steps": [
+    {
+      "name": "reread",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\build\\fm27-db-probe-rating-batch-123.exe",
+        "data/generated/release-candidate/transfer-increment-20260909-07/database",
+        "data/generated/native-reread-increment-20260909-07"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-reread.log",
+      "started_at": "2026-09-12T08:45:42.083465+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:06.529928+00:00"
+    },
+    {
+      "name": "projection",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/fm27.py",
+        "export-identities",
+        "--database",
+        "data/generated/release-candidate/transfer-increment-20260909-07/database",
+        "--output",
+        "data/intermediate/transfer-increment-20260909-07"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-projection.log",
+      "started_at": "2026-09-12T08:50:06.529928+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:30.755691+00:00"
+    },
+    {
+      "name": "projected-plan",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/validate-candidate.py",
+        "--before",
+        "data/intermediate/ratings-20260909-02-native-bound",
+        "--after",
+        "data/intermediate/transfer-increment-20260909-07",
+        "--plan",
+        "data/generated/transfer-increment-plan-20260909-07.csv",
+        "--output",
+        "reports/local/NATIVE_INCREMENT_PROJECTED_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-projected-plan.log",
+      "started_at": "2026-09-12T08:50:30.756691+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:41.627350+00:00"
+    },
+    {
+      "name": "player-roundtrip",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/compare-native-semantics.py",
+        "--expected",
+        "data/generated/release-candidate/transfer-increment-20260909-07/native_player_semantics.csv",
+        "--actual",
+        "data/generated/native-reread-increment-20260909-07/native_player_semantics.csv",
+        "--output",
+        "reports/local/NATIVE_INCREMENT_PLAYER_ROUNDTRIP_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-player-roundtrip.log",
+      "started_at": "2026-09-12T08:50:41.628350+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:44.473591+00:00"
+    },
+    {
+      "name": "player-mutations",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/compare-production.py",
+        "--before",
+        "data/generated/native-world-expected-increment-20260909-07/before-plan/native_player_semantics.csv",
+        "--expected",
+        "data/generated/release-candidate/transfer-increment-20260909-07/native_player_semantics.csv",
+        "--plan",
+        "data/generated/transfer-increment-plan-20260909-07.csv",
+        "--output",
+        "reports/PRODUCTION_INCREMENT_DIFF_07.csv"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-player-mutations.log",
+      "started_at": "2026-09-12T08:50:44.473591+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:46.473040+00:00"
+    },
+    {
+      "name": "extended-roundtrip",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/compare-native-extended.py",
+        "--expected",
+        "data/generated/release-candidate/transfer-increment-20260909-07",
+        "--actual",
+        "data/generated/native-reread-increment-20260909-07",
+        "--output",
+        "reports/local/NATIVE_INCREMENT_EXTENDED_ROUNDTRIP_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-extended-roundtrip.log",
+      "started_at": "2026-09-12T08:50:46.474040+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:47.524373+00:00"
+    },
+    {
+      "name": "world-mutations",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/compare-native-extended.py",
+        "--expected",
+        "data/generated/native-world-expected-increment-20260909-07/before-plan",
+        "--actual",
+        "data/generated/release-candidate/transfer-increment-20260909-07",
+        "--mutation-scope",
+        "--output",
+        "reports/local/NATIVE_INCREMENT_WORLD_MUTATIONS_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-world-mutations.log",
+      "started_at": "2026-09-12T08:50:47.525373+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:50.629281+00:00"
+    },
+    {
+      "name": "support",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/validate-native-support.py",
+        "--database",
+        "data/generated/release-candidate/ratings-20260909-02/database",
+        "--candidate",
+        "data/generated/release-candidate/transfer-increment-20260909-07",
+        "--output",
+        "reports/local/NATIVE_INCREMENT_SUPPORT_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-support.log",
+      "started_at": "2026-09-12T08:50:50.630281+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:51.235237+00:00"
+    },
+    {
+      "name": "file-coverage",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/audit-native-file-coverage.py",
+        "--database",
+        "data/generated/release-candidate/ratings-20260909-02/database",
+        "--candidate",
+        "data/generated/release-candidate/transfer-increment-20260909-07",
+        "--output",
+        "reports/local/NATIVE_INCREMENT_FILE_COVERAGE_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-file-coverage.log",
+      "started_at": "2026-09-12T08:50:51.236236+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:52.391089+00:00"
+    },
+    {
+      "name": "increment-aggregate",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/validate-production-candidate.py",
+        "--no-project-status",
+        "--candidate",
+        "data/generated/release-candidate/transfer-increment-20260909-07",
+        "--reread",
+        "data/generated/native-reread-increment-20260909-07",
+        "--plan",
+        "data/generated/transfer-increment-plan-20260909-07.csv",
+        "--projected-report",
+        "reports/local/NATIVE_INCREMENT_PROJECTED_07.json",
+        "--semantic-report",
+        "reports/local/NATIVE_INCREMENT_PLAYER_ROUNDTRIP_07.json",
+        "--diff-report",
+        "reports/PRODUCTION_INCREMENT_DIFF_07.json",
+        "--extended-report",
+        "reports/local/NATIVE_INCREMENT_EXTENDED_ROUNDTRIP_07.json",
+        "--world-mutation-report",
+        "reports/local/NATIVE_INCREMENT_WORLD_MUTATIONS_07.json",
+        "--world-baseline",
+        "data/generated/native-world-expected-increment-20260909-07/before-plan",
+        "--support-report",
+        "reports/local/NATIVE_INCREMENT_SUPPORT_07.json",
+        "--world-inspection",
+        "data/generated/native-world-expected-increment-20260909-07",
+        "--world-reread",
+        "data/generated/native-reread-increment-20260909-07",
+        "--output",
+        "reports/local/PRODUCTION_INCREMENT_VALIDATION_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-increment-aggregate.log",
+      "started_at": "2026-09-12T08:50:52.392090+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:50:58.632965+00:00"
+    },
+    {
+      "name": "cumulative-preservation",
+      "command": [
+        "C:\\FM27CommunityOverhaul\\.venv\\Scripts\\python.exe",
+        "tools/validate-cumulative-transfer.py",
+        "--source-validation",
+        "reports/local/NATIVE_RATING_VALIDATION_02.json",
+        "--source-archive",
+        "data/generated/ratings-20260909-02-evidence",
+        "--increment-validation",
+        "reports/local/PRODUCTION_INCREMENT_VALIDATION_07.json",
+        "--inspection",
+        "data/generated/native-world-expected-increment-20260909-07",
+        "--reread",
+        "data/generated/native-reread-increment-20260909-07",
+        "--plan",
+        "data/generated/transfer-increment-plan-20260909-07.csv",
+        "--output",
+        "reports/local/NATIVE_CUMULATIVE_VALIDATION_07.json"
+      ],
+      "status": "PASS",
+      "log": "C:\\FM27CommunityOverhaul\\.agent_tmp\\increment07-cumulative-preservation.log",
+      "started_at": "2026-09-12T08:50:58.633965+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-12T08:51:50.487120+00:00"
+    }
+  ],
+  "release_ready": false,
+  "finished_at": "2026-09-12T08:51:50.882209+00:00"
+}

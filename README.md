@@ -2,7 +2,55 @@
 
 **Status: twelve-league source capture and guarded native staging candidate; not a finished game patch.**
 
-Current delivery: `docs/ABGABE_1500.md` and `reports/DELIVERY_1500.json`.
+Latest cumulative candidate `transfer-increment-20260909-03` passes all eleven
+validation steps and eight cumulative preservation checks. Nineteen reviewed changes
+preserve all 3765 rating profiles, 82863 attribute changes and 207 competition scripts.
+Cumulative native club changes: 2872; loans: 792; expired-loan resolutions:
+295. Python253/native123 tests pass. Vancsa's contract end is corrected by
+explicit hash-bound official evidence. The completed proof is frozen; no player was
+created. Full transfer coverage, remaining league formats, rating review holds,
+Editor export and all career/save/season tests remain open.
+
+Continuation after the original delivery: bidirectional departure reconciliation,
+typed loan staging, global recovery of existing people without FIFA IDs, native
+serialized-player semantic hashes, typed free-agent releases and native ID binding
+for existing clubless players are implemented. Candidate15 passes native player,
+staff, competition and relationship write/reread comparison: 2854 club changes,
+787 loans (including 254 successor loans and 25 purchase-and-loan chains), 181
+free-agent releases and 294 expired-loan resolutions. Protected-condition and identity safeguards remain active.
+The expanded native checks also pass for 13477 clubs/national teams, 207 countries,
+323149 person links and 61120 global objects. File coverage exposed six omitted
+auxiliary files; candidate15 preserves all 644 support files and passes its own
+native reread. 232 Python tests and 99 native tests pass. A verified physical runtime
+copy of candidate08 exists; the Editor permission prompt was not targetable by the
+automation tool even after explicit user authorization. No editor export was performed.
+Compiled Master.dat export and game careers are not yet validated.
+The native rating tools now pass123tests and restrict changes to37persisted
+FM13attributes, preserving the remaining serialized player fields. A fresh rating
+inspection of266764combinedcandidateplayers matches the validated native reread.
+A4239player native experiment and220428alternatives informed positional calibration.
+The latest external ratings02 candidate passes complete native reread for3765players
+and82863attribute changes. It preserves all3009prior approved native rating rows.
+756additional partial profiles retain1096disputed attributes exactly;1230players
+still require review (474whole profiles plus756partial profiles). The unchanged
+holdout, league and inflation limits pass. Actual before/after distributions and
+the detailed player diff are generated and hash-bound. Editor export and game gates remain open.
+245 Python tests pass. See `reports/RATING_CALIBRATION.md`.
+See `docs/FORTSCHRITT.md` and `reports/PROJECT_STATUS.json` for current validation.
+Source15 adds two reviewed winter arrivals and passes all12native validation steps.
+The transfer15 checkpoint passed232Python and99native tests. The native league-membership
+writer checks source-bound identities, complete pairings, both calendars and global
+team conservation before making any move. Combined candidate01 applies
+52reviewed moves across19leagues to transfer15 and passes complete native reread.
+Ten of12scoped primary memberships match the reviewed source. GER3regional moves,
+Belgium formats, secondary-tier further exchanges, actual2026/27 calendar dates
+and game transitions remain open. All5490player changes from transfer15 are preserved
+in the combined candidate, including2854club changes. The combined proof is in
+`reports/local/NATIVE_COMBINED_VALIDATION_01.json`; the standalone transfer report
+remains separately bound to transfer15.
+The former 15:00 delivery below remains a historical baseline.
+
+Historical time-boxed delivery: `docs/ABGABE_1500.md` and `reports/DELIVERY_1500.json`.
 Scope: current squads in 12 leagues, then realistic ratings, non-3D simulation,
 menu responsiveness and stability. No 3D or XXL portrait work.
 
@@ -86,17 +134,28 @@ only the twelve configured leagues. No portraits are downloaded.
 .venv/Scripts/python tools/fetch-transfers.py
 .venv/Scripts/python tools/fetch-squads.py
 .venv/Scripts/python tools/reconcile-current.py
+.venv/Scripts/python tools/fetch-departure-profiles.py --limit 100
+.venv/Scripts/python tools/reconcile-departures.py
+.venv/Scripts/python tools/resolve-missing-players.py
+.venv/Scripts/python tools/combine-reports.py
+.venv/Scripts/python tools/run-tests.py
 ```
 
-Reviewed club aliases are in `config/tm-club-aliases.json`. The staging plan
+Reviewed club aliases are in `config/tm-club-aliases.json` and
+`data/overrides/external_clubs.csv`. The staging plan
 requires confirmed identity, dated current contract and transfer evidence for
-club changes. Loans, future conditions, contradictory primary-source evidence
-and ambiguous identities are excluded. It does not remove every departed player
+club changes. A typed loan extension requires explicit owner/borrower and return
+dates; existing complex conditions, contradictory primary-source evidence
+and ambiguous identities remain excluded. It does not remove every departed player
 or create missing people. Competition participants are not changed.
 
 `--stage-plan <csv>` on the native bridge applies that frozen plan only to a NEW
 external candidate directory. Validate the exported result with
-`tools/validate-candidate.py`; never treat the staging flag as production approval.
+`tools/validate-candidate.py`, `tools/compare-native-semantics.py` and
+`tools/compare-production.py`; never treat the staging flag as production approval.
+`tools/validate-production-candidate.py` binds these player checks to the frozen
+candidate and keeps the full release status incomplete while world/engine gates
+are unproved. The current validated candidate includes 22 native loan roundtrips.
 
 ## Native build (developer checkout)
 

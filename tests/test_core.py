@@ -188,6 +188,17 @@ class ParserTests(unittest.TestCase):
 
 
 class ValidationTests(unittest.TestCase):
+    def test_native_clubless_expired_interval_is_valid(self):
+        row = player(club_id="0", contract_joined="2026-07-01", contract_until="2026-06-30")
+        self.assertNotIn("CONTRACT_ORDER", {r["code"] for r in validate.validate([row], CLUBS, SNAPSHOT)})
+
+    def test_expired_interval_does_not_hide_active_club_or_arbitrary_date_errors(self):
+        row = player(contract_joined="2026-07-01", contract_until="2026-06-30")
+        self.assertIn("CONTRACT_ORDER", {r["code"] for r in validate.validate([row], CLUBS, SNAPSHOT)})
+        row["club_id"] = "0"
+        row["contract_until"] = "2025-06-30"
+        self.assertIn("CONTRACT_ORDER", {r["code"] for r in validate.validate([row], CLUBS, SNAPSHOT)})
+
     def test_duplicate_id_fatal(self):
         result = validate.validate([player(), player()], CLUBS, SNAPSHOT)
         self.assertTrue(any(r["severity"] == "FATAL" for r in result))

@@ -53,7 +53,18 @@ $cl = Join-Path $compiler.FullName 'bin\Hostx64\x86\cl.exe'
 Push-Location (Join-Path $root 'build')
 try {
     $binaryName = if ($OptimizeOffline) { 'fm27-db-probe-optimized.exe' } else { 'fm27-db-probe.exe' }
-    & $cl /nologo /std:c++latest /EHsc /W4 /WX /MT /D_CRT_SECURE_NO_WARNINGS /DWIN32_LEAN_AND_MEAN /external:W0 "/external:I$shadow\generic" "/external:I$shadow\fmapi" "/external:I$shadow\shared" (Join-Path $root 'src\native\db_probe.cpp') "/Fe:$binaryName" /link "/LIBPATH:$shadow\output\libs" fmapi.lib generic.lib user32.lib /LARGEADDRESSAWARE > (Join-Path $root '.agent_tmp\build-probe.log') 2>&1
+    & $cl /nologo /std:c++latest /EHsc /W4 /WX /MT /D_CRT_SECURE_NO_WARNINGS /DWIN32_LEAN_AND_MEAN /external:W0 "/external:I$shadow\generic" "/external:I$shadow\fmapi" "/external:I$shadow\shared" (Join-Path $root 'src\native\db_probe.cpp') "/Fe:$binaryName" /link "/LIBPATH:$shadow\output\libs" fmapi.lib generic.lib user32.lib bcrypt.lib /LARGEADDRESSAWARE > (Join-Path $root '.agent_tmp\build-probe.log') 2>&1
     if ($LASTEXITCODE -ne 0) { Get-Content (Join-Path $root '.agent_tmp\build-probe.log') -Tail 15; throw 'Bridge compilation failed.' }
 } finally { Pop-Location }
+$nativeSourceHashes = [ordered]@{}
+$nativeInputs = @((Get-ChildItem -LiteralPath (Join-Path $root 'src\native') -File | Where-Object { $_.Extension -in @('.cpp','.h') }))
+$nativeInputs += Get-ChildItem -LiteralPath (Join-Path $root 'tests') -Filter 'native*.h' -File
+$nativeInputs += Get-Item -LiteralPath $PSCommandPath
+foreach ($nativeInput in ($nativeInputs | Sort-Object FullName)) {
+    $nativeRelativePath = [IO.Path]::GetRelativePath($root,$nativeInput.FullName)
+    $nativeSourceHashes[$nativeRelativePath] = (Get-FileHash -LiteralPath $nativeInput.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+}
+@{ status='PASS'; binary_sha256=(Get-FileHash -LiteralPath (Join-Path $root "build\$binaryName") -Algorithm SHA256).Hash.ToLowerInvariant();
+   built_at=[DateTime]::UtcNow.ToString('o'); source_sha256=$nativeSourceHashes; optimized_libraries=[bool]$OptimizeOffline
+} | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $root "build\$binaryName.build.json") -Encoding UTF8
 Write-Output "Built offline FIFAM bridge: $binaryName. This does not optimize Manager.exe."

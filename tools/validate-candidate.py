@@ -1,5 +1,6 @@
 """Check every projected player against exactly the frozen staged mutation plan."""
 import argparse
+import datetime as dt
 import json
 import sys
 from collections import Counter
@@ -7,6 +8,8 @@ from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"src"))
 from fm27.common import read_csv,write_json,sha256
+from fm27.loans import project_added_loan_condition
+from fm27.expired_loans import project_removed_expired_loan
 parser=argparse.ArgumentParser()
 parser.add_argument("--before",type=Path,required=True)
 parser.add_argument("--after",type=Path,required=True)
@@ -25,12 +28,22 @@ for p in before:
     applied.add(p["fm_id"])
     if p["club_id"]!=c["old_club_id"] or p["fifa_id"]!=c["fifa_id"] or p["dob"]!=c["dob"]:
         raise ValueError("Plan does not match baseline identity")
-    club=clubs[c["new_club_id"]]
+    free_agent=c.get("action")=="FREE_AGENT"
+    club={"club_id":"0","club":"FREE_AGENT","country_id":"0","league":""} if free_agent else clubs[c["new_club_id"]]
     if p["club_id"]!=c["new_club_id"]:p["captain"]="False"
     p.update(club_id=club["club_id"],club=club["club"],country_id=club["country_id"],league=club["league"],
              team_league=teams.get((club["club_id"],c["team_type"]),""),squad=c["team_type"],
              contract_joined=c["joined"],contract_until=c["contract_until"])
     p["reserve_shirt_number" if c["team_type"]=="RESERVE" else "shirt_number"]=c["shirt_number"]
+    if free_agent:
+        p.update(shirt_number="0",reserve_shirt_number="0",contract_loan_flag="False")
+    if c.get("action") in {"RESOLVE_EXPIRED_LOAN", "REPLACE_EXPIRED_LOAN"} or (
+            c.get("action") == "PURCHASE_AND_LOAN" and c.get("previous_loan_owner_club_id") != "0"):
+        owner = clubs[c["previous_loan_owner_club_id"]]
+        p["starting_conditions"] = project_removed_expired_loan(p["starting_conditions"], c, owner["reference_id"])
+    if c.get("loan_owner_club_id", "0") != "0":
+        owner = clubs[c["loan_owner_club_id"]]
+        p["starting_conditions"] = project_added_loan_condition(p["starting_conditions"], c["joined"], c["loan_end"], owner["reference_id"])
 if applied!=changes.keys():raise ValueError("Not every planned person existed")
 fields=[f for f in before[0] if f not in {"fm_id","source_file","source_line"}]
 if before[0].keys()!=after[0].keys():raise ValueError("Different projection schema")
