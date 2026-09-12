@@ -6,6 +6,7 @@ import csv
 import datetime as dt
 import json
 import sys
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,10 +28,51 @@ def unique(rows: list[dict], key) -> dict:
     return result
 
 
-def changed(before: dict, after: dict, field: str) -> set:
-    if before.keys() != after.keys():
-        raise ValueError("Before/after inventories differ")
-    return {key for key in before if before[key].get(field) != after[key].get(field)}
+def group(rows: list[dict], key) -> dict:
+    result = defaultdict(list)
+    for row in rows:
+        result[key(row)].append(row)
+    return dict(result)
+
+
+def semantic_fingerprint(row: dict) -> tuple[tuple[str, str], ...]:
+    """Stable exported semantics, excluding read/write serialization ids."""
+    return tuple((field, value) for field, value in row.items()
+                 if field not in {"fm_id", "serialized_sha256"})
+
+
+def multiset(rows: list[dict], fields: list[str] | None = None) -> Counter:
+    if fields is None:
+        return Counter(semantic_fingerprint(row) for row in rows)
+    return Counter(tuple(row.get(field, "") for field in fields) for row in rows)
+
+
+def remove_fingerprint(pool: list[dict], fingerprint: tuple[tuple[str, str], ...]) -> bool:
+    """Remove one exact row deterministically while retaining duplicate counts."""
+    matches = [index for index, row in enumerate(pool) if semantic_fingerprint(row) == fingerprint]
+    if not matches:
+        return False
+    # FM ids are assigned during read and are not semantic identity.  Sorting is
+    # only a deterministic tie-break for otherwise identical exported rows.
+    index = min(matches, key=lambda value: (int(pool[value]["fm_id"]), value))
+    pool.pop(index)
+    return True
+
+
+def map_planned_group(before_rows: list[dict], after_rows: list[dict], plan_row: dict) -> tuple[dict | None, list[dict]]:
+    """Map one FM-id-bound planned row after consuming unchanged siblings."""
+    pool = list(after_rows)
+    errors = []
+    unplanned = [row for row in before_rows if row["fm_id"] != plan_row["fm_id"]]
+    for row in sorted(unplanned, key=lambda value: int(value["fm_id"])):
+        if not remove_fingerprint(pool, semantic_fingerprint(row)):
+            errors.append({"fm_id": row["fm_id"],
+                           "error": "unchanged duplicate semantics missing after reread"})
+    if len(pool) != 1:
+        errors.append({"before_fm_id": plan_row["fm_id"], "remaining_after_rows": len(pool),
+                       "error": "planned row does not map unambiguously after unchanged siblings"})
+        return None, errors
+    return pool[0], errors
 
 
 def main() -> int:
@@ -51,33 +93,97 @@ def main() -> int:
 
     plan = read_csv(a.squad_plan)
     creation = read_csv(a.creation_plan) if a.creation_plan else []
-    before_players = unique(read_csv(a.before / "native_player_semantics.csv"), identity)
-    after_players = unique(read_csv(a.after / "native_player_semantics.csv"), identity)
-    before_by_fm = {r["fm_id"]: identity(r) for r in before_players.values()}
-    if len(before_by_fm) != len(before_players):
+    before_player_rows = read_csv(a.before / "native_player_semantics.csv")
+    after_player_rows = read_csv(a.after / "native_player_semantics.csv")
+    before_groups = group(before_player_rows, identity)
+    after_groups = group(after_player_rows, identity)
+    before_by_fm = {r["fm_id"]: r for r in before_player_rows}
+    if len(before_by_fm) != len(before_player_rows):
         raise ValueError("Duplicate before fm_id")
     planned = {}
     for row in plan:
         if row["status"] != "CONFIRMED" or row["fm_id"] not in before_by_fm:
             raise ValueError("Plan is unconfirmed or not bound to before semantics")
-        key = before_by_fm[row["fm_id"]]
+        key = identity(before_by_fm[row["fm_id"]])
         if key in planned:
-            raise ValueError("Duplicate planned person")
-        planned[key] = row
+            raise ValueError("Multiple planned rows share a semantic identity: " + repr(key))
+        planned[key] = (row, before_by_fm[row["fm_id"]])
 
     created = {}
     for row in creation:
         dob = dt.datetime.strptime(row["dob"], "%Y-%m-%d").strftime("%d.%m.%Y")
         name = row["pseudonym"] or " ".join(x for x in (row["first_name"], row["last_name"]) if x)
         key = row["fifa_id"], dob, name
-        if row["status"] != "CONFIRMED" or key in created or key in before_players:
+        if row["status"] != "CONFIRMED" or key in created or key in before_groups:
             raise ValueError("Creation plan is unconfirmed, duplicate, or already exists")
         created[key] = row
-    if set(after_players) - set(before_players) != set(created) or set(before_players) - set(after_players):
-        raise ValueError("Before/after player inventory differs outside the creation plan")
-    after_existing = {k:v for k,v in after_players.items() if k in before_players}
+
+    # Identity is deliberately a multiset: Native08 contains legitimate people
+    # with the same FIFA id, birthday and display name.  Bind every changed row
+    # to its explicit pre-write FM id, consume unchanged siblings by their full
+    # exported semantics, and require exactly one changed after-row to remain.
+    before_identity_counts = Counter(identity(row) for row in before_player_rows)
+    expected_identity_counts = before_identity_counts.copy()
+    expected_identity_counts.update(created.keys())
+    actual_identity_counts = Counter(identity(row) for row in after_player_rows)
+    inventory_errors = []
+    for key in sorted(set(expected_identity_counts) | set(actual_identity_counts)):
+        if expected_identity_counts[key] != actual_identity_counts[key]:
+            inventory_errors.append({"identity": key, "expected": expected_identity_counts[key],
+                                     "actual": actual_identity_counts[key]})
+
+    planned_pairs = {}
+    unchanged_errors = []
+    mapping_errors = []
+    unplanned_serialization_rewrites = []
+    for key, before_rows in before_groups.items():
+        after_rows = list(after_groups.get(key, []))
+        if key in planned:
+            plan_row, baseline = planned[key]
+            actual, errors = map_planned_group(before_rows, after_rows, plan_row)
+            for error in errors:
+                error["identity"] = key
+                (unchanged_errors if error.get("fm_id") else mapping_errors).append(error)
+            if actual is not None:
+                planned_pairs[key] = (plan_row, baseline, actual)
+        elif key not in created:
+            if multiset(before_rows) != multiset(after_rows):
+                unchanged_errors.append({"identity": key, "before_count": len(before_rows),
+                                         "after_count": len(after_rows),
+                                         "error": "unplanned stable semantic multiset changed"})
+            else:
+                before_sorted = sorted(before_rows, key=lambda row: (semantic_fingerprint(row), int(row["fm_id"])))
+                after_sorted = sorted(after_rows, key=lambda row: (semantic_fingerprint(row), int(row["fm_id"])))
+                for baseline, actual in zip(before_sorted, after_sorted):
+                    if baseline["serialized_sha256"] != actual["serialized_sha256"]:
+                        unplanned_serialization_rewrites.append({
+                            "identity": key,
+                            "before_fm_id": baseline["fm_id"], "after_fm_id": actual["fm_id"],
+                            "before_serialized_sha256": baseline["serialized_sha256"],
+                            "after_serialized_sha256": actual["serialized_sha256"],
+                        })
+
     checks = {}
-    actual_player_changes = changed(before_players, after_existing, "serialized_sha256")
+    checks["player_identity_inventory"] = {
+        "status": "PASS" if not inventory_errors else "FAIL",
+        "before": len(before_player_rows), "created": len(created), "after": len(after_player_rows),
+        "multiplicity_errors": inventory_errors[:25],
+    }
+    checks["existing_player_mapping"] = {
+        "status": "PASS" if not mapping_errors and not unchanged_errors else "FAIL",
+        "planned": len(planned), "mapped": len(planned_pairs),
+        "preexisting_duplicate_identity_groups": sum(len(rows) > 1 for rows in before_groups.values()),
+        "mapping_errors": mapping_errors[:25], "unchanged_errors": unchanged_errors[:25],
+        "method": "explicit before FM id; unchanged full-row multiset; unique residual changed row",
+    }
+    checks["unplanned_stable_semantics"] = {
+        "status": "PASS" if not unchanged_errors else "FAIL",
+        "opaque_serialization_rewrites": len(unplanned_serialization_rewrites),
+        "rewrites": unplanned_serialization_rewrites[:25],
+        "method": "all exported state/history/condition fields compared as multisets; read/write ids excluded",
+    }
+    actual_player_changes = {key for key, (_, baseline, actual) in planned_pairs.items()
+                             if baseline["serialized_sha256"] != actual["serialized_sha256"]}
     checks["exact_changed_players"] = {
         "status": "PASS" if actual_player_changes == set(planned) else "FAIL",
         "expected": len(planned), "actual": len(actual_player_changes),
@@ -88,9 +194,7 @@ def main() -> int:
         return dt.datetime.strptime(value, "%Y-%m-%d").strftime("%d.%m.%Y")
 
     detail_errors = []
-    for key, row in planned.items():
-        actual = after_players[key]
-        baseline = before_players[key]
+    for key, (row, baseline, actual) in planned_pairs.items():
         reserve = row["team_type"] == "RESERVE"
         expected = {
             "club_id": row["new_club_id"], "joined": native_date(row["joined"]),
@@ -122,8 +226,9 @@ def main() -> int:
                                          "players": len(planned), "errors": detail_errors[:25]}
     creation_errors=[]
     for key,row in created.items():
-        actual=after_players.get(key,{})
-        expected={"fm_id":row["fm_id"],"club_id":row["club_id"],
+        candidates=after_groups.get(key,[])
+        actual=candidates[0] if len(candidates)==1 else {}
+        expected={"club_id":row["club_id"],
                   "joined":native_date(row["joined"]),"contract_until":native_date(row["contract_until"]),
                   "shirt_number_reserve" if row["team_type"]=="RESERVE" else "shirt_number_first":row["shirt_number"],
                   "in_reserve":"1" if row["team_type"]=="RESERVE" else "0",
@@ -132,25 +237,29 @@ def main() -> int:
         differences={field:{"expected":value,"actual":actual.get(field)}
                      for field,value in expected.items() if actual.get(field)!=value}
         if differences:
-            creation_errors.append({"identity":key,"expected_fm_id":row["fm_id"],
-                                    "actual_fm_id":actual.get("fm_id"),"expected_club":row["club_id"],
+            creation_errors.append({"identity":key,"planned_temporary_fm_id":row["fm_id"],
+                                    "reread_fm_id":actual.get("fm_id"),"expected_club":row["club_id"],
                                     "actual_club":actual.get("club_id"),"fields":differences})
     checks["created_players"]={"status":"PASS" if not creation_errors else "FAIL",
-                               "expected":len(created),"actual":len(set(after_players)-set(before_players)),
+                               "expected":len(created),"actual":sum(
+                                   max(0,actual_identity_counts[key]-before_identity_counts[key])
+                                   for key in actual_identity_counts),
                                "errors":creation_errors[:25]}
 
     if not all("history_sha256" in row and "conditions_sha256" in row
-               for row in list(before_players.values()) + list(after_players.values())):
+               for row in before_player_rows + after_player_rows):
         raise ValueError("Native exporter lacks component history/condition hashes")
-    history_expected = {key for key, row in planned.items()
+    history_expected = {key for key, (row, _) in planned.items()
                         if row.get("action", "SQUAD") in {"FREE_AGENT", "RETIRE"}}
-    condition_expected = {key for key, row in planned.items()
+    condition_expected = {key for key, (row, _) in planned.items()
                           if row.get("action", "SQUAD") in {
                               "RETIRE", "RESOLVE_EXPIRED_LOAN", "REPLACE_EXPIRED_LOAN",
                               "RESOLVE_ACTIVE_LOAN", "REPLACE_ACTIVE_LOAN", "PURCHASE_AND_LOAN"}
                           or row.get("loan_owner_club_id", "0") != "0"}
-    actual_history = changed(before_players, after_existing, "history_sha256")
-    actual_conditions = changed(before_players, after_existing, "conditions_sha256")
+    actual_history = {key for key, (_, baseline, actual) in planned_pairs.items()
+                      if baseline["history_sha256"] != actual["history_sha256"]}
+    actual_conditions = {key for key, (_, baseline, actual) in planned_pairs.items()
+                         if baseline["conditions_sha256"] != actual["conditions_sha256"]}
     checks["history_delta"] = {"status": "PASS" if actual_history == history_expected else "FAIL",
                                 "expected": len(history_expected), "actual": len(actual_history)}
     checks["starting_condition_delta"] = {
@@ -158,8 +267,10 @@ def main() -> int:
         "expected": len(condition_expected), "actual": len(actual_conditions),
         "preserved_unplanned_and_future_conditions": actual_conditions == condition_expected,
     }
-    actual_protected_conditions = changed(before_players, after_existing, "protected_conditions_sha256")
-    actual_future_conditions = changed(before_players, after_existing, "future_conditions_sha256")
+    actual_protected_conditions = {key for key, (_, baseline, actual) in planned_pairs.items()
+        if baseline["protected_conditions_sha256"] != actual["protected_conditions_sha256"]}
+    actual_future_conditions = {key for key, (_, baseline, actual) in planned_pairs.items()
+        if baseline["future_conditions_sha256"] != actual["future_conditions_sha256"]}
     checks["protected_conditions_preserved"] = {
         "status": "PASS" if not actual_protected_conditions else "FAIL",
         "changed": [list(k) for k in sorted(actual_protected_conditions)[:25]],
@@ -169,27 +280,30 @@ def main() -> int:
         "changed": [list(k) for k in sorted(actual_future_conditions)[:25]],
     }
 
-    before_ratings = unique(read_csv(a.before / "native_ratings.csv"), identity)
-    after_ratings = unique(read_csv(a.after / "native_ratings.csv"), identity)
-    rating_fields = [f for f in next(iter(before_ratings.values()))
+    before_rating_rows = read_csv(a.before / "native_ratings.csv")
+    after_rating_rows = read_csv(a.after / "native_ratings.csv")
+    before_rating_groups = group(before_rating_rows, identity)
+    after_rating_groups = group(after_rating_rows, identity)
+    rating_fields = [f for f in before_rating_rows[0]
                      if f not in {"fm_id", "club_id", "serialized_sha256", "protected_sha256",
                                   "in_reserve", "in_youth"}]
     rating_errors = []
-    after_existing_ratings={k:v for k,v in after_ratings.items() if k in before_ratings}
-    if before_ratings.keys() != after_existing_ratings.keys():
-        rating_errors.append("inventory")
-    else:
-        for key in before_ratings:
-            differences = [f for f in rating_fields if before_ratings[key][f] != after_existing_ratings[key][f]]
-            if differences:
-                rating_errors.append({"identity": key, "fields": differences})
-                if len(rating_errors) >= 25:
-                    break
+    for key, before_rows in before_rating_groups.items():
+        after_rows = after_rating_groups.get(key, [])
+        if multiset(before_rows, rating_fields) != multiset(after_rows, rating_fields):
+            rating_errors.append({"identity": key, "before_count": len(before_rows),
+                                  "after_count": len(after_rows),
+                                  "error": "rating-value multiset changed"})
+            if len(rating_errors) >= 25:
+                break
     checks["ratings_preserved"] = {"status": "PASS" if not rating_errors else "FAIL",
-                                    "players": len(before_ratings), "errors": rating_errors}
+                                    "players": len(before_rating_rows), "errors": rating_errors,
+                                    "preexisting_duplicate_identity_groups": sum(
+                                        len(rows) > 1 for rows in before_rating_groups.values())}
     creation_rating_errors=[]
     for key,row in created.items():
-        actual=after_ratings.get(key,{})
+        candidates=after_rating_groups.get(key,[])
+        actual=candidates[0] if len(candidates)==1 else {}
         seed=row["rating_seed"]
         if actual.get("main_position") != row["position"]:
             creation_rating_errors.append({"identity":key,"fields":{
@@ -251,14 +365,38 @@ def main() -> int:
         "expected": sorted(expected_competitions), "actual": sorted(actual_competitions),
     }
 
-    exact_files = ["native_staff_semantics.csv", "native_global_semantics.csv",
-                   "native_world_countries.csv"]
-    exact_errors = []
-    for name in exact_files:
-        if sha256(a.before / name) != sha256(a.after / name):
-            exact_errors.append(name)
-    checks["unrelated_world_semantics"] = {"status": "PASS" if not exact_errors else "FAIL",
-                                            "exact_files": exact_files, "changed": exact_errors}
+    before_staff = read_csv(a.before / "native_staff_semantics.csv")
+    after_staff = read_csv(a.after / "native_staff_semantics.csv")
+    staff_fields = [field for field in before_staff[0] if field != "fm_id"]
+    staff_preserved = multiset(before_staff, staff_fields) == multiset(after_staff, staff_fields)
+    checks["staff_semantics_preserved"] = {
+        "status": "PASS" if staff_preserved else "FAIL",
+        "before": len(before_staff), "after": len(after_staff),
+        "method": "full exported staff-row multiset excluding read-assigned fm_id",
+    }
+
+    before_countries = unique(read_csv(a.before / "native_world_countries.csv"), lambda row: row["country_id"])
+    after_countries = unique(read_csv(a.after / "native_world_countries.csv"), lambda row: row["country_id"])
+    actual_country_changes = ((set(before_countries) ^ set(after_countries)) |
+        {key for key in set(before_countries) & set(after_countries)
+         if before_countries[key]["serialized_sha256"] != after_countries[key]["serialized_sha256"]})
+    allowed_country_changes = set()
+    if a.belgium_plan:
+        allowed_country_changes.add("7")
+    if a.germany_plan:
+        allowed_country_changes.add("21")
+    unexpected_country_changes = actual_country_changes - allowed_country_changes
+    checks["world_country_semantics"] = {
+        "status": "PASS" if not unexpected_country_changes else "FAIL",
+        "actual": sorted(actual_country_changes), "allowed_by_structural_plans": sorted(allowed_country_changes),
+        "unexpected": sorted(unexpected_country_changes),
+    }
+    global_preserved = sha256(a.before / "native_global_semantics.csv") == sha256(
+        a.after / "native_global_semantics.csv")
+    checks["unrelated_global_semantics"] = {
+        "status": "PASS" if global_preserved else "FAIL",
+        "exact_file": "native_global_semantics.csv",
+    }
 
     passed = all(c["status"] == "PASS" for c in checks.values())
     report = {
