@@ -109,6 +109,7 @@ def main() -> int:
         action = row.get("action", "SQUAD")
         free_agent, retire, shirt_only = (action == "FREE_AGENT", action == "RETIRE",
                                           action == "SHIRT_ONLY")
+        preserve_protected = action == "PRESERVE_PROTECTED_SQUAD"
         replace_expired = action == "REPLACE_EXPIRED_LOAN"
         replace_active = action == "REPLACE_ACTIVE_LOAN"
         resolve_active = action == "RESOLVE_ACTIVE_LOAN"
@@ -119,7 +120,7 @@ def main() -> int:
         if action not in {"SQUAD", "FREE_AGENT", "RETIRE", "SHIRT_ONLY",
                           "RESOLVE_EXPIRED_LOAN", "REPLACE_EXPIRED_LOAN",
                           "REPLACE_ACTIVE_LOAN", "RESOLVE_ACTIVE_LOAN",
-                          "PURCHASE_AND_LOAN"}:
+                          "PURCHASE_AND_LOAN", "PRESERVE_PROTECTED_SQUAD"}:
             add(row, "action", "unsupported action")
         target = row.get("new_club_id", "")
         clubless = free_agent or retire
@@ -159,7 +160,19 @@ def main() -> int:
         native_loan = actual.get("loan_enabled") == "1"
         native_retire = actual.get("retirement_enabled") == "1"
         native_future = actual.get("future_conditions_sha256", empty_hash) != empty_hash
-        if not shirt_only and (native_retire or (native_loan and not resolve) or native_future):
+        if preserve_protected:
+            condition = [row.get("protected_condition_type", "")] + [
+                row.get(f"protected_condition_param{i}", "") for i in range(5)]
+            if (condition[0] not in {"1", "2", "7"} or
+                    any(not value.isdigit() for value in condition) or
+                    actual.get("protected_conditions_sha256", empty_hash) == empty_hash or
+                    native_loan or native_retire or native_future):
+                add(row, "protected_condition_precondition",
+                    "unsupported/missing protected condition or conflicting native condition")
+        elif any(row.get(field, "") for field in ["protected_condition_type"] + [
+                f"protected_condition_param{i}" for i in range(5)]):
+            add(row, "protected_condition_fields", "protected fields on unrelated action")
+        if not shirt_only and not preserve_protected and (native_retire or (native_loan and not resolve) or native_future):
             add(row, "existing_conditions", "unhandled retirement, loan, or future condition")
         if resolve:
             if not native_loan:
@@ -228,7 +241,7 @@ def main() -> int:
                 add(row, "acquisition_date", "malformed acquisition date")
         # The export cannot distinguish an allowed injury/league ban from a
         # disallowed ban-until condition. Preserve this as an explicit warning.
-        if (not shirt_only and actual.get("protected_conditions_sha256", empty_hash) != empty_hash
+        if (not shirt_only and not preserve_protected and actual.get("protected_conditions_sha256", empty_hash) != empty_hash
                 and not native_loan and not native_retire and not native_future):
             add(row, "protected_condition_detail",
                 "non-future protected condition requires native guard confirmation", "WARNING")

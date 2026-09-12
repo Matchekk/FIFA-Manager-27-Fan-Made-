@@ -1,0 +1,15 @@
+{
+  "status": "STAGED_NOT_CANONICAL",
+  "records": 9,
+  "exact_supported_conditions": 9,
+  "staged_delta_rows": 6,
+  "held_rows": 3,
+  "condition_counts": {
+    "INJURY": 6,
+    "LEAGUE_BAN": 2,
+    "BAN_UNTIL": 1
+  },
+  "proof_sha256": "83df995043b922297b8e095dd9a2b0ca2455e82853a494364115a225c4ddb452",
+  "delta_sha256": "e48b6d812119928941ab29cd34691a9482c609fa7862568ba316a620ba0ae45a",
+  "canonical_plan_mutated": false
+}

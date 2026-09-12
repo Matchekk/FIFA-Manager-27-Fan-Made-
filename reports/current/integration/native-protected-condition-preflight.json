@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "plan": "C:\\FM27CommunityOverhaul\\data\\current\\integration-staged\\native10-post-draft05-condition-delta.csv",
+  "plan_sha256": "e48b6d812119928941ab29cd34691a9482c609fa7862568ba316a620ba0ae45a",
+  "before": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-04\\write\\before\\native_player_semantics.csv",
+  "before_sha256": "a5dff2a4b4ef72fe785b048b3d4edd8e7f6dc93c72f67fd97f92b55f28655ab0",
+  "plan_rows": 6,
+  "native_rows": 266764,
+  "creation_rows": 0,
+  "errors": 0,
+  "warnings": 0,
+  "error_counts": {},
+  "empty_conditions_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+}

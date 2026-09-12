@@ -1,6 +1,7 @@
 #pragma once
 #include "FifamDatabase.h"
 #include "FifamPlayer.h"
+#include <array>
 #include <chrono>
 #include <fstream>
 #include <map>
@@ -65,12 +66,16 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
     auto acquisitionSchema=expiredSchema;
     for (auto const* name:{"acquisition_seller_club_id","acquisition_event_key","acquisition_date","acquisition_source","acquisition_source_sha256"})
         acquisitionSchema.push_back(name);
-    bool acquisitionFields=header==acquisitionSchema;
+    auto protectedSchema=acquisitionSchema;
+    for (auto const* name:{"protected_condition_type","protected_condition_param0","protected_condition_param1",
+        "protected_condition_param2","protected_condition_param3","protected_condition_param4"}) protectedSchema.push_back(name);
+    bool protectedFields=header==protectedSchema;
+    bool acquisitionFields=header==acquisitionSchema || protectedFields;
     bool expiredFields=header==expiredSchema || acquisitionFields;
     bool actions=header==actionSchema || expiredFields;
     bool typed=header==loanSchema || actions;
     if (!typed && header!=expected) throw std::runtime_error("Unexpected staging plan schema");
-    if (typed) expected=acquisitionFields?acquisitionSchema:expiredFields?expiredSchema:actions?actionSchema:loanSchema;
+    if (typed) expected=protectedFields?protectedSchema:acquisitionFields?acquisitionSchema:expiredFields?expiredSchema:actions?actionSchema:loanSchema;
     struct Change { FifamPlayer* player; FifamClub* target; FifamDate joined; FifamDate until; UInt number; bool reserve;
         FifamClub* owner; FifamDate loanEnd; bool freeAgent; bool retire; bool resolveLoan; bool shirtOnly; };
     std::vector<Change> changes;
@@ -97,6 +102,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
         bool freeAgent=action=="FREE_AGENT";
         bool retire=action=="RETIRE";
         bool shirtOnly=action=="SHIRT_ONLY";
+        bool preserveProtected=action=="PRESERVE_PROTECTED_SQUAD";
         bool clubless=freeAgent || retire;
         bool replaceExpired=action=="REPLACE_EXPIRED_LOAN";
         bool purchaseLoan=action=="PURCHASE_AND_LOAN";
@@ -104,7 +110,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
         bool resolveActive=action=="RESOLVE_ACTIVE_LOAN";
         bool resolveExpired=action=="RESOLVE_EXPIRED_LOAN" || replaceExpired || (purchaseLoan && p->mStartingConditions.mLoan.mEnabled);
         bool resolveLoan=resolveExpired || replaceActive || resolveActive;
-        if (action!="SQUAD" && !clubless && !resolveLoan && !purchaseLoan && !shirtOnly)
+        if (action!="SQUAD" && !clubless && !resolveLoan && !purchaseLoan && !shirtOnly && !preserveProtected)
             playerError("unknown native staging action");
         auto targetID=PlanUInt(f[4]);
         auto target=targetID?db.GetClubFromUID(targetID,false):nullptr;
@@ -125,7 +131,24 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
         if (clubless && (until.GetDays()+1!=joined.GetDays() || number!=0 || f[8]!="FIRST" || f[13]!="0" || !f[14].empty()))
             playerError("invalid clubless dates/team/loan fields");
         auto& c=p->mStartingConditions;
-        if (!shirtOnly && (c.mRetirement.mEnabled || (c.mLoan.mEnabled && !resolveLoan) || c.mFutureTransfer.mEnabled || c.mFutureLoan.mEnabled ||
+        if (preserveProtected) {
+            if (!protectedFields) playerError("protected-condition action lacks exact precondition fields");
+            auto type=PlanUInt(f[25]);
+            std::array<UInt,5> params{PlanUInt(f[26]),PlanUInt(f[27]),PlanUInt(f[28]),PlanUInt(f[29]),PlanUInt(f[30])};
+            auto count=static_cast<UInt>(c.mInjury.mEnabled)+static_cast<UInt>(c.mLeagueBan.mEnabled)+static_cast<UInt>(c.mBanUntil.mEnabled);
+            bool exact=(count==1 && !c.mRetirement.mEnabled && !c.mLoan.mEnabled && !c.mFutureTransfer.mEnabled &&
+                !c.mFutureLoan.mEnabled && !c.mFutureJoin.mEnabled && !c.mFutureReLoan.mEnabled && !c.mFutureLeave.mEnabled && !p->mContract.mLoaned);
+            if (type==1) exact=exact && c.mInjury.mEnabled && params[0]==c.mInjury.mStartDate.GetDays() &&
+                params[1]==c.mInjury.mEndDate.GetDays() && params[2]==0 && params[3]==c.mInjury.mType.ToInt() && params[4]==0;
+            else if (type==2) exact=exact && c.mLeagueBan.mEnabled && params[0]==0 && params[1]==0 && params[2]==0 &&
+                params[3]==c.mLeagueBan.mNumMatches && params[4]==0;
+            else if (type==7) exact=exact && c.mBanUntil.mEnabled && params[0]==0 && params[1]==c.mBanUntil.mDate.GetDays() &&
+                params[2]==0 && params[3]==0 && params[4]==0;
+            else exact=false;
+            if (!exact) playerError("protected-condition native precondition mismatch");
+        } else if (protectedFields && std::any_of(f.begin()+25,f.end(),[](auto const& value){return !value.empty();}))
+            playerError("protected-condition fields on unrelated action");
+        if (!shirtOnly && !preserveProtected && (c.mRetirement.mEnabled || (c.mLoan.mEnabled && !resolveLoan) || c.mFutureTransfer.mEnabled || c.mFutureLoan.mEnabled ||
             c.mFutureJoin.mEnabled || c.mFutureReLoan.mEnabled || c.mFutureLeave.mEnabled || c.mBanUntil.mEnabled || p->mContract.mLoaned)
             ) playerError("complex existing condition requires a typed loan/timeline plan");
         if (resolveLoan) {

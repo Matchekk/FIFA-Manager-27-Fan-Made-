@@ -134,6 +134,33 @@ inline void RunStagePlanTests(std::filesystem::path const& output) {
         if (p->mClub!=newClub || p->mContract.mJoined!=FifamDate(1,8,2026))
             throw std::runtime_error("Permanent event audit fields changed staging semantics");
     }
+    auto protectedTest=[&](std::string const& name,UInt matches,bool future,bool succeeds) {
+        FifamDatabase db; auto country=db.CreateCountry(14);
+        auto oldClub=db.CreateClub(country); oldClub->mUniqueID=917505; db.AddClubToMap(oldClub);
+        auto newClub=db.CreateClub(country); newClub->mUniqueID=917506; db.AddClubToMap(newClub);
+        auto p=db.CreatePlayer(oldClub,1); p->mFifaID=123; p->mBirthday=FifamDate(2,1,2000);
+        p->mStartingConditions.mLeagueBan.Setup(2);
+        if (future) p->mStartingConditions.mFutureLeave.Setup(FifamDate(1,7,2027));
+        auto path=output/(name+".csv");
+        { std::ofstream file(path);
+          file<<"fm_id,fifa_id,dob,old_club_id,new_club_id,joined,contract_until,shirt_number,team_type,status,source,source_sha256,snapshot_date,loan_owner_club_id,loan_end,action,previous_loan_owner_club_id,previous_loan_start,previous_loan_end,previous_loan_buy_option,acquisition_seller_club_id,acquisition_event_key,acquisition_date,acquisition_source,acquisition_source_sha256,protected_condition_type,protected_condition_param0,protected_condition_param1,protected_condition_param2,protected_condition_param3,protected_condition_param4\n"
+              <<"1,123,2000-01-02,917505,917506,2026-08-01,2029-06-30,7,FIRST,CONFIRMED,https://example.com/profile,"
+              <<std::string(64,'a')<<",2026-09-08,0,,PRESERVE_PROTECTED_SQUAD,0,,,0,0,,,,,2,0,0,0,"
+              <<matches<<",0\n"; }
+        bool passed=false; try { ApplyStagePlan(db,path); passed=true; }
+        catch (std::runtime_error const&) { if (succeeds) throw; }
+        if (succeeds) {
+            if (!passed || p->mClub!=newClub || !p->mStartingConditions.mLeagueBan.mEnabled ||
+                p->mStartingConditions.mLeagueBan.mNumMatches!=2)
+                throw std::runtime_error("Protected-condition preservation failed: "+name);
+        } else if (passed || p->mClub!=oldClub || p->mStartingConditions.mLeagueBan.mNumMatches!=2)
+            throw std::runtime_error("Protected-condition rejection mutated data: "+name);
+    };
+    protectedTest("protected-league-ban",2,false,true);
+    protectedTest("protected-wrong-param",1,false,false);
+    protectedTest("protected-future-conflict",2,true,false);
+    std::ofstream protectedReport(output/"PROTECTED_CONDITION_TESTS.json");
+    protectedReport<<"{\"status\":\"PASS\",\"tests\":3,\"scope\":\"exact league-ban preservation, mismatched parameter rejection and unrelated future-condition rejection\"}\n";
     std::ofstream report(output/"NATIVE_TESTS.json");
-    report<<"{\"status\":\"PASS\",\"tests\":21,\"scope\":\"native staging preconditions, ownership, return, release, retirement, guarded shirt-only edits, audit event fields and free-agent signing, protected future conditions, atomic validation\"}\n";
+    report<<"{\"status\":\"PASS\",\"tests\":24,\"scope\":\"native staging preconditions, ownership, return, release, retirement, guarded shirt-only edits, exact protected-condition preservation, audit event fields and free-agent signing, protected future conditions, atomic validation\"}\n";
 }

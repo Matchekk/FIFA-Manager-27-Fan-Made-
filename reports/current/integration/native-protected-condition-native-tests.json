@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "binary": "build/fm27-db-probe-native10-protected.exe",
+  "binary_sha256": "1e5d9ef87f033ad3105555ff7af9be7e3a40ce3eda99170717b5d0af03faab51",
+  "focused_tests": 3,
+  "focused_test_result": "PASS",
+  "full_native_self_test_result": "PASS",
+  "test_artifact": "reports/local/native10-protected-stage-tests-20260913-02/PROTECTED_CONDITION_TESTS.json",
+  "test_artifact_sha256": "c352ccd40ed674082f2265b79d5e58bee54e43e58c50327a64c4e42dea4c5a71",
+  "staged_delta_sha256": "e48b6d812119928941ab29cd34691a9482c609fa7862568ba316a620ba0ae45a",
+  "canonical_plan_mutated": false,
+  "draft05_inputs_mutated": false
+}
