@@ -1,0 +1,9 @@
+{
+  "status": "CANDIDATE_NOT_FROZEN",
+  "queue_rows": 57,
+  "bridged_rows": 29,
+  "held_rows": 28,
+  "audit_sha256": "d928396a0efc0f610c836a56328ff4ba39bbe6e33441dd5782fcf91e2613ca21",
+  "bridges_sha256": "d742ea83f961dbf7ef6ae4f447adf11cee10618566cb397a9499efd99af03a5e",
+  "production_ready": false
+}

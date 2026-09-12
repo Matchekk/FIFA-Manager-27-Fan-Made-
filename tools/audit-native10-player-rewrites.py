@@ -8,6 +8,7 @@ import csv
 import hashlib
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 
@@ -31,6 +32,26 @@ def identity(row: dict[str, str]) -> tuple[str, str, str]:
 def stable(row: dict[str, str]) -> tuple[tuple[str, str], ...]:
     return tuple((field, value) for field, value in row.items()
                  if field not in {"fm_id", "serialized_sha256"})
+
+
+def normalized(value: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", value).casefold()
+                   if c.isalnum())
+
+
+def creation_alias(existing: dict[str, str], created: dict[str, str]) -> bool:
+    created_dob = created.get("dob", "")
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", created_dob):
+        year, month, day = created_dob.split("-")
+        created_dob = f"{day}.{month}.{year}"
+    if existing["dob"] != created_dob:
+        return False
+    display = created.get("pseudonym") or " ".join(
+        filter(None, (created.get("first_name"), created.get("last_name"))))
+    old, new = normalized(existing["name"]), normalized(display)
+    old_last = normalized(existing["name"].split()[-1])
+    new_last = normalized(created.get("last_name") or display.split()[-1])
+    return bool(old and new and (old_last == new_last or old in new or new in old))
 
 
 def raw_blocks(database: Path, ids: set[str]) -> dict[str, tuple[str, bytes]]:
@@ -63,6 +84,8 @@ def main() -> int:
     parser.add_argument("--before-database", type=Path, required=True)
     parser.add_argument("--after-database", type=Path, required=True)
     parser.add_argument("--squad-plan", type=Path, required=True)
+    parser.add_argument("--creation-plan", type=Path, required=True,
+                        help="Frozen creation plan used to reject identity-caused rewrites")
     parser.add_argument("--database-source", type=Path,
                         default=Path(__file__).resolve().parents[1] / "upstream/fifam/fmapi/FifamDatabase.cpp")
     parser.add_argument("--player-source", type=Path,
@@ -82,6 +105,7 @@ def main() -> int:
     for row in after_rows:
         after_groups.setdefault(identity(row), []).append(row)
     planned_ids = {row["fm_id"] for row in read_csv(args.squad_plan)}
+    creations = read_csv(args.creation_plan)
 
     candidates: list[tuple[dict[str, str], dict[str, str]]] = []
     for key, rows in before_groups.items():
@@ -113,6 +137,9 @@ def main() -> int:
                              (new_fields[index] if index < len(new_fields) else None)]
         valid = valid and len(old_fields) == 6 and len(new_fields) == 6 and changed_fields == [1]
         valid = valid and old_fields[1] == "0" and new_fields[1].isdigit() and int(new_fields[1]) > 0
+        creation_partners = [row for row in creations if creation_alias(before, row)]
+        if creation_partners:
+            valid = False
         item = {
             "before_fm_id": before["fm_id"], "after_fm_id": after["fm_id"],
             "fifa_id": before["fifa_id"], "dob": before["dob"], "name": before["name"],
@@ -125,17 +152,19 @@ def main() -> int:
             "after_serialized_sha256": after["serialized_sha256"],
             "classification": "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR",
             "status": "VERIFIED" if valid else "REJECTED",
+            "creation_collision_tm_ids": "|".join(r["player_tm_id"] for r in creation_partners),
         }
         audited.append(item)
         if not valid:
             errors.append({"identity": identity(before), "changed_lines": changed_lines,
-                           "changed_fields": changed_fields})
+                           "changed_fields": changed_fields,
+                           "creation_collision_tm_ids": [r["player_tm_id"] for r in creation_partners]})
 
     fields = list(audited[0]) if audited else [
         "before_fm_id", "after_fm_id", "fifa_id", "dob", "name", "before_file", "after_file",
         "raw_block_line", "raw_field_index", "raw_field_name", "old_value", "new_value",
         "before_block_sha256", "after_block_sha256", "before_serialized_sha256",
-        "after_serialized_sha256", "classification", "status"]
+        "after_serialized_sha256", "classification", "status", "creation_collision_tm_ids"]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
@@ -153,6 +182,7 @@ def main() -> int:
         "before_semantics_sha256": sha256(args.before_semantics),
         "after_semantics_sha256": sha256(args.after_semantics),
         "squad_plan_sha256": sha256(args.squad_plan),
+        "creation_plan_sha256": sha256(args.creation_plan),
         "serializer_evidence": {
             "field": "FifamPlayer::mEmpicsId",
             "write_location": "FifamPlayer.cpp:672 (mSpecialFace,mEmpicsId,height,weight,shirt numbers)",
@@ -161,7 +191,7 @@ def main() -> int:
             "FifamPlayer.cpp_sha256": sha256(source_player),
             "FifamDatabase.cpp_sha256": sha256(source_database),
         },
-        "policy": "Only the exact verified rows and before/after hashes in the CSV may pass comparator normalization. Any other opaque serialization rewrite fails.",
+        "policy": "Only exact raw mEmpicsId normalization without a matching newly-created identity may pass. Any created-player collision or other opaque serialization rewrite fails.",
     }
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"status": report["status"], "rows": len(audited), "errors": len(errors)}))

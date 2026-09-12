@@ -30,6 +30,7 @@ def main():
  p.add_argument('--creation-review',nargs='*',type=Path,default=[],help='Verified adult nonmatches with complete profile fields')
  p.add_argument('--rosters',nargs='+',type=Path,required=True);p.add_argument('--native-reread',type=Path,default=ROOT/'data/generated/native08-integrated-20260912-01-reread')
  p.add_argument('--profiles',nargs='*',type=Path,default=[]);p.add_argument('--profile-club-aliases',nargs='*',type=Path,default=[])
+ p.add_argument('--identity-audit',type=Path,help='Whole-corpus identity and loan-semantics gate')
  p.add_argument('--output',type=Path,default=ROOT/'data/current/integration/candidate-player-creation-plan.csv')
  p.add_argument('--report',type=Path,default=ROOT/'reports/current/integration/player-creation.json');a=p.parse_args()
  enum=(ROOT/'upstream/fifam/fmapi/FifamNation.h').read_text(encoding='utf-8-sig')
@@ -37,6 +38,9 @@ def main():
  roster={r['player_tm_id']:r for path in a.rosters for r in read_csv(path)}
  profiles={r['player_tm_id']:r for path in a.profiles for r in read_csv(path)}
  affiliation={r['player_tm_id']:r for path in a.profile_club_aliases for r in read_csv(path)}
+ audit={}
+ if a.identity_audit:
+  for row in read_csv(a.identity_audit): audit.setdefault(row.get('player_tm_id',''),set()).add(row.get('decision',''))
  native=read_csv(a.native_reread/'native_players.csv');used={int(r['fm_id']) for r in native};next_id=max(used)+1
  ready=[r for path in a.create_ready for r in read_csv(path)]
  for path in a.creation_review:
@@ -52,6 +56,9 @@ def main():
     'source_hashes':json.dumps([review['source_sha256']])})
  ready=list({r['player_tm_id']:r for r in ready}.values());plans=[];held=[]
  for r in sorted(ready,key=lambda x:int(x['player_tm_id'])):
+  if audit.get(r['player_tm_id']) != {'CREATE_CLEAR'}:
+   held.append({'player_tm_id':r['player_tm_id'],'player':r['player'],'reason':'Whole-corpus identity/loan audit is missing or not CREATE_CLEAR'})
+   continue
   source=roster.get(r['player_tm_id'],{}); labels=r['nationality'].split(); ids=[];i=0
   while i<len(labels):
    label=labels[i]

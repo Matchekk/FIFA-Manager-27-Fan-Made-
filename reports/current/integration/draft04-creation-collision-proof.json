@@ -1,0 +1,9 @@
+{
+  "status": "FAIL_DRAFT04_DUPLICATE_PLAYER_CREATIONS",
+  "production_signoff": false,
+  "collision_pairs": 11,
+  "all_partners_are_draft04_creations": true,
+  "all_pairs_same_real_identity": true,
+  "proof_sha256": "6c7c2286b314ecd2e688445f420c99a32dbe61b654e2c9bae57ffb3364979cc2",
+  "semantic_v3_mutated": false
+}

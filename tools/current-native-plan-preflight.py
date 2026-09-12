@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
+import difflib
 import json
 import hashlib
 import re
@@ -30,6 +31,8 @@ def args() -> argparse.Namespace:
     p.add_argument("--clubs", type=Path,
                    default=ROOT / "data/intermediate/transfer-increment-20260909-07/clubs.csv")
     p.add_argument("--creation-plan", type=Path)
+    p.add_argument("--creation-identity-audit", type=Path,
+                   help="Whole-plan DOB/name/nationality and loan-semantics gate")
     p.add_argument("--native-rich", type=Path,
                    default=ROOT / "data/intermediate/transfer-increment-20260909-07/players.csv")
     p.add_argument("--output", type=Path,
@@ -48,6 +51,18 @@ def native_date(value: str) -> dt.date | None:
 def name_key(value: str) -> str:
     value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().lower()
     return " ".join(re.sub(r"[^a-z0-9]+", " ", value).split())
+
+
+def plausible_native_alias(display: str, native_name: str) -> bool:
+    created = name_key(display).split()
+    existing = name_key(native_name).split()
+    if not created or not existing:
+        return False
+    joined_created, joined_existing = "".join(created), "".join(existing)
+    surname = difflib.SequenceMatcher(None, created[-1], existing[-1]).ratio()
+    full = difflib.SequenceMatcher(None, joined_created, joined_existing).ratio()
+    return (created[-1] == existing[-1] or surname >= .78 or full >= .72
+            or created[-1] in joined_existing or existing[-1] in joined_created)
 
 
 def cached_source_ok(url: str, digest: str) -> bool:
@@ -221,6 +236,11 @@ def main() -> int:
     creation = read_csv(a.creation_plan) if a.creation_plan else []
     if creation:
         rich = read_csv(a.native_rich)
+        audit_rows = read_csv(a.creation_identity_audit) if a.creation_identity_audit else []
+        audit_decisions: dict[str, set[str]] = {}
+        for audit_row in audit_rows:
+            audit_decisions.setdefault(audit_row.get("player_tm_id", ""), set()).add(
+                audit_row.get("decision", ""))
         existing_tm = {r.get("transfermarkt_id", "") for r in rich
                        if r.get("transfermarkt_id", "") not in {"", "0"}}
         existing_fifa = {r.get("fifa_id", "") for r in before_rows
@@ -237,6 +257,9 @@ def main() -> int:
             display = row.get("pseudonym") or " ".join(
                 v for v in (row.get("first_name", ""), row.get("last_name", "")) if v)
             pseudo = {"fm_id": ident, "action": "CREATE"}
+            if audit_decisions.get(tm_id) != {"CREATE_CLEAR"}:
+                add(pseudo, "create_identity_audit",
+                    "creation lacks a unique CREATE_CLEAR whole-corpus identity/loan audit decision")
             if (not ident.isdigit() or ident == "0" or ident in before or ident in create_ids):
                 add(pseudo, "create_fm_id", "missing, existing, or repeated creation fm_id")
             create_ids.add(ident)
@@ -257,6 +280,18 @@ def main() -> int:
             if not candidate[0] or candidate in existing_name_dob or candidate in create_names:
                 add(pseudo, "create_name_dob", "empty or duplicate normalized name and DOB")
             create_names.add(candidate)
+            nations = {row.get("nationality1", "")}
+            if row.get("nationality2") not in {"", "0"}:
+                nations.add(row["nationality2"])
+            plausible = [native for native in rich
+                         if native.get("dob") == row.get("dob")
+                         and native.get("nationality") in nations
+                         and plausible_native_alias(display,
+                             native.get("common_name") or native.get("name", ""))]
+            if plausible:
+                add(pseudo, "create_native_alias_candidate",
+                    "plausible Native08 DOB/name/nationality identities: " +
+                    "|".join(native.get("fm_id", "") for native in plausible[:10]))
             try:
                 nation1, nation2, shirt, seed = (int(row["nationality1"]), int(row["nationality2"]),
                                                  int(row["shirt_number"]), int(row["rating_seed"]))

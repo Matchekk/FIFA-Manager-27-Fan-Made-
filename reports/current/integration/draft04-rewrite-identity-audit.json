@@ -1,0 +1,196 @@
+{
+  "status": "FAIL",
+  "rows": 11,
+  "errors": [
+    {
+      "identity": [
+        "258911",
+        "23.11.2000",
+        "Toluwalase Arokodare"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "683571"
+      ]
+    },
+    {
+      "identity": [
+        "270077",
+        "28.11.2003",
+        "Kostas Koulierakis"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "669380"
+      ]
+    },
+    {
+      "identity": [
+        "263555",
+        "23.03.2001",
+        "Nikos Michelis"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "584452"
+      ]
+    },
+    {
+      "identity": [
+        "229703",
+        "04.04.1994",
+        "Dimitris Goutas"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "191829"
+      ]
+    },
+    {
+      "identity": [
+        "0",
+        "25.03.2003",
+        "Yevhen Skyba"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "1052374"
+      ]
+    },
+    {
+      "identity": [
+        "275647",
+        "10.10.2005",
+        "Juan David Arizala"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "1118347"
+      ]
+    },
+    {
+      "identity": [
+        "71972",
+        "30.01.2005",
+        "Rafael Bauz\u00e0"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "1178721"
+      ]
+    },
+    {
+      "identity": [
+        "240690",
+        "06.04.1998",
+        "Nicol\u00e1s Gonz\u00e1lez"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "486031"
+      ]
+    },
+    {
+      "identity": [
+        "262744",
+        "27.11.1995",
+        "Mohammed Bouldini"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "211628"
+      ]
+    },
+    {
+      "identity": [
+        "250753",
+        "01.08.2001",
+        "Anatolii Trubin"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "537844"
+      ]
+    },
+    {
+      "identity": [
+        "78193",
+        "10.07.2003",
+        "Rafael Rodr\u00edguez"
+      ],
+      "changed_lines": [
+        15
+      ],
+      "changed_fields": [
+        1
+      ],
+      "creation_collision_tm_ids": [
+        "1057394"
+      ]
+    }
+  ],
+  "output_sha256": "a0c99c2a5238213d32aab9b07a71930290b62f5946023679a85fa621c4ff68cc",
+  "before_semantics_sha256": "a5dff2a4b4ef72fe785b048b3d4edd8e7f6dc93c72f67fd97f92b55f28655ab0",
+  "after_semantics_sha256": "110a27d0103424760edeba3eb185524387d545a41eca4f291a653f5805885d91",
+  "squad_plan_sha256": "db85c7249c849d329dd279b95b4e0c2d2b1f490deeb0175e4f94319c35651ec0",
+  "creation_plan_sha256": "5c268add4d6dbd0858d33dff9f70670db2f13c7124c45c04f870e6917816d023",
+  "serializer_evidence": {
+    "field": "FifamPlayer::mEmpicsId",
+    "write_location": "FifamPlayer.cpp:672 (mSpecialFace,mEmpicsId,height,weight,shirt numbers)",
+    "derivation_location": "FifamDatabase.cpp:688-701 (duplicate string-id disambiguation)",
+    "derivation": "When a duplicate player string id has mEmpicsId=0, writer setup assigns mFootballManagerID when positive, otherwise a generated high Empics id.",
+    "FifamPlayer.cpp_sha256": "636296fbfcdceb5f46424154a9ac694690402d624e71ca766cc25bbc8c088960",
+    "FifamDatabase.cpp_sha256": "776de791ca093ee630ebabf3cd9ec40da2c408c18df45577b03c06d42d223f01"
+  },
+  "policy": "Only exact raw mEmpicsId normalization without a matching newly-created identity may pass. Any created-player collision or other opaque serialization rewrite fails."
+}

@@ -94,6 +94,7 @@ def main() -> int:
         "--after-semantics", str(after / "native_player_semantics.csv"),
         "--before-database", str(base_database), "--after-database", str(candidate / "write/database"),
         "--squad-plan", str(inputs / "squad.csv"), "--database-source", str(source_dir / database_source.name),
+        "--creation-plan", str(inputs / "creation.csv"),
         "--player-source", str(source_dir / player_source.name), "--output", str(allowlist),
         "--report", str(audit_report)]
     audit_run = subprocess.run(audit_command, cwd=ROOT, text=True,

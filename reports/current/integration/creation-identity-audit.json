@@ -1,0 +1,16 @@
+{
+  "status": "DRAFT04_IDENTITY_FAIL_CORRECTED_PLAN_NOT_BUILT",
+  "draft04_production_signoff": false,
+  "source_creation_rows": 94,
+  "corrected_creation_rows": 54,
+  "decision_counts": {
+    "BRIDGE_EXISTING_NATIVE08": 11,
+    "CREATE_CLEAR": 54,
+    "HOLD_CURRENT_LOAN_SEMANTICS": 3,
+    "HOLD_NATIVE08_IDENTITY_CANDIDATE": 26
+  },
+  "audit_sha256": "65d64ed04bf6cc489b256541cd682985e3baf731d8f0435a98f853cd6ef5a5cc",
+  "corrected_creation_plan_sha256": "836a726678c24f59c34e8cecf1fd120104f4e3602743bdcec38d9e756ffcf675",
+  "bridges_sha256": "d69306bd9ee7aaca4e8e22746f18ad744878ec7d664ff49518f2f424242ad8b9",
+  "policy": "Every same-DOB/name/nationality candidate is held; current loans require typed creation semantics; only exact collision-proved aliases are bridged."
+}
