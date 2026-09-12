@@ -37,7 +37,10 @@ std::string csv(std::wstring const& text) {
 #include "semantic_export.h"
 #include "competition_inspection.h"
 #include "league_membership_plan.h"
+#include "belgium_format_plan.h"
+#include "germany_format_plan.h"
 #include "rating_plan.h"
+#include "create_player_plan.h"
 #include "rating_batch.h"
 #include "staging_support.h"
 #include "../../tests/native_semantic_tests.h"
@@ -47,6 +50,10 @@ std::string csv(std::wstring const& text) {
 #include "../../tests/native_league_membership_tests.h"
 #include "../../tests/native_rating_tests.h"
 #include "../../tests/native_rating_batch_tests.h"
+#include "../../tests/native_belgium_format_tests.h"
+#include "../../tests/native_germany_format_tests.h"
+#include "../../tests/native_active_loan_tests.h"
+#include "../../tests/native_create_tests.h"
 
 int wmain(int argc, wchar_t** argv) {
     try {
@@ -66,6 +73,10 @@ int wmain(int argc, wchar_t** argv) {
             RunLeagueMembershipTests(fs::weakly_canonical(argv[2]));
             RunRatingTests(fs::weakly_canonical(argv[2]));
             RunRatingBatchTests(fs::weakly_canonical(argv[2]));
+            RunBelgiumFormatTests(fs::weakly_canonical(argv[2])/"belgium-format");
+            RunGermanyFormatTests(fs::weakly_canonical(argv[2])/"germany-format");
+            RunActiveLoanTests(fs::weakly_canonical(argv[2])/"active-loan");
+            RunCreatePlayerTests(fs::weakly_canonical(argv[2])/"create-player");
             std::cout<<"NATIVE_STAGE_TESTS_PASS (see NATIVE_TESTS.json)\n";
             return 0;
         }
@@ -73,12 +84,23 @@ int wmain(int argc, wchar_t** argv) {
         const bool inspectCompetitions = argc == 4 && std::wstring(argv[3]) == L"--inspect-competitions";
         const bool stagePlan = argc == 5 && std::wstring(argv[3]) == L"--stage-plan";
         const bool stageLeagues = argc == 5 && std::wstring(argv[3]) == L"--stage-league-membership";
+        const bool stageBelgium = argc == 5 && std::wstring(argv[3]) == L"--stage-belgium-format";
+        const bool stageGermany = argc == 5 && std::wstring(argv[3]) == L"--stage-germany-format";
         const bool stageRatings = argc == 5 && std::wstring(argv[3]) == L"--stage-ratings";
+        const bool stageCreate = argc == 5 && std::wstring(argv[3]) == L"--stage-create-players";
         const bool previewRatings = argc == 5 && std::wstring(argv[3]) == L"--preview-ratings";
         const bool inspectRatings = argc == 4 && std::wstring(argv[3]) == L"--inspect-ratings";
-        const bool stageWrite = stagePlan || stageLeagues || stageRatings || (argc == 4 && std::wstring(argv[3]) == L"--stage-roundtrip");
+        const bool stageCurrent = (argc == 7 || argc == 8 || argc == 9) && std::wstring(argv[3]) == L"--stage-current-build";
+        const bool currentSquad = stageCurrent && std::wstring(argv[4]) != L"-";
+        const bool currentLeagues = stageCurrent && std::wstring(argv[5]) != L"-";
+        const bool currentBelgium = stageCurrent && std::wstring(argv[6]) != L"-";
+        const bool currentCreate = stageCurrent && argc >= 8 && std::wstring(argv[7]) != L"-";
+        const bool currentGermany = stageCurrent && argc == 9 && std::wstring(argv[8]) != L"-";
+        const bool stageWrite = stagePlan || stageLeagues || stageBelgium || stageGermany || stageRatings || stageCreate || stageCurrent || (argc == 4 && std::wstring(argv[3]) == L"--stage-roundtrip");
         if (argc != 3 && !stageWrite && !inspectPlan && !inspectCompetitions && !previewRatings && !inspectRatings)
-            throw std::runtime_error("Usage: fm27-db-probe <database-dir> <new-external-output-dir> [--stage-roundtrip | --stage-plan <csv> | --stage-league-membership <csv> | --inspect-plan <csv> | --inspect-competitions | --inspect-ratings | --preview-ratings <csv> | --stage-ratings <csv>]");
+            throw std::runtime_error("Usage: fm27-db-probe <database-dir> <new-external-output-dir> [--stage-roundtrip | --stage-plan <csv> | --stage-create-players <csv> | --stage-league-membership <csv> | --stage-belgium-format <csv> | --stage-germany-format <csv> | --stage-current-build <squad-or-dash> <membership-or-dash> <belgium-or-dash> [creation-or-dash] [germany-or-dash] | --inspect-plan <csv> | --inspect-competitions | --inspect-ratings | --preview-ratings <csv> | --stage-ratings <csv>]");
+        if (stageCurrent && !currentSquad && !currentLeagues && !currentBelgium && !currentCreate && !currentGermany)
+            throw std::runtime_error("Combined current build requires at least one plan");
         auto input = fs::canonical(argv[1]);
         auto output = fs::weakly_canonical(argv[2]);
         auto parent = input.parent_path().wstring();
@@ -106,7 +128,19 @@ int wmain(int argc, wchar_t** argv) {
         }
         StagePlanResult planResult{};
         LeagueMembershipResult leagueResult{};
+        BelgiumFormatResult belgiumResult{};
+        size_t germanyCompetitions=0;
         RatingPlanResult ratingResult{};
+        CreatePlayerResult createResult{};
+        if (stageCurrent) {
+            // Capture the exact accepted in-memory baseline from the same read
+            // that will be mutated. The independent reread remains the after
+            // side of the semantic gate.
+            fs::create_directories(output/"before");
+            ExportPlayerSemantics(*db,output/"before"/"native_player_semantics.csv");
+            ExportRatingInspection(*db,output/"before"/"native_ratings.csv");
+            ExportCompetitionInspection(*db,output/"before");
+        }
         if (stageRatings || previewRatings) {
             fs::create_directories(output/"before-ratings");
             ExportPlayerSemantics(*db,output/"before-ratings"/"native_player_semantics.csv");
@@ -114,18 +148,28 @@ int wmain(int argc, wchar_t** argv) {
             ratingResult=ApplyRatingPlan(*db,argv[4],previewRatings);
             std::cout<<"RATING_PLAYERS="<<ratingResult.players<<" ATTRIBUTES="<<ratingResult.attributes<<'\n';
         }
-        if (stageLeagues) leagueResult=ApplyLeagueMembershipPlan(*db,argv[4]);
+        if (stageLeagues || currentLeagues) leagueResult=ApplyLeagueMembershipPlan(*db,stageLeagues?argv[4]:argv[5]);
+        if (stageBelgium || currentBelgium) belgiumResult=ApplyBelgium2026Format(*db,stageBelgium?argv[4]:argv[6]);
+        if (stageGermany || currentGermany) germanyCompetitions=ApplyGermany2026Membership(*db,stageGermany?argv[4]:argv[8]);
+        if (stageCreate || currentCreate) createResult=ApplyCreatePlayerPlan(*db,stageCreate?argv[4]:argv[7]);
         if (inspectPlan) {
             fs::create_directories(output/"before-plan");
             ExportPlayerSemantics(*db,output/"before-plan"/"native_player_semantics.csv");
         }
-        if (stagePlan || inspectPlan) {
+        if (stagePlan || inspectPlan || currentSquad) {
             planResult=ApplyStagePlan(*db,argv[4]);
             std::cout << "STAGED_SQUAD_ROWS=" << planResult.rows << '\n';
         }
+        if (stageCurrent && currentSquad && currentLeagues && planResult.snapshot!=leagueResult.snapshot)
+            throw std::runtime_error("Combined plans use different snapshot dates");
+        if (stageCurrent && ((currentSquad && planResult.snapshot!="2026-09-12") ||
+                             (currentLeagues && leagueResult.snapshot!="2026-09-12") ||
+                             (currentCreate && createResult.snapshot!="2026-09-12")))
+            throw std::runtime_error("Combined current build requires the 2026-09-12 snapshot");
         fs::create_directories(output);
         ExportPlayerSemantics(*db,output/"native_player_semantics.csv");
         ExportRatingInspection(*db,output/"native_ratings.csv");
+        ExportCompetitionInspection(*db,output);
         std::ofstream records(output / "native_players.csv", std::ios::binary);
         if (!records) throw std::runtime_error("Cannot create native projection");
         records << "fm_id,fifa_id,club_id,name,dob,main_position,style,level13,best_style,level13_best_style\n";
@@ -151,29 +195,38 @@ int wmain(int argc, wchar_t** argv) {
             WriteExactPlayerRelations(*db,output/"database"/"PlayerRelations.sav");
             PreserveNativeSupport(input,output);
             std::ofstream marker(output / "STAGING_ONLY.txt");
-            marker << ((stagePlan || stageLeagues || stageRatings) ? "MODIFIED_CANDIDATE_NOT_GAME_VALIDATED\n" : "UNMODIFIED_NATIVE_REWRITE_REQUIRES_SEMANTIC_VALIDATION\n");
+            marker << ((stagePlan || stageLeagues || stageBelgium || stageGermany || stageRatings || stageCreate || stageCurrent) ? "MODIFIED_CANDIDATE_NOT_GAME_VALIDATED\n" : "UNMODIFIED_NATIVE_REWRITE_REQUIRES_SEMANTIC_VALIDATION\n");
             marker.flush();
             if (!marker) throw std::runtime_error("Cannot write staging status");
             SYSTEMTIME captured{};
             GetSystemTime(&captured);
             std::ofstream manifest(output / "DATABASE_METADATA.txt");
-            if (stagePlan) manifest << "DATABASE_SNAPSHOT_DATE=" << planResult.snapshot << '\n';
+            if (stagePlan || currentSquad) manifest << "DATABASE_SNAPSHOT_DATE=" << planResult.snapshot << '\n';
             if (stageRatings) manifest<<"DATABASE_SNAPSHOT_DATE="<<ratingResult.snapshot<<'\n'
                 <<"RATING_CHANGED_PLAYERS="<<ratingResult.players<<'\n'
                 <<"RATING_CHANGED_ATTRIBUTES="<<ratingResult.attributes<<'\n';
-            if (stageLeagues) {
+            if (stageCreate || currentCreate) manifest<<"DATABASE_SNAPSHOT_DATE="<<createResult.snapshot<<'\n'
+                <<"CREATED_PLAYERS="<<createResult.players<<'\n';
+            if (stageLeagues || currentLeagues) {
                 manifest << "DATABASE_SNAPSHOT_DATE="<<leagueResult.snapshot<<'\n'
                     <<"LEAGUE_MEMBERSHIP_COMPETITIONS="<<leagueResult.leagues<<'\n'
                     <<"LEAGUE_MEMBERSHIP_CHANGED_SLOTS="<<leagueResult.changedSlots<<'\n';
             }
+            if (stageBelgium || currentBelgium) manifest << "DATABASE_SNAPSHOT_DATE=2026-09-12\n"
+                <<"BELGIUM_FORMAT_LEAGUES="<<belgiumResult.leagues<<'\n'
+                <<"BELGIUM_FORMAT_COMPETITIONS="<<belgiumResult.competitions<<'\n';
+            if (stageGermany || currentGermany) manifest << "DATABASE_SNAPSHOT_DATE=2026-09-12\n"
+                <<"GERMANY_FORMAT_COMPETITIONS="<<germanyCompetitions<<'\n';
             manifest << "BUILD_CAPTURE_DATE=" << captured.wYear << '-';
             if (captured.wMonth < 10) manifest << '0';
             manifest << captured.wMonth << '-';
             if (captured.wDay < 10) manifest << '0';
             manifest << captured.wDay << '\n'
                 << (stageRatings ? "SNAPSHOT_KIND=RATING_CANDIDATE_CALIBRATION_AND_GAME_GATES_OPEN\n" :
-                    stagePlan ? "SNAPSHOT_KIND=PARTIAL_CURRENT_SQUAD_CANDIDATE\n" : stageLeagues ?
+                    stageCurrent ? "SNAPSHOT_KIND=COMBINED_CURRENT_DATA_CANDIDATE\n" : stagePlan ? "SNAPSHOT_KIND=PARTIAL_CURRENT_SQUAD_CANDIDATE\n" : stageLeagues ?
                     "SNAPSHOT_KIND=LEAGUE_MEMBERSHIP_CANDIDATE_FORMAT_AND_GAME_GATES_OPEN\n" :
+                    stageBelgium ? "SNAPSHOT_KIND=BELGIUM_2026_FORMAT_CANDIDATE_GAME_GATES_OPEN\n" :
+                    stageGermany ? "SNAPSHOT_KIND=GERMANY_2026_FORMAT_CANDIDATE_GAME_GATES_OPEN\n" :
                     "SNAPSHOT_KIND=INSTALLED_BASELINE_CAPTURE_NOT_UPDATED_2026_27_SQUADS\n")
                 << "STATUS=STAGING_ONLY_REQUIRES_FULL_VALIDATION\n";
             manifest.flush();

@@ -1,0 +1,5 @@
+﻿competition_id,slot,old_club_id,old_team_type,new_club_id,new_team_type,status,source,source_sha256,snapshot_date
+352387074,1,1376297,FIRST,1376306,FIRST,CONFIRMED,https://datencenter.dfb.de/competitions/4/seasons/current,952520fbfcc60f1802def3ec1bf2248f8c565db74cf4e27d9ac47e73b969186c,2026-09-12
+352387074,11,1376291,FIRST,1376347,FIRST,CONFIRMED,https://datencenter.dfb.de/competitions/4/seasons/current,952520fbfcc60f1802def3ec1bf2248f8c565db74cf4e27d9ac47e73b969186c,2026-09-12
+352387074,13,1376277,FIRST,1376444,FIRST,CONFIRMED,https://datencenter.dfb.de/competitions/4/seasons/current,952520fbfcc60f1802def3ec1bf2248f8c565db74cf4e27d9ac47e73b969186c,2026-09-12
+352387074,19,1376467,FIRST,1376540,FIRST,CONFIRMED,https://datencenter.dfb.de/competitions/4/seasons/current,952520fbfcc60f1802def3ec1bf2248f8c565db74cf4e27d9ac47e73b969186c,2026-09-12

@@ -1,0 +1,25 @@
+{
+  "status": "INCOMPLETE_REVIEW_REQUIRED",
+  "snapshot_date": "2026-09-12",
+  "coverage_pass": true,
+  "source_failures": [],
+  "format_changes": [
+    {
+      "league": "BEL1",
+      "competition_id": "117506048",
+      "native_teams": 16,
+      "desired_teams": 18,
+      "status": "SEPARATE_FORMAT_PLAN_REQUIRED"
+    }
+  ],
+  "candidate_rows": 4,
+  "changed_competitions": 1,
+  "global_team_conservation": false,
+  "review_rows": 4,
+  "freeze_ready": false,
+  "frozen": false,
+  "membership_sha256": "eab78e33994e2f701bde41c219298823b0da89983df61ba68c963f6c7245d948",
+  "coverage_sha256": "56bb7ed1c42e5710a8fe095da419adacd5ece2a2650660a1d1c68c7b5df674c7",
+  "candidate_sha256": "81f1aed2fbcd6be913d7b8fda0f0321be28814e2e89e502b341d4bc589618d0e",
+  "limitations": "Membership slots only. Size/format changes require the separate validated native format plan; calendars and gameplay are separate gates."
+}

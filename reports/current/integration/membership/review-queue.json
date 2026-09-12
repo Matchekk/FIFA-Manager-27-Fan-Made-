@@ -1,0 +1,30 @@
+[
+  {
+    "league": "",
+    "club": "1376277",
+    "queue": "MOVEMENT_DESTINATION",
+    "blocking": "YES",
+    "reason": "Outgoing team lacks confirmed destination evidence"
+  },
+  {
+    "league": "",
+    "club": "1376291",
+    "queue": "MOVEMENT_DESTINATION",
+    "blocking": "YES",
+    "reason": "Outgoing team lacks confirmed destination evidence"
+  },
+  {
+    "league": "",
+    "club": "1376297",
+    "queue": "MOVEMENT_DESTINATION",
+    "blocking": "YES",
+    "reason": "Outgoing team lacks confirmed destination evidence"
+  },
+  {
+    "league": "",
+    "club": "1376467",
+    "queue": "MOVEMENT_DESTINATION",
+    "blocking": "YES",
+    "reason": "Outgoing team lacks confirmed destination evidence"
+  }
+]

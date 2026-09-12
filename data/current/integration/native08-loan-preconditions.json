@@ -1,0 +1,8 @@
+{
+  "status": "EXACT_NATIVE08_LOAN_PRECONDITIONS",
+  "rows": 10045,
+  "semantic_source": "C:\\FM27CommunityOverhaul\\.agent_tmp\\native10-squad-preflight-20260912-01\\before-plan\\native_player_semantics.csv",
+  "semantic_source_sha256": "a5dff2a4b4ef72fe785b048b3d4edd8e7f6dc93c72f67fd97f92b55f28655ab0",
+  "output_sha256": "f6a8038e44e8ecd9a4390ef577a48fdf15f840010d973bcb1cfe087ffdb4bb30",
+  "scope": "Read-only projection of serialized native loan owner/start/end/buy guards."
+}

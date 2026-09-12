@@ -38,7 +38,10 @@ inline void ExportPlayerSemantics(FifamDatabase& db, std::filesystem::path const
     try {
         std::ofstream file(path,std::ios::binary);
         if (!file) throw std::runtime_error("Cannot open native semantic export");
-        file<<"fm_id,fifa_id,dob,name,club_id,serialized_sha256\n";
+        file<<"fm_id,fifa_id,dob,name,club_id,joined,contract_until,shirt_number_first,shirt_number_reserve,"
+               "in_reserve,nation1,nation2,main_position_id,retirement_enabled,loan_enabled,loan_owner_club_id,loan_start,loan_end,"
+               "loan_buy_option,serialized_sha256,history_sha256,conditions_sha256,protected_conditions_sha256,"
+               "future_conditions_sha256\n";
         std::vector<FifamPlayer*> ordered(db.mPlayers.begin(),db.mPlayers.end());
         std::map<FifamPlayer*,std::string> personKeys;
         std::map<std::string,size_t> keyCounts;
@@ -47,10 +50,35 @@ inline void ExportPlayerSemantics(FifamDatabase& db, std::filesystem::path const
             std::wstring serialized;
             { FifamWriter writer(&serialized,13,FifamVersion(0x2013,0x12)); p->Write(writer); }
             auto hash=NativeSemanticHash(algorithm,utf8(serialized));
+            std::wstring historySerialized,conditionsSerialized,protectedConditionsSerialized,futureConditionsSerialized;
+            { FifamWriter writer(&historySerialized,13,FifamVersion(0x2013,0x12)); p->mHistory.Write(writer); }
+            { FifamWriter writer(&conditionsSerialized,13,FifamVersion(0x2013,0x12)); p->mStartingConditions.Write(writer); }
+            // These projections prove that a staged loan/retirement mutation did
+            // not silently rewrite unrelated or future starting conditions.
+            auto protectedConditions=p->mStartingConditions;
+            protectedConditions.mLoan.Disable(); protectedConditions.mRetirement.Disable();
+            { FifamWriter writer(&protectedConditionsSerialized,13,FifamVersion(0x2013,0x12)); protectedConditions.Write(writer); }
+            auto futureConditions=p->mStartingConditions;
+            futureConditions.mInjury.Disable(); futureConditions.mLeagueBan.Disable();
+            futureConditions.mRetirement.Disable(); futureConditions.mLoan.Disable(); futureConditions.mBanUntil.Disable();
+            { FifamWriter writer(&futureConditionsSerialized,13,FifamVersion(0x2013,0x12)); futureConditions.Write(writer); }
             auto key=hash+"@"+std::to_string(p->mClub?p->mClub->mUniqueID:0);
             personKeys.emplace(p,key); ++keyCounts[key];
+            auto const& loan=p->mStartingConditions.mLoan;
             file<<p->mID<<','<<p->mFifaID<<','<<p->mBirthday.ToStringA()<<','<<csv(p->GetName())<<','
-                <<(p->mClub?p->mClub->mUniqueID:0)<<','<<hash<<'\n';
+                <<(p->mClub?p->mClub->mUniqueID:0)<<','<<p->mContract.mJoined.ToStringA()<<','
+                <<p->mContract.mValidUntil.ToStringA()<<','<<static_cast<unsigned>(p->mShirtNumberFirstTeam)<<','
+                <<static_cast<unsigned>(p->mShirtNumberReserveTeam)<<','<<(p->mInReserveTeam?1:0)<<','
+                <<static_cast<unsigned>(p->mNationality[0].ToInt())<<','<<static_cast<unsigned>(p->mNationality[1].ToInt())<<','
+                <<static_cast<unsigned>(p->mMainPosition.ToInt())<<','<<(p->mStartingConditions.mRetirement.mEnabled?1:0)<<','
+                <<(loan.mEnabled?1:0)<<','
+                <<(loan.mEnabled && loan.mLoanedClub.mPtr?loan.mLoanedClub.mPtr->mUniqueID:0)<<','
+                <<(loan.mEnabled?loan.mStartDate.ToStringA():"")<<','<<(loan.mEnabled?loan.mEndDate.ToStringA():"")<<','
+                <<(loan.mEnabled?loan.mBuyOptionValue:0)<<','<<hash<<','
+                <<NativeSemanticHash(algorithm,utf8(historySerialized))<<','
+                <<NativeSemanticHash(algorithm,utf8(conditionsSerialized))<<','
+                <<NativeSemanticHash(algorithm,utf8(protectedConditionsSerialized))<<','
+                <<NativeSemanticHash(algorithm,utf8(futureConditionsSerialized))<<'\n';
         }
         file.flush();
         if (!file) throw std::runtime_error("Native semantic export write failed");

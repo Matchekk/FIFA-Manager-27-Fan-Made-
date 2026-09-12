@@ -1,0 +1,18 @@
+﻿fm_id,player,action,predicate,severity,detail
+71183,Abdelnour Soualhia,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+77116,Romain Faivre,REPLACE_EXPIRED_LOAN,successor_loan,ERROR,expired successor overlaps or lacks owner
+136463,Othniël Raterink,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+200980,Anıl Yaşar,REPLACE_EXPIRED_LOAN,successor_loan,ERROR,expired successor overlaps or lacks owner
+222649,Souza,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+235262,Yasin Özcan,REPLACE_EXPIRED_LOAN,successor_loan,ERROR,expired successor overlaps or lacks owner
+264991,Petar Ratkov,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+274322,Artem Stepanov,REPLACE_EXPIRED_LOAN,successor_loan,ERROR,expired successor overlaps or lacks owner
+278138,Aymen Zouin,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+283989,Robinio Vaz,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+284614,Jeremy Arévalo,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+285159,Souleymane Faye,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+287701,Yassir Zabiri,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+291091,Noah Edjouma,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+292630,Yanis Massolin,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+294089,Sydney van Hooijdonk,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower
+296798,Adam Kadlec,SQUAD,loan_baseline,ERROR,native club is neither owner nor borrower

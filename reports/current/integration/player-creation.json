@@ -1,0 +1,18 @@
+{
+  "status": "CANDIDATE_NOT_FROZEN",
+  "source_rows": 95,
+  "candidate_rows": 94,
+  "held_rows": 1,
+  "held": [
+    {
+      "player_tm_id": "811432",
+      "player": "Alexandre Nicolas Duville-Parsemain",
+      "reason": "Native nation/position/name/evidence or employer-affiliation preconditions incomplete"
+    }
+  ],
+  "candidate_sha256": "5c268add4d6dbd0858d33dff9f70670db2f13c7124c45c04f870e6917816d023",
+  "fifa_policy": "All created players retain fifa_id=0.",
+  "rating_policy": "Deterministic neutral attribute seed 45, talent 3, tactical education 3, zero experience; requires later evidence-based rating review.",
+  "history_policy": "New players have no invented historical entries.",
+  "production_ready": false
+}

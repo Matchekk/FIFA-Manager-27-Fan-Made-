@@ -51,7 +51,7 @@ inline void RunStagePlanTests(std::filesystem::path const& output) {
     freeSigning.replace(freeSigning.find(",917505,"),8,",0,");
     test("sign-native-free-agent",freeSigning,false,true,false,true);
     auto releaseTest=[&](std::string const& name,std::string const& target,std::string const& until,
-                         std::string const& action,bool future,bool succeeds,bool actionColumn=true) {
+                         std::string const& action,bool future,bool succeeds,bool actionColumn=true,bool retires=false) {
         FifamDatabase db;
         auto country=db.CreateCountry(14);
         auto club=db.CreateClub(country); club->mUniqueID=917505; db.AddClubToMap(club);
@@ -79,7 +79,8 @@ inline void RunStagePlanTests(std::filesystem::path const& output) {
                 p->mInReserveTeam || p->mShirtNumberReserveTeam || p->mContract.mBasicSalary || p->mContract.mOptionClub ||
                 p->mContract.mJoined!=FifamDate(1,7,2026) || p->mContract.mValidUntil!=FifamDate(30,6,2026) ||
                 p->mHistory.mEntries[0].mStillInThisClub || p->mHistory.mEntries[0].mMatches!=25 ||
-                p->mStartingConditions.mLeagueBan.mNumMatches!=2 || db.mPlayers.size()!=1)
+                p->mStartingConditions.mLeagueBan.mNumMatches!=2 || p->mStartingConditions.mRetirement.mEnabled!=retires ||
+                db.mPlayers.size()!=1)
                 throw std::runtime_error("Native release invariants failed: "+name);
         } else if (passed || p->mClub!=club || club->mPlayers.size()!=1 || club->mCaptains[0]!=p ||
                    p->mContract.mBasicSalary!=100000 || !p->mHistory.mEntries[0].mStillInThisClub)
@@ -90,8 +91,49 @@ inline void RunStagePlanTests(std::filesystem::path const& output) {
     releaseTest("free-agent-current-contract","0","2027-06-30","FREE_AGENT",false,false);
     releaseTest("free-agent-wrong-expiry","0","2026-06-29","FREE_AGENT",false,false);
     releaseTest("free-agent-club-target","917505","2026-06-30","FREE_AGENT",false,false);
+    releaseTest("retire","0","2026-06-30","RETIRE",false,true,true,true);
     releaseTest("unknown-action","0","2026-06-30","RETIRED",false,false);
     releaseTest("zero-club-untyped","0","2026-06-30","",false,false,false);
+    auto shirtOnlyTest=[&](std::string const& name,std::string const& target,bool succeeds) {
+        FifamDatabase db;
+        auto country=db.CreateCountry(14);
+        auto club=db.CreateClub(country); club->mUniqueID=917505; db.AddClubToMap(club);
+        auto other=db.CreateClub(country); other->mUniqueID=917506; db.AddClubToMap(other);
+        auto p=db.CreatePlayer(club,1); p->mFifaID=123; p->mBirthday=FifamDate(2,1,2000);
+        p->mContract.mJoined=FifamDate(1,7,2024); p->mContract.mValidUntil=FifamDate(30,6,2026);
+        p->mShirtNumberFirstTeam=4; p->mStartingConditions.mFutureLeave.Setup(FifamDate(1,7,2027));
+        auto path=output/(name+".csv");
+        { std::ofstream file(path); file<<header.substr(0,header.size()-1)<<",action\n"
+            <<"1,123,2000-01-02,917505,"<<target
+            <<",2024-07-01,2026-06-30,2,FIRST,CONFIRMED,https://example.com/profile,"
+            <<std::string(64,'a')<<",2026-09-08,0,,SHIRT_ONLY\n"; }
+        bool passed=false;
+        try { ApplyStagePlan(db,path); passed=true; } catch (std::runtime_error const&) { if (succeeds) throw; }
+        if (succeeds) {
+            if (!passed || p->mClub!=club || p->mShirtNumberFirstTeam!=2 ||
+                p->mContract.mJoined!=FifamDate(1,7,2024) || p->mContract.mValidUntil!=FifamDate(30,6,2026) ||
+                !p->mStartingConditions.mFutureLeave.mEnabled)
+                throw std::runtime_error("Shirt-only preservation failed: "+name);
+        } else if (passed || p->mClub!=club || p->mShirtNumberFirstTeam!=4 ||
+                   !p->mStartingConditions.mFutureLeave.mEnabled)
+            throw std::runtime_error("Shirt-only rejection mutated data: "+name);
+    };
+    shirtOnlyTest("shirt-only-preserves-expired-contract-and-future","917505",true);
+    shirtOnlyTest("shirt-only-wrong-club","917506",false);
+    {
+        FifamDatabase db; auto country=db.CreateCountry(14);
+        auto oldClub=db.CreateClub(country); oldClub->mUniqueID=917505; db.AddClubToMap(oldClub);
+        auto newClub=db.CreateClub(country); newClub->mUniqueID=917506; db.AddClubToMap(newClub);
+        auto p=db.CreatePlayer(oldClub,1); p->mFifaID=123; p->mBirthday=FifamDate(2,1,2000);
+        auto path=output/"permanent-event-audit-fields.csv";
+        { std::ofstream file(path);
+          file<<"fm_id,fifa_id,dob,old_club_id,new_club_id,joined,contract_until,shirt_number,team_type,status,source,source_sha256,snapshot_date,loan_owner_club_id,loan_end,action,previous_loan_owner_club_id,previous_loan_start,previous_loan_end,previous_loan_buy_option,acquisition_seller_club_id,acquisition_event_key,acquisition_date,acquisition_source,acquisition_source_sha256\n"
+              <<"1,123,2000-01-02,917505,917506,2026-08-01,2029-06-30,7,FIRST,CONFIRMED,https://example.com/profile,"
+              <<std::string(64,'a')<<",2026-09-08,0,,SQUAD,0,,,0,0,6575989,2026-08-01,,\n"; }
+        ApplyStagePlan(db,path);
+        if (p->mClub!=newClub || p->mContract.mJoined!=FifamDate(1,8,2026))
+            throw std::runtime_error("Permanent event audit fields changed staging semantics");
+    }
     std::ofstream report(output/"NATIVE_TESTS.json");
-    report<<"{\"status\":\"PASS\",\"tests\":17,\"scope\":\"native staging preconditions, ownership, return, release and free-agent signing, protected future conditions, atomic validation\"}\n";
+    report<<"{\"status\":\"PASS\",\"tests\":21,\"scope\":\"native staging preconditions, ownership, return, release, retirement, guarded shirt-only edits, audit event fields and free-agent signing, protected future conditions, atomic validation\"}\n";
 }
