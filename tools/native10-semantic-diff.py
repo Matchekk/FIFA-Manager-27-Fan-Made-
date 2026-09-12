@@ -86,6 +86,8 @@ def main() -> int:
     p.add_argument("--belgium-plan", type=Path)
     p.add_argument("--germany-plan", type=Path)
     p.add_argument("--creation-plan", type=Path)
+    p.add_argument("--serialization-allowlist", type=Path,
+                   help="Exact raw-audited derived-metadata rewrites")
     p.add_argument("--output", type=Path, required=True)
     a = p.parse_args()
     if a.output.exists():
@@ -181,6 +183,32 @@ def main() -> int:
         "opaque_serialization_rewrites": len(unplanned_serialization_rewrites),
         "rewrites": unplanned_serialization_rewrites[:25],
         "method": "all exported state/history/condition fields compared as multisets; read/write ids excluded",
+    }
+    rewrite_key_fields = ("before_fm_id", "after_fm_id", "fifa_id", "dob", "name",
+                          "before_serialized_sha256", "after_serialized_sha256")
+    actual_rewrite_keys = {
+        (item["before_fm_id"], item["after_fm_id"], *item["identity"],
+         item["before_serialized_sha256"], item["after_serialized_sha256"])
+        for item in unplanned_serialization_rewrites
+    }
+    allowlist_rows = read_csv(a.serialization_allowlist) if a.serialization_allowlist else []
+    malformed_allowlist = [row for row in allowlist_rows if
+        row.get("status") != "VERIFIED" or
+        row.get("classification") != "WRITEABLE_STRING_ID_COLLISION_EMPICS_DISAMBIGUATOR" or
+        row.get("raw_field_name") != "mEmpicsId" or row.get("old_value") != "0" or
+        not row.get("new_value", "").isdigit() or int(row.get("new_value", "0")) <= 0]
+    allowed_rewrite_keys = {
+        tuple(row.get(field, "") for field in rewrite_key_fields) for row in allowlist_rows
+    }
+    rewrite_allowlist_pass = (not malformed_allowlist and
+                              actual_rewrite_keys == allowed_rewrite_keys)
+    checks["serialization_normalization_allowlist"] = {
+        "status": "PASS" if rewrite_allowlist_pass else "FAIL",
+        "actual": len(actual_rewrite_keys), "allowed": len(allowed_rewrite_keys),
+        "missing_allowlist_rows": [list(key) for key in sorted(actual_rewrite_keys - allowed_rewrite_keys)[:25]],
+        "unused_allowlist_rows": [list(key) for key in sorted(allowed_rewrite_keys - actual_rewrite_keys)[:25]],
+        "malformed_allowlist_rows": malformed_allowlist[:25],
+        "policy": "Every opaque serialization hash rewrite must be exact-bound to a verified raw mEmpicsId normalization row.",
     }
     actual_player_changes = {key for key, (_, baseline, actual) in planned_pairs.items()
                              if baseline["serialized_sha256"] != actual["serialized_sha256"]}
@@ -411,8 +439,10 @@ def main() -> int:
         "creation_plan_sha256": sha256(a.creation_plan) if a.creation_plan else None,
         "germany_plan": str(a.germany_plan.resolve()) if a.germany_plan else None,
         "germany_plan_sha256": sha256(a.germany_plan) if a.germany_plan else None,
+        "serialization_allowlist": str(a.serialization_allowlist.resolve()) if a.serialization_allowlist else None,
+        "serialization_allowlist_sha256": sha256(a.serialization_allowlist) if a.serialization_allowlist else None,
         "checks": checks, "release_ready": False,
-        "limitations": "Native semantic write/reread only. Club serialization and person-link keys legitimately follow planned player membership; editor export and gameplay remain separate gates.",
+        "limitations": "Native semantic write/reread only. Exact raw-audited mEmpicsId collision normalization is reported separately; editor export and gameplay remain separate gates.",
     }
     write_json(a.output, report)
     print(json.dumps({"status": report["status"],
