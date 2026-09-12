@@ -28,28 +28,27 @@ independently reread and verified. The authoritative summary is
 
 ## Native08 Runtime and History Update
 
-Native07 payload was directly observed in the career. Day7/Day30 and the first
-2027 transition/save-reload were operator-confirmed; the separate Day1 gate was
-explicitly waived. Loan-return discrepancies led to a separate two-player date
-experiment; this does not yet supersede the Native08 gate or complete cleanup.
+Native08 is closed with overall PARTIAL, not an unrestricted release PASS.
+Native07-specific Cabral payload: PASS. Day7/Day30: PASS by operator evidence;
+separate Day1: PARTIAL, explicitly waived. First 2027 calendar crossing and
+post-transition save/reload succeeded; structural transition gate remains PARTIAL
+because the original candidate exposed Moore/Amissah loan discrepancies.
+Darvich returned directly; the corrected two-player experiment returned both
+Moore/Amissah per operator. No multi-year validation is claimed.
 
-The 2025/26 title/cup/movement-marker history package is offline complete at
-`data/generated/history-20260912-03/`: ten country files, 20 competition-history
-records, 103 intended fields and 37 obsolete-marker removals validated. Native
-reread and all 266,764 player/rating records match Native07. It is not installed
-or Editor-exported as a standalone package and excludes full match-result archives and later Czech
-administrative membership changes. See `reports/local/HISTORY_2025_26_REPORT.md`.
-The combined candidate `native08-integrated-20260912-01` now includes this history
-and 744 current-loan start-date projections to 01.07.2026 (50 of 794 unchanged).
-Independent byte-delta validation and native reread PASS; all 266,764 player/rating
-values are preserved. Moore/Amissah return behavior was operator-confirmed in the
-two-player experiment; the full combined candidate is not yet game-tested.
-At the user's explicit request, it is reversibly integrated into the closed
-`runtime/loan-test-20260912-08`, with its previous database/Master backed up.
-Runtime07 and original executable/Master identities remain unchanged; all 16
-pre-existing saves match preflight after restoring four test-modified files.
-Next: Editor export of the combined candidate, followed by bounded in-game history
-and loan checks and final Native08 cleanup. See `reports/local/NATIVE08_INTEGRATION_REPORT.md`.
+History and loan correction are integrated and Editor-exported in the separate
+`runtime/loan-test-20260912-08`. Combined candidate: `native08-integrated-20260912-01`.
+Ten-country history package; 744 current-loan start projections, 50 unchanged.
+Exact-delta/native validation PASS; 266,764 player/rating values preserved.
+Combined-export new-career/history/return verification remains NOT_TESTED.
+Original/Runtime07 Manager.exe and Master.dat remain hash-identical. All 16
+original saves and 12 baseline configs are restored/verified; test evidence kept.
+Manager/Editor closed. Cabral planned/displayed contract-date discrepancy remains open.
+
+Next bounded milestone, fresh task: verify the combined export in a new career,
+including history views, active loans, representative corrected return and
+post-transition save/reload. Do not restart a global audit or broad rating work.
+See `reports/local/NATIVE08_FINAL_REPORT.md` and `reports/local/NATIVE08_GATE.json`.
 
 ## Runtime and Data Work in Progress
 

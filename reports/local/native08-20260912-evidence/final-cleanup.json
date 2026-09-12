@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "processes": "Manager and EdManager closed",
+  "restored": [
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\GameOptions.dat",
+      "retained": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\final-cleanup\\config\\GameOptions.dat"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ManagerProfiles.dat",
+      "retained": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\final-cleanup\\config\\ManagerProfiles.dat"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ucp.ini",
+      "retained": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\final-cleanup\\config\\ucp.ini"
+    }
+  ],
+  "checks": [
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\2026.ea",
+      "sha256": "1c67197b1f011c72591272da020a554b2000a57eec90d4bbbd96ea4d4795aeb4"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\Auto.ea",
+      "sha256": "216e163b510e197a2ad42b165945508def09386fed02efe9f81d850f1c88318b"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\Auto1.ea",
+      "sha256": "3f8d25589b2dd98bf777846f6e586e8c0509860b763ae5552df0949c6e4ad656"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\Auto2.ea",
+      "sha256": "30e48ff14a7e119bc933d2db5ddca57e4098b59c1743aefa055d81ec0453bc56"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\Native07-Smoke-20260912.ea",
+      "sha256": "32117f2b8a30c3f97080658943004fdca46a49e877ae7058db23e1790fc21de8"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 01.ea",
+      "sha256": "43c1488f4c9d320ac5d7ee2f35329378ec796250a85e4d6afd11a97f0d2fcbbb"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 02.ea",
+      "sha256": "260a6523806ce9ec559872286d0485829a48d198d71d4be85981b6e6c8f60b16"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 03.ea",
+      "sha256": "debd3bac3de2993a62bd0a4016c16d4708a9e493e38b76ce342f0ab87c7b9740"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 04.ea",
+      "sha256": "c959e76a8d4defeeff5243467c0df1ecf38003e594dc8edaa08ac4ca8226e43d"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 05.ea",
+      "sha256": "4e6c265a80909a964e60d33797043b0d01b6654878477c4b72f9ad3927e4099e"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 06.ea",
+      "sha256": "76bbb450e5a6b44ec60adfa2d621aa3ef5a12cef6846a3e3ba4d7deb9c907616"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 07.ea",
+      "sha256": "2801d667e491ac193fdd450992bbec3f14f31235b73eaa572662d4705cf66f7c"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 08.ea",
+      "sha256": "608793018c0f3d151ccad9d3a2fdb800ebbaa9d8d6d761aceccb83b950ab2da5"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 09.ea",
+      "sha256": "29c31f76d907553c3d4786d6b4324f98bb316ff0bd58a54d7962b3c8b3382721"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quicksave 10.ea",
+      "sha256": "16a0bf6a23691c086106d75c7d437dd4322053e331dfafbffd8c8cec624ad9a8"
+    },
+    {
+      "group": "saves",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\quickstart.ea",
+      "sha256": "748da0343b983c5b69d0eef25246951722b4f594de09be189b3bb4be3e692032"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\3dmatch.cfg",
+      "sha256": "10ea726b7fe3e1ee829337f367aa83d34d7e40e4d5185e604cdae4aea5622b07"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\colourdepth.ini",
+      "sha256": "5ffb29a74d7a46669f4d74f4e149a503bc809d27bad92390b798a1b447d939d2"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\FormerEditions.txt",
+      "sha256": "772af36b02359de6a3bfb19a4e0ad5e394da24805729f430d1c387106c86df55"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\GameOptions.dat",
+      "sha256": "295f18f74a1230cd2bc4e6e7e81467438e8cda96a14ba40dbec4e4614fcea2a2"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\GameStart.dat",
+      "sha256": "9e7149e918039c66c1965333159614950b85462660d674c5bf9cae8c283dac48"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\JukeBox.dta",
+      "sha256": "f08b01bc50c24ba8959617e67ea042ffd1fda3515b1dae0b15363e4606a22623"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ManagerProfiles.dat",
+      "sha256": "71bd7970aabdeb8440a58b647a20387ee64da1f3702ba4d57e418bcb1ff034d7"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\TFM_Options.dta",
+      "sha256": "55e9ba042bde011c006e62c5fa8d1762bf14a6881fb86c0e63bd4a78c978e9bc"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ucp-eula-shown",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ucp-launched",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ucp.ini",
+      "sha256": "c57eeda7836fb3d4a94416c5fd32f6846a0a2a6d872b2b6b60256fc3b1726fb9"
+    },
+    {
+      "group": "config",
+      "path": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\user.ini",
+      "sha256": "00c82f0501dbec759bd0afbc099ecbdad42078a49ce93f993fe62fc37b3ebb3c"
+    }
+  ],
+  "identity_files": [
+    {
+      "path": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\Manager.exe",
+      "bytes": 53083648,
+      "sha256": "8ebe1291fbcc1291bfee182995a165194156a0b4b8e0d6c80994cadb087a857c"
+    },
+    {
+      "path": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\database\\Master.dat",
+      "bytes": 72159865,
+      "sha256": "ebd4d4bde97b6c29c19bae11b56ffab0040f50e86e4e452ba671b964de4981b8"
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\Manager.exe",
+      "bytes": 53083648,
+      "sha256": "8ebe1291fbcc1291bfee182995a165194156a0b4b8e0d6c80994cadb087a857c"
+    },
+    {
+      "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\database\\Master.dat",
+      "bytes": 71966494,
+      "sha256": "2c507e3d6e725cd36d0920f881dc4fbcfc954b8c4e413069621bd8002d931333"
+    }
+  ],
+  "scope": "All 16 baseline saves and 12 baseline configs; original/Runtime07 Manager.exe and Master.dat only, not full installation tree."
+}

@@ -1,0 +1,216 @@
+{
+  "result": "PASS_DIRECT_NATIVE07_INGAME_RECORD",
+  "gate": "PASS",
+  "directly_observed_records": [
+    {
+      "identity": "Jovane Cabral",
+      "dob": "14.06.1998",
+      "club": "Grêmio Porto Alegre",
+      "shirt_number": 77,
+      "contract_end": "2027-06-30",
+      "knowledge": 8,
+      "displayed_strength_LA": 70,
+      "displayed_attributes": {
+        "BallControl": 80,
+        "Dribbling": 70,
+        "Finishing": 60,
+        "Acceleration": 80,
+        "Pace": 80
+      },
+      "career_date_visible": false,
+      "source": "Operator-supplied in-game screenshot",
+      "evidence_file": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\01-cabral-ingame.jpg",
+      "sha256": "bfe5fa24ee67ea4260680961877243a301298a70908b96373308cf8584f20682",
+      "operator_context": "User explains knowledge is 8 rather than 10. Exact attributes cannot be validated from this view.",
+      "observed_utc_recorded": "2026-09-12T14:09:53.835535+00:00"
+    },
+    {
+      "identity": "Jovane Cabral",
+      "dob": "14.06.1998",
+      "club": "Grêmio Porto Alegre",
+      "shirt_number": 77,
+      "contract_end": "2027-06-30",
+      "knowledge": 10,
+      "primary_strength": 71,
+      "career_date": {
+        "value": "2026-07-11",
+        "source": "operator report; year inherited from test-career context",
+        "directly_readable_in_screenshot": false
+      },
+      "responsive": {
+        "value": true,
+        "source": "operator explicitly reports everything remains usable and works"
+      },
+      "evidence_file": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\02-cabral-knowledge10-july11.jpg",
+      "sha256": "c379ba8a5ce42fd8390aa58b4d6c3fd5ed6e935ee730944ff970f48f3a4468d4",
+      "attributes_comparison": {
+        "BallControl": {
+          "candidate": 77,
+          "observed": 77,
+          "equal": true
+        },
+        "Dribbling": {
+          "candidate": 72,
+          "observed": 72,
+          "equal": true
+        },
+        "Finishing": {
+          "candidate": 64,
+          "observed": 64,
+          "equal": true
+        },
+        "ShotPower": {
+          "candidate": 71,
+          "observed": 71,
+          "equal": true
+        },
+        "LongShots": {
+          "candidate": 71,
+          "observed": 71,
+          "equal": true
+        },
+        "Volleys": {
+          "candidate": 71,
+          "observed": 71,
+          "equal": true
+        },
+        "Crossing": {
+          "candidate": 70,
+          "observed": 70,
+          "equal": true
+        },
+        "Passing": {
+          "candidate": 57,
+          "observed": 57,
+          "equal": true
+        },
+        "LongPassing": {
+          "candidate": 68,
+          "observed": 68,
+          "equal": true
+        },
+        "Header": {
+          "candidate": 52,
+          "observed": 52,
+          "equal": true
+        },
+        "TackleStanding": {
+          "candidate": 62,
+          "observed": 62,
+          "equal": true
+        },
+        "TackleSliding": {
+          "candidate": 62,
+          "observed": 62,
+          "equal": true
+        },
+        "ManMarking": {
+          "candidate": 52,
+          "observed": 52,
+          "equal": true
+        },
+        "FreeKicks": {
+          "candidate": 71,
+          "observed": 71,
+          "equal": true
+        },
+        "Corners": {
+          "candidate": 72,
+          "observed": 72,
+          "equal": true
+        },
+        "PenaltyShot": {
+          "candidate": 73,
+          "observed": 73,
+          "equal": true
+        },
+        "PosOffensive": {
+          "candidate": 72,
+          "observed": 72,
+          "equal": true
+        },
+        "PosDefensive": {
+          "candidate": 57,
+          "observed": 57,
+          "equal": true
+        },
+        "Vision": {
+          "candidate": 78,
+          "observed": 78,
+          "equal": true
+        },
+        "Aggression": {
+          "candidate": 68,
+          "observed": 68,
+          "equal": true
+        },
+        "Reactions": {
+          "candidate": 69,
+          "observed": 69,
+          "equal": true
+        },
+        "Composure": {
+          "candidate": 71,
+          "observed": 71,
+          "equal": true
+        },
+        "Consistency": {
+          "candidate": 67,
+          "observed": 67,
+          "equal": true
+        },
+        "TacticAwareness": {
+          "candidate": 66,
+          "observed": 66,
+          "equal": true
+        },
+        "Acceleration": {
+          "candidate": 80,
+          "observed": 81,
+          "equal": false
+        },
+        "Pace": {
+          "candidate": 78,
+          "observed": 78,
+          "equal": true
+        },
+        "Agility": {
+          "candidate": 67,
+          "observed": 67,
+          "equal": true
+        },
+        "Jumping": {
+          "candidate": 41,
+          "observed": 41,
+          "equal": true
+        },
+        "Strength": {
+          "candidate": 70,
+          "observed": 70,
+          "equal": true
+        },
+        "Stamina": {
+          "candidate": 70,
+          "observed": 70,
+          "equal": true
+        },
+        "Balance": {
+          "candidate": 73,
+          "observed": 73,
+          "equal": true
+        }
+      },
+      "exact_attribute_match_count": 30,
+      "attribute_count": 31,
+      "interpretation": "Most observed attributes match Native07. Any differences after time advance are observations; no causal attribution or data edits.",
+      "recorded_utc": "2026-09-12T14:12:46.855453+00:00"
+    }
+  ],
+  "basis": "Name and DOB match Cabral; Grêmio and shirt 77 distinguish Native07 from baseline CF Estrela Amadora and shirt 11. Contract year 2027 also matches Native07 Editor evidence.",
+  "limits": [
+    "Contract end remains 2027-06-30 versus frozen plan 2027-12-31; unresolved, no data edits.",
+    "Knowledge-10 screenshot allows visible attribute comparison after operator-reported time advance; not proof every profile field is unchanged.",
+    "Career date is operator-reported; autosave setting and save/reload not yet verified."
+  ],
+  "runtime_binding": "native08-20260912-evidence/launch.json; exact-path PID 16900 independently observed responding during evidence processing"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "basis": "Operator confirms Editor export; newly created Master independently hashed",
+  "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\database\\Master.dat",
+  "bytes": 71965789,
+  "sha256": "379c38ced8093e4bbbac3ca1f620fe885b5c124ce2d54c50786c26344dbbd5ae",
+  "mtime_utc": "2026-09-12T19:42:10.911050+00:00",
+  "combined_career_test": "NOT_TESTED"
+}

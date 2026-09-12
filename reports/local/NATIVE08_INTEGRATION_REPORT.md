@@ -44,3 +44,10 @@ geprüft. Bestehende Karrieren werden durch diesen Datenbankwechsel nicht repari
 Native08 bleibt insgesamt PARTIAL: der separate Day1-Test wurde ausdrücklich
 ausgelassen; die übrige Laufzeit-Evidenz wird nicht rückwirkend auf den neuen
 Kandidaten übertragen.
+
+## Abschlussnachtrag
+
+Editor-Export bestätigt und neue Master.dat unabhängig gehasht. Manager/Editor
+sind geschlossen; Save-/Konfigurations-Cleanup bestanden. Der oben beschriebene
+ausstehende Export ist damit erledigt; die kombinierte neue Karriere bleibt
+ungetestet. Maßgeblich ist NATIVE08_FINAL_REPORT.md.

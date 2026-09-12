@@ -1,5 +1,5 @@
 {
-  "status": "INTEGRATED_EDITOR_EXPORT_REQUIRED",
+  "status": "INTEGRATED_EDITOR_EXPORTED",
   "runtime": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08",
   "candidate": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native08-integrated-20260912-01",
   "backup": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\before-combined-integration",
@@ -1373,9 +1373,18 @@
       "sha256": "b2a5f1310996c2ff17845b452679f55f892c7afe0874d93077f9e11ec59e823e"
     }
   ],
-  "compiled_master": "ABSENT_PENDING_EXPORT",
+  "compiled_master": {
+    "status": "PASS",
+    "basis": "Operator confirms Editor export; newly created Master independently hashed",
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\database\\Master.dat",
+    "bytes": 71965789,
+    "sha256": "379c38ced8093e4bbbac3ca1f620fe885b5c124ce2d54c50786c26344dbbd5ae",
+    "mtime_utc": "2026-09-12T19:42:10.911050+00:00",
+    "combined_career_test": "NOT_TESTED"
+  },
   "original_install_modified": false,
   "runtime07_modified": false,
   "save_files_modified": false,
-  "timestamp": "2026-09-12T19:37:04.563609+00:00"
+  "timestamp": "2026-09-12T19:37:04.563609+00:00",
+  "cleanup": "native08-20260912-evidence/final-cleanup.json"
 }

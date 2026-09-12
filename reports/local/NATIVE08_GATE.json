@@ -1,0 +1,399 @@
+{
+  "native07_ingame_payload": {
+    "status": "PASS",
+    "result": "PASS_DIRECT_NATIVE07_INGAME_RECORD",
+    "evidence": "NATIVE08_INGAME_PAYLOAD.json"
+  },
+  "day30": {
+    "status": "PASS",
+    "result": "PASS_DAY_30",
+    "evidence": [
+      "native08-20260912-evidence/day30-save-reload.json",
+      "native08-20260912-evidence/day30-timing.json"
+    ],
+    "scope": "Operator confirms normal career usability after requested August 1 save/reload. Specific fixture, squad and transfer screens were not independently captured."
+  },
+  "day7": {
+    "status": "PASS",
+    "result": "PASS_DAY_7",
+    "evidence": [
+      "native08-20260912-evidence/day11-save-reload.json",
+      "native08-20260912-evidence/02-cabral-knowledge10-july11.jpg"
+    ],
+    "scope": "Seven-day functional smoke covered by longer July 1 to July 11 run, including scouting and responsive UI; successful save/reload at July 11. Exact July 8 checkpoint not captured.",
+    "simulation_seconds": null
+  },
+  "existing_save_integrity": {
+    "status": "PASS",
+    "evidence": "native08-20260912-evidence/final-cleanup.json",
+    "count": 16
+  },
+  "transition_2027": {
+    "status": "PARTIAL",
+    "evidence": "native08-20260912-evidence/post-transition-save-reload.json",
+    "calendar_crossing": "PASS_OPERATOR_CONFIRMED",
+    "structural_checks": "Original career crossed and reloaded; Bundesliga/CL present; Darvich returned; original Moore/Amissah defect reproduced. Separate corrected two-player experiment returned both per operator.",
+    "timing": "Not supplied"
+  },
+  "milestone": "Native08 runtime validation of unchanged Native07 candidate",
+  "day1": {
+    "status": "PARTIAL",
+    "evidence": "native08-20260912-evidence/day1-save.json",
+    "scope": "Longer July 1 to July 11 and August 1 runs passed with save/reload. Separate July 2 checkpoint was not performed.",
+    "separate_test_waived_by_user": true,
+    "waiver": "User explicitly states they did not perform the replay and requests proceeding without it.",
+    "waiver_recorded_utc": "2026-09-12T16:23:16.294204+02:00"
+  },
+  "observed_failures": [
+    {
+      "status": "FAIL",
+      "scope": "Original Native07 Moore/Amissah loan semantics",
+      "resolution": "Two-player date projection return operator-confirmed; generalized to 744 adopted current loans in separate candidate; combined runtime check remains NOT_TESTED."
+    }
+  ],
+  "post_transition_save_reload": {
+    "status": "PASS",
+    "evidence": "native08-20260912-evidence/post-transition-save-reload.json",
+    "scope": "Operator confirms requested July 1 save/reload and normal usability; unique save independently hashed and copied."
+  },
+  "status": "PARTIAL",
+  "timings": {
+    "save": {
+      "seconds": 8.39,
+      "source": "operator stopwatch",
+      "includes_reaction_time": true,
+      "checkpoint": "2026-07-11",
+      "trials": 1
+    },
+    "load": {
+      "seconds": 19.58,
+      "source": "operator stopwatch",
+      "includes_reaction_time": true,
+      "end": "career main screen usable",
+      "checkpoint": "2026-07-11",
+      "trials": 1
+    },
+    "simulation": null,
+    "classification": "BASELINE_OBSERVATIONAL",
+    "transition": null,
+    "short_run_limit": "Operator advanced to July 11 without supplied timings; Day1 and Day7 timings unavailable, not estimated.",
+    "day30_follow_on_interval": {
+      "recorded_utc": "2026-09-12T16:21:08.770753+02:00",
+      "elapsed_seconds": 67.89,
+      "operator_text": "simulationsdauer war 01:07,89",
+      "classification": "BASELINE_OBSERVATIONAL",
+      "trials": 1,
+      "start_date_assumed_from_context": "2026-07-11",
+      "target_date_requested": "2026-08-01",
+      "actual_end_date_explicitly_confirmed": false,
+      "interval_limit": "Time for requested follow-on interval, not a measured full July 1 to August 1 run.",
+      "includes_reaction_time": "Not specified for this measurement",
+      "save_reload_operator_confirmed": false,
+      "save_file": null
+    },
+    "pre_transition_simulation": {
+      "seconds": 925.24,
+      "operator_text": "15:25,24",
+      "start_date": "2026-08-01",
+      "start_basis": "Previous checkpoint context",
+      "end_date": "2027-06-30",
+      "end_basis": "Direct screenshot",
+      "classification": "BASELINE_OBSERVATIONAL",
+      "trials": 1,
+      "includes_reaction_time": "Not specified",
+      "concurrent_work": "Offline history preparation occurred during run; not a controlled benchmark"
+    }
+  },
+  "original_install_integrity": {
+    "status": "PASS",
+    "evidence": "native08-20260912-evidence/final-cleanup.json",
+    "scope": "Original and Runtime07 Manager.exe/Master.dat identities only; no full-tree audit"
+  },
+  "next_recommended_milestone": "Fresh bounded task: combined-candidate new-career smoke for history views and active loans, then representative corrected loan return and post-transition save/reload. No repeat global audit or broad rating work.",
+  "cleanup": {
+    "status": "PASS",
+    "evidence": "native08-20260912-evidence/final-cleanup.json",
+    "config_files": 12,
+    "test_saves": "Preserved; no unrelated files removed"
+  },
+  "pre_transition_save": {
+    "status": "PASS",
+    "evidence": "native08-20260912-evidence/pre-transition-save.json",
+    "date": "2027-06-30",
+    "manager": "Marek Wrona",
+    "club": "1. FC KÃ¶ln"
+  },
+  "observed_discrepancies": [
+    {
+      "field": "Cabral contract end",
+      "plan": "2027-12-31",
+      "career_display": "2027-06-30",
+      "status": "UNRESOLVED_OBSERVATION",
+      "data_modified": false
+    }
+  ],
+  "short_run_observation": {
+    "identity": "Jovane Cabral",
+    "dob": "14.06.1998",
+    "club": "GrÃªmio Porto Alegre",
+    "shirt_number": 77,
+    "contract_end": "2027-06-30",
+    "knowledge": 10,
+    "primary_strength": 71,
+    "career_date": {
+      "value": "2026-07-11",
+      "source": "operator report; year inherited from test-career context",
+      "directly_readable_in_screenshot": false
+    },
+    "responsive": {
+      "value": true,
+      "source": "operator explicitly reports everything remains usable and works"
+    },
+    "evidence_file": "C:\\FM27CommunityOverhaul\\reports\\local\\native08-20260912-evidence\\02-cabral-knowledge10-july11.jpg",
+    "sha256": "c379ba8a5ce42fd8390aa58b4d6c3fd5ed6e935ee730944ff970f48f3a4468d4",
+    "attributes_comparison": {
+      "BallControl": {
+        "candidate": 77,
+        "observed": 77,
+        "equal": true
+      },
+      "Dribbling": {
+        "candidate": 72,
+        "observed": 72,
+        "equal": true
+      },
+      "Finishing": {
+        "candidate": 64,
+        "observed": 64,
+        "equal": true
+      },
+      "ShotPower": {
+        "candidate": 71,
+        "observed": 71,
+        "equal": true
+      },
+      "LongShots": {
+        "candidate": 71,
+        "observed": 71,
+        "equal": true
+      },
+      "Volleys": {
+        "candidate": 71,
+        "observed": 71,
+        "equal": true
+      },
+      "Crossing": {
+        "candidate": 70,
+        "observed": 70,
+        "equal": true
+      },
+      "Passing": {
+        "candidate": 57,
+        "observed": 57,
+        "equal": true
+      },
+      "LongPassing": {
+        "candidate": 68,
+        "observed": 68,
+        "equal": true
+      },
+      "Header": {
+        "candidate": 52,
+        "observed": 52,
+        "equal": true
+      },
+      "TackleStanding": {
+        "candidate": 62,
+        "observed": 62,
+        "equal": true
+      },
+      "TackleSliding": {
+        "candidate": 62,
+        "observed": 62,
+        "equal": true
+      },
+      "ManMarking": {
+        "candidate": 52,
+        "observed": 52,
+        "equal": true
+      },
+      "FreeKicks": {
+        "candidate": 71,
+        "observed": 71,
+        "equal": true
+      },
+      "Corners": {
+        "candidate": 72,
+        "observed": 72,
+        "equal": true
+      },
+      "PenaltyShot": {
+        "candidate": 73,
+        "observed": 73,
+        "equal": true
+      },
+      "PosOffensive": {
+        "candidate": 72,
+        "observed": 72,
+        "equal": true
+      },
+      "PosDefensive": {
+        "candidate": 57,
+        "observed": 57,
+        "equal": true
+      },
+      "Vision": {
+        "candidate": 78,
+        "observed": 78,
+        "equal": true
+      },
+      "Aggression": {
+        "candidate": 68,
+        "observed": 68,
+        "equal": true
+      },
+      "Reactions": {
+        "candidate": 69,
+        "observed": 69,
+        "equal": true
+      },
+      "Composure": {
+        "candidate": 71,
+        "observed": 71,
+        "equal": true
+      },
+      "Consistency": {
+        "candidate": 67,
+        "observed": 67,
+        "equal": true
+      },
+      "TacticAwareness": {
+        "candidate": 66,
+        "observed": 66,
+        "equal": true
+      },
+      "Acceleration": {
+        "candidate": 80,
+        "observed": 81,
+        "equal": false
+      },
+      "Pace": {
+        "candidate": 78,
+        "observed": 78,
+        "equal": true
+      },
+      "Agility": {
+        "candidate": 67,
+        "observed": 67,
+        "equal": true
+      },
+      "Jumping": {
+        "candidate": 41,
+        "observed": 41,
+        "equal": true
+      },
+      "Strength": {
+        "candidate": 70,
+        "observed": 70,
+        "equal": true
+      },
+      "Stamina": {
+        "candidate": 70,
+        "observed": 70,
+        "equal": true
+      },
+      "Balance": {
+        "candidate": 73,
+        "observed": 73,
+        "equal": true
+      }
+    },
+    "exact_attribute_match_count": 30,
+    "attribute_count": 31,
+    "interpretation": "Most observed attributes match Native07. Any differences after time advance are observations; no causal attribution or data edits.",
+    "recorded_utc": "2026-09-12T16:12:46.855453+02:00"
+  },
+  "short_save_names": {
+    "N08-11.ea": "11 July checkpoint; replaces suggested Native08-Day11-20260912.ea",
+    "N08-30.ea": "early August checkpoint",
+    "N08-Pre.ea": "pre-transition checkpoint",
+    "N08-Post.ea": "post-transition checkpoint"
+  },
+  "usability_followup": {
+    "request": "Enable Ctrl+C / Ctrl+V in game text fields",
+    "status": "NOT_IMPLEMENTED",
+    "bounded_check": "No existing clipboard/paste implementation found in project src, tools or current docs. Game-wide support requires separate implementation investigation and testing.",
+    "current_workaround": "Short unique save names; always check collision before use.",
+    "runtime_changed": false
+  },
+  "short_run_save_reload": {
+    "status": "PASS",
+    "evidence": "native08-20260912-evidence/day11-save-reload.json",
+    "scope": "11 July checkpoint; save and reload operator-confirmed, file independently hashed"
+  },
+  "protocol_deviations": [
+    {
+      "stage": "day1",
+      "detail": "Operator advanced to July 11 while scouting before the separate July 2 save gate. Do not retroactively claim PASS_DAY_1 or a measured one-day duration.",
+      "resolution": "User clarified replay was not performed and explicitly waived it. Previous affirmative response must not be treated as execution evidence. Day1 remains PARTIAL."
+    }
+  ],
+  "autosave_status": {
+    "disabled": true,
+    "source": "Explicit operator confirmation",
+    "recorded_utc": "2026-09-12T16:18:38.358228+02:00",
+    "limit": "Confirmation applies now; earlier disable time not supplied."
+  },
+  "short_gate_progression_authorized": true,
+  "progression_basis": "User explicitly waives separate Day1 replay requirement. Payload, Day7 and Day30 PASS; Day1 remains PARTIAL. No claim original all-PASS short-gate protocol was met.",
+  "post_transition_structure": {
+    "status": "PARTIAL",
+    "evidence": "native08-20260912-evidence/post-transition-structure.json",
+    "blocker": "Original candidate loan defect; corrected experiment passed operator return check, combined candidate not runtime-tested."
+  },
+  "loan_return_investigation": {
+    "status": "PARTIAL",
+    "operator_observation": "Mikey Moore also remains at managed Cologne; user suspects no loans returned",
+    "native_moore": {
+      "fm_id": 288892,
+      "dob": "2007-08-11",
+      "club": "1. FC KÃ¶ln",
+      "condition": "4,2461284,2461587,917521,0,0",
+      "source": "CountryData21.sav",
+      "start": "2026-08-31",
+      "end": "2027-06-30",
+      "plan07_row": "None; inherited candidate record"
+    },
+    "shared_hypothesis": "Both sampled loan conditions begin after the July 1 career start. Activation/export semantics require verification.",
+    "all_loans_failed": "Disproven by direct Darvich return on 01.07.2027",
+    "production_modified": false,
+    "pre_transition_evidence": "native08-20260912-evidence/moore-pre-transition.json",
+    "hypothesis_limit": "Visible (L) history tooltip means lack of initialization is not proven; no root cause assigned.",
+    "successful_control": "native08-20260912-evidence/darvich-loan-return.json",
+    "controlled_experiment": {
+      "status": "PASS_OPERATOR_RETURN_CONFIRMED",
+      "authorization": "User agreed to same-player changed-loan-start comparison",
+      "source": "data/generated/native08-loan-date-experiment-02/EXPERIMENT.json",
+      "runtime": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08",
+      "preflight": "native08-20260912-evidence/loan-experiment-preflight/PREFLIGHT.json",
+      "changes": "Only Moore and Amissah starting-condition start date to 2026-07-01",
+      "unchanged": "Loan end, owner, main contract joined date, contract end, ratings and all other records",
+      "export": "PASS_EXPORTED_MASTER_PRESENT; see loan-editor-export.json",
+      "result": "User: Jup sind beide richtig, following requested Moore/Tottenham and Amissah/Fulham check. Post-transition reload of this variant not separately confirmed.",
+      "activation_evidence": "native08-20260912-evidence/variant-moore-active-loan.json",
+      "expiry_evidence": "native08-20260912-evidence/variant-moore-expiry.json",
+      "control_limit": "Country-selection context may differ; not a fully controlled all-settings comparison."
+    }
+  },
+  "closed": true,
+  "combined_candidate": {
+    "status": "PARTIAL",
+    "offline_validation": "PASS",
+    "editor_export": "PASS",
+    "new_career_and_transition": "NOT_TESTED",
+    "evidence": [
+      "NATIVE08_INTEGRATION.json",
+      "native08-20260912-evidence/combined-editor-export.json"
+    ]
+  }
+}
