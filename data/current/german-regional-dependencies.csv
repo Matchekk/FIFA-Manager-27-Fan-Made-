@@ -1,0 +1,38 @@
+competition_id,club_id,team_type,club,source,source_sha256,status,snapshot_date
+352387076,1376277,FIRST,FC Erzgebirge Aue,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376269,RESERVE,Hertha BSC,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376358,FIRST,Berliner FC Dynamo,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1378815,FIRST,VSG Altglienicke,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1380433,FIRST,SV Tasmania Berlin,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376361,FIRST,Berliner FC Preussen,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376417,FIRST,Chemnitzer FC,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376281,FIRST,FC Rot-Weiß Erfurt,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376554,FIRST,Greifswalder FC,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376366,FIRST,Hallescher FC,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376427,FIRST,FC Carl-Zeiss Jena,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376497,FIRST,1. FC Lokomotive Leipzig,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1380447,FIRST,BSG Chemie Leipzig,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376607,FIRST,FSV Luckenwalde,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376373,RESERVE,1. FC Magdeburg,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376351,FIRST,SV Babelsberg 03,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1388978,FIRST,RSV Eintracht Stahnsdorf,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387076,1376494,FIRST,FSV Zwickau,https://www.nofv-online.de/index.php/regionalliga-nordost.html,809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85,CONFIRMED,2026-09-12
+352387079,1376572,FIRST,TSV Buchbach,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376312,FIRST,FC Memmingen,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376571,FIRST,FV Illertissen,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376292,FIRST,SpVgg Unterhaching,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1384541,FIRST,DJK Vilzing,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376291,FIRST,TSV 1860 München,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1378752,FIRST,SC Eltersdorf,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376467,FIRST,1. FC Schweinfurt 1905,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1378782,FIRST,VfB Eichstätt,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376431,RESERVE,FC Augsburg,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376290,FIRST,SV Wacker Burghausen,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1378770,FIRST,TSV Aubstadt,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1384981,FIRST,TSV Schwaben Augsburg,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376258,RESERVE,1. FC Nürnberg,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376264,RESERVE,FC Bayern München,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376441,FIRST,SpVgg Bayreuth,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376288,RESERVE,SpVgg Greuther Fürth,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1384579,FIRST,TSV Landsberg,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12
+352387079,1376465,FIRST,SpVgg Ansbach,https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag,58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2,CONFIRMED,2026-09-12

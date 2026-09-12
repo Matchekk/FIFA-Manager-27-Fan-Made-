@@ -1,0 +1,30 @@
+[
+  {
+    "label": "nordost-movements",
+    "url": "https://www.nofv-online.de/index.php/aktuelles-leser/loks-aus-fuehrt-zum-abstiegsdomino.html",
+    "sha256": "386105a06b2d7ae05010ea6eb160153af1078d9d5290f94a9beddaae1fc21988",
+    "retrieved_at": "2026-09-12T20:37:54.950232+00:00",
+    "status": "CAPTURED"
+  },
+  {
+    "label": "nordost-members",
+    "url": "https://www.nofv-online.de/index.php/regionalliga-nordost.html",
+    "sha256": "809d626138b9ad47b92ce1d18d237eb01ede3775d2f64bb53d04168b34110f85",
+    "retrieved_at": "2026-09-12T20:37:55.957911+00:00",
+    "status": "CAPTURED"
+  },
+  {
+    "label": "bayern-format",
+    "url": "https://www.bfv.de/mspw/regionalliga-bayern/2026-27/regionalliga-bayern-der-1.-spieltag",
+    "sha256": "58d55992a840a82e384039be2fda33577e9a9ffe01a6cce3d0de7f2d0b0427f2",
+    "retrieved_at": "2026-09-12T20:37:56.896544+00:00",
+    "status": "CAPTURED"
+  },
+  {
+    "label": "bayern-schedule",
+    "url": "https://www.bfv.de/news/regionalliga-bayern/2026/07/rahmenspielplan-regionalliga-bayern-2026-27",
+    "sha256": "85aca08ff6220800670b0cd96706f1cba9c656d723d3cd41c1664f5e96042572",
+    "retrieved_at": "2026-09-12T20:37:58.113068+00:00",
+    "status": "CAPTURED"
+  }
+]
