@@ -1,0 +1,1772 @@
+{
+  "status": "PASS_FLAGS_VISIBLE_AFTER_LOOSE_ASSETS_AND_RESTART",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07",
+  "archive": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\art_badges.big",
+  "rationale": "Archive flags exist but country-selection UI displays white squares; test loose-file loading using unchanged decompressed source assets.",
+  "root_cause_confirmed": false,
+  "visual_fix_confirmed": true,
+  "rollback": "Remove only newly created paths in this manifest after verifying their SHA256; archive and existing loose overrides are unchanged.",
+  "files": [
+    {
+      "path": "art/Lib/CountryFlags/32x32/0.tga",
+      "archive_offset": 14567236,
+      "packed_bytes": 40,
+      "bytes": 4114,
+      "sha256": "4cfb61489d349228e851a444fabe97bb86bc3f6782cb7ae0a359d7af2c657dc1",
+      "distinct_pixel_values": 1
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/00.tga",
+      "archive_offset": 14567276,
+      "packed_bytes": 749,
+      "bytes": 4114,
+      "sha256": "5af7ac88c77a202328553c3ccd98e3d5d3b0daf8ed2397238d6ac469869f0b73",
+      "distinct_pixel_values": 83
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/1.tga",
+      "archive_offset": 14568028,
+      "packed_bytes": 987,
+      "bytes": 4114,
+      "sha256": "82d941e71bd60241ec51015f68276fabf999284fb5b06d657809534130dfad76",
+      "distinct_pixel_values": 156
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/10.tga",
+      "archive_offset": 14569016,
+      "packed_bytes": 1062,
+      "bytes": 4114,
+      "sha256": "54707c1e906fc2cf84a41dace3dca03eb9230435169c418bcb23b5c2e92f89c3",
+      "distinct_pixel_values": 192
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/100.tga",
+      "archive_offset": 14570080,
+      "packed_bytes": 494,
+      "bytes": 4114,
+      "sha256": "56110da6d9c2fc72db9a3e2680b63b84ed5b119d8a77f59d08b8e1b4b1c8dfd3",
+      "distinct_pixel_values": 72
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/101.tga",
+      "archive_offset": 14570576,
+      "packed_bytes": 769,
+      "bytes": 4114,
+      "sha256": "10b064b4f5cb4167d7a31052604d7c4debfebad0bd634b067d04a024486e4418",
+      "distinct_pixel_values": 116
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/102.tga",
+      "archive_offset": 14571348,
+      "packed_bytes": 1567,
+      "bytes": 4114,
+      "sha256": "fe2cf114ab906796d5b105182a490f65d5bd550bebfa9ca10360763df9f326b0",
+      "distinct_pixel_values": 243
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/103.tga",
+      "archive_offset": 14572916,
+      "packed_bytes": 1695,
+      "bytes": 4114,
+      "sha256": "c549f8183194cf35081e52efa7144f1c05adc10d25699221fac270ae431eee7f",
+      "distinct_pixel_values": 382
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/104.tga",
+      "archive_offset": 14574612,
+      "packed_bytes": 1122,
+      "bytes": 4114,
+      "sha256": "b812dc579cb0329cf8b18392b9f32b85439a66c5de6c20c7673a83ed535baeb6",
+      "distinct_pixel_values": 210
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/105.tga",
+      "archive_offset": 14575736,
+      "packed_bytes": 1261,
+      "bytes": 4114,
+      "sha256": "9c304b21482aff6cdf82d4eabd4d227ebb9237d6e94d057503a502438dca7f8e",
+      "distinct_pixel_values": 207
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/106.tga",
+      "archive_offset": 14577000,
+      "packed_bytes": 1621,
+      "bytes": 4114,
+      "sha256": "c30246cfe7fd9f2971d3608aa224e219d47fed91ebc10f9a157e3ce5a18d3cfd",
+      "distinct_pixel_values": 375
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/107.tga",
+      "archive_offset": 14578624,
+      "packed_bytes": 1645,
+      "bytes": 4114,
+      "sha256": "2d9134385d78bd56e5acbd49dc6d76b66d1e1bb48857c65166a041035f887b2a",
+      "distinct_pixel_values": 390
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/108.tga",
+      "archive_offset": 14580272,
+      "packed_bytes": 1466,
+      "bytes": 4114,
+      "sha256": "a7bd7abfc237e494aeab5267ca46c46ea54f00e55e179e951e41345e717d85aa",
+      "distinct_pixel_values": 319
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/109.tga",
+      "archive_offset": 14581740,
+      "packed_bytes": 1278,
+      "bytes": 4114,
+      "sha256": "45a03b319481be7249aa776b0905a33e8164cb71399f328f15f61aa72e06fdc3",
+      "distinct_pixel_values": 292
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/11.tga",
+      "archive_offset": 14583020,
+      "packed_bytes": 1090,
+      "bytes": 4114,
+      "sha256": "0ca091dd4a21652a2ca6597e8e50905446d656df6988ceadbe8af7f60d987710",
+      "distinct_pixel_values": 202
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/110.tga",
+      "archive_offset": 14584112,
+      "packed_bytes": 1888,
+      "bytes": 4114,
+      "sha256": "9e1c38cf921ae6f026ee3b794cf1c0f72eaec63a75ac04ccedd741c80c32dcf3",
+      "distinct_pixel_values": 453
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/111.tga",
+      "archive_offset": 14586000,
+      "packed_bytes": 667,
+      "bytes": 4114,
+      "sha256": "3c7d0069194478d8151ba8f6c60c6a3bbb26c13c428e59fad4b40b9ff7d52b01",
+      "distinct_pixel_values": 104
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/112.tga",
+      "archive_offset": 14586668,
+      "packed_bytes": 1246,
+      "bytes": 4114,
+      "sha256": "a75ce6f913bb15dc8729172ab424d38b0ad6376656628dddd311015dd35326d1",
+      "distinct_pixel_values": 274
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/113.tga",
+      "archive_offset": 14587916,
+      "packed_bytes": 1286,
+      "bytes": 4114,
+      "sha256": "7acba1d906a3cafdb3551c50af4a1f6d24e3d4e0f4ff87b6dd7e0efce4d42db8",
+      "distinct_pixel_values": 297
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/114.tga",
+      "archive_offset": 14589204,
+      "packed_bytes": 1342,
+      "bytes": 4114,
+      "sha256": "e450924976fdb5d397b2f51eff6b13ed64cb9130e486a2a36d6ea0b986d3efb4",
+      "distinct_pixel_values": 238
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/115.tga",
+      "archive_offset": 14590548,
+      "packed_bytes": 548,
+      "bytes": 4114,
+      "sha256": "c01af6de00503c4bf88f68dbaafc4177f9bda7a2f3dff6c68a4d8b0c577821b8",
+      "distinct_pixel_values": 81
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/116.tga",
+      "archive_offset": 14591096,
+      "packed_bytes": 536,
+      "bytes": 4114,
+      "sha256": "9355a43a2ade7f7ecf8d202594653c1b0bc27ef4aafe09b80edacf98da2d9073",
+      "distinct_pixel_values": 79
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/117.tga",
+      "archive_offset": 14591632,
+      "packed_bytes": 765,
+      "bytes": 4114,
+      "sha256": "114b20005e19b2adb7d1513ea95f8e1021dcfafb330aadeda9646f80f778b2b9",
+      "distinct_pixel_values": 127
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/118.tga",
+      "archive_offset": 14592400,
+      "packed_bytes": 1573,
+      "bytes": 4114,
+      "sha256": "98098055e0dbd47e5aebffe6d73573a5f0880133487fe3f322fdbe5e35a68649",
+      "distinct_pixel_values": 373
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/119.tga",
+      "archive_offset": 14593976,
+      "packed_bytes": 1213,
+      "bytes": 4114,
+      "sha256": "46bb84e89c3bcd65e45b70d5a999e1098b7ef354849e14bddb2d9f12ff11aa1f",
+      "distinct_pixel_values": 285
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/12.tga",
+      "archive_offset": 14595192,
+      "packed_bytes": 1058,
+      "bytes": 4114,
+      "sha256": "68b5b37a44d8e75450254ce1714345a2ea6505709366194fc976af760fb49a07",
+      "distinct_pixel_values": 233
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/120.tga",
+      "archive_offset": 14596252,
+      "packed_bytes": 970,
+      "bytes": 4114,
+      "sha256": "e1bd956180c1fe66dc13e0a54f65694aa8eb3404b094514b6f92890ce93189b8",
+      "distinct_pixel_values": 144
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/121.tga",
+      "archive_offset": 14597224,
+      "packed_bytes": 795,
+      "bytes": 4114,
+      "sha256": "6a3aedd91411335b355854ff27ce01e5fd0f741a324f36f751dbf6d299d82ffe",
+      "distinct_pixel_values": 131
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/122.tga",
+      "archive_offset": 14598020,
+      "packed_bytes": 894,
+      "bytes": 4114,
+      "sha256": "e122e7920cba6031602f590c50dda5099b6b81f9243eb7e6219db54b0b1ab4ce",
+      "distinct_pixel_values": 185
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/123.tga",
+      "archive_offset": 14598916,
+      "packed_bytes": 731,
+      "bytes": 4114,
+      "sha256": "c9d9e1e037701b0dce63991442eecf4083d4ab250644115ee36975d171893249",
+      "distinct_pixel_values": 120
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/124.tga",
+      "archive_offset": 14599648,
+      "packed_bytes": 955,
+      "bytes": 4114,
+      "sha256": "ce242f2be44b0191589d32db08d3509f84338d4b07a5a610fdd3602a02a3abab",
+      "distinct_pixel_values": 212
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/125.tga",
+      "archive_offset": 14600604,
+      "packed_bytes": 969,
+      "bytes": 4114,
+      "sha256": "122018ba9d3bdd7eaaf89c8022da47bf5eb880dffafce331e4230c42c893df8f",
+      "distinct_pixel_values": 185
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/126.tga",
+      "archive_offset": 14601576,
+      "packed_bytes": 1579,
+      "bytes": 4114,
+      "sha256": "4ae37c1353cdfbbf41b53356a7e8f5bb4d100448f75372cc26e711129c0f0828",
+      "distinct_pixel_values": 369
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/127.tga",
+      "archive_offset": 14603156,
+      "packed_bytes": 1067,
+      "bytes": 4114,
+      "sha256": "05db084d6a562677a98d4b7a6d449fcaef6841e5e8f7ce09ec34b4fe063fc5b0",
+      "distinct_pixel_values": 167
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/128.tga",
+      "archive_offset": 14604224,
+      "packed_bytes": 546,
+      "bytes": 4114,
+      "sha256": "e60254bc8a2e5cbd18692d4bb036c9748132a3236793c294227e201bd98b48c6",
+      "distinct_pixel_values": 81
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/129.tga",
+      "archive_offset": 14604772,
+      "packed_bytes": 704,
+      "bytes": 4114,
+      "sha256": "2d4c12ab336c57faa016e94b3b8f7d8ddc6e0bc1d028a0a59f5e79f19d20c676",
+      "distinct_pixel_values": 108
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/13.tga",
+      "archive_offset": 14605476,
+      "packed_bytes": 1120,
+      "bytes": 4114,
+      "sha256": "72a0c56b95d8e8fafc6a967e06243707ef98e3e0039d18f38a025e41ac15db68",
+      "distinct_pixel_values": 202
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/130.tga",
+      "archive_offset": 14606596,
+      "packed_bytes": 1212,
+      "bytes": 4114,
+      "sha256": "c826d12298cdfb64effb05bf55b42f67aad283c959b33edc3ab2ce241506b27e",
+      "distinct_pixel_values": 281
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/131.tga",
+      "archive_offset": 14607808,
+      "packed_bytes": 2021,
+      "bytes": 4114,
+      "sha256": "9be4db5b22dd977505818993e109f17fe9cec2409265a2ace5c277eded1925c0",
+      "distinct_pixel_values": 486
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/132.tga",
+      "archive_offset": 14609832,
+      "packed_bytes": 757,
+      "bytes": 4114,
+      "sha256": "c44bb115352902eacc1271dfa65cd3fc92429c602db9090d8b2f95796ccfe3da",
+      "distinct_pixel_values": 111
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/133.tga",
+      "archive_offset": 14610592,
+      "packed_bytes": 1123,
+      "bytes": 4114,
+      "sha256": "a7bb48fc9864653a33421a9e724a2d8fdc07af1ccd6bf68c4328ab51016856d8",
+      "distinct_pixel_values": 160
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/134.tga",
+      "archive_offset": 14611716,
+      "packed_bytes": 743,
+      "bytes": 4114,
+      "sha256": "6271db8dc35e2a7260d4ac68d0c9c92c95644414af84a4b58e06cf26e50166e3",
+      "distinct_pixel_values": 129
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/135.tga",
+      "archive_offset": 14612460,
+      "packed_bytes": 1312,
+      "bytes": 4114,
+      "sha256": "507331967634597fffe578362bdeb1229c7b6a14fba281c66232d702503025e7",
+      "distinct_pixel_values": 302
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/136.tga",
+      "archive_offset": 14613772,
+      "packed_bytes": 1705,
+      "bytes": 4114,
+      "sha256": "996e3badacfc5c7ea5596c5514f636b4d71a0e9b4021bd77ab485af44c1d2091",
+      "distinct_pixel_values": 393
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/137.tga",
+      "archive_offset": 14615480,
+      "packed_bytes": 2053,
+      "bytes": 4114,
+      "sha256": "9a490061a131314df2c40daefcdfc7563b5471b90dae86ee3c4c5268a1eb299e",
+      "distinct_pixel_values": 493
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/138.tga",
+      "archive_offset": 14617536,
+      "packed_bytes": 524,
+      "bytes": 4114,
+      "sha256": "ad4e3016aae4be8016e67eadea0d1d23e02ab2eddd703c9abcc8f9fa40987bf5",
+      "distinct_pixel_values": 76
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/139.tga",
+      "archive_offset": 14618060,
+      "packed_bytes": 844,
+      "bytes": 4114,
+      "sha256": "14163e43906c36bdf769aaff21d67354648f82ac70081bfecced0f4a66925df4",
+      "distinct_pixel_values": 126
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/14.tga",
+      "archive_offset": 14618904,
+      "packed_bytes": 773,
+      "bytes": 4114,
+      "sha256": "d7b07263c76c1b1750519133aecd5eea40195752ff764a573a460f4782d4a711",
+      "distinct_pixel_values": 109
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/140.tga",
+      "archive_offset": 14619680,
+      "packed_bytes": 1605,
+      "bytes": 4114,
+      "sha256": "15fbb119ea9cb319728d10df34908ae77dbd08f685a0e1fcd51184b0af2678e8",
+      "distinct_pixel_values": 380
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/141.tga",
+      "archive_offset": 14621288,
+      "packed_bytes": 943,
+      "bytes": 4114,
+      "sha256": "e3f236348ababe4f3bcf340999a0f21e358f5feec871ad3b5ceb77d994c26d07",
+      "distinct_pixel_values": 204
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/142.tga",
+      "archive_offset": 14622232,
+      "packed_bytes": 1458,
+      "bytes": 4114,
+      "sha256": "8ce46aee1394090e36f43d020f1ddd80246ef4accd92efc96d0e251c615dc5ab",
+      "distinct_pixel_values": 317
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/143.tga",
+      "archive_offset": 14623692,
+      "packed_bytes": 1731,
+      "bytes": 4114,
+      "sha256": "94922dc0285d717258b6d1e62355199440f2d717d48dc4f5f76ecf3b9aba8ae8",
+      "distinct_pixel_values": 407
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/144.tga",
+      "archive_offset": 14625424,
+      "packed_bytes": 1134,
+      "bytes": 4114,
+      "sha256": "51b45b4eccb1a3c7573cb6974bc72a0c482bfa22cbac17f4b258b06a95422a3e",
+      "distinct_pixel_values": 253
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/145.tga",
+      "archive_offset": 14626560,
+      "packed_bytes": 1171,
+      "bytes": 4114,
+      "sha256": "a2ce25d059d2b3d3c0ff3d9c84f47bf27e2234fb415251f138b3109f4d77951d",
+      "distinct_pixel_values": 218
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/146.tga",
+      "archive_offset": 14627732,
+      "packed_bytes": 827,
+      "bytes": 4114,
+      "sha256": "778c475d5bd94b645817948bb74f1854691602611ea222b93978215dfdc25c07",
+      "distinct_pixel_values": 139
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/147.tga",
+      "archive_offset": 14628560,
+      "packed_bytes": 1329,
+      "bytes": 4114,
+      "sha256": "f41151e821f3d270e7fdce84734a6cceeab82237305dbe3c3a60b581542fe68d",
+      "distinct_pixel_values": 317
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/148.tga",
+      "archive_offset": 14629892,
+      "packed_bytes": 1190,
+      "bytes": 4114,
+      "sha256": "142aae91953c24a95d19cb605b9d775787fd0275a8eda28e1131b1b498cccc0a",
+      "distinct_pixel_values": 273
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/149.tga",
+      "archive_offset": 14631084,
+      "packed_bytes": 1127,
+      "bytes": 4114,
+      "sha256": "878ea59ba67c45ab43d6b91b045bedf360b5d4089c759dc16911ae3293da62ba",
+      "distinct_pixel_values": 163
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/15.tga",
+      "archive_offset": 14632212,
+      "packed_bytes": 591,
+      "bytes": 4114,
+      "sha256": "168033b96530f8eea2c0691f7b8ef2bd5e6695ba0ff87604d15c34f42d2b7953",
+      "distinct_pixel_values": 107
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/150.tga",
+      "archive_offset": 14632804,
+      "packed_bytes": 1150,
+      "bytes": 4114,
+      "sha256": "29c30dfa5e3b54dd9dfcb5675a149a3c5fff20b3f01a79695c60ab0c897f7d35",
+      "distinct_pixel_values": 254
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/151.tga",
+      "archive_offset": 14633956,
+      "packed_bytes": 1280,
+      "bytes": 4114,
+      "sha256": "e332ccf936f6befcedae4d3c0778f76aa5a20855af94d2f15f4c87f2fe74b29e",
+      "distinct_pixel_values": 235
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/152.tga",
+      "archive_offset": 14635236,
+      "packed_bytes": 1894,
+      "bytes": 4114,
+      "sha256": "26fdffc92227e4379d14500f39f5ccabdb042e5b988ff2ff5ea3495dcddb4541",
+      "distinct_pixel_values": 455
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/153.tga",
+      "archive_offset": 14637132,
+      "packed_bytes": 1587,
+      "bytes": 4114,
+      "sha256": "5e569e8a3aae57fda9c3cf8eeb72ae93cdcefef90dc28b8ab7d78560aa921fa1",
+      "distinct_pixel_values": 374
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/154.tga",
+      "archive_offset": 14638720,
+      "packed_bytes": 1052,
+      "bytes": 4114,
+      "sha256": "db49d81b693421e945d7400c5d077d3e4e8ad05576fd1e79997a42f8416a07b5",
+      "distinct_pixel_values": 194
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/155.tga",
+      "archive_offset": 14639772,
+      "packed_bytes": 917,
+      "bytes": 4114,
+      "sha256": "be4a020178985d28d699ce9fdbc860c0cdd48ffcaa698756cff5b67edc250cc1",
+      "distinct_pixel_values": 175
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/156.tga",
+      "archive_offset": 14640692,
+      "packed_bytes": 1252,
+      "bytes": 4114,
+      "sha256": "003ab23dcbd09620f1d7853622037621ee295aa4166bcf3c4ad8d72a75e9ae1d",
+      "distinct_pixel_values": 247
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/157.tga",
+      "archive_offset": 14641944,
+      "packed_bytes": 1113,
+      "bytes": 4114,
+      "sha256": "ec91b9a42d76019231820ef9a3dc91632ae2c6c8006c86f3ec2744a045dfd567",
+      "distinct_pixel_values": 206
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/158.tga",
+      "archive_offset": 14643060,
+      "packed_bytes": 1111,
+      "bytes": 4114,
+      "sha256": "83980a4d1af7e7643389d9af21e7889885509e1f72b77c7b1446affd6b8934ba",
+      "distinct_pixel_values": 218
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/159.tga",
+      "archive_offset": 14644172,
+      "packed_bytes": 746,
+      "bytes": 4114,
+      "sha256": "0a6156a7ce59fe5bc1f901335c70093729b134dc0f0fab551df184907dc3f02b",
+      "distinct_pixel_values": 110
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/16.tga",
+      "archive_offset": 14644920,
+      "packed_bytes": 1239,
+      "bytes": 4114,
+      "sha256": "809c41e2b099789d556d799c81e072589a97c5c8a02704e379def36e4ad24fe8",
+      "distinct_pixel_values": 248
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/160.tga",
+      "archive_offset": 14646160,
+      "packed_bytes": 502,
+      "bytes": 4114,
+      "sha256": "88e1f7cb11fb87548e6ac92b43ad65151383733d461b34de3cca75cf79df3c1f",
+      "distinct_pixel_values": 74
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/161.tga",
+      "archive_offset": 14646664,
+      "packed_bytes": 982,
+      "bytes": 4114,
+      "sha256": "50f3dfe7488a72a4002be4305d0495458771f5e88f34057ace1a84cd6e62bb88",
+      "distinct_pixel_values": 171
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/162.tga",
+      "archive_offset": 14647648,
+      "packed_bytes": 750,
+      "bytes": 4114,
+      "sha256": "03760d18b0e1219883877d6bdc9d2c1518e04dcee2c41b5de1240f8a9824374d",
+      "distinct_pixel_values": 125
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/163.tga",
+      "archive_offset": 14648400,
+      "packed_bytes": 866,
+      "bytes": 4114,
+      "sha256": "e6a4261fae68c41ad4657f5443de9f0bc1b9ed78c9859a76614d5053bd608ec8",
+      "distinct_pixel_values": 124
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/164.tga",
+      "archive_offset": 14649268,
+      "packed_bytes": 1275,
+      "bytes": 4114,
+      "sha256": "0a1262581074009c5d3a0e932d2f46dad014fbabadb2c7f07c12435ef77c9657",
+      "distinct_pixel_values": 297
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/165.tga",
+      "archive_offset": 14650544,
+      "packed_bytes": 1490,
+      "bytes": 4114,
+      "sha256": "5bad2e6b91667f631c30592885807dce6a691b28183501aa8479f47ed00d71cc",
+      "distinct_pixel_values": 344
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/166.tga",
+      "archive_offset": 14652036,
+      "packed_bytes": 1057,
+      "bytes": 4114,
+      "sha256": "5b2c844bb48d4a06e0ab81233b2b58461aa068f4c1a7f637d4c7b4c416f05e8f",
+      "distinct_pixel_values": 202
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/167.tga",
+      "archive_offset": 14653096,
+      "packed_bytes": 1399,
+      "bytes": 4114,
+      "sha256": "5a921ccb1b055b411f2782a83505ea9c9ff85eb67b0238598d061c8115a107f1",
+      "distinct_pixel_values": 234
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/168.tga",
+      "archive_offset": 14654496,
+      "packed_bytes": 914,
+      "bytes": 4114,
+      "sha256": "336fb2cb9d2547cc692fd924bfd17d4382bd5d300013a1baa07153be0f093746",
+      "distinct_pixel_values": 191
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/169.tga",
+      "archive_offset": 14655412,
+      "packed_bytes": 1152,
+      "bytes": 4114,
+      "sha256": "af2912564b620bb81d2bb01ea0923b93a7a07fd0ed09213ee38f57052a9e8c90",
+      "distinct_pixel_values": 220
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/17.tga",
+      "archive_offset": 14656564,
+      "packed_bytes": 1123,
+      "bytes": 4114,
+      "sha256": "1b5ac41f01e2e8e34f898746b22c0f4725ddcfe964db923c273737c2905d4f69",
+      "distinct_pixel_values": 214
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/170.tga",
+      "archive_offset": 14657688,
+      "packed_bytes": 897,
+      "bytes": 4114,
+      "sha256": "431a1a91460032031f5cf225cb487b9593de10c073c249903bf0c953add7351f",
+      "distinct_pixel_values": 136
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/171.tga",
+      "archive_offset": 14658588,
+      "packed_bytes": 954,
+      "bytes": 4114,
+      "sha256": "c88c2219e72a95ee3a268a6ac93bc2c7df5a5223981c4041c989fe3a8ad7c7dd",
+      "distinct_pixel_values": 183
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/172.tga",
+      "archive_offset": 14659544,
+      "packed_bytes": 1118,
+      "bytes": 4114,
+      "sha256": "78f1e15aed1d5d441bab3b3cbdc7d729bf6915c0ae5fb96180d4d2651fba1fc7",
+      "distinct_pixel_values": 173
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/173.tga",
+      "archive_offset": 14660664,
+      "packed_bytes": 1349,
+      "bytes": 4114,
+      "sha256": "457060f22995be51b1c5e595b747718fd6dfd6022002e4c2dde70e0ecf07732a",
+      "distinct_pixel_values": 306
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/174.tga",
+      "archive_offset": 14662016,
+      "packed_bytes": 1160,
+      "bytes": 4114,
+      "sha256": "4a82ef1b24f3d26b68019aba779b3e17d943766009ff15926515d6cba6741086",
+      "distinct_pixel_values": 198
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/175.tga",
+      "archive_offset": 14663176,
+      "packed_bytes": 1647,
+      "bytes": 4114,
+      "sha256": "a9ec59097e359f8c6be370c557d51a9cf5864ab75428d0f501e9b5119319c6a8",
+      "distinct_pixel_values": 334
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/176.tga",
+      "archive_offset": 14664824,
+      "packed_bytes": 1046,
+      "bytes": 4114,
+      "sha256": "4ce6f8d12279ae5fdd9582d4f9ba92f29314af1e67392fb576598dfc2588f5fc",
+      "distinct_pixel_values": 161
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/177.tga",
+      "archive_offset": 14665872,
+      "packed_bytes": 1222,
+      "bytes": 4114,
+      "sha256": "b372eaf380c52482174cb13393bd7ef2fc231d9c3ca41185f2f0376d884823ed",
+      "distinct_pixel_values": 280
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/178.tga",
+      "archive_offset": 14667096,
+      "packed_bytes": 963,
+      "bytes": 4114,
+      "sha256": "ff7caee86c8445b13b7b770f9fa7eb2314ee08f9d330507c9d25ad5d5d8c63a5",
+      "distinct_pixel_values": 216
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/179.tga",
+      "archive_offset": 14668060,
+      "packed_bytes": 1552,
+      "bytes": 4114,
+      "sha256": "f0ff4089b2dd945e30a94dd5c6d661ded8d3bd3778e7940cd1abad45f5aaa060",
+      "distinct_pixel_values": 324
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/18.tga",
+      "archive_offset": 14669612,
+      "packed_bytes": 1447,
+      "bytes": 4114,
+      "sha256": "53eea7419e05d2985dd61d91125f681a9f3339c03265dac70f7f5fbf7944f014",
+      "distinct_pixel_values": 312
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/180.tga",
+      "archive_offset": 14671060,
+      "packed_bytes": 1024,
+      "bytes": 4114,
+      "sha256": "78cbf19e1b5a151c6ab32bed250f34c4c3a4496a66a23776de802bfe0c880712",
+      "distinct_pixel_values": 231
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/181.tga",
+      "archive_offset": 14672084,
+      "packed_bytes": 1299,
+      "bytes": 4114,
+      "sha256": "7072cc38291189a8d57a124a59a777b0478eb2b07eaed706e9297b2f59772161",
+      "distinct_pixel_values": 294
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/182.tga",
+      "archive_offset": 14673384,
+      "packed_bytes": 1031,
+      "bytes": 4114,
+      "sha256": "595a510f0f071216a64591ef8c8e95136a96773a208e884f6a489c1602e27166",
+      "distinct_pixel_values": 218
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/183.tga",
+      "archive_offset": 14674416,
+      "packed_bytes": 1240,
+      "bytes": 4114,
+      "sha256": "06448734f23afcee73a28319165cb37d6b266b064084a329b80ecaf6090aa9a3",
+      "distinct_pixel_values": 241
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/184.tga",
+      "archive_offset": 14675656,
+      "packed_bytes": 890,
+      "bytes": 4114,
+      "sha256": "8e7897632511dadc5fddf6378f7c73954b3b36d63b298e0591874ec265ff1095",
+      "distinct_pixel_values": 179
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/185.tga",
+      "archive_offset": 14676548,
+      "packed_bytes": 2219,
+      "bytes": 4114,
+      "sha256": "88eb70eab6839e73a45415dbd7ff86ce9409fffe0d74331832a2d29bae4dbc51",
+      "distinct_pixel_values": 542
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/186.tga",
+      "archive_offset": 14678768,
+      "packed_bytes": 882,
+      "bytes": 4114,
+      "sha256": "608bb3264b6362d5b4b9d769b0b4f94c52d2c8d15a0f0f66dd25d6ab96be27e2",
+      "distinct_pixel_values": 146
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/187.tga",
+      "archive_offset": 14679652,
+      "packed_bytes": 813,
+      "bytes": 4114,
+      "sha256": "52a4c0b114240de147c7396faa96b58866eda8b9e253a22eb104a8686c8d1bf7",
+      "distinct_pixel_values": 124
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/188.tga",
+      "archive_offset": 14680468,
+      "packed_bytes": 507,
+      "bytes": 4114,
+      "sha256": "f11d16aa28f45207567137030a1790fe40a368a8b82961ea2f41e4cf59b04e89",
+      "distinct_pixel_values": 74
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/189.tga",
+      "archive_offset": 14680976,
+      "packed_bytes": 1439,
+      "bytes": 4114,
+      "sha256": "fe37e2eac007485a5f620a6ab117ba388e960d56791c44ee4e54c843a4072ae3",
+      "distinct_pixel_values": 306
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/19.tga",
+      "archive_offset": 14682416,
+      "packed_bytes": 1716,
+      "bytes": 4114,
+      "sha256": "34e25cda5d99dcb18ac7c53ba0b35e0620d434835b89fc8d8cf505fd986e4372",
+      "distinct_pixel_values": 285
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/190.tga",
+      "archive_offset": 14684132,
+      "packed_bytes": 942,
+      "bytes": 4114,
+      "sha256": "0eb5497af1af083b31b89dbf6b51238804837c944946479722607b05b620fdde",
+      "distinct_pixel_values": 209
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/191.tga",
+      "archive_offset": 14685076,
+      "packed_bytes": 821,
+      "bytes": 4114,
+      "sha256": "b9ed84c0b4f741a0def04280e06ea71eccb1c7f3980b036f0b78253892ccc12e",
+      "distinct_pixel_values": 161
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/192.tga",
+      "archive_offset": 14685900,
+      "packed_bytes": 945,
+      "bytes": 4114,
+      "sha256": "859c1627ff7b97c9e021b8e807a9e340d7ffbc124627f9624c86bc33b6bb6505",
+      "distinct_pixel_values": 150
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/193.tga",
+      "archive_offset": 14686848,
+      "packed_bytes": 445,
+      "bytes": 4114,
+      "sha256": "a00c2b2c326d604c75d737bcc83afb0ffa2135afc636e86d3118f76758bd39ff",
+      "distinct_pixel_values": 59
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/194.tga",
+      "archive_offset": 14687296,
+      "packed_bytes": 1859,
+      "bytes": 4114,
+      "sha256": "9199097b5f748cf0dba322df94187edbaad7d2ea5347badf58cb5da493ed1132",
+      "distinct_pixel_values": 451
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/195.tga",
+      "archive_offset": 14689156,
+      "packed_bytes": 1573,
+      "bytes": 4114,
+      "sha256": "c0ba7f7782c0c9d6180d1f30b4fdb3edf3b1dcea12fe8e2a55b276392fb28c17",
+      "distinct_pixel_values": 326
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/196.tga",
+      "archive_offset": 14690732,
+      "packed_bytes": 1738,
+      "bytes": 4114,
+      "sha256": "8639a7eaf1b15321b68ebb5a4320b72aa52053403f4b7e2886357340ef92ca61",
+      "distinct_pixel_values": 407
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/197.tga",
+      "archive_offset": 14692472,
+      "packed_bytes": 1652,
+      "bytes": 4114,
+      "sha256": "668752d6eca396ff6b87fe35f712db8c4dc80251614706175545311b60dbefb8",
+      "distinct_pixel_values": 383
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/198.tga",
+      "archive_offset": 14694124,
+      "packed_bytes": 1538,
+      "bytes": 4114,
+      "sha256": "1157d42849c1c3726c7315cb8915214d2b92b6220b8c6f135f9cf3186fb829ca",
+      "distinct_pixel_values": 347
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/199.tga",
+      "archive_offset": 14695664,
+      "packed_bytes": 1574,
+      "bytes": 4114,
+      "sha256": "7a1db9b7e61aee9d5a50cdfc693e2042fa193ebcf7cad552c5f560313ca2e817",
+      "distinct_pixel_values": 346
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/2.tga",
+      "archive_offset": 14697240,
+      "packed_bytes": 1931,
+      "bytes": 4114,
+      "sha256": "7e59ca811d6216c26cf2e55e8677349760550e1ee6ace83edb0ebdf75f0fb73d",
+      "distinct_pixel_values": 446
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/20.tga",
+      "archive_offset": 14699172,
+      "packed_bytes": 1183,
+      "bytes": 4114,
+      "sha256": "aeda7c75442686898dd5e9e18c4f959f2cf4adf0844d9fe482c43111420226e4",
+      "distinct_pixel_values": 167
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/200.tga",
+      "archive_offset": 14700356,
+      "packed_bytes": 1123,
+      "bytes": 4114,
+      "sha256": "a23d304e337cf5dea8b51617def58551699701f5c9e54fabe90ed3058fb7042a",
+      "distinct_pixel_values": 230
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/201.tga",
+      "archive_offset": 14701480,
+      "packed_bytes": 1740,
+      "bytes": 4114,
+      "sha256": "7b24f2986340c5afee228fdf1f92aae6c34213546a4ca9f02c2e5b6102c0d564",
+      "distinct_pixel_values": 412
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/202.tga",
+      "archive_offset": 14703220,
+      "packed_bytes": 970,
+      "bytes": 4114,
+      "sha256": "a194f8d88697fb86a21c07967e6e97b39bb4a0be62c97292c4db3d4311563a14",
+      "distinct_pixel_values": 178
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/203.tga",
+      "archive_offset": 14704192,
+      "packed_bytes": 853,
+      "bytes": 4114,
+      "sha256": "979c493cf2c73bc4a22177e0ab2b6730821c633aff009f44ad85c61b88a34ff8",
+      "distinct_pixel_values": 164
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/204.tga",
+      "archive_offset": 14705048,
+      "packed_bytes": 1297,
+      "bytes": 4114,
+      "sha256": "77eb4ec73258a501b541c48c20dc19b022519ad88502a91d86ee48e04c43519c",
+      "distinct_pixel_values": 301
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/205.tga",
+      "archive_offset": 14706348,
+      "packed_bytes": 1225,
+      "bytes": 4114,
+      "sha256": "5f3f7bbc7062d09c6b59ad48334676360957f5bd153c0bc26f3a92634e0714c3",
+      "distinct_pixel_values": 241
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/206.tga",
+      "archive_offset": 14707576,
+      "packed_bytes": 1088,
+      "bytes": 4114,
+      "sha256": "5f4ad272556b9fc68a21d504e5e9ba4477035524c886162df13a07563d34743b",
+      "distinct_pixel_values": 203
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/207.tga",
+      "archive_offset": 14708664,
+      "packed_bytes": 1304,
+      "bytes": 4114,
+      "sha256": "22559768920ba95583fad746f12cfd75fae6366244656d1c167bcc3d8aff4ef9",
+      "distinct_pixel_values": 244
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/21.tga",
+      "archive_offset": 14709968,
+      "packed_bytes": 516,
+      "bytes": 4114,
+      "sha256": "0b959b7ba1d774d0f6a30fae9181662f7e14e4db934616e58805c8cb247f7fec",
+      "distinct_pixel_values": 78
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/22.tga",
+      "archive_offset": 14710484,
+      "packed_bytes": 965,
+      "bytes": 4114,
+      "sha256": "2b230b3f7846cfea02869f58d8f85645807ca045435b008b9a7a4cff906362bc",
+      "distinct_pixel_values": 196
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/23.tga",
+      "archive_offset": 14711452,
+      "packed_bytes": 510,
+      "bytes": 4114,
+      "sha256": "1589d2b68ea8a216b5456509e5a7a07a80751fcdf8505893c533a6928116b930",
+      "distinct_pixel_values": 74
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/24.tga",
+      "archive_offset": 14711964,
+      "packed_bytes": 1246,
+      "bytes": 4114,
+      "sha256": "0d4d8f2288d94a9c3e3e53ca82de6505a7857246665a203d8f8eb4deed2cb0fd",
+      "distinct_pixel_values": 239
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/25.tga",
+      "archive_offset": 14713212,
+      "packed_bytes": 1455,
+      "bytes": 4114,
+      "sha256": "7eed1a09edbfddeb8e498097ef92572b0f48781ab37b5b1f0a75c12e406d33b3",
+      "distinct_pixel_values": 310
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/26.tga",
+      "archive_offset": 14714668,
+      "packed_bytes": 800,
+      "bytes": 4114,
+      "sha256": "5e06e50ddc78931ed3153679964cd5de2e3410c6220ef1b2d6fb54b8a8be118b",
+      "distinct_pixel_values": 128
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/27.tga",
+      "archive_offset": 14715468,
+      "packed_bytes": 1481,
+      "bytes": 4114,
+      "sha256": "5deb6e26f15c10022fd9345bd722e3bfbf3de074bec30c1cb79aca105af02562",
+      "distinct_pixel_values": 320
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/28.tga",
+      "archive_offset": 14716952,
+      "packed_bytes": 511,
+      "bytes": 4114,
+      "sha256": "cfdefab929e76d8b98c70d47f95d2ea9c326908f9f2f25acd12d26e64bb8c213",
+      "distinct_pixel_values": 73
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/29.tga",
+      "archive_offset": 14717464,
+      "packed_bytes": 817,
+      "bytes": 4114,
+      "sha256": "e842ba913b233b0249490017718dfcf32688cec6799f385a8482f22be0794bd2",
+      "distinct_pixel_values": 149
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/3.tga",
+      "archive_offset": 14718284,
+      "packed_bytes": 542,
+      "bytes": 4114,
+      "sha256": "9d7d2493fe13ff8690d737927ff383e5184fd50bf8e307eaa546a402f25896bc",
+      "distinct_pixel_values": 81
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/30.tga",
+      "archive_offset": 14718828,
+      "packed_bytes": 542,
+      "bytes": 4114,
+      "sha256": "7d972a3fbdc0657f78a8eaae6be310174fb82592a3207ac9eb8fa03452298f56",
+      "distinct_pixel_values": 80
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/31.tga",
+      "archive_offset": 14719372,
+      "packed_bytes": 510,
+      "bytes": 4114,
+      "sha256": "552821bfd20d25bd3d78ddf9dd2668da74e99ffd14b67cbfee481aacb0945d61",
+      "distinct_pixel_values": 76
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/32.tga",
+      "archive_offset": 14719884,
+      "packed_bytes": 1154,
+      "bytes": 4114,
+      "sha256": "83c062c86b24ca3e15740056b3e11de88bac21833dac334d8366e6fa3bf107ff",
+      "distinct_pixel_values": 256
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/33.tga",
+      "archive_offset": 14721040,
+      "packed_bytes": 1802,
+      "bytes": 4114,
+      "sha256": "7cd8166237e81366002c010103919989086be52a7c797d486979662c981184c4",
+      "distinct_pixel_values": 428
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/34.tga",
+      "archive_offset": 14722844,
+      "packed_bytes": 508,
+      "bytes": 4114,
+      "sha256": "a5acb0cc669a15159544f493c4bb60dc8f45cebf8b81b7671ead9dd5c75428d9",
+      "distinct_pixel_values": 73
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/35.tga",
+      "archive_offset": 14723352,
+      "packed_bytes": 963,
+      "bytes": 4114,
+      "sha256": "c484067c4b007c4682b7c3f3eb02af626cb1d717296ac602d3c947b74fa8e57e",
+      "distinct_pixel_values": 167
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/36.tga",
+      "archive_offset": 14724316,
+      "packed_bytes": 1327,
+      "bytes": 4114,
+      "sha256": "9fd5643638bf0374cce3534a5830763abce8cd35910aa53cdf394936dfcc3c1d",
+      "distinct_pixel_values": 264
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/37.tga",
+      "archive_offset": 14725644,
+      "packed_bytes": 413,
+      "bytes": 4114,
+      "sha256": "55a8dc02325a1b89c83bdd8bae7c1f04b0f4731b34c3fb8874bcecffe99c3637",
+      "distinct_pixel_values": 58
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/38.tga",
+      "archive_offset": 14726060,
+      "packed_bytes": 1470,
+      "bytes": 4114,
+      "sha256": "06c5a4bbd0bf4b79e3006f986b9061315713546e7f351ce7a6e82ea4b7340cb6",
+      "distinct_pixel_values": 341
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/39.tga",
+      "archive_offset": 14727532,
+      "packed_bytes": 1608,
+      "bytes": 4114,
+      "sha256": "d5970e9f419e32ed665411ab94e5ec66ae2b59016abc51953f747005ab71235b",
+      "distinct_pixel_values": 368
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/4.tga",
+      "archive_offset": 14729140,
+      "packed_bytes": 506,
+      "bytes": 4114,
+      "sha256": "57259f1a7284d71b182ced40f0fb4cd6d0f800b56405197847d69fbeae3c8dd9",
+      "distinct_pixel_values": 74
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/40.tga",
+      "archive_offset": 14729648,
+      "packed_bytes": 481,
+      "bytes": 4114,
+      "sha256": "f3dafeaa94fbf101f1e07b7d9b5e1d256fb7e4f43c685b02459a69fbdb71b724",
+      "distinct_pixel_values": 69
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/41.tga",
+      "archive_offset": 14730132,
+      "packed_bytes": 953,
+      "bytes": 4114,
+      "sha256": "6091141623b136145832073dca1e77b9da265b0744705e16b3fcaa2b51f42524",
+      "distinct_pixel_values": 175
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/42.tga",
+      "archive_offset": 14731088,
+      "packed_bytes": 1517,
+      "bytes": 4114,
+      "sha256": "1bdbd4b372bc6bd55b59049ac102ca107cd48f691515fcf89b80f31e3101d5ca",
+      "distinct_pixel_values": 231
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/43.tga",
+      "archive_offset": 14732608,
+      "packed_bytes": 1059,
+      "bytes": 4114,
+      "sha256": "a45f923d7cbbc41409d632fad3a3b11a08ebb149bc21de77116fc63280d09e66",
+      "distinct_pixel_values": 200
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/44.tga",
+      "archive_offset": 14733668,
+      "packed_bytes": 752,
+      "bytes": 4114,
+      "sha256": "d5b5aa463cc692d2dbef6a48de9c182438c9c3d0b8caefb5a3138507112674ac",
+      "distinct_pixel_values": 135
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/45.tga",
+      "archive_offset": 14734420,
+      "packed_bytes": 944,
+      "bytes": 4114,
+      "sha256": "f8127c6608d359dc65b3613db63cdca8d29027a15edfddf904973ece97686f9f",
+      "distinct_pixel_values": 175
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/46.tga",
+      "archive_offset": 14735364,
+      "packed_bytes": 1215,
+      "bytes": 4114,
+      "sha256": "0880d22d2a4bbfd458c19be888f7f58636c4ddf5b6711576ea3bba48c35a3a36",
+      "distinct_pixel_values": 228
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/47.tga",
+      "archive_offset": 14736580,
+      "packed_bytes": 1105,
+      "bytes": 4114,
+      "sha256": "daf91133c676b83b53ab2129d91a376456fc7901aa792e75b6d864e36f1aa072",
+      "distinct_pixel_values": 198
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/48.tga",
+      "archive_offset": 14737688,
+      "packed_bytes": 1157,
+      "bytes": 4114,
+      "sha256": "9a1d998f3b2329d72cb7494e1cfe7ea20483565ad3562ac96eca3be917702d13",
+      "distinct_pixel_values": 222
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/49.tga",
+      "archive_offset": 14738848,
+      "packed_bytes": 540,
+      "bytes": 4114,
+      "sha256": "5482c26300365cf7ad5d01c5c967cea013b933a80fe4e852a3268b4ac21aaeea",
+      "distinct_pixel_values": 81
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/5.tga",
+      "archive_offset": 14739388,
+      "packed_bytes": 890,
+      "bytes": 4114,
+      "sha256": "c06c7def87e0d7b8e5e654ca96b469d560440e6dd25466380dbdc177ad6a2892",
+      "distinct_pixel_values": 160
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/50.tga",
+      "archive_offset": 14740280,
+      "packed_bytes": 2028,
+      "bytes": 4114,
+      "sha256": "72de53019383fadfcd7318a856300e7b967ae764c87e1d113dee0323ea9fc88c",
+      "distinct_pixel_values": 458
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/51.tga",
+      "archive_offset": 14742308,
+      "packed_bytes": 1267,
+      "bytes": 4114,
+      "sha256": "c88493fb4512f8260d68eb8e63f7fdbe87667f5b3c6aed9a31a8d7087119f9c5",
+      "distinct_pixel_values": 241
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/52.tga",
+      "archive_offset": 14743576,
+      "packed_bytes": 719,
+      "bytes": 4114,
+      "sha256": "e821f59fb0373f9a2a10c0c0e8189f3372b81a82f9f2cc32b10ca2b641549dea",
+      "distinct_pixel_values": 109
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/53.tga",
+      "archive_offset": 14744296,
+      "packed_bytes": 541,
+      "bytes": 4114,
+      "sha256": "0667de5e082da76a650bc547b3be71a278f66dad85f0f69658b55f948fbe96dc",
+      "distinct_pixel_values": 80
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/54.tga",
+      "archive_offset": 14744840,
+      "packed_bytes": 1517,
+      "bytes": 4114,
+      "sha256": "00d8994b929c4e9994e83372db1d38975698bc8f29752e61bb1a16aa8ca77fde",
+      "distinct_pixel_values": 286
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/55.tga",
+      "archive_offset": 14746360,
+      "packed_bytes": 831,
+      "bytes": 4114,
+      "sha256": "3e63e21154f4fbdbd606840caf92a97dfd218c5e7682bc5fea6ecbe70652afa1",
+      "distinct_pixel_values": 170
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/56.tga",
+      "archive_offset": 14747192,
+      "packed_bytes": 539,
+      "bytes": 4114,
+      "sha256": "7ed8b391550c4815e13273e560f831f640ad2b55590ba76269ae83e455fea3a2",
+      "distinct_pixel_values": 81
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/57.tga",
+      "archive_offset": 14747732,
+      "packed_bytes": 1009,
+      "bytes": 4114,
+      "sha256": "fb1fc1edd2ec7ba531e583b900eb0bc4d54e5e13f2bc637f34fffd3c300ff173",
+      "distinct_pixel_values": 189
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/58.tga",
+      "archive_offset": 14748744,
+      "packed_bytes": 738,
+      "bytes": 4114,
+      "sha256": "17cec72fa0668861b4756b5d963f97269c444536d2a0d40c0e2258778907ccf9",
+      "distinct_pixel_values": 121
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/59.tga",
+      "archive_offset": 14749484,
+      "packed_bytes": 1434,
+      "bytes": 4114,
+      "sha256": "aad7b154666922acfb04a1bc0e084c99e60c68cf3208ec503c5648a48f1a4c2d",
+      "distinct_pixel_values": 268
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/6.tga",
+      "archive_offset": 14750920,
+      "packed_bytes": 950,
+      "bytes": 4114,
+      "sha256": "f72c401d04087e1c1e0eb79f6981766f70632c67d7084ae7b8e0098615ed4dab",
+      "distinct_pixel_values": 210
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/60.tga",
+      "archive_offset": 14751872,
+      "packed_bytes": 891,
+      "bytes": 4114,
+      "sha256": "49f537786a3d87f5388dc4c0be07f91ae2e5e063d7d21b3a8799694832a78927",
+      "distinct_pixel_values": 177
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/61.tga",
+      "archive_offset": 14752764,
+      "packed_bytes": 834,
+      "bytes": 4114,
+      "sha256": "fbd5ce3e18fe6441148cb5b527a14114996db29344788a51098ce5397d50e9cf",
+      "distinct_pixel_values": 127
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/62.tga",
+      "archive_offset": 14753600,
+      "packed_bytes": 2318,
+      "bytes": 4114,
+      "sha256": "9396981d15d805ab9aa54324b81ef9053362ef4e487fb7d923cce94a9c7c95a5",
+      "distinct_pixel_values": 565
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/63.tga",
+      "archive_offset": 14755920,
+      "packed_bytes": 1506,
+      "bytes": 4114,
+      "sha256": "3814a7a30e8990101411d650c1d477785406d0e1e106be6126635d5d3fde294e",
+      "distinct_pixel_values": 266
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/64.tga",
+      "archive_offset": 14757428,
+      "packed_bytes": 746,
+      "bytes": 4114,
+      "sha256": "799c38a3f592abb85beb5f9637973d41c9d5ebc5c38cdeb32722ea91bffcd725",
+      "distinct_pixel_values": 133
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/65.tga",
+      "archive_offset": 14758176,
+      "packed_bytes": 1038,
+      "bytes": 4114,
+      "sha256": "8dee74ad9fd30734d1fc75af328c3301770419cd1e4d037f6e0744fa6ae4cbde",
+      "distinct_pixel_values": 232
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/66.tga",
+      "archive_offset": 14759216,
+      "packed_bytes": 1411,
+      "bytes": 4114,
+      "sha256": "d02cf9d5f66bd0de8a589dd975673cc158d7dd9ebfa3ed831ca460db0bd22a39",
+      "distinct_pixel_values": 219
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/67.tga",
+      "archive_offset": 14760628,
+      "packed_bytes": 1728,
+      "bytes": 4114,
+      "sha256": "26057b10cca545d1a118fcccab40fd792da7f25944c9dfdf62e46720670c8557",
+      "distinct_pixel_values": 348
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/68.tga",
+      "archive_offset": 14762356,
+      "packed_bytes": 1685,
+      "bytes": 4114,
+      "sha256": "cc04380f7a1d413eec7b8112b8ea6b0a3d1e67b59a4c6702e121927ef66332e6",
+      "distinct_pixel_values": 388
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/69.tga",
+      "archive_offset": 14764044,
+      "packed_bytes": 1710,
+      "bytes": 4114,
+      "sha256": "12539670853bc3327099c8d5da169e48afe46dade9efba815aa109daee0f17c2",
+      "distinct_pixel_values": 404
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/7.tga",
+      "archive_offset": 14765756,
+      "packed_bytes": 1418,
+      "bytes": 4114,
+      "sha256": "21d0516cacac44e36730c9ce15f9adcf641007c5e62f283eea89d257e47c8839",
+      "distinct_pixel_values": 320
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/70.tga",
+      "archive_offset": 14767176,
+      "packed_bytes": 1316,
+      "bytes": 4114,
+      "sha256": "84b8349560e4da3b7d017d3bcc2a5c877961570a51c99f4e298edbe8d559d1f1",
+      "distinct_pixel_values": 197
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/71.tga",
+      "archive_offset": 14768492,
+      "packed_bytes": 1694,
+      "bytes": 4114,
+      "sha256": "862ff5114a9670d432c0040ed6d02f446133f39f684f1efd559b9f84da00ea4f",
+      "distinct_pixel_values": 395
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/72.tga",
+      "archive_offset": 14770188,
+      "packed_bytes": 512,
+      "bytes": 4114,
+      "sha256": "0872f9aacacfdd62808a140ada65d9cfe1d72d0d220f0f0613b529fdbb0798cb",
+      "distinct_pixel_values": 75
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/73.tga",
+      "archive_offset": 14770700,
+      "packed_bytes": 1195,
+      "bytes": 4114,
+      "sha256": "8fe3242d516a39a2d04cd0b0f1d7a4467bc0ce0d14c40c78df61c4274e2438af",
+      "distinct_pixel_values": 276
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/74.tga",
+      "archive_offset": 14771896,
+      "packed_bytes": 1576,
+      "bytes": 4114,
+      "sha256": "4abc789077372d27a4c5809c7c0bc1590b02db404efa68c32fa30aa2f6b65930",
+      "distinct_pixel_values": 318
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/75.tga",
+      "archive_offset": 14773472,
+      "packed_bytes": 1205,
+      "bytes": 4114,
+      "sha256": "83cf0c3a7a51bf216975478e81d7e20a7cbcf7bb3ba4f654915a5803f70438fb",
+      "distinct_pixel_values": 265
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/76.tga",
+      "archive_offset": 14774680,
+      "packed_bytes": 754,
+      "bytes": 4114,
+      "sha256": "63292ed1562142bb33cdfaf6f5d1777021ff0413a84ea16f777558cb56c54b12",
+      "distinct_pixel_values": 128
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/77.tga",
+      "archive_offset": 14775436,
+      "packed_bytes": 1797,
+      "bytes": 4114,
+      "sha256": "294791a35eec6afb834458a921d8c91b719d28d8ad41dafae81feb2e61412e3e",
+      "distinct_pixel_values": 316
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/78.tga",
+      "archive_offset": 14777236,
+      "packed_bytes": 1328,
+      "bytes": 4114,
+      "sha256": "bb5a4c60992146f0aa26e63e6085c38391ec80f6d6186e493d91f027c5671cb8",
+      "distinct_pixel_values": 224
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/79.tga",
+      "archive_offset": 14778564,
+      "packed_bytes": 1958,
+      "bytes": 4114,
+      "sha256": "9e50d6451e00574336dc3d6f8b1a9407fd077e40ec4446004c41beefb50d8a75",
+      "distinct_pixel_values": 474
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/8.tga",
+      "archive_offset": 14780524,
+      "packed_bytes": 1688,
+      "bytes": 4114,
+      "sha256": "b190d5da3362fa56752ed755b495fc0efaaba7488abc2ab22a6d524e232e6bbf",
+      "distinct_pixel_values": 368
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/80.tga",
+      "archive_offset": 14782212,
+      "packed_bytes": 884,
+      "bytes": 4114,
+      "sha256": "f3fc142edc67f418c448c255b4e6fcafcf2711d83dfe8b64c5b6d4f879aa6a4c",
+      "distinct_pixel_values": 148
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/81.tga",
+      "archive_offset": 14783096,
+      "packed_bytes": 789,
+      "bytes": 4114,
+      "sha256": "4ca7450137de6edf001e197a1ea685dcc2c8476304e64a9e7756197819ee0875",
+      "distinct_pixel_values": 113
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/82.tga",
+      "archive_offset": 14783888,
+      "packed_bytes": 1473,
+      "bytes": 4114,
+      "sha256": "b86156f7b2c4ab46b3941dd84f4a8ff76cdcbec96036f8007f8ab3996b71d431",
+      "distinct_pixel_values": 231
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/83.tga",
+      "archive_offset": 14785364,
+      "packed_bytes": 1653,
+      "bytes": 4114,
+      "sha256": "6043157be07f1cfaca0323fda162c2f2e21a69296cd631dd08b949e18311177d",
+      "distinct_pixel_values": 356
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/84.tga",
+      "archive_offset": 14787020,
+      "packed_bytes": 1630,
+      "bytes": 4114,
+      "sha256": "af6cca7eaeba0784c885ae67ffc5b7a5ddd533e51f21370f9325e292ae566d95",
+      "distinct_pixel_values": 376
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/85.tga",
+      "archive_offset": 14788652,
+      "packed_bytes": 778,
+      "bytes": 4114,
+      "sha256": "190290fc3fa229e6a4b87fc26fc3fa43ae3a5b1e85fc80294913b715252de79e",
+      "distinct_pixel_values": 128
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/86.tga",
+      "archive_offset": 14789432,
+      "packed_bytes": 761,
+      "bytes": 4114,
+      "sha256": "d39abae3b4d3a100436bbb623175ecefeec4421c3cd15be12409caa7addd7566",
+      "distinct_pixel_values": 127
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/87.tga",
+      "archive_offset": 14790196,
+      "packed_bytes": 1362,
+      "bytes": 4114,
+      "sha256": "304701e30542f8b70d877871259fb915e6d7cb95e2fafd84024ba92b83afd14d",
+      "distinct_pixel_values": 303
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/88.tga",
+      "archive_offset": 14791560,
+      "packed_bytes": 1317,
+      "bytes": 4114,
+      "sha256": "fb067e81a785091fce9f56ff3205f548d08f2aecce926d9caf9c9b7af99c1d2f",
+      "distinct_pixel_values": 312
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/89.tga",
+      "archive_offset": 14792880,
+      "packed_bytes": 1816,
+      "bytes": 4114,
+      "sha256": "4b89506ecebb51b56fcb5005b281fa8809e810cf3116c5ca861cfbb5a7ed3758",
+      "distinct_pixel_values": 423
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/9.tga",
+      "archive_offset": 14794696,
+      "packed_bytes": 479,
+      "bytes": 4114,
+      "sha256": "17802b2bf84c1a33a6d09dc1e4b09191717d6a617864fad6a3fd4048eda117dc",
+      "distinct_pixel_values": 68
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/90.tga",
+      "archive_offset": 14795176,
+      "packed_bytes": 1075,
+      "bytes": 4114,
+      "sha256": "9cb46ce957a9b47e68d39e151f24098b06ce8106cefc7cf11ef0c71938613cd5",
+      "distinct_pixel_values": 160
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/91.tga",
+      "archive_offset": 14796252,
+      "packed_bytes": 1949,
+      "bytes": 4114,
+      "sha256": "1e021075e9957cee85e2ede9bf6b58150871bcce15858b60b744fdd75ad525f3",
+      "distinct_pixel_values": 437
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/92.tga",
+      "archive_offset": 14798204,
+      "packed_bytes": 749,
+      "bytes": 4114,
+      "sha256": "4392640d346f7cfba186b15312986cd55fee3489039d0e9bc8b9291ec292d079",
+      "distinct_pixel_values": 114
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/93.tga",
+      "archive_offset": 14798956,
+      "packed_bytes": 1573,
+      "bytes": 4114,
+      "sha256": "1bce748e44b64aa8b32bd055062051259411e367fc35f5cb5c3c7c14642631c8",
+      "distinct_pixel_values": 336
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/94.tga",
+      "archive_offset": 14800532,
+      "packed_bytes": 1562,
+      "bytes": 4114,
+      "sha256": "685e4a1925ebd392e89db46286b1135ffd6266c60c03abfecdbdde992bfe91cc",
+      "distinct_pixel_values": 359
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/95.tga",
+      "archive_offset": 14802096,
+      "packed_bytes": 1122,
+      "bytes": 4114,
+      "sha256": "afe124f6bfc14bc8a1eb24760a6c6ac87c2dbc2ebc1532da20cd47189f8e15ad",
+      "distinct_pixel_values": 238
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/96.tga",
+      "archive_offset": 14803220,
+      "packed_bytes": 1724,
+      "bytes": 4114,
+      "sha256": "d0466758a359cb88cd5458278cb77cd6c332dc499433aebd51cd138fe025a325",
+      "distinct_pixel_values": 378
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/97.tga",
+      "archive_offset": 14804944,
+      "packed_bytes": 1360,
+      "bytes": 4114,
+      "sha256": "ce4c56e4c22b8d468774fa69fb86ecacd102fc820b21a0091322aaf697b225cd",
+      "distinct_pixel_values": 310
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/98.tga",
+      "archive_offset": 14806304,
+      "packed_bytes": 966,
+      "bytes": 4114,
+      "sha256": "10188d8e8c75622947bcd0bd2f9c56dfbc5a7de963a54901f234224cb4112349",
+      "distinct_pixel_values": 182
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/99.tga",
+      "archive_offset": 14807272,
+      "packed_bytes": 1147,
+      "bytes": 4114,
+      "sha256": "fa91b696bd359bebd8aca27d461b3245fba908c4de012ff5bfda660d35c150ce",
+      "distinct_pixel_values": 265
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/F9090000.tga",
+      "archive_offset": 14809220,
+      "packed_bytes": 2036,
+      "bytes": 4114,
+      "sha256": "fb6585539c6e92181e828f07feadf039fd5c1e43cbcaf1f39f2640fc31f7a94d",
+      "distinct_pixel_values": 454
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/F90A0000.tga",
+      "archive_offset": 14811256,
+      "packed_bytes": 1511,
+      "bytes": 4114,
+      "sha256": "53797c6e8c0b4844fa4d7e9d491c5e0c7d979bb82e185145b281a09eb82c81b6",
+      "distinct_pixel_values": 211
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FA090000.tga",
+      "archive_offset": 14812768,
+      "packed_bytes": 2036,
+      "bytes": 4114,
+      "sha256": "fb6585539c6e92181e828f07feadf039fd5c1e43cbcaf1f39f2640fc31f7a94d",
+      "distinct_pixel_values": 454
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FA0C0000.tga",
+      "archive_offset": 14814804,
+      "packed_bytes": 1511,
+      "bytes": 4114,
+      "sha256": "53797c6e8c0b4844fa4d7e9d491c5e0c7d979bb82e185145b281a09eb82c81b6",
+      "distinct_pixel_values": 211
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FB090000.tga",
+      "archive_offset": 14816316,
+      "packed_bytes": 2036,
+      "bytes": 4114,
+      "sha256": "fb6585539c6e92181e828f07feadf039fd5c1e43cbcaf1f39f2640fc31f7a94d",
+      "distinct_pixel_values": 454
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FC090000.tga",
+      "archive_offset": 14818352,
+      "packed_bytes": 2036,
+      "bytes": 4114,
+      "sha256": "fb6585539c6e92181e828f07feadf039fd5c1e43cbcaf1f39f2640fc31f7a94d",
+      "distinct_pixel_values": 454
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FD090000.tga",
+      "archive_offset": 14820388,
+      "packed_bytes": 2036,
+      "bytes": 4114,
+      "sha256": "fb6585539c6e92181e828f07feadf039fd5c1e43cbcaf1f39f2640fc31f7a94d",
+      "distinct_pixel_values": 454
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FD0A0000.tga",
+      "archive_offset": 14822424,
+      "packed_bytes": 1511,
+      "bytes": 4114,
+      "sha256": "53797c6e8c0b4844fa4d7e9d491c5e0c7d979bb82e185145b281a09eb82c81b6",
+      "distinct_pixel_values": 211
+    },
+    {
+      "path": "art/Lib/CountryFlags/32x32/FE090000.tga",
+      "archive_offset": 14823936,
+      "packed_bytes": 2036,
+      "bytes": 4114,
+      "sha256": "fb6585539c6e92181e828f07feadf039fd5c1e43cbcaf1f39f2640fc31f7a94d",
+      "distinct_pixel_values": 454
+    }
+  ],
+  "preserved_existing_files": [
+    {
+      "path": "art/Lib/CountryFlags/32x32/basque.tga",
+      "sha256": "00614d7ab572a6349f2ca8017c5443805b5d5fcfe0280331566254f68732ea81"
+    }
+  ],
+  "operator_retest": {
+    "at": "2026-09-12T15:34:54.474752+02:00",
+    "statement": "Flaggen Bug und Scroll Bug sind behoben, nur ist das Scrollen nicht smooth das ist bisschen hart",
+    "flags_visible_reported": true,
+    "scroll_endpoint_snap_resolved_reported": true,
+    "remaining_observation": "Scrolling still feels coarse rather than smooth",
+    "independent_screenshot_pending": false,
+    "causal_attribution": "Not isolated: loose flag recovery and windowed restart were tested together."
+  },
+  "visual_evidence": "runtime-smoke-native07-20260912-04-evidence/15-club-selection-flags-after-fix.jpg",
+  "scroll_resolution": "User explicitly confirmed the built-in IM_USING_A_TOUCHPAD option also fixed two-finger scrolling; no binary patch."
+}

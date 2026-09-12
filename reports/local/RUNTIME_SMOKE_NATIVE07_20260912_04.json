@@ -1,0 +1,402 @@
+{
+  "phase": "milestone_complete",
+  "status": "PASS_NATIVE07_ISOLATED_EXPORT_NEW_2026_27_CAREER_AND_SAVE_RELOAD",
+  "observed_at": "2026-09-12T14:53:42.4898171+02:00",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07",
+  "editor_window": {
+    "id": 590982,
+    "app": "process:C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\EdManager.exe",
+    "title": "FUSSBALL MANAGER 2026 EDITOR - September Datenbank (01.09.2025) - Season 2026/2027 (TheSeason.v2)",
+    "unique_runtime07_editor_window_count": 1,
+    "original_editor_or_manager_window_observed": false
+  },
+  "native07_ui_record": {
+    "name": "Jovane Cabral",
+    "date_of_birth": "14.06.1998",
+    "club_observed": "Gr\u00c3\u00aamio Porto Alegre",
+    "primary_position": "LA",
+    "primary_strength": 71,
+    "shirt_number": 77,
+    "contract_year": 2027,
+    "nationalities": [
+      "Kap Verde",
+      "Portugal"
+    ],
+    "candidate_fm_id": 287889,
+    "candidate_club_id": 3538956,
+    "candidate_row": "native_players.csv: 287889,244193,3538956,Jovane Cabral,14.06.1998,LW,RunsChannels,71,RunsChannels,71",
+    "candidate_rating_prefix": [
+      77,
+      72,
+      64,
+      71,
+      71,
+      71,
+      70,
+      57,
+      68,
+      52,
+      62,
+      62,
+      52,
+      80,
+      78,
+      67,
+      41,
+      70,
+      70,
+      73
+    ],
+    "visible_rating_values_match": true,
+    "baseline_difference": {
+      "club": "CF Estrela Amadora",
+      "contract_end": "2026-06-30",
+      "shirt_number": 11
+    },
+    "native07_specific_combination_proven": true,
+    "basis": "The same DOB/identity appears in the bound baseline at CF Estrela with contract 2026 and shirt 11, while the isolated Runtime07 UI shows Gr\u00c3\u00aamio, contract 2027, shirt 77, and the candidate attribute profile."
+  },
+  "pre_export_target_state": {
+    "runtime_master": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\database\\Master.dat",
+    "runtime_master_exists": false,
+    "season_ini_observation": "SEASON_START_YEAR 2026",
+    "decision": "PROCEED_WITH_OPERATOR_EXPORT_IN_VERIFIED_RUNTIME07_EDITOR_ONLY"
+  },
+  "original_master_baseline": {
+    "path": "C:\\Fifa Manager 13\\FUSSBALL MANAGER 13\\database\\Master.dat",
+    "bytes": 72159865,
+    "sha256": "ebd4d4bde97b6c29c19bae11b56ffab0040f50e86e4e452ba671b964de4981b8",
+    "last_write_time_utc": "2026-06-15T09:21:19.3363470Z",
+    "unchanged_vs_preflight": true
+  },
+  "editor_export": {
+    "operator_observation": "Runtime07 Editor displayed 'Datenbank gespeichert!' after the 125-country confirmation.",
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\database\\Master.dat",
+    "bytes": 71966494,
+    "sha256": "2c507e3d6e725cd36d0920f881dc4fbcfc954b8c4e413069621bd8002d931333",
+    "creation_time_utc": "2026-09-12T12:57:40.7660446Z",
+    "last_write_time_utc": "2026-09-12T12:57:47.5022268Z",
+    "original_master_remained_unchanged": true
+  },
+  "evidence": {
+    "directory": "C:\\FM27CommunityOverhaul\\reports\\local\\runtime-smoke-native07-20260912-04-evidence",
+    "observer_source": "operator screenshots supplied in the task plus read-only candidate/baseline comparison",
+    "files": [
+      {
+        "name": "01-runtime-editor-main.png",
+        "sha256": "deda83f83f2f1e7a6c0140d390369b0dd949401df69716790d6394d5df296ea1"
+      },
+      {
+        "name": "02-player-search-dialog.png",
+        "sha256": "68cc1ce066a6e20362f18f9cb5b8ab97d72a92cc619701bd94d1ed0e9cde33d9"
+      },
+      {
+        "name": "03-jovane-search-result.png",
+        "sha256": "d1f49625b3ed8ae5005569e1b8df07541c74a8450dc446ebec85ba697122cb1e"
+      },
+      {
+        "name": "04-jovane-general.png",
+        "sha256": "60f8512508a11c595d36082f49e2507013e6fff3a9924dc5fe511851f6c6050b"
+      },
+      {
+        "name": "05-jovane-attributes.png",
+        "sha256": "f735c9b919f99ace494771dbb8092aa9eee7869d34951e8fe7091c4a8bec1797"
+      },
+      {
+        "name": "06-jovane-contract.png",
+        "sha256": "53e778978bee1471bd320f441facf0d32ab14a7816320656fe97f91d2a9a5be0"
+      },
+      {
+        "name": "07-export-country-confirmation.png",
+        "sha256": "79202fa4edcba21aa861ea85a99daec541ee34c41a2851ff082dc2e610791e0d"
+      },
+      {
+        "name": "08-export-complete.png",
+        "sha256": "d32df0d636fd9503dced251e605b0ac6534959465c7a3dd7d58725a561319694"
+      },
+      {
+        "name": "09-manager-main-menu.jpg",
+        "sha256": "46491735261b4fd67fd87ddb66807939bbdbdcb5719256c80943697c6828d065"
+      },
+      {
+        "name": "10-career-standard-mode.jpg",
+        "sha256": "94877c30d1adbf1946e248e59bf83ac682931fb9edb1c06de1315f620b2113e5"
+      },
+      {
+        "name": "11-database-dropdown-initial.jpg",
+        "sha256": "bc3c5cef54ac0d393b28ca8ba9b00f8255f9fd77b906a451558a8f3910d20d64"
+      },
+      {
+        "name": "12-database-editor-selection.jpg",
+        "sha256": "3862ff09a7505cdb6fb8431bee07c7a28ad5c19ef41a5591e55135998f8f49f8"
+      },
+      {
+        "name": "13-country-selection-scroll-and-flags-before-fix.jpg",
+        "sha256": "d39e1709ff15033946354909084908d1a964a52d9497b94cd1332145d9f52cee"
+      },
+      {
+        "name": "14-manager-selection.jpg",
+        "sha256": "026e317b3477fcf572a488098eca7adf1f0c70abfcec2f4b39080ffb9fb3ca03"
+      },
+      {
+        "name": "15-club-selection-flags-after-fix.jpg",
+        "sha256": "03d6ee46bd3d0d0dbcc61f42e1aa6893ebc8beb1a705f43afeb64e6d15c2d86a"
+      },
+      {
+        "name": "16-career-newscenter-2026-07-01.jpg",
+        "sha256": "68bad902998ffcbe1ef632f2a6c9518e3fb9b97f2deec2960c8f2aea0d8bbae2"
+      },
+      {
+        "name": "17-save-load-native07-smoke.jpg",
+        "sha256": "25c058bb2f348b26571b1e1405f63be16883f62040d62b61f5b5da16647b754e"
+      }
+    ]
+  },
+  "computer_use_limit": {
+    "capture_error": "SetIsBorderRequired failed: Schnittstelle nicht unterst\u00c3\u00bctzt (0x80004002)",
+    "accessibility_only_available": true,
+    "operator_assistance_required_for_visual_clicks": true
+  },
+  "save_context": {
+    "shared_directory": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames",
+    "existing_file_count": 15,
+    "baseline_backup_directory": "C:\\FM27CommunityOverhaul\\reports\\local\\runtime-smoke-native07-20260912-04-evidence\\save-baseline",
+    "baseline_backup_all_hash_equal": true,
+    "required_unique_test_save_name": "Native07-Smoke-20260912",
+    "existing_saves_must_remain_hash_equal": true,
+    "autosave_must_be_disabled_before_time_advance": true,
+    "strict_separate_save_path_proven": false,
+    "post_career_start_readonly_comparison": {
+      "checked_file_count": 15,
+      "unchanged_file_count": 14,
+      "modified_file_count": 1,
+      "new_file_count": 1,
+      "modified_file": "quickstart.ea",
+      "baseline_sha256": "748da0343b983c5b69d0eef25246951722b4f594de09be189b3bb4be3e692032",
+      "current_sha256": "9705dda34650157e59243adeadabefda5bc14eeaffebca6e0b8741e655b240ce",
+      "current_bytes": 110981608,
+      "current_last_write_utc": "2026-09-12T13:41:21.6352533Z",
+      "new_file": "Native07-Smoke-20260912.ea",
+      "interpretation": "The game modified the pre-existing shared quickstart.ea during career creation and created the uniquely named smoke save. No restore, deletion, or rename was performed by this task; cleanup is owned by the parent task."
+    }
+  },
+  "manager_launch": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\Manager.exe",
+    "working_directory": "C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07",
+    "pid_at_launch": 8696,
+    "sky_window_id": 853456,
+    "sky_app": "process:C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\Manager.exe",
+    "title": "Fussball Manager 2026 1.1.0",
+    "capture_error": "no screenshot targets found for process:C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\Manager.exe",
+    "new_career_pending": true
+  },
+  "new_career_setup": {
+    "mode": "Standardmodus",
+    "club_ownership_enabled": true,
+    "staff_enabled": true,
+    "strength_stars_enabled": true,
+    "selected_database_label": "September Datenbank (01.09.2025)",
+    "use_database_from_editor_checked": true,
+    "transfer_restriction": "uneingeschr\u00c3\u00a4nkt",
+    "future_transfers_enabled": true,
+    "randomize_talents_enabled": false,
+    "real_salaries_enabled": false,
+    "country_selection_pending": false,
+    "career_start_completed": true,
+    "observed_career_date": "Wednesday 2026-07-01",
+    "observed_native07_ingame_identity": null,
+    "interpretation_limit": "UI branding 2026 and database label 01.09.2025 do not by themselves prove the actual career season or date."
+  },
+  "career_started_observation": {
+    "status": "OBSERVED",
+    "screen": "Newscenter",
+    "manager": "Marek Wrona",
+    "club": "1. FC Koeln",
+    "displayed_date": "Mi 01.07.2026",
+    "displayed_month_year": "Juli 2026",
+    "unread_items": 7,
+    "displayed_cash": "57 Mio.",
+    "national_team_selection": "skipped by operator",
+    "evidence": "16-career-newscenter-2026-07-01.jpg",
+    "native07_unique_ingame_record_observed": false,
+    "limitation": "A Native07-unique player record was not observed in game. Acceptance is grounded in the Native07-specific Editor record, the checked 'Verwende Datenbank aus dem Editor' setup, the isolated Runtime07 Master.dat, and the observed career save/reload."
+  },
+  "save_reload_observation": {
+    "status": "PASS_OBSERVED",
+    "save_path": "C:\\Users\\Matej Uni\\Documents\\FM\\Data\\SaveGames\\Native07-Smoke-20260912.ea",
+    "save_bytes": 110980876,
+    "save_sha256": "32117f2b8a30c3f97080658943004fdca46a49e877ae7058db23e1790fc21de8",
+    "save_creation_utc": "2026-09-12T13:44:09.2419523Z",
+    "save_last_write_utc": "2026-09-12T13:44:25.5950195Z",
+    "load_screen_evidence": {
+      "file": "17-save-load-native07-smoke.jpg",
+      "selected_save": "Native07-Smoke-20260912.ea",
+      "displayed_saved_at": "12.09. 15:44",
+      "displayed_date": "Mi 01.07.2026",
+      "displayed_manager": "Wrona M.",
+      "displayed_club": "FC Koeln",
+      "state": "Spiel wird geladen"
+    },
+    "post_reload_observation": {
+      "source": "inline app screenshot; no local file path supplied",
+      "app": "process:C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\Manager.exe",
+      "timestamp": "2026-09-12T13:46:14.728Z",
+      "state": "load complete",
+      "screen": "Newscenter",
+      "club": "1. FC Koeln",
+      "manager": "Marek Wrona",
+      "date": "01.07.2026",
+      "unread_items": 7,
+      "cash": "57 Mio.",
+      "same_visible_news_item": "Jamaal Lascelles offer"
+    },
+    "existing_save_integrity": {
+      "baseline_files": 15,
+      "unchanged": 14,
+      "modified": [
+        "quickstart.ea"
+      ],
+      "missing": 0,
+      "cleanup_pending": false,
+      "restored_after_test": [
+        "quickstart.ea"
+      ],
+      "unchanged_after_cleanup": 15
+    }
+  },
+  "country_selection_ui_findings": {
+    "observed_problem": "Country flags render as white squares and the scrollbar thumb moves while dragged but jumps to the top or bottom when released with the laptop touchpad.",
+    "scroll_root_cause_status": "For the reproduced laptop two-finger/drag behavior, the immediate cause was the built-in touchpad compatibility option being disabled: the operator observed the bug recur, enabled 'Ich benutze ein Touchpad', and then explicitly confirmed that this option fixed it. No new hook-level cause or code change is claimed.",
+    "native07_causation_status": "Not established. Byte equality only rules out copy-induced binary differences between the compared Runtime07 and original files; it does not prove Native07 independence.",
+    "byte_equal_runtime_vs_original": [
+      "Manager.exe",
+      "plugins/UniversalConverterProject.Main.asi",
+      "config.big",
+      "dinput.dll",
+      "dinput8.dll",
+      "d3d9.dll",
+      "colors.xml",
+      "fonts.xml",
+      "guicolors.txt"
+    ],
+    "resource_scope": "config.big contains gameplay INIs only; art_gui archives expose scrollbar skins but no scroll range, layout, or release-event definition.",
+    "dpi_status": "No obvious Runtime07/original mismatch found: both Manager paths have identical HIGHDPIAWARE compatibility flags and the desktop reports default 96-DPI/100-percent scaling. A live window-mode A/B is still pending.",
+    "documented_options": {
+      "shared_ucp_ini": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ucp.ini",
+      "current_windowed_value": false,
+      "windowed_parameter": "WINDOWED = TRUE",
+      "restart_required_evidence": "Runtime translation IDS_WINDOWMODE_CHANGE states that the change takes effect on the next game start.",
+      "touchpad_option_evidence": "Runtime translation exposes IDS_IM_USING_A_TOUCHPAD (German: Ich benutze ein Touchpad), so an in-game touchpad option exists; its stored key was not identified in the bounded inspection."
+    },
+    "safe_fix_status": {
+      "flags": "Runtime-only loose 32x32 assets were applied by the parent task and operator-reported as effective after restart.",
+      "scrolling": "The built-in 'Ich benutze ein Touchpad' option is operator-confirmed to fix the reproduced two-finger/end-snap behavior. Scrolling remains somewhat non-smooth."
+    },
+    "bounded_retest": "After a regular game exit, back up the 53-byte shared ucp.ini, set WINDOWED = TRUE reversibly, restart the Runtime07 Manager from the Runtime07 working directory, and retest touchpad thumb release plus the in-game touchpad option. Restore the original ucp.ini value after the test if the file is otherwise unchanged.",
+    "windowed_retest_runtime_binding": {
+      "status": "PASS_PATH_BINDING_AND_OPERATOR_UI_RETEST",
+      "observed_app": "process:C:\\FM27CommunityOverhaul\\runtime\\game-test-20260912-07\\Manager.exe",
+      "observed_window_id": 3607590,
+      "observed_title": "Fussball Manager 2026 1.1.0",
+      "window_inventory_count_for_manager": 1,
+      "screenshot_attempt_count": 1,
+      "screenshot_result": "SetIsBorderRequired failed: Schnittstelle nicht unterst\u00c3\u00bctzt (0x80004002)",
+      "automation_stopped_after_known_capture_failure": true
+    },
+    "flag_fix_owned_by_parent": true,
+    "combined_retest_outcome": {
+      "observer": "operator",
+      "operator_report_sequence": [
+        "After the combined restart the operator initially reported both flag and scroll bugs fixed, with scrolling still somewhat hard.",
+        "The two-finger scroll bug then recurred.",
+        "After enabling 'Ich benutze ein Touchpad', the operator explicitly reported: 'Also die Option hat es behoben'."
+      ],
+      "white_flag_placeholders": "fixed_after_restart",
+      "scrollbar_release_end_snap": "fixed_after_enabling_builtin_touchpad_option",
+      "residual": "Scrolling remains non-smooth / somewhat hard.",
+      "historical_context": "Operator reports that the same end-snap behavior was already observed in the earlier FM26 build.",
+      "attribution": "The operator-confirmed scroll fix is the built-in touchpad option. The correct flag rendering is corroborated after restart, but the retest does not isolate the asset-cache/restart contribution from window mode.",
+      "visual_flag_evidence": "15-club-selection-flags-after-fix.jpg visibly shows correct country flags for Argentina, Brazil, Germany, England, and other countries on the club-selection screen.",
+      "career_selection_context": "Manager Marek Wrona; Germany; Bundesliga; 1. FC Koeln selected."
+    },
+    "visual_retest_pending": false
+  },
+  "export_performed": true,
+  "game_started": true,
+  "save_reload_tested": true,
+  "release_ready": false,
+  "cleanup": {
+    "status": "PASS",
+    "at": "2026-09-12T15:50:55.269500+02:00",
+    "manager_closed_confirmed": true,
+    "quickstart_restored_from_verified_backup": true,
+    "existing_saves_equal_to_pretest_backup": [
+      {
+        "name": "2026.ea",
+        "matches": true
+      },
+      {
+        "name": "Auto.ea",
+        "matches": true
+      },
+      {
+        "name": "Auto1.ea",
+        "matches": true
+      },
+      {
+        "name": "Auto2.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 01.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 02.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 03.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 04.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 05.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 06.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 07.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 08.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 09.ea",
+        "matches": true
+      },
+      {
+        "name": "quicksave 10.ea",
+        "matches": true
+      },
+      {
+        "name": "quickstart.ea",
+        "matches": true
+      }
+    ],
+    "unique_smoke_save_preserved": true,
+    "unique_smoke_save_sha256": "32117f2b8a30c3f97080658943004fdca46a49e877ae7058db23e1790fc21de8",
+    "windowed_setting_restored": true,
+    "touchpad_setting_preserved": true,
+    "original_master_sha256": "ebd4d4bde97b6c29c19bae11b56ffab0040f50e86e4e452ba671b964de4981b8",
+    "runtime_master_sha256": "2c507e3d6e725cd36d0920f881dc4fbcfc954b8c4e413069621bd8002d931333"
+  }
+}

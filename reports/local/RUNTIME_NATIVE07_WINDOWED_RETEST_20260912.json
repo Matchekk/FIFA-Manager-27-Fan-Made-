@@ -1,0 +1,26 @@
+{
+  "status": "PASS_WINDOWED_SMOKE_AND_SHARED_SETTING_RESTORED",
+  "at": "2026-09-12T15:32:44.039445+02:00",
+  "config": "C:\\Users\\Matej Uni\\Documents\\FM\\Config\\ucp.ini",
+  "backup": "C:\\FM27CommunityOverhaul\\reports\\local\\runtime-smoke-native07-20260912-04-evidence\\ucp-before-windowed.ini",
+  "before_sha256": "2e687150bd887148738226b8f39240ea8df01ca91b17ec31a3d17c0ccdb646ae",
+  "after_sha256": "975921f2d2e7bcd9ea472ba7065b986d5e9326b72677ebc139bbf93df1c09927",
+  "restore_pending": false,
+  "restore_rule": "Restore backup after test if config still equals after_sha256; otherwise preserve unrelated edits and restore only WINDOWED value after review.",
+  "flags_visual_retest_pending": false,
+  "scroll_visual_retest_pending": false,
+  "operator_retest": {
+    "at": "2026-09-12T15:34:54.545114+02:00",
+    "statement": "Flaggen Bug und Scroll Bug sind behoben, nur ist das Scrollen nicht smooth das ist bisschen hart",
+    "flags_visible_reported": true,
+    "scroll_endpoint_snap_resolved_reported": true,
+    "remaining_observation": "Scrolling still feels coarse rather than smooth",
+    "independent_screenshot_pending": true,
+    "causal_attribution": "Not isolated: loose flag recovery and windowed restart were tested together."
+  },
+  "restored_at": "2026-09-12T15:50:55.269500+02:00",
+  "restored_sha256": "c57eeda7836fb3d4a94416c5fd32f6846a0a2a6d872b2b6b60256fc3b1726fb9",
+  "restore_method": "Restored only WINDOWED=FALSE; preserved game-written USE_EDITOR_DATABASE=TRUE and IM_USING_A_TOUCHPAD=TRUE. Game had removed WINDOWED key on exit.",
+  "touchpad_option_confirmed": true,
+  "fullscreen_retest_after_restoration": false
+}

@@ -1,4 +1,4 @@
-# FM27 Community Overhaul — Project State
+# FM27 Community Overhaul â€” Project State
 
 Updated: 2026-09-12 UTC
 
@@ -28,15 +28,33 @@ independently reread and verified. The authoritative summary is
 
 ## Runtime and Data Work in Progress
 
-Runtime07 is copied and bound to an isolated working directory. Static routing proves
-that the copied Editor would export `Master.dat` inside that runtime. The launch stopped
-before Editor input because the administrator consent surface was not targetable; an
-operator must close the original apps, start `runtime/START_NATIVE07_EDITOR_SAFE.cmd`,
-and approve the single constrained UAC prompt. Before export, the exact Runtime07 Editor
-process, native07-specific data, and absent runtime `Master.dat` must be checked together;
-the ASI route remains conditional. No original installation file was changed. See
-`reports/local/RUNTIME_SMOKE_NATIVE07_BLOCKED_20260912_01.json` and
-`reports/local/RUNTIME_EDITOR_ASI_ROUTE_20260912_02.json`.
+Runtime07 Editor export was observed on 12 September 2026. Its exact isolated process
+path and Native07-only Jovane Cabral record (GrÃªmio, shirt 77, contract 2027) were
+verified before export while runtime Master.dat was absent. Operator screenshots show
+the 125-country initialization notice and final "Datenbank gespeichert!" confirmation.
+The exported `runtime/game-test-20260912-07/database/Master.dat` has 71,966,494 bytes,
+SHA-256 `2c507e3d6e725cd36d0920f881dc4fbcfc954b8c4e413069621bd8002d931333`.
+The original installation Master.dat hash is unchanged. Evidence and remaining smoke
+steps: `reports/local/RUNTIME_SMOKE_NATIVE07_20260912_04.json`.
+The new career and reload were observed with Marek Wrona at 1. FC KÃ¶ln on 01.07.2026,
+7 unread messages and 57.0 million cash before and after reload. The uniquely named
+Native07-Smoke-20260912.ea exists (110,980,876 bytes; SHA-256
+32117f2b8a30c3f97080658943004fdca46a49e877ae7058db23e1790fc21de8).
+This bounded Editor/export/career/save-reload milestone is PASS; the full release is not.
+Computer-use screenshot capture failed, so the Editor UI observations use operator
+screenshots combined with independently observed process paths and filesystem checks.
+
+The country-selection UI faults were resolved in the observed test context. Existing
+32px archive flags were recovered as loose assets in Runtime07; after a windowed
+restart the operator confirmed flags, also visible in the club-selection screenshot.
+The pre-existing FM26 touchpad scroll fault was resolved by the game's own
+"Ich benutze ein Touchpad" option (explicit operator confirmation). No input hook was
+added. Loose-flag versus restart causality was not tested separately. The shared
+WINDOWED preference was restored, along with the automatically overwritten
+quickstart.ea. All 15 pre-existing saves match their pretest backups; the new Native07
+save and enabled touchpad option remain. The completed smoke ran in windowed mode;
+fullscreen after restoration was not retested. Native07 was identified in the Editor
+and selected for career creation; no separate in-game Cabral record was inspected.
 
 The separate 12 September EA capture identified 149 exact existing-native identities for
 rating review. Another 86 records remain holds because native identity is unresolved or
@@ -54,10 +72,7 @@ start from the still-held rows in review05 after subtracting aliases already pre
 
 ## Open Release Gates
 
-- Operator-approved isolated Editor export and verification that Runtime07 receives the
-  exported database.
-- New-career start, save/reload, and season-transition observations against the isolated
-  runtime.
+- Season-transition observation against the isolated runtime (later milestone).
 - Remaining football-data work, beginning with the bounded Belgium package.
 - Remaining prior-season origin-club rows from review05, excluding aliases already applied;
   the 12 September correction-only origin review is not an integration input.
@@ -66,11 +81,8 @@ start from the still-held rows in review05 after subtracting aliases already pre
 
 ## Next Concrete Work
 
-1. In a fresh primary thread, have an operator approve the constrained Runtime07 Editor
-   UAC prompt from `runtime/START_NATIVE07_EDITOR_SAFE.cmd`; verify the exact process,
-   native07 data, and missing runtime `Master.dat` before export. Then export only to the
-   isolated runtime, start a new 2026/27 career, and run save/reload checks. Original
-   Manager and Editor windows are not valid Runtime07 targets.
+1. Native07 runtime milestone is complete. End this task after committing its selected
+   evidence and fixes; use a fresh task for the next data or release gate.
 2. Integrate and reconcile the Jahnilo draft, then prepare its native08 plan row without
    launching a one-player native build.
 3. Build the 149-player EA rating-review package and keep the 86 unresolved cases held.
