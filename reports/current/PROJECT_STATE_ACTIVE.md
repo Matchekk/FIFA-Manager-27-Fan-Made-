@@ -3,6 +3,23 @@
 Updated 2026-09-13; football evidence snapshot 2026-09-12. Active production sprint:
 complete the 2026/27 football database.
 
+## Active implementation-only directive
+
+No football web research. Football facts and resolved identities are supplied
+externally in `FM27_RESOLVED_REVIEW_QUEUE.csv` and associated resolved manifests.
+These supersede older source-research tasks and policy holds where explicitly resolved.
+Import decisions exactly: APPLY implements the supplied state; KEEP_EXISTING makes
+no football-data change; CREATE uses supplied player/identity data; NONBLOCKING
+removes the row from release-blocking coverage; ESCALATE_TECHNICAL investigates
+only the implementation conflict. Reopen resolved rows only for concrete native
+identity/reference/condition/serialization/invariant conflicts, reporting the exact
+failure. Do not reopen confirmed identities or reinterpret football facts.
+After import: deterministic deltas, coverage rebuild, frozen plan, native write and
+reread, semantic diff, regression tests, candidate, technical-blocker report.
+Input discovery: the named resolved queue/manifests are not yet present in the
+project, supplied workspace roots, or top-level Downloads/Desktop/Documents.
+Await the supplied artifact location; do not substitute older unresolved queues.
+
 ## Accepted foundation
 
 Native08 accepted base: `data/generated/release-candidate/native08-integrated-20260912-01/database`.
