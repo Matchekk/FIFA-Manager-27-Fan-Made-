@@ -15,6 +15,9 @@ constexpr std::uintptr_t kRefreshRva         = 0x4FD3C0;
 constexpr std::uintptr_t kTranslateRva       = 0x10A9B78;
 constexpr std::uintptr_t kShowDialogRva      = 0x9392F0;
 constexpr std::uintptr_t kTranslationMgrRva  = 0x2DE3FA8;
+constexpr std::uintptr_t kGetWorldRva        = 0x15100;
+constexpr std::uintptr_t kLeagueCountRva     = 0xBD6ED0;
+constexpr int kLastCountryId = 207;
 
 constexpr unsigned char kExpectedHandler[] = {
     0x56, 0x8B, 0xF1, 0x8B, 0x86, 0xB8, 0x04, 0x00,
@@ -28,6 +31,8 @@ using ExecuteOfferFn = int (__thiscall *)(void*, std::uint32_t*);
 using RefreshFn = void (__thiscall *)(void*);
 using TranslateFn = void* (__thiscall *)(void*, const char*);
 using ShowDialogFn = int (__cdecl *)(void*, void*, int, void*, int, int);
+using GetWorldFn = void* (__cdecl *)();
+using LeagueCountFn = int (__thiscall *)(void*, bool);
 
 HMODULE g_module = nullptr;
 std::uintptr_t g_game_base = 0;
@@ -77,24 +82,48 @@ void RunOfferAll(void* self) {
     auto validate = reinterpret_cast<ValidateClubFn>(g_game_base + kValidateClubRva);
     auto execute = reinterpret_cast<ExecuteOfferFn>(g_game_base + kExecuteOfferRva);
     auto refresh = reinterpret_cast<RefreshFn>(g_game_base + kRefreshRva);
+    auto get_world = reinterpret_cast<GetWorldFn>(g_game_base + kGetWorldRva);
+    auto league_count = reinterpret_cast<LeagueCountFn>(g_game_base + kLeagueCountRva);
     void* list = reinterpret_cast<void*>(reinterpret_cast<unsigned char*>(self) + 0x4FC);
 
-    std::uint32_t clubs[512]{};
+    std::uint32_t clubs[16384]{};
     int club_count = 0;
-    int rows = list_count(list);
-    if (rows < 0) rows = 0;
-    if (rows > 512) rows = 512;
+    auto* bytes = reinterpret_cast<unsigned char*>(self);
+    const unsigned char original_country = bytes[0x4BC];
+    const unsigned char original_league = bytes[0x4BD];
+    const std::uint32_t original_club = *reinterpret_cast<std::uint32_t*>(bytes + 0x4C0);
+    auto* world = reinterpret_cast<unsigned char*>(get_world());
 
-    // Freeze the visible list before offers can remove or recolor rows.
-    for (int row = 0; row < rows; ++row) {
-        const std::uint32_t club = list_value(list, row, 1);
-        if (!club) continue;
-        bool duplicate = false;
-        for (int i = 0; i < club_count; ++i) {
-            if (clubs[i] == club) { duplicate = true; break; }
+    // Reuse the screen's own list builder for every country and league. This keeps
+    // the exact player-interest and club-eligibility filters used by the UI.
+    for (int country = 1; world && country <= kLastCountryId; ++country) {
+        void* country_record = world + country * 0x10C8 + 8;
+        int leagues = league_count(country_record, false);
+        if (leagues < 0 || leagues > 64) continue;
+        for (int league = 0; league < leagues; ++league) {
+            bytes[0x4BC] = static_cast<unsigned char>(country);
+            bytes[0x4BD] = static_cast<unsigned char>(league);
+            *reinterpret_cast<std::uint32_t*>(bytes + 0x4C0) = 0;
+            refresh(self);
+
+            int rows = list_count(list);
+            if (rows < 0) rows = 0;
+            for (int row = 0; row < rows && club_count < 16384; ++row) {
+                const std::uint32_t club = list_value(list, row, 1);
+                if (!club) continue;
+                bool duplicate = false;
+                for (int i = 0; i < club_count; ++i) {
+                    if (clubs[i] == club) { duplicate = true; break; }
+                }
+                if (!duplicate) clubs[club_count++] = club;
+            }
         }
-        if (!duplicate) clubs[club_count++] = club;
     }
+
+    bytes[0x4BC] = original_country;
+    bytes[0x4BD] = original_league;
+    *reinterpret_cast<std::uint32_t*>(bytes + 0x4C0) = original_club;
+    refresh(self);
 
     int interested = 0;
     for (int i = 0; i < club_count; ++i) {
@@ -104,6 +133,10 @@ void RunOfferAll(void* self) {
         if (validate(self, &club, true) && execute(self, &club)) ++interested;
     }
     refresh(self);
+    char batch_log[96]{};
+    sprintf_s(batch_log, "BATCH clubs=%d interested=%d countries=1-%d",
+        club_count, interested, kLastCountryId);
+    WriteLog(batch_log);
     ShowNativeResult(self, club_count, interested);
 }
 

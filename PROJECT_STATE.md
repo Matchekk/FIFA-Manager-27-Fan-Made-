@@ -290,9 +290,10 @@ tests are superseded, not active work. First sprint evidence checkpoint: commit3
 ## Offer-to-all-clubs QoL
 
 The `13TransfersOfferToClub` dialog now has a native-styled
-`Spieler allen Vereinen anbieten` button. A guarded x86 ASI hook snapshots every
-club ID in the currently visible list and reuses the game's existing validation and
-offer routines for each unique club before one native refresh. The direct German
+`Spieler allen Vereinen anbieten` button. A guarded x86 ASI hook runs the screen's
+own player-interest list builder across all 207 countries and their available leagues,
+deduplicates every resulting club ID, and reuses the game's existing validation and
+offer routines for each club before restoring the selected filter. The direct German
 label avoids an unregistered runtime translation key. Result feedback uses the
 game's own localized modal-dialog path, so fullscreen focus stays inside the game.
 `Manager.exe` and

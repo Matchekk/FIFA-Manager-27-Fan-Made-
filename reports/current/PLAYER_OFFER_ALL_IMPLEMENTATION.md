@@ -6,9 +6,11 @@ Der Dialog `13TransfersOfferToClub` enthält einen zusätzlichen breiten Button
 `Spieler allen Vereinen anbieten`. Er verwendet in normalem und dunklem Design
 dieselben nativen Texturen, Zustände, Maße und Abstände wie `Spieler anbieten`.
 
-Beim Klick friert die Erweiterung die IDs aller Vereine in der aktuell sichtbaren
-Liste ein, entfernt doppelte IDs und führt für jeden Verein die bestehende native
-Angebotsprüfung und Angebotsroutine aus. Transferart, Ablösesumme, Leihgebühr und
+Beim Klick lässt die Erweiterung den vorhandenen Listenaufbau nacheinander für alle
+207 Länder und deren im Spiel geführte Ligen laufen. Sie friert die dabei sichtbaren
+Vereins-IDs ein, entfernt doppelte IDs und führt für jeden Verein die bestehende native
+Angebotsprüfung und Angebotsroutine aus. Der aktuell gewählte Länder- und Liga-Filter
+begrenzt die Sammelaktion damit nicht. Transferart, Ablösesumme, Leihgebühr und
 alle normalen Spielregeln kommen damit weiterhin aus dem vorhandenen Dialog.
 Unzulässige Zeilen werden still übersprungen, damit keine Folge modaler Hinweise
 entsteht. Anschließend wird die Vereinsliste einmal nativ aktualisiert. Die
@@ -46,7 +48,7 @@ Geprüft:
 - Plugin ist ein x86-PE und wird vom vorhandenen ASI-Loader geladen;
 - Laufzeitlog: `PATCH_APPLIED` für die unterstützte `Manager.exe`;
 - reproduzierbarer Plugin-SHA-256:
-  `4d1f7a7783c68052509b7aac6347129ef28ebba1cb5cc945bd4c93230aa79c78`;
+  `58c6eec837241e0a38a6c63a87c6a005df47dcbb4084dbbe03d94728ea8e138f`;
 - der installierte Sprung endet innerhalb des geladenen Plugin-Moduls;
 - gestartete isolierte Runtime: `Fussball Manager 2026 1.1.0`, reagiert;
 - automatisierte Projekttests: PASS, 308/308;
