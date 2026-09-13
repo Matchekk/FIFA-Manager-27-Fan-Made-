@@ -1,0 +1,104 @@
+{
+  "profile": "dynamic-development-v1",
+  "description": "Global, performance-led player development with a longer late-bloomer window and more visible positive re-evaluations.",
+  "requires_profile": "relaxed-career-v1",
+  "restart_required": true,
+  "files": {
+    "fmdata/ParameterFiles/DC.txt": [
+      {
+        "id": "outfield_target_age_window",
+        "before": "// Target Age Outfield Players\n23, 27\n4, 7",
+        "after": "// Target Age Outfield Players\n24, 28\n4, 7"
+      },
+      {
+        "id": "goalkeeper_target_age_window",
+        "before": "// Target Age Goal Keepers\n25, 29\n4, 7",
+        "after": "// Target Age Goal Keepers\n26, 30\n4, 7"
+      },
+      {
+        "id": "gentler_general_skill_decrease",
+        "before": "// General skill decrease probability multiplier >1.0 more likely to drop, <1.0 less likely to drop\n0.6",
+        "after": "// General skill decrease probability multiplier >1.0 more likely to drop, <1.0 less likely to drop\n0.45"
+      },
+      {
+        "id": "performance_weighted_match_effect",
+        "before": "// Match effect on skills\n10, -100\n7, -87\n3, -75\n0, -40\n-3, 3\n-7, 10\n-10, 17",
+        "after": "// Match effect on skills\n10, -75\n7, -62\n3, -48\n0, -25\n-3, 5\n-7, 14\n-10, 23"
+      },
+      {
+        "id": "performance_development_multiplier",
+        "before": "// Player performance parameters for match training, basic rating, level factor (field/GK), age, rating diff, target level diff, minutes, overall multiplier, GK modifier required match rating\n10.8\n0.2, 0.1\n0.1\n1.1\n0.4\n0.5\n0.60\n1.2",
+        "after": "// Player performance parameters for match training, basic rating, level factor (field/GK), age, rating diff, target level diff, minutes, overall multiplier, GK modifier required match rating\n10.8\n0.2, 0.1\n0.1\n1.1\n0.4\n0.5\n0.78\n1.2"
+      },
+      {
+        "id": "youth_weekly_development",
+        "before": "// Youth player development skill percentage per week, position percentage per week, talent bonus multiplier position (***)\n4\n5\n1.0",
+        "after": "// Youth player development skill percentage per week, position percentage per week, talent bonus multiplier position (***)\n5\n6\n1.15"
+      },
+      {
+        "id": "match_position_development",
+        "before": "// Position level training in matches multiplier\n0.07",
+        "after": "// Position level training in matches multiplier\n0.09"
+      },
+      {
+        "id": "selected_youth_training_goal",
+        "before": "// General multiplier skill and position training youth if training goal is selected (***)\n0.9\n0.7",
+        "after": "// General multiplier skill and position training youth if training goal is selected (***)\n1.0\n0.8"
+      }
+    ],
+    "fmdata/ParameterFiles/Training.txt": [
+      {
+        "id": "development_curve_training_gain",
+        "before": "// Development Curve skill training multiplier\n8.0\n6.3\n5.2\n3.9\n2.8\n2.2\n1.40\n0.82\n0.52\n0.24\n0.10",
+        "after": "// Development Curve skill training multiplier\n8.8\n7.0\n5.8\n4.4\n3.2\n2.5\n1.65\n1.00\n0.65\n0.33\n0.15"
+      },
+      {
+        "id": "match_skill_training_gain",
+        "before": "// Match skill training multiplier (0, <=5, <=10,<=15 ..., <=100)\n1.80\n1.75\n1.68\n1.50\n1.43\n1.36\n1.30\n1.25\n1.20\n1.15\n1.07\n1.00\n0.95\n0.86\n0.77\n0.66\n0.52\n0.33\n0.18\n0.08\n0.03",
+        "after": "// Match skill training multiplier (0, <=5, <=10,<=15 ..., <=100)\n1.98\n1.93\n1.85\n1.65\n1.57\n1.50\n1.43\n1.38\n1.32\n1.27\n1.18\n1.10\n1.05\n0.95\n0.85\n0.73\n0.58\n0.38\n0.22\n0.11\n0.05"
+      },
+      {
+        "id": "human_ai_development_parity",
+        "before": "// Reduced training human teams (skill training, position training, skill match, position match)\n0.75\n0.75\n0.75\n0.75",
+        "after": "// Reduced training human teams (skill training, position training, skill match, position match)\n1.0\n1.0\n1.0\n1.0"
+      }
+    ],
+    "fmdata/ParameterFiles/National Cup Ups And Downs.txt": [
+      {
+        "id": "more_national_cup_ups",
+        "before": "MAX_UPS_SIZE\t\t\t\t\t= 12",
+        "after": "MAX_UPS_SIZE\t\t\t\t\t= 18"
+      },
+      {
+        "id": "lower_national_cup_appearance_gate",
+        "before": "MIN_MATCHCOUNT_UPS\t\t\t\t= 4",
+        "after": "MIN_MATCHCOUNT_UPS\t\t\t\t= 3"
+      },
+      {
+        "id": "extend_national_cup_up_age",
+        "before": "MAX_PLAYER_AGE_UPS\t\t\t\t= 30",
+        "after": "MAX_PLAYER_AGE_UPS\t\t\t\t= 32"
+      },
+      {
+        "id": "fewer_national_cup_downs",
+        "before": "MAX_DOWNDS_SIZE\t\t\t\t= 4",
+        "after": "MAX_DOWNDS_SIZE\t\t\t\t= 3"
+      },
+      {
+        "id": "protect_young_players_from_national_cup_downs",
+        "before": "MIN_PLAYER_AGE_DOWNS\t\t\t\t= 21",
+        "after": "MIN_PLAYER_AGE_DOWNS\t\t\t\t= 24"
+      },
+      {
+        "id": "stronger_national_cup_increase",
+        "before": "PLAYER_INCREASE_VALUE\t\t\t\t= 0.7",
+        "after": "PLAYER_INCREASE_VALUE\t\t\t\t= 0.85"
+      },
+      {
+        "id": "gentler_national_cup_decrease",
+        "before": "PLAYER_DECREASE_VALUE\t\t\t\t= 0.8",
+        "after": "PLAYER_DECREASE_VALUE\t\t\t\t= 0.65"
+      }
+    ]
+  }
+}

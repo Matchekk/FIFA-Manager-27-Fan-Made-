@@ -1,4 +1,4 @@
-"""Apply a guarded, reversible relaxed-career parameter profile.
+"""Apply a guarded, reversible FIFA Manager parameter profile.
 
 Only isolated runtimes below this repository's runtime directory are accepted.
 Every replacement is exact, all changed files are backed up and hash-verified,

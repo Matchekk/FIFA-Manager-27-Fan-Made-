@@ -75,6 +75,19 @@ and first season transition work. User confirmed corrected loans in a NEW career
 794 active loans, 744 corrected begins, 50 intentional unchanged begins. Do not redo
 Native07/08 or investigate the general loan root cause.
 
+## Relaxed development profile
+
+`dynamic-development-v1` is applied to the isolated runtime after
+`relaxed-career-v1`. It uses global `DC.txt` and `Training.txt` behavior for AI and
+human clubs, moves the outfield target-age window to 24–28 (goalkeepers 26–30),
+raises performance-led match/training development, lowers general decline, and
+allows more positive national-competition re-evaluations. Guarded application and
+idempotent reread passed for all 18 patch groups; 305/305 automated tests passed.
+Original installation, executables and save files remain unchanged. The live game
+was not interrupted, so the new parameters load at the next normal restart. Exact
+profile and evidence: `data/parameter-tuning/dynamic-development-v1.json` and
+`reports/current/DYNAMIC_PLAYER_DEVELOPMENT_TUNING.md`.
+
 ## Scope
 
 ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1, CZE1, GER2, GER3.
