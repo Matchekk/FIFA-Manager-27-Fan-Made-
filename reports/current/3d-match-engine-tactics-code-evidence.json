@@ -1,0 +1,166 @@
+{
+  "status": "PASS_CODE_EVIDENCE_BOUNDARY",
+  "conclusion": "NO_UNIVERSAL_BEST_TACTIC_PROVABLE_FROM_STATIC_CODE",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08",
+  "inputs": {
+    "GfxCore.dll": {
+      "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\GfxCore.dll",
+      "sha256": "d7ebe4e9685414a376daea1155ae833864a0906f07a80dd1e9bf0eb80ad694f2"
+    },
+    "config.big": {
+      "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\config.big",
+      "sha256": "6e6138d24738704295acb88f1deed9629b2590c46266048a22c1f5f501bd93c9"
+    },
+    "Formations.xml": {
+      "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\fmdata\\Formations.xml",
+      "sha256": "d70bc3f043853ba907066c62b3bdeb5340b2c81b19ec8adeab08b03015cf584f"
+    },
+    "Fifa07Team.cpp": {
+      "path": "C:\\FM27CommunityOverhaul\\upstream\\fifam\\fifa07api\\Fifa07Team.cpp",
+      "sha256": "1c68dd0089001e788d6d7a69255f26b7beb87c33dd89127a879b40b5e7e2b39c"
+    }
+  },
+  "code_proven": {
+    "teamwrite_tactical_payload": [
+      "teamid",
+      "offsidetrap",
+      "withoutball",
+      "formationid",
+      "attack",
+      "teammentality",
+      "attacktactic1",
+      "attacktactic2",
+      "defensetactic1",
+      "defensetactic2"
+    ],
+    "engine_source_markers": {
+      "tcm_tactics.cpp": 5160646,
+      "tcm_formation.cpp": 5373830,
+      "Passing Style -> at least NORMAL": 5369132,
+      "Passing Style -> at least DIRECT": 5369204,
+      "Passing Style -> at least RISKY": 5369304,
+      "TCM_TACTICS_QUICKCALCULATION": 5194752,
+      "TCM_TACTICS_ACCELERATION": 5195132
+    },
+    "formation_catalogue": {
+      "declared_count": 68,
+      "serialized_nodes": 81,
+      "unique_ids": 81,
+      "normal_ids": [
+        1,
+        74
+      ],
+      "short_handed_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "team_tactic_tags": [
+        "Commitment",
+        "GoalKicks",
+        "Corners",
+        "ClosingDown",
+        "TimeWasting",
+        "CrossingHeight",
+        "DefensiveLine",
+        "LongShots",
+        "OffsideTrap",
+        "CounterAttack",
+        "CrossingPosition",
+        "Passing",
+        "PassingStyle",
+        "PlayingDirection"
+      ]
+    },
+    "situational_option_scoring": {
+      "OPTION_VALUE_MAX": 1000000,
+      "OPTION_VALUE_BASE": 100000,
+      "OPTION_VALUE_FORWARD_MIN": 2,
+      "OPTION_VALUE_FORWARD": 6,
+      "OPTION_VALUE_FORWARD_MAX": 12,
+      "OPTION_VALUE_SAFE_MIN": 60,
+      "OPTION_VALUE_SAFE": 70,
+      "OPTION_VALUE_SAFE_MAX": 80,
+      "OPTION_VALUE_GOAL_ANGLE_BONUS": 70.0,
+      "OPTION_VALUE_PASS_FORWARD_MIN": 50,
+      "OPTION_VALUE_PASS_FORWARD_DEFAULT": 100,
+      "OPTION_VALUE_PASS_FORWARD_MAX": 150,
+      "OPTION_VALUE_RECV_SAFE": 275,
+      "OPTION_VALUE_THROUGH_PASS_FORWARD": 40,
+      "OPTION_VALUE_LOB_PASS_FORWARD": 25,
+      "OPTION_VALUE_LOB_PASS_SAFE": 75000,
+      "OPTION_VALUE_DRIBBLE_DIRECTION": 10000,
+      "OPTION_VALUE_DRIBBLE_SAFE": 165,
+      "OPTION_VALUE_DRIBBLE_FORWARD": 15,
+      "OPTION_VALUE_DRIBBLE_BACKWARDS": 30,
+      "OPTION_SHOOTING_YARDS_CLOSE": 10.0,
+      "OPTION_SHOOTING_YARDS_FAR": 23.8,
+      "OPTION_SHOOTING_FROM_DISTANCE_BIAS": 77.5,
+      "DRIBBLE_SPEED_PENALTY": 0.3,
+      "FBI_SECOND_MARKER_THRESHOLD": 75.0,
+      "FBI_SECOND_MARKER_DIFF_THRESHOLD": 37.5,
+      "FBI_HYSTERESIS_SECONDS": 0.01
+    },
+    "direct_engine_key_references": {
+      "OPTION_VALUE_MAX": false,
+      "OPTION_VALUE_BASE": true,
+      "OPTION_VALUE_FORWARD_MIN": true,
+      "OPTION_VALUE_FORWARD": true,
+      "OPTION_VALUE_FORWARD_MAX": true,
+      "OPTION_VALUE_SAFE_MIN": true,
+      "OPTION_VALUE_SAFE": true,
+      "OPTION_VALUE_SAFE_MAX": true,
+      "OPTION_VALUE_GOAL_ANGLE_BONUS": false,
+      "OPTION_VALUE_PASS_FORWARD_MIN": true,
+      "OPTION_VALUE_PASS_FORWARD_DEFAULT": true,
+      "OPTION_VALUE_PASS_FORWARD_MAX": true,
+      "OPTION_VALUE_RECV_SAFE": true,
+      "OPTION_VALUE_THROUGH_PASS_FORWARD": true,
+      "OPTION_VALUE_LOB_PASS_FORWARD": true,
+      "OPTION_VALUE_LOB_PASS_SAFE": true,
+      "OPTION_VALUE_DRIBBLE_DIRECTION": true,
+      "OPTION_VALUE_DRIBBLE_SAFE": true,
+      "OPTION_VALUE_DRIBBLE_FORWARD": true,
+      "OPTION_VALUE_DRIBBLE_BACKWARDS": true,
+      "OPTION_SHOOTING_YARDS_CLOSE": true,
+      "OPTION_SHOOTING_YARDS_FAR": true,
+      "OPTION_SHOOTING_FROM_DISTANCE_BIAS": true,
+      "DRIBBLE_SPEED_PENALTY": true,
+      "FBI_SECOND_MARKER_THRESHOLD": true,
+      "FBI_SECOND_MARKER_DIFF_THRESHOLD": true,
+      "FBI_HYSTERESIS_SECONDS": true
+    },
+    "config_only_selected_keys": [
+      "OPTION_VALUE_MAX",
+      "OPTION_VALUE_GOAL_ANGLE_BONUS"
+    ],
+    "offside_enabled": 1,
+    "built_in_benchmark": {
+      "warning": "FIFAMARK Settings: Need to be fixed since new AI",
+      "configuration_commented_out": true,
+      "usable_as_proof_harness": false
+    }
+  },
+  "proof_logic": [
+    "The runtime receives several independent tactical fields rather than one scalar tactic score.",
+    "The action selector assigns different values to forward progress, safety, receiver safety, goal angle, distance, pass type and dribble direction.",
+    "Those inputs change with players, opponents, ball position and match state, so static constants do not define a total ordering of formations or tactical payloads.",
+    "The bundled repeat-match benchmark cannot close that gap because its own active configuration says it needs fixing for the new AI and leaves its controls commented out."
+  ],
+  "required_for_best_tactic_claim": {
+    "method": "controlled repeated 3D matches",
+    "controls": [
+      "same teams and player attributes",
+      "same fitness, morale, injuries and venue",
+      "many random seeds per tactical variant",
+      "declared outcome metric such as points or goal difference",
+      "holdout opponents and confidence intervals"
+    ],
+    "current_status": "NO_WORKING_AUTOMATED_MATCH_HARNESS"
+  },
+  "modified_game_files": []
+}

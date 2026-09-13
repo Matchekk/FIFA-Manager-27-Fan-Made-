@@ -154,6 +154,24 @@ or save file was changed. Evidence and deterministic extractor:
 `reports/current/3d-match-engine-attribute-influence.json`, and
 `tools/inspect-3d-match-engine-attributes.py`.
 
+## 3D match-engine tactics code evidence
+
+A second read-only audit traced the actual team-tactic payload and the active 3D
+action-selection constants. `Fifa07Team::ParseTeamWrite` proves that the runtime
+receives offside trap, without-ball behavior, formation, attack, mentality and two
+attacking plus two defensive tactic fields. `GfxCore.dll` directly references 25
+selected context-dependent keys for forward progress, action/receiver safety,
+passing type, shooting distance and dribble direction. Two additional selected
+values, including goal angle, remain config-only evidence. There is no
+global formation or tactical-quality score, so a universal best tactic cannot be
+proved from static code. The bundled FIFAMARK repeat-match path is explicitly marked
+as needing repair for the new AI and is commented out. A best-tactic claim therefore
+requires a new controlled repeated-match harness. No gameplay file changed. Exact
+evidence and deterministic extractor:
+`reports/current/3D_MATCH_ENGINE_TACTICS_CODE_EVIDENCE.md`,
+`reports/current/3d-match-engine-tactics-code-evidence.json`, and
+`tools/inspect-3d-match-engine-tactics.py`.
+
 ## Scope
 
 ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1, CZE1, GER2, GER3.
