@@ -1,0 +1,115 @@
+{
+  "profile": "overpowered-staff-v1",
+  "description": "Very strong staff effects, faster staff growth and high-quality generated staff for a low-maintenance career.",
+  "requires_profiles": [
+    "relaxed-career-v1",
+    "dynamic-development-v1",
+    "relaxed-qol-v2"
+  ],
+  "restart_required": true,
+  "files": {
+    "fmdata/ParameterFiles/Staff Tasks.txt": [
+      {
+        "id": "overpowered_youth_coach",
+        "before": "// Maximum gain in youth skill training by youth coach (in percent)\n0.55\n\n// Maximum lowered quittings of youth players by youth coach (in percent)\n0.95\n\n// Maximum acceleration of the tactical education of youth players by youth coach (in percent)\n0.95",
+        "after": "// Maximum gain in youth skill training by youth coach (in percent)\n1.00\n\n// Maximum lowered quittings of youth players by youth coach (in percent)\n1.00\n\n// Maximum acceleration of the tactical education of youth players by youth coach (in percent)\n1.00"
+      },
+      {
+        "id": "overpowered_medical_staff",
+        "before": "// Maximum lowered duration of injuries (in percent)\n0.50\n\n// Maximum lowered probability of injury during training (in percent)\n0.55\n\n// Maximum energy gain during training by masseur (in percent)\n0.45\n\n// Maximum lowered moral loss for players who haven't played by psycho (in percent)\n0.70",
+        "after": "// Maximum lowered duration of injuries (in percent)\n0.85\n\n// Maximum lowered probability of injury during training (in percent)\n0.90\n\n// Maximum energy gain during training by masseur (in percent)\n0.90\n\n// Maximum lowered moral loss for players who haven't played by psycho (in percent)\n1.00"
+      },
+      {
+        "id": "overpowered_construction_manager",
+        "before": "// Maximum lowered building costs by construction manager (in percent)\n0.40",
+        "after": "// Maximum lowered building costs by construction manager (in percent)\n0.75"
+      },
+      {
+        "id": "overpowered_lawyer",
+        "before": "// Maximum lowered compensation by the lawyer when dismissing a staff (in percent)\n0.50",
+        "after": "// Maximum lowered compensation by the lawyer when dismissing a staff (in percent)\n1.00"
+      },
+      {
+        "id": "overpowered_spokesperson",
+        "before": "// Maximum chance to increase media status (+1) per week by spokesperson (in percent)\n0.40",
+        "after": "// Maximum chance to increase media status (+1) per week by spokesperson (in percent)\n0.80"
+      },
+      {
+        "id": "overpowered_fan_representative",
+        "before": "// Maximum gain of active fans by fan representative (in percent)\n0.35",
+        "after": "// Maximum gain of active fans by fan representative (in percent)\n0.75"
+      }
+    ],
+    "fmdata/ParameterFiles/Training.txt": [
+      {
+        "id": "overpowered_general_training_staff",
+        "before": "// Positive bound of effect of a staff on general training\n60\n// Negative bound of effect of a staff on general training\n10\n// Multiplier of a staff on general training\n1.01",
+        "after": "// Positive bound of effect of a staff on general training\n30\n// Negative bound of effect of a staff on general training\n0\n// Multiplier of a staff on general training\n1.10"
+      },
+      {
+        "id": "overpowered_staff_fitness_bonus",
+        "before": "// Max probability of a fitness bonus of a staff\n0.33",
+        "after": "// Max probability of a fitness bonus of a staff\n0.80"
+      },
+      {
+        "id": "overpowered_team_tactics_staff",
+        "before": "// Positive bound of effect of a staff on team tactics\n60\n// Effect of a staff on team tactics\n0.3",
+        "after": "// Positive bound of effect of a staff on team tactics\n30\n// Effect of a staff on team tactics\n0.8"
+      },
+      {
+        "id": "overpowered_individual_tactics_staff",
+        "before": "// Positive bound of effect of a staff on individual tactics\n60\n// Effect of a staff on individual tactics\n0.3",
+        "after": "// Positive bound of effect of a staff on individual tactics\n30\n// Effect of a staff on individual tactics\n0.8"
+      },
+      {
+        "id": "overpowered_staff_character_and_motivation_effect",
+        "before": "// Bound of skill value of a staff that no bad characteristics of players have influence on training\n70\n// Positive bound of effect of a staff on motivation\n70\n// Effect of a staff on motivation\n0.1",
+        "after": "// Bound of skill value of a staff that no bad characteristics of players have influence on training\n30\n// Positive bound of effect of a staff on motivation\n30\n// Effect of a staff on motivation\n0.5"
+      }
+    ],
+    "fmdata/ParameterFiles/Staff Generation.txt": [
+      {
+        "id": "generate_elite_staff_rookies",
+        "before": "// Average rating for rookies (between 0 and 99)\n10\n// Rating standard deviation for rookies\n25\n// Average talent for rookies (between 0 and 9)\n5\n// Talent standard deviation for rookies\n2",
+        "after": "// Average rating for rookies (between 0 and 99)\n70\n// Rating standard deviation for rookies\n15\n// Average talent for rookies (between 0 and 9)\n8\n// Talent standard deviation for rookies\n1"
+      },
+      {
+        "id": "generate_elite_staff_characteristics",
+        "before": "// Average characteristic level\n50\n// Characteristic standard deviation\n20\n// Skill standard deviation\n3",
+        "after": "// Average characteristic level\n85\n// Characteristic standard deviation\n8\n// Skill standard deviation\n1"
+      },
+      {
+        "id": "focus_generated_staff_on_relevant_skills",
+        "before": "// Percentage non-influential job skills\n0.5\n// Percentage non-influential skills\n0.2",
+        "after": "// Percentage non-influential job skills\n0.10\n// Percentage non-influential skills\n0.05"
+      },
+      {
+        "id": "larger_staff_prestige_quality_bonus",
+        "before": "// Rating max prestige bonus\n10",
+        "after": "// Rating max prestige bonus\n25"
+      }
+    ],
+    "fmdata/ParameterFiles/Staff.txt": [
+      {
+        "id": "minimal_staff_motivation_loss",
+        "before": "// Maximum motivation loss per day, based on stress. Motivation goes from 0 till 100.\n3.0",
+        "after": "// Maximum motivation loss per day, based on stress. Motivation goes from 0 till 100.\n0.25"
+      },
+      {
+        "id": "rapid_staff_motivation_gain",
+        "before": "// Maximum motivation gain per day, when workload is under 100%. Motivation goes from 0 till 100. If workload is 100% there's no gain, if it's 75% there's maximum gain.\n0.07",
+        "after": "// Maximum motivation gain per day, when workload is under 100%. Motivation goes from 0 till 100. If workload is 100% there's no gain, if it's 75% there's maximum gain.\n0.50"
+      },
+      {
+        "id": "slow_staff_stress_change",
+        "before": "// Maximum stress change per day (+/-), based on work load vs. toughness. Stress goes from 0 till 100.\n0.07",
+        "after": "// Maximum stress change per day (+/-), based on work load vs. toughness. Stress goes from 0 till 100.\n0.02"
+      },
+      {
+        "id": "rapid_staff_skill_growth",
+        "before": "// Average skill increase per day, in 1 / 1000 skill\n0.004",
+        "after": "// Average skill increase per day, in 1 / 1000 skill\n0.05"
+      }
+    ]
+  }
+}

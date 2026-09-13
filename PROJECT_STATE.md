@@ -109,6 +109,18 @@ restart. Exact profile, tool and report:
 `tools/apply-relaxed-qol-tuning.py`, and
 `reports/current/RELAXED_QOL_V2_TUNING.md`.
 
+## Overpowered staff profile
+
+`overpowered-staff-v1` is applied on top of all relaxed profiles in the isolated
+Native10 runtime. Nineteen guarded patches across `Staff Tasks.txt`, `Training.txt`,
+`Staff Generation.txt` and `Staff.txt` make existing staff task/training effects
+very strong, reduce staff motivation/stress pressure, accelerate staff skill growth
+and create much stronger future staff. Guarded application and exact idempotence
+passed, 305/305 Python tests passed, and the protected original installation is
+unchanged. The running game remains open, so the new values load at the next normal
+restart. Exact profile and report: `data/parameter-tuning/overpowered-staff-v1.json`
+and `reports/current/OVERPOWERED_STAFF_TUNING.md`.
+
 ## Scope
 
 ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1, CZE1, GER2, GER3.
