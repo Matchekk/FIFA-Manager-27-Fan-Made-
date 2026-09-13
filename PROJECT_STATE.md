@@ -3,6 +3,14 @@
 Updated 2026-09-13; football evidence snapshot 2026-09-12. Active production sprint:
 complete the 2026/27 football database.
 
+## Publication target
+
+The only project publication remote is
+`https://github.com/Matchekk/FIFA-Manager-27-Fan-Made-`. Do not publish FM27
+commits or artifacts to Aelunor. Commit and upload only useful source, plans,
+validated data, reports, installer material and release artifacts; omit temporary
+working files, caches, failed scratch candidates and local game-installation files.
+
 ## Active implementation-only directive
 
 No football web research. Football facts and resolved identities are supplied
