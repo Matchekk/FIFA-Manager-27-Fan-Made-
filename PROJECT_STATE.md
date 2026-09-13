@@ -83,6 +83,9 @@ human clubs, moves the outfield target-age window to 24–28 (goalkeepers 26–3
 raises performance-led match/training development, lowers general decline, and
 allows more positive national-competition re-evaluations. Guarded application and
 idempotent reread passed for all 18 patch groups; 305/305 automated tests passed.
+A read-only inspection of the decrypted runtime code confirmed the separate
+star-talent evaluator already uses an exclusive age-25 gate, so talent changes are
+eligible through age 24 for club rosters; no executable patch is required.
 Original installation, executables and save files remain unchanged. The live game
 was not interrupted, so the new parameters load at the next normal restart. Exact
 profile and evidence: `data/parameter-tuning/dynamic-development-v1.json` and

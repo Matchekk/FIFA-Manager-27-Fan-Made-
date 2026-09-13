@@ -40,10 +40,17 @@ profile therefore increases how many meaningful changes are produced within the
 existing evaluation cadence.
 
 The 24-year late-bloomer behavior is implemented through the global target-age
-development window. This extends performance-led skill and level growth; it does
-not claim that the separate star icon itself can always mutate through age 24.
-That mutation age is not exposed by the parameter files. No unverified binary
-patch was applied to `Manager.exe`; the protected executable remains unchanged.
+development window. A read-only inspection of the decrypted runtime code for the
+exact protected executable also confirmed that the separate star-talent evaluator
+already accepts ages below 25. Both its outer eligibility branch and its internal
+evaluation function compare the calculated player age with 25 and skip at age 25
+or above. Talent stars can therefore already change through age 24; no age-limit
+binary patch is required. The evaluator operates on a club roster and is not tied
+to the human-team UI. The UI presents the user's re-evaluation, while the global
+development inputs apply to computer-controlled clubs as well.
+
+No executable bytes were changed. The check was read-only and version-bound to
+the recorded `Manager.exe` SHA-256 below.
 
 ## Validation
 
@@ -59,6 +66,9 @@ patch was applied to `Manager.exe`; the protected executable remains unchanged.
     `ca45841a33f17f9ecc820748298c55e044d03163e8c6dcac8809f66b0e10d3be`
 - Automated project tests: PASS, 305/305.
 - Protected original installation: unchanged.
+- Inspected `Manager.exe` SHA-256:
+  `8ebe1291fbcc1291bfee182995a165194156a0b4b8e0d6c80994cadb087a857c`
+- Runtime star-talent age gate: PASS, eligible through age 24.
 - Executables and save files modified: none.
 
 The running game was left open to protect the active session. The parameter files
