@@ -1,0 +1,26 @@
+{
+  "profile": "relaxed-player-communication-v1",
+  "target_file": "fmdata/ParameterFiles/Difficulty Levels.txt",
+  "description": "Keep player morale and trust healthy when calendar simulation skips regular player talks.",
+  "restart_required": true,
+  "morale_and_trust": {
+    "EASY": {
+      "PLAYER_MORALE_MODIFIER_THRESHOLD": -100,
+      "PLAYER_MORALE_MODIFIER": 10,
+      "PLAYER_TRUST_MODIFIER_THRESHOLD": -10,
+      "PLAYER_TRUST_MODIFIER": 1
+    },
+    "MEDIUM": {
+      "PLAYER_MORALE_MODIFIER_THRESHOLD": -100,
+      "PLAYER_MORALE_MODIFIER": 10,
+      "PLAYER_TRUST_MODIFIER_THRESHOLD": -10,
+      "PLAYER_TRUST_MODIFIER": 1
+    },
+    "HARD": {
+      "PLAYER_MORALE_MODIFIER_THRESHOLD": -100,
+      "PLAYER_MORALE_MODIFIER": 10,
+      "PLAYER_TRUST_MODIFIER_THRESHOLD": -10,
+      "PLAYER_TRUST_MODIFIER": 1
+    }
+  }
+}
