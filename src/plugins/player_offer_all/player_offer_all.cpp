@@ -3,10 +3,6 @@
 #include <cstdint>
 #include <cstdio>
 #include <cstring>
-#include <cwchar>
-#include <fstream>
-#include <string>
-#include <unordered_map>
 
 namespace {
 
@@ -16,6 +12,9 @@ constexpr std::uintptr_t kListGetValueRva    = 0x9189A0;
 constexpr std::uintptr_t kValidateClubRva    = 0x4FDA10;
 constexpr std::uintptr_t kExecuteOfferRva    = 0x4FC8D0;
 constexpr std::uintptr_t kRefreshRva         = 0x4FD3C0;
+constexpr std::uintptr_t kTranslateRva       = 0x10A9B78;
+constexpr std::uintptr_t kShowDialogRva      = 0x9392F0;
+constexpr std::uintptr_t kTranslationMgrRva  = 0x2DE3FA8;
 
 constexpr unsigned char kExpectedHandler[] = {
     0x56, 0x8B, 0xF1, 0x8B, 0x86, 0xB8, 0x04, 0x00,
@@ -27,45 +26,12 @@ using ListGetValueFn = std::uint32_t (__thiscall *)(void*, int, int);
 using ValidateClubFn = bool (__thiscall *)(void*, std::uint32_t*, bool);
 using ExecuteOfferFn = int (__thiscall *)(void*, std::uint32_t*);
 using RefreshFn = void (__thiscall *)(void*);
+using TranslateFn = void* (__thiscall *)(void*, const char*);
+using ShowDialogFn = int (__cdecl *)(void*, void*, int, void*, int, int);
 
 HMODULE g_module = nullptr;
 std::uintptr_t g_game_base = 0;
 volatile LONG g_running = 0;
-std::unordered_map<std::uint32_t, std::wstring> g_club_names;
-
-std::wstring Utf8ToWide(const std::string& value) {
-    if (value.empty()) return {};
-    const int size = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS,
-        value.data(), static_cast<int>(value.size()), nullptr, 0);
-    if (size <= 0) return {};
-    std::wstring output(static_cast<size_t>(size), L'\0');
-    MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, value.data(),
-        static_cast<int>(value.size()), output.data(), size);
-    return output;
-}
-
-void LoadClubNames() {
-    char path[MAX_PATH]{};
-    if (!GetModuleFileNameA(g_module, path, MAX_PATH)) return;
-    char* slash = std::strrchr(path, '\\');
-    if (!slash) return;
-    strcpy_s(slash + 1, MAX_PATH - static_cast<size_t>(slash + 1 - path),
-        "FM27.PlayerOfferAll.clubs.csv");
-    std::ifstream input(path, std::ios::binary);
-    std::string line;
-    while (std::getline(input, line)) {
-        if (!line.empty() && line.back() == '\r') line.pop_back();
-        const size_t separator = line.find('|');
-        if (separator == std::string::npos || line.compare(0, separator, "club_id") == 0) continue;
-        try {
-            const auto id = static_cast<std::uint32_t>(std::stoul(line.substr(0, separator)));
-            std::wstring name = Utf8ToWide(line.substr(separator + 1));
-            if (id && !name.empty()) g_club_names.emplace(id, std::move(name));
-        } catch (...) {
-            // A malformed optional label row must never disable the offer action.
-        }
-    }
-}
 
 void WriteLog(const char* message) {
     char module_path[MAX_PATH]{};
@@ -84,74 +50,61 @@ void WriteLog(const char* message) {
     }
 }
 
+void ShowNativeResult(void* self, int visible, int interested) {
+    auto translate = reinterpret_cast<TranslateFn>(g_game_base + kTranslateRva);
+    auto show_dialog = reinterpret_cast<ShowDialogFn>(g_game_base + kShowDialogRva);
+    void* translations = reinterpret_cast<void*>(g_game_base + kTranslationMgrRva);
+    const char* title_key = nullptr;
+    const char* body_key = nullptr;
+    if (visible == 0) {
+        title_key = "IDS_TRANSFER_OTHER_CLUBS";
+        body_key = "IDS_PI_NOINTERESTEDCLUBS";
+    } else if (interested > 0) {
+        title_key = "IDS_TRANSFER_BUYING";
+        body_key = "IDS_OTC_INTRESTED";
+    } else {
+        title_key = "IDS_TRANSFERTOPPLAYER_REJECTION";
+        body_key = "IDS_OTC_NOT_INTRESTED";
+    }
+    void* title = translate(translations, title_key);
+    void* body = translate(translations, body_key);
+    show_dialog(body, title, 0, self, 0, 0);
+}
+
 void RunOfferAll(void* self) {
-        auto list_count = reinterpret_cast<ListCountFn>(g_game_base + kListCountRva);
-        auto list_value = reinterpret_cast<ListGetValueFn>(g_game_base + kListGetValueRva);
-        auto validate = reinterpret_cast<ValidateClubFn>(g_game_base + kValidateClubRva);
-        auto execute = reinterpret_cast<ExecuteOfferFn>(g_game_base + kExecuteOfferRva);
-        auto refresh = reinterpret_cast<RefreshFn>(g_game_base + kRefreshRva);
-        void* list = reinterpret_cast<void*>(reinterpret_cast<unsigned char*>(self) + 0x4FC);
+    auto list_count = reinterpret_cast<ListCountFn>(g_game_base + kListCountRva);
+    auto list_value = reinterpret_cast<ListGetValueFn>(g_game_base + kListGetValueRva);
+    auto validate = reinterpret_cast<ValidateClubFn>(g_game_base + kValidateClubRva);
+    auto execute = reinterpret_cast<ExecuteOfferFn>(g_game_base + kExecuteOfferRva);
+    auto refresh = reinterpret_cast<RefreshFn>(g_game_base + kRefreshRva);
+    void* list = reinterpret_cast<void*>(reinterpret_cast<unsigned char*>(self) + 0x4FC);
 
-        std::uint32_t clubs[512]{};
-        int club_count = 0;
-        int rows = list_count(list);
-        if (rows < 0) rows = 0;
-        if (rows > 512) rows = 512;
+    std::uint32_t clubs[512]{};
+    int club_count = 0;
+    int rows = list_count(list);
+    if (rows < 0) rows = 0;
+    if (rows > 512) rows = 512;
 
-        // Freeze the visible list before offers can remove or recolor rows.
-        for (int row = 0; row < rows; ++row) {
-            const std::uint32_t club = list_value(list, row, 1);
-            if (!club) continue;
-            bool duplicate = false;
-            for (int i = 0; i < club_count; ++i) {
-                if (clubs[i] == club) { duplicate = true; break; }
-            }
-            if (!duplicate) clubs[club_count++] = club;
-        }
-
-        int interested = 0;
-        int not_interested = 0;
-        int not_possible = 0;
+    // Freeze the visible list before offers can remove or recolor rows.
+    for (int row = 0; row < rows; ++row) {
+        const std::uint32_t club = list_value(list, row, 1);
+        if (!club) continue;
+        bool duplicate = false;
         for (int i = 0; i < club_count; ++i) {
-            std::uint32_t club = clubs[i];
-            // Silent validation uses the game's normal eligibility checks without
-            // opening one modal dialog for every rejected row.
-            if (!validate(self, &club, true)) {
-                ++not_possible;
-            } else if (execute(self, &club)) {
-                ++interested;
-                clubs[i] |= 0x80000000u;
-            } else {
-                ++not_interested;
-            }
+            if (clubs[i] == club) { duplicate = true; break; }
         }
-        refresh(self);
+        if (!duplicate) clubs[club_count++] = club;
+    }
 
-        std::wstring result = L"Gepr\u00fcft: " + std::to_wstring(club_count) +
-            L"\nInteressiert: " + std::to_wstring(interested) +
-            L"\nNicht interessiert: " + std::to_wstring(not_interested) +
-            L"\nAngebot nicht m\u00f6glich: " + std::to_wstring(not_possible) + L"\n\n";
-        if (interested == 0) {
-            result += L"Aktuell ist keiner der sichtbaren Vereine interessiert.";
-        } else {
-            result += L"Diese Vereine melden sich in K\u00fcrze mit einem Angebot:\n";
-            int listed = 0;
-            for (int i = 0; i < club_count; ++i) {
-                std::uint32_t club = clubs[i];
-                // ExecuteOffer has already run. Re-evaluating it would duplicate the
-                // offer, so interested IDs are recorded below during the first pass.
-                if ((club & 0x80000000u) == 0) continue;
-                club &= 0x7fffffffu;
-                const auto found = g_club_names.find(club);
-                result += L"\n- ";
-                result += found != g_club_names.end()
-                    ? found->second : (L"Verein #" + std::to_wstring(club));
-                ++listed;
-            }
-            if (listed == 0) result += L"\n- Die Vereinsnamen erscheinen mit den eingehenden Angeboten.";
-        }
-    MessageBoxW(GetForegroundWindow(), result.c_str(), L"Spieler allen Vereinen anbieten",
-        MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
+    int interested = 0;
+    for (int i = 0; i < club_count; ++i) {
+        std::uint32_t club = clubs[i];
+        // Silent validation uses the game's normal eligibility checks without
+        // opening one modal dialog for every rejected row.
+        if (validate(self, &club, true) && execute(self, &club)) ++interested;
+    }
+    refresh(self);
+    ShowNativeResult(self, club_count, interested);
 }
 
 void __fastcall OfferAllVisibleClubs(void* self, void*) {
@@ -189,8 +142,6 @@ bool InstallHook() {
 
 DWORD WINAPI Initialize(void*) {
     g_game_base = reinterpret_cast<std::uintptr_t>(GetModuleHandleW(nullptr));
-    LoadClubNames();
-    WriteLog(g_club_names.empty() ? "CLUB_MAP_MISSING" : "CLUB_MAP_LOADED");
     for (int attempt = 0; attempt < 300; ++attempt) {
         if (InstallHook()) {
             WriteLog("PATCH_APPLIED Manager.exe SHA256 8EBE1291FBCC1291BFEE182995A165194156A0B4B8E0D6C80994CADB087A857C");

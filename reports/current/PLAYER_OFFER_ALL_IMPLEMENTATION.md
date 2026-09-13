@@ -11,11 +11,11 @@ Liste ein, entfernt doppelte IDs und führt für jeden Verein die bestehende nat
 Angebotsprüfung und Angebotsroutine aus. Transferart, Ablösesumme, Leihgebühr und
 alle normalen Spielregeln kommen damit weiterhin aus dem vorhandenen Dialog.
 Unzulässige Zeilen werden still übersprungen, damit keine Folge modaler Hinweise
-entsteht. Anschließend wird die Vereinsliste einmal nativ aktualisiert. Ein sichtbarer
-Ergebnisdialog nennt die Zahl der interessierten, nicht interessierten und technisch
-nicht möglichen Vereine und führt die interessierten Vereine namentlich auf.
-Interessierte Vereine melden sich danach wie bei der Einzelaktion mit ihrem konkreten
-Angebot.
+entsteht. Anschließend wird die Vereinsliste einmal nativ aktualisiert. Die
+Rückmeldung verwendet dieselbe native Ingame-Dialogfunktion und dieselben
+lokalisierten Meldungen wie die Einzelaktion. Dadurch bleibt das Spiel im Vollbild
+und öffnet kein externes Windows-Fenster. Interessierte Vereine melden sich danach
+wie bei der Einzelaktion mit ihrem konkreten Angebot und erscheinen im Spiel.
 
 ## Technische Umsetzung
 
@@ -46,11 +46,10 @@ Geprüft:
 - Plugin ist ein x86-PE und wird vom vorhandenen ASI-Loader geladen;
 - Laufzeitlog: `PATCH_APPLIED` für die unterstützte `Manager.exe`;
 - reproduzierbarer Plugin-SHA-256:
-  `4ee3dbc570fffd2aa33ab64df4a4f30bfdcd1b9153432df67fc5a9962e2e5a69`;
-- 13.477 native Vereins-IDs sind für die Ergebnisliste auf Vereinsnamen abgebildet;
+  `4d1f7a7783c68052509b7aac6347129ef28ebba1cb5cc945bd4c93230aa79c78`;
 - der installierte Sprung endet innerhalb des geladenen Plugin-Moduls;
 - gestartete isolierte Runtime: `Fussball Manager 2026 1.1.0`, reagiert;
-- automatisierte Projekttests: PASS, 309/309;
+- automatisierte Projekttests: PASS, 308/308;
 - geschützte Originalinstallation wurde nicht verändert.
 
 Ein manueller Klicktest im geöffneten Karriere-Dialog bleibt die abschließende

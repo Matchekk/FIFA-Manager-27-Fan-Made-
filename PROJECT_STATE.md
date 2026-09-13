@@ -293,9 +293,9 @@ The `13TransfersOfferToClub` dialog now has a native-styled
 `Spieler allen Vereinen anbieten` button. A guarded x86 ASI hook snapshots every
 club ID in the currently visible list and reuses the game's existing validation and
 offer routines for each unique club before one native refresh. The direct German
-label avoids an unregistered runtime translation key. A result dialog reports every
-outcome count and names interested clubs through a packaged 13,477-club native-ID
-map. `Manager.exe` and
+label avoids an unregistered runtime translation key. Result feedback uses the
+game's own localized modal-dialog path, so fullscreen focus stays inside the game.
+`Manager.exe` and
 `screens.big` are not edited. The hook is bound to the supported executable hash and
 runtime signature and fails closed on other builds. Build, installer, normal/dark UI
 overrides and implementation evidence are in the repository; the isolated runtime

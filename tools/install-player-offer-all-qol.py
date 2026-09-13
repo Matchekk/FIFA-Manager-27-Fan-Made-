@@ -134,23 +134,18 @@ def main() -> None:
         "--plugin", type=Path,
         default=Path("data/qol/player-offer-all/plugins/FM27.PlayerOfferAll.asi")
     )
-    parser.add_argument(
-        "--club-map", type=Path,
-        default=Path("data/qol/player-offer-all/plugins/FM27.PlayerOfferAll.clubs.csv")
-    )
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     runtime, report = args.runtime.resolve(), args.report.resolve()
     plugin = (root / args.plugin).resolve() if not args.plugin.is_absolute() else args.plugin.resolve()
-    club_map = (root / args.club_map).resolve() if not args.club_map.is_absolute() else args.club_map.resolve()
     if runtime.parent != (root / "runtime").resolve():
         raise ValueError("Only direct project runtime children are permitted")
     if not report.is_relative_to((root / "reports/local").resolve()):
         raise ValueError("Report must stay in reports/local")
-    if not plugin.is_relative_to(root) or not plugin.is_file() or not club_map.is_relative_to(root) or not club_map.is_file():
-        raise ValueError("Built project plugin or club-name map missing")
+    if not plugin.is_relative_to(root) or not plugin.is_file():
+        raise ValueError("Built project plugin missing")
 
     wanted = {SCREEN.lower(), DARK_SCREEN.lower()}
     entries = read_big_entries(runtime / "data/screens.big", wanted)
@@ -172,6 +167,9 @@ def main() -> None:
 
     installed = []
     if args.apply:
+        legacy_map = runtime / "plugins/FM27.PlayerOfferAll.clubs.csv"
+        if legacy_map.exists():
+            legacy_map.unlink()
         for name, source in generated.items():
             destination = runtime / Path(name)
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -180,9 +178,6 @@ def main() -> None:
         plugin_target = runtime / "plugins/FM27.PlayerOfferAll.asi"
         shutil.copy2(plugin, plugin_target)
         installed.append(plugin_target)
-        club_map_target = runtime / "plugins/FM27.PlayerOfferAll.clubs.csv"
-        shutil.copy2(club_map, club_map_target)
-        installed.append(club_map_target)
         if matching:
             raw_lines = translations.read_bytes().splitlines(keepends=True)
             translations.write_bytes(b"".join(
@@ -197,7 +192,6 @@ def main() -> None:
         "manager_sha256_actual": sha256(runtime / "Manager.exe"),
         "archive_sha256": sha256(runtime / "data/screens.big"),
         "plugin_sha256": sha256(plugin),
-        "club_map_sha256": sha256(club_map),
         "generated": {name: sha256(path) for name, path in generated.items()},
         "installed": {str(path.relative_to(runtime)): sha256(path) for path in installed},
         "button_text": BUTTON_TEXT,

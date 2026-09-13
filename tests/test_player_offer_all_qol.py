@@ -33,20 +33,13 @@ class PlayerOfferAllQolTests(unittest.TestCase):
     def test_legacy_translation_has_all_seven_columns_for_cleanup(self):
         self.assertEqual(len(MODULE.TRANSLATION.split("|")), 7)
 
-    def test_packaged_club_map_is_unique_and_complete(self):
-        path = ROOT / "data/qol/player-offer-all/plugins/FM27.PlayerOfferAll.clubs.csv"
-        rows = path.read_text(encoding="utf-8").splitlines()
-        self.assertEqual(rows[0], "club_id|club_name")
-        identities = [int(row.split("|", 1)[0]) for row in rows[1:]]
-        self.assertGreater(len(identities), 13_000)
-        self.assertEqual(len(identities), len(set(identities)))
-
     def test_packaged_plugin_is_x86_and_contains_result_text(self):
         path = ROOT / "data/qol/player-offer-all/plugins/FM27.PlayerOfferAll.asi"
         payload = path.read_bytes()
         pe_offset = struct.unpack_from("<I", payload, 0x3C)[0]
         self.assertEqual(struct.unpack_from("<H", payload, pe_offset + 4)[0], 0x14C)
-        self.assertIn("Interessiert".encode("utf-16le"), payload)
+        self.assertIn(b"IDS_OTC_INTRESTED", payload)
+        self.assertNotIn(b"MessageBoxW", payload)
 
 
 if __name__ == "__main__":

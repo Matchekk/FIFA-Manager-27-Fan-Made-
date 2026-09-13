@@ -13,7 +13,7 @@ $commandFile = Join-Path $buildDir "compile.cmd"
 @(
     '@echo off'
     ('call "{0}" -arch=x86 -host_arch=x64 >nul' -f $vsDevCmd)
-    ('cl /nologo /std:c++17 /O2 /MT /EHsc /W4 /WX /LD /Fo"{0}\\" "{1}" user32.lib /link /NOLOGO /Brepro /OUT:"{2}"' -f $buildDir,$source,$outputPath)
+    ('cl /nologo /std:c++17 /O2 /MT /EHsc /W4 /WX /LD /Fo"{0}\\" "{1}" /link /NOLOGO /Brepro /OUT:"{2}"' -f $buildDir,$source,$outputPath)
 ) | Set-Content -LiteralPath $commandFile -Encoding Ascii
 & cmd.exe /d /c $commandFile
 if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $outputPath)) { throw "x86 plugin build failed" }
