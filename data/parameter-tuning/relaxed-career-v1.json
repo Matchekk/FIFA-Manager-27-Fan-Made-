@@ -1,0 +1,297 @@
+{
+  "profile": "relaxed-career-v1",
+  "description": "A forgiving FIFA Manager career profile for calendar simulation and low-maintenance play.",
+  "restart_required": true,
+  "files": {
+    "fmdata/ParameterFiles/Difficulty Levels.txt": [
+      {
+        "id": "easy_transfer_and_negotiation",
+        "before": "BEGIN( EASY )\n\tDISPLAY_EVALUATION_BAR = true\n\tAI_CLUBS_CHECK_USER_SEARCH_HISTORY = false\n\tAGGRESSIVE_OFFER_CHANCE_MULTIPLIER = 0.5\n\tDECLINDED_AGGRESSIVE_OFFER_MORALE_LOSS_MULTIPLIER = 0.5\n\tINITIAL_SPONSOR_OFFER_MULTIPLIER = 1.2\n\tSPONSOR_OFFER_CHANCE_MULTIPLIER = 1.3\n\tUNFULLFILLED_CONTRACT_DEMANDS_MULTIPLIER = 0.5\n\tINITIAL_EXPECTATIONS_MULTIPLIER = 1.0\nEND",
+        "after": "BEGIN( EASY )\n\tDISPLAY_EVALUATION_BAR = true\n\tAI_CLUBS_CHECK_USER_SEARCH_HISTORY = false\n\tAGGRESSIVE_OFFER_CHANCE_MULTIPLIER = 0.35\n\tDECLINDED_AGGRESSIVE_OFFER_MORALE_LOSS_MULTIPLIER = 0.0\n\tINITIAL_SPONSOR_OFFER_MULTIPLIER = 1.25\n\tSPONSOR_OFFER_CHANCE_MULTIPLIER = 1.5\n\tUNFULLFILLED_CONTRACT_DEMANDS_MULTIPLIER = 0.25\n\tINITIAL_EXPECTATIONS_MULTIPLIER = 0.9\nEND"
+      },
+      {
+        "id": "medium_transfer_and_negotiation",
+        "before": "BEGIN( MEDIUM )\n\tDISPLAY_EVALUATION_BAR = true\n\tAI_CLUBS_CHECK_USER_SEARCH_HISTORY = false\n\tAGGRESSIVE_OFFER_CHANCE_MULTIPLIER = 1.0\n\tDECLINED_AGGRESSIVE_OFFER_MORALE_LOSS_MULTIPLIER = 1.0\n\tINITIAL_SPONSOR_OFFER_MULTIPLIER = 1.0\n\tSPONSOR_OFFER_CHANCE_MULTIPLIER = 1.0\n\tUNFULLFILLED_CONTRACT_DEMANDS_MULTIPLIER = 1.0\n\tINITIAL_EXPECTATIONS_MULTIPLIER = 1.1\nEND",
+        "after": "BEGIN( MEDIUM )\n\tDISPLAY_EVALUATION_BAR = true\n\tAI_CLUBS_CHECK_USER_SEARCH_HISTORY = false\n\tAGGRESSIVE_OFFER_CHANCE_MULTIPLIER = 0.35\n\tDECLINDED_AGGRESSIVE_OFFER_MORALE_LOSS_MULTIPLIER = 0.0\n\tINITIAL_SPONSOR_OFFER_MULTIPLIER = 1.25\n\tSPONSOR_OFFER_CHANCE_MULTIPLIER = 1.5\n\tUNFULLFILLED_CONTRACT_DEMANDS_MULTIPLIER = 0.25\n\tINITIAL_EXPECTATIONS_MULTIPLIER = 0.9\nEND"
+      },
+      {
+        "id": "hard_transfer_and_negotiation",
+        "before": "BEGIN( HARD )\n\tDISPLAY_EVALUATION_BAR = false\n\tAI_CLUBS_CHECK_USER_SEARCH_HISTORY = true\n\tAGGRESSIVE_OFFER_CHANCE_MULTIPLIER = 1.3\n\tDECLINED_AGGRESSIVE_OFFER_MORALE_LOSS_MULTIPLIER = 1.2\n\tINITIAL_SPONSOR_OFFER_MULTIPLIER = 0.8\n\tSPONSOR_OFFER_CHANCE_MULTIPLIER = 1.0\n\tUNFULLFILLED_CONTRACT_DEMANDS_MULTIPLIER = 1.0\n\tINITIAL_EXPECTATIONS_MULTIPLIER = 1.2\nEND",
+        "after": "BEGIN( HARD )\n\tDISPLAY_EVALUATION_BAR = true\n\tAI_CLUBS_CHECK_USER_SEARCH_HISTORY = false\n\tAGGRESSIVE_OFFER_CHANCE_MULTIPLIER = 0.35\n\tDECLINED_AGGRESSIVE_OFFER_MORALE_LOSS_MULTIPLIER = 0.0\n\tINITIAL_SPONSOR_OFFER_MULTIPLIER = 1.25\n\tSPONSOR_OFFER_CHANCE_MULTIPLIER = 1.5\n\tUNFULLFILLED_CONTRACT_DEMANDS_MULTIPLIER = 0.25\n\tINITIAL_EXPECTATIONS_MULTIPLIER = 0.9\nEND"
+      },
+      {
+        "id": "easy_morale_and_trust",
+        "before": "BEGIN( EASY )\n\tPLAYER_MORALE_MODIFIER_THRESHOLD = -50\n\tPLAYER_MORALE_MODIFIER = 3\n\tPLAYER_TRUST_MODIFIER_THRESHOLD = 6\n\tPLAYER_TRUST_MODIFIER = 1\nEND",
+        "after": "BEGIN( EASY )\n\tPLAYER_MORALE_MODIFIER_THRESHOLD = -100\n\tPLAYER_MORALE_MODIFIER = 10\n\tPLAYER_TRUST_MODIFIER_THRESHOLD = -10\n\tPLAYER_TRUST_MODIFIER = 1\nEND"
+      },
+      {
+        "id": "medium_morale_and_trust",
+        "before": "BEGIN( MEDIUM )\n\tPLAYER_MORALE_MODIFIER_THRESHOLD = 0\n\tPLAYER_MORALE_MODIFIER = 0\n\tPLAYER_TRUST_MODIFIER_THRESHOLD = 0\n\tPLAYER_TRUST_MODIFIER = 0\nEND",
+        "after": "BEGIN( MEDIUM )\n\tPLAYER_MORALE_MODIFIER_THRESHOLD = -100\n\tPLAYER_MORALE_MODIFIER = 10\n\tPLAYER_TRUST_MODIFIER_THRESHOLD = -10\n\tPLAYER_TRUST_MODIFIER = 1\nEND"
+      },
+      {
+        "id": "hard_morale_and_trust",
+        "before": "BEGIN( HARD )\n\tPLAYER_MORALE_MODIFIER_THRESHOLD = 50 \n\tPLAYER_MORALE_MODIFIER = -3\n\tPLAYER_TRUST_MODIFIER_THRESHOLD = 8\n\tPLAYER_TRUST_MODIFIER = -1\nEND",
+        "after": "BEGIN( HARD )\n\tPLAYER_MORALE_MODIFIER_THRESHOLD = -100\n\tPLAYER_MORALE_MODIFIER = 10\n\tPLAYER_TRUST_MODIFIER_THRESHOLD = -10\n\tPLAYER_TRUST_MODIFIER = 1\nEND"
+      },
+      {
+        "id": "easy_scouting",
+        "before": "BEGIN( EASY )\n\tMISSION_DURATION_MULTIPLIER = 0.5\n\tMAX_NUM_PLAYERS_TO_REPORT_MULTIPLIER = 1.5\n\tPOPULARITY_RISE_AFTER_INDIVIDUAL_SCOUTING_MODIFIER = 2\n\tPLAYER_POPULARITY_BIAS = 2\nEND",
+        "after": "BEGIN( EASY )\n\tMISSION_DURATION_MULTIPLIER = 0.35\n\tMAX_NUM_PLAYERS_TO_REPORT_MULTIPLIER = 2.0\n\tPOPULARITY_RISE_AFTER_INDIVIDUAL_SCOUTING_MODIFIER = 3\n\tPLAYER_POPULARITY_BIAS = 3\nEND"
+      },
+      {
+        "id": "medium_scouting",
+        "before": "BEGIN( MEDIUM )\n\tMISSION_DURATION_MULTIPLIER = 1.0\n\tMAX_NUM_PLAYERS_TO_REPORT_MULTIPLIER = 1.0\n\tPOPULARITY_RISE_AFTER_INDIVIDUAL_SCOUTING_MODIFIER = 0\n\tPLAYER_POPULARITY_BIAS = 0\nEND",
+        "after": "BEGIN( MEDIUM )\n\tMISSION_DURATION_MULTIPLIER = 0.35\n\tMAX_NUM_PLAYERS_TO_REPORT_MULTIPLIER = 2.0\n\tPOPULARITY_RISE_AFTER_INDIVIDUAL_SCOUTING_MODIFIER = 3\n\tPLAYER_POPULARITY_BIAS = 3\nEND"
+      },
+      {
+        "id": "hard_scouting",
+        "before": "BEGIN( HARD )\n\tMISSION_DURATION_MULTIPLIER = 1.33\n\tMAX_NUM_PLAYERS_TO_REPORT_MULTIPLIER = 1.0\n\tPOPULARITY_RISE_AFTER_INDIVIDUAL_SCOUTING_MODIFIER = -1\n\tPLAYER_POPULARITY_BIAS = 0\nEND",
+        "after": "BEGIN( HARD )\n\tMISSION_DURATION_MULTIPLIER = 0.35\n\tMAX_NUM_PLAYERS_TO_REPORT_MULTIPLIER = 2.0\n\tPOPULARITY_RISE_AFTER_INDIVIDUAL_SCOUTING_MODIFIER = 3\n\tPLAYER_POPULARITY_BIAS = 3\nEND"
+      }
+    ],
+    "fmdata/ParameterFiles/Board.txt": [
+      {
+        "id": "league_position_pressure",
+        "before": "LEAGUE_POS_BEHIND_VALUE = -1.0, -1.0, -1.0",
+        "after": "LEAGUE_POS_BEHIND_VALUE = -0.35, -0.35, -0.35"
+      },
+      {
+        "id": "ordinary_loss_pressure",
+        "before": "LEAGUE_MATCH_LOST = -1.5",
+        "after": "LEAGUE_MATCH_LOST = -0.5"
+      },
+      {
+        "id": "heavy_loss_pressure",
+        "before": "LEAGUE_MATCH_LOST_GREATER_3_GOALS = -2.0",
+        "after": "LEAGUE_MATCH_LOST_GREATER_3_GOALS = -0.75"
+      },
+      {
+        "id": "derby_loss_pressure",
+        "before": "DERBY_LOST = -2.0",
+        "after": "DERBY_LOST = -0.75"
+      },
+      {
+        "id": "heavy_derby_loss_pressure",
+        "before": "DERBY_LOST_GREATER_3_GOALS = -3.0",
+        "after": "DERBY_LOST_GREATER_3_GOALS = -1.0"
+      },
+      {
+        "id": "media_pressure",
+        "before": "MEDIA_PRESSURE_DECREASE_FACTOR = 1.0, 1.0, 1.0, 1.0",
+        "after": "MEDIA_PRESSURE_DECREASE_FACTOR = 0.35, 0.35, 0.35, 0.35"
+      },
+      {
+        "id": "relegation_position_pressure",
+        "before": "LEAGUE_RELEGATION_POS_VALUE = -0.6",
+        "after": "LEAGUE_RELEGATION_POS_VALUE = -0.25"
+      },
+      {
+        "id": "cup_exit_pressure",
+        "before": "CUP_OBJECTIVE_DROP_OUT_ROUND = -2.0f",
+        "after": "CUP_OBJECTIVE_DROP_OUT_ROUND = -0.75f"
+      },
+      {
+        "id": "champions_cup_final_pressure",
+        "before": "CHAMPIONS_CUP_FINAL_MISSED_VALUE = -3.2",
+        "after": "CHAMPIONS_CUP_FINAL_MISSED_VALUE = -1.0"
+      }
+    ],
+    "fmdata/ParameterFiles/Staff Tasks.txt": [
+      {
+        "id": "youth_skill_training",
+        "before": "// Maximum gain in youth skill training by youth coach (in percent)\n0.3",
+        "after": "// Maximum gain in youth skill training by youth coach (in percent)\n0.45"
+      },
+      {
+        "id": "youth_player_retention",
+        "before": "// Maximum lowered quittings of youth players by youth coach (in percent)\n0.75",
+        "after": "// Maximum lowered quittings of youth players by youth coach (in percent)\n0.90"
+      },
+      {
+        "id": "youth_tactical_education",
+        "before": "// Maximum acceleration of the tactical education of youth players by youth coach (in percent)\n0.7",
+        "after": "// Maximum acceleration of the tactical education of youth players by youth coach (in percent)\n0.85"
+      },
+      {
+        "id": "medical_injury_duration",
+        "before": "// Maximum lowered duration of injuries (in percent)\n0.15",
+        "after": "// Maximum lowered duration of injuries (in percent)\n0.35"
+      },
+      {
+        "id": "medical_training_injury_probability",
+        "before": "// Maximum lowered probability of injury during training (in percent)\n0.15",
+        "after": "// Maximum lowered probability of injury during training (in percent)\n0.40"
+      },
+      {
+        "id": "masseur_energy_gain",
+        "before": "// Maximum energy gain during training by masseur (in percent)\n0.20",
+        "after": "// Maximum energy gain during training by masseur (in percent)\n0.35"
+      },
+      {
+        "id": "psychologist_unused_player_morale",
+        "before": "// Maximum lowered moral loss for players who haven't played by psycho (in percent)\n0.20",
+        "after": "// Maximum lowered moral loss for players who haven't played by psycho (in percent)\n0.50"
+      },
+      {
+        "id": "construction_manager_cost_reduction",
+        "before": "// Maximum lowered building costs by construction manager (in percent)\n0.20",
+        "after": "// Maximum lowered building costs by construction manager (in percent)\n0.30"
+      },
+      {
+        "id": "lawyer_compensation_reduction",
+        "before": "// Maximum lowered compensation by the lawyer when dismissing a staff (in percent)\n0.20",
+        "after": "// Maximum lowered compensation by the lawyer when dismissing a staff (in percent)\n0.35"
+      },
+      {
+        "id": "spokesperson_media_gain",
+        "before": "// Maximum chance to increase media status (+1) per week by spokesperson (in percent)\n0.20",
+        "after": "// Maximum chance to increase media status (+1) per week by spokesperson (in percent)\n0.30"
+      },
+      {
+        "id": "fan_representative_gain",
+        "before": "// Maximum gain of active fans by fan representative (in percent)\n0.15",
+        "after": "// Maximum gain of active fans by fan representative (in percent)\n0.25"
+      }
+    ],
+    "fmdata/ParameterFiles/Fitness and Fatigue.txt": [
+      {
+        "id": "fitness_without_matches",
+        "before": "// Maximum aerobic fitness level achievable without matches (from training and gym, etc.)\n75",
+        "after": "// Maximum aerobic fitness level achievable without matches (from training and gym, etc.)\n85"
+      },
+      {
+        "id": "gym_fitness_gain",
+        "before": "// Percentage that aerobic fitness increases per week from gym work\n0.08",
+        "after": "// Percentage that aerobic fitness increases per week from gym work\n0.12"
+      },
+      {
+        "id": "first_match_back_injury_risk",
+        "before": "// how many times the normal risk the player is at during this first game back.\n7",
+        "after": "// how many times the normal risk the player is at during this first game back.\n3"
+      },
+      {
+        "id": "stamina_fatigue_multiplier",
+        "before": "// Thus a higher stamina means less suffering of fatigue effects.\n0.7",
+        "after": "// Thus a higher stamina means less suffering of fatigue effects.\n0.55"
+      },
+      {
+        "id": "training_fatigue",
+        "before": "28,15\n24,13\n20,11\n16,5\n12,0\n8,-10\n4,-19\n0,-28",
+        "after": "28,10\n24,8\n20,7\n16,3\n12,0\n8,-12\n4,-22\n0,-32"
+      },
+      {
+        "id": "match_fatigue",
+        "before": "10,2\n20,4\n30,6\n45,9\n60,12\n75,16\n90,20\n105,22\n120,24",
+        "after": "10,1\n20,3\n30,4\n45,6\n60,9\n75,12\n90,15\n105,17\n120,18"
+      },
+      {
+        "id": "fitness_fatigue_multiplier",
+        "before": "// Same logic as the Stamina multiplier\n0.62",
+        "after": "// Same logic as the Stamina multiplier\n0.50"
+      }
+    ],
+    "fmdata/ParameterFiles/Training.txt": [
+      {
+        "id": "training_morale_penalties",
+        "before": "// Morale\n-1, 0, -2, 0, -2, 0, 0, 0, -1, -1, 0, 0, -1, 0, -1, -1, 0",
+        "after": "// Morale\n0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+      },
+      {
+        "id": "general_training_injury_probability",
+        "before": "// General Injury Probability Multiplier\n7.0",
+        "after": "// General Injury Probability Multiplier\n4.0"
+      },
+      {
+        "id": "human_team_training_reduction",
+        "before": "// Reduced training human teams (skill training, position training, skill match, position match)\n0.5\n0.5\n0.5\n0.5",
+        "after": "// Reduced training human teams (skill training, position training, skill match, position match)\n0.75\n0.75\n0.75\n0.75"
+      }
+    ],
+    "fmdata/ParameterFiles/Player Development.txt": [
+      {
+        "id": "youth_talent_distribution_basic",
+        "before": "// Distribution of talents without youth boarding school\n20,30,35,12,3",
+        "after": "// Distribution of talents without youth boarding school\n15,28,38,15,4"
+      },
+      {
+        "id": "youth_talent_distribution_boarding",
+        "before": "// Distribution of talents with youth boarding school (or better)\n10,30,40,15,5",
+        "after": "// Distribution of talents with youth boarding school (or better)\n7,25,42,20,6"
+      },
+      {
+        "id": "new_youth_player_frequency",
+        "before": "// Probability for a new youth player per week (1/x)\n19",
+        "after": "// Probability for a new youth player per week (1/x)\n14"
+      },
+      {
+        "id": "youth_player_quit_frequency",
+        "before": "// Probability for a youth player to quit per week (1/x)\n240",
+        "after": "// Probability for a youth player to quit per week (1/x)\n480"
+      },
+      {
+        "id": "youth_injury_frequency",
+        "before": "// Probability for an injury of a youth player (1/x, per week)\n75",
+        "after": "// Probability for an injury of a youth player (1/x, per week)\n120"
+      },
+      {
+        "id": "youth_good_year_bonus",
+        "before": "// Probability for doubling the points of a youth player in a \"good year\" \n43",
+        "after": "// Probability for doubling the points of a youth player in a \"good year\" \n55"
+      },
+      {
+        "id": "global_youth_talent_multiplier",
+        "before": "// Global Talent multiplier\n0.65",
+        "after": "// Global Talent multiplier\n0.72"
+      }
+    ],
+    "fmdata/ParameterFiles/International Youth Camps.txt": [
+      {
+        "id": "international_youth_camp_arrivals",
+        "before": "// Probability for a new youth player from an international youth camp (1/x per day)\n73",
+        "after": "// Probability for a new youth player from an international youth camp (1/x per day)\n55"
+      }
+    ],
+    "fmdata/ParameterFiles/Training Camp.txt": [
+      {
+        "id": "training_camp_form_retention",
+        "before": "// Probability of losing one point of the training camp form bonus per week\n50",
+        "after": "// Probability of losing one point of the training camp form bonus per week\n30"
+      }
+    ],
+    "fmdata/ParameterFiles/Scouting.txt": [
+      {
+        "id": "swap_scouting_clubs_per_week",
+        "before": "// Number of clubs to check for a swap deal per week\n1",
+        "after": "// Number of clubs to check for a swap deal per week\n2"
+      },
+      {
+        "id": "swap_scouting_success",
+        "before": "// Probability of finding a player for a swap deal when checking a club\n50",
+        "after": "// Probability of finding a player for a swap deal when checking a club\n65"
+      }
+    ],
+    "fmdata/ParameterFiles/Cooperations.txt": [
+      {
+        "id": "cooperation_youth_camps",
+        "before": "// Points for every youth camp\n1.0",
+        "after": "// Points for every youth camp\n1.25"
+      },
+      {
+        "id": "cooperation_boarding_school",
+        "before": "// Points for boarding school\n0.5",
+        "after": "// Points for boarding school\n0.75"
+      },
+      {
+        "id": "cooperation_youth_coaches",
+        "before": "// youth coaches divided by, max points\n5.0,2.0",
+        "after": "// youth coaches divided by, max points\n4.0,2.5"
+      },
+      {
+        "id": "cooperation_youth_centre",
+        "before": "// Points for every level of the youth centre\n0.5",
+        "after": "// Points for every level of the youth centre\n0.75"
+      }
+    ]
+  }
+}

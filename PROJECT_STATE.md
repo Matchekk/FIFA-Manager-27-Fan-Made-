@@ -48,14 +48,16 @@ game works. Runtime activation: PASS. This does not replace the representative
 completed-data new-career smoke, which remains deferred until production freeze.
 Evidence: `reports/current/NATIVE10_EXTERNAL_PASS1_RUNTIME_ACTIVATION.json`.
 
-Runtime quality-of-life tuning `relaxed-player-communication-v1` is applied to
-the isolated Native10 runtime. The supported `MORALE_AND_TRUST` parameters now
-recover morale below 100 by +10 and trust below 10 by +1 on every difficulty.
-The running game was left open to protect unsaved progress; the tuning loads on
-the next launch. Original installation unchanged. Deterministic profile/tool and
-validation: `data/parameter-tuning/relaxed-player-communication.json`,
-`tools/apply-player-communication-tuning.py`, and
-`reports/current/PLAYER_COMMUNICATION_TUNING.md`.
+Runtime quality-of-life profile `relaxed-career-v1` is applied to the isolated
+Native10 runtime: 54 guarded patch groups in 10 parameter files cover morale,
+trust, transfers, sponsors, scouting, board pressure, fatigue, training,
+injuries, staff, youth development, youth camps and cooperations. The earlier
+communication fix is included in the combined deterministic profile. The
+running game was left open to protect unsaved progress; the tuning loads on the
+next launch. Original installation unchanged. Profile, tool and validation:
+`data/parameter-tuning/relaxed-career-v1.json`,
+`tools/apply-relaxed-career-tuning.py`, and
+`reports/current/RELAXED_CAREER_TUNING.md`.
 
 Coverage: 222 clubs; 179 GOOD_ENOUGH, 43 PARTIAL, 0 BLOCKED. The current matrix is
 `data/current/CLUB_COVERAGE_MATRIX.csv`. Production freeze remains closed because
