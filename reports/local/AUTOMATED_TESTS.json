@@ -1,10 +1,10 @@
 {
   "status": "PASS",
-  "tests": 305,
+  "tests": 309,
   "errors": 0,
   "failures": 0,
   "skipped": 0,
-  "run_at": "2026-09-13T08:04:26.952381+00:00",
+  "run_at": "2026-09-13T20:12:54.135800+00:00",
   "source_sha256": {
     "src\\fm27\\__init__.py": "418cbb6e14a85ec361db6898a2bfa766286311b7f117713d88b93b2fa59efbf9",
     "src\\fm27\\audit.py": "9e426828af6f4b48adb207499b2e67705558ff8b2ee664564c67032956944950",
@@ -58,6 +58,7 @@
     "tests\\test_native10_semantic_diff.py": "ec22394b749f536fa0f97b9e91fe396dcaf17c6b3c75662bfd4f971cc4693404",
     "tests\\test_native_identity.py": "29830e8c23c99ef6fefe42583b383b9a583911c0e38976caac1ead29528ca9d0",
     "tests\\test_player_identities.py": "b210087dd2f8b1102c276ee773a64220b6ce3b646cdb0715d5ef88633523b4c9",
+    "tests\\test_player_offer_all_qol.py": "1fc971c27802d0165729eb196f29c5b3a728322862f64aec47a0b38a51cc80f1",
     "tests\\test_primary_loans.py": "d689a94b6082b5efca1a749297dd89e4b455d4ea0200859992b5d2dc06533cd8",
     "tests\\test_profile_full_name.py": "c39d3c062e731cca6e668e6b64a06f93baf4bfe1e2a5622e65aed89ece08857c",
     "tests\\test_purchase_loans.py": "ce7a1cb3fe9954e1964f4dc8f87dad26fe36d51c0f2bf4c91ad2a09acef4e47e",

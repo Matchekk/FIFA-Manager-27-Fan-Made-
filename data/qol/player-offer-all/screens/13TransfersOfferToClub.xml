@@ -1,0 +1,1739 @@
+<Screen Name="13TransfersOfferToClub" Width="1280" Height="1024" Type="1" Version="0x00000001">
+	<Trfm Uid="MasterTrfm">
+		<Obj Rtti="Zone" Uid="Screen">
+			<Appearance Rect="0,0,1280,1024" />
+			<ColText String="Screen" Font="default.ffn" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0x7f1a1a1a" />
+			<Behaviour Type="BoundingBox" HAlign="Left" VAlign="Top" />
+		</Obj>
+		<Obj Rtti="BgBlur" Uid="BgBlur" />
+		<Obj Rtti="Image" Uid="_i1">
+			<Appearance Rect="7,19,1266,986" />
+			<Texture Rect="0,0,1266,986" Resrc="art_fm\Interface\Popup\IMG_Pop-Up-Contract.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+		</Obj>
+		<Obj Rtti="Image" Uid="_PatternLoanFee">
+			<Appearance Rect="703,708,503,100" />
+			<Texture Rect="0,0,25,25" Resrc="art_fm\Interface\Patterns\Pattern_ListboxCell_25px.tga" Tiling="true" Color="0xffffffff" ScaleMethod="ScaleXY" />
+		</Obj>
+		<Obj Rtti="Image" Visible="false" Uid="_PatternTransferType1">
+			<Appearance Rect="703,611,503,75" />
+			<Texture Rect="0,0,25,25" Resrc="art_fm\Interface\Patterns\Pattern_ListboxCell_25px.tga" Tiling="true" Color="0xffffffff" ScaleMethod="ScaleXY" />
+		</Obj>
+		<Obj Rtti="Image" Uid="_PatternClub">
+			<Appearance Rect="703,306,251,25" />
+			<Texture Rect="0,0,25,25" Resrc="art_fm\Interface\Patterns\Pattern_ListboxCell_25px.tga" Tiling="true" Color="0xffffffff" ScaleMethod="ScaleXY" />
+		</Obj>
+		<Obj Rtti="Image" Uid="_PatternCountryLeague">
+			<Appearance Rect="703,256,503,50" />
+			<Texture Rect="0,0,25,25" Resrc="art_fm\Interface\Patterns\Pattern_ListboxCell_25px.tga" Tiling="true" Color="0xffffffff" ScaleMethod="ScaleXY" />
+		</Obj>
+		<Obj Rtti="TextBox" Visible="false" Uid="_TbBg1">
+			<Appearance Rect="110,112,5,285" BlendCol="0x66ffffff" />
+			<SolidColor Color="0xffe0d2c7" />
+			<ColText Font="Headline" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Left" TextModifier="UpperCase" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t29">
+			<Meta>
+				<Entry Key="Design" Value="Subtopic" />
+			</Meta>
+			<Appearance Rect="703,576,503,30" />
+			<Tile3Texture Resrc="art\custom\controls\FM13\controls.tga" Color="0xffffffff">
+				<Tile0 Rect="43,214,4,30" />
+				<Tile1 Rect="43,214,4,30" />
+				<Tile2 Rect="43,214,4,30" />
+			</Tile3Texture>
+			<ColText String="$IDS_TRANSFER_OFFERTOCLUB_CONTRACT_DETAILS" Font="Subtopic" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t35">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,611,251,25" />
+			<ColText String="$IDS_TRANSFER_OFFERTOCLUB_TRANSFER" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t4">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,256,251,25" />
+			<ColText String="$IDS_COUNTRY_MAS" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t24">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,281,251,25" />
+			<ColText String="$AN_League" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t25">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,306,251,25" />
+			<ColText String="$HL_CLUB" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t330">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,338,251,210" />
+			<ColText String="$IDS_TRANSFER_OFFERTOCLUB_HELP" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" VAlign="Top" BorderLeft="0" RowOffset="3" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t5">
+			<Appearance Rect="955,309,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t6">
+			<Appearance Rect="955,331,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t7">
+			<Appearance Rect="955,353,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t8">
+			<Appearance Rect="955,375,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t9">
+			<Appearance Rect="955,397,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t10">
+			<Appearance Rect="955,419,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t11">
+			<Appearance Rect="955,441,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t12">
+			<Appearance Rect="955,463,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t13">
+			<Appearance Rect="955,485,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t14">
+			<Appearance Rect="955,507,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t15">
+			<Appearance Rect="955,529,251,22" />
+			<ColText Font="Body" ColorActive="0xff3b3b3b" ColorInactive="0xff3b3b3b" ColorHighlight="0xff3b3b3b" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t16">
+			<Appearance Rect="955,551,251,22" />
+			<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" HAlign="Left" />
+		</Obj>
+		<Obj Rtti="FmListBox" Uid="LbClubs">
+			<Meta>
+				<Entry Key="Design" Value="Subtopic" />
+			</Meta>
+			<Attribs ColorSelect="0x22b1613e" ColorHighlight="0x185e3925" HeadLineHeight="0" UseAppPalette="false" />
+			<Appearance Rect="955,309,251,264" />
+			<Parts Table="TableContent" SliderV="TableSlider" />
+			<Headline Obj="Headline0" Col="0" />
+			<Headline Obj="Headline1" Col="1" />
+			<FmListBoxBackGround>
+				<Tile9Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="40,192,2,22" />
+					<Tile1 Rect="42,192,4,22" />
+					<Tile2 Rect="46,192,2,22" />
+					<Tile3 Rect="40,192,2,22" />
+					<Tile4 Rect="42,192,4,22" />
+					<Tile5 Rect="46,192,2,22" />
+					<Tile6 Rect="40,192,2,22" />
+					<Tile7 Rect="42,192,4,22" />
+					<Tile8 Rect="46,192,2,22" />
+				</Tile9Texture>
+				<Colors Head="0x00ffffff" />
+				<Background Hide="false" />
+			</FmListBoxBackGround>
+			<Obj Rtti="TextBox" Uid="Headline0">
+				<Meta>
+					<Entry Key="Column.Index" Value="0" />
+				</Meta>
+				<Appearance Rect="955,309,28,0" />
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="32,192,2,22" />
+					<Tile1 Rect="34,192,4,22" />
+					<Tile2 Rect="38,192,2,22" />
+				</Tile3Texture>
+				<ColText Font="ListboxHeadline" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23463b" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="Headline1">
+				<Meta>
+					<Entry Key="Column.Index" Value="1" />
+				</Meta>
+				<Appearance Rect="983,309,223,0" />
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="32,192,2,22" />
+					<Tile1 Rect="34,192,4,22" />
+					<Tile2 Rect="38,192,2,22" />
+				</Tile3Texture>
+				<ColText Font="ListboxHeadline" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23463b" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="Table" Uid="TableContent">
+				<Attribs Rows="1" RowHeight="22" />
+				<Appearance Rect="955,309,251,264" />
+				<AddColumn Rtti="TextBox" Width="28">
+					<Appearance Rect="957,0,24,22" />
+					<ColText Font="ListboxHeadline" HAlign="Left" />
+				</AddColumn>
+				<AddColumn Rtti="TextBox" Width="223">
+					<Appearance Rect="985,0,219,22" />
+					<ColText Font="ListboxHeadline" HAlign="Left" />
+				</AddColumn>
+				<View ColCount="2" />
+			</Obj>
+			<Obj Rtti="SlideBar" Visible="false" Uid="TableSlider">
+				<Attribs Layout="Vertical" />
+				<Appearance Rect="1186,309,20,264" />
+				<Texture Rect="0,184,20,4" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				<Parts Slider="SliderV" ButtonLess="ScrlUp" ButtonMore="ScrlDown" />
+				<Obj Rtti="Slider" Uid="SliderV">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1186,332,20,218" />
+					<TexInactive>
+						<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+							<Tile0 Rect="40,92,20,7" />
+							<Tile1 Rect="40,99,20,9" />
+							<Tile2 Rect="40,108,20,7" />
+						</Tile3Texture>
+					</TexInactive>
+					<TexActive>
+						<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+							<Tile0 Rect="40,138,20,7" />
+							<Tile1 Rect="40,145,20,9" />
+							<Tile2 Rect="40,154,20,7" />
+						</Tile3Texture>
+					</TexActive>
+					<TexDisabled>
+						<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+							<Tile0 Rect="40,161,20,7" />
+							<Tile1 Rect="40,168,20,9" />
+							<Tile2 Rect="40,177,20,7" />
+						</Tile3Texture>
+					</TexDisabled>
+					<TexHighlighted>
+						<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+							<Tile0 Rect="40,115,20,7" />
+							<Tile1 Rect="40,122,20,9" />
+							<Tile2 Rect="40,131,20,7" />
+						</Tile3Texture>
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="0,0,512,512" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0x00ffffff" ScaleMethod="Center" />
+					</TexOverlayInactive>
+				</Obj>
+				<Obj Rtti="Button" Uid="ScrlUp">
+					<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1186,309,20,23" />
+					<TexInactive>
+						<Texture Rect="0,92,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="0,138,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="0,161,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="0,115,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+				</Obj>
+				<Obj Rtti="Button" Uid="ScrlDown">
+					<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1186,550,20,23" />
+					<TexInactive>
+						<Texture Rect="20,92,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="20,138,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="20,161,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="20,115,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+				</Obj>
+			</Obj>
+		</Obj>
+		<Obj Rtti="CheckBox" Uid="RbLoan">
+			<Meta>
+				<Entry Key="Design" Value="Progress Bar" />
+				<Entry Key="Design.Control" Value="Radio" />
+			</Meta>
+			<Attribs Type="Toggle" CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" Checked="false" />
+			<Appearance Rect="955,612,18,23" />
+			<TexInactive>
+				<Texture Rect="0,0,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="0,46,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="0,69,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="0,23,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<Parts ClickCtrl="Text" />
+			<Obj Rtti="TextBox" Uid="Text">
+				<Appearance Rect="973,611,233,25" />
+				<ColText String="$IDCSTR_CONTRACT_110" Font="Body" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="4" />
+			</Obj>
+		</Obj>
+		<Obj Rtti="CheckBox" Uid="RbLoanOption">
+			<Meta>
+				<Entry Key="Design" Value="Progress Bar" />
+				<Entry Key="Design.Control" Value="Radio" />
+			</Meta>
+			<Attribs Type="Toggle" CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" Checked="false" />
+			<Appearance Rect="955,637,18,23" />
+			<TexInactive>
+				<Texture Rect="0,0,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="0,46,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="0,69,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="0,23,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<Parts ClickCtrl="Text" />
+			<Obj Rtti="TextBox" Uid="Text">
+				<Appearance Rect="973,636,233,25" />
+				<ColText String="$IDCSTR_CONTRACT_210" Font="Body" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="4" />
+			</Obj>
+		</Obj>
+		<Obj Rtti="CheckBox" Uid="RbSell">
+			<Meta>
+				<Entry Key="Design" Value="Progress Bar" />
+				<Entry Key="Design.Control" Value="Radio" />
+			</Meta>
+			<Attribs Type="Toggle" CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" Checked="false" />
+			<Appearance Rect="955,662,18,23" />
+			<TexInactive>
+				<Texture Rect="0,0,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="0,46,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="0,69,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="0,23,18,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<Parts ClickCtrl="Text" />
+			<Obj Rtti="TextBox" Uid="Text">
+				<Appearance Rect="973,661,233,25" />
+				<ColText String="$IDS_PLAYER_SPECIAL_OPTION_SELL" Font="Body" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="4" />
+			</Obj>
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t26">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,708,251,25" />
+			<ColText String="$ID_ACCOUNT_ID29" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t27">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,733,251,25" />
+			<ColText String="$IDS_TRANSFER_PERCENTAGE" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" RowOffset="2" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_t31">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="703,758,251,25" />
+			<ColText String="$ID_ACCOUNT_ID25" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" RowOffset="2" />
+		</Obj>
+		<Obj Rtti="TextBox" Visible="false" Uid="TbDebug">
+			<Meta>
+				<Entry Key="Design" Value="FM12 Default" />
+			</Meta>
+			<Appearance Rect="703,783,251,25" />
+			<ColText Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="ValueCtrl" Uid="VcBuyFee">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Attribs Min="1" Max="50" Value="50" />
+			<Parts EditBox="EditBox" Image="Image" Spin="Spin" Slider="Slider" />
+			<Obj Rtti="EditBox" Uid="EditBox">
+				<Attribs CrossFadeTime="0.500000" />
+				<Appearance Rect="955,760,209,23" />
+				<TexInactive>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,0,12,23" />
+						<Tile1 Rect="144,0,10,23" />
+						<Tile2 Rect="154,0,8,23" />
+					</Tile3Texture>
+				</TexInactive>
+				<TexActive>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,46,12,23" />
+						<Tile1 Rect="144,46,10,23" />
+						<Tile2 Rect="154,46,8,23" />
+					</Tile3Texture>
+				</TexActive>
+				<TexDisabled>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,69,12,23" />
+						<Tile1 Rect="144,69,10,23" />
+						<Tile2 Rect="154,69,8,23" />
+					</Tile3Texture>
+				</TexDisabled>
+				<TexHighlighted>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,23,12,23" />
+						<Tile1 Rect="144,23,10,23" />
+						<Tile2 Rect="154,23,8,23" />
+					</Tile3Texture>
+				</TexHighlighted>
+				<ColText String="50" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff4e7985" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Right" BorderLeft="7" BorderRight="8" RowOffset="2002743765" />
+			</Obj>
+			<Obj Rtti="Image" Uid="Image">
+				<Appearance Rect="1164,760,42,0" />
+				<Texture Rect="0,0,512,512" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0x00000000" ScaleMethod="ScaleXY" />
+			</Obj>
+			<Obj Rtti="Spin" Uid="Spin">
+				<Attribs Min="1" Max="50" Mode="Clip" HoldType="STEP_ONE" />
+				<Parts ButtonLess="SpinDown" ButtonMore="SpinUp" />
+				<Obj Rtti="Button" Uid="SpinDown">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1164,760,21,23" />
+					<TexInactive>
+						<Texture Rect="162,0,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="162,46,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="162,69,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="162,23,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="60,92,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayInactive>
+					<TexOverlayActive>
+						<Texture Rect="60,138,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayActive>
+					<TexOverlayDisabled>
+						<Texture Rect="60,161,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayDisabled>
+					<TexOverlayHighlighted>
+						<Texture Rect="60,115,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayHighlighted>
+				</Obj>
+				<Obj Rtti="Button" Uid="SpinUp">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1185,760,21,23" />
+					<TexInactive>
+						<Texture Rect="183,0,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="183,46,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="183,69,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="183,23,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="101,92,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayInactive>
+					<TexOverlayActive>
+						<Texture Rect="101,138,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayActive>
+					<TexOverlayDisabled>
+						<Texture Rect="101,161,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayDisabled>
+					<TexOverlayHighlighted>
+						<Texture Rect="101,115,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayHighlighted>
+				</Obj>
+			</Obj>
+			<Obj Rtti="SlideCtrl" Visible="false" Uid="Slider">
+				<Attribs Min="1" Max="50" Step="1" Value="50" />
+				<Parts Slider="Slider" />
+				<Appearance Rect="955,783,245,32" />
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,224,10,32" />
+					<Tile1 Rect="10,224,12,32" />
+					<Tile2 Rect="20,224,10,32" />
+				</Tile3Texture>
+				<Obj Rtti="Slider" Uid="Slider">
+					<Attribs Type="Toggle" CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1183,783,17,23" />
+					<TexInactive>
+						<Texture Rect="204,0,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="204,46,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="204,69,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="204,23,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexHighlighted>
+				</Obj>
+			</Obj>
+		</Obj>
+		<Obj Rtti="ValueCtrl" Uid="VcWage">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Attribs Min="1" Max="50" Value="50" />
+			<Parts EditBox="EditBox" Image="Image" Spin="Spin" Slider="Slider" />
+			<Obj Rtti="EditBox" Uid="EditBox">
+				<Attribs CrossFadeTime="0.500000" />
+				<Appearance Rect="955,735,209,23" />
+				<TexInactive>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,0,12,23" />
+						<Tile1 Rect="144,0,10,23" />
+						<Tile2 Rect="154,0,8,23" />
+					</Tile3Texture>
+				</TexInactive>
+				<TexActive>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,46,12,23" />
+						<Tile1 Rect="144,46,10,23" />
+						<Tile2 Rect="154,46,8,23" />
+					</Tile3Texture>
+				</TexActive>
+				<TexDisabled>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,69,12,23" />
+						<Tile1 Rect="144,69,10,23" />
+						<Tile2 Rect="154,69,8,23" />
+					</Tile3Texture>
+				</TexDisabled>
+				<TexHighlighted>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,23,12,23" />
+						<Tile1 Rect="144,23,10,23" />
+						<Tile2 Rect="154,23,8,23" />
+					</Tile3Texture>
+				</TexHighlighted>
+				<ColText String="50" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff4e7985" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Right" BorderLeft="7" BorderRight="8" RowOffset="2002743765" />
+			</Obj>
+			<Obj Rtti="Image" Uid="Image">
+				<Appearance Rect="1164,735,42,0" />
+				<Texture Rect="0,0,512,512" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0x00000000" ScaleMethod="ScaleXY" />
+			</Obj>
+			<Obj Rtti="Spin" Uid="Spin">
+				<Attribs Min="1" Max="50" Mode="Clip" HoldType="STEP_ONE" />
+				<Parts ButtonLess="SpinDown" ButtonMore="SpinUp" />
+				<Obj Rtti="Button" Uid="SpinDown">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1164,735,21,23" />
+					<TexInactive>
+						<Texture Rect="162,0,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="162,46,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="162,69,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="162,23,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="60,92,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayInactive>
+					<TexOverlayActive>
+						<Texture Rect="60,138,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayActive>
+					<TexOverlayDisabled>
+						<Texture Rect="60,161,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayDisabled>
+					<TexOverlayHighlighted>
+						<Texture Rect="60,115,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayHighlighted>
+				</Obj>
+				<Obj Rtti="Button" Uid="SpinUp">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1185,735,21,23" />
+					<TexInactive>
+						<Texture Rect="183,0,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="183,46,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="183,69,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="183,23,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="101,92,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayInactive>
+					<TexOverlayActive>
+						<Texture Rect="101,138,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayActive>
+					<TexOverlayDisabled>
+						<Texture Rect="101,161,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayDisabled>
+					<TexOverlayHighlighted>
+						<Texture Rect="101,115,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayHighlighted>
+				</Obj>
+			</Obj>
+			<Obj Rtti="SlideCtrl" Visible="false" Uid="Slider">
+				<Attribs Min="1" Max="50" Step="1" Value="50" />
+				<Parts Slider="Slider" />
+				<Appearance Rect="955,758,245,32" />
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,224,10,32" />
+					<Tile1 Rect="10,224,12,32" />
+					<Tile2 Rect="20,224,10,32" />
+				</Tile3Texture>
+				<Obj Rtti="Slider" Uid="Slider">
+					<Attribs Type="Toggle" CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1183,758,17,23" />
+					<TexInactive>
+						<Texture Rect="204,0,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="204,46,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="204,69,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="204,23,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexHighlighted>
+				</Obj>
+			</Obj>
+		</Obj>
+		<Obj Rtti="ValueCtrl" Uid="VcTransferFee">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Attribs Min="1" Max="50" Value="50" />
+			<Parts EditBox="EditBox" Image="Image" Spin="Spin" Slider="Slider" />
+			<Obj Rtti="EditBox" Uid="EditBox">
+				<Attribs CrossFadeTime="0.500000" />
+				<Appearance Rect="955,710,209,23" />
+				<TexInactive>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,0,12,23" />
+						<Tile1 Rect="144,0,10,23" />
+						<Tile2 Rect="154,0,8,23" />
+					</Tile3Texture>
+				</TexInactive>
+				<TexActive>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,46,12,23" />
+						<Tile1 Rect="144,46,10,23" />
+						<Tile2 Rect="154,46,8,23" />
+					</Tile3Texture>
+				</TexActive>
+				<TexDisabled>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,69,12,23" />
+						<Tile1 Rect="144,69,10,23" />
+						<Tile2 Rect="154,69,8,23" />
+					</Tile3Texture>
+				</TexDisabled>
+				<TexHighlighted>
+					<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+						<Tile0 Rect="132,23,12,23" />
+						<Tile1 Rect="144,23,10,23" />
+						<Tile2 Rect="154,23,8,23" />
+					</Tile3Texture>
+				</TexHighlighted>
+				<ColText String="50" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff4e7985" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Right" BorderLeft="7" BorderRight="8" RowOffset="2002743765" />
+			</Obj>
+			<Obj Rtti="Image" Uid="Image">
+				<Appearance Rect="1164,710,42,0" />
+				<Texture Rect="0,0,512,512" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0x00000000" ScaleMethod="ScaleXY" />
+			</Obj>
+			<Obj Rtti="Spin" Uid="Spin">
+				<Attribs Min="1" Max="50" Mode="Clip" HoldType="STEP_ONE" />
+				<Parts ButtonLess="SpinDown" ButtonMore="SpinUp" />
+				<Obj Rtti="Button" Uid="SpinDown">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1164,710,21,23" />
+					<TexInactive>
+						<Texture Rect="162,0,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="162,46,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="162,69,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="162,23,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="60,92,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayInactive>
+					<TexOverlayActive>
+						<Texture Rect="60,138,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayActive>
+					<TexOverlayDisabled>
+						<Texture Rect="60,161,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayDisabled>
+					<TexOverlayHighlighted>
+						<Texture Rect="60,115,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayHighlighted>
+				</Obj>
+				<Obj Rtti="Button" Uid="SpinUp">
+					<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1185,710,21,23" />
+					<TexInactive>
+						<Texture Rect="183,0,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="183,46,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="183,69,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="183,23,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexHighlighted>
+					<TexOverlayInactive>
+						<Texture Rect="101,92,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayInactive>
+					<TexOverlayActive>
+						<Texture Rect="101,138,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayActive>
+					<TexOverlayDisabled>
+						<Texture Rect="101,161,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayDisabled>
+					<TexOverlayHighlighted>
+						<Texture Rect="101,115,21,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					</TexOverlayHighlighted>
+				</Obj>
+			</Obj>
+			<Obj Rtti="SlideCtrl" Visible="false" Uid="Slider">
+				<Attribs Min="1" Max="50" Step="1" Value="50" />
+				<Parts Slider="Slider" />
+				<Appearance Rect="955,733,245,32" />
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,224,10,32" />
+					<Tile1 Rect="10,224,12,32" />
+					<Tile2 Rect="20,224,10,32" />
+				</Tile3Texture>
+				<Obj Rtti="Slider" Uid="Slider">
+					<Attribs Type="Toggle" CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+					<Appearance Rect="1183,733,17,23" />
+					<TexInactive>
+						<Texture Rect="204,0,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexInactive>
+					<TexActive>
+						<Texture Rect="204,46,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexActive>
+					<TexDisabled>
+						<Texture Rect="204,69,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexDisabled>
+					<TexHighlighted>
+						<Texture Rect="204,23,17,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="Bottom" />
+					</TexHighlighted>
+				</Obj>
+			</Obj>
+		</Obj>
+		<Obj Rtti="ComboBox" Uid="CbLeague">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="955,282,251,23" />
+			<TexFolded>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,0,16,23" />
+					<Tile1 Rect="52,0,16,23" />
+					<Tile2 Rect="-32,0,32,23" />
+				</Tile3Texture>
+			</TexFolded>
+			<TexUnfoldedUp>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,46,16,23" />
+					<Tile1 Rect="52,46,16,23" />
+					<Tile2 Rect="-32,46,32,23" />
+				</Tile3Texture>
+			</TexUnfoldedUp>
+			<TexUnfoldedDown>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,46,16,23" />
+					<Tile1 Rect="52,46,16,23" />
+					<Tile2 Rect="-32,46,32,23" />
+				</Tile3Texture>
+			</TexUnfoldedDown>
+			<TexPopupTop>
+				<Tile9Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,192,10,10" />
+					<Tile1 Rect="10,192,10,10" />
+					<Tile2 Rect="20,192,12,10" />
+					<Tile3 Rect="0,202,10,10" />
+					<Tile4 Rect="10,202,10,10" />
+					<Tile5 Rect="20,202,12,10" />
+					<Tile6 Rect="0,212,10,12" />
+					<Tile7 Rect="10,212,10,12" />
+					<Tile8 Rect="20,212,12,12" />
+				</Tile9Texture>
+			</TexPopupTop>
+			<TexPopupDown>
+				<Tile9Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,192,10,10" />
+					<Tile1 Rect="10,192,10,10" />
+					<Tile2 Rect="20,192,12,10" />
+					<Tile3 Rect="0,202,10,10" />
+					<Tile4 Rect="10,202,10,10" />
+					<Tile5 Rect="20,202,12,10" />
+					<Tile6 Rect="0,212,10,12" />
+					<Tile7 Rect="10,212,10,12" />
+					<Tile8 Rect="20,212,12,12" />
+				</Tile9Texture>
+			</TexPopupDown>
+			<TexFoldedOver>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,23,16,23" />
+					<Tile1 Rect="52,23,16,23" />
+					<Tile2 Rect="-32,23,32,23" />
+				</Tile3Texture>
+			</TexFoldedOver>
+			<TexFoldedDisabled>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,69,16,23" />
+					<Tile1 Rect="52,69,16,23" />
+					<Tile2 Rect="-32,69,32,23" />
+				</Tile3Texture>
+			</TexFoldedDisabled>
+			<Selection Current="0x408d9151" Highlight="0x40bbc946" />
+			<Parts Head="ComboText" DropButton="DropDown" DropBox="ComboPopup" DropTable="ComboPopup|ComboTable" Slider="ComboPopup|CombBarV" />
+			<Dim Headline="23" Dropdown="32" PopupMin="23" PopupMax="220" />
+			<Obj Rtti="TextBox" Uid="ComboText">
+				<Appearance Rect="963,282,243,23" />
+				<ColText Font="Body" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="Button" Uid="DropDown">
+				<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+				<Appearance Rect="1174,282,32,23" />
+				<TexInactive>
+					<Texture Rect="68,0,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexInactive>
+				<TexActive>
+					<Texture Rect="68,46,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexActive>
+				<TexDisabled>
+					<Texture Rect="68,69,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexDisabled>
+				<TexHighlighted>
+					<Texture Rect="68,23,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexHighlighted>
+			</Obj>
+			<Obj Rtti="ScrollCtrl" Visible="false" Uid="ComboPopup">
+				<Appearance Rect="0,0,0,0" />
+				<Parts ScrollerV="CombBarV" SubCtrl="ComboTable" />
+				<Dim DimH="20" DimV="20" BorderRight="4" BorderBottom="6" BorderTop="4" />
+				<Obj Rtti="Table" Uid="ComboTable">
+					<Attribs Rows="1" RowHeight="22" />
+					<Appearance Rect="0,4,0,0" />
+					<AddColumn Rtti="TextBox" Width="247" OffsetLeft="8" OffsetRight="24">
+						<Appearance Rect="8,0,215,22" />
+						<ColText String="TestString" Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Left" />
+					</AddColumn>
+					<View ColCount="1" />
+				</Obj>
+				<Obj Rtti="SlideBar" Uid="CombBarV">
+					<Attribs Layout="Vertical" />
+					<Appearance Rect="-4,4,0,0" />
+					<Texture Rect="0,184,20,4" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					<Parts Slider="SliderV" ButtonLess="ScrlUp" ButtonMore="ScrlDown" />
+					<Obj Rtti="Slider" Uid="SliderV">
+						<Attribs CrossFadeTime="0.500000" />
+						<Appearance Rect="-4,27,0,0" />
+						<TexInactive>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,92,20,7" />
+								<Tile1 Rect="40,99,20,9" />
+								<Tile2 Rect="40,108,20,7" />
+							</Tile3Texture>
+						</TexInactive>
+						<TexActive>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,138,20,7" />
+								<Tile1 Rect="40,145,20,9" />
+								<Tile2 Rect="40,154,20,7" />
+							</Tile3Texture>
+						</TexActive>
+						<TexDisabled>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,161,20,7" />
+								<Tile1 Rect="40,168,20,9" />
+								<Tile2 Rect="40,177,20,7" />
+							</Tile3Texture>
+						</TexDisabled>
+						<TexHighlighted>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,115,20,7" />
+								<Tile1 Rect="40,122,20,9" />
+								<Tile2 Rect="40,131,20,7" />
+							</Tile3Texture>
+						</TexHighlighted>
+						<TexOverlayInactive>
+							<Texture Rect="0,0,512,512" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0x00ffffff" ScaleMethod="Center" />
+						</TexOverlayInactive>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlUp">
+						<Attribs CrossFadeTime="0.500000" />
+						<Appearance Rect="-4,4,0,23" />
+						<TexInactive>
+							<Texture Rect="0,92,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="0,115,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="0,138,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="0,161,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlDown">
+						<Attribs CrossFadeTime="0.500000" />
+						<Appearance Rect="-4,-19,0,23" />
+						<TexInactive>
+							<Texture Rect="20,92,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="20,115,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="20,138,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="20,161,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+				</Obj>
+			</Obj>
+		</Obj>
+		<Obj Rtti="ComboBox" Uid="CbCountry">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="955,257,251,23" />
+			<TexFolded>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,0,16,23" />
+					<Tile1 Rect="52,0,16,23" />
+					<Tile2 Rect="-32,0,32,23" />
+				</Tile3Texture>
+			</TexFolded>
+			<TexUnfoldedUp>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,46,16,23" />
+					<Tile1 Rect="52,46,16,23" />
+					<Tile2 Rect="-32,46,32,23" />
+				</Tile3Texture>
+			</TexUnfoldedUp>
+			<TexUnfoldedDown>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,46,16,23" />
+					<Tile1 Rect="52,46,16,23" />
+					<Tile2 Rect="-32,46,32,23" />
+				</Tile3Texture>
+			</TexUnfoldedDown>
+			<TexPopupTop>
+				<Tile9Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,192,10,10" />
+					<Tile1 Rect="10,192,10,10" />
+					<Tile2 Rect="20,192,12,10" />
+					<Tile3 Rect="0,202,10,10" />
+					<Tile4 Rect="10,202,10,10" />
+					<Tile5 Rect="20,202,12,10" />
+					<Tile6 Rect="0,212,10,12" />
+					<Tile7 Rect="10,212,10,12" />
+					<Tile8 Rect="20,212,12,12" />
+				</Tile9Texture>
+			</TexPopupTop>
+			<TexPopupDown>
+				<Tile9Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="0,192,10,10" />
+					<Tile1 Rect="10,192,10,10" />
+					<Tile2 Rect="20,192,12,10" />
+					<Tile3 Rect="0,202,10,10" />
+					<Tile4 Rect="10,202,10,10" />
+					<Tile5 Rect="20,202,12,10" />
+					<Tile6 Rect="0,212,10,12" />
+					<Tile7 Rect="10,212,10,12" />
+					<Tile8 Rect="20,212,12,12" />
+				</Tile9Texture>
+			</TexPopupDown>
+			<TexFoldedOver>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,23,16,23" />
+					<Tile1 Rect="52,23,16,23" />
+					<Tile2 Rect="-32,23,32,23" />
+				</Tile3Texture>
+			</TexFoldedOver>
+			<TexFoldedDisabled>
+				<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff">
+					<Tile0 Rect="36,69,16,23" />
+					<Tile1 Rect="52,69,16,23" />
+					<Tile2 Rect="-32,69,32,23" />
+				</Tile3Texture>
+			</TexFoldedDisabled>
+			<Selection Current="0x408d9151" Highlight="0x40bbc946" />
+			<Parts Head="ComboText" DropButton="DropDown" DropBox="ComboPopup" DropTable="ComboPopup|ComboTable" Slider="ComboPopup|CombBarV" />
+			<Dim Headline="23" Dropdown="32" PopupMin="23" PopupMax="220" />
+			<Obj Rtti="TextBox" Uid="ComboText">
+				<Appearance Rect="963,257,243,23" />
+				<ColText Font="Body" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="Button" Uid="DropDown">
+				<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+				<Appearance Rect="1174,257,32,23" />
+				<TexInactive>
+					<Texture Rect="68,0,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexInactive>
+				<TexActive>
+					<Texture Rect="68,46,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexActive>
+				<TexDisabled>
+					<Texture Rect="68,69,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexDisabled>
+				<TexHighlighted>
+					<Texture Rect="68,23,32,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+				</TexHighlighted>
+			</Obj>
+			<Obj Rtti="ScrollCtrl" Visible="false" Uid="ComboPopup">
+				<Appearance Rect="0,0,0,0" />
+				<Parts ScrollerV="CombBarV" SubCtrl="ComboTable" />
+				<Dim DimH="20" DimV="20" BorderRight="4" BorderBottom="6" BorderTop="4" />
+				<Obj Rtti="Table" Uid="ComboTable">
+					<Attribs Rows="1" RowHeight="22" />
+					<Appearance Rect="0,4,0,0" />
+					<AddColumn Rtti="TextBox" Width="247" OffsetLeft="8" OffsetRight="24">
+						<Appearance Rect="8,0,215,22" />
+						<ColText String="TestString" Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Left" />
+					</AddColumn>
+					<View ColCount="1" />
+				</Obj>
+				<Obj Rtti="SlideBar" Uid="CombBarV">
+					<Attribs Layout="Vertical" />
+					<Appearance Rect="-4,4,0,0" />
+					<Texture Rect="0,184,20,4" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					<Parts Slider="SliderV" ButtonLess="ScrlUp" ButtonMore="ScrlDown" />
+					<Obj Rtti="Slider" Uid="SliderV">
+						<Attribs CrossFadeTime="0.500000" />
+						<Appearance Rect="-4,27,0,0" />
+						<TexInactive>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,92,20,7" />
+								<Tile1 Rect="40,99,20,9" />
+								<Tile2 Rect="40,108,20,7" />
+							</Tile3Texture>
+						</TexInactive>
+						<TexActive>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,138,20,7" />
+								<Tile1 Rect="40,145,20,9" />
+								<Tile2 Rect="40,154,20,7" />
+							</Tile3Texture>
+						</TexActive>
+						<TexDisabled>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,161,20,7" />
+								<Tile1 Rect="40,168,20,9" />
+								<Tile2 Rect="40,177,20,7" />
+							</Tile3Texture>
+						</TexDisabled>
+						<TexHighlighted>
+							<Tile3Texture Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="40,115,20,7" />
+								<Tile1 Rect="40,122,20,9" />
+								<Tile2 Rect="40,131,20,7" />
+							</Tile3Texture>
+						</TexHighlighted>
+						<TexOverlayInactive>
+							<Texture Rect="0,0,512,512" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0x00ffffff" ScaleMethod="Center" />
+						</TexOverlayInactive>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlUp">
+						<Attribs CrossFadeTime="0.500000" />
+						<Appearance Rect="-4,4,0,23" />
+						<TexInactive>
+							<Texture Rect="0,92,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="0,115,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="0,138,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="0,161,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlDown">
+						<Attribs CrossFadeTime="0.500000" />
+						<Appearance Rect="-4,-19,0,23" />
+						<TexInactive>
+							<Texture Rect="20,92,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="20,115,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="20,138,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="20,161,20,23" Resrc="Art\custom\controls\FM13\Controls.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+				</Obj>
+			</Obj>
+		</Obj>
+		<Obj Rtti="TextBox" Uid="_27">
+			<Meta>
+				<Entry Key="Design" Value="Subtopic" />
+			</Meta>
+			<Appearance Rect="703,221,503,30" />
+			<Tile3Texture Resrc="art\custom\controls\FM13\controls.tga" Color="0xffffffff">
+				<Tile0 Rect="43,214,4,30" />
+				<Tile1 Rect="43,214,4,30" />
+				<Tile2 Rect="43,214,4,30" />
+			</Tile3Texture>
+			<ColText String="$IDS_SELECT_CLUB_HEAD2" Font="Subtopic" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtInfo" Version="0x00000001">
+			<Meta>
+				<Entry Key="Design" Value="Info" />
+			</Meta>
+			<Attribs Action="Info1" CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="1136,96,32,32" />
+			<ToolTip Text="$IDS_HELP" />
+			<TexInactive>
+				<Texture Rect="680,128,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="680,192,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="680,224,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="680,160,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<ColText Font="Headline" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" RowOffset="1633896" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtAccept" Version="0x00000001">
+			<Meta>
+				<Entry Key="Design" Value="OK Wide" />
+			</Meta>
+			<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="703,832,503,32" />
+			<TexInactive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,128,32,32" />
+					<Tile1 Rect="855,128,27,32" />
+					<Tile2 Rect="882,128,15,32" />
+				</Tile3Texture>
+			</TexInactive>
+			<TexActive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,192,37,32" />
+					<Tile1 Rect="855,192,27,32" />
+					<Tile2 Rect="882,192,15,32" />
+				</Tile3Texture>
+			</TexActive>
+			<TexDisabled>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,224,32,32" />
+					<Tile1 Rect="855,224,27,32" />
+					<Tile2 Rect="882,224,15,32" />
+				</Tile3Texture>
+			</TexDisabled>
+			<TexHighlighted>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,160,32,32" />
+					<Tile1 Rect="855,160,27,32" />
+					<Tile2 Rect="882,160,15,32" />
+				</Tile3Texture>
+			</TexHighlighted>
+			<ColText String="$IDS_TRANSFER_OFFERTOCLUB" Font="Main" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="40" RowOffset="1633896" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtPlayerDetails" Version="0x00000001">
+			<Meta>
+				<Entry Key="Design" Value="OK Wide" />
+			</Meta>
+			<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="703,795,503,32" />
+			<TexInactive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,128,32,32" />
+					<Tile1 Rect="855,128,27,32" />
+					<Tile2 Rect="882,128,15,32" />
+				</Tile3Texture>
+			</TexInactive>
+			<TexActive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,192,37,32" />
+					<Tile1 Rect="855,192,27,32" />
+					<Tile2 Rect="882,192,15,32" />
+				</Tile3Texture>
+			</TexActive>
+			<TexDisabled>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,224,32,32" />
+					<Tile1 Rect="855,224,27,32" />
+					<Tile2 Rect="882,224,15,32" />
+				</Tile3Texture>
+			</TexDisabled>
+			<TexHighlighted>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,160,32,32" />
+					<Tile1 Rect="855,160,27,32" />
+					<Tile2 Rect="882,160,15,32" />
+				</Tile3Texture>
+			</TexHighlighted>
+			<ColText String="Spieler allen Vereinen anbieten" Font="Main" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="40" RowOffset="1633896" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtDecline" Version="0x00000001">
+			<Meta>
+				<Entry Key="Design" Value="Cancel Wide" />
+			</Meta>
+			<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="703,906,503,32" />
+			<TexInactive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="747,0,31,32" />
+					<Tile1 Rect="778,0,28,32" />
+					<Tile2 Rect="807,0,15,32" />
+				</Tile3Texture>
+			</TexInactive>
+			<TexActive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="747,64,31,32" />
+					<Tile1 Rect="778,64,28,32" />
+					<Tile2 Rect="807,64,15,32" />
+				</Tile3Texture>
+			</TexActive>
+			<TexDisabled>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="747,96,31,32" />
+					<Tile1 Rect="778,96,28,32" />
+					<Tile2 Rect="807,96,15,32" />
+				</Tile3Texture>
+			</TexDisabled>
+			<TexHighlighted>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="747,32,31,32" />
+					<Tile1 Rect="778,32,28,32" />
+					<Tile2 Rect="807,32,15,32" />
+				</Tile3Texture>
+			</TexHighlighted>
+			<ColText String="$DLG_Cancel" Font="Main" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="40" RowOffset="1633896" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtAgent" Version="0x00000001">
+			<Meta>
+				<Entry Key="Design" Value="OK Wide" />
+			</Meta>
+			<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="703,869,503,32" />
+			<TexInactive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,128,32,32" />
+					<Tile1 Rect="855,128,27,32" />
+					<Tile2 Rect="882,128,15,32" />
+				</Tile3Texture>
+			</TexInactive>
+			<TexActive>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,192,37,32" />
+					<Tile1 Rect="855,192,27,32" />
+					<Tile2 Rect="882,192,15,32" />
+				</Tile3Texture>
+			</TexActive>
+			<TexDisabled>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,224,32,32" />
+					<Tile1 Rect="855,224,27,32" />
+					<Tile2 Rect="882,224,15,32" />
+				</Tile3Texture>
+			</TexDisabled>
+			<TexHighlighted>
+				<Tile3Texture Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff">
+					<Tile0 Rect="823,160,32,32" />
+					<Tile1 Rect="855,160,27,32" />
+					<Tile2 Rect="882,160,15,32" />
+				</Tile3Texture>
+			</TexHighlighted>
+			<ColText String="$IDS_AGENT_BUTTON" Font="Main" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="40" RowOffset="1633896" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtRemoveShortlist" Version="0x00000001">
+			<Attribs CrossFadeTime="0.500000" />
+			<Appearance Rect="546,906,32,32" />
+			<ToolTip Text="$GPI_RemoveFromHotlist" />
+			<TexInactive>
+				<Texture Rect="0,0,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutListRemove.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="0,64,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutListRemove.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="0,96,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutListRemove.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="0,32,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutListRemove.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<ColText Font="Body" RowOffset="1633900" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="BtShortlist" Version="0x00000001">
+			<Attribs CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="546,906,32,32" />
+			<ToolTip Text="$GPI_ConsiderPlayer" />
+			<TexInactive>
+				<Texture Rect="0,0,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutList.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="0,64,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutList.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="0,96,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutList.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="0,32,32,32" Resrc="art_fm\buttons\LinkButton\32x32\ScoutList.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<ColText Font="Body" RowOffset="1633900" />
+		</Obj>
+		<Obj Rtti="TextButton" Uid="ImgClose" Version="0x00000001">
+			<Meta>
+				<Entry Key="Design" Value="Close" />
+			</Meta>
+			<Attribs Action="Close" CrossFade="true" CrossFadeTime="0.200000" CrossFadeMode="Overlay" />
+			<Appearance Rect="1174,96,32,32" />
+			<ToolTip Text="$IDS_MAT_CLOSE" />
+			<TexInactive>
+				<Texture Rect="712,128,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexInactive>
+			<TexActive>
+				<Texture Rect="712,192,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexActive>
+			<TexDisabled>
+				<Texture Rect="712,224,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexDisabled>
+			<TexHighlighted>
+				<Texture Rect="712,160,32,32" Resrc="art\custom\controls\FM13\ProgressButtons.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</TexHighlighted>
+			<ColText Font="Headline" ColorActive="0xff4e7985" ColorInactive="0xff23363b" ColorHighlight="0xff505217" ColorDisabled="0x7f23363b" HAlign="Left" RowOffset="1633896" />
+		</Obj>
+		<Trfm Uid="Unused" Group="true" Visible="false">
+			<Obj Rtti="TextBox" Uid="TbBg1">
+				<Appearance Rect="0,0,5,5" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg8">
+				<Appearance Rect="0,0,5,5" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg">
+				<Appearance Rect="0,0,5,5" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0x7f1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg2">
+				<Appearance Rect="0,0,5,5" BlendCol="0x33ffffff" />
+				<SolidColor Color="0xffda6905" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg3">
+				<Appearance Rect="0,0,5,5" BlendCol="0x33ffffff" />
+				<SolidColor Color="0xffda6905" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg4">
+				<Appearance Rect="0,0,5,5" BlendCol="0x33ffffff" />
+				<SolidColor Color="0xffda6905" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg5">
+				<Appearance Rect="0,0,5,5" BlendCol="0x33ffffff" />
+				<SolidColor Color="0xffda6905" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg6">
+				<Appearance Rect="0,0,5,5" BlendCol="0x33ffffff" />
+				<SolidColor Color="0xffda6905" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbBg7">
+				<Appearance Rect="0,0,5,5" BlendCol="0x33ffffff" />
+				<SolidColor Color="0xffda6905" />
+				<ColText Font="Body" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Right" BorderRight="7" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="_t17">
+				<Appearance Rect="0,0,5,5" />
+				<ColText Font="Body" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="_t18">
+				<Appearance Rect="0,0,5,5" />
+				<ColText Font="Body" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="_t19">
+				<Appearance Rect="0,0,5,5" />
+				<ColText Font="Body" HAlign="Left" />
+			</Obj>
+			<Obj Rtti="TextBox" Visible="false" Uid="_Box1">
+				<Appearance Rect="0,0,5,5" BlendCol="0x7fffffff" />
+				<SolidColor Color="0xffffffff" />
+				<ColText Font="Headline" HAlign="Left" TextModifier="UpperCase" />
+			</Obj>
+			<Obj Rtti="Image" Uid="ImgLine1">
+				<Appearance Rect="0,0,5,5" />
+				<Texture Rect="0,0,8,8" Resrc="art_fm\screens\Misc\Empty.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</Obj>
+			<Obj Rtti="TextBox" Visible="false" Uid="_TbBg2">
+				<Appearance Rect="0,0,5,5" BlendCol="0xb2ffffff" />
+				<SolidColor Color="0xffe0d2c7" />
+				<ColText Font="Headline" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Left" TextModifier="UpperCase" />
+			</Obj>
+			<Obj Rtti="TextBox" Visible="false" Uid="_t2">
+				<Appearance Rect="0,0,5,5" />
+				<ColText String="$IDS_TRANSFER_NEGOTIATION" Font="BigTopic" ColorActive="0xff392012" ColorInactive="0xff392012" ColorHighlight="0xff392012" ColorDisabled="0xff392012" HAlign="Left" VAlign="Top" TextModifier="UpperCase" BorderLeft="0" BorderRight="0" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="_Box">
+				<Appearance Rect="0,0,5,5" BlendCol="0x7fffffff" />
+				<SolidColor Color="0xffefe8e1" />
+				<ColText Font="Headline" ColorActive="0xff1a1a1a" ColorInactive="0xff1a1a1a" ColorHighlight="0xff1a1a1a" ColorDisabled="0xff1a1a1a" HAlign="Left" TextModifier="UpperCase" />
+			</Obj>
+			<Obj Rtti="Image" Uid="_ImgSlotBottom">
+				<Appearance Rect="0,0,5,5" BlendCol="0x4cffffff" />
+				<Texture Rect="0,0,8,8" Resrc="art_fm\screens\Misc\Empty.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+			</Obj>
+			<Obj Rtti="TextBox" Uid="TbAgentInfo">
+				<Meta>
+					<Entry Key="Design" Value="FM12 Default" />
+				</Meta>
+				<Appearance Rect="0,0,5,5" />
+				<ColText String="$IDS_CONTRACT_AGENT_INFO" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" RowOffset="2" />
+			</Obj>
+			<Obj Rtti="FmListBox" Uid="_LbBg1">
+				<Meta>
+					<Entry Key="Design" Value="FM12 ListBox_Static_20px" />
+				</Meta>
+				<Attribs ColorSelect="0x00000000" ColorHighlight="0x00000000" HeadLineHeight="0" />
+				<Appearance Rect="709,297,402,60" />
+				<Parts Table="TableContent" SliderV="TableSlider" />
+				<Headline Obj="Headline0" Col="0" />
+				<Headline Obj="Headline1" Col="1" />
+				<FmListBoxBackGround>
+					<Tile9Texture Resrc="art\custom\controls\FM12\ListBoxBody_20px.tga" Color="0xffffffff">
+						<Tile0 Rect="0,0,4,20" />
+						<Tile1 Rect="4,0,8,20" />
+						<Tile2 Rect="12,0,4,20" />
+						<Tile3 Rect="0,20,4,20" />
+						<Tile4 Rect="4,20,8,20" />
+						<Tile5 Rect="12,20,4,20" />
+						<Tile6 Rect="0,20,4,20" />
+						<Tile7 Rect="4,20,8,20" />
+						<Tile8 Rect="12,20,4,20" />
+					</Tile9Texture>
+					<Colors Head="0x00ffffff" />
+					<Background Hide="false" />
+				</FmListBoxBackGround>
+				<Obj Rtti="TextBox" Uid="Headline0">
+					<Meta>
+						<Entry Key="Column.Index" Value="0" />
+					</Meta>
+					<Appearance Rect="709,297,147,0" />
+					<Tile3Texture Resrc="art\custom\controls\FM12\ListBoxHead_Static.tga" Color="0xffffffff">
+						<Tile0 Rect="0,0,2,18" />
+						<Tile1 Rect="2,0,4,18" />
+						<Tile2 Rect="6,0,2,18" />
+					</Tile3Texture>
+					<ColText Font="ListboxHeadline" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" HAlign="Left" />
+				</Obj>
+				<Obj Rtti="TextBox" Uid="Headline1">
+					<Meta>
+						<Entry Key="Column.Index" Value="1" />
+					</Meta>
+					<Appearance Rect="856,297,255,0" />
+					<Tile3Texture Resrc="art\custom\controls\FM12\ListBoxHead_Static.tga" Color="0xffffffff">
+						<Tile0 Rect="0,0,2,18" />
+						<Tile1 Rect="2,0,4,18" />
+						<Tile2 Rect="6,0,2,18" />
+					</Tile3Texture>
+					<ColText Font="ListboxHeadline" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" HAlign="Left" />
+				</Obj>
+				<Obj Rtti="Table" Uid="TableContent">
+					<Attribs Rows="1" RowHeight="20" />
+					<Appearance Rect="709,297,402,60" />
+					<AddColumn Rtti="TextBox" Width="147">
+						<Appearance Rect="711,0,143,20" />
+						<ColText Font="ListboxHeadline" HAlign="Left" />
+					</AddColumn>
+					<AddColumn Rtti="TextBox" Width="255">
+						<Appearance Rect="858,0,251,20" />
+						<ColText Font="ListboxHeadline" HAlign="Left" />
+					</AddColumn>
+					<View ColCount="2" />
+				</Obj>
+				<Obj Rtti="SlideBar" Visible="false" Uid="TableSlider">
+					<Attribs Layout="Vertical" />
+					<Appearance Rect="1091,297,20,60" />
+					<Texture Rect="0,0,16,2" Resrc="art\custom\controls\FM10\10ScrollbarBody.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					<Parts Slider="SliderV" ButtonLess="ScrlUp" ButtonMore="ScrlDown" />
+					<Obj Rtti="Slider" Uid="SliderV">
+						<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+						<Appearance Rect="1091,313,20,28" />
+						<TexInactive>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,0,20,7" />
+								<Tile1 Rect="0,7,20,4" />
+								<Tile2 Rect="0,11,20,9" />
+							</Tile3Texture>
+						</TexInactive>
+						<TexActive>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,40,20,7" />
+								<Tile1 Rect="0,47,20,4" />
+								<Tile2 Rect="0,51,20,9" />
+							</Tile3Texture>
+						</TexActive>
+						<TexDisabled>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,60,20,7" />
+								<Tile1 Rect="0,67,20,4" />
+								<Tile2 Rect="0,71,20,9" />
+							</Tile3Texture>
+						</TexDisabled>
+						<TexHighlighted>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,20,20,7" />
+								<Tile1 Rect="0,27,20,4" />
+								<Tile2 Rect="0,31,20,9" />
+							</Tile3Texture>
+						</TexHighlighted>
+						<TexOverlayInactive>
+							<Texture Rect="0,0,16,20" Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0x00ffffff" ScaleMethod="Center" />
+						</TexOverlayInactive>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlUp">
+						<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+						<Appearance Rect="1091,297,20,16" />
+						<TexInactive>
+							<Texture Rect="0,0,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="0,32,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="0,48,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="0,16,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlDown">
+						<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+						<Appearance Rect="1091,341,20,16" />
+						<TexInactive>
+							<Texture Rect="0,0,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="0,32,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="0,48,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="0,16,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+				</Obj>
+			</Obj>
+			<Obj Rtti="FmListBox" Uid="_LbBg2">
+				<Meta>
+					<Entry Key="Design" Value="FM12 ListBox_Static_20px" />
+				</Meta>
+				<Attribs ColorSelect="0x00000000" ColorHighlight="0x00000000" HeadLineHeight="0" />
+				<Appearance Rect="682,607,430,120" />
+				<Parts Table="TableContent" SliderV="TableSlider" />
+				<Headline Obj="Headline0" Col="0" />
+				<Headline Obj="Headline1" Col="1" />
+				<FmListBoxBackGround>
+					<Tile9Texture Resrc="art\custom\controls\FM12\ListBoxBody_20px.tga" Color="0xffffffff">
+						<Tile0 Rect="0,0,4,20" />
+						<Tile1 Rect="4,0,8,20" />
+						<Tile2 Rect="12,0,4,20" />
+						<Tile3 Rect="0,20,4,20" />
+						<Tile4 Rect="4,20,8,20" />
+						<Tile5 Rect="12,20,4,20" />
+						<Tile6 Rect="0,20,4,20" />
+						<Tile7 Rect="4,20,8,20" />
+						<Tile8 Rect="12,20,4,20" />
+					</Tile9Texture>
+					<Colors Head="0x00ffffff" />
+					<Background Hide="false" />
+				</FmListBoxBackGround>
+				<Obj Rtti="TextBox" Uid="Headline0">
+					<Meta>
+						<Entry Key="Column.Index" Value="0" />
+					</Meta>
+					<Appearance Rect="682,607,139,0" />
+					<Tile3Texture Resrc="art\custom\controls\FM12\ListBoxHead_Static.tga" Color="0xffffffff">
+						<Tile0 Rect="0,0,2,18" />
+						<Tile1 Rect="2,0,4,18" />
+						<Tile2 Rect="6,0,2,18" />
+					</Tile3Texture>
+					<ColText Font="ListboxHeadline" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" HAlign="Left" />
+				</Obj>
+				<Obj Rtti="TextBox" Uid="Headline1">
+					<Meta>
+						<Entry Key="Column.Index" Value="1" />
+					</Meta>
+					<Appearance Rect="821,607,291,0" />
+					<Tile3Texture Resrc="art\custom\controls\FM12\ListBoxHead_Static.tga" Color="0xffffffff">
+						<Tile0 Rect="0,0,2,18" />
+						<Tile1 Rect="2,0,4,18" />
+						<Tile2 Rect="6,0,2,18" />
+					</Tile3Texture>
+					<ColText Font="ListboxHeadline" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" HAlign="Left" />
+				</Obj>
+				<Obj Rtti="Table" Uid="TableContent">
+					<Attribs Rows="1" RowHeight="20" />
+					<Appearance Rect="682,607,430,120" />
+					<AddColumn Rtti="TextBox" Width="139">
+						<Appearance Rect="684,0,135,20" />
+						<ColText Font="ListboxHeadline" HAlign="Left" />
+					</AddColumn>
+					<AddColumn Rtti="TextBox" Width="291">
+						<Appearance Rect="823,0,287,20" />
+						<ColText Font="ListboxHeadline" HAlign="Left" />
+					</AddColumn>
+					<View ColCount="2" />
+				</Obj>
+				<Obj Rtti="SlideBar" Visible="false" Uid="TableSlider">
+					<Attribs Layout="Vertical" />
+					<Appearance Rect="1092,607,20,120" />
+					<Texture Rect="0,0,16,2" Resrc="art\custom\controls\FM10\10ScrollbarBody.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+					<Parts Slider="SliderV" ButtonLess="ScrlUp" ButtonMore="ScrlDown" />
+					<Obj Rtti="Slider" Uid="SliderV">
+						<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+						<Appearance Rect="1092,623,20,88" />
+						<TexInactive>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,0,20,7" />
+								<Tile1 Rect="0,7,20,4" />
+								<Tile2 Rect="0,11,20,9" />
+							</Tile3Texture>
+						</TexInactive>
+						<TexActive>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,40,20,7" />
+								<Tile1 Rect="0,47,20,4" />
+								<Tile2 Rect="0,51,20,9" />
+							</Tile3Texture>
+						</TexActive>
+						<TexDisabled>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,60,20,7" />
+								<Tile1 Rect="0,67,20,4" />
+								<Tile2 Rect="0,71,20,9" />
+							</Tile3Texture>
+						</TexDisabled>
+						<TexHighlighted>
+							<Tile3Texture Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0xffffffff" Layout="Vertical">
+								<Tile0 Rect="0,20,20,7" />
+								<Tile1 Rect="0,27,20,4" />
+								<Tile2 Rect="0,31,20,9" />
+							</Tile3Texture>
+						</TexHighlighted>
+						<TexOverlayInactive>
+							<Texture Rect="0,0,16,20" Resrc="art\custom\controls\FM12\ScrollbarButton.tga" Color="0x00ffffff" ScaleMethod="Center" />
+						</TexOverlayInactive>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlUp">
+						<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+						<Appearance Rect="1092,607,20,16" />
+						<TexInactive>
+							<Texture Rect="0,0,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="0,32,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="0,48,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="0,16,20,16" Resrc="art\custom\controls\FM12\ScrollbarUp.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+					<Obj Rtti="Button" Uid="ScrlDown">
+						<Attribs CrossFade="true" CrossFadeTime="0.100000" CrossFadeMode="Overlay" />
+						<Appearance Rect="1092,711,20,16" />
+						<TexInactive>
+							<Texture Rect="0,0,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexInactive>
+						<TexActive>
+							<Texture Rect="0,32,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexActive>
+						<TexDisabled>
+							<Texture Rect="0,48,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexDisabled>
+						<TexHighlighted>
+							<Texture Rect="0,16,20,16" Resrc="art\custom\controls\FM12\ScrollbarDown.tga" Color="0xffffffff" ScaleMethod="ScaleXY" />
+						</TexHighlighted>
+					</Obj>
+				</Obj>
+			</Obj>
+		</Trfm>
+		<Obj Rtti="TextBox" Uid="_t1">
+			<Meta>
+				<Entry Key="Design" Value="FM12 Default" />
+			</Meta>
+			<Attribs Clickable="false" />
+			<Appearance Rect="703,87,503,50" />
+			<ColText String="$IDS_TRANSFER_OFFERTOCLUB" Font="Title" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0xff23363b" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="TextBox1">
+			<Meta>
+				<Entry Key="Design" Value="FM13 Default" />
+			</Meta>
+			<Appearance Rect="955,309,251,130" />
+			<ColText String="$IDS_PI_NOINTERESTEDCLUBS" Font="Body" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" VAlign="Top" RowOffset="6" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="TbClubName">
+			<Meta>
+				<Entry Key="Design" Value="FM12 Default" />
+			</Meta>
+			<Appearance Rect="703,147,190,64" />
+			<ColText Font="Headline" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Right" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="TbManagerName">
+			<Meta>
+				<Entry Key="Design" Value="FM12 Default" />
+			</Meta>
+			<Appearance Rect="1018,147,188,64" />
+			<ColText Font="Headline" ColorActive="0xff23363b" ColorInactive="0xff23363b" ColorHighlight="0xff23363b" ColorDisabled="0x7f23363b" HAlign="Left" BorderLeft="0" BorderRight="0" />
+		</Obj>
+		<Obj Rtti="TextBox" Uid="TbclubBadge">
+			<Appearance Rect="923,147,64,64" />
+			<ColText Font="Body" />
+		</Obj>
+	</Trfm>
+</Screen>
