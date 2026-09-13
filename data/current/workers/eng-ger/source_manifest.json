@@ -1,0 +1,387 @@
+{
+  "snapshot_date": "2026-09-12",
+  "source_count": 76,
+  "sources": [
+    {
+      "url": "https://www.transfermarkt.de/hertha-bsc/kader/verein/44/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:23.585172+00:00",
+      "sha256": "ef58d9277a7c8472efef0e1196d30918a7a6beed8d2cadd9f3cdca341e9a64b2"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sg-sonnenhof-grossaspach/kader/verein/2589/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:01:00.838290+00:00",
+      "sha256": "ceb6dce8c3f846bc1688d6ba77daaf4b6d34d1ddb8ca555b2498968bf85c6f78"
+    },
+    {
+      "url": "https://www.transfermarkt.de/ipswich-town/kader/verein/677/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:45.674909+00:00",
+      "sha256": "27c77a20084b00ebf1368072929c14c023348a25975bceca8389e69766b037af"
+    },
+    {
+      "url": "https://www.transfermarkt.de/hannover-96/kader/verein/42/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:20.206852+00:00",
+      "sha256": "1215cddc874fab7e50402cb82ad6c5ca92f8ced09d37a9d8569043058176a32f"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-everton/kader/verein/29/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:42.735060+00:00",
+      "sha256": "42b6f20b51ab963f490c0c9e3fce8d8e64beae01bd82a8476a0462feb2ef546d"
+    },
+    {
+      "url": "https://www.transfermarkt.de/arminia-bielefeld/kader/verein/10/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:30.322848+00:00",
+      "sha256": "6bf7304bb5b98268f93279c205b7358b904316470f2c43947fcad0ff2680d083"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-nurnberg/kader/verein/4/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:24.108176+00:00",
+      "sha256": "1d02eebfb6b905a4b771fed6091258b15847c4bfb1b6d4bd643980220ba21ebd"
+    },
+    {
+      "url": "https://www.transfermarkt.de/aston-villa/kader/verein/405/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:35.335088+00:00",
+      "sha256": "66b9b7fdd741084e821d291249f5bdc0fe382243be248d861c1137a95e82f15d"
+    },
+    {
+      "url": "https://www.transfermarkt.de/vfl-wolfsburg/kader/verein/82/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:17.017630+00:00",
+      "sha256": "0d671e8b1f26fd27a90d4507455627094aa5ed12d9869e4c7dc8c2b2573eb1ef"
+    },
+    {
+      "url": "https://www.transfermarkt.de/preussen-munster/kader/verein/91/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:37.770018+00:00",
+      "sha256": "358c233225c0f06e8cc0ea5bfec52949f3501471b53e29edc807611cd04332ae"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sv-wehen-wiesbaden/kader/verein/108/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:44.457850+00:00",
+      "sha256": "c5333e619a4ccff973d898b3a9c4668b151ad7106dcb46f85b4726a7ee4c6ef3"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sv-werder-bremen/kader/verein/86/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:13.284028+00:00",
+      "sha256": "0a7e36159d0c7ffd555ab7f3ffa226b0cf286e7a1a009e2dca794bd509bbd26e"
+    },
+    {
+      "url": "https://www.transfermarkt.de/vfb-stuttgart-ii/kader/verein/102/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:49.117904+00:00",
+      "sha256": "282836c83b3d06fc536ab783944214e6762cd5b47e8b5db9908690b0565ef593"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-union-berlin/kader/verein/89/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:09.374008+00:00",
+      "sha256": "09ae9c47f64c54ef97da615c30d6aa9ae9d953e1a3e18c00b87ea902f5a73e34"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-hansa-rostock/kader/verein/30/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:40.597866+00:00",
+      "sha256": "6da33a7ccf32faa9ebb0b7823a0ee5537fb70bfe8ee363795199b5de4015e0f1"
+    },
+    {
+      "url": "https://www.transfermarkt.de/tsv-havelse/kader/verein/476/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:52.239167+00:00",
+      "sha256": "b4490298444b6e31458c6e927b4ab3fff5378977e083c471be7a43b9938c0f59"
+    },
+    {
+      "url": "https://www.transfermarkt.de/rot-weiss-essen/kader/verein/56/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:38.525577+00:00",
+      "sha256": "428b980f8718cfe610b74c6ed65b6316eaa3b91941d20a4def68f9bfec3ccdb3"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-koln/kader/verein/3/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:11.915310+00:00",
+      "sha256": "12a14d27346ee235b404e134f85a38d7a6bdd54c78b986e25f49d9688db94c53"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-st-pauli/kader/verein/35/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:19.038461+00:00",
+      "sha256": "cb3581752f3910c559c9f42a6cbb09551a6187c6a88b14cfcc35019d0c02bc47"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sc-verl/kader/verein/93/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:41.358062+00:00",
+      "sha256": "bd69b9b6c3fd17e062c0bf50a17563b42a98d2c42534eeab1330ee7efa38071a"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-viktoria-koln/kader/verein/1622/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:46.129011+00:00",
+      "sha256": "b7bfc92e8e7c5a16b30c7b0ff346d1259614911747f68b6cb84920bb2afd1606"
+    },
+    {
+      "url": "https://www.transfermarkt.de/alemannia-aachen/kader/verein/8/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:42.563404+00:00",
+      "sha256": "d50319c6c39283dd66c83e32c0e53c0fbab8eb26ba138f0fe6e86b3dfc2b9c0b"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sc-paderborn-07/kader/verein/127/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:16.272318+00:00",
+      "sha256": "2bc1c2dc6af19cdfe4c15f929f45c9c1b3aeb6d1349fe49c0cbceca9a06d7cde"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sc-fortuna-koln/kader/verein/92/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:57.527930+00:00",
+      "sha256": "c255b2b753fa967f4c2eb7cdee0e0a6e7bb7b0e3c371fdcdfc7a8694476b2be0"
+    },
+    {
+      "url": "https://www.transfermarkt.de/brighton-hove-albion/kader/verein/1237/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:39.057849+00:00",
+      "sha256": "f2cf90d26295bb03b7a9f88ddd237a671bfa8ea7b8601dc2dd42f6c052d76dbc"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-bayern-munchen/kader/verein/27/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:58.962901+00:00",
+      "sha256": "820ba470399c46c372cca08fabf7f49fd2f3e3e097d9ac94e1494b055e7a3df5"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sv-meppen/kader/verein/247/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:53.183642+00:00",
+      "sha256": "bb6dac7a3a8a8d7c79b23424ccb65850442347058ab16c823460c547dc72588a"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-saarbrucken/kader/verein/1/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:50.077008+00:00",
+      "sha256": "c2a771ee3b9af8a2a73329774d02f459ed75e0faf23ff6531e00889776b2c7d8"
+    },
+    {
+      "url": "https://www.transfermarkt.de/nottingham-forest/kader/verein/703/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:51.568157+00:00",
+      "sha256": "1f3c6bd0f0de76240faea845ee07a8d1fad13ffa72e96a8cbb4612f966f30983"
+    },
+    {
+      "url": "https://www.transfermarkt.de/hull-city/kader/verein/3008/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:44.975328+00:00",
+      "sha256": "95d27e3b77eef2306101f2b6eab92a02d56308a31e0d34299be2fa82dcf331db"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fsv-mainz-05/kader/verein/39/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:08.417769+00:00",
+      "sha256": "a0ac0e0c9eb47a3776e4e43c8257aa032114b35240aadb843dc1c757a5313de7"
+    },
+    {
+      "url": "https://www.transfermarkt.de/bayer-04-leverkusen/kader/verein/15/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:04.228065+00:00",
+      "sha256": "355a935f7561800deae1a58eea59105fd8753e003beced3cff71c0acbf734e7f"
+    },
+    {
+      "url": "https://www.transfermarkt.de/eintracht-frankfurt/kader/verein/24/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:06.036893+00:00",
+      "sha256": "b45935ddcd2a6095f6ba7722a68fe41a24ae9eab482678ab594edfe3149e642f"
+    },
+    {
+      "url": "https://www.transfermarkt.de/tsg-1899-hoffenheim/kader/verein/533/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:02.857542+00:00",
+      "sha256": "e5e493cd00b5c047bf6df4097b4f69f777e988a4f1f63a0879aef32a7379e1cd"
+    },
+    {
+      "url": "https://www.transfermarkt.de/afc-sunderland/kader/verein/289/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:52.818132+00:00",
+      "sha256": "bd74ae0019b88eeaf201f5b09382a2f264e6feab18e637371f9e43576b711509"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sv-waldhof-mannheim/kader/verein/85/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:45.105386+00:00",
+      "sha256": "34e998eba6b950fe72d328e27cb46b4a4d1c4b3c218c58557f9db9a44925ae39"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sv-darmstadt-98/kader/verein/105/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:21.617081+00:00",
+      "sha256": "807e79c80e44c91b1d4926d0fb6534a3276b98489473cc35d4238a5a660a95f9"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-chelsea/kader/verein/631/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:39.978227+00:00",
+      "sha256": "654f4cd4c0ce8c73da8a919c8a23c05e00fc473650df3999c3441d42c128ae64"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-fulham/kader/verein/931/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:43.727851+00:00",
+      "sha256": "abc9ef5d8dbb5849dcf6d123a562b6a7cc7afc983fc84b62fadedbe7ab430fe0"
+    },
+    {
+      "url": "https://www.transfermarkt.de/newcastle-united/kader/verein/762/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:50.715169+00:00",
+      "sha256": "5429334da6bcb2ca4dd3f56c0cd56cdb77a500c262e3ff2fb44ba4e8aeed0c4c"
+    },
+    {
+      "url": "https://www.transfermarkt.de/borussia-dortmund/kader/verein/16/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:59.681304+00:00",
+      "sha256": "927453550675aa19e2e1770ec753efb040ae08d849fa3f9549ef9d993044efb7"
+    },
+    {
+      "url": "https://www.transfermarkt.de/msv-duisburg/kader/verein/52/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:39.623402+00:00",
+      "sha256": "18d4d26950b4b7ad041e50ae2365995e7a92e62db4daa0e38fdb65d1224bbf52"
+    },
+    {
+      "url": "https://www.transfermarkt.de/vfl-bochum/kader/verein/80/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:25.617615+00:00",
+      "sha256": "46a6a42e333b793b20bad6d9e1b77f42c8ca39e91c8c69a2bf0dbb6aa5adc64a"
+    },
+    {
+      "url": "https://www.transfermarkt.de/manchester-united/kader/verein/985/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:49.937052+00:00",
+      "sha256": "543b8e96c6fed73672ad0d37c674352b89ff1da2c63778ec7fb5492ad88361a2"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-schalke-04/kader/verein/33/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:14.367277+00:00",
+      "sha256": "a9ed4724b397b1d2e983c42cd58b22eee88dad2e22e96a26bd8a21ee813c34b7"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sc-freiburg/kader/verein/60/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:04.973378+00:00",
+      "sha256": "e62e19efa9614998b4f5177da82a997a537a7c947c1c8872e3857207ec428e4f"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-augsburg/kader/verein/167/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:07.107039+00:00",
+      "sha256": "323d986d5d073658ccfd8af3d4978da6e4a9845c0cdcce47798096a26f016833"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-heidenheim-1846/kader/verein/2036/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:18.058070+00:00",
+      "sha256": "36e24e4c10d034372cc86f2815daf3eafd1f3551697053d3716bf14e8bbbab12"
+    },
+    {
+      "url": "https://www.transfermarkt.de/karlsruher-sc/kader/verein/48/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:26.826827+00:00",
+      "sha256": "502be878e53560db93a5e23bc70c24b09c8a3f9aa264941d3a29a99a7083b789"
+    },
+    {
+      "url": "https://www.transfermarkt.de/rb-leipzig/kader/verein/23826/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:01.008167+00:00",
+      "sha256": "97283d90f2a9e564bd064da4fa47fa71d7ad3661db6e1e1a6f768776682c54ff"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-liverpool/kader/verein/31/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:47.547720+00:00",
+      "sha256": "03f6f6108aec08d5028c45b59b341f94eb0a4ac80c8d3246a9cf1767419f8789"
+    },
+    {
+      "url": "https://www.transfermarkt.de/manchester-city/kader/verein/281/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:48.677141+00:00",
+      "sha256": "480dc31ff14f1e9821d8a65e16c6d82796ba24da1b92e06c4904603842d4bf05"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-brentford/kader/verein/1148/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:37.487131+00:00",
+      "sha256": "98977ec56621e787ba2b89973d53a14e8f3ee796ba25d92646304551ba9c96fa"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sv-07-elversberg/kader/verein/64/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:15.452898+00:00",
+      "sha256": "ac54bb8cfcfed8b072f1b208573d831ba987c384a94a38fe45024bff098be56e"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-ingolstadt-04/kader/verein/4795/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:46.927984+00:00",
+      "sha256": "9602267b250c0007efa439f83a79d1bdd5376932fbafd7a4fc5bf6bcd1c6cbc5"
+    },
+    {
+      "url": "https://www.transfermarkt.de/spvgg-greuther-furth/kader/verein/65/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:33.748207+00:00",
+      "sha256": "582a3d28fdc7b95bf59c3bf33f2d9b2847185d2a8fd3682db98bcd5e3a81d68b"
+    },
+    {
+      "url": "https://www.transfermarkt.de/tsg-1899-hoffenheim-ii/kader/verein/983/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:51.005535+00:00",
+      "sha256": "ab3835df09261faf7ddd2ed9c07b00f74ba9f141891a5f719f13e9b204f6234d"
+    },
+    {
+      "url": "https://www.transfermarkt.de/afc-bournemouth/kader/verein/989/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:36.458891+00:00",
+      "sha256": "147ac73d9a94a634b365ebf6ee82ee4655d46b0d4aa0cba07b481ccc27a62359"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-energie-cottbus/kader/verein/25/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:35.268926+00:00",
+      "sha256": "bfac2c82e9908a44ea8264f2a591d43d8ad627ceaeb5639879d980dcab166809"
+    },
+    {
+      "url": "https://www.transfermarkt.de/sg-dynamo-dresden/kader/verein/129/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:28.566836+00:00",
+      "sha256": "e7de409708fb7109444d4f9163d9959ec24a63b876d33dbfb1a3f2afff6bb65f"
+    },
+    {
+      "url": "https://www.transfermarkt.de/leeds-united/kader/verein/399/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:46.748009+00:00",
+      "sha256": "8641181efead6b745e037ec49edb34f1c7ca3a066d41825076ee3196fb4eedd5"
+    },
+    {
+      "url": "https://www.transfermarkt.de/vfl-osnabruck/kader/verein/81/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:34.564579+00:00",
+      "sha256": "e705d735d9e41aeb7a7781affacb5ed1a2f31cc8fd9e319c826182a9e12937a6"
+    },
+    {
+      "url": "https://www.transfermarkt.de/ssv-jahn-regensburg/kader/verein/109/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:48.087905+00:00",
+      "sha256": "910d9ceb2a6fd8df9083100aef021ed429578cccc99acb9d4ad7d388c93d13bd"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fc-arsenal/kader/verein/11/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:34.278062+00:00",
+      "sha256": "0a651bf929057db7f1dbbe4529cc7f612bb8971a26a0e97c6367450f71960375"
+    },
+    {
+      "url": "https://www.transfermarkt.de/hamburger-sv/kader/verein/41/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:11.278170+00:00",
+      "sha256": "b64691692e6ee125bc166e1e2f2766b5b1648b8f0d8bf0281ff1575f23bed386"
+    },
+    {
+      "url": "https://www.transfermarkt.de/coventry-city/kader/verein/990/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:40.807799+00:00",
+      "sha256": "f8b6df3a235487785b5388c90b2e9ed50f43a330cba1ff3e2ab5138484452aae"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-magdeburg/kader/verein/187/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:31.637621+00:00",
+      "sha256": "d0ff31a4349276164899e3293cd9c2c30e400169104ef2ece40cfdb9b3d70c93"
+    },
+    {
+      "url": "https://www.transfermarkt.de/crystal-palace/kader/verein/873/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:41.908140+00:00",
+      "sha256": "5b0d8110693231bc9cfcbf4e744171ea18f83dc20ff4c35e294cf84c098ae7ac"
+    },
+    {
+      "url": "https://www.transfermarkt.de/borussia-monchengladbach/kader/verein/18/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:10.007161+00:00",
+      "sha256": "93aeb3d082cba6ceafd5d994cd6c62a394304bd2c6b1a3d5db6e9a807ca2f1d1"
+    },
+    {
+      "url": "https://www.transfermarkt.de/1-fc-kaiserslautern/kader/verein/2/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:22.342984+00:00",
+      "sha256": "f57ab040dd8126f8fe2d4d84bbf8f3d5dee76ffc0d0c490223335ff120a69dd1"
+    },
+    {
+      "url": "https://www.transfermarkt.de/eintracht-braunschweig/kader/verein/23/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:32.477983+00:00",
+      "sha256": "4dcb46d8b8a7e777d024f2983d9ebc008ec793f5ecc0c3f4c8db4cd20b3b5982"
+    },
+    {
+      "url": "https://www.transfermarkt.de/vfb-stuttgart/kader/verein/79/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:02.099153+00:00",
+      "sha256": "b40e4a3e03d09694b8088bd37ac70efaa5300c9034dde9d4027b90762ed3b647"
+    },
+    {
+      "url": "https://www.transfermarkt.de/fortuna-dusseldorf/kader/verein/38/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:36.664983+00:00",
+      "sha256": "05373c5cfa7534d6542a7839a6b4faf710e30f1746f3272457fd8dbea4ba1976"
+    },
+    {
+      "url": "https://www.transfermarkt.de/wurzburger-kickers/kader/verein/1557/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:01:04.147070+00:00",
+      "sha256": "9dbdd312708d7d42a15f61c7f3845b1923e56748dcb9145650ba0c4e99195940"
+    },
+    {
+      "url": "https://www.transfermarkt.de/tottenham-hotspur/kader/verein/148/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T19:59:58.158024+00:00",
+      "sha256": "007fc11048dc50b4cfd2c580b82958bb7cc02f984af0af71c4079e53b5c71390"
+    },
+    {
+      "url": "https://www.transfermarkt.de/holstein-kiel/kader/verein/269/saison_id/2026/plus/1",
+      "retrieved_at": "2026-09-12T20:00:29.807927+00:00",
+      "sha256": "a21383144033c3b6f3673ba9e2f837be3941ac96cf75125b24654477c6bc1716"
+    }
+  ],
+  "evidence_root": "C:\\FM27CommunityOverhaul\\data\\raw\\transfermarkt"
+}

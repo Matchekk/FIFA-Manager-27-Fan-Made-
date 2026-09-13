@@ -1,0 +1,169 @@
+{
+  "schema": 2,
+  "status": "CONFIRMED_NATIVE_ID_PLAN",
+  "season": "2026/27",
+  "snapshot_date": "2026-09-12",
+  "plan_csv": "data/current/ger3-membership-plan.csv",
+  "plan_fields": [
+    "competition_id",
+    "slot",
+    "old_club_id",
+    "old_team_type",
+    "new_club_id",
+    "new_team_type",
+    "status",
+    "source",
+    "source_sha256",
+    "snapshot_date"
+  ],
+  "native_source": {
+    "runtime": "runtime/game-test-20260912-07/database",
+    "script": "runtime/game-test-20260912-07/database/script/CountryScript21.sav",
+    "sha256": "e9e5e7d1d451867815a6b1fca1550bcde10d5a91530c7b442dadabfe5fd3b201",
+    "competition_id": 352387074,
+    "native_count": 20,
+    "desired_count": 20,
+    "membership_evidence": "data/generated/native-competition-inspection-20260908-01/competition_members.csv"
+  },
+  "confirmed_rows": 6,
+  "review_rows": 0,
+  "serialized_preconditions": [
+    {
+      "competition_id": 352387074,
+      "slot": 1,
+      "old_club_id": 1376297,
+      "old_team_type": "FIRST",
+      "old_serialized_reference": 1376293,
+      "new_club_id": 1376306,
+      "new_team_type": "FIRST",
+      "new_serialized_reference": 1376364,
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 4,
+      "old_club_id": 1376280,
+      "old_team_type": "FIRST",
+      "old_serialized_reference": 1376296,
+      "new_club_id": 1376347,
+      "new_team_type": "FIRST",
+      "new_serialized_reference": 1376314,
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 11,
+      "old_club_id": 1376291,
+      "old_team_type": "FIRST",
+      "old_serialized_reference": 1376303,
+      "new_club_id": 1376419,
+      "new_team_type": "FIRST",
+      "new_serialized_reference": 1376289,
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 13,
+      "old_club_id": 1376277,
+      "old_team_type": "FIRST",
+      "old_serialized_reference": 1376305,
+      "new_club_id": 1376429,
+      "new_team_type": "FIRST",
+      "new_serialized_reference": 1376280,
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 14,
+      "old_club_id": 1376420,
+      "old_team_type": "FIRST",
+      "old_serialized_reference": 1376306,
+      "new_club_id": 1376444,
+      "new_team_type": "FIRST",
+      "new_serialized_reference": 1376345,
+      "status": "CONFIRMED"
+    },
+    {
+      "competition_id": 352387074,
+      "slot": 19,
+      "old_club_id": 1376467,
+      "old_team_type": "FIRST",
+      "old_serialized_reference": 1376309,
+      "new_club_id": 1376540,
+      "new_team_type": "FIRST",
+      "new_serialized_reference": 1376371,
+      "status": "CONFIRMED"
+    }
+  ],
+  "changed_native_ids": [
+    {
+      "club": "SSV Ulm 1846 Fussball",
+      "club_id": 1376297,
+      "serialized_reference": 1376293,
+      "destination": "Regionalliga Südwest",
+      "destination_competition_id": 352387078
+    },
+    {
+      "club": "Fortuna Düsseldorf 1895",
+      "club_id": 1376429,
+      "serialized_reference": 1376280,
+      "destination": "GER3",
+      "slot": 13
+    },
+    {
+      "club": "TSV 1860 München",
+      "club_id": 1376291,
+      "serialized_reference": 1376303,
+      "destination": "Regionalliga Bayern",
+      "destination_competition_id": 352387079
+    },
+    {
+      "club": "FC Erzgebirge Aue",
+      "club_id": 1376277,
+      "serialized_reference": 1376305,
+      "destination": "Regionalliga Nordost",
+      "destination_competition_id": 352387076
+    },
+    {
+      "club": "VfL Osnabrück",
+      "club_id": 1376420,
+      "serialized_reference": 1376306,
+      "destination": "GER3",
+      "slot": 14
+    },
+    {
+      "club": "1. FC Schweinfurt 1905",
+      "club_id": 1376467,
+      "serialized_reference": 1376309,
+      "destination": "Regionalliga Bayern",
+      "destination_competition_id": 352387079
+    }
+  ],
+  "source_evidence": [
+    {
+      "url": "https://datencenter.dfb.de/competitions/4/seasons/current",
+      "sha256": "952520fbfcc60f1802def3ec1bf2248f8c565db74cf4e27d9ac47e73b969186c",
+      "claim": "DFB 3. Liga 2026/27 membership, including six native slot replacements"
+    },
+    {
+      "url": "https://datencenter.dfb.de/vereine/ssv-ulm-1846-e-v",
+      "sha256": "d927916b4913e2b4d53f81ed22555bcdfba89be0d7fd165c6f439f831de8d8ba",
+      "claim": "SSV Ulm 1846 2026/27 Regionalliga Südwest destination"
+    },
+    {
+      "url": "https://www.bfv.de/news/regionalliga-bayern/2026/07/rahmenspielplan-regionalliga-bayern-2026-27",
+      "sha256": "85aca08ff6220800670b0cd96706f1cba9c656d723d3cd41c1664f5e96042572",
+      "claim": "TSV 1860 München and 1. FC Schweinfurt 1905 2026/27 Regionalliga Bayern"
+    },
+    {
+      "url": "https://datencenter.dfb.de/teams/erzgebirge-aue",
+      "sha256": "beae2092fbcb7567bc0fa6b5c1222aaad8f01b3c66cb1226c24700e66d0e8016",
+      "claim": "Erzgebirge Aue 2026/27 Regionalliga Nordost"
+    }
+  ],
+  "blockers": [
+    "Destination regional competitions still require parent-owned lower-league format/slot closure: Regionalliga Bayern official 2026/27 schedule has 19 teams while Native08 has 18; Aue requires a validated Regionalliga Nordost destination.",
+    "This plan is a GER3 slot plan only; it does not mutate any DB or invent lower replacements."
+  ],
+  "preservation": "All six old and new club_id values are native base IDs resolved through clubs.csv. Serialized references are recorded separately and are never substituted into CSV club_id."
+}

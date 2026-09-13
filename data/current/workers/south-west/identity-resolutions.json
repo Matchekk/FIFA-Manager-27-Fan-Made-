@@ -1,0 +1,899 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-12",
+  "scope": [
+    "BEL1",
+    "CZE1",
+    "ESP1",
+    "FRA1",
+    "ITA1",
+    "NED1",
+    "POR1",
+    "TUR1"
+  ],
+  "queue": "reports/current/integration/review-queue.csv",
+  "source_profiles": "data/current/workers/south-west/profiles.csv",
+  "source_profile_capture": {
+    "snapshot_date": "2026-09-12",
+    "requested": 316,
+    "captured": 315,
+    "failures": [
+      {
+        "player_tm_id": "1069459",
+        "error": "No scoped source profile URL"
+      }
+    ]
+  },
+  "native_authority": "data/generated/native08-integrated-20260912-01-reread/native_players.csv",
+  "override_source": "data/overrides/player_identities.json",
+  "rows": 188,
+  "status_counts": {
+    "REVIEW_REQUIRED": 167,
+    "CONFIRMED": 21
+  },
+  "method_counts": {
+    "REVIEW_REQUIRED_AFTER_TWO_ATTEMPTS": 167,
+    "EXACT_PROFILE_DOB_NAME": 21
+  },
+  "league_status": {
+    "BEL1": {
+      "REVIEW_REQUIRED": 33,
+      "CONFIRMED": 3
+    },
+    "CZE1": {
+      "REVIEW_REQUIRED": 21,
+      "CONFIRMED": 3
+    },
+    "ESP1": {
+      "REVIEW_REQUIRED": 14,
+      "CONFIRMED": 1
+    },
+    "FRA1": {
+      "CONFIRMED": 4,
+      "REVIEW_REQUIRED": 9
+    },
+    "ITA1": {
+      "REVIEW_REQUIRED": 12,
+      "CONFIRMED": 3
+    },
+    "NED1": {
+      "REVIEW_REQUIRED": 6,
+      "CONFIRMED": 2
+    },
+    "POR1": {
+      "REVIEW_REQUIRED": 34,
+      "CONFIRMED": 2
+    },
+    "TUR1": {
+      "REVIEW_REQUIRED": 38,
+      "CONFIRMED": 3
+    }
+  },
+  "club_coverage": {
+    "BEL1|1096|Royal Antwerpen FC": {
+      "rows": 7,
+      "confirmed": 1,
+      "review_required": 6,
+      "review_player_tm_ids": [
+        "1191562",
+        "1293796",
+        "1318279",
+        "1510005",
+        "1555142",
+        "763090"
+      ]
+    },
+    "BEL1|1184|KRC Genk": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1232104"
+      ]
+    },
+    "BEL1|157|KAA Gent": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1473866"
+      ]
+    },
+    "BEL1|172|Royal Charleroi SC": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1308524",
+        "1318685",
+        "820146"
+      ]
+    },
+    "BEL1|2282|Club Brügge": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1334900"
+      ]
+    },
+    "BEL1|2727|Oud-Heverlee Leuven": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1211302",
+        "946964"
+      ]
+    },
+    "BEL1|28643|SK Beveren": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1492856",
+        "743377"
+      ]
+    },
+    "BEL1|3508|Zulte Waregem": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1507561"
+      ]
+    },
+    "BEL1|354|KV Mechelen": {
+      "rows": 4,
+      "confirmed": 1,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1192697",
+        "1269453",
+        "1318352"
+      ]
+    },
+    "BEL1|3948|Union Saint-Gilloise": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "839551"
+      ]
+    },
+    "BEL1|475|VV St. Truiden": {
+      "rows": 3,
+      "confirmed": 1,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1153358",
+        "1389531"
+      ]
+    },
+    "BEL1|5026|Lommel SK": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1072029",
+        "406559",
+        "858324"
+      ]
+    },
+    "BEL1|520|Cercle Brügge": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1086381",
+        "923838",
+        "993333"
+      ]
+    },
+    "BEL1|601|KV Kortrijk": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1456177"
+      ]
+    },
+    "BEL1|968|KVC Westerlo": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1047424",
+        "1467124",
+        "1577556"
+      ]
+    },
+    "CZE1|1322|FK Jablonec": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "107665"
+      ]
+    },
+    "CZE1|1496|FK Pardubice": {
+      "rows": 4,
+      "confirmed": 0,
+      "review_required": 4,
+      "review_player_tm_ids": [
+        "1013809",
+        "1063475",
+        "1143628",
+        "1381202"
+      ]
+    },
+    "CZE1|197|AC Sparta Prag": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1118150"
+      ]
+    },
+    "CZE1|2311|SK Sigma Olmütz": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1111684"
+      ]
+    },
+    "CZE1|24325|SK Artis Brünn": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1544985"
+      ]
+    },
+    "CZE1|377|FC Banik Ostrau": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1052374",
+        "1118054",
+        "726014"
+      ]
+    },
+    "CZE1|5225|FC Zbrojovka Brünn": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "943864"
+      ]
+    },
+    "CZE1|5544|1.FC Slovacko": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1339658",
+        "1372149"
+      ]
+    },
+    "CZE1|5545|FC Zlin": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1523194"
+      ]
+    },
+    "CZE1|5546|FK Mlada Boleslav": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1048442",
+        "1166018",
+        "941029"
+      ]
+    },
+    "CZE1|697|FC Slovan Liberec": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "482386"
+      ]
+    },
+    "CZE1|715|Bohemians Prag 1905": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1237999",
+        "975321"
+      ]
+    },
+    "CZE1|814|FK Teplice": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "CZE1|941|FC Viktoria Pilsen": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "ESP1|1050|FC Villarreal": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "ESP1|1084|FC Málaga": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1057394"
+      ]
+    },
+    "ESP1|1108|Deportivo Alavés": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "175446",
+        "431190"
+      ]
+    },
+    "ESP1|13|Atlético Madrid": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "945763"
+      ]
+    },
+    "ESP1|150|Real Betis Sevilla": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "341264"
+      ]
+    },
+    "ESP1|3368|UD Levante": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1371830",
+        "1476132",
+        "341263"
+      ]
+    },
+    "ESP1|368|FC Sevilla": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1055220",
+        "357628",
+        "639733"
+      ]
+    },
+    "ESP1|714|Espanyol Barcelona": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1178721"
+      ]
+    },
+    "ESP1|897|Deportivo A Coruña": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "453704"
+      ]
+    },
+    "ESP1|940|Celta Vigo": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1076815"
+      ]
+    },
+    "FRA1|1041|Olympique Lyon": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "FRA1|1095|ESTAC Troyes": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1523861"
+      ]
+    },
+    "FRA1|1158|FC Lorient": {
+      "rows": 3,
+      "confirmed": 2,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "704456"
+      ]
+    },
+    "FRA1|273|FC Stade Rennes": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1227106",
+        "551505"
+      ]
+    },
+    "FRA1|290|AJ Auxerre": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1265965"
+      ]
+    },
+    "FRA1|3911|Stade Brest 29": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "272619"
+      ]
+    },
+    "FRA1|583|Paris Saint-Germain": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "350219",
+        "872171"
+      ]
+    },
+    "FRA1|738|Le Havre AC": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "182201"
+      ]
+    },
+    "ITA1|1005|US Lecce": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "836441"
+      ]
+    },
+    "ITA1|12|AS Rom": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "371149",
+        "669380"
+      ]
+    },
+    "ITA1|1390|Cagliari Calcio": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1078164"
+      ]
+    },
+    "ITA1|252|Genua CFC": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "532937"
+      ]
+    },
+    "ITA1|2919|AC Monza": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "957822"
+      ]
+    },
+    "ITA1|410|Udinese Calcio": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1118347"
+      ]
+    },
+    "ITA1|430|AC Florenz": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1350478"
+      ]
+    },
+    "ITA1|46|Inter Mailand": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "441986"
+      ]
+    },
+    "ITA1|5|AC Mailand": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1179195"
+      ]
+    },
+    "ITA1|506|Juventus Turin": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "486031",
+        "686965"
+      ]
+    },
+    "ITA1|6574|US Sassuolo": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "NED1|1269|PEC Zwolle": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1146470"
+      ]
+    },
+    "NED1|1434|SC Telstar": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "648541"
+      ]
+    },
+    "NED1|306|SC Heerenveen": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1275103"
+      ]
+    },
+    "NED1|317|FC Twente Enschede": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "NED1|385|Fortuna Sittard": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1491843",
+        "810846"
+      ]
+    },
+    "NED1|610|Ajax Amsterdam": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "683571"
+      ]
+    },
+    "POR1|1075|SC Braga": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "631404"
+      ]
+    },
+    "POR1|1301|CS Marítimo": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "696656",
+        "927715"
+      ]
+    },
+    "POR1|1465|GD Estoril Praia": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "634430"
+      ]
+    },
+    "POR1|2423|CD Santa Clara": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1077990",
+        "1083604",
+        "1091608"
+      ]
+    },
+    "POR1|2424|Gil Vicente FC": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1268194",
+        "137313",
+        "732096"
+      ]
+    },
+    "POR1|2431|CF Estrela Amadora": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "768562"
+      ]
+    },
+    "POR1|294|Benfica Lissabon": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1464920",
+        "537844"
+      ]
+    },
+    "POR1|3268|Casa Pia AC": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1534934",
+        "182108",
+        "567516"
+      ]
+    },
+    "POR1|3329|FC Famalicão": {
+      "rows": 3,
+      "confirmed": 0,
+      "review_required": 3,
+      "review_player_tm_ids": [
+        "1150372",
+        "656409",
+        "724039"
+      ]
+    },
+    "POR1|336|Sporting Lissabon": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "546186",
+        "572675"
+      ]
+    },
+    "POR1|7788|Académico Viseu FC": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "211628",
+        "584452"
+      ]
+    },
+    "POR1|8024|FC Arouca": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1154528",
+        "1582293"
+      ]
+    },
+    "POR1|979|Moreirense FC": {
+      "rows": 6,
+      "confirmed": 1,
+      "review_required": 5,
+      "review_player_tm_ids": [
+        "1072324",
+        "1580906",
+        "668178",
+        "739442",
+        "811432"
+      ]
+    },
+    "POR1|982|CD Nacional": {
+      "rows": 4,
+      "confirmed": 0,
+      "review_required": 4,
+      "review_player_tm_ids": [
+        "1020652",
+        "1220180",
+        "1236397",
+        "1582195"
+      ]
+    },
+    "TUR1|10484|Kasimpasa": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1315482",
+        "1438186"
+      ]
+    },
+    "TUR1|11282|Alanyaspor": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1175619",
+        "1577095"
+      ]
+    },
+    "TUR1|114|Besiktas JK": {
+      "rows": 1,
+      "confirmed": 1,
+      "review_required": 0,
+      "review_player_tm_ids": []
+    },
+    "TUR1|120|Kocaelispor": {
+      "rows": 4,
+      "confirmed": 0,
+      "review_required": 4,
+      "review_player_tm_ids": [
+        "1303365",
+        "1423296",
+        "1438140",
+        "367195"
+      ]
+    },
+    "TUR1|12382|Amed SK": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1583411"
+      ]
+    },
+    "TUR1|126|Caykur Rizespor": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1474364",
+        "1581401"
+      ]
+    },
+    "TUR1|141|Galatasaray": {
+      "rows": 2,
+      "confirmed": 1,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1223334"
+      ]
+    },
+    "TUR1|1467|Göztepe": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "433181",
+        "662332"
+      ]
+    },
+    "TUR1|152|Samsunspor": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1070009",
+        "1161013"
+      ]
+    },
+    "TUR1|2293|Konyaspor": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1304052",
+        "1347138"
+      ]
+    },
+    "TUR1|2832|Gaziantep FK": {
+      "rows": 6,
+      "confirmed": 0,
+      "review_required": 6,
+      "review_player_tm_ids": [
+        "1048119",
+        "1197999",
+        "1261143",
+        "1474871",
+        "1581187",
+        "952093"
+      ]
+    },
+    "TUR1|37951|Corum FK": {
+      "rows": 1,
+      "confirmed": 0,
+      "review_required": 1,
+      "review_player_tm_ids": [
+        "1476544"
+      ]
+    },
+    "TUR1|39722|Erzurumspor FK": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1487376",
+        "865793"
+      ]
+    },
+    "TUR1|6890|Basaksehir FK": {
+      "rows": 2,
+      "confirmed": 0,
+      "review_required": 2,
+      "review_player_tm_ids": [
+        "1245279",
+        "754037"
+      ]
+    },
+    "TUR1|7160|Eyüpspor": {
+      "rows": 5,
+      "confirmed": 1,
+      "review_required": 4,
+      "review_player_tm_ids": [
+        "1178853",
+        "1374186",
+        "1414664",
+        "1414677"
+      ]
+    },
+    "TUR1|820|Genclerbirligi Ankara": {
+      "rows": 5,
+      "confirmed": 0,
+      "review_required": 5,
+      "review_player_tm_ids": [
+        "1417530",
+        "1437503",
+        "1438144",
+        "1489506",
+        "191829"
+      ]
+    }
+  },
+  "review_reasons": {
+    "NO_FRESH_PROFILE": 0,
+    "NO_UNIQUE_NATIVE_BRIDGE": 167
+  },
+  "review_escalation": "Sol",
+  "canonical_mutation": false,
+  "identity_rule": "Native08 current FIFA+DOB, then existing reviewed identity, then DOB+normalized name, then controlled same-club name variant; no FM-only bridge and no invented FIFA IDs."
+}

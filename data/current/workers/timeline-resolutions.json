@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-12",
+  "rows": 167,
+  "status_counts": {
+    "REVIEW_REQUIRED": 146,
+    "CONFIRMED": 21
+  },
+  "reason_counts": {
+    "LOAN_OWNER_OR_RETURN_DATE_UNRESOLVED": 49,
+    "NO_CURRENT_DESTINATION_EVENT": 97,
+    "CURRENT_DESTINATION_EVENT_AND_PROFILE_AGREE": 3,
+    "CURRENT_LOAN_EVENT_OWNER_AND_RETURN_DATE_AGREE": 18
+  },
+  "native_ids_are_columns": true,
+  "event_source": "data/current/evidence/transfer-events.csv",
+  "event_source_rows": 7255,
+  "canonical_event_rows": 5717,
+  "profile_source": "data/current/evidence/review-profiles.csv",
+  "sequence_rule": "Explicit effective dates <= snapshot win; otherwise a unique current-destination undated event is bound to the current profile; multiple undated destinations remain REVIEW_REQUIRED.",
+  "loan_rule": "Confirmed loans require event owner == current profile loan_owner, mapped owner native club, and current owner return/contract end; missing return-date evidence remains REVIEW_REQUIRED.",
+  "absence_rule": "No current event is recorded as REVIEW_REQUIRED; roster absence never implies departure.",
+  "canonical_mutation": false,
+  "escalation": "Sol"
+}

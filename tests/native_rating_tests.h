@@ -104,7 +104,7 @@ inline void RunRatingTests(std::filesystem::path const& output) {
         auto row=[&](std::string const& name) { std::ifstream f(directory/name); std::string line;
             std::getline(f,line); std::getline(f,line); return PlanCsv(line); };
         auto before=row("before.csv");
-        if (before[11]!=row("native_player_semantics.csv")[5] || player->mAttributes.Pace!=65)
+        if (before[11]!=row("native_player_semantics.csv")[19] || player->mAttributes.Pace!=65)
             throw std::runtime_error("Rating baseline hash differs from canonical serializer");
         player->mAttributes.Pace=66; ExportRatingInspection(db,directory/"attribute.csv");
         if (row("attribute.csv")[11]==before[11] || row("attribute.csv")[12]!=before[12])

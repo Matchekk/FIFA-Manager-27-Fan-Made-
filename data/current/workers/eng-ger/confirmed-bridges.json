@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-12",
+  "rows": 9,
+  "canonical_mutation": false,
+  "identity_method": "EXACT_PROFILE_DOB_NAME"
+}

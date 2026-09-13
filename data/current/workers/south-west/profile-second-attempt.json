@@ -1,0 +1,10 @@
+{
+  "snapshot_date": "2026-09-12",
+  "requested": 81,
+  "attempted": 81,
+  "captured": 81,
+  "failures": [],
+  "source": "south-west/rosters.csv observed profile_url",
+  "cache_reuse_today": true,
+  "canonical_mutation": false
+}

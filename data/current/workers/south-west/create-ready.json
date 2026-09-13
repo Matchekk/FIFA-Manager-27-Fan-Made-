@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-09-12",
+  "scope": "remaining identity holds in south-west identity-resolutions.csv",
+  "rows_audited": 188,
+  "ready_rows": 61,
+  "decision_counts": {
+    "REVIEW_REQUIRED": 106,
+    "CREATE_READY": 61,
+    "KNOWN_IDENTITY": 21
+  },
+  "candidate_presence_counts": {
+    "exact": 22,
+    "duplicate_index_leads": 81,
+    "fuzzy": 82,
+    "existing_reviewed_alias": 1
+  },
+  "native_corpus": "data/generated/native08-integrated-20260912-01-reread/native_players.csv",
+  "native_corpus_rows": 266764,
+  "duplicate_review_index": "src/fm27/missing_player_review.py:DuplicateReviewIndex",
+  "fuzzy_threshold": 0.6,
+  "ready_zero_duplicate_proof": "Each CREATE_READY row has zero exact DOB+name, zero DuplicateReviewIndex leads, and zero fuzzy candidates at threshold 0.60 across the complete current Native08 corpus; all other candidates are retained in create-ready-review.csv.",
+  "known_aliases": "Existing reviewed source/native aliases plus current profile player/full_name were searched; FM ID alone was never used.",
+  "fifa_policy": "fifa_id=0 for every proposal; no external FIFA ID is assigned without verified EA evidence.",
+  "canonical_mutation": false,
+  "sol_action": "Review create-ready.csv and implement native creation mechanism; do not auto-apply."
+}

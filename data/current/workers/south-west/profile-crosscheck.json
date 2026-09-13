@@ -1,0 +1,11 @@
+{
+  "profiles": 314,
+  "roster_crosschecks": 285,
+  "statuses": {
+    "HIGH_CONFIDENCE": 215,
+    "REVIEW_REQUIRED": 70
+  },
+  "issues": {
+    "CLUB_CONFLICT": 70
+  }
+}
