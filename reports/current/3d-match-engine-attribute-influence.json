@@ -1,0 +1,192 @@
+{
+  "status": "PASS_DIRECT_3D_ENGINE_EVIDENCE",
+  "scope": "3D_MATCH_ENGINE_ONLY",
+  "runtime": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08",
+  "config_archive": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\config.big",
+    "sha256": "6e6138d24738704295acb88f1deed9629b2590c46266048a22c1f5f501bd93c9",
+    "entries": 16,
+    "selected_entry_hashes": {
+      "ai.ini": "c60dd775257777693a10102d36a8ee9161bce7e879271c1604446b90c2ec49a0",
+      "career.ini": "889acc21e29c129fb3c454ba5dd02433ad6577a2a156695084f79b742f785768",
+      "tcmai.ini": "16461a0a818389973a8931c94736cf09be47283d266da74cafa62482461e0754"
+    }
+  },
+  "engine": {
+    "path": "C:\\FM27CommunityOverhaul\\runtime\\loan-test-20260912-08\\GfxCore.dll",
+    "sha256": "d7ebe4e9685414a376daea1155ae833864a0906f07a80dd1e9bf0eb80ad694f2",
+    "detected_raw_attribute_names": [
+      "BALL_CONTROL",
+      "SHOT_POWER",
+      "LONG_SHOTS",
+      "CROSSING",
+      "PASSING_SHORT",
+      "PASSING_LONG",
+      "TACKLE_STANDING",
+      "TACKLE_SLIDING",
+      "MARKING",
+      "ACCELERATION",
+      "SPRINT_SPEED",
+      "STRENGTH",
+      "CONSISTENCY"
+    ],
+    "all_selected_tuning_keys_referenced": false,
+    "selected_tuning_key_references": {
+      "AVG_ACTION_CROSSING": true,
+      "AVG_ACTION_DIRECT_SHOT": true,
+      "AVG_ACTION_DRIBBLING": true,
+      "AVG_ACTION_LONG_PASSING": true,
+      "AVG_ACTION_LONG_SHOT": true,
+      "AVG_ACTION_MARKING": true,
+      "AVG_ACTION_PASSING": true,
+      "AVG_ACTION_TACKLING": true,
+      "EX_ACTION_CROSSING": true,
+      "EX_ACTION_DIRECT_SHOT": true,
+      "EX_ACTION_DRIBBLING": true,
+      "EX_ACTION_LONG_PASSING": true,
+      "EX_ACTION_LONG_SHOT": true,
+      "EX_ACTION_MARKING": true,
+      "EX_ACTION_PASSING": true,
+      "EX_ACTION_TACKLING": true,
+      "GOOD_ACTION_CROSSING": true,
+      "GOOD_ACTION_DIRECT_SHOT": true,
+      "GOOD_ACTION_DRIBBLING": true,
+      "GOOD_ACTION_LONG_PASSING": true,
+      "GOOD_ACTION_LONG_SHOT": true,
+      "GOOD_ACTION_MARKING": true,
+      "GOOD_ACTION_PASSING": true,
+      "GOOD_ACTION_TACKLING": true,
+      "HEADER_CHALLENGE_WEIGHT_HEIGHT": true,
+      "HEADER_CHALLENGE_WEIGHT_INFRONT": true,
+      "HEADER_CHALLENGE_WEIGHT_JUMP": true,
+      "HEADER_CHALLENGE_WEIGHT_STRENGTH": true,
+      "POOR_ACTION_CROSSING": true,
+      "POOR_ACTION_DIRECT_SHOT": true,
+      "POOR_ACTION_DRIBBLING": true,
+      "POOR_ACTION_LONG_PASSING": true,
+      "POOR_ACTION_LONG_SHOT": true,
+      "POOR_ACTION_MARKING": true,
+      "POOR_ACTION_PASSING": true,
+      "POOR_ACTION_TACKLING": true,
+      "SPRINT_SPEED_EX": true,
+      "SPRINT_SPEED_POOR": true,
+      "TCM_CONSISTENCY_ERROR_GLOBAL_LIMIT": false,
+      "TCM_CONSISTENCY_IMPACT_FACTOR": false,
+      "TECHNIQUE_MAX_PERC": true,
+      "TECHNIQUE_MIN_PERC": true
+    },
+    "config_only_selected_keys": [
+      "TCM_CONSISTENCY_ERROR_GLOBAL_LIMIT",
+      "TCM_CONSISTENCY_IMPACT_FACTOR"
+    ]
+  },
+  "direct_evidence": {
+    "attribute_tiers": {
+      "ATTRIBUTE_AVG": 20,
+      "ATTRIBUTE_GOOD": 50,
+      "ATTRIBUTE_EX": 80
+    },
+    "sprint_speed": {
+      "SPRINT_SPEED_POOR": 6.0,
+      "SPRINT_SPEED_EX": 11.0
+    },
+    "dribbling_run_speed_percent": {
+      "TECHNIQUE_MIN_PERC": 95,
+      "TECHNIQUE_MAX_PERC": 95
+    },
+    "heading_challenge_weights": {
+      "HEADER_CHALLENGE_WEIGHT_INFRONT": 0.05,
+      "HEADER_CHALLENGE_WEIGHT_HEIGHT": 0.15,
+      "HEADER_CHALLENGE_WEIGHT_STRENGTH": 0.25,
+      "HEADER_CHALLENGE_WEIGHT_JUMP": 0.55
+    },
+    "action_quality_curves": {
+      "direct_shot": {
+        "POOR_ACTION_DIRECT_SHOT": 30,
+        "AVG_ACTION_DIRECT_SHOT": 55,
+        "GOOD_ACTION_DIRECT_SHOT": 88,
+        "EX_ACTION_DIRECT_SHOT": 99
+      },
+      "long_shot": {
+        "POOR_ACTION_LONG_SHOT": 49,
+        "AVG_ACTION_LONG_SHOT": 69,
+        "GOOD_ACTION_LONG_SHOT": 85,
+        "EX_ACTION_LONG_SHOT": 99
+      },
+      "passing": {
+        "POOR_ACTION_PASSING": 45,
+        "AVG_ACTION_PASSING": 69,
+        "GOOD_ACTION_PASSING": 86,
+        "EX_ACTION_PASSING": 99
+      },
+      "long_passing": {
+        "POOR_ACTION_LONG_PASSING": 55,
+        "AVG_ACTION_LONG_PASSING": 79,
+        "GOOD_ACTION_LONG_PASSING": 90,
+        "EX_ACTION_LONG_PASSING": 99
+      },
+      "dribbling": {
+        "POOR_ACTION_DRIBBLING": 45,
+        "AVG_ACTION_DRIBBLING": 69,
+        "GOOD_ACTION_DRIBBLING": 87,
+        "EX_ACTION_DRIBBLING": 99
+      },
+      "crossing": {
+        "POOR_ACTION_CROSSING": 45,
+        "AVG_ACTION_CROSSING": 68,
+        "GOOD_ACTION_CROSSING": 84,
+        "EX_ACTION_CROSSING": 99
+      },
+      "tackling": {
+        "POOR_ACTION_TACKLING": 45,
+        "AVG_ACTION_TACKLING": 63,
+        "GOOD_ACTION_TACKLING": 79,
+        "EX_ACTION_TACKLING": 99
+      },
+      "marking": {
+        "POOR_ACTION_MARKING": 45,
+        "AVG_ACTION_MARKING": 63,
+        "GOOD_ACTION_MARKING": 79,
+        "EX_ACTION_MARKING": 99
+      }
+    },
+    "tackling_duel_parameters": {
+      "TACKLE_MISSCHANCE_POOR": 50,
+      "TACKLE_MISSCHANCE_AVG": 40,
+      "TACKLE_MISSCHANCE_GOOD": 30,
+      "TACKLE_MISSCHANCE_EX": 25,
+      "TACKLE_DRIBBLER_CHANGE_POOR": 20,
+      "TACKLE_DRIBBLER_CHANGE_AVG": 5,
+      "TACKLE_DRIBBLER_CHANGE_GOOD": -10,
+      "TACKLE_DRIBBLER_CHANGE_EX": -30
+    },
+    "consistency_penalty": {
+      "TCM_CONSISTENCY_IMPACT_FACTOR": 90,
+      "TCM_CONSISTENCY_ERROR_GLOBAL_LIMIT": 30
+    },
+    "cpu_attribute_effect_switch": {
+      "PLAYER_ATTR_CPU_EFFECT_ON": 1
+    },
+    "career_morale_attribute_delta": {
+      "MORALE_ATTRIB_1": -6,
+      "MORALE_ATTRIB_2": -3,
+      "MORALE_ATTRIB_3": 0,
+      "MORALE_ATTRIB_4": 2,
+      "MORALE_ATTRIB_5": 5
+    }
+  },
+  "interpretation": {
+    "global_weight_table_found": false,
+    "pace": "Direct repeated effect: the configured poor-to-excellent sprint-speed endpoints are 6.0 to 11.0 engine units.",
+    "acceleration": "The raw attribute and acceleration-specific code are present, but its response curve is hard-coded rather than exposed as a scalar in config.big.",
+    "heading": "Aerial challenge shares are explicit: jump 55%, strength 25%, height 15%, position in front 5%.",
+    "technical_attributes": "Shot, pass, dribble, cross, tackle and marking use separate nonlinear action-quality curves; they are not one interchangeable global score.",
+    "ranking_limit": "A complete cross-attribute ranking requires controlled match simulations because attributes act in different events and many formulas remain hard-coded."
+  },
+  "excluded": [
+    "Player Level.txt position weighting",
+    "displayed position strength",
+    "text-mode event selection"
+  ],
+  "modified_files": []
+}

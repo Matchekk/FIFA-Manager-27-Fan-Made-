@@ -137,6 +137,23 @@ restart. Exact profile and report:
 `data/parameter-tuning/polish-german-youth-mix-v1.json` and
 `reports/current/POLISH_GERMAN_YOUTH_MIX.md`.
 
+## 3D match-engine attribute evidence
+
+A read-only inspection now separates actual 3D match influence from the displayed
+position-strength matrix. `GfxCore.dll` directly references the raw match attributes
+and the active sprint, dribbling, heading, shooting, passing, tackling and marking
+tuning stored in `config.big`. There is no single global 3D attribute-weight table:
+attributes enter movement, action and duel formulas. Direct evidence includes sprint
+speed endpoints 6.0 to 11.0 engine units; aerial-duel weights of 55% jumping, 25%
+strength, 15% height and 5% front position; and nonlinear action-quality curves for
+eight technical/defensive actions. Acceleration is consumed by the engine but its
+curve remains hard-coded. A complete FM-Arena-style ordered ranking needs controlled
+repeated matches with one attribute varied at a time. No engine, database, parameter
+or save file was changed. Evidence and deterministic extractor:
+`reports/current/3D_MATCH_ENGINE_ATTRIBUTE_INFLUENCE.md`,
+`reports/current/3d-match-engine-attribute-influence.json`, and
+`tools/inspect-3d-match-engine-attributes.py`.
+
 ## Scope
 
 ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1, CZE1, GER2, GER3.
