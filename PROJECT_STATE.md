@@ -41,6 +41,12 @@ required pure club-list moves to rewrite the player block. Python tests 305 PASS
 native tests 127 PASS.
 The hash-bound checkpoint summary is
 `reports/current/NATIVE10_EXTERNAL_PASS1_VALIDATION.json`.
+The Native10 external-pass1 editor database was reversibly deployed to the
+isolated `runtime/loan-test-20260912-08`, compiled to a new runtime-only
+`Master.dat`, and launched from that exact runtime. The user confirmed that the
+game works. Runtime activation: PASS. This does not replace the representative
+completed-data new-career smoke, which remains deferred until production freeze.
+Evidence: `reports/current/NATIVE10_EXTERNAL_PASS1_RUNTIME_ACTIVATION.json`.
 
 Coverage: 222 clubs; 179 GOOD_ENOUGH, 43 PARTIAL, 0 BLOCKED. The current matrix is
 `data/current/CLUB_COVERAGE_MATRIX.csv`. Production freeze remains closed because
