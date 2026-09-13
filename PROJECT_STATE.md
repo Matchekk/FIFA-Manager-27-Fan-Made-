@@ -16,15 +16,31 @@ identity/reference/condition/serialization/invariant conflicts, reporting the ex
 failure. Do not reopen confirmed identities or reinterpret football facts.
 After import: deterministic deltas, coverage rebuild, frozen plan, native write and
 reread, semantic diff, regression tests, candidate, technical-blocker report.
-Requested artifacts created at `data/current/FM27_RESOLVED_REVIEW_QUEUE.csv`
-and `data/current/FM27_RESOLVED_REVIEW_QUEUE.manifest.json` using
-`tools/prepare-resolved-review-queue.py`. They contain624 stable row IDs:
-6 APPLY from the existing protected-condition delta,136 existing NONBLOCKING,
-482 AWAITING_EXTERNAL_RESOLUTION with empty decision. This is a partially resolved
-handoff, not a production freeze or proof that482 football decisions are resolved.
-Manifest binds source/output hashes and exact6 guarded native states. No changes
-have yet been applied from this artifact. Never map an empty decision to a no-op
-or release exemption; preserve externally edited artifacts on regeneration.
+External pass1 is imported and hash-validated: 624 stable row IDs with 6 APPLY,
+97 KEEP_EXISTING, 137 NONBLOCKING and 384 ESCALATE_TECHNICAL decisions. The
+deterministic importer is `tools/import-external-football-resolutions.py`; no
+football web research was performed. It produced a guarded plan for 542 existing
+players and 57 identity-audited creations. Fifty-seven supplied identities were
+bridged to existing native players without duplicates.
+
+Current candidate: `data/generated/release-candidate/native10-data-external-pass1-20260913-02`.
+Native write PASS, independent reread PASS, corrected exact semantic diff PASS,
+membership 12/12 PASS. Exact result: 542 planned existing-player states, 57
+creations, 442 club assignments, zero rating changes, zero future-condition
+changes and zero unplanned serialization rewrites. The original comparator
+failure is retained and hash-bound in `SEMANTIC_REVALIDATION.json`; it incorrectly
+required pure club-list moves to rewrite the player block. Python tests 305 PASS;
+native tests 127 PASS.
+The hash-bound checkpoint summary is
+`reports/current/NATIVE10_EXTERNAL_PASS1_VALIDATION.json`.
+
+Coverage: 222 clubs; 179 GOOD_ENOUGH, 43 PARTIAL, 0 BLOCKED. The current matrix is
+`data/current/CLUB_COVERAGE_MATRIX.csv`. Production freeze remains closed because
+55 exact technical conflicts remain: 30 owner contracts end before supplied loan
+ends, 13 resolved loan timelines end after supplied owner contracts, 5 ambiguous
+local native identities and 7 creation records without a safe native bridge or
+complete creation fields. Do not guess these values. The exact queue is
+`reports/current/integration-resolved-pass1/TECHNICAL_BLOCKERS.csv`.
 
 ## Accepted foundation
 

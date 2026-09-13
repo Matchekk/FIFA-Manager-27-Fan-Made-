@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "plan": "C:\\FM27CommunityOverhaul\\data\\current\\integration-resolved-pass1\\candidate-squad-plan.csv",
+  "plan_sha256": "8054e6494c6d5c0fdac89a125a34e706faedd68711dd57cd0e710a3f564b4134",
+  "before": "C:\\FM27CommunityOverhaul\\data\\generated\\release-candidate\\native10-data-draft-20260913-05\\write\\before\\native_player_semantics.csv",
+  "before_sha256": "a5dff2a4b4ef72fe785b048b3d4edd8e7f6dc93c72f67fd97f92b55f28655ab0",
+  "plan_rows": 542,
+  "native_rows": 266764,
+  "creation_rows": 57,
+  "errors": 0,
+  "warnings": 0,
+  "error_counts": {},
+  "empty_conditions_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+}

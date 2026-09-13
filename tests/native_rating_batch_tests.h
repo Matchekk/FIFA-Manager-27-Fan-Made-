@@ -51,6 +51,6 @@ inline void RunRatingBatchTests(std::filesystem::path const& output) {
         ++cases;
     }
     std::ofstream report(output/"NATIVE_TESTS.json");
-    report<<"{\"status\":\"PASS\",\"tests\":"<<(119+cases)
-        <<",\"scope\":\"119 prior native cases plus4 isolated-player native calibration cases: serialized bias/experience, block integrity, attribute parity and bounded alternatives\"}\n";
+    report<<"{\"status\":\"PASS\",\"tests\":"<<(123+cases)
+        <<",\"scope\":\"123 prior native cases plus4 isolated-player native calibration cases: serialized bias/experience, block integrity, attribute parity and bounded alternatives\"}\n";
 }

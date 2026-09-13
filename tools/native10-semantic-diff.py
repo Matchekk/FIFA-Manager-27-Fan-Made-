@@ -238,13 +238,22 @@ def main() -> int:
         "malformed_allowlist_rows": malformed_allowlist[:25],
         "policy": "Every opaque rewrite must be exact-bound to a raw mEmpicsId normalization row and must not collide with a planned creation identity.",
     }
+    # Club membership is serialized in the owning club's player list. A guarded
+    # MOVE_PRESERVE_METADATA can therefore change exported club_id while leaving
+    # the player's own serialized block byte-identical. Compare the full stable
+    # exported semantics here; opaque block changes remain reported separately.
     actual_player_changes = {key for key, (_, baseline, actual) in planned_pairs.items()
-                             if baseline["serialized_sha256"] != actual["serialized_sha256"]}
+                             if semantic_fingerprint(baseline) != semantic_fingerprint(actual)}
+    actual_serialized_changes = {key for key, (_, baseline, actual) in planned_pairs.items()
+                                 if baseline["serialized_sha256"] != actual["serialized_sha256"]}
     checks["exact_changed_players"] = {
         "status": "PASS" if actual_player_changes == set(planned) else "FAIL",
         "expected": len(planned), "actual": len(actual_player_changes),
         "missing": [list(k) for k in sorted(set(planned) - actual_player_changes)[:25]],
         "unexpected": [list(k) for k in sorted(actual_player_changes - set(planned))[:25]],
+        "serialized_player_blocks_changed": len(actual_serialized_changes),
+        "club_membership_only_or_byte_stable_moves": len(actual_player_changes - actual_serialized_changes),
+        "method": "full stable exported player semantics including club_id; read-assigned fm_id and opaque hash excluded",
     }
     def native_date(value: str) -> str:
         return dt.datetime.strptime(value, "%Y-%m-%d").strftime("%d.%m.%Y")

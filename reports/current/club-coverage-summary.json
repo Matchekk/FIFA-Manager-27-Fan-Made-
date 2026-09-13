@@ -3,34 +3,31 @@
   "snapshot_date": "2026-09-12",
   "clubs": 222,
   "overall": {
-    "PARTIAL": 170,
-    "GOOD_ENOUGH": 52
+    "GOOD_ENOUGH": 179,
+    "PARTIAL": 43
   },
   "creation_summary": {
-    "proposed": 54,
+    "proposed": 57,
     "unresolved": 0,
-    "rating_deferred": 54,
-    "sprint_eligible_except_rating": 54,
-    "ready": 0,
+    "rating_deferred": 0,
+    "sprint_eligible_except_rating": 57,
+    "ready": 57,
     "duplicate_player_ids": []
   },
   "review_queue": {
-    "rows": 624,
-    "raw_blocking_rows": 488,
-    "sprint_blocking_rows": 488,
-    "rating_deferred_rows": 54,
+    "rows": 55,
+    "raw_blocking_rows": 55,
+    "sprint_blocking_rows": 55,
+    "rating_deferred_rows": 0,
     "sprint_blocking_counts": {
-      "CONTRACT_CHRONOLOGY": 220,
-      "PLAYER_CREATION": 72,
-      "PRIMARY_EXCEPTION": 1,
-      "PROFILE_CONFLICT": 1,
+      "PLAYER_CREATION": 12,
       "TIMELINE_RESOLUTION": 13,
-      "TRANSFER_TIMELINE": 155,
-      "TYPED_CONDITION": 26
+      "TRANSFER_TIMELINE": 28,
+      "TYPED_CONDITION": 2
     }
   },
   "loan_counting": "confirmed_loans is the unique union of confirmed incoming and outgoing loan player IDs per club; a player is never counted twice.",
-  "interpretation": "Evidence and proposed-action coverage, not proof of native application. Proposed player creations remain unresolved when required native fields or non-rating review holds are outstanding. PROVISIONAL_CREATION_RATING is retained as provenance but deferred from this sprint gate. GOOD_ENOUGH requires a full roster, no sprint-blocking review holds, no unresolved creation candidates, and at least 18 resolved players.",
+  "interpretation": "Evidence and proposed-action coverage, not proof of native application. Proposed player creations remain unresolved when required native fields or non-rating review holds are outstanding. PROVISIONAL_CREATION_RATING is retained as provenance but deferred from this sprint gate. GOOD_ENOUGH requires a full roster, no sprint-blocking review holds, no unresolved creation candidates, and at least 18 resolved or creation-ready players.",
   "sources": {
     "membership": {
       "path": "data\\current\\league-membership-2026-27.integration.csv",
@@ -50,9 +47,9 @@
       }
     ],
     "review_queue": {
-      "path": "reports\\current\\integration\\review-queue.csv",
-      "rows": 624,
-      "sha256": "7feb9780ddcdd71ca3028c8394886edca9d7b16a77c1c2487984a40f20d61d41"
+      "path": "reports\\current\\integration-resolved-pass1\\remaining-review-queue.csv",
+      "rows": 55,
+      "sha256": "9e8b4fecce86277ce74eec8c2ff08aaeff48afb73851ebb7a9f742e8e4a8f8b0"
     },
     "resolved_observations": {
       "path": "data\\current\\integration\\resolved-observations.csv",
@@ -60,14 +57,14 @@
       "sha256": "add23caaede3d017dd1200137df7ee777b1ae64eb9ef0ad547a8c84802bf7dff"
     },
     "candidate_squad_plan": {
-      "path": "data\\current\\integration\\candidate-squad-plan.csv",
-      "rows": 250,
-      "sha256": "0bce2c09d068b56ff70a93c6fc55add4b4f944b499b964c4a7f0f46e6f9279ef"
+      "path": "data\\current\\integration-resolved-pass1\\candidate-squad-plan.csv",
+      "rows": 542,
+      "sha256": "8054e6494c6d5c0fdac89a125a34e706faedd68711dd57cd0e710a3f564b4134"
     },
     "candidate_player_creation_plan": {
-      "path": "data\\current\\integration\\candidate-player-creation-plan.csv",
-      "rows": 54,
-      "sha256": "836a726678c24f59c34e8cecf1fd120104f4e3602743bdcec38d9e756ffcf675"
+      "path": "data\\current\\integration-resolved-pass1\\candidate-player-creation-plan.csv",
+      "rows": 57,
+      "sha256": "6a5dcfdaa0df09e0713a6215addde434756a11b500b7eaa04a772915034fef27"
     }
   }
 }

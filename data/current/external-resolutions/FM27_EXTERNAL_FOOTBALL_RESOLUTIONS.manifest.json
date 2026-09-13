@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "purpose": "External football-resolution pass so Codex performs local engineering/integration only.",
+  "source_queue": "FM27_RESOLVED_REVIEW_QUEUE.csv",
+  "source_queue_sha256": "6c72619fbd42f68fdc6d84a924faa3c94bcfabaf5795df4ff8ea97d665354054",
+  "resolved_queue": "FM27_RESOLVED_REVIEW_QUEUE.external-pass1.csv",
+  "resolved_queue_sha256": "21e9c28172e6ae0ae60e048fe8759fd2bce85beee1a5a9578f8ca97227392061",
+  "companion": "FM27_EXTERNAL_FOOTBALL_RESOLUTIONS.csv",
+  "companion_sha256": "e211d5425d8d4efb020decd62098b6ee79c6ca6082c199b4b12c228a2330463e",
+  "rows": 624,
+  "all_decisions_filled": true,
+  "football_web_research_remaining_for_codex": 0,
+  "final_decision_counts": {
+    "KEEP_EXISTING": 97,
+    "ESCALATE_TECHNICAL": 384,
+    "NONBLOCKING": 137,
+    "APPLY": 6
+  },
+  "newly_filled_decisions": {
+    "KEEP_EXISTING": 97,
+    "ESCALATE_TECHNICAL": 384,
+    "NONBLOCKING": 1
+  },
+  "technical_action_counts": {
+    "NO_CHANGE_KEEP_EXISTING": 97,
+    "MOVE_TO_TARGET_PRESERVE_METADATA": 228,
+    "CREATE_OR_BRIDGE_IDENTITY": 72,
+    "MOVE_TO_EXTERNAL_IF_CLUB_EXISTS_ELSE_FREE_AGENT": 1,
+    "NO_CHANGE_NONBLOCKING_DUAL_PROFILE": 1,
+    "APPLY_CONFIRMED_TIMELINE_WITH_GUARD_REPAIR": 13,
+    "SET_CURRENT_LOAN": 50,
+    "SET_CURRENT_LOAN_PRESERVE_TYPED_CONDITION": 6,
+    "CLEAR_STALE_LOAN_KEEP_TARGET": 14
+  },
+  "implementation_note": "ESCALATE_TECHNICAL now means the football fact is externally resolved and only local/native plan synthesis, identity bridging, typed-condition repair, or guarded application remains. It must NOT trigger web research.",
+  "loan_policy": {
+    "current_loan_runtime_start": "2026-07-01",
+    "default_verified_season_loan_end": "2027-06-30",
+    "exception": {
+      "Vladimir Neuman": "2026-12-31"
+    }
+  },
+  "production_freeze_ready": false,
+  "reason_not_freeze_ready": "384 resolved football rows still require deterministic native technical application/guard synthesis."
+}

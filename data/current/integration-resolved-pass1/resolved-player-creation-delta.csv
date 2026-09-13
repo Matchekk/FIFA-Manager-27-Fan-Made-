@@ -1,0 +1,4 @@
+fm_id,player_tm_id,fifa_id,first_name,last_name,pseudonym,dob,nationality1,nationality2,club_id,joined,contract_until,shirt_number,team_type,position,rating_seed,status,source,source_sha256,snapshot_date
+1000024871,1150372,0,,Pato,,2004-02-17,83,0,2490398,2026-09-02,2027-06-30,33,FIRST,ST,45,CONFIRMED,https://www.transfermarkt.de/pato/profil/spieler/1150372,27601c4607ad4a203f019fb9b2e5851a583de10d2dfaa9573840804ee2c62a3c,2026-09-12
+1000024889,1372149,0,Gibril,Sosseh,,2007-01-01,116,0,786461,2026-07-31,2027-06-30,16,FIRST,CM,45,CONFIRMED,https://www.transfermarkt.de/gibril-sosseh/profil/spieler/1372149,974f3a7d623eaed2a984bc1e8363f922e8fb7eafc791c45aafd902f36aa04c03,2026-09-12
+1000024902,1489506,0,Ousmane,Diabate,,2007-09-24,118,0,3145836,2026-08-26,2027-06-30,42,FIRST,DM,45,CONFIRMED,https://www.transfermarkt.de/ousmane-diabate/profil/spieler/1489506,cd0970c424a3bfbb8151bd549771a807132e190fe31d17b391531bd1013dee4c,2026-09-12

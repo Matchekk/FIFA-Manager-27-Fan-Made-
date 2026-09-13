@@ -14,7 +14,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--candidate', type=Path, required=True)
     candidate = parser.parse_args().candidate
-    result = json.loads((candidate / 'semantic-diff.json').read_text())
+    result_path = candidate / 'semantic-diff-v2.json' if (candidate / 'semantic-diff-v2.json').is_file() else candidate / 'semantic-diff.json'
+    result = json.loads(result_path.read_text())
     assert result['status'] == 'PASS_NATIVE10_EXACT_SEMANTIC_DELTA'
     plan = rows(candidate / 'inputs/squad.csv')
     wanted = {row['fm_id'] for row in plan}
@@ -40,11 +41,13 @@ def main():
         writer.writerows(changes)
     summary = dict(status='PASS', existing_players_changed=len(plan), players_created=result['checks']['created_players']['actual'], field_counts=dict(sorted(Counter(row['field'] for row in changes).items())), competitions_changed=len(result['checks']['competition_delta']['actual']), existing_ratings_changed=0, unexpected_serialization_rewrites=result['checks']['unplanned_stable_semantics']['opaque_serialization_rewrites'], future_conditions_changed=0)
     (candidate / 'EXACT_CHANGE_SUMMARY.json').write_text(json.dumps(summary, indent=2) + '\n', encoding='utf-8')
-    audit = json.loads((candidate / 'inputs/identity-audit/creation-identity-audit.json').read_text(encoding='utf-8-sig'))
-    assert audit['corrected_creation_plan_sha256'] == hashlib.sha256((candidate / 'inputs/creation.csv').read_bytes()).hexdigest()
-    assert audit['decision_counts']['CREATE_CLEAR'] == summary['players_created']
+    audit_path = candidate / 'inputs/creation-identity-audit.csv'
+    audit = rows(audit_path)
+    build = json.loads((candidate / 'BUILD.json').read_text(encoding='utf-8-sig'))
+    assert build['evidence']['creation_identity_audit']['sha256'] == hashlib.sha256(audit_path.read_bytes()).hexdigest()
+    assert len(audit) == summary['players_created'] and all(row['decision'] == 'CREATE_CLEAR' for row in audit)
     assert summary['unexpected_serialization_rewrites'] == 0
-    gates = dict(status='NATIVE_DATA_DRAFT_PASS_COVERAGE_INCOMPLETE', identity_gate='PASS_SCOPED_CREATION_AUDIT_AND_NATIVE_COMPARE', identity_reason='Only identity-audited CREATE_CLEAR rows applied; held aliases and loan creations excluded. Zero new opaque serialization rewrites.', write='PASS', reread='PASS', semantic_diff='PASS', production_freeze=False, release_ready=False, runtime_smoke='NOT_RUN', remaining='Current coverage holds and the completed-data runtime smoke remain open.')
+    gates = dict(status='NATIVE_DATA_DRAFT_PASS_COVERAGE_INCOMPLETE', identity_gate='PASS_SCOPED_CREATION_AUDIT_AND_NATIVE_COMPARE', identity_reason='Only identity-audited CREATE_CLEAR rows applied; ambiguous aliases remain in the technical blocker queue. Zero new opaque serialization rewrites.', write='PASS', reread='PASS', semantic_diff='PASS_REVALIDATED' if result_path.name.endswith('v2.json') else 'PASS', production_freeze=False, release_ready=False, runtime_smoke='NOT_RUN', remaining='Technical blocker rows, remaining PARTIAL clubs, production freeze and the completed-data runtime smoke remain open.')
     (candidate / 'RELEASE_GATES.json').write_text(json.dumps(gates, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(summary))
 

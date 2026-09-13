@@ -1,0 +1,11 @@
+row_id,player_tm_id,native_fm_id,expected_native_fifa_id,expected_native_dob,expected_native_name,expected_native_club_id,method,evidence_path
+FM27-c137708e784c73526231a56f,1048442,295875,0,2004-05-16,Boluwatife Ogungbayi,786441,VERIFIED_FULL_NAME_COMPONENTS_DOB,data/current/workers/south-west/create-ready-review.csv
+FM27-fc09ca6d15551cca7ecd08b3,1111684,188142,276769,2005-07-03,John Dembe,3014671,VERIFIED_NAME_COMPONENTS_DOB,data/current/workers/south-west/create-ready-review.csv
+FM27-6772e32e627a533beca72e61,1063475,11473,0,2003-03-21,Tidjane Traoré,790532,VERIFIED_NAME_COMPONENTS_DOB,data/current/workers/south-west/create-ready-review.csv
+FM27-cee39c8f73847c4b1c3d397a,335721,257412,231936,1997-10-08,Benjamin White,917505,AUTHORITATIVE_LOCAL_FIFA_ID_DOB,data/intermediate/ea-fc27.csv
+FM27-6ea4edee758becfcc2748115,743591,262604,270409,2004-04-10,Sávio Moreira de Oliveira,917518,AUTHORITATIVE_LOCAL_FIFA_ID_DOB,data/intermediate/ea-fc27.csv
+FM27-f2e9b677ad85b489f6925e16,182201,290015,218066,1992-12-23,Ally Samatta,1179681,VERIFIED_FULL_NAME_COMPONENTS_DOB_TARGET,data/current/workers/south-west/create-ready-review.csv
+FM27-d8efc5e9ee5fae00227ccf8e,122268,268329,0,1992-06-05,David Haider,1376444,VERIFIED_FULL_NAME_COMPONENTS_DOB_TARGET,data/current/workers/creation-blocker-triage.csv
+FM27-7eed6111241436d5ffc025f2,154819,272756,213949,1994-07-10,Kwasi Okyere Wriedt,1376539,CONFIRMED_LOCAL_DELTA_FIFA_ID_DOB_TARGET,data/current/workers/eng-ger/confirmed_transfer_deltas.csv
+FM27-86f662480665f5b1a4d5315f,191426,203212,251443,1995-06-25,Leroy-Jacques Mickels,1376301,CONFIRMED_LOCAL_DELTA_FIFA_ID_DOB_TARGET,data/current/workers/eng-ger/confirmed_transfer_deltas.csv
+FM27-8ccb03ed2c8f6904d068f928,433181,284241,248474,2001-11-23,Faustino Anjorin,1769499,AUTHORITATIVE_LOCAL_FIFA_ID_DOB,data/intermediate/ea-fc27.csv

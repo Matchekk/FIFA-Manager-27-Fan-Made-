@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "status": "PASS_WITH_TECHNICAL_BLOCKERS",
+  "candidate": "native10-data-external-pass1-20260913-02",
+  "football_web_research_performed": false,
+  "league_membership": {
+    "status": "PASS",
+    "leagues": 12,
+    "clubs": 222
+  },
+  "coverage": {
+    "COMPLETE": 0,
+    "GOOD_ENOUGH": 179,
+    "PARTIAL": 43,
+    "BLOCKED": 0
+  },
+  "native_candidate": {
+    "write": "PASS",
+    "reread": "PASS",
+    "semantic_diff": "PASS_REVALIDATED",
+    "existing_players_changed": 542,
+    "players_created": 57,
+    "unexpected_serialization_rewrites": 0
+  },
+  "technical_blockers": {
+    "total": 55,
+    "counts": {
+      "AMBIGUOUS_LOCAL_NATIVE_IDENTITY": 5,
+      "CREATION_NATIVE_FIELDS_INCOMPLETE": 7,
+      "LOAN_END_AFTER_OWNER_CONTRACT": 13,
+      "OWNER_CONTRACT_BEFORE_LOAN_END": 30
+    }
+  },
+  "regression_tests": {
+    "python": {
+      "status": "PASS",
+      "tests": 305
+    },
+    "native": {
+      "status": "PASS",
+      "tests": 127
+    }
+  },
+  "production_freeze": false,
+  "runtime_smoke": "NOT_RUN",
+  "evidence_sha256": {
+    "AUTOMATED_TESTS.json": "49102a88bf1f6ac835a898ac00b913a8192a63eaf978a57e0d3e334b4df6e6b8",
+    "BUILD.json": "9fac8a7e4c2852a2cb283908edb8471afd3f550405757d6a8322a7152ebcb48d",
+    "CLUB_COVERAGE_MATRIX.csv": "ab8d8b7679bc58e6d5ebf9d47af6906195abcb5224f47e4c8bf868d04dd5ee63",
+    "DELTA_PROVENANCE.csv": "00f1ef970b8c660cf1e7ab24d978233fcd5c269401971340c1401a54801838d4",
+    "EXACT_CHANGE_SUMMARY.json": "bfd13c51b80b0276fcd0bb5ea373f9f792f3bf1590d33045b7854467b87df90a",
+    "EXACT_PLAYER_FIELD_DIFF.csv": "6e0d69f938efcf9871224df22ef2b18fb73fa818530cda065eec2fa23ceda4e7",
+    "NATIVE_TESTS.json": "d0e385fbc91721defc1d40f90f3f52d189b2220d659c8e37c602b53135a52c37",
+    "RELEASE_GATES.json": "a55285ea0299b40d7831eac43d6b769596953eb85632b31fd1ffbf4581067b44",
+    "TECHNICAL_BLOCKERS.csv": "4e97516024a8efda0fbd57c1ed15e793205c84601bbaf638c0a04a3f2692236a",
+    "club-coverage-summary.json": "35aeed5cc21cec3631417c9827ff032b78702697bdf788412de38f714f560578",
+    "integration.json": "326d8fbb45942568f8f51d1e67198e31a27d3f968cf6a63f9d9cf03b6f5b5982",
+    "membership-validation.json": "abc6e24af5a33d2000bf2a5a8f7a87849f004843936a03f06a26a7b81dde422f",
+    "semantic-diff-v2.json": "8b56de48530560ae99c3c410023a199d073adcc435bdd69c88c453352b6735dd"
+  }
+}

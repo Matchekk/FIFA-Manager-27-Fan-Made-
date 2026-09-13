@@ -77,7 +77,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
     if (!typed && header!=expected) throw std::runtime_error("Unexpected staging plan schema");
     if (typed) expected=protectedFields?protectedSchema:acquisitionFields?acquisitionSchema:expiredFields?expiredSchema:actions?actionSchema:loanSchema;
     struct Change { FifamPlayer* player; FifamClub* target; FifamDate joined; FifamDate until; UInt number; bool reserve;
-        FifamClub* owner; FifamDate loanEnd; bool freeAgent; bool retire; bool resolveLoan; bool shirtOnly; };
+        FifamClub* owner; FifamDate loanEnd; bool freeAgent; bool retire; bool resolveLoan; bool shirtOnly; bool movePreserve; };
     std::vector<Change> changes;
     std::map<UInt,FifamPlayer*> byId;
     for (auto p:db.mPlayers) if (!byId.emplace(p->mID,p).second) throw std::runtime_error("Duplicate native player ID");
@@ -103,6 +103,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
         bool retire=action=="RETIRE";
         bool shirtOnly=action=="SHIRT_ONLY";
         bool preserveProtected=action=="PRESERVE_PROTECTED_SQUAD";
+        bool movePreserve=action=="MOVE_PRESERVE_METADATA";
         bool clubless=freeAgent || retire;
         bool replaceExpired=action=="REPLACE_EXPIRED_LOAN";
         bool purchaseLoan=action=="PURCHASE_AND_LOAN";
@@ -110,7 +111,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
         bool resolveActive=action=="RESOLVE_ACTIVE_LOAN";
         bool resolveExpired=action=="RESOLVE_EXPIRED_LOAN" || replaceExpired || (purchaseLoan && p->mStartingConditions.mLoan.mEnabled);
         bool resolveLoan=resolveExpired || replaceActive || resolveActive;
-        if (action!="SQUAD" && !clubless && !resolveLoan && !purchaseLoan && !shirtOnly && !preserveProtected)
+        if (action!="SQUAD" && !clubless && !resolveLoan && !purchaseLoan && !shirtOnly && !preserveProtected && !movePreserve)
             playerError("unknown native staging action");
         auto targetID=PlanUInt(f[4]);
         auto target=targetID?db.GetClubFromUID(targetID,false):nullptr;
@@ -119,8 +120,8 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
         auto joined=PlanDate(f[5]), until=PlanDate(f[6]), snapshot=PlanDate(f[12]);
         if (!snapshotText.empty() && snapshotText!=f[12]) throw std::runtime_error("Mixed plan snapshot dates");
         snapshotText=f[12];
-        if (joined>snapshot || (!clubless && !shirtOnly && until<snapshot) || joined<p->mBirthday ||
-            (!clubless && until<joined) || snapshot<FifamDate(8,9,2026))
+        if ((!movePreserve && (joined>snapshot || (!clubless && !shirtOnly && until<snapshot) || joined<p->mBirthday ||
+            (!clubless && until<joined))) || snapshot<FifamDate(8,9,2026))
             playerError("invalid effective contract/snapshot dates");
         auto number=PlanUInt(f[7]);
         if (number>99 || (f[8]!="FIRST" && f[8]!="RESERVE")) playerError("invalid team/number");
@@ -128,6 +129,11 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
             (f[8]=="RESERVE")!=p->mInReserveTeam || f[13]!="0" || !f[14].empty() ||
             number==(p->mInReserveTeam?p->mShirtNumberReserveTeam:p->mShirtNumberFirstTeam)))
             playerError("shirt-only action differs from native club/contract/team or does not change number");
+        if (movePreserve && (target==p->mClub || joined!=p->mContract.mJoined || until!=p->mContract.mValidUntil ||
+            (f[8]=="RESERVE")!=p->mInReserveTeam || f[13]!="0" || !f[14].empty() ||
+            number!=(p->mInReserveTeam?p->mShirtNumberReserveTeam:p->mShirtNumberFirstTeam) ||
+            p->mStartingConditions.mLoan.mEnabled || p->mContract.mLoaned))
+            playerError("move-preserve action changes native metadata or has an active loan");
         if (clubless && (until.GetDays()+1!=joined.GetDays() || number!=0 || f[8]!="FIRST" || f[13]!="0" || !f[14].empty()))
             playerError("invalid clubless dates/team/loan fields");
         auto& c=p->mStartingConditions;
@@ -148,7 +154,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
             if (!exact) playerError("protected-condition native precondition mismatch");
         } else if (protectedFields && std::any_of(f.begin()+25,f.end(),[](auto const& value){return !value.empty();}))
             playerError("protected-condition fields on unrelated action");
-        if (!shirtOnly && !preserveProtected && (c.mRetirement.mEnabled || (c.mLoan.mEnabled && !resolveLoan) || c.mFutureTransfer.mEnabled || c.mFutureLoan.mEnabled ||
+        if (!shirtOnly && !preserveProtected && !movePreserve && (c.mRetirement.mEnabled || (c.mLoan.mEnabled && !resolveLoan) || c.mFutureTransfer.mEnabled || c.mFutureLoan.mEnabled ||
             c.mFutureJoin.mEnabled || c.mFutureReLoan.mEnabled || c.mFutureLeave.mEnabled || c.mBanUntil.mEnabled || p->mContract.mLoaned)
             ) playerError("complex existing condition requires a typed loan/timeline plan");
         if (resolveLoan) {
@@ -214,7 +220,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
                     playerError("acquisition evidence date conflicts with current contract");
             }
         }
-        changes.push_back({p,target,joined,until,number,f[8]=="RESERVE",owner,loanEnd,freeAgent,retire,resolveLoan,shirtOnly});
+        changes.push_back({p,target,joined,until,number,f[8]=="RESERVE",owner,loanEnd,freeAgent,retire,resolveLoan,shirtOnly,movePreserve});
     }
     if (changes.empty()) throw std::runtime_error("Empty staging plan");
     // All rows were checked before any mutation. Only the in-memory copy changes.
@@ -236,6 +242,7 @@ inline StagePlanResult ApplyStagePlan(FifamDatabase& db, std::filesystem::path c
             p->mClub=c.target;
             p->mIsCaptain=false;
         }
+        if (c.movePreserve) continue;
         if (c.freeAgent || c.retire) {
             // Without.sav contains native players with no club. Reset the ended
             // club contract; use an expired interval as the upstream converter

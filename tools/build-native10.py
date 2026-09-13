@@ -21,18 +21,22 @@ def main():
  p.add_argument('--belgium-plan',type=Path)
  p.add_argument('--creation-plan',type=Path)
  p.add_argument('--germany-plan',type=Path)
+ p.add_argument('--integration-report',type=Path)
+ p.add_argument('--creation-identity-audit',type=Path)
+ p.add_argument('--technical-blockers',type=Path)
  p.add_argument('--draft',action='store_true')
  p.add_argument('--snapshot-only',action='store_true')
  a=p.parse_args()
  if not a.name.startswith('native10-') or any(c not in 'abcdefghijklmnopqrstuvwxyz0123456789-' for c in a.name):
   raise ValueError('Name must be a lowercase native10- leaf name')
- gate_path=ROOT/'reports/current/integration/integration.json'
+ gate_path=(a.integration_report or ROOT/'reports/current/integration/integration.json').resolve()
  gate=json.loads(gate_path.read_text(encoding='utf-8-sig'))
  if not a.draft and not gate.get('freeze_ready'):
   raise ValueError('Production freeze refused: football data coverage gate is incomplete')
  out=ROOT/'data/generated/release-candidate'/a.name
  if out.exists(): raise ValueError('Exclusive new candidate directory required')
- for path in [a.binary,a.squad_plan,a.membership_plan,a.belgium_plan,a.creation_plan,a.germany_plan]:
+ for path in [a.binary,a.squad_plan,a.membership_plan,a.belgium_plan,a.creation_plan,a.germany_plan,
+              gate_path,a.creation_identity_audit,a.technical_blockers]:
   if path is not None and not path.is_file(): raise ValueError('Missing input: '+str(path))
  out.mkdir(parents=True); inputs=out/'inputs';inputs.mkdir()
  plans={}
@@ -44,10 +48,16 @@ def main():
   if evidence.is_file():
    shutil.copy2(evidence,inputs/(key+'.manifest.json'));plans[key]['manifest_sha256']=sha(evidence)
  shutil.copy2(gate_path,inputs/'integration.json')
+ evidence={}
+ for key,path in [('creation_identity_audit',a.creation_identity_audit),
+                  ('technical_blockers',a.technical_blockers)]:
+  if path is None:continue
+  target=inputs/path.name;shutil.copy2(path,target)
+  evidence[key]=dict(path=str(target),source=str(path.resolve()),sha256=sha(target))
  # Exact native guard provenance accompanies the embedded per-player guards.
  for name in ['native08-loan-preconditions.csv','native08-loan-preconditions.json']:
-  evidence=ROOT/'data/current/integration'/name
-  if evidence.is_file():shutil.copy2(evidence,inputs/name)
+  guard_evidence=ROOT/'data/current/integration'/name
+  if guard_evidence.is_file():shutil.copy2(guard_evidence,inputs/name)
  binary=inputs/'native-probe.exe';shutil.copy2(a.binary,binary)
  validators={}
  for name in ['native10-semantic-diff.py','current-membership-audit.py']:
@@ -65,7 +75,7 @@ def main():
   base=str(BASE),base_inventory_sha256=sha(inputs/'base-inventory.json'),plans=plans,
   binary_sha256=sha(binary),validators=validators,
   validator_common_sha256=sha(package/'common.py'),expected_membership_sha256=sha(inputs/'expected-membership.csv'),
-  integration_sha256=sha(inputs/'integration.json'),
+  integration_sha256=sha(inputs/'integration.json'),evidence=evidence,
   runtime_smoke='NOT_RUN',original_install_modified=False,write='NOT_RUN',reread='NOT_RUN',semantic_diff='NOT_RUN')
  save(out/'BUILD.json',manifest)
  if a.snapshot_only:print(json.dumps(dict(output=str(out),status=manifest['status'])));return

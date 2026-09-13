@@ -110,6 +110,7 @@ def main() -> int:
         free_agent, retire, shirt_only = (action == "FREE_AGENT", action == "RETIRE",
                                           action == "SHIRT_ONLY")
         preserve_protected = action == "PRESERVE_PROTECTED_SQUAD"
+        move_preserve = action == "MOVE_PRESERVE_METADATA"
         replace_expired = action == "REPLACE_EXPIRED_LOAN"
         replace_active = action == "REPLACE_ACTIVE_LOAN"
         resolve_active = action == "RESOLVE_ACTIVE_LOAN"
@@ -120,7 +121,8 @@ def main() -> int:
         if action not in {"SQUAD", "FREE_AGENT", "RETIRE", "SHIRT_ONLY",
                           "RESOLVE_EXPIRED_LOAN", "REPLACE_EXPIRED_LOAN",
                           "REPLACE_ACTIVE_LOAN", "RESOLVE_ACTIVE_LOAN",
-                          "PURCHASE_AND_LOAN", "PRESERVE_PROTECTED_SQUAD"}:
+                          "PURCHASE_AND_LOAN", "PRESERVE_PROTECTED_SQUAD",
+                          "MOVE_PRESERVE_METADATA"}:
             add(row, "action", "unsupported action")
         target = row.get("new_club_id", "")
         clubless = free_agent or retire
@@ -130,8 +132,9 @@ def main() -> int:
         try:
             joined, until, snapshot = iso(row["joined"]), iso(row["contract_until"]), iso(row["snapshot_date"])
             snapshots.add(row["snapshot_date"])
-            if (joined > snapshot or (not clubless and not shirt_only and until < snapshot)
-                    or joined < iso(row["dob"]) or (not clubless and until < joined)
+            if ((not move_preserve and (joined > snapshot
+                    or (not clubless and not shirt_only and until < snapshot)
+                    or joined < iso(row["dob"]) or (not clubless and until < joined)))
                     or snapshot < dt.date(2026, 9, 8)):
                 add(row, "contract_chronology", "invalid joined/end/snapshot ordering")
         except (ValueError, KeyError):
@@ -153,6 +156,16 @@ def main() -> int:
                     or row.get("loan_owner_club_id") != "0" or row.get("loan_end")
                     or row.get("shirt_number") == actual_number):
                 add(row, "shirt_only", "row changes more than native shirt or is a no-op")
+        if move_preserve:
+            actual_number = (actual.get("shirt_number_reserve") if actual.get("in_reserve") == "1"
+                             else actual.get("shirt_number_first"))
+            if (target == actual.get("club_id") or native_date(actual.get("joined", "")) != joined
+                    or native_date(actual.get("contract_until", "")) != until
+                    or (row.get("team_type") == "RESERVE") != (actual.get("in_reserve") == "1")
+                    or row.get("loan_owner_club_id") != "0" or row.get("loan_end")
+                    or row.get("shirt_number") != actual_number
+                    or actual.get("loan_enabled") == "1" or actual.get("contract_loaned") == "1"):
+                add(row, "move_preserve", "row changes native metadata, is a no-op, or has an active loan")
         if clubless and (until != joined - dt.timedelta(days=1) or number != 0
                          or row.get("team_type") != "FIRST"
                          or row.get("loan_owner_club_id") != "0" or row.get("loan_end")):
@@ -172,7 +185,7 @@ def main() -> int:
         elif any(row.get(field, "") for field in ["protected_condition_type"] + [
                 f"protected_condition_param{i}" for i in range(5)]):
             add(row, "protected_condition_fields", "protected fields on unrelated action")
-        if not shirt_only and not preserve_protected and (native_retire or (native_loan and not resolve) or native_future):
+        if not shirt_only and not preserve_protected and not move_preserve and (native_retire or (native_loan and not resolve) or native_future):
             add(row, "existing_conditions", "unhandled retirement, loan, or future condition")
         if resolve:
             if not native_loan:
@@ -241,7 +254,7 @@ def main() -> int:
                 add(row, "acquisition_date", "malformed acquisition date")
         # The export cannot distinguish an allowed injury/league ban from a
         # disallowed ban-until condition. Preserve this as an explicit warning.
-        if (not shirt_only and not preserve_protected and actual.get("protected_conditions_sha256", empty_hash) != empty_hash
+        if (not shirt_only and not preserve_protected and not move_preserve and actual.get("protected_conditions_sha256", empty_hash) != empty_hash
                 and not native_loan and not native_retire and not native_future):
             add(row, "protected_condition_detail",
                 "non-future protected condition requires native guard confirmation", "WARNING")

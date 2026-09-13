@@ -5,6 +5,7 @@ The report describes current integration evidence and proposed actions. A
     creation ratings remain provenance and are deferred from this sprint's gate.
 """
 import csv
+import argparse
 import hashlib
 import json
 from collections import Counter
@@ -20,6 +21,7 @@ def read(path):
 
 
 def source_info(path):
+    path = path.resolve()
     data = path.read_bytes()
     with path.open(encoding="utf-8-sig", newline="") as handle:
         rows = max(sum(1 for _ in handle) - 1, 0)
@@ -47,14 +49,32 @@ def status_for(queues, names):
     return "PARTIAL" if any(queues.get(name, 0) for name in names) else "GOOD_ENOUGH"
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--membership", type=Path,
+                        default=ROOT / "data/current/league-membership-2026-27.integration.csv")
+    parser.add_argument("--review-queue", type=Path,
+                        default=ROOT / "reports/current/integration/review-queue.csv")
+    parser.add_argument("--squad-plan", type=Path,
+                        default=ROOT / "data/current/integration/candidate-squad-plan.csv")
+    parser.add_argument("--creation-plan", type=Path,
+                        default=ROOT / "data/current/integration/candidate-player-creation-plan.csv")
+    parser.add_argument("--output", type=Path,
+                        default=ROOT / "reports/current/CLUB_COVERAGE_MATRIX.csv")
+    parser.add_argument("--summary-output", type=Path,
+                        default=ROOT / "reports/current/club-coverage-summary.json")
+    return parser.parse_args()
+
+
 def main():
-    membership_path = ROOT / "data/current/league-membership-2026-27.integration.csv"
+    args = parse_args()
+    membership_path = args.membership
     observation_paths = [ROOT / "data/current/workers/eng-ger/tm-squads.csv",
                          ROOT / "data/current/workers/south-west/rosters.csv"]
-    review_path = ROOT / "reports/current/integration/review-queue.csv"
+    review_path = args.review_queue
     resolved_path = ROOT / "data/current/integration/resolved-observations.csv"
-    squad_plan_path = ROOT / "data/current/integration/candidate-squad-plan.csv"
-    creation_plan_path = ROOT / "data/current/integration/candidate-player-creation-plan.csv"
+    squad_plan_path = args.squad_plan
+    creation_plan_path = args.creation_plan
 
     memberships = read(membership_path)
     observations = [row for path in observation_paths for row in read(path)]
@@ -131,8 +151,9 @@ def main():
                            "PROPOSED_RATING_DEFERRED" if rating_only_creations else
                            "PROPOSED_READY" if ready_creations else "NONE")
 
+        covered_players = len(confirmed) + len(ready_creations) + len(rating_only_creations)
         evidence_complete = (len(roster) >= 18 and not material and not unresolved_creations
-                             and not ambiguous and len(confirmed) >= 18)
+                             and not ambiguous and covered_players >= 18)
         overall = "GOOD_ENOUGH" if evidence_complete else "BLOCKED" if len(roster) < 11 else "PARTIAL"
         rows.append({
             "league": league,
@@ -164,7 +185,8 @@ def main():
             "overall_status": overall,
         })
 
-    out = ROOT / "reports/current/CLUB_COVERAGE_MATRIX.csv"
+    out = args.output
+    out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
@@ -191,7 +213,7 @@ def main():
             "sprint_blocking_counts": dict(Counter(row["queue"] for row in blocking_reviews)),
         },
         "loan_counting": "confirmed_loans is the unique union of confirmed incoming and outgoing loan player IDs per club; a player is never counted twice.",
-        "interpretation": "Evidence and proposed-action coverage, not proof of native application. Proposed player creations remain unresolved when required native fields or non-rating review holds are outstanding. PROVISIONAL_CREATION_RATING is retained as provenance but deferred from this sprint gate. GOOD_ENOUGH requires a full roster, no sprint-blocking review holds, no unresolved creation candidates, and at least 18 resolved players.",
+        "interpretation": "Evidence and proposed-action coverage, not proof of native application. Proposed player creations remain unresolved when required native fields or non-rating review holds are outstanding. PROVISIONAL_CREATION_RATING is retained as provenance but deferred from this sprint gate. GOOD_ENOUGH requires a full roster, no sprint-blocking review holds, no unresolved creation candidates, and at least 18 resolved or creation-ready players.",
         "sources": {
             "membership": source_info(membership_path),
             "observations": [source_info(path) for path in observation_paths],
@@ -201,7 +223,8 @@ def main():
             "candidate_player_creation_plan": source_info(creation_plan_path),
         },
     }
-    (out.parent / "club-coverage-summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    args.summary_output.parent.mkdir(parents=True, exist_ok=True)
+    args.summary_output.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary))
 
 

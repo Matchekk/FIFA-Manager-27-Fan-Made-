@@ -25,6 +25,12 @@ def row(fm_id: str, club: str, serialized: str) -> dict[str, str]:
 
 
 class SemanticDuplicateTests(unittest.TestCase):
+    def test_club_membership_change_is_semantic_with_byte_stable_player_block(self) -> None:
+        before = row("20417", "8524039", "same-block")
+        after = row("30417", "999", "same-block")
+        self.assertNotEqual(MODULE.semantic_fingerprint(before), MODULE.semantic_fingerprint(after))
+        self.assertEqual(before["serialized_sha256"], after["serialized_sha256"])
+
     def test_stable_multiset_preserves_duplicate_multiplicity(self) -> None:
         before = [row("20417", "8524039", "a"), row("20423", "8523778", "b")]
         after = [row("10417", "8524039", "x"), row("10423", "8523778", "y")]

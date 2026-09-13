@@ -1,0 +1,64 @@
+{
+  "status": "TECHNICAL_BLOCKERS_REMAIN",
+  "handoff_rows": 624,
+  "decision_counts": {
+    "APPLY": 6,
+    "ESCALATE_TECHNICAL": 384,
+    "KEEP_EXISTING": 97,
+    "NONBLOCKING": 137
+  },
+  "implementation_counts": {
+    "RESOLVED_IDENTITY_BRIDGE_NO_STATE_CHANGE": 40,
+    "RESOLVED_NO_CHANGE": 234,
+    "STAGED_APPLY": 6,
+    "STAGED_CREATE": 3,
+    "STAGED_IDENTITY_BRIDGE": 17,
+    "STAGED_TECHNICAL": 269,
+    "TECHNICAL_BLOCKER": 55
+  },
+  "technical_action_counts": {
+    "APPLY_CONFIRMED_TIMELINE_WITH_GUARD_REPAIR": 13,
+    "CLEAR_STALE_LOAN_KEEP_TARGET": 14,
+    "CREATE_OR_BRIDGE_IDENTITY": 72,
+    "MOVE_TO_EXTERNAL_IF_CLUB_EXISTS_ELSE_FREE_AGENT": 1,
+    "MOVE_TO_TARGET_PRESERVE_METADATA": 228,
+    "NO_CHANGE_KEEP_EXISTING": 97,
+    "NO_CHANGE_NONBLOCKING_DUAL_PROFILE": 1,
+    "NO_TECHNICAL_ACTION": 142,
+    "SET_CURRENT_LOAN": 50,
+    "SET_CURRENT_LOAN_PRESERVE_TYPED_CONDITION": 6
+  },
+  "resolved_squad_delta_rows": 292,
+  "resolved_creation_delta_rows": 3,
+  "identity_bridges": 57,
+  "technical_blockers": 55,
+  "technical_blocker_counts": {
+    "AMBIGUOUS_LOCAL_NATIVE_IDENTITY": 5,
+    "CREATION_NATIVE_FIELDS_INCOMPLETE": 7,
+    "LOAN_END_AFTER_OWNER_CONTRACT": 13,
+    "OWNER_CONTRACT_BEFORE_LOAN_END": 30
+  },
+  "full_squad_plan_rows": 542,
+  "full_creation_plan_rows": 57,
+  "freeze_ready": false,
+  "football_web_research_performed": false,
+  "input_hashes": {
+    "data/current/external-resolutions/FM27_EXTERNAL_FOOTBALL_RESOLUTIONS.manifest.json": "ad54518694a3ec7dfe70f7288c5b30a52533c69dd3df0e4f536f596e3cb21fac",
+    "data/current/external-resolutions/FM27_RESOLVED_REVIEW_QUEUE.source.csv": "6c72619fbd42f68fdc6d84a924faa3c94bcfabaf5795df4ff8ea97d665354054",
+    "data/current/external-resolutions/FM27_RESOLVED_REVIEW_QUEUE.external-pass1.csv": "21e9c28172e6ae0ae60e048fe8759fd2bce85beee1a5a9578f8ca97227392061",
+    "data/current/external-resolutions/FM27_EXTERNAL_FOOTBALL_RESOLUTIONS.csv": "e211d5425d8d4efb020decd62098b6ee79c6ca6082c199b4b12c228a2330463e",
+    "data/current/external-resolutions/LOCAL_TECHNICAL_IDENTITY_BRIDGES.csv": "bc5fb898fefc499d6f31abf6d3b5564249ee51b64a7221db132c1cce4d71a9c4",
+    "data/generated/release-candidate/native10-data-draft-20260913-05/write/before/native_player_semantics.csv": "a5dff2a4b4ef72fe785b048b3d4edd8e7f6dc93c72f67fd97f92b55f28655ab0"
+  },
+  "output_hashes": {
+    "data/current/integration-resolved-pass1/resolved-squad-delta.csv": "b359f1c7c1db81e9bcc163c86d2520e117d1fb4a776da51ae003557f56436b85",
+    "data/current/integration-resolved-pass1/resolved-player-creation-delta.csv": "1980239c316ab0fc387af1ffce69550d59f9b18198fd669e64af73ec8da8a9fe",
+    "data/current/integration-resolved-pass1/candidate-squad-plan.csv": "8054e6494c6d5c0fdac89a125a34e706faedd68711dd57cd0e710a3f564b4134",
+    "data/current/integration-resolved-pass1/candidate-player-creation-plan.csv": "6a5dcfdaa0df09e0713a6215addde434756a11b500b7eaa04a772915034fef27",
+    "data/current/integration-resolved-pass1/identity-bridges.csv": "56f4a0514c43b4b226a598668da34c24309b5e95e3458e3d372f468cf3d6f817",
+    "reports/current/integration-resolved-pass1/creation-identity-audit.csv": "5d3532b27e268a761b25bd46380884602d5407d2c7c442dbe7c1ee800cc93c48",
+    "reports/current/integration-resolved-pass1/TECHNICAL_BLOCKERS.csv": "4e97516024a8efda0fbd57c1ed15e793205c84601bbaf638c0a04a3f2692236a",
+    "reports/current/integration-resolved-pass1/remaining-review-queue.csv": "9e8b4fecce86277ce74eec8c2ff08aaeff48afb73851ebb7a9f742e8e4a8f8b0",
+    "reports/current/integration-resolved-pass1/implementation-status.csv": "b37618968860f8c36a062d416627b92e62e22690e5ca9e2dd0f7da9390c9d575"
+  }
+}
