@@ -121,6 +121,22 @@ unchanged. The running game remains open, so the new values load at the next nor
 restart. Exact profile and report: `data/parameter-tuning/overpowered-staff-v1.json`
 and `reports/current/OVERPOWERED_STAFF_TUNING.md`.
 
+## Polish-German youth mix profile
+
+`polish-german-youth-mix-v1` is applied after the relaxed and overpowered-staff
+profiles in the isolated Native10 runtime. The one guarded country-pair patch raises
+the Germany-to-Poland youth-generation values from 1.04 to 6.0 for first nationality
+and from 1.0 to 12.0 for second nationality. This makes future Polish and
+German-Polish youth players more common at German clubs while preserving the normal
+German pool and every other country pair. The parameter table is scoped by club
+country and has no manager-nationality input, so this safe implementation applies to
+all German clubs rather than dynamically following the human manager. Application,
+idempotence and 305/305 Python tests passed; the protected original installation is
+unchanged. The running game remains open and the values load after the next normal
+restart. Exact profile and report:
+`data/parameter-tuning/polish-german-youth-mix-v1.json` and
+`reports/current/POLISH_GERMAN_YOUTH_MIX.md`.
+
 ## Scope
 
 ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1, CZE1, GER2, GER3.

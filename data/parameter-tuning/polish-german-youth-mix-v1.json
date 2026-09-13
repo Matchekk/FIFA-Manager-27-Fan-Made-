@@ -1,0 +1,20 @@
+{
+  "profile": "polish-german-youth-mix-v1",
+  "description": "Increase Polish and German-Polish youth generation at German clubs while preserving the normal German youth pool.",
+  "requires_profiles": [
+    "relaxed-career-v1",
+    "dynamic-development-v1",
+    "relaxed-qol-v2",
+    "overpowered-staff-v1"
+  ],
+  "restart_required": true,
+  "files": {
+    "fmdata/ParameterFiles/Youth Players Countries.txt": [
+      {
+        "id": "increase_polish_youth_at_german_clubs",
+        "before": "21,37,1.04,1.0 // Germany : Poland 1.04 first 1 second",
+        "after": "21,37,6.0,12.0 // Germany : Poland 6 first 12 second"
+      }
+    ]
+  }
+}
