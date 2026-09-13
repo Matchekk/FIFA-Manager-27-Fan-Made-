@@ -16,9 +16,15 @@ identity/reference/condition/serialization/invariant conflicts, reporting the ex
 failure. Do not reopen confirmed identities or reinterpret football facts.
 After import: deterministic deltas, coverage rebuild, frozen plan, native write and
 reread, semantic diff, regression tests, candidate, technical-blocker report.
-Input discovery: the named resolved queue/manifests are not yet present in the
-project, supplied workspace roots, or top-level Downloads/Desktop/Documents.
-Await the supplied artifact location; do not substitute older unresolved queues.
+Requested artifacts created at `data/current/FM27_RESOLVED_REVIEW_QUEUE.csv`
+and `data/current/FM27_RESOLVED_REVIEW_QUEUE.manifest.json` using
+`tools/prepare-resolved-review-queue.py`. They contain624 stable row IDs:
+6 APPLY from the existing protected-condition delta,136 existing NONBLOCKING,
+482 AWAITING_EXTERNAL_RESOLUTION with empty decision. This is a partially resolved
+handoff, not a production freeze or proof that482 football decisions are resolved.
+Manifest binds source/output hashes and exact6 guarded native states. No changes
+have yet been applied from this artifact. Never map an empty decision to a no-op
+or release exemption; preserve externally edited artifacts on regeneration.
 
 ## Accepted foundation
 

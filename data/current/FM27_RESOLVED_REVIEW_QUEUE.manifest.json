@@ -1,0 +1,1085 @@
+{
+  "allowed_decisions": [
+    "APPLY",
+    "KEEP_EXISTING",
+    "CREATE",
+    "NONBLOCKING",
+    "ESCALATE_TECHNICAL"
+  ],
+  "applied_to_candidate": false,
+  "decision_counts": {
+    "APPLY": 6,
+    "AWAITING_EXTERNAL_RESOLUTION": 482,
+    "NONBLOCKING": 136
+  },
+  "empty_decision": "Awaiting external resolution; never interpret as KEEP_EXISTING or NONBLOCKING.",
+  "football_research_performed": false,
+  "native_reference_base": "Native08; fm_id fields must be bridged when applying to another native read.",
+  "production_freeze_ready": false,
+  "queue_file": "FM27_RESOLVED_REVIEW_QUEUE.csv",
+  "queue_sha256": "6c72619fbd42f68fdc6d84a924faa3c94bcfabaf5795df4ff8ea97d665354054",
+  "resolved_rows": [
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-abcfd07881e880c066a1f855"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-209239680e754b6f6c1839a5"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-22fcaf565cb1ed008c9ac10e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-a1bbbba23e55ad05fbc8054b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-269da445a56389bdf780cb9e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-fe7bb030ffe3d1da420e89e2"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2b882875df94fc88c215c6de"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-00f7e3d9a098f725ba6fa942"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-5225e5ca90c6d86dc9aad597"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d5311fc6c2bdd764eeb4ed51"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-f4530a066cf25d7551e109fd"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-1e005007bc4531ffe912af65"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d96c8eb07340b35a0c6043cf"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-52de27cc7f233d2d0e3a573e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d4c54738ecf7354b30b5e560"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-56296507350f1421269f379d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d3ab62b072268278d3398829"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-81617ee3a90990da14b2cfd6"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-57554062caf31e252da76807"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3e8e553778701f9d1d735d46"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-6fa67131270d8e2c77b6e4e0"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-9e1c058fd67b6967d58e2527"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-54e4d930023d233ca0e0d082"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-8f73d7513418b4a48ce40d29"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-12b343061a60e8953bd841c4"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-fb26ba897b6c25e290b1b68b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-a9e807859aa81eb221bb1fa1"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-7cc03c84581c10032e084d90"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-9821e258d36aa84761a41b35"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-82e53da036c9f8e8981457c5"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-a029a05da86870f369881484"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-eb08499bf262b1e3970c8670"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-fe6180509f82e4fd3c72ee1e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-078e966810d9ce430c7898b4"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-b12da4f7d36b241fb6154176"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-07a12857a5061420f9ba526c"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-ccf58733d37f480e27c2b878"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2c1212242282dbe3094dd73b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2ffb99d8ee8d0a372f579c12"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-61848961e6d37e8efca778f7"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-cc57c992a163036d192d6698"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-1a9613daa64c3ac29e532604"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-c475db69b1b870241ee8802a"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-11b3c686a382f6c1cd8ecf0d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-9f526ef771e4ffed20b445f9"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-81ba1320e2b2ed4f2abb047d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-bf2abb3889e3acbe8d247fdc"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0059c4cbd441b01d52a4dd1c"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-66432f694aa0182e391ac95d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-6bdb1b1bb334f1f66c7564b4"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-72e1fc3fb7227c97ff92dbf0"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d0042469a20d0bca73a72a11"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-75ef0140ed4207b2ba898121"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0efeabbade07f74e15aa4e3c"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-77d1c2b647b5fb8f1251323a"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-ccf27461bbf7709d63329ece"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-8ce58108d95a7941a36133b8"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-79f741d20b4f26e0466c0b7c"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-571c339b39a3b79b2870ddee"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-03a2b311b314bc308f74ac3c"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-71264a27d217dd17dfd5bb7e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-925d5a72200dc07d0c21902f"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-b995e9c2557e4c5b976d52d8"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-341225613caf72cb9d862070"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-f7298cb4012091ba72470f05"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-561d02e9a6820c801cf7572b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-584d44ac5a1768175568acce"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0d9bc696a175800bf35d47c9"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0ff43d0f2df394fce9e4d1d2"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-14e09af3cda877be92c8bdab"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-ad920e7221f538354147266d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0c35ff20f9204aa12843b02a"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-51dddd7834430e1baaecf48b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-01fb8bf6e8f629c843ccd45b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-ce1d613dc74aa42fd5229da4"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3d5d04049a95479d3e80808c"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-1fc90b10dfc0ea1c149acdd1"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-19e5e35e78c2470764431436"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-18574f71c4a51bb9e9bfe5a2"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-fcb71b3168bf22fa21948c08"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-e74bf9b6a1ef92a12dfc40cc"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-c1ef39010f1efb46e6840f37"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0d85fd2bbc6d4171356270c0"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-1fa6fd12211dbfe804a26ee9"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3faf775a2c0434892c2ee790"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d341d5964663a3927259dc06"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3a44391ba8e6788077985333"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3294c3e989ac22d6d34873fb"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-81913980414564a392a21a6e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-a25e8663a640cc3932bcd6f8"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-d5ffa9b498e4d984e4ce50e7"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-7dc598ff0d680a0d11c95646"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-b483ae076b0e64535cf92eba"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2b66d1949da03e823807810d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-ea23a0df07385594f0c1a27b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-84fcccede54410e9e3a856f6"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-857f1fac0705af113e25085f"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-4f4b14f65a2e01ea1f4c6d5d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-eb678bd76af640d97e7fdd30"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-012fbfd6533d583b98a5ae84"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-abd352677d5096f57c3c933e"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2673632bd08eb1bb702c4740"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-bd70711aaba4f5ffd22ccc71"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-47e71b94e36cc19393558883"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-c091fad53bf0a48987f8baf0"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-feb7ffe80c0dfd93339e2804"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-5e929bf7fa90812250f31578"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3525eaec176afd9d0d8c1a01"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-4e78a4040855479e37495012"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-db1d5ab5bae86a8b5c8ed4fa"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3692a8aec4bb3ca8f8a0a082"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2831b6368615279511ce43b2"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0a1d47e0b35d9927eee3a601"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-9f09484e97aed183c298047b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-05813e06b47cb25056dd599a"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-7f4e84e8277c7664b3dc9543"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-41433d7dd2a05a37fab3bd8d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-bcd49402b7f97273a629afe8"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-3d8f55caece9bff4f06193c7"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-e19f6142242d91c8ad150743"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-005289484b479f43cfdff503"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-a8c878716f473949ff65a527"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-301a53b40c097e134adc0bcd"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-0597f7475e2376d8b33a7839"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-abcc242bbe438a5bb6ef9ac4"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-34d915b922ee223ee16aed7d"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-5d2bbfb4fbfe54c7b4448578"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-90d0a92cd37c7196b9ed468a"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-95c1d221d0524d18069a58de"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-b000c729dc628e2dc312c58f"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-ba384b3194ac232703856424"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-aeabae19023bff1b04b3302b"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-28c555252043c399f4fdfde0"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-2cce968d3900569dc08617d4"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-7debfa00a424e6da23700796"
+    },
+    {
+      "basis": "Existing canonical review already marks this row nonblocking.",
+      "decision": "NONBLOCKING",
+      "resolved_state": {},
+      "row_id": "FM27-4b40b80391feec2c11d02d4c"
+    },
+    {
+      "basis": "Existing staged exact protected-condition delta; no football reinterpretation.",
+      "decision": "APPLY",
+      "resolved_state": {
+        "acquisition_date": "",
+        "acquisition_event_key": "",
+        "acquisition_seller_club_id": "0",
+        "acquisition_source": "",
+        "acquisition_source_sha256": "",
+        "action": "PRESERVE_PROTECTED_SQUAD",
+        "contract_until": "2027-06-30",
+        "dob": "1995-04-27",
+        "fifa_id": "213697",
+        "fm_id": "301431",
+        "joined": "2026-01-28",
+        "loan_end": "",
+        "loan_owner_club_id": "0",
+        "new_club_id": "917532",
+        "old_club_id": "6239520",
+        "previous_loan_buy_option": "0",
+        "previous_loan_end": "",
+        "previous_loan_owner_club_id": "0",
+        "previous_loan_start": "",
+        "protected_condition_param0": "0",
+        "protected_condition_param1": "0",
+        "protected_condition_param2": "0",
+        "protected_condition_param3": "1",
+        "protected_condition_param4": "0",
+        "protected_condition_type": "2",
+        "shirt_number": "17",
+        "snapshot_date": "2026-09-12",
+        "source": "https://www.transfermarkt.de/paddy-mcnair/profil/spieler/167268",
+        "source_sha256": "31f360a6a55387b2ac1af2d05c3b2b589e19342c14111afa0500c6fb1f44179d",
+        "status": "CONFIRMED",
+        "team_type": "FIRST"
+      },
+      "row_id": "FM27-717a086a3615b7b2ad94acad"
+    },
+    {
+      "basis": "Existing staged exact protected-condition delta; no football reinterpretation.",
+      "decision": "APPLY",
+      "resolved_state": {
+        "acquisition_date": "",
+        "acquisition_event_key": "",
+        "acquisition_seller_club_id": "0",
+        "acquisition_source": "",
+        "acquisition_source_sha256": "",
+        "action": "PRESERVE_PROTECTED_SQUAD",
+        "contract_until": "2031-06-30",
+        "dob": "2001-01-05",
+        "fifa_id": "246340",
+        "fm_id": "23316",
+        "joined": "2026-09-01",
+        "loan_end": "2027-06-30",
+        "loan_owner_club_id": "917513",
+        "new_club_id": "917514",
+        "old_club_id": "917513",
+        "previous_loan_buy_option": "0",
+        "previous_loan_end": "",
+        "previous_loan_owner_club_id": "0",
+        "previous_loan_start": "",
+        "protected_condition_param0": "0",
+        "protected_condition_param1": "2461223",
+        "protected_condition_param2": "0",
+        "protected_condition_param3": "0",
+        "protected_condition_param4": "0",
+        "protected_condition_type": "7",
+        "shirt_number": "27",
+        "snapshot_date": "2026-09-12",
+        "source": "https://www.transfermarkt.de/mykhaylo-mudryk/profil/spieler/537860",
+        "source_sha256": "0b2b72c6b009136d2ed50d6cbf01e436297919590047c6bb538c772b68ebbf07",
+        "status": "CONFIRMED",
+        "team_type": "FIRST"
+      },
+      "row_id": "FM27-ff88d94adb6748dc4f6bc138"
+    },
+    {
+      "basis": "Existing staged exact protected-condition delta; no football reinterpretation.",
+      "decision": "APPLY",
+      "resolved_state": {
+        "acquisition_date": "",
+        "acquisition_event_key": "",
+        "acquisition_seller_club_id": "0",
+        "acquisition_source": "",
+        "acquisition_source_sha256": "",
+        "action": "PRESERVE_PROTECTED_SQUAD",
+        "contract_until": "2029-06-30",
+        "dob": "2005-02-17",
+        "fifa_id": "268622",
+        "fm_id": "277070",
+        "joined": "2026-09-01",
+        "loan_end": "2027-06-30",
+        "loan_owner_club_id": "1376261",
+        "new_club_id": "2949137",
+        "old_club_id": "1376261",
+        "previous_loan_buy_option": "0",
+        "previous_loan_end": "",
+        "previous_loan_owner_club_id": "0",
+        "previous_loan_start": "",
+        "protected_condition_param0": "2460682",
+        "protected_condition_param1": "2460934",
+        "protected_condition_param2": "0",
+        "protected_condition_param3": "19",
+        "protected_condition_param4": "0",
+        "protected_condition_type": "1",
+        "shirt_number": "24",
+        "snapshot_date": "2026-09-12",
+        "source": "https://www.transfermarkt.de/jeanuel-belocian/profil/spieler/919515",
+        "source_sha256": "8502e19cbe96725c9e9d0424f59c3f95ba4506fd8c390f297058a1ca1fdb6b8a",
+        "status": "CONFIRMED",
+        "team_type": "FIRST"
+      },
+      "row_id": "FM27-8972043bd61e75ac138b4f3e"
+    },
+    {
+      "basis": "Existing staged exact protected-condition delta; no football reinterpretation.",
+      "decision": "APPLY",
+      "resolved_state": {
+        "acquisition_date": "",
+        "acquisition_event_key": "",
+        "acquisition_seller_club_id": "0",
+        "acquisition_source": "",
+        "acquisition_source_sha256": "",
+        "action": "PRESERVE_PROTECTED_SQUAD",
+        "contract_until": "2029-06-30",
+        "dob": "2002-04-17",
+        "fifa_id": "79497",
+        "fm_id": "236277",
+        "joined": "2026-01-02",
+        "loan_end": "",
+        "loan_owner_club_id": "0",
+        "new_club_id": "1179682",
+        "old_club_id": "471041",
+        "previous_loan_buy_option": "0",
+        "previous_loan_end": "",
+        "previous_loan_owner_club_id": "0",
+        "previous_loan_start": "",
+        "protected_condition_param0": "2460739",
+        "protected_condition_param1": "2460950",
+        "protected_condition_param2": "0",
+        "protected_condition_param3": "16",
+        "protected_condition_param4": "0",
+        "protected_condition_type": "1",
+        "shirt_number": "29",
+        "snapshot_date": "2026-09-12",
+        "source": "https://www.transfermarkt.de/lucas-bretelle/profil/spieler/941561",
+        "source_sha256": "5475241878a66eeb67c3185663635fa6277c400968e40461bf33b3b51cea3776",
+        "status": "CONFIRMED",
+        "team_type": "FIRST"
+      },
+      "row_id": "FM27-ceec33ada9d0ce5a084aa31b"
+    },
+    {
+      "basis": "Existing staged exact protected-condition delta; no football reinterpretation.",
+      "decision": "APPLY",
+      "resolved_state": {
+        "acquisition_date": "",
+        "acquisition_event_key": "",
+        "acquisition_seller_club_id": "0",
+        "acquisition_source": "",
+        "acquisition_source_sha256": "",
+        "action": "PRESERVE_PROTECTED_SQUAD",
+        "contract_until": "2027-06-30",
+        "dob": "1988-09-09",
+        "fifa_id": "199339",
+        "fm_id": "1000013211",
+        "joined": "2026-01-27",
+        "loan_end": "",
+        "loan_owner_club_id": "0",
+        "new_club_id": "1376276",
+        "old_club_id": "0",
+        "previous_loan_buy_option": "0",
+        "previous_loan_end": "",
+        "previous_loan_owner_club_id": "0",
+        "previous_loan_start": "",
+        "protected_condition_param0": "2460842",
+        "protected_condition_param1": "2461056",
+        "protected_condition_param2": "0",
+        "protected_condition_param3": "37",
+        "protected_condition_param4": "0",
+        "protected_condition_type": "1",
+        "shirt_number": "1",
+        "snapshot_date": "2026-09-12",
+        "source": "https://www.transfermarkt.de/manuel-riemann/profil/spieler/40792",
+        "source_sha256": "64ec8ae87cddee1bd401d26b3e91f9940c7e58cd00c4d553049bdf5bf99402d6",
+        "status": "CONFIRMED",
+        "team_type": "FIRST"
+      },
+      "row_id": "FM27-bb81b979f364b88ba1370858"
+    },
+    {
+      "basis": "Existing staged exact protected-condition delta; no football reinterpretation.",
+      "decision": "APPLY",
+      "resolved_state": {
+        "acquisition_date": "",
+        "acquisition_event_key": "",
+        "acquisition_seller_club_id": "0",
+        "acquisition_source": "",
+        "acquisition_source_sha256": "",
+        "action": "PRESERVE_PROTECTED_SQUAD",
+        "contract_until": "2030-06-30",
+        "dob": "2004-04-01",
+        "fifa_id": "79093",
+        "fm_id": "282591",
+        "joined": "2026-01-28",
+        "loan_end": "",
+        "loan_owner_club_id": "0",
+        "new_club_id": "1769500",
+        "old_club_id": "1769503",
+        "previous_loan_buy_option": "0",
+        "previous_loan_end": "",
+        "previous_loan_owner_club_id": "0",
+        "previous_loan_start": "",
+        "protected_condition_param0": "0",
+        "protected_condition_param1": "0",
+        "protected_condition_param2": "0",
+        "protected_condition_param3": "1",
+        "protected_condition_param4": "0",
+        "protected_condition_type": "2",
+        "shirt_number": "30",
+        "snapshot_date": "2026-09-12",
+        "source": "https://www.transfermarkt.de/matteo-dagasso/profil/spieler/744621",
+        "source_sha256": "fd209eb1d1c5b5a9fe05476d7ab6ae8164a771a72b6519e195e0a76b6316ba8b",
+        "status": "CONFIRMED",
+        "team_type": "FIRST"
+      },
+      "row_id": "FM27-76626eb1e2d10cf84095eef8"
+    }
+  ],
+  "rows": 624,
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "reports/current/integration/review-queue.csv",
+      "sha256": "7feb9780ddcdd71ca3028c8394886edca9d7b16a77c1c2487984a40f20d61d41"
+    },
+    {
+      "path": "data/current/integration-staged/native10-post-draft05-condition-delta.csv",
+      "sha256": "e48b6d812119928941ab29cd34691a9482c609fa7862568ba316a620ba0ae45a"
+    },
+    {
+      "path": "reports/current/integration/native-protected-condition-proof.json",
+      "sha256": "ba79e37fbc42f0ce8f09aa1c9e8bcbb4fe23b7fe1a9b145d07c3c6474ee4c415"
+    }
+  ],
+  "state_schema": "APPLY resolved_state uses the existing guarded native squad-plan schema; CREATE must supply the existing native creation-plan schema.",
+  "status": "PARTIALLY_RESOLVED_NOT_A_PRODUCTION_FREEZE"
+}
