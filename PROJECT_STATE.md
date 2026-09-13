@@ -91,6 +91,24 @@ was not interrupted, so the new parameters load at the next normal restart. Exac
 profile and evidence: `data/parameter-tuning/dynamic-development-v1.json` and
 `reports/current/DYNAMIC_PLAYER_DEVELOPMENT_TUNING.md`.
 
+## Relaxed QoL v2 profile
+
+`relaxed-qol-v2` is applied on top of the two earlier comfort/development
+profiles in the isolated Native10 runtime. It adds youth-player retention,
+friendlier player and manager negotiations, fewer match injuries and faster
+recovery, gentler finances, cheaper and faster facilities, stronger sponsor/fan
+stability, more effective staff, lower routine discipline pressure and rarer
+private-life relationship declines. The deterministic application changed 16
+parameter files: 65 exact patch groups and 1,443 guarded construction cost/time
+values. Final reread was idempotent (0 changes), facility block structure passed,
+and 305/305 Python tests passed. Match goal/attack/card probabilities, executable,
+database and saves were not changed. The protected original installation remains
+unchanged. The running game was left open; this profile loads after the next normal
+restart. Exact profile, tool and report:
+`data/parameter-tuning/relaxed-qol-v2.json`,
+`tools/apply-relaxed-qol-tuning.py`, and
+`reports/current/RELAXED_QOL_V2_TUNING.md`.
+
 ## Scope
 
 ENG1, ITA1, ESP1, GER1, FRA1, POR1, NED1, BEL1, TUR1, CZE1, GER2, GER3.

@@ -1,0 +1,403 @@
+{
+  "profile": "relaxed-qol-v2",
+  "description": "Additional low-maintenance career comfort for youth retention, negotiations, recovery, finances, facilities, sponsors, fans, manager career and private life.",
+  "requires_profiles": [
+    "relaxed-career-v1",
+    "dynamic-development-v1"
+  ],
+  "restart_required": true,
+  "files": {
+    "fmdata/ParameterFiles/YouthTransfer.txt": [
+      {
+        "id": "larger_youth_roster_before_poaching_pressure",
+        "before": "// Maximum number of youth players without effect on a youth transfer\n30",
+        "after": "// Maximum number of youth players without effect on a youth transfer\n40"
+      },
+      {
+        "id": "protect_lower_talent_youth",
+        "before": "// Minimum talent for a youth transfer\n3",
+        "after": "// Minimum talent for a youth transfer\n4"
+      },
+      {
+        "id": "require_clearer_talent_advantage",
+        "before": "// Minimum difference between average youth team talent and new youth player\n0",
+        "after": "// Minimum difference between average youth team talent and new youth player\n1"
+      },
+      {
+        "id": "require_larger_level_step",
+        "before": "// Minimum level above youth team\n2.0",
+        "after": "// Minimum level above youth team\n3.0"
+      },
+      {
+        "id": "lower_maximum_youth_transfer_probability",
+        "before": "// Maximum transfer probability\n35",
+        "after": "// Maximum transfer probability\n18"
+      },
+      {
+        "id": "lower_national_poaching_basis",
+        "before": "// National transfers Probability Basis\n20.0",
+        "after": "// National transfers Probability Basis\n10.0"
+      },
+      {
+        "id": "less_frequent_youth_transfer_checks",
+        "before": "// Intervall of transfer check x days + Random( y )\n25\n10",
+        "after": "// Intervall of transfer check x days + Random( y )\n40\n20"
+      },
+      {
+        "id": "lower_general_youth_transfer_check_probability",
+        "before": "// General probability of transfer check\n90",
+        "after": "// General probability of transfer check\n55"
+      },
+      {
+        "id": "longer_youth_offer_decision_window",
+        "before": "// Time how long a youth player will think about an offer x + Random( y) days\n5\n3",
+        "after": "// Time how long a youth player will think about an offer x + Random( y) days\n10\n7"
+      },
+      {
+        "id": "lower_youth_transfer_reach_probabilities",
+        "before": "// Probability of league, national, continental, intercontinental transfers\n60\n80\n90\n100",
+        "after": "// Probability of league, national, continental, intercontinental transfers\n45\n65\n80\n95"
+      },
+      {
+        "id": "require_better_youth_destination",
+        "before": "// Minimum difference of youth prestige to consider an offer (lower level increases probability of acceptance)\n-9",
+        "after": "// Minimum difference of youth prestige to consider an offer (lower level increases probability of acceptance)\n-4"
+      }
+    ],
+    "fmdata/ParameterFiles/Contract Extension.txt": [
+      {
+        "id": "easier_contract_extension_gate",
+        "before": "// Necessary points for a contract extension of a player\n10,10",
+        "after": "// Necessary points for a contract extension of a player\n6,6"
+      },
+      {
+        "id": "better_initial_transfer_offer",
+        "before": "// First offer for a player (random)\n35,46",
+        "after": "// First offer for a player (random)\n40,51"
+      },
+      {
+        "id": "lower_easy_salary_demands",
+        "before": "// Multiplicator for easy changes of the fair player salaries\n0.95",
+        "after": "// Multiplicator for easy changes of the fair player salaries\n0.85"
+      },
+      {
+        "id": "lower_automatic_player_salary_raise",
+        "before": "// Automatic salary increase (Random) of a player in percent\n3",
+        "after": "// Automatic salary increase (Random) of a player in percent\n2"
+      },
+      {
+        "id": "gentler_basic_salary_counteroffers",
+        "before": "// Increase of the basic salary of the player (random), is connected with the difference between the current offer and the limit of the club\n10,21",
+        "after": "// Increase of the basic salary of the player (random), is connected with the difference between the current offer and the limit of the club\n5,11"
+      },
+      {
+        "id": "fewer_goal_bonus_counteroffers",
+        "before": "// Probability for a raise of the goal bonus, raise in percent\n60\n10,15,20,25",
+        "after": "// Probability for a raise of the goal bonus, raise in percent\n35\n5,10,15,20"
+      },
+      {
+        "id": "easier_transfer_offer_gate",
+        "before": "// Necessary points for an offer\n11",
+        "after": "// Necessary points for an offer\n8"
+      },
+      {
+        "id": "wider_salary_budget_tolerance",
+        "before": "// No offer when the limit for the player salaries is more than x % below the basic salary of the player\n10",
+        "after": "// No offer when the limit for the player salaries is more than x % below the basic salary of the player\n20"
+      },
+      {
+        "id": "wider_transfer_budget_tolerance",
+        "before": "// No offer when the limit for the transfer fee is more than x % below the current demand\n20",
+        "after": "// No offer when the limit for the transfer fee is more than x % below the current demand\n30"
+      },
+      {
+        "id": "stronger_contract_extension_bonus",
+        "before": "// *** General bonus for extension of player contract\n75",
+        "after": "// *** General bonus for extension of player contract\n100"
+      },
+      {
+        "id": "gentler_foreign_player_extension_reductions",
+        "before": "// *** Reduction for all foreign players\n-5\n// *** Reduction if a player doesn't speak the language\n-7\n-4",
+        "after": "// *** Reduction for all foreign players\n-2\n// *** Reduction if a player doesn't speak the language\n-3\n-2"
+      },
+      {
+        "id": "gentler_injury_extension_penalty",
+        "before": "// *** Injury influece: If more than Value1 weeks of injury, then substract Value2 points for each week of injury (maximum Value3)\n4\n2\n45",
+        "after": "// *** Injury influece: If more than Value1 weeks of injury, then substract Value2 points for each week of injury (maximum Value3)\n6\n1\n20"
+      }
+    ],
+    "fmdata/ParameterFiles/Injuries.txt": [
+      {
+        "id": "faster_physical_fitness_recovery",
+        "before": "BEGIN(Healing)\n0,0\n10,1\n20,4\n30,9\n40,16\n50,25\n60,36\n70,49\n80,64\n90,81\n100,100",
+        "after": "BEGIN(Healing)\n0,0\n10,3\n20,8\n30,15\n40,25\n50,38\n60,52\n70,66\n80,78\n90,90\n100,100"
+      },
+      {
+        "id": "protect_against_injury_retirement",
+        "before": "// Start age for retirement due to injury\n28\n// Minimum injury length to consider retirement\n100\n// Minimum injury length for severe injuries\n60",
+        "after": "// Start age for retirement due to injury\n34\n// Minimum injury length to consider retirement\n180\n// Minimum injury length for severe injuries\n120"
+      }
+    ],
+    "fmdata/ParameterFiles/Staff Tasks.txt": [
+      {
+        "id": "stronger_youth_coach_benefits",
+        "before": "// Maximum gain in youth skill training by youth coach (in percent)\n0.45\n\n// Maximum lowered quittings of youth players by youth coach (in percent)\n0.90\n\n// Maximum acceleration of the tactical education of youth players by youth coach (in percent)\n0.85",
+        "after": "// Maximum gain in youth skill training by youth coach (in percent)\n0.55\n\n// Maximum lowered quittings of youth players by youth coach (in percent)\n0.95\n\n// Maximum acceleration of the tactical education of youth players by youth coach (in percent)\n0.95"
+      },
+      {
+        "id": "stronger_medical_staff_benefits",
+        "before": "// Maximum lowered duration of injuries (in percent)\n0.35\n\n// Maximum lowered probability of injury during training (in percent)\n0.40\n\n// Maximum energy gain during training by masseur (in percent)\n0.35\n\n// Maximum lowered moral loss for players who haven't played by psycho (in percent)\n0.50",
+        "after": "// Maximum lowered duration of injuries (in percent)\n0.50\n\n// Maximum lowered probability of injury during training (in percent)\n0.55\n\n// Maximum energy gain during training by masseur (in percent)\n0.45\n\n// Maximum lowered moral loss for players who haven't played by psycho (in percent)\n0.70"
+      },
+      {
+        "id": "stronger_management_and_pr_staff_benefits",
+        "before": "// Maximum lowered building costs by construction manager (in percent)\n0.30",
+        "after": "// Maximum lowered building costs by construction manager (in percent)\n0.40"
+      },
+      {
+        "id": "stronger_lawyer_benefit",
+        "before": "// Maximum lowered compensation by the lawyer when dismissing a staff (in percent)\n0.35",
+        "after": "// Maximum lowered compensation by the lawyer when dismissing a staff (in percent)\n0.50"
+      },
+      {
+        "id": "stronger_spokesperson_benefit",
+        "before": "// Maximum chance to increase media status (+1) per week by spokesperson (in percent)\n0.30",
+        "after": "// Maximum chance to increase media status (+1) per week by spokesperson (in percent)\n0.40"
+      },
+      {
+        "id": "stronger_fan_representative_benefit",
+        "before": "// Maximum gain of active fans by fan representative (in percent)\n0.25",
+        "after": "// Maximum gain of active fans by fan representative (in percent)\n0.35"
+      }
+    ],
+    "fmdata/ParameterFiles/Season Finances.txt": [
+      {
+        "id": "lower_facility_maintenance",
+        "before": "// Maintenance costs in percent of the constructions costs\n25",
+        "after": "// Maintenance costs in percent of the constructions costs\n15"
+      },
+      {
+        "id": "later_investment_stop",
+        "before": "// Limit at which percentage from the budget the investments are stopped\n90",
+        "after": "// Limit at which percentage from the budget the investments are stopped\n96"
+      },
+      {
+        "id": "larger_budget_tolerance",
+        "before": "// Limit of how much the budget can be exceeded\n5",
+        "after": "// Limit of how much the budget can be exceeded\n12"
+      },
+      {
+        "id": "later_debt_warnings",
+        "before": "// Warning at x % of the allowed debts\n50\n80\n95",
+        "after": "// Warning at x % of the allowed debts\n70\n90\n98"
+      }
+    ],
+    "fmdata/ParameterFiles/Finances.txt": [
+      {
+        "id": "more_useful_facility_budget_share",
+        "before": "\tFACTOR_SALARIES   = 0.44\n\tFACTOR_TRANSFERS  = 0.47\n\tFACTOR_FACILITIES = 0.01\n\tFACTOR_MISC       = 0.08",
+        "after": "\tFACTOR_SALARIES   = 0.42\n\tFACTOR_TRANSFERS  = 0.46\n\tFACTOR_FACILITIES = 0.04\n\tFACTOR_MISC       = 0.08"
+      },
+      {
+        "id": "gentler_negative_cash_budget_penalty",
+        "before": "\tFACTOR_NEGATIVE_CASH_BALANCE = 0.1",
+        "after": "\tFACTOR_NEGATIVE_CASH_BALANCE = 0.05"
+      }
+    ],
+    "fmdata/ParameterFiles/Budgets.txt": [
+      {
+        "id": "larger_facility_budget_ceiling",
+        "before": "// Maximum share of all buildings of the total budget\n20",
+        "after": "// Maximum share of all buildings of the total budget\n30"
+      }
+    ],
+    "fmdata/ParameterFiles/Sponsor Negotiations.txt": [
+      {
+        "id": "better_safe_sponsor_base",
+        "before": "// Reduction of the basic amount of safe sponsor offers\n7",
+        "after": "// Reduction of the basic amount of safe sponsor offers\n3"
+      },
+      {
+        "id": "longer_main_sponsor_terms",
+        "before": "// Term of contract with the main sponsor (Random)\n2,3",
+        "after": "// Term of contract with the main sponsor (Random)\n3,4"
+      },
+      {
+        "id": "better_risky_sponsor_base",
+        "before": "// Reduction of the basic amount of risky sponsor offers\n40",
+        "after": "// Reduction of the basic amount of risky sponsor offers\n25"
+      },
+      {
+        "id": "stronger_sponsor_negotiation_skill",
+        "before": "// Multiplicator for the negotiation skill\n3",
+        "after": "// Multiplicator for the negotiation skill\n4"
+      }
+    ],
+    "fmdata/ParameterFiles/Fan Representative.txt": [
+      {
+        "id": "more_fans_after_wins",
+        "before": "// Multiplicators for calculating the number of active fans\n// Letztes Spiel gewonnen \n//\n1.02",
+        "after": "// Multiplicators for calculating the number of active fans\n// Letztes Spiel gewonnen \n//\n1.03"
+      },
+      {
+        "id": "almost_no_fan_loss_after_defeats",
+        "before": "// Letztes Spiel verloren\n//\n0.98",
+        "after": "// Letztes Spiel verloren\n//\n0.995"
+      },
+      {
+        "id": "gentler_missed_objective_fan_loss",
+        "before": "// Saisonziel >4 Plätze verfehlt\n//\n0.94\n// Saisonziel >2 Plätze verfehlt\n//\n0.97",
+        "after": "// Saisonziel >4 Plätze verfehlt\n//\n0.98\n// Saisonziel >2 Plätze verfehlt\n//\n0.99"
+      },
+      {
+        "id": "gentler_relegation_zone_fan_loss",
+        "before": "// Abstiegsplatz\n//\n0.9",
+        "after": "// Abstiegsplatz\n//\n0.96"
+      },
+      {
+        "id": "stronger_lower_league_fan_bases",
+        "before": "// 2. Liga\n//\n0.8\n// 3. Liga\n//\n0.6\n// 4. Liga\n//\n0.4\n// 5. Liga\n//\n0.2",
+        "after": "// 2. Liga\n//\n0.85\n// 3. Liga\n//\n0.70\n// 4. Liga\n//\n0.55\n// 5. Liga\n//\n0.40"
+      }
+    ],
+    "fmdata/ParameterFiles/Manager Contract.txt": [
+      {
+        "id": "closer_first_manager_offer",
+        "before": "// Difference between the 1st offer and the demand in the manager negotiations (percent)\n10",
+        "after": "// Difference between the 1st offer and the demand in the manager negotiations (percent)\n5"
+      },
+      {
+        "id": "more_manager_negotiation_points",
+        "before": "// Starting points when negotiating with a computer club\n15",
+        "after": "// Starting points when negotiating with a computer club\n25"
+      },
+      {
+        "id": "gentler_manager_negotiation_costs",
+        "before": "// Negotiation points lost / basic salary of the manager (Random)\n0,3\n0,5\n1,5\n2,6\n// Verhandlungsabzug bei der Siegprämie des Managers (Random)\n// Negotiation points lost / win bonus of the manager (Random)\n0,2\n0,3\n1,3\n2,3\n// Verhandlungsabzug bei der Sonderprämie Meisterschaft des Managers (Random)\n// Negotiation points lost / special championship bonus of the manager (Random)\n0,2\n0,3\n1,3\n2,3\n// Verhandlungsabzug bei der Sonderprämie Gewinn des Managers (Random)\n// Negotiation points lost / special profit bonus of the manager (Random)\n1,3\n2,4\n2,6\n// Verhandlungsabzug bei der Vertragslänge des Managers (Random)\n// Negotiation points lost / term of contract of the manager (Random)\n1,2\n2,3\n3,4\n// Verhandlungsabzug bei der automatischen Gehaltssteigerung des Managers (Random)\n// Negotiation points lost / automatic salary increase of the manager (Random)\n1,3\n2,4\n2,6",
+        "after": "// Negotiation points lost / basic salary of the manager (Random)\n0,2\n0,3\n1,3\n1,4\n// Verhandlungsabzug bei der Siegprämie des Managers (Random)\n// Negotiation points lost / win bonus of the manager (Random)\n0,1\n0,2\n0,2\n1,2\n// Verhandlungsabzug bei der Sonderprämie Meisterschaft des Managers (Random)\n// Negotiation points lost / special championship bonus of the manager (Random)\n0,1\n0,2\n0,2\n1,2\n// Verhandlungsabzug bei der Sonderprämie Gewinn des Managers (Random)\n// Negotiation points lost / special profit bonus of the manager (Random)\n0,2\n1,3\n1,4\n// Verhandlungsabzug bei der Vertragslänge des Managers (Random)\n// Negotiation points lost / term of contract of the manager (Random)\n0,1\n1,2\n2,3\n// Verhandlungsabzug bei der automatischen Gehaltssteigerung des Managers (Random)\n// Negotiation points lost / automatic salary increase of the manager (Random)\n0,2\n1,3\n1,4"
+      },
+      {
+        "id": "lower_manager_negotiation_random_loss",
+        "before": "// Flag probabilities (manager negotiations), setting costs points, chance of losing one point per round\n10\n2\n20",
+        "after": "// Flag probabilities (manager negotiations), setting costs points, chance of losing one point per round\n10\n2\n8"
+      },
+      {
+        "id": "gentler_manager_objective_position_loss",
+        "before": "// Chance of losing one point per round for a difference of one position (season objectives)\n10,5,3",
+        "after": "// Chance of losing one point per round for a difference of one position (season objectives)\n5,2,1"
+      },
+      {
+        "id": "fewer_manager_objective_changes",
+        "before": "// Chance for changing the season objectives (in percent)\n30",
+        "after": "// Chance for changing the season objectives (in percent)\n15"
+      },
+      {
+        "id": "more_club_interest_in_human_manager",
+        "before": "// Multiplier for the clubs interested in signing a human manager\n100,75,40,10,1,0",
+        "after": "// Multiplier for the clubs interested in signing a human manager\n120,100,70,35,10,2"
+      }
+    ],
+    "fmdata/ParameterFiles/Private Life.txt": [
+      {
+        "id": "rarer_relationship_decline",
+        "before": "// Probability for a decline in a relationship (1/x)\n20",
+        "after": "// Probability for a decline in a relationship (1/x)\n60"
+      },
+      {
+        "id": "longer_gap_between_relationship_declines",
+        "before": "// Smallest time in weeks between two declines in a relationship\n5",
+        "after": "// Smallest time in weeks between two declines in a relationship\n12"
+      },
+      {
+        "id": "faster_relationship_recovery",
+        "before": "// Smallest time in weeks between two improvements in a relationship\n5",
+        "after": "// Smallest time in weeks between two improvements in a relationship\n3"
+      }
+    ],
+    "fmdata/ParameterFiles/Player Interactions.txt": [
+      {
+        "id": "gentler_internal_discipline_points",
+        "before": "15 // OFFENCE_CRITICISM_OF_MANAGER\n60 // OFFENCE_VERBAL_ATTACK_OF_MANAGER **\n60 // OFFENCE_INSULTING_MANAGER\n120 // OFFENCE_PHYSICAL_ATTACK_OF_MANAGER\n40 // OFFENCE_MISBEHAVIOUR_AGAINST_CLUB\n100 // OFFENCE_WORK_DENIAL",
+        "after": "8 // OFFENCE_CRITICISM_OF_MANAGER\n30 // OFFENCE_VERBAL_ATTACK_OF_MANAGER **\n30 // OFFENCE_INSULTING_MANAGER\n120 // OFFENCE_PHYSICAL_ATTACK_OF_MANAGER\n20 // OFFENCE_MISBEHAVIOUR_AGAINST_CLUB\n60 // OFFENCE_WORK_DENIAL"
+      },
+      {
+        "id": "gentler_training_discipline_points",
+        "before": "10 // OFFENCE_TOO_LATE_FOR_TRAINING **\n30 // OFFENCE_DID_NOT_COME_TO_TRAINING",
+        "after": "5 // OFFENCE_TOO_LATE_FOR_TRAINING **\n15 // OFFENCE_DID_NOT_COME_TO_TRAINING"
+      },
+      {
+        "id": "gentler_halfhearted_training_and_riot_points",
+        "before": "40 // OFFENCE_HALFHEARTED_TRAINING\n80 // OFFENCE_RIOT",
+        "after": "20 // OFFENCE_HALFHEARTED_TRAINING\n50 // OFFENCE_RIOT"
+      }
+    ],
+    "fmdata/ParameterFiles/Transfer Evaluation.txt": [
+      {
+        "id": "friendlier_transfer_difficulty_bonus",
+        "before": "\tDifficultyBonus = 50, 0, -25",
+        "after": "\tDifficultyBonus = 60, 25, 0"
+      },
+      {
+        "id": "stronger_human_club_transfer_interest",
+        "before": "\tHumanTeam = 1.1",
+        "after": "\tHumanTeam = 1.2"
+      }
+    ],
+    "fmdata/ParameterFiles/LiveTicker.txt": [
+      {
+        "id": "lower_match_injury_chance",
+        "before": "BEGIN( CARD_AND_INJURY_CHANCE )\n    #cardinjury =        0,      0,    0,      0\n    #cardinjury =        1,   1111,   55,    110\n    #cardinjury =        2,   1333,   66,    170\n    #cardinjury =        3,   1666,   83,    230\n    #cardinjury =        4,   2222,  111,    330\n    #cardinjury =        5,   2500,  125,    440\n    #cardinjury =        6,   2857,  142,    550\n    #cardinjury =        7,   3333,  166,    660\n    #cardinjury =        8,   3571,  178,    770\n    #cardinjury =        9,   3703,  185,    880\n    #cardinjury =       10,   3846,  192,   1000\nEND",
+        "after": "BEGIN( CARD_AND_INJURY_CHANCE )\n    #cardinjury =        0,      0,    0,      0\n    #cardinjury =        1,   1111,   55,     77\n    #cardinjury =        2,   1333,   66,    119\n    #cardinjury =        3,   1666,   83,    161\n    #cardinjury =        4,   2222,  111,    231\n    #cardinjury =        5,   2500,  125,    308\n    #cardinjury =        6,   2857,  142,    385\n    #cardinjury =        7,   3333,  166,    462\n    #cardinjury =        8,   3571,  178,    539\n    #cardinjury =        9,   3703,  185,    616\n    #cardinjury =       10,   3846,  192,    700\nEND"
+      },
+      {
+        "id": "lower_gradual_match_injury_chance",
+        "before": "BEGIN( INJURY_IN_STEPS_CHANCE )\n    #injuryinsteps =    0,   0\n    #injuryinsteps =    1, 167\n    #injuryinsteps =    2, 172\n    #injuryinsteps =    3, 179\n    #injuryinsteps =    4, 185\n    #injuryinsteps =    5, 192\n    #injuryinsteps =    6, 200\n    #injuryinsteps =    7, 208\n    #injuryinsteps =    8, 217\n    #injuryinsteps =    9, 227\n    #injuryinsteps =   10, 238\nEND",
+        "after": "BEGIN( INJURY_IN_STEPS_CHANCE )\n    #injuryinsteps =    0,   0\n    #injuryinsteps =    1, 117\n    #injuryinsteps =    2, 120\n    #injuryinsteps =    3, 125\n    #injuryinsteps =    4, 130\n    #injuryinsteps =    5, 134\n    #injuryinsteps =    6, 140\n    #injuryinsteps =    7, 146\n    #injuryinsteps =    8, 152\n    #injuryinsteps =    9, 159\n    #injuryinsteps =   10, 167\nEND"
+      },
+      {
+        "id": "lower_preinjury_escalation_chance",
+        "before": "InjuryAfterPreinjuryChance = 60000",
+        "after": "InjuryAfterPreinjuryChance = 35000"
+      }
+    ]
+  },
+  "structured_files": {
+    "fmdata/ParameterFiles/Club Facilities.txt": {
+      "marker": "// FM27 relaxed-qol-v2: facility costs 75%, construction time 70%",
+      "source_sha256": "6ad3aa39a785f7ef9fd4bc02c6f81d04b4b50b724d2c70c6b61b6972f014c95c",
+      "result_sha256": "a9096b76c9716f9ca09d14cb4e19d29a84407a5a2437d688b72d725fb79c56ad",
+      "transforms": [
+        {
+          "id": "lower_club_facility_costs",
+          "kind": "assignment_integer_scale",
+          "field": "COSTS",
+          "factor": 0.75,
+          "minimum": 1,
+          "expected_matches": 697
+        },
+        {
+          "id": "shorter_club_facility_build_times",
+          "kind": "assignment_integer_scale",
+          "field": "BUILDING_TIME",
+          "factor": 0.70,
+          "minimum": 1,
+          "expected_matches": 684
+        }
+      ]
+    },
+    "fmdata/ParameterFiles/Stadium Building Costs.txt": {
+      "marker": "// FM27 relaxed-qol-v2: stadium construction costs 70%",
+      "source_sha256": "d546b8399a9be9416418c246d7c44111391319b31e41dbd9bd8283bd2166d7c0",
+      "result_sha256": "370520053ca71bda29be99046b2a9f156b20af7fae378cabcc802bf2746af89b",
+      "transforms": [
+        {
+          "id": "lower_stadium_construction_costs",
+          "kind": "bare_integer_scale",
+          "factor": 0.70,
+          "minimum": 1,
+          "expected_matches": 62
+        }
+      ]
+    }
+  }
+}
