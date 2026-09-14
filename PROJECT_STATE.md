@@ -301,3 +301,20 @@ game's own localized modal-dialog path, so fullscreen focus stays inside the gam
 runtime signature and fails closed on other builds. Build, installer, normal/dark UI
 overrides and implementation evidence are in the repository; the isolated runtime
 loaded the plugin and logged `PATCH_APPLIED`. Manual in-dialog click smoke remains.
+
+## Full player knowledge QoL
+
+The isolated FM27 runtime now returns knowledge level 10 from the engine's central
+player-knowledge getter, removing the need to scout a player before viewing complete
+information. Runtime analysis found 134 direct calls to the single getter at RVA
+`0xAB9BA0`; the original routine itself clamps normal results to 10. The guarded x86
+ASI changes only this return value and leaves attributes, potential, contracts,
+transfers, budgets, staff and database records unchanged. It verifies the supported
+`Manager.exe` hash and original 16-byte function signature and fails closed on other
+builds. Package, source, deterministic build, isolated-runtime installer, tests and
+evidence: `data/qol/full-player-knowledge`, `src/plugins/full_player_knowledge`,
+`tools/build-full-player-knowledge-plugin.ps1`,
+`tools/install-full-player-knowledge-qol.py`,
+`tests/test_full_player_knowledge_qol.py`, and
+`reports/current/FULL_PLAYER_KNOWLEDGE_IMPLEMENTATION.md`. The active PID 9576 was
+patched and reread successfully without closing the game; it remained responsive.
